@@ -2,7 +2,7 @@
 
 Source material for the Draft Council. League: 8 teams, H2H points,
 **custom scoring**, snake, 13 rounds, no keepers. Our team is
-**Come-in Cider (`CCDR`)**, picking **8 of 8** — the turn.
+**Come-in Cider (`CCDR`)**, picking **6 of 8** (corrected 8 Oct 2026; earlier material said 8).
 
 ## Read in this order
 

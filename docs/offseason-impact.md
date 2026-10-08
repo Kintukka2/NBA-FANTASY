@@ -133,7 +133,7 @@ These players' 2026 totals **understate** them. Either the sample was tiny, the 
 
 **Cameron Boozer** (MEM, No. 3 — starting PF day one) · **AJ Dybantsa** (WAS, No. 1) · **Darryn Peterson** (UTA, No. 2) · **Caleb Wilson** (CHI, No. 4) · **Keaton Wagler** (LAC, No. 5 — played a team-high 30 min in his preseason debut, hit the game-winner; Strus's injury may hand him the starting two) · **Darius Acuff Jr.** (SAC, No. 7 — starting PG from day one, ESPN projects 30.6 min / 30.4 FP) · **Brayden Burries** (MIL, No. 10) · **Yaxel Lendeborg** (GSW, No. 11 — started the preseason opener, ESPN projects 24.6 min / 23.5 FP) · **Jeremiah Fears** (NOP, primary ball-handler with Alvarado traded) · **Dylan Harper** (SAS — starts only if Johnson commits to three guards).
 
-Rookie efficiency and turnovers are both punished hard by this formula. These are picks 11–13, not picks 8–10.
+Rookie efficiency and turnovers are both punished hard by this formula. These are rounds 11–13, not rounds 8–10.
 
 ---
 
@@ -344,7 +344,7 @@ Deeper: **Jock Landale** (ATL, 2.69 OREB) · **Ryan Kalkbrenner** (CHA, 75.1% FG
 
 **Four things to carry into the room:**
 
-1. **Jokić first, Wembanyama second** — corrected against the workbook. Jokić actually scored **74.9 FP/g over 65 games**, the highest figure in the entire pool and fifteen points clear of Wemby's **59.5 in 29.2 minutes**. Wemby's minutes cap means he closes most of that gap if it lifts (~67 at 33 min), and he is the better *upside* bet, but Jokić's number is already banked. Neither reaches us at pick 8 regardless — this is for trade-value reference and for knowing what the top of the board is actually worth.
+1. **Jokić first, Wembanyama second** — corrected against the workbook. Jokić actually scored **74.9 FP/g over 65 games**, the highest figure in the entire pool and fifteen points clear of Wemby's **59.5 in 29.2 minutes**. Wemby's minutes cap means he closes most of that gap if it lifts (~67 at 33 min), and he is the better *upside* bet, but Jokić's number is already banked. Neither reaches us at pick 6 regardless — this is for trade-value reference and for knowing what the top of the board is actually worth.
 
 2. **The best values are centres whose minutes, not ability, capped them.** Isaiah Jackson, Edey, Gafford, Missi, Horford, Ighodaro, Maluach, Diabaté, Cardwell and Lively all have per-minute rates far above their 2026 lines, and all of them just had the body in front of them removed. Several are at ADP 140.
 
@@ -352,7 +352,7 @@ Deeper: **Jock Landale** (ATL, 2.69 OREB) · **Ryan Kalkbrenner** (CHA, 75.1% FG
 
 4. **Our last three picks are rotating slots.** With ten starters, three bench spots and roughly seven acquisitions a week, picks 11-13 should be pure upside rather than safety — rookies with locked minutes and backup centres one absence away from 28 minutes. Anything that misses is cheap to replace by Sunday, and there is nowhere to park a developing player anyway.
 
-**Our picks:** 8/9 · 24/25 · 40/41 · 56/57 · 72/73 · 88/89 · 104.
+**Our picks (slot 6, corrected 8 Oct):** 6 · 11 · 22 · 27 · 38 · 43 · 54 · 59 · 70 · 75 · 86 · 91 · 102.
 
 ---
 
