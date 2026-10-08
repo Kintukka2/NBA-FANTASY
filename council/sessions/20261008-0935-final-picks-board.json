@@ -1,0 +1,213 @@
+{
+  "question": "Ranked board for our last three picks (86, 91, 102)",
+  "type": "selection",
+  "method": "weighted Borda over ranked top-6 ballots; first-choice tally by council/tally.py",
+  "slot": 6,
+  "asked_at": "2026-10-08T09:35:00Z",
+  "our_roster": [
+    "Cade Cunningham",
+    "Dejounte Murray",
+    "Jamal Murray",
+    "Desmond Bane",
+    "Scottie Barnes",
+    "Trey Murphy III",
+    "Kawhi Leonard",
+    "Caleb Wilson",
+    "Jalen Duren",
+    "Onyeka Okongwu"
+  ],
+  "rounds": [
+    {
+      "name": "first choice",
+      "ballots": [
+        {
+          "member": "quill",
+          "vote": "Alex Sarr",
+          "ranking": [
+            "Alex Sarr",
+            "Ryan Rollins",
+            "Kyrie Irving",
+            "OG Anunoby",
+            "Immanuel Quickley",
+            "Jabari Smith Jr."
+          ]
+        },
+        {
+          "member": "coach",
+          "vote": "Alex Sarr",
+          "ranking": [
+            "Alex Sarr",
+            "OG Anunoby",
+            "Ivica Zubac",
+            "Jabari Smith Jr.",
+            "Ryan Rollins",
+            "Kyrie Irving"
+          ]
+        },
+        {
+          "member": "vex",
+          "vote": "Alex Sarr",
+          "ranking": [
+            "Alex Sarr",
+            "Ryan Rollins",
+            "Immanuel Quickley",
+            "OG Anunoby",
+            "Ivica Zubac",
+            "Kyrie Irving"
+          ]
+        },
+        {
+          "member": "cipher",
+          "vote": "Alex Sarr",
+          "ranking": [
+            "Alex Sarr",
+            "Ryan Rollins",
+            "Kyrie Irving",
+            "OG Anunoby",
+            "Immanuel Quickley",
+            "Ivica Zubac"
+          ]
+        },
+        {
+          "member": "scout",
+          "vote": "Alex Sarr",
+          "ranking": [
+            "Alex Sarr",
+            "Kyrie Irving",
+            "Ryan Rollins",
+            "OG Anunoby",
+            "Immanuel Quickley",
+            "Ivica Zubac"
+          ]
+        },
+        {
+          "member": "ledger",
+          "vote": "Alex Sarr",
+          "ranking": [
+            "Alex Sarr",
+            "Kyrie Irving",
+            "Ryan Rollins",
+            "OG Anunoby",
+            "Ivica Zubac",
+            "Immanuel Quickley"
+          ]
+        },
+        {
+          "member": "tempo",
+          "vote": "Alex Sarr",
+          "ranking": [
+            "Alex Sarr",
+            "OG Anunoby",
+            "Ivica Zubac",
+            "Jabari Smith Jr.",
+            "Ryan Rollins",
+            "Isaiah Hartenstein"
+          ]
+        },
+        {
+          "member": "medic",
+          "vote": "Ryan Rollins",
+          "ranking": [
+            "Ryan Rollins",
+            "OG Anunoby",
+            "Alex Sarr",
+            "Immanuel Quickley",
+            "Jabari Smith Jr.",
+            "Kyrie Irving"
+          ]
+        },
+        {
+          "member": "archivist",
+          "vote": "Alex Sarr",
+          "ranking": [
+            "Alex Sarr",
+            "Ryan Rollins",
+            "Immanuel Quickley",
+            "Ivica Zubac",
+            "OG Anunoby",
+            "Jusuf Nurkic"
+          ]
+        }
+      ],
+      "result": {
+        "winner": "Alex Sarr",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.882,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Alex Sarr",
+            "weight": 15,
+            "confidence_weight": 7.5,
+            "voters": [
+              "quill",
+              "coach",
+              "vex",
+              "cipher",
+              "scout",
+              "ledger",
+              "tempo",
+              "archivist"
+            ]
+          },
+          {
+            "option": "Ryan Rollins",
+            "weight": 2,
+            "confidence_weight": 1.0,
+            "voters": [
+              "medic"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "board": [
+    {
+      "player": "Alex Sarr",
+      "points": 98
+    },
+    {
+      "player": "Ryan Rollins",
+      "points": 71
+    },
+    {
+      "player": "OG Anunoby",
+      "points": 62
+    },
+    {
+      "player": "Kyrie Irving",
+      "points": 43
+    },
+    {
+      "player": "Immanuel Quickley",
+      "points": 32
+    },
+    {
+      "player": "Ivica Zubac",
+      "points": 32
+    },
+    {
+      "player": "Jabari Smith Jr.",
+      "points": 17
+    },
+    {
+      "player": "Isaiah Hartenstein",
+      "points": 1
+    },
+    {
+      "player": "Jusuf Nurkic",
+      "points": 1
+    }
+  ],
+  "verdict": {
+    "answer": "Alex Sarr",
+    "round": "first choice",
+    "share": 0.882,
+    "majority": true,
+    "tiebreak": null
+  }
+}
