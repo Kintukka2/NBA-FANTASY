@@ -1,0 +1,253 @@
+{
+  "question": "If Jalen Johnson is gone at pick 6, who are option B and option C?",
+  "type": "selection",
+  "slot": 6,
+  "options": [
+    "Giannis Antetokounmpo",
+    "Cade Cunningham",
+    "Tyrese Maxey",
+    "Anthony Edwards",
+    "Donovan Mitchell",
+    "Scottie Barnes",
+    "Alperen Sengun"
+  ],
+  "asked_at": "2026-10-08T08:34:30Z",
+  "taken": [],
+  "rounds": [
+    {
+      "name": "option B",
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Cade Cunningham",
+          "confidence": 0.7
+        },
+        {
+          "member": "archivist",
+          "vote": "Cade Cunningham",
+          "confidence": 0.7
+        },
+        {
+          "member": "ledger",
+          "vote": "Cade Cunningham",
+          "confidence": 0.7
+        },
+        {
+          "member": "medic",
+          "vote": "Cade Cunningham",
+          "confidence": 0.68
+        },
+        {
+          "member": "scout",
+          "vote": "Cade Cunningham",
+          "confidence": 0.62
+        },
+        {
+          "member": "vex",
+          "vote": "Cade Cunningham",
+          "confidence": 0.62
+        },
+        {
+          "member": "quill",
+          "vote": "Cade Cunningham",
+          "confidence": 0.66
+        },
+        {
+          "member": "tempo",
+          "vote": "Cade Cunningham",
+          "confidence": 0.62
+        },
+        {
+          "member": "cipher",
+          "vote": "Cade Cunningham",
+          "confidence": 0.7
+        }
+      ],
+      "result": {
+        "winner": "Cade Cunningham",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 1.0,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Cade Cunningham",
+            "weight": 17,
+            "confidence_weight": 11.42,
+            "voters": [
+              "coach",
+              "archivist",
+              "ledger",
+              "medic",
+              "scout",
+              "vex",
+              "quill",
+              "tempo",
+              "cipher"
+            ]
+          },
+          {
+            "option": "Giannis Antetokounmpo",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Tyrese Maxey",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Anthony Edwards",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Donovan Mitchell",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Scottie Barnes",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Alperen Sengun",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "option C",
+      "options": [
+        "Giannis Antetokounmpo",
+        "Tyrese Maxey",
+        "Anthony Edwards",
+        "Donovan Mitchell",
+        "Scottie Barnes",
+        "Alperen Sengun"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Tyrese Maxey",
+          "confidence": 0.7
+        },
+        {
+          "member": "archivist",
+          "vote": "Tyrese Maxey",
+          "confidence": 0.7
+        },
+        {
+          "member": "ledger",
+          "vote": "Tyrese Maxey",
+          "confidence": 0.7
+        },
+        {
+          "member": "medic",
+          "vote": "Tyrese Maxey",
+          "confidence": 0.68
+        },
+        {
+          "member": "scout",
+          "vote": "Tyrese Maxey",
+          "confidence": 0.62
+        },
+        {
+          "member": "vex",
+          "vote": "Tyrese Maxey",
+          "confidence": 0.62
+        },
+        {
+          "member": "quill",
+          "vote": "Tyrese Maxey",
+          "confidence": 0.66
+        },
+        {
+          "member": "tempo",
+          "vote": "Tyrese Maxey",
+          "confidence": 0.62
+        },
+        {
+          "member": "cipher",
+          "vote": "Giannis Antetokounmpo",
+          "confidence": 0.7
+        }
+      ],
+      "result": {
+        "winner": "Tyrese Maxey",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.824,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Tyrese Maxey",
+            "weight": 14,
+            "confidence_weight": 9.32,
+            "voters": [
+              "coach",
+              "archivist",
+              "ledger",
+              "medic",
+              "scout",
+              "vex",
+              "quill",
+              "tempo"
+            ]
+          },
+          {
+            "option": "Giannis Antetokounmpo",
+            "weight": 3,
+            "confidence_weight": 2.1,
+            "voters": [
+              "cipher"
+            ]
+          },
+          {
+            "option": "Anthony Edwards",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Donovan Mitchell",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Scottie Barnes",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Alperen Sengun",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    }
+  ],
+  "verdict": {
+    "option_b": "Cade Cunningham",
+    "option_c": "Tyrese Maxey",
+    "b_share": 1.0,
+    "c_share": 0.824
+  }
+}
