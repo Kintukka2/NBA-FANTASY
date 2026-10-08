@@ -32,6 +32,7 @@ def tally(session, round_index, roster):
     weights = {m["id"]: m["weight"] for m in roster["members"]}
     chair = roster.get("chair")
     options = list(rnd.get("options") or session.get("options") or [])
+    fixed = bool(options)  # an opening round of open proposals has no fixed options
 
     score, conf, voters = {}, {}, {}
     chair_vote = None
@@ -39,7 +40,7 @@ def tally(session, round_index, roster):
         mid, vote = b["member"], b["vote"].strip()
         if mid not in weights:
             sys.exit(f"unknown member {mid!r}")
-        if options and vote not in options:
+        if fixed and vote not in options:
             sys.exit(f"{mid} voted {vote!r}, which is not one of {options}")
         if vote not in options:
             options.append(vote)
