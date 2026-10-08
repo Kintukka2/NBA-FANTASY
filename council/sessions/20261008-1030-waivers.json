@@ -336,6 +336,94 @@
           }
         ]
       }
+    },
+    {
+      "name": "runoff",
+      "options": [
+        "Moussa Diabate",
+        "Paul George"
+      ],
+      "ballots": [
+        {
+          "member": "quill",
+          "vote": "Moussa Diabate",
+          "note": "derived from the member's own ranked ballot"
+        },
+        {
+          "member": "ledger",
+          "vote": "Moussa Diabate",
+          "note": "derived from the member's own ranked ballot"
+        },
+        {
+          "member": "medic",
+          "vote": "Moussa Diabate",
+          "note": "derived from the member's own ranked ballot"
+        },
+        {
+          "member": "archivist",
+          "vote": "Moussa Diabate",
+          "note": "derived from the member's own ranked ballot"
+        },
+        {
+          "member": "coach",
+          "vote": "Paul George",
+          "note": "derived from the member's own ranked ballot"
+        },
+        {
+          "member": "cipher",
+          "vote": "Paul George",
+          "note": "derived from the member's own ranked ballot"
+        },
+        {
+          "member": "scout",
+          "vote": "Moussa Diabate",
+          "note": "derived from the member's own ranked ballot"
+        },
+        {
+          "member": "tempo",
+          "vote": "Moussa Diabate",
+          "note": "derived from the member's own ranked ballot"
+        },
+        {
+          "member": "vex",
+          "vote": "Moussa Diabate",
+          "note": "derived from the member's own ranked ballot"
+        }
+      ],
+      "result": {
+        "winner": "Moussa Diabate",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.647,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Moussa Diabate",
+            "weight": 11,
+            "confidence_weight": 5.5,
+            "voters": [
+              "quill",
+              "ledger",
+              "medic",
+              "archivist",
+              "scout",
+              "tempo",
+              "vex"
+            ]
+          },
+          {
+            "option": "Paul George",
+            "weight": 6,
+            "confidence_weight": 3.0,
+            "voters": [
+              "coach",
+              "cipher"
+            ]
+          }
+        ]
+      }
     }
   ],
   "adds_board": [
@@ -373,9 +461,9 @@
     }
   ],
   "verdict": {
-    "answer": "Jimmy Butler III",
-    "round": "ir_stash",
-    "share": 1.0,
+    "answer": "Moussa Diabate",
+    "round": "runoff",
+    "share": 0.647,
     "majority": true,
     "tiebreak": null
   }
