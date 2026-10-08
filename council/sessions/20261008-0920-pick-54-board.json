@@ -1,0 +1,224 @@
+{
+  "question": "Ranked board for pick 54",
+  "type": "selection",
+  "method": "weighted Borda over ranked top-6 ballots; first-choice tally by council/tally.py",
+  "slot": 6,
+  "asked_at": "2026-10-08T09:20:00Z",
+  "our_roster": [
+    "Cade Cunningham",
+    "Dejounte Murray",
+    "Jamal Murray",
+    "Scottie Barnes",
+    "Kawhi Leonard",
+    "Jalen Duren"
+  ],
+  "rounds": [
+    {
+      "name": "first choice",
+      "ballots": [
+        {
+          "member": "archivist",
+          "vote": "Trey Murphy III",
+          "ranking": [
+            "Trey Murphy III",
+            "Lauri Markkanen",
+            "Michael Porter Jr.",
+            "Donovan Clingan",
+            "Stephen Curry",
+            "Rudy Gobert"
+          ]
+        },
+        {
+          "member": "ledger",
+          "vote": "Lauri Markkanen",
+          "ranking": [
+            "Lauri Markkanen",
+            "Trey Murphy III",
+            "Michael Porter Jr.",
+            "Stephen Curry",
+            "Donovan Clingan",
+            "Alex Sarr"
+          ]
+        },
+        {
+          "member": "medic",
+          "vote": "Donovan Clingan",
+          "ranking": [
+            "Donovan Clingan",
+            "Trey Murphy III",
+            "Rudy Gobert",
+            "Onyeka Okongwu",
+            "Desmond Bane",
+            "Michael Porter Jr."
+          ]
+        },
+        {
+          "member": "quill",
+          "vote": "Trey Murphy III",
+          "ranking": [
+            "Trey Murphy III",
+            "Donovan Clingan",
+            "Lauri Markkanen",
+            "Michael Porter Jr.",
+            "Rudy Gobert",
+            "Alex Sarr"
+          ]
+        },
+        {
+          "member": "scout",
+          "vote": "Trey Murphy III",
+          "ranking": [
+            "Trey Murphy III",
+            "Donovan Clingan",
+            "Lauri Markkanen",
+            "Michael Porter Jr.",
+            "Rudy Gobert",
+            "Alex Sarr"
+          ]
+        },
+        {
+          "member": "cipher",
+          "vote": "Trey Murphy III",
+          "ranking": [
+            "Trey Murphy III",
+            "Lauri Markkanen",
+            "Stephen Curry",
+            "Donovan Clingan",
+            "Michael Porter Jr.",
+            "Keyonte George"
+          ]
+        },
+        {
+          "member": "tempo",
+          "vote": "Donovan Clingan",
+          "ranking": [
+            "Donovan Clingan",
+            "Lauri Markkanen",
+            "Trey Murphy III",
+            "Michael Porter Jr.",
+            "Alex Sarr",
+            "Rudy Gobert"
+          ]
+        },
+        {
+          "member": "coach",
+          "vote": "Trey Murphy III",
+          "ranking": [
+            "Trey Murphy III",
+            "Lauri Markkanen",
+            "Michael Porter Jr.",
+            "Donovan Clingan",
+            "Zion Williamson",
+            "Rudy Gobert"
+          ]
+        },
+        {
+          "member": "vex",
+          "vote": "Trey Murphy III",
+          "ranking": [
+            "Trey Murphy III",
+            "Donovan Clingan",
+            "Michael Porter Jr.",
+            "Lauri Markkanen",
+            "Rudy Gobert",
+            "Onyeka Okongwu"
+          ]
+        }
+      ],
+      "result": {
+        "winner": "Trey Murphy III",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.706,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Trey Murphy III",
+            "weight": 12,
+            "confidence_weight": 6.0,
+            "voters": [
+              "archivist",
+              "quill",
+              "scout",
+              "cipher",
+              "coach",
+              "vex"
+            ]
+          },
+          {
+            "option": "Donovan Clingan",
+            "weight": 3,
+            "confidence_weight": 1.5,
+            "voters": [
+              "medic",
+              "tempo"
+            ]
+          },
+          {
+            "option": "Lauri Markkanen",
+            "weight": 2,
+            "confidence_weight": 1.0,
+            "voters": [
+              "ledger"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "board": [
+    {
+      "player": "Trey Murphy III",
+      "points": 96
+    },
+    {
+      "player": "Lauri Markkanen",
+      "points": 70
+    },
+    {
+      "player": "Donovan Clingan",
+      "points": 68
+    },
+    {
+      "player": "Michael Porter Jr.",
+      "points": 52
+    },
+    {
+      "player": "Rudy Gobert",
+      "points": 23
+    },
+    {
+      "player": "Stephen Curry",
+      "points": 20
+    },
+    {
+      "player": "Onyeka Okongwu",
+      "points": 8
+    },
+    {
+      "player": "Alex Sarr",
+      "points": 7
+    },
+    {
+      "player": "Zion Williamson",
+      "points": 6
+    },
+    {
+      "player": "Desmond Bane",
+      "points": 4
+    },
+    {
+      "player": "Keyonte George",
+      "points": 3
+    }
+  ],
+  "verdict": {
+    "answer": "Trey Murphy III",
+    "round": "first choice",
+    "share": 0.706,
+    "majority": true,
+    "tiebreak": null
+  }
+}
