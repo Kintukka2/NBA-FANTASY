@@ -1,0 +1,382 @@
+{
+  "question": "Waivers before Saturday: who to claim, who to drop, IR stash?",
+  "type": "selection",
+  "asked_at": "2026-10-08T10:30:00Z",
+  "method": "adds: weighted Borda over ranked top-5 (Butler excluded, voted separately for IR); drop and IR: plurality by council/tally.py",
+  "rounds": [
+    {
+      "name": "drop",
+      "options": [
+        "Ryan Rollins",
+        "Dejounte Murray",
+        "Miles Bridges",
+        "Kel'el Ware",
+        "Caleb Wilson"
+      ],
+      "ballots": [
+        {
+          "member": "quill",
+          "vote": "Ryan Rollins"
+        },
+        {
+          "member": "ledger",
+          "vote": "Ryan Rollins"
+        },
+        {
+          "member": "medic",
+          "vote": "Dejounte Murray"
+        },
+        {
+          "member": "archivist",
+          "vote": "Ryan Rollins"
+        },
+        {
+          "member": "coach",
+          "vote": "Ryan Rollins"
+        },
+        {
+          "member": "cipher",
+          "vote": "Ryan Rollins"
+        },
+        {
+          "member": "scout",
+          "vote": "Ryan Rollins"
+        },
+        {
+          "member": "tempo",
+          "vote": "Ryan Rollins"
+        },
+        {
+          "member": "vex",
+          "vote": "Ryan Rollins"
+        }
+      ],
+      "result": {
+        "winner": "Ryan Rollins",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.882,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Ryan Rollins",
+            "weight": 15,
+            "confidence_weight": 7.5,
+            "voters": [
+              "quill",
+              "ledger",
+              "archivist",
+              "coach",
+              "cipher",
+              "scout",
+              "tempo",
+              "vex"
+            ]
+          },
+          {
+            "option": "Dejounte Murray",
+            "weight": 2,
+            "confidence_weight": 1.0,
+            "voters": [
+              "medic"
+            ]
+          },
+          {
+            "option": "Miles Bridges",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Kel'el Ware",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Caleb Wilson",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "ir_stash",
+      "options": [
+        "Jimmy Butler III",
+        "none"
+      ],
+      "ballots": [
+        {
+          "member": "quill",
+          "vote": "Jimmy Butler III"
+        },
+        {
+          "member": "ledger",
+          "vote": "Jimmy Butler III"
+        },
+        {
+          "member": "medic",
+          "vote": "Jimmy Butler III"
+        },
+        {
+          "member": "archivist",
+          "vote": "Jimmy Butler III"
+        },
+        {
+          "member": "coach",
+          "vote": "Jimmy Butler III"
+        },
+        {
+          "member": "cipher",
+          "vote": "Jimmy Butler III"
+        },
+        {
+          "member": "scout",
+          "vote": "Jimmy Butler III"
+        },
+        {
+          "member": "tempo",
+          "vote": "Jimmy Butler III"
+        },
+        {
+          "member": "vex",
+          "vote": "Jimmy Butler III"
+        }
+      ],
+      "result": {
+        "winner": "Jimmy Butler III",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 1.0,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Jimmy Butler III",
+            "weight": 17,
+            "confidence_weight": 8.5,
+            "voters": [
+              "quill",
+              "ledger",
+              "medic",
+              "archivist",
+              "coach",
+              "cipher",
+              "scout",
+              "tempo",
+              "vex"
+            ]
+          },
+          {
+            "option": "none",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "top add",
+      "ballots": [
+        {
+          "member": "quill",
+          "vote": "Moussa Diabate",
+          "ranking": [
+            "Moussa Diabate",
+            "Jimmy Butler III",
+            "Andrew Wiggins",
+            "Jabari Smith Jr.",
+            "Paul George"
+          ]
+        },
+        {
+          "member": "ledger",
+          "vote": "Moussa Diabate",
+          "ranking": [
+            "Moussa Diabate",
+            "Jimmy Butler III",
+            "Andrew Wiggins",
+            "Paul George",
+            "Jabari Smith Jr."
+          ]
+        },
+        {
+          "member": "medic",
+          "vote": "Jabari Smith Jr.",
+          "ranking": [
+            "Jabari Smith Jr.",
+            "Andrew Wiggins",
+            "Moussa Diabate",
+            "Neemias Queta",
+            "Jrue Holiday"
+          ]
+        },
+        {
+          "member": "archivist",
+          "vote": "Andrew Wiggins",
+          "ranking": [
+            "Jimmy Butler III",
+            "Andrew Wiggins",
+            "Jabari Smith Jr.",
+            "Neemias Queta",
+            "Moussa Diabate"
+          ]
+        },
+        {
+          "member": "coach",
+          "vote": "Paul George",
+          "ranking": [
+            "Paul George",
+            "Jimmy Butler III",
+            "Andrew Wiggins",
+            "Jabari Smith Jr.",
+            "Moussa Diabate"
+          ]
+        },
+        {
+          "member": "cipher",
+          "vote": "Paul George",
+          "ranking": [
+            "Paul George",
+            "Andrew Wiggins",
+            "Moussa Diabate",
+            "Jabari Smith Jr.",
+            "Kevin Porter Jr."
+          ]
+        },
+        {
+          "member": "scout",
+          "vote": "Moussa Diabate",
+          "ranking": [
+            "Moussa Diabate",
+            "Jabari Smith Jr.",
+            "Andrew Wiggins",
+            "Neemias Queta",
+            "Jalen Suggs"
+          ]
+        },
+        {
+          "member": "tempo",
+          "vote": "Andrew Wiggins",
+          "ranking": [
+            "Andrew Wiggins",
+            "Jabari Smith Jr.",
+            "Moussa Diabate",
+            "Paul George",
+            "Jalen Suggs"
+          ]
+        },
+        {
+          "member": "vex",
+          "vote": "Moussa Diabate",
+          "ranking": [
+            "Moussa Diabate",
+            "Jimmy Butler III",
+            "Jabari Smith Jr.",
+            "Neemias Queta",
+            "Kevin Porter Jr."
+          ]
+        }
+      ],
+      "result": {
+        "winner": "Moussa Diabate",
+        "weight_cast": 17,
+        "majority": false,
+        "share": 0.412,
+        "tiebreak": null,
+        "needs_runoff": true,
+        "runoff_options": [
+          "Moussa Diabate",
+          "Paul George"
+        ],
+        "standings": [
+          {
+            "option": "Moussa Diabate",
+            "weight": 7,
+            "confidence_weight": 3.5,
+            "voters": [
+              "quill",
+              "ledger",
+              "scout",
+              "vex"
+            ]
+          },
+          {
+            "option": "Paul George",
+            "weight": 6,
+            "confidence_weight": 3.0,
+            "voters": [
+              "coach",
+              "cipher"
+            ]
+          },
+          {
+            "option": "Jabari Smith Jr.",
+            "weight": 2,
+            "confidence_weight": 1.0,
+            "voters": [
+              "medic"
+            ]
+          },
+          {
+            "option": "Andrew Wiggins",
+            "weight": 2,
+            "confidence_weight": 1.0,
+            "voters": [
+              "archivist",
+              "tempo"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "adds_board": [
+    {
+      "player": "Moussa Diabate",
+      "points": 57
+    },
+    {
+      "player": "Andrew Wiggins",
+      "points": 53
+    },
+    {
+      "player": "Jabari Smith Jr.",
+      "points": 47
+    },
+    {
+      "player": "Paul George",
+      "points": 37
+    },
+    {
+      "player": "Neemias Queta",
+      "points": 14
+    },
+    {
+      "player": "Kevin Porter Jr.",
+      "points": 5
+    },
+    {
+      "player": "Jalen Suggs",
+      "points": 3
+    },
+    {
+      "player": "Jrue Holiday",
+      "points": 2
+    }
+  ],
+  "verdict": {
+    "answer": "Jimmy Butler III",
+    "round": "ir_stash",
+    "share": 1.0,
+    "majority": true,
+    "tiebreak": null
+  }
+}
