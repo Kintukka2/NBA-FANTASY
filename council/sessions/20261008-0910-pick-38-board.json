@@ -1,0 +1,194 @@
+{
+  "question": "Ranked board for pick 38",
+  "type": "selection",
+  "method": "weighted Borda over ranked top-5 ballots; first-choice tally by council/tally.py",
+  "slot": 6,
+  "asked_at": "2026-10-08T09:10:00Z",
+  "our_roster": [
+    "Cade Cunningham",
+    "Scottie Barnes",
+    "Jalen Duren",
+    "Jamal Murray"
+  ],
+  "rounds": [
+    {
+      "name": "first choice",
+      "ballots": [
+        {
+          "member": "ledger",
+          "vote": "Kawhi Leonard",
+          "ranking": [
+            "Kawhi Leonard",
+            "LeBron James",
+            "Lauri Markkanen",
+            "Anthony Davis",
+            "Michael Porter Jr."
+          ]
+        },
+        {
+          "member": "archivist",
+          "vote": "Kawhi Leonard",
+          "ranking": [
+            "Kawhi Leonard",
+            "LeBron James",
+            "Lauri Markkanen",
+            "Michael Porter Jr.",
+            "Pascal Siakam"
+          ]
+        },
+        {
+          "member": "scout",
+          "vote": "Kawhi Leonard",
+          "ranking": [
+            "Kawhi Leonard",
+            "LeBron James",
+            "Pascal Siakam",
+            "Lauri Markkanen",
+            "Julius Randle"
+          ]
+        },
+        {
+          "member": "quill",
+          "vote": "Kawhi Leonard",
+          "ranking": [
+            "Kawhi Leonard",
+            "LeBron James",
+            "Lauri Markkanen",
+            "Michael Porter Jr.",
+            "Pascal Siakam"
+          ]
+        },
+        {
+          "member": "vex",
+          "vote": "Kawhi Leonard",
+          "ranking": [
+            "Kawhi Leonard",
+            "LeBron James",
+            "Lauri Markkanen",
+            "Pascal Siakam",
+            "Julius Randle"
+          ]
+        },
+        {
+          "member": "coach",
+          "vote": "Kawhi Leonard",
+          "ranking": [
+            "Kawhi Leonard",
+            "LeBron James",
+            "Lauri Markkanen",
+            "Michael Porter Jr.",
+            "Pascal Siakam"
+          ]
+        },
+        {
+          "member": "cipher",
+          "vote": "Kawhi Leonard",
+          "ranking": [
+            "Kawhi Leonard",
+            "LeBron James",
+            "Lauri Markkanen",
+            "Pascal Siakam",
+            "Michael Porter Jr."
+          ]
+        },
+        {
+          "member": "tempo",
+          "vote": "Kawhi Leonard",
+          "ranking": [
+            "Kawhi Leonard",
+            "LeBron James",
+            "Lauri Markkanen",
+            "Michael Porter Jr.",
+            "Pascal Siakam"
+          ]
+        },
+        {
+          "member": "medic",
+          "vote": "Julius Randle",
+          "ranking": [
+            "Julius Randle",
+            "Kawhi Leonard",
+            "Pascal Siakam",
+            "LeBron James",
+            "Derrick White"
+          ]
+        }
+      ],
+      "result": {
+        "winner": "Kawhi Leonard",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.882,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Kawhi Leonard",
+            "weight": 15,
+            "confidence_weight": 7.5,
+            "voters": [
+              "ledger",
+              "archivist",
+              "scout",
+              "quill",
+              "vex",
+              "coach",
+              "cipher",
+              "tempo"
+            ]
+          },
+          {
+            "option": "Julius Randle",
+            "weight": 2,
+            "confidence_weight": 1.0,
+            "voters": [
+              "medic"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "board": [
+    {
+      "player": "Kawhi Leonard",
+      "points": 83
+    },
+    {
+      "player": "LeBron James",
+      "points": 64
+    },
+    {
+      "player": "Lauri Markkanen",
+      "points": 43
+    },
+    {
+      "player": "Pascal Siakam",
+      "points": 28
+    },
+    {
+      "player": "Michael Porter Jr.",
+      "points": 17
+    },
+    {
+      "player": "Julius Randle",
+      "points": 14
+    },
+    {
+      "player": "Anthony Davis",
+      "points": 4
+    },
+    {
+      "player": "Derrick White",
+      "points": 2
+    }
+  ],
+  "verdict": {
+    "answer": "Kawhi Leonard",
+    "round": "first choice",
+    "share": 0.882,
+    "majority": true,
+    "tiebreak": null
+  }
+}
