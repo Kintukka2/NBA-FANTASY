@@ -19,34 +19,23 @@
 | Trading during draft | Disabled |
 | Players available | All 1,095 — nothing is drafted or rostered yet |
 
-**Pick order (round 1):**
-
-1. Dr White Slong `BWC`
-2. Team Nic Kerr `NIc`
-3. Lauri Birds `TF`
-4. Melbourne poopoo `MEL`
-5. Cream Abdul-Yammar `YAM`
-6. Matt Wright's Foxies `FOX`
-7. Cheeky Blinders `CHKY`
-8. **Come-in Cider `CCDR` ← our team**
+**Pick order (round 1).** Corrected on 8 Oct 2026: **Come-in Cider `CCDR` picks 6th of 8**, not 8th as the config pull first showed. The other seven teams' slots have not been re-confirmed, so the earlier order (BWC, NIc, TF, MEL, YAM, FOX, CHKY, CCDR) no longer holds and is not repeated here.
 
 Snake reverses each round, so slot *n* picks at `n`, `17−n`, `16+n`, `33−n`, and so on.
 
-### Our picks — slot 8 (the turn)
+### Our picks — slot 6
 
-Last pick of odd rounds, first pick of even rounds, so we pick **back-to-back every time**:
+| Round | Pick | Round | Pick |
+|---|---|---|---|
+| 1 | **6** | 2 | **11** |
+| 3 | **22** | 4 | **27** |
+| 5 | **38** | 6 | **43** |
+| 7 | **54** | 8 | **59** |
+| 9 | **70** | 10 | **75** |
+| 11 | **86** | 12 | **91** |
+| 13 | **102** | | |
 
-| Round | Overall picks |
-|---|---|
-| 1 → 2 | **8, 9** |
-| 3 → 4 | **24, 25** |
-| 5 → 6 | **40, 41** |
-| 7 → 8 | **56, 57** |
-| 9 → 10 | **72, 73** |
-| 11 → 12 | **88, 89** |
-| 13 | **104** |
-
-**What the turn means for us.** We never get a player at the top of a tier, but we always get two bites at once. The right way to use that is to treat each turn as a *pair* decision rather than two separate picks — take two players who complement each other, and accept that anyone we're deciding between at pick 8 will be gone by pick 24. Practically: at every turn, identify the two best players available under *our* scoring and take both, rather than reaching for positional need. The cost of the turn is that we wait 15 picks between turns; the benefit is we can build positional pairs (e.g. two bigs, or a steals specialist plus an efficient scorer) without a rival splitting them.
+**What slot 6 means for us.** The gaps alternate: **4 picks** between our odd-round and even-round pick (6 → 11, 22 → 27, …), then **10 picks** before the next pair (11 → 22, 27 → 38, …). So each pair is two separate decisions: at the first pick of a pair, take the best player under *our* scoring who will not survive four more picks. At the second, take the best player who will not survive ten. Pick 6 lands inside the elite tier, so we take one of its last members instead of the leftovers at the turn.
 
 **League members (display names):** ESPNFAN7429974536 · Richo4 · P-diddy707 · Christmas Jones · tomfarrar · ESPNFAN6645801983 · kyle.booth2 · BurtonIsMyDaddy
 

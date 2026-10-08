@@ -17,7 +17,7 @@ Decide the type and write the options. Do not research the answer yourself.
 |---|---|---|
 | `yes_no` | "Should we…", "Is X worth…" | exactly `["Yes", "No"]` |
 | `selection` | the question names the choices ("A or B", "which of A, B, C") | the named choices, spelled as the question spells them |
-| `suggestion` | open: "who should we take at 24?", "what's the plan for the turn?" | none yet — members propose in the opening round |
+| `suggestion` | open: "who should we take at 24?", "what do we do at 11?" | none yet — members propose in the opening round |
 
 Read `council/taken.txt` if it exists: players already off the board, one
 per line. Include it in every member prompt. If the user names picks that

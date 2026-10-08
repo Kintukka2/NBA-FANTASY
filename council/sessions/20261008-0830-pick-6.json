@@ -1,0 +1,10 @@
+{
+  "question": "Who should we take with pick 6?",
+  "type": "suggestion",
+  "options": [],
+  "asked_at": "2026-10-08T08:30:00Z",
+  "slot": 6,
+  "our_picks": [6, 11, 22, 27, 38, 43, 54, 59, 70, 75, 86, 91, 102],
+  "taken": [],
+  "rounds": []
+}

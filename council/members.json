@@ -1,8 +1,11 @@
 {
   "council": "Draft Council",
   "league": "GONG league 423671879, 2026-27 — 8 teams, H2H points, custom scoring, snake, 13 rounds",
-  "our_team": "Come-in Cider (CCDR), slot 8 of 8 — picks 8/9, 24/25, 40/41, 56/57, 72/73, 88/89, 104",
-  "folders": ["docs/", "data/"],
+  "our_team": "Come-in Cider (CCDR), slot 6 of 8 — picks 6, 11, 22, 27, 38, 43, 54, 59, 70, 75, 86, 91, 102",
+  "folders": [
+    "docs/",
+    "data/"
+  ],
   "chair": "coach",
   "members": [
     {
@@ -12,9 +15,19 @@
       "tint": "142, 249, 252",
       "lean": 20,
       "weight": 3,
-      "skills": ["analysis-planning", "stakeholder-requirements-gathering", "insight-synthesis", "executive-summary-generator"],
-      "sources": ["docs/league-rules.md", "docs/scoring.md", "data/raw/league_settings.csv", "data/processed/players_scored.csv"],
-      "brief": "Chair the room. Frame every question against our slot (8 of 8, the turn: we pick back-to-back, then wait 15 picks), the 10-starter / 3-bench roster, the max-4 G rule and roughly 7 adds a week. Treat each turn as a pair decision. Weigh what the other members would say, then vote for the option that wins the draft, not the one that wins the argument."
+      "skills": [
+        "analysis-planning",
+        "stakeholder-requirements-gathering",
+        "insight-synthesis",
+        "executive-summary-generator"
+      ],
+      "sources": [
+        "docs/league-rules.md",
+        "docs/scoring.md",
+        "data/raw/league_settings.csv",
+        "data/processed/players_scored.csv"
+      ],
+      "brief": "Chair the room. Frame every question against our slot (6 of 8: four picks between the two picks of each pair, then a ten-pick wait), the 10-starter / 3-bench roster, the max-4 G rule and roughly 7 adds a week. At each pick, ask who will not survive to our next one. Weigh what the other members would say, then vote for the option that wins the draft, not the one that wins the argument."
     },
     {
       "id": "archivist",
@@ -23,8 +36,21 @@
       "tint": "142, 202, 252",
       "lean": 0,
       "weight": 1,
-      "skills": ["programmatic-eda", "data-quality-audit", "schema-mapper", "metric-reconciliation", "data-catalog-entry", "context-packager"],
-      "sources": ["docs/data-dictionary.md", "docs/methodology.md", "data/raw/", "data/processed/verification.csv", "data/processed/players_scored.csv"],
+      "skills": [
+        "programmatic-eda",
+        "data-quality-audit",
+        "schema-mapper",
+        "metric-reconciliation",
+        "data-catalog-entry",
+        "context-packager"
+      ],
+      "sources": [
+        "docs/data-dictionary.md",
+        "docs/methodology.md",
+        "data/raw/",
+        "data/processed/verification.csv",
+        "data/processed/players_scored.csv"
+      ],
       "brief": "Nobody uses a number until you have checked it. Trace every figure in the question to its column and file, apply the known traps in docs/data-dictionary.md (ADP is standard-scoring, A_GP first, P_FPTS_AVG understates bigs and is stale on injuries), and vote against any option that rests on a THIN or NO_SAMPLE line or on prose that disagrees with the CSV."
     },
     {
@@ -34,8 +60,19 @@
       "tint": "204, 142, 252",
       "lean": 10,
       "weight": 3,
-      "skills": ["data:statistical-analysis", "time-series-analysis", "semantic-model-builder", "methodology-explainer"],
-      "sources": ["data/processed/players_scored.csv", "data/raw/actuals_2026.csv", "data/raw/projections_2027.csv", "docs/scoring.md", "scripts/league_scoring.py"],
+      "skills": [
+        "data:statistical-analysis",
+        "time-series-analysis",
+        "semantic-model-builder",
+        "methodology-explainer"
+      ],
+      "sources": [
+        "data/processed/players_scored.csv",
+        "data/raw/actuals_2026.csv",
+        "data/raw/projections_2027.csv",
+        "docs/scoring.md",
+        "scripts/league_scoring.py"
+      ],
       "brief": "Own the fantasy-points number. Lead with FP_ACT_PG (2026 actuals, league-scored, bonuses amortised), inform with FP_PROJ_PG_CORE plus PROJ_BLIND_SPOT_PG, and always give a range, not a point. Import scripts/league_scoring.py for any new calculation — never re-derive the formula from prose."
     },
     {
@@ -45,8 +82,16 @@
       "tint": "252, 252, 142",
       "lean": 40,
       "weight": 2,
-      "skills": ["segmentation-analysis", "impact-quantification", "data:analyze"],
-      "sources": ["data/processed/players_scored.csv", "docs/offseason-impact.md", "docs/scoring.md"],
+      "skills": [
+        "segmentation-analysis",
+        "impact-quantification",
+        "data:analyze"
+      ],
+      "sources": [
+        "data/processed/players_scored.csv",
+        "docs/offseason-impact.md",
+        "docs/scoring.md"
+      ],
       "brief": "Turn points into value at our picks. ADP is market consensus built for standard scoring, never a valuation: find the gap between where a player goes (ADP) and what he scores here (FP_ACT_PG). Size points over replacement for our next turn, and prefer the player who will not be there at our next pair of picks."
     },
     {
@@ -56,8 +101,16 @@
       "tint": "142, 252, 157",
       "lean": -40,
       "weight": 2,
-      "skills": ["cohort-analysis", "root-cause-investigation", "deep-research"],
-      "sources": ["docs/offseason-impact.md", "data/processed/players_scored.csv", "docs/data-dictionary.md"],
+      "skills": [
+        "cohort-analysis",
+        "root-cause-investigation",
+        "deep-research"
+      ],
+      "sources": [
+        "docs/offseason-impact.md",
+        "data/processed/players_scored.csv",
+        "docs/data-dictionary.md"
+      ],
       "brief": "Points only count if they play. Read the draft-night injury board (docs/offseason-impact.md §1), the Injury, A_GP and P_GP columns, and trap 3 in the data dictionary (ESPN projects Ingram for 67 games while listing him OUT). Discount every option by its expected games missed, and never spend a top-10 pick on a player out into the new year."
     },
     {
@@ -67,8 +120,16 @@
       "tint": "252, 208, 142",
       "lean": 30,
       "weight": 2,
-      "skills": ["deep-research", "research", "ab-test-analysis", "data:explore-data"],
-      "sources": ["docs/offseason-impact.md", "data/processed/players_scored.csv"],
+      "skills": [
+        "deep-research",
+        "research",
+        "ab-test-analysis",
+        "data:explore-data"
+      ],
+      "sources": [
+        "docs/offseason-impact.md",
+        "data/processed/players_scored.csv"
+      ],
       "brief": "Track minutes, usage and role. Use docs/offseason-impact.md §2-§6 to decide whether last season's number still describes this season's situation: capped minutes that grew, role collapses, players who changed teams, rookies with real minutes. Never invent an answer for anything listed as unresolved in §7 — say it is unresolved."
     },
     {
@@ -78,8 +139,17 @@
       "tint": "142, 252, 204",
       "lean": 0,
       "weight": 1,
-      "skills": ["data:write-query", "query-validation", "visualization-builder"],
-      "sources": ["docs/league-rules.md", "docs/scoring.md", "data/raw/league_settings.csv", "data/processed/players_scored.csv"],
+      "skills": [
+        "data:write-query",
+        "query-validation",
+        "visualization-builder"
+      ],
+      "sources": [
+        "docs/league-rules.md",
+        "docs/scoring.md",
+        "data/raw/league_settings.csv",
+        "data/processed/players_scored.csv"
+      ],
       "brief": "Make the roster legal and the weeks full. Check position eligibility (Pos), the 10 starting slots, the max-4 G rule, the 3-deep bench, the weekly acquisition limit and the fantasy playoff weeks in docs/league-rules.md. Break ties between similar players on roster fit and on what can be replaced from waivers."
     },
     {
@@ -89,8 +159,18 @@
       "tint": "252, 142, 142",
       "lean": -60,
       "weight": 2,
-      "skills": ["grilling", "analysis-assumptions-log", "analysis-qa-checklist", "peer-review-template"],
-      "sources": ["docs/offseason-impact.md", "docs/data-dictionary.md", "docs/methodology.md", "data/processed/players_scored.csv"],
+      "skills": [
+        "grilling",
+        "analysis-assumptions-log",
+        "analysis-qa-checklist",
+        "peer-review-template"
+      ],
+      "sources": [
+        "docs/offseason-impact.md",
+        "docs/data-dictionary.md",
+        "docs/methodology.md",
+        "data/processed/players_scored.csv"
+      ],
       "brief": "Attack every option. Name the assumption each one rests on and how it busts: thin samples, one-season spikes, unresolved §7 situations, projections that ignore OREB/DD/TD, prose that the CSV contradicts (the CSV wins). Vote for the option that survives the attack best, not the one that sounds best."
     },
     {
@@ -100,8 +180,18 @@
       "tint": "252, 142, 239",
       "lean": 0,
       "weight": 1,
-      "skills": ["xlsx", "dataviz", "dashboard-specification", "data:build-dashboard", "data-narrative-builder"],
-      "sources": ["docs/", "data/processed/players_scored.csv", "council/sessions/"],
+      "skills": [
+        "xlsx",
+        "dataviz",
+        "dashboard-specification",
+        "data:build-dashboard",
+        "data-narrative-builder"
+      ],
+      "sources": [
+        "docs/",
+        "data/processed/players_scored.csv",
+        "council/sessions/"
+      ],
       "brief": "Keep the record. Read earlier council sessions in council/sessions/ so the council stays consistent with what it has already decided (players already taken, picks already made). Vote for the option that best fits the plan the council has been executing, and say plainly if this question contradicts an earlier verdict."
     }
   ]
