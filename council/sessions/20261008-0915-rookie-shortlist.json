@@ -1,0 +1,272 @@
+{
+  "question": "Rookie shortlist: which rookies, and from which pick?",
+  "type": "selection",
+  "method": "weighted Borda over ranked top-6 ballots; first-choice and timing tallies by council/tally.py",
+  "slot": 6,
+  "asked_at": "2026-10-08T09:15:00Z",
+  "rounds": [
+    {
+      "name": "top rookie",
+      "ballots": [
+        {
+          "member": "archivist",
+          "vote": "Cameron Boozer",
+          "ranking": [
+            "Cameron Boozer",
+            "Caleb Wilson",
+            "AJ Dybantsa",
+            "Darius Acuff Jr.",
+            "Darryn Peterson",
+            "Keaton Wagler"
+          ]
+        },
+        {
+          "member": "quill",
+          "vote": "Caleb Wilson",
+          "ranking": [
+            "Caleb Wilson",
+            "Cameron Boozer",
+            "AJ Dybantsa",
+            "Darius Acuff Jr.",
+            "Darryn Peterson",
+            "Keaton Wagler"
+          ]
+        },
+        {
+          "member": "scout",
+          "vote": "Cameron Boozer",
+          "ranking": [
+            "Cameron Boozer",
+            "Caleb Wilson",
+            "Darius Acuff Jr.",
+            "AJ Dybantsa",
+            "Darryn Peterson",
+            "Keaton Wagler"
+          ]
+        },
+        {
+          "member": "ledger",
+          "vote": "Cameron Boozer",
+          "ranking": [
+            "Cameron Boozer",
+            "Caleb Wilson",
+            "AJ Dybantsa",
+            "Darius Acuff Jr.",
+            "Darryn Peterson",
+            "Keaton Wagler"
+          ]
+        },
+        {
+          "member": "vex",
+          "vote": "Cameron Boozer",
+          "ranking": [
+            "Cameron Boozer",
+            "Caleb Wilson",
+            "AJ Dybantsa",
+            "Darius Acuff Jr.",
+            "Darryn Peterson",
+            "Keaton Wagler"
+          ]
+        },
+        {
+          "member": "tempo",
+          "vote": "Cameron Boozer",
+          "ranking": [
+            "Cameron Boozer",
+            "Caleb Wilson",
+            "AJ Dybantsa",
+            "Yaxel Lendeborg",
+            "Darius Acuff Jr.",
+            "Darryn Peterson"
+          ]
+        },
+        {
+          "member": "cipher",
+          "vote": "Cameron Boozer",
+          "ranking": [
+            "Cameron Boozer",
+            "Caleb Wilson",
+            "AJ Dybantsa",
+            "Darius Acuff Jr.",
+            "Darryn Peterson",
+            "Keaton Wagler"
+          ]
+        },
+        {
+          "member": "medic",
+          "vote": "Caleb Wilson",
+          "ranking": [
+            "Caleb Wilson",
+            "Cameron Boozer",
+            "AJ Dybantsa",
+            "Darius Acuff Jr.",
+            "Darryn Peterson",
+            "Keaton Wagler"
+          ]
+        },
+        {
+          "member": "coach",
+          "vote": "Cameron Boozer",
+          "ranking": [
+            "Cameron Boozer",
+            "Caleb Wilson",
+            "AJ Dybantsa",
+            "Darius Acuff Jr.",
+            "Darryn Peterson",
+            "Keaton Wagler"
+          ]
+        }
+      ],
+      "result": {
+        "winner": "Cameron Boozer",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.824,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Cameron Boozer",
+            "weight": 14,
+            "confidence_weight": 7.0,
+            "voters": [
+              "archivist",
+              "scout",
+              "ledger",
+              "vex",
+              "tempo",
+              "cipher",
+              "coach"
+            ]
+          },
+          {
+            "option": "Caleb Wilson",
+            "weight": 3,
+            "confidence_weight": 1.5,
+            "voters": [
+              "quill",
+              "medic"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "earliest pick",
+      "options": [
+        "75",
+        "86"
+      ],
+      "ballots": [
+        {
+          "member": "archivist",
+          "vote": "86"
+        },
+        {
+          "member": "quill",
+          "vote": "86"
+        },
+        {
+          "member": "scout",
+          "vote": "75"
+        },
+        {
+          "member": "ledger",
+          "vote": "75"
+        },
+        {
+          "member": "vex",
+          "vote": "86"
+        },
+        {
+          "member": "tempo",
+          "vote": "86"
+        },
+        {
+          "member": "cipher",
+          "vote": "75"
+        },
+        {
+          "member": "medic",
+          "vote": "75"
+        },
+        {
+          "member": "coach",
+          "vote": "86"
+        }
+      ],
+      "result": {
+        "winner": "75",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.529,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "75",
+            "weight": 9,
+            "confidence_weight": 4.5,
+            "voters": [
+              "scout",
+              "ledger",
+              "cipher",
+              "medic"
+            ]
+          },
+          {
+            "option": "86",
+            "weight": 8,
+            "confidence_weight": 4.0,
+            "voters": [
+              "archivist",
+              "quill",
+              "vex",
+              "tempo",
+              "coach"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "shortlist": [
+    {
+      "player": "Cameron Boozer",
+      "points": 99
+    },
+    {
+      "player": "Caleb Wilson",
+      "points": 88
+    },
+    {
+      "player": "AJ Dybantsa",
+      "points": 66
+    },
+    {
+      "player": "Darius Acuff Jr.",
+      "points": 52
+    },
+    {
+      "player": "Darryn Peterson",
+      "points": 33
+    },
+    {
+      "player": "Keaton Wagler",
+      "points": 16
+    },
+    {
+      "player": "Yaxel Lendeborg",
+      "points": 3
+    }
+  ],
+  "verdict": {
+    "answer": "75",
+    "round": "earliest pick",
+    "share": 0.529,
+    "majority": true,
+    "tiebreak": null
+  }
+}
