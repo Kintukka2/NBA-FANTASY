@@ -1,0 +1,51 @@
+GONG LEAGUE — League Configuration & Scoring,,
+LEAGUE,,
+League ID,423671879,
+League name,GONG League,
+Division,Snakepit Championship 26,
+Teams,8,
+Scoring type,Head-to-Head Points,
+Matchup periods,20,
+Season,2026-27 (ESPN seasonId 2027),
+Draft status,"Not yet drafted — all 1,095 players show as FREEAGENT",
+Data pulled,"ESPN Fantasy API, kona_player_info view, 8 Oct 2026",
+SCORING,,
+Category,Points,Note
+Points (PTS),1,
+Field goals made (FGM),2,a made FG is worth 3 total: 1 PTS + 2 FGM
+Field goals attempted (FGA),-1,efficiency penalty — volume shooting is costly
+Free throws made (FTM),1,
+Free throws attempted (FTA),-1,"net 0 on a make, -1 on a miss"
+3-pointers made (3PM),1,bonus on top of PTS and FGM
+Rebounds (REB),1,
+Offensive rebounds (OREB),1,stacks with REB — an OREB is worth 2
+Assists (AST),2,
+Steals (STL),4,4x — heavily inflated vs. standard leagues
+Blocks (BLK),4,4x — heavily inflated vs. standard leagues
+Turnovers (TO),-2,
+Double-doubles (DD),3,
+Triple-doubles (TD),6,stacks with the DD bonus
+Quadruple-doubles (QD),40,effectively never occurs
+SCORING IMPLICATIONS,,
+• Efficiency is king: FGA -1 and FTA -1 mean a missed shot costs more here than in a standard points league.,,
+• A 45% shooter on high volume can bleed points; a 60% big on the same volume compounds.,,
+• STL and BLK at 4x make defensive specialists materially more valuable than their ESPN ranking implies.,,
+"• AST at 2x rewards high-usage playmakers, but TO at -2 claws a chunk of it back.",,
+"• An offensive rebound counts twice (REB + OREB), so rebounding bigs are over-rewarded.",,
+"• ESPN does NOT project OREB, DREB, PF, DD or TD — those projection columns are intentionally blank.",,
+COLUMN LEGEND,,
+A_ prefix,2026 season ACTUAL — real production from the 2025-26 season (navy headers),
+P_ prefix,2027 PROJECTIONS — ESPN's forecast for 2026-27 (brown headers),
+Counting stats,"PER-GAME averages (PTS, REB, AST, STL, BLK, TO, PF, FGM/FGA, FTM/FTA, 3PM/3PA, MIN)",
+A_DD / A_TD,"SEASON TOTALS, not averages",
+A_FPTS / P_FPTS,ESPN's fantasy-point TOTAL for the full season under this league's scoring,
+A_FPTS_AVG / P_FPTS_AVG,fantasy points PER GAME — the main comparison column,
+PctOwn,% of ESPN leagues in which the player is rostered,
+ADP,average draft position (140 = undrafted),
+Blank cells,"ESPN has no value — player did not play in 2026, or has no 2027 projection",
+TAB GUIDE,,
+MASTER,"all 1095 players, 2026 actual and 2027 projected side by side, ordered by %owned",
+2026 Actual,"558 players with real 2026 production, sorted by total fantasy points",
+2027 Projections,"348 players with an ESPN 2027 projection, sorted by projected total",
+League Settings,this tab,
+"PHASE 1 SCOPE: raw data only. No composite score, weighting or ranking has been applied — that model gets built in Phase 2 with a deliberate bias toward 2026 actuals over 2027 projections.",,
