@@ -1,0 +1,276 @@
+{
+  "question": "Who should we take with our first turn, picks 8 and 9?",
+  "type": "suggestion",
+  "options": [],
+  "asked_at": "2026-10-08T08:19:00Z",
+  "taken": [],
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.65,
+          "rationale": "With the top-7 ADP gone, Johnson (53.08 FP/g, 72 GP) and Maxey (52.83, 70 GP) are the two best remaining players under our scoring, both on full samples. Waiting on a guard costs ~5.0 FP/g (Murray 47.8 at ADP 32.6) vs ~4.2 for a centre (Duren 44.3 / Mobley 44.5), so Maxey edges Sengun at 9.",
+          "evidence": [
+            "players_scored.csv: Jalen Johnson FP_ACT_PG 53.08, A_GP 72, ADP 8.7",
+            "players_scored.csv: Tyrese Maxey FP_ACT_PG 52.83, A_GP 70, ADP 12.9, FP_PROJ_PG_CORE 45.15",
+            "players_scored.csv: Sengun 48.61 ADP 24.2; Murray 47.8 ADP 32.6; Kawhi 50.01 ADP 30.5"
+          ],
+          "concerns": "Maxey's 2027 core projection (45.15) is 7.7 below his actual after PHI added Embiid, LeBron and Jaylen Brown."
+        },
+        {
+          "member": "archivist",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.68,
+          "rationale": "Johnson and Maxey are the two highest 2026 league-scored lines left among 40+ GP players, both cross-checked ok in verification.csv. Tatum at ADP 9.2 rests on a THIN 16-game sample and is rejected.",
+          "evidence": [
+            "verification.csv: Maxey 52.83 vs ESPN 52.8 ok; Johnson 53.075 vs 53.08 ok",
+            "players_scored.csv: Jayson Tatum A_GP 16 SAMPLE_FLAG THIN"
+          ],
+          "concerns": "ESPN projects Maxey at 45.15 FP/g with PHI usage diluted and a DAY_TO_DAY tag."
+        },
+        {
+          "member": "cipher",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.62,
+          "rationale": "Johnson's range is 50.0-54.5 (proj core + blind spot); Maxey's 45.2-52.8, midpoint ~49, still ahead of Mitchell's 46.5-47.9. Sengun (48.61, ADP 24.2) is the 24/25 target, not an 8/9 pick.",
+          "evidence": [
+            "players_scored.csv: Johnson FP_PROJ_PG_CORE 50.01 + PROJ_BLIND_SPOT_PG 4.53",
+            "players_scored.csv: Mitchell FP_ACT_PG 47.87, FP_PROJ_PG_CORE 46.49"
+          ],
+          "concerns": "Maxey's real floor may sit below Mitchell's if the PHI usage drop is real."
+        },
+        {
+          "member": "ledger",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.7,
+          "rationale": "Neither Johnson (ADP 8.7) nor Maxey (ADP 12.9) lasts the 14 picks to our next turn. The 24/25 pool (Kawhi 50.01, Murray 47.8) puts the next-turn baseline near 48-50, so each is worth +3 to +5 FP/g over waiting; Mitchell is worth about nothing over waiting.",
+          "evidence": [
+            "players_scored.csv: Kawhi Leonard 50.01 ADP 30.5; Jamal Murray 47.8 ADP 32.6",
+            "players_scored.csv: Donovan Mitchell 47.87 ADP 11.3"
+          ],
+          "concerns": "Maxey's usage could fall to near our next-turn baseline."
+        },
+        {
+          "member": "medic",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.65,
+          "rationale": "Johnson (72 GP, ACTIVE) and Maxey (70 GP, 38.0 MIN) are the two best combinations of games played and per-game scoring left, and neither is on the offseason-impact §1 injury board. Tatum's 16 games are below the 20-game evidence bar.",
+          "evidence": [
+            "players_scored.csv: Maxey Injury DAY_TO_DAY, A_GP 70",
+            "docs/offseason-impact.md §1: neither Johnson nor Maxey on any injury tier"
+          ],
+          "concerns": "Maxey's DAY_TO_DAY flag has no explanation in docs/; verify in the room and switch to Sengun if it is real."
+        },
+        {
+          "member": "scout",
+          "vote": "Jalen Johnson + Alperen Sengun",
+          "confidence": 0.7,
+          "rationale": "Johnson's role in Atlanta is unchanged. Sengun is a locked Houston starter (48.61 FP/g, 72 GP) with a +10 rank gap and ADP 24.2, so he likely won't last to 24. Maxey's 52.83 came on 38.0 min before PHI added LeBron and Brown; his projection falls to 45.15 vs Sengun's 47.75 with the blind spot added back.",
+          "evidence": [
+            "players_scored.csv: Sengun FP_PROJ_PG_CORE 43.01 + blind spot 4.74, RANK_GAP +10",
+            "docs/offseason-impact.md §6 Southwest: Houston five confirmed with Sengun at C"
+          ],
+          "concerns": "Sengun might last to 24, which would make Maxey the better use of pick 9."
+        },
+        {
+          "member": "tempo",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.6,
+          "rationale": "Johnson (PF/F/UTIL) and Maxey (PG/SG/G) fill different slots and use one of our four G spots. Centres are the most replaceable position here (many ADP-140 bigs, ~7 adds a week), so take the scarce 52+ rates now and get a big later.",
+          "evidence": [
+            "docs/league-rules.md §3-§4: 10 starters, max 4 G, ~7 adds/week",
+            "docs/offseason-impact.md §8.2: centre value deep at ADP 140"
+          ],
+          "concerns": "If Maxey's DAY_TO_DAY flag is real, Johnson + Sengun is the better pair."
+        },
+        {
+          "member": "vex",
+          "vote": "Jalen Johnson + Alperen Sengun",
+          "confidence": 0.62,
+          "rationale": "Johnson survives every attack. Maxey does not: DAY_TO_DAY, ESPN projects 45.15 with only 0.64 blind spot, and LeBron plus Jaylen Brown take his usage. Sengun's 48.61 holds up against his projection (47.75) on the least-changed roster in the league, and ADP 24.2 makes waiting 14 picks too risky.",
+          "evidence": [
+            "players_scored.csv: Maxey PROJ_BLIND_SPOT_PG 0.64, Injury DAY_TO_DAY",
+            "docs/offseason-impact.md §6 Houston: least-changed roster, Sengun confirmed at C"
+          ],
+          "concerns": "Maxey's 52.83 could hold up if Embiid or LeBron miss time."
+        },
+        {
+          "member": "quill",
+          "vote": "Jalen Johnson + Donovan Mitchell",
+          "confidence": 0.6,
+          "rationale": "First session, so no earlier verdict to stay consistent with; the standing plan is league-rules §2: take the best two under our scoring as a pair. Mitchell edges Maxey because Maxey's projection drops to 45.15 from 52.83, while Mitchell holds at 46.49 from 47.87 over 70 GP.",
+          "evidence": [
+            "players_scored.csv: Mitchell FP_ACT_PG 47.87, FP_PROJ_PG_CORE 46.49",
+            "docs/league-rules.md §2: treat each turn as a pair decision"
+          ],
+          "concerns": "Maxey's actual beats Mitchell by ~5 FP/g; if the projection overstates the usage hit, Maxey is the better pick."
+        }
+      ],
+      "result": {
+        "winner": "Jalen Johnson + Tyrese Maxey",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.706,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Jalen Johnson + Tyrese Maxey",
+            "weight": 12,
+            "confidence_weight": 7.79,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "tempo"
+            ]
+          },
+          {
+            "option": "Jalen Johnson + Alperen Sengun",
+            "weight": 4,
+            "confidence_weight": 2.64,
+            "voters": [
+              "scout",
+              "vex"
+            ]
+          },
+          {
+            "option": "Jalen Johnson + Donovan Mitchell",
+            "weight": 1,
+            "confidence_weight": 0.6,
+            "voters": [
+              "quill"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "vote",
+      "options": [
+        "Jalen Johnson + Tyrese Maxey",
+        "Jalen Johnson + Alperen Sengun",
+        "Jalen Johnson + Donovan Mitchell"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.6,
+          "rationale": "Keeping my vote with lower confidence. On 2026 actuals, which lead, Maxey beats Sengun by 4.2 FP/g, and waiting to 24 costs more at guard (Murray 47.8, ~5.0) than at centre (Duren/Mobley, ~4.2). Projections flip it (Sengun 47.75 vs Maxey 45.79), but projections inform, they do not lead."
+        },
+        {
+          "member": "archivist",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.62,
+          "rationale": "Unchanged. On actuals over full samples Maxey leads Sengun by 4.2 FP/g, more than Sengun's 1.96 projected edge. The DAY_TO_DAY tag has no detail in docs/, so it is not evidence of missed games. Sengun at ADP 24.2 may still be there at 24, with Kawhi as fallback."
+        },
+        {
+          "member": "cipher",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.58,
+          "rationale": "Keeping my vote. Sengun's range is tighter, but Maxey's 45.2-52.8 has a midpoint near 49 and a far higher ceiling. Maxey (ADP 12.9) is certainly gone by 24; Sengun (ADP 24.2) has a real chance of reaching us."
+        },
+        {
+          "member": "ledger",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.65,
+          "rationale": "Keeping my vote. Actuals lead: Maxey is 4.22 FP/g ahead of Sengun. Sengun's ADP 24.2 means he may reach pick 24 and Maxey won't, and Kawhi (50.01) or Murray (47.8) at 24 scores as well as Sengun."
+        },
+        {
+          "member": "medic",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.55,
+          "rationale": "Keeping my vote. Maxey played 70 games and is on no tier of the §1 injury board, so the DAY_TO_DAY flag alone is not enough to drop him. The projection drop is about role, not availability. Confidence down because the tag is unexplained."
+        },
+        {
+          "member": "scout",
+          "vote": "Jalen Johnson + Alperen Sengun",
+          "confidence": 0.55,
+          "rationale": "Keeping my vote with less confidence. Maxey's 52.83 came on 38.04 min before PHI added LeBron and Brown; his projection falls to 45.15, below Sengun's 47.75. Sengun is a confirmed starter on an unchanged roster. The majority is right that Sengun might reach 24."
+        },
+        {
+          "member": "tempo",
+          "vote": "Jalen Johnson + Tyrese Maxey",
+          "confidence": 0.55,
+          "rationale": "Keeping my vote. Johnson and Maxey fill different slots and use one G spot. Rates above 52 cannot be replaced later; centres can (deep ADP-140 bigs, ~7 adds a week). Switching trades a 52.83 actual for 48.61 at the easiest position to refill."
+        },
+        {
+          "member": "vex",
+          "vote": "Jalen Johnson + Alperen Sengun",
+          "confidence": 0.58,
+          "rationale": "Keeping my vote. The majority assumes Maxey keeps 52.83, but he is DAY_TO_DAY, ESPN projects 45.15 with only 0.64 missing, and LeBron and Brown just arrived. Sengun's 48.61 came over 72 games in a locked role."
+        },
+        {
+          "member": "quill",
+          "vote": "Jalen Johnson + Alperen Sengun",
+          "confidence": 0.55,
+          "rationale": "Changed from Mitchell: the Sengun option makes my case against Maxey and beats Mitchell on actuals (48.61 vs 47.87) and on projection with the blind spot (47.75 vs 47.41). Johnson stays the clear first pick."
+        }
+      ],
+      "result": {
+        "winner": "Jalen Johnson + Tyrese Maxey",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 0.706,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Jalen Johnson + Tyrese Maxey",
+            "weight": 12,
+            "confidence_weight": 7.11,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "tempo"
+            ]
+          },
+          {
+            "option": "Jalen Johnson + Alperen Sengun",
+            "weight": 5,
+            "confidence_weight": 2.81,
+            "voters": [
+              "scout",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Jalen Johnson + Donovan Mitchell",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    }
+  ],
+  "assumed_gone": [
+    "Nikola Jokic",
+    "Shai Gilgeous-Alexander",
+    "Victor Wembanyama",
+    "Luka Doncic",
+    "Giannis Antetokounmpo",
+    "Anthony Edwards",
+    "Cade Cunningham"
+  ],
+  "verdict": {
+    "answer": "Jalen Johnson + Tyrese Maxey",
+    "round": "vote",
+    "share": 0.706,
+    "majority": true,
+    "tiebreak": null
+  }
+}

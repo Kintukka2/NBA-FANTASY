@@ -41,6 +41,26 @@ docs/         scoring.md            the formula and what it implies
               methodology.md        how the pool was extracted and verified
 ```
 
+## Ask the council
+
+```
+/council Clingan or Sengun with pick 24?
+```
+
+Nine persona agents research `docs/` and `data/`, vote (yes/no, a
+selection, or a suggestion), settle any split in a runoff, and report the
+highest-voted answer. See `council/PROTOCOL.md`.
+
+```
+council/      members.json          personas, skills, sources, vote weights
+              PROTOCOL.md           how a question is decided
+              lookup.py             fast queries over players_scored.csv
+              tally.py              weighted vote count, runoff, tiebreaks
+              build_agents.py       members.json -> .claude/agents/council-*.md
+              taken.txt             players already drafted
+              sessions/             every council session, as JSON
+```
+
 ## Reproduce
 
 ```bash
