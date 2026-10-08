@@ -1,1 +1,5 @@
 # Players already off the board, one per line. Lines starting with # are ignored.
+Anthony Edwards
+Donovan Mitchell
+Jalen Brunson
+Scottie Barnes
