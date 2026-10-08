@@ -4,7 +4,133 @@
   "options": [],
   "asked_at": "2026-10-08T08:30:00Z",
   "slot": 6,
-  "our_picks": [6, 11, 22, 27, 38, 43, 54, 59, 70, 75, 86, 91, 102],
+  "our_picks": [
+    6,
+    11,
+    22,
+    27,
+    38,
+    43,
+    54,
+    59,
+    70,
+    75,
+    86,
+    91,
+    102
+  ],
   "taken": [],
-  "rounds": []
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Jalen Johnson",
+          "confidence": 0.72,
+          "rationale": "Level with Cunningham per game (53.08 vs 53.33) but 72 games to 64, so 408 more season points (3,821 vs 3,413), plus the league's richest bonus line (49 DD + 13 TD = +225). A forward first keeps the four G slots open.",
+          "pick_11_target": "Tyrese Maxey (fallback Scottie Barnes, then Sengun)"
+        },
+        {
+          "member": "archivist",
+          "vote": "Jalen Johnson",
+          "confidence": 0.62,
+          "rationale": "Per-game tie with Cunningham, all three candidates verified ok in verification.csv; durability (72 vs 64 GP, +408 total) breaks it, and ESPN's projection omits 4.53/g of Johnson's value.",
+          "pick_11_target": "Tyrese Maxey (Cunningham if he lasts)"
+        },
+        {
+          "member": "cipher",
+          "vote": "Jalen Johnson",
+          "confidence": 0.62,
+          "rationale": "Range 50-55 FP/g. Leads Cunningham by 408 total points and on projection plus blind spot (54.5 vs 53.4). Both are ADP 8-9, so whichever we pass is gone before 11.",
+          "pick_11_target": "Tyrese Maxey (fallback Mitchell or Barnes)"
+        },
+        {
+          "member": "ledger",
+          "vote": "Jalen Johnson",
+          "confidence": 0.62,
+          "rationale": "Both best-available ADPs (8.0, 8.7) fall before pick 11, so the one we pass is gone. Johnson wins by 408 season points and on the bonus scoring ESPN's market ignores.",
+          "pick_11_target": "Tyrese Maxey (fallback Kawhi Leonard)"
+        },
+        {
+          "member": "medic",
+          "vote": "Jalen Johnson",
+          "confidence": 0.72,
+          "rationale": "The most bankable points total left: ACTIVE, 72 GP played and 72 projected, no injury-board flag. Cunningham's per-game edge is erased by 8 fewer games.",
+          "pick_11_target": "Scottie Barnes (80 GP), Maxey if his day-to-day tag clears"
+        },
+        {
+          "member": "scout",
+          "vote": "Jalen Johnson",
+          "confidence": 0.62,
+          "rationale": "Rate is a coin flip with Cunningham (53.08 vs 53.33), but 72 games to 64 is worth 408 more season points, and with the blind spot added back he projects 54.5 to Cade's 53.4. Neither is on the injury board or §7.",
+          "pick_11_target": "Alperen Sengun (Cunningham or Edwards if either slips)"
+        },
+        {
+          "member": "tempo",
+          "vote": "Jalen Johnson",
+          "confidence": 0.68,
+          "rationale": "Johnson matches Cunningham's rate, adds ~408 points through games played, and fills the scarcer forward slot. Guards run deep and the max-4 G rule caps them.",
+          "pick_11_target": "Tyrese Maxey (fallback Cunningham, then Barnes)"
+        },
+        {
+          "member": "vex",
+          "vote": "Jalen Johnson",
+          "confidence": 0.68,
+          "rationale": "Holds up best under attack: no injury flag, nothing in §7, full sample, and ESPN undercounts him 4.53/g. Giannis on 36 GP would not survive scrutiny at 6 anyway.",
+          "pick_11_target": "Alperen Sengun (Cunningham if he falls)"
+        },
+        {
+          "member": "quill",
+          "vote": "Jalen Johnson",
+          "confidence": 0.68,
+          "rationale": "Consistent with the earlier council verdict (Johnson + Maxey, 71%). Slot 6 lets us take Johnson outright before the four picks to 11.",
+          "pick_11_target": "Tyrese Maxey (fallback Sengun)"
+        }
+      ],
+      "result": {
+        "winner": "Jalen Johnson",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 1.0,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Jalen Johnson",
+            "weight": 17,
+            "confidence_weight": 11.28,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "scout",
+              "tempo",
+              "vex",
+              "quill"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "assumed_gone": [
+    "Nikola Jokic",
+    "Shai Gilgeous-Alexander",
+    "Victor Wembanyama",
+    "Luka Doncic",
+    "Giannis Antetokounmpo"
+  ],
+  "note": "All nine proposals named the same player, so the pooled vote round has one option and the opening round is final.",
+  "verdict": {
+    "answer": "Jalen Johnson",
+    "round": "opening",
+    "share": 1.0,
+    "majority": true,
+    "tiebreak": null
+  }
 }
