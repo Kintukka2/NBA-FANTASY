@@ -1,0 +1,181 @@
+{
+  "question": "Ranked board for pick 22 (7 picks before ours)",
+  "type": "selection",
+  "method": "weighted Borda over ranked top-5 ballots (5,4,3,2,1 x vote weight); first-choice tally by council/tally.py",
+  "slot": 6,
+  "asked_at": "2026-10-08T08:55:00Z",
+  "our_roster": [
+    "pick 6 (unconfirmed, likely Jalen Johnson)",
+    "Scottie Barnes"
+  ],
+  "rounds": [
+    {
+      "name": "first choice",
+      "ballots": [
+        {
+          "member": "quill",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Jamal Murray",
+            "Kawhi Leonard",
+            "Karl-Anthony Towns",
+            "Kevin Durant"
+          ]
+        },
+        {
+          "member": "archivist",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Kawhi Leonard",
+            "Jamal Murray",
+            "James Harden",
+            "Karl-Anthony Towns"
+          ]
+        },
+        {
+          "member": "tempo",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Kawhi Leonard",
+            "Jamal Murray",
+            "Karl-Anthony Towns",
+            "James Harden"
+          ]
+        },
+        {
+          "member": "scout",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Jamal Murray",
+            "Kawhi Leonard",
+            "Karl-Anthony Towns",
+            "Kevin Durant"
+          ]
+        },
+        {
+          "member": "vex",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Jamal Murray",
+            "Kawhi Leonard",
+            "Karl-Anthony Towns",
+            "James Harden"
+          ]
+        },
+        {
+          "member": "ledger",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Jamal Murray",
+            "Kawhi Leonard",
+            "Karl-Anthony Towns",
+            "Kevin Durant"
+          ]
+        },
+        {
+          "member": "coach",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Jamal Murray",
+            "Kawhi Leonard",
+            "Karl-Anthony Towns",
+            "James Harden"
+          ]
+        },
+        {
+          "member": "cipher",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Jamal Murray",
+            "Kawhi Leonard",
+            "James Harden",
+            "Karl-Anthony Towns"
+          ]
+        },
+        {
+          "member": "medic",
+          "vote": "Alperen Sengun",
+          "ranking": [
+            "Alperen Sengun",
+            "Jamal Murray",
+            "Amen Thompson",
+            "Kevin Durant",
+            "Karl-Anthony Towns"
+          ]
+        }
+      ],
+      "result": {
+        "winner": "Alperen Sengun",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 1.0,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Alperen Sengun",
+            "weight": 17,
+            "confidence_weight": 8.5,
+            "voters": [
+              "quill",
+              "archivist",
+              "tempo",
+              "scout",
+              "vex",
+              "ledger",
+              "coach",
+              "cipher",
+              "medic"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "board": [
+    {
+      "player": "Alperen Sengun",
+      "points": 85
+    },
+    {
+      "player": "Jamal Murray",
+      "points": 66
+    },
+    {
+      "player": "Kawhi Leonard",
+      "points": 47
+    },
+    {
+      "player": "Karl-Anthony Towns",
+      "points": 28
+    },
+    {
+      "player": "James Harden",
+      "points": 14
+    },
+    {
+      "player": "Kevin Durant",
+      "points": 9
+    },
+    {
+      "player": "Amen Thompson",
+      "points": 6
+    }
+  ],
+  "verdict": {
+    "answer": "Alperen Sengun",
+    "round": "first choice",
+    "share": 1.0,
+    "majority": true,
+    "tiebreak": null
+  }
+}
