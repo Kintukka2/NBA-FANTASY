@@ -1,5 +1,5 @@
 # Players already off the board, one per line. Lines starting with # are ignored.
-# Full pick history through pick 77 (ours marked in the session files).
+# Full draft: see council/draft_results.csv for all 104 picks.
 Nikola Jokic
 Shai Gilgeous-Alexander
 Luka Doncic
@@ -87,3 +87,20 @@ Derik Queen
 Payton Pritchard
 Walker Kessler
 Isaiah Hartenstein
+DeMar DeRozan
+Jaden McDaniels
+Keegan Murray
+Miles Bridges
+Kyrie Irving
+OG Anunoby
+Darryn Peterson
+Damian Lillard
+Zach Edey
+Ajay Mitchell
+Anthony Black
+Darius Acuff Jr.
+Immanuel Quickley
+Cedric Coward
+Kel'el Ware
+Ace Bailey
+Ty Jerome
