@@ -4,6 +4,7 @@
   "our_team": "Come-in Cider (CCDR), slot 6 of 8 — picks 6, 11, 22, 27, 38, 43, 54, 59, 70, 75, 86, 91, 102",
   "folders": [
     "docs/",
+    "docs/research/",
     "data/"
   ],
   "chair": "coach",
@@ -17,9 +18,9 @@
       "weight": 3,
       "skills": [
         "analysis-planning",
-        "stakeholder-requirements-gathering",
         "insight-synthesis",
-        "executive-summary-generator"
+        "executive-summary-generator",
+        "data:analyze"
       ],
       "sources": [
         "docs/league-rules.md",
@@ -35,7 +36,7 @@
       "role": "Data steward",
       "tint": "142, 202, 252",
       "lean": 0,
-      "weight": 1,
+      "weight": 2,
       "skills": [
         "programmatic-eda",
         "data-quality-audit",
@@ -59,7 +60,7 @@
       "role": "Projections",
       "tint": "204, 142, 252",
       "lean": 10,
-      "weight": 3,
+      "weight": 2,
       "skills": [
         "data:statistical-analysis",
         "time-series-analysis",
@@ -104,7 +105,8 @@
       "skills": [
         "cohort-analysis",
         "root-cause-investigation",
-        "deep-research"
+        "time-series-analysis",
+        "research"
       ],
       "sources": [
         "docs/offseason-impact.md",
@@ -121,10 +123,10 @@
       "lean": 30,
       "weight": 2,
       "skills": [
-        "deep-research",
         "research",
-        "ab-test-analysis",
-        "data:explore-data"
+        "data:explore-data",
+        "segmentation-analysis",
+        "impact-quantification"
       ],
       "sources": [
         "docs/offseason-impact.md",
@@ -138,11 +140,11 @@
       "role": "Roster & schedule",
       "tint": "142, 252, 204",
       "lean": 0,
-      "weight": 1,
+      "weight": 2,
       "skills": [
         "data:write-query",
         "query-validation",
-        "visualization-builder"
+        "domain-modeling"
       ],
       "sources": [
         "docs/league-rules.md",
@@ -179,13 +181,12 @@
       "role": "Scribe",
       "tint": "252, 142, 239",
       "lean": 0,
-      "weight": 1,
+      "weight": 2,
       "skills": [
-        "xlsx",
-        "dataviz",
-        "dashboard-specification",
-        "data:build-dashboard",
-        "data-narrative-builder"
+        "data-narrative-builder",
+        "analysis-documentation",
+        "analysis-retrospective",
+        "insight-synthesis"
       ],
       "sources": [
         "docs/",
@@ -194,5 +195,21 @@
       ],
       "brief": "Keep the record. Read earlier council sessions in council/sessions/ so the council stays consistent with what it has already decided (players already taken, picks already made). Vote for the option that best fits the plan the council has been executing, and say plainly if this question contradicts an earlier verdict."
     }
-  ]
+  ],
+  "researcher": {
+    "id": "researcher",
+    "name": "Wire",
+    "role": "Researcher (non-voting)",
+    "weight": 0,
+    "tools": [
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Grep",
+      "Glob",
+      "Write"
+    ],
+    "writes_to": "docs/research/",
+    "brief": "Before every council meeting, search the internet for the latest NBA news on the players and teams the question touches: injuries and return timelines, starting lineups and minutes, trades, signings, extensions, suspensions and coach quotes. Write every finding, with its source URL and publish date, to one new markdown briefing in docs/research/. Report facts only. You do not vote and you do not recommend picks."
+  }
 }

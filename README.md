@@ -39,6 +39,7 @@ docs/         scoring.md            the formula and what it implies
               offseason-impact.md   situational analysis, all 30 teams
               league-rules.md       full league configuration
               methodology.md        how the pool was extracted and verified
+              research/             web briefings, one per council meeting
 ```
 
 ## Ask the council
@@ -47,9 +48,11 @@ docs/         scoring.md            the formula and what it implies
 /council Clingan or Sengun with pick 24?
 ```
 
-Nine persona agents research `docs/` and `data/`, vote (yes/no, a
-selection, or a suggestion), settle any split in a runoff, and report the
-highest-voted answer. See `council/PROTOCOL.md`.
+First a non-voting researcher (Wire) searches the web for the latest news
+on the players involved and writes a sourced briefing to `docs/research/`.
+Then nine persona agents research `docs/` (briefing included) and `data/`,
+vote (yes/no, a selection, or a suggestion), settle any split in a runoff,
+and report the highest-voted answer. See `council/PROTOCOL.md`.
 
 ```
 council/      members.json          personas, skills, sources, vote weights
@@ -57,6 +60,7 @@ council/      members.json          personas, skills, sources, vote weights
               lookup.py             fast queries over players_scored.csv
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
+                                    (nine members + council-researcher)
               taken.txt             players already drafted
               sessions/             every council session, as JSON
 ```
