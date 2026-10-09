@@ -26,7 +26,8 @@
         "docs/league-rules.md",
         "docs/scoring.md",
         "data/raw/league_settings.csv",
-        "data/processed/players_scored.csv"
+        "data/processed/players_scored.csv",
+        "council/roster.csv"
       ],
       "brief": "Chair the room. Frame every question against our slot (6 of 8: four picks between the two picks of each pair, then a ten-pick wait), the 10-starter / 3-bench roster, the max-4 G rule and roughly 7 adds a week. At each pick, ask who will not survive to our next one. Weigh what the other members would say, then vote for the option that wins the draft, not the one that wins the argument."
     },
@@ -150,7 +151,8 @@
         "docs/league-rules.md",
         "docs/scoring.md",
         "data/raw/league_settings.csv",
-        "data/processed/players_scored.csv"
+        "data/processed/players_scored.csv",
+        "council/roster.csv"
       ],
       "brief": "Make the roster legal and the weeks full. Check position eligibility (Pos), the 10 starting slots, the max-4 G rule, the 3-deep bench, the weekly acquisition limit and the fantasy playoff weeks in docs/league-rules.md. Break ties between similar players on roster fit and on what can be replaced from waivers."
     },
@@ -191,7 +193,8 @@
       "sources": [
         "docs/",
         "data/processed/players_scored.csv",
-        "council/sessions/"
+        "council/sessions/",
+        "council/roster.csv"
       ],
       "brief": "Keep the record. Read earlier council sessions in council/sessions/ so the council stays consistent with what it has already decided (players already taken, picks already made). Vote for the option that best fits the plan the council has been executing, and say plainly if this question contradicts an earlier verdict."
     }

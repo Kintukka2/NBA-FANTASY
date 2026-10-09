@@ -62,6 +62,7 @@ council/      members.json          personas, skills, sources, vote weights
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)
               taken.txt             players already drafted
+              roster.csv            our live roster, updated after every move
               sessions/             every council session, as JSON
 ```
 

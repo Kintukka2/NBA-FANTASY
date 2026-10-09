@@ -10,3 +10,9 @@ When the user asks "the council" anything, or uses `/council`, follow
 `.claude/agents/council-*.md`) research `docs/` and `data/`, vote, and the
 highest-voted answer is reported. Votes are counted by `council/tally.py`,
 never by hand. Sessions are saved to `council/sessions/`.
+
+`council/roster.csv` is our live roster. Whenever the user reports a move
+(add, drop, IR, trade), update it in the same turn and commit: remove the
+dropped player, add the new one with `acquired` and `acquired_on`, set
+`slot` to `IR` for an IR stash. Only record moves the user says were made,
+never planned ones.

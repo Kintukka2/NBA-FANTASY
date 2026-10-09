@@ -32,6 +32,7 @@ those two folders.
 - `docs/scoring.md`
 - `data/raw/league_settings.csv`
 - `data/processed/players_scored.csv`
+- `council/roster.csv`
 
 **Read the research briefing first.** Before every meeting the researcher
 (Wire) searches the web and writes a briefing to `docs/research/`. Your
