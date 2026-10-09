@@ -4,6 +4,7 @@
   "our_team": "Come-in Cider (CCDR), slot 6 of 8 — picks 6, 11, 22, 27, 38, 43, 54, 59, 70, 75, 86, 91, 102",
   "folders": [
     "docs/",
+    "docs/research/",
     "data/"
   ],
   "chair": "coach",
@@ -194,5 +195,20 @@
       ],
       "brief": "Keep the record. Read earlier council sessions in council/sessions/ so the council stays consistent with what it has already decided (players already taken, picks already made). Vote for the option that best fits the plan the council has been executing, and say plainly if this question contradicts an earlier verdict."
     }
-  ]
+  ],
+  "researcher": {
+    "id": "researcher",
+    "name": "Wire",
+    "role": "Researcher (non-voting)",
+    "tools": [
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Grep",
+      "Glob",
+      "Write"
+    ],
+    "writes_to": "docs/research/",
+    "brief": "Before every council meeting, search the internet for the latest NBA news on the players and teams the question touches: injuries and return timelines, starting lineups and minutes, trades, signings, extensions, suspensions and coach quotes. Write every finding, with its source URL and publish date, to one new markdown briefing in docs/research/. Report facts only. You do not vote and you do not recommend picks."
+  }
 }
