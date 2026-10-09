@@ -1,0 +1,106 @@
+{
+  "question": "Nurkic to IR now (swap to Butler later) vs Butler to IR now",
+  "type": "selection",
+  "asked_at": "2026-10-08T10:45:00Z",
+  "context": "User challenge: Nurkic's 27.6 ESPN projection understates him (36.8 actual), reported 2-year extension (unverified in repo), trade-chip value.",
+  "options": [
+    "Nurkic to IR now, swap to Butler when Nurkic returns",
+    "Butler to IR now"
+  ],
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Nurkic to IR now, swap to Butler when Nurkic returns",
+        "Butler to IR now"
+      ],
+      "ballots": [
+        {
+          "member": "ledger",
+          "vote": "Butler to IR now",
+          "confidence": 0.8
+        },
+        {
+          "member": "medic",
+          "vote": "Butler to IR now",
+          "confidence": 0.72
+        },
+        {
+          "member": "scout",
+          "vote": "Butler to IR now",
+          "confidence": 0.75
+        },
+        {
+          "member": "archivist",
+          "vote": "Butler to IR now",
+          "confidence": 0.8
+        },
+        {
+          "member": "coach",
+          "vote": "Butler to IR now",
+          "confidence": 0.75
+        },
+        {
+          "member": "tempo",
+          "vote": "Butler to IR now",
+          "confidence": 0.8
+        },
+        {
+          "member": "cipher",
+          "vote": "Butler to IR now",
+          "confidence": 0.72
+        },
+        {
+          "member": "vex",
+          "vote": "Butler to IR now",
+          "confidence": 0.62
+        },
+        {
+          "member": "quill",
+          "vote": "Butler to IR now",
+          "confidence": 0.9
+        }
+      ],
+      "result": {
+        "winner": "Butler to IR now",
+        "weight_cast": 17,
+        "majority": true,
+        "share": 1.0,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Butler to IR now",
+            "weight": 17,
+            "confidence_weight": 12.69,
+            "voters": [
+              "ledger",
+              "medic",
+              "scout",
+              "archivist",
+              "coach",
+              "tempo",
+              "cipher",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Nurkic to IR now, swap to Butler when Nurkic returns",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    }
+  ],
+  "verdict": {
+    "answer": "Butler to IR now",
+    "round": "opening",
+    "share": 1.0,
+    "majority": true,
+    "tiebreak": null
+  }
+}
