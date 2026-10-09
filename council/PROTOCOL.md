@@ -15,7 +15,7 @@ answer. Ask from Claude Code in this repo:
 
 | Member | Role | Votes | Starts from |
 |---|---|---:|---|
-| Coach | Draft strategist (chair) | 2 | `docs/league-rules.md`, `docs/scoring.md` |
+| Coach | Draft strategist (chair) | 3 | `docs/league-rules.md`, `docs/scoring.md` |
 | Archivist | Data steward | 2 | `docs/data-dictionary.md`, `docs/methodology.md`, `data/raw/`, `verification.csv` |
 | Cipher | Projections | 2 | `players_scored.csv`, `actuals_2026.csv`, `projections_2027.csv`, `scripts/league_scoring.py` |
 | Ledger | Value & ADP | 2 | `players_scored.csv`, `docs/offseason-impact.md` §4 + App. A |
@@ -30,8 +30,9 @@ not counted by `tally.py`. Tools: WebSearch, WebFetch, Read and Write
 (only into `docs/research/`). Briefs live under `researcher` in
 `members.json`.
 
-Voting is flat: every member has 2 votes, 18 in total, so a majority
-is 10 or more. Coach chairs, which only matters as a tiebreaker.
+Every member has 2 votes except Coach, the chair, with 3: 19 in total,
+so a majority is 10 or more and the closest result is 10 to 9. A yes/no
+vote can never tie.
 
 Every member may read anything in `docs/` and `data/`; the sources are
 where each one starts. Personas, skills, sources and
