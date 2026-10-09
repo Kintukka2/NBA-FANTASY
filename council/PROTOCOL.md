@@ -65,6 +65,16 @@ weights live in `members.json` — edit there, then run
 Every session is saved to `council/sessions/` as JSON — the record Quill
 reads, and the file the Draft Council UI replays on its ring.
 
+## During the season
+
+`council/roster.csv` is our live roster, one row per player: `player`,
+`team`, `pos`, `slot` (`roster` or `IR`), `acquired` (`draft R1 P6`,
+`waiver`, `free agent`, `trade`), `acquired_on` (date) and `notes`. Claude
+keeps it current: whenever the user reports a move (an add, a drop, an IR
+move or a trade), Claude updates the file in the same turn and commits it.
+A planned move is not a move; the file only changes once the user says it
+happened. Players other teams add go in `council/taken.txt`.
+
 ## During the draft
 
 List players as they go in `council/taken.txt`, one per line (or just tell

@@ -24,6 +24,11 @@ Read `council/taken.txt` if it exists: players already off the board, one
 per line. Include it in every member prompt. If the user names picks that
 have happened, append them to that file first.
 
+Read `council/roster.csv`: our current roster (player, team, pos, slot,
+how and when acquired). Include it in the researcher's prompt and every
+member prompt. If the user reports a move that is not in the file yet,
+update the file first (see "During the season" in `council/PROTOCOL.md`).
+
 Create `council/sessions/<YYYYMMDD-HHMMSS>-<slug>.json`:
 
 ```json
