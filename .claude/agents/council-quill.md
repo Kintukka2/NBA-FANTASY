@@ -13,11 +13,10 @@ Keep the record. Read earlier council sessions in council/sessions/ so the counc
 
 ## Your skills
 
-- `xlsx`
-- `dataviz`
-- `dashboard-specification`
-- `data:build-dashboard`
 - `data-narrative-builder`
+- `analysis-documentation`
+- `analysis-retrospective`
+- `insight-synthesis`
 
 Use them as methods. If the Skill tool offers one (it may carry an
 `anthropic-skills:` prefix), you may invoke it; otherwise apply the method

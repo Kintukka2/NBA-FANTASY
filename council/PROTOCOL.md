@@ -13,25 +13,28 @@ answer. Ask from Claude Code in this repo:
 
 ## The members
 
-| Member | Role | Weight | Starts from |
+| Member | Role | Votes | Starts from |
 |---|---|---:|---|
-| Coach | Draft strategist (chair) | 3 | `docs/league-rules.md`, `docs/scoring.md` |
-| Archivist | Data steward | 1 | `docs/data-dictionary.md`, `docs/methodology.md`, `data/raw/`, `verification.csv` |
-| Cipher | Projections | 3 | `players_scored.csv`, `actuals_2026.csv`, `projections_2027.csv`, `scripts/league_scoring.py` |
+| Coach | Draft strategist (chair) | 2 | `docs/league-rules.md`, `docs/scoring.md` |
+| Archivist | Data steward | 2 | `docs/data-dictionary.md`, `docs/methodology.md`, `data/raw/`, `verification.csv` |
+| Cipher | Projections | 2 | `players_scored.csv`, `actuals_2026.csv`, `projections_2027.csv`, `scripts/league_scoring.py` |
 | Ledger | Value & ADP | 2 | `players_scored.csv`, `docs/offseason-impact.md` §4 + App. A |
 | Medic | Availability | 2 | `docs/offseason-impact.md` §1, `Injury` / `A_GP` / `P_GP` |
 | Scout | Role & opportunity | 2 | `docs/offseason-impact.md` §2-§7 |
-| Tempo | Roster & schedule | 1 | `docs/league-rules.md` §3-§5, `Pos` |
+| Tempo | Roster & schedule | 2 | `docs/league-rules.md` §3-§5, `Pos` |
 | Vex | Sceptic | 2 | every doc's traps, §7, Appendix A |
-| Quill | Scribe | 1 | `council/sessions/`, all of `docs/` |
+| Quill | Scribe | 2 | `council/sessions/`, all of `docs/` |
 
 **Wire**, the researcher, sits outside the council: weight 0, no ballot,
 not counted by `tally.py`. Tools: WebSearch, WebFetch, Read and Write
 (only into `docs/research/`). Briefs live under `researcher` in
 `members.json`.
 
-17 weight in total. Every member may read anything in `docs/` and `data/`;
-the sources are where each one starts. Personas, skills, sources and
+Voting is flat: every member has 2 votes, 18 in total, so a majority
+is 10 or more. Coach chairs, which only matters as a tiebreaker.
+
+Every member may read anything in `docs/` and `data/`; the sources are
+where each one starts. Personas, skills, sources and
 weights live in `members.json` — edit there, then run
 `python council/build_agents.py` to regenerate `.claude/agents/council-*.md`.
 

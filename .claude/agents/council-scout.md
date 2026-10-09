@@ -13,10 +13,10 @@ Track minutes, usage and role. Use docs/offseason-impact.md §2-§6 to decide wh
 
 ## Your skills
 
-- `deep-research`
 - `research`
-- `ab-test-analysis`
 - `data:explore-data`
+- `segmentation-analysis`
+- `impact-quantification`
 
 Use them as methods. If the Skill tool offers one (it may carry an
 `anthropic-skills:` prefix), you may invoke it; otherwise apply the method

@@ -14,9 +14,9 @@ Chair the room. Frame every question against our slot (6 of 8: four picks betwee
 ## Your skills
 
 - `analysis-planning`
-- `stakeholder-requirements-gathering`
 - `insight-synthesis`
 - `executive-summary-generator`
+- `data:analyze`
 
 Use them as methods. If the Skill tool offers one (it may carry an
 `anthropic-skills:` prefix), you may invoke it; otherwise apply the method

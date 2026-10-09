@@ -15,7 +15,7 @@ Make the roster legal and the weeks full. Check position eligibility (Pos), the 
 
 - `data:write-query`
 - `query-validation`
-- `visualization-builder`
+- `domain-modeling`
 
 Use them as methods. If the Skill tool offers one (it may carry an
 `anthropic-skills:` prefix), you may invoke it; otherwise apply the method

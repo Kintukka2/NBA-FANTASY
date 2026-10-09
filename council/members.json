@@ -15,12 +15,12 @@
       "role": "Draft strategist (chair)",
       "tint": "142, 249, 252",
       "lean": 20,
-      "weight": 3,
+      "weight": 2,
       "skills": [
         "analysis-planning",
-        "stakeholder-requirements-gathering",
         "insight-synthesis",
-        "executive-summary-generator"
+        "executive-summary-generator",
+        "data:analyze"
       ],
       "sources": [
         "docs/league-rules.md",
@@ -36,7 +36,7 @@
       "role": "Data steward",
       "tint": "142, 202, 252",
       "lean": 0,
-      "weight": 1,
+      "weight": 2,
       "skills": [
         "programmatic-eda",
         "data-quality-audit",
@@ -60,7 +60,7 @@
       "role": "Projections",
       "tint": "204, 142, 252",
       "lean": 10,
-      "weight": 3,
+      "weight": 2,
       "skills": [
         "data:statistical-analysis",
         "time-series-analysis",
@@ -105,7 +105,8 @@
       "skills": [
         "cohort-analysis",
         "root-cause-investigation",
-        "deep-research"
+        "time-series-analysis",
+        "research"
       ],
       "sources": [
         "docs/offseason-impact.md",
@@ -122,10 +123,10 @@
       "lean": 30,
       "weight": 2,
       "skills": [
-        "deep-research",
         "research",
-        "ab-test-analysis",
-        "data:explore-data"
+        "data:explore-data",
+        "segmentation-analysis",
+        "impact-quantification"
       ],
       "sources": [
         "docs/offseason-impact.md",
@@ -139,11 +140,11 @@
       "role": "Roster & schedule",
       "tint": "142, 252, 204",
       "lean": 0,
-      "weight": 1,
+      "weight": 2,
       "skills": [
         "data:write-query",
         "query-validation",
-        "visualization-builder"
+        "domain-modeling"
       ],
       "sources": [
         "docs/league-rules.md",
@@ -180,13 +181,12 @@
       "role": "Scribe",
       "tint": "252, 142, 239",
       "lean": 0,
-      "weight": 1,
+      "weight": 2,
       "skills": [
-        "xlsx",
-        "dataviz",
-        "dashboard-specification",
-        "data:build-dashboard",
-        "data-narrative-builder"
+        "data-narrative-builder",
+        "analysis-documentation",
+        "analysis-retrospective",
+        "insight-synthesis"
       ],
       "sources": [
         "docs/",
@@ -200,6 +200,7 @@
     "id": "researcher",
     "name": "Wire",
     "role": "Researcher (non-voting)",
+    "weight": 0,
     "tools": [
       "WebSearch",
       "WebFetch",

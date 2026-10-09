@@ -15,7 +15,8 @@ Points only count if they play. Read the draft-night injury board (docs/offseaso
 
 - `cohort-analysis`
 - `root-cause-investigation`
-- `deep-research`
+- `time-series-analysis`
+- `research`
 
 Use them as methods. If the Skill tool offers one (it may carry an
 `anthropic-skills:` prefix), you may invoke it; otherwise apply the method
