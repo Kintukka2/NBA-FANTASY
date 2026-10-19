@@ -128,9 +128,899 @@
   ],
   "research": "docs/research/20261019-0820-roster-before-opener.md",
   "method": "Each member ranks all 13 active players weakest-first. Three sequential selection counts by tally.py: weakest #1 over all 13; #2 and #3 with earlier picks removed. A member's vote in each count is their highest-ranked remaining player; runoffs are derived from the same full rankings. Jimmy Butler III (IR, out until at least 2 Jan) is not a candidate.",
-  "rounds": [],
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Cade Cunningham",
+        "Scottie Barnes",
+        "Jalen Duren",
+        "Jamal Murray",
+        "Kawhi Leonard",
+        "Dejounte Murray",
+        "Trey Murphy III",
+        "Desmond Bane",
+        "Onyeka Okongwu",
+        "Caleb Wilson",
+        "Ryan Rollins",
+        "Kel'el Ware",
+        "Paul George"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Kel'el Ware",
+          "confidence": 0.6,
+          "ranking": [
+            "Kel'el Ware",
+            "Caleb Wilson",
+            "Ryan Rollins",
+            "Paul George",
+            "Dejounte Murray",
+            "Onyeka Okongwu",
+            "Desmond Bane",
+            "Trey Murphy III",
+            "Jalen Duren",
+            "Kawhi Leonard",
+            "Jamal Murray",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ],
+          "rationale": "With 3 bench spots, about 7 adds a week and daily lineups, a roster spot is worth its per-game margin over the ~32-34 FP/G waiver level (Queta 33.40/76 GP, Nembhard 35.17, McCollum 32.68). Ware is at that level: 32.47 over 77 GP on 22.2 min, projected ~34.5, behind Turner, and Sims started over him on 14 Oct. Wilson has zero NBA games, a 34.88 projection and a 22.4 FP/G preseason with 17 TO in 5 games. Rollins' 37.51 actual is marked down to ~32.8 by ESPN and to 30-33 by the offseason doc now that Herro is in. George (36 years old, 55 projected GP) is fourth, roughly level with Rollins once the games he misses are streamed.",
+          "evidence": [
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74, PROJ_BLIND_SPOT_PG 3.76",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_GP 71",
+            "data/processed/players_scored.csv: Ryan Rollins FP_ACT_PG 37.51, A_GP 74, FP_PROJ_PG_CORE 31.86, PROJ_BLIND_SPOT_PG 0.97",
+            "data/processed/players_scored.csv: Paul George FP_ACT_PG 35.96, A_GP 37, FP_PROJ_PG_CORE 38.48, P_GP 55",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14 (THIN), FP_PROJ_PG_CORE 39.05",
+            "data/processed/players_scored.csv (not in taken.txt): Neemias Queta 33.40/76 GP, Andrew Nembhard 35.17/57 GP, CJ McCollum 32.68/76 GP",
+            "docs/research/20261019-0750-preseason-east.md MIL table: Ware 5 GP / 1 start; Turner 4/4 starts; CHI table: Wilson 30-69 FG, 17 TO in 5 GP (scored 22.4 FP/G via scripts/league_scoring.py)",
+            "docs/research/20261019-0820-roster-before-opener.md: Sims started over Ware 14 Oct (NBC); no October Turner trade report; Rollins FantasyData starter 21 Oct",
+            "docs/offseason-impact.md §3: Rollins demoted 37.50 -> 30-33; §7 #19 Turner status and #20 CHI PF/C ordering unresolved"
+          ],
+          "concerns": "Wilson is the No. 4 pick and starting with Claxton out, so over a full season his usage could grow past the projection; Rollins' 74-game 37.5 actual could also hold if Herro misses time again, which would make George the better #3."
+        },
+        {
+          "member": "archivist",
+          "vote": "Caleb Wilson",
+          "confidence": 0.7,
+          "ranking": [
+            "Caleb Wilson",
+            "Kel'el Ware",
+            "Dejounte Murray",
+            "Paul George",
+            "Ryan Rollins",
+            "Onyeka Okongwu",
+            "Desmond Bane",
+            "Trey Murphy III",
+            "Jalen Duren",
+            "Kawhi Leonard",
+            "Jamal Murray",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ],
+          "rationale": "Wilson is NO_SAMPLE: his only case is ESPN's 34.88 projection, and his preseason totals score 22.4 FP/g in 26.6 mpg (17 TO in 5 GP). Ware's 32.47 FP/g over 77 GP is the lowest measured line on the roster, below free agents Nurkic 36.76, Holiday 34.93 and Queta 33.40, and he came off the bench even when Turner rested. Dejounte Murray's 36.49 is a THIN 14-GP line, and he is questionable with a toe contusion while Fears starts. George (35.96, 37 GP, P_GP 55) is the close #4.",
+          "evidence": [
+            "data/processed/players_scored.csv: Caleb Wilson A_GP NaN, SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1",
+            "docs/research/20261019-0750-preseason-east.md CHI table: Wilson 5 GP, 26.6 mpg, 30-69 FG, 17 TO -> 22.4 FP/g via scripts/league_scoring.py (no OREB/DD)",
+            "data/processed/players_scored.csv: Kel'el Ware A_GP 77, FP_ACT_PG 32.47, A_MIN 22.18, FP_PROJ_PG_CORE 30.74 + PROJ_BLIND_SPOT_PG 3.76",
+            "docs/research/20261019-0820-roster-before-opener.md: Sims, not Ware, started C when Turner rested 14 Oct; latest Turner report (29 Jun) says MIL 'not actively engaged in moving him'",
+            "data/processed/players_scored.csv: Dejounte Murray A_GP 14, FP_ACT_PG 36.49, SAMPLE_FLAG THIN",
+            "docs/research/20261019-0820-roster-before-opener.md: D. Murray right toe contusion, questionable 21 Oct, no update since 16 Oct; Fears 13.3 pts as starter",
+            "data/processed/players_scored.csv: Paul George A_GP 37, FP_ACT_PG 35.96, P_GP 55, FP_PROJ_PG_CORE 38.48",
+            "data/processed/players_scored.csv waiver pool (not in council/taken.txt): Nurkic 36.76 (41 GP), Nembhard 35.17 (57), Holiday 34.93 (53), Queta 33.40 (76)"
+          ],
+          "concerns": "Wilson is a No. 4 pick starting at PF with Claxton out. If his projected 32 mpg holds and he adds rebounding bonuses ESPN cannot see, he could pass Ware and Murray, and Paul George's 55 projected games make him almost tied with Murray for #3."
+        },
+        {
+          "member": "cipher",
+          "vote": "Kel'el Ware",
+          "confidence": 0.55,
+          "ranking": [
+            "Kel'el Ware",
+            "Caleb Wilson",
+            "Ryan Rollins",
+            "Dejounte Murray",
+            "Paul George",
+            "Onyeka Okongwu",
+            "Desmond Bane",
+            "Trey Murphy III",
+            "Kawhi Leonard",
+            "Jalen Duren",
+            "Jamal Murray",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ],
+          "rationale": "A waiver pickup scores about 33 FP/g: Wiggins 33.78 over 68 GP, Queta 33.40 over 76, McCollum 32.68 over 76, and none is in taken.txt. Ware's 32.47 over 77 GP and his 34.5 adjusted projection sit right on that line, and he was behind Sims as well as Turner on 14 Oct. Wilson has no 2026 sample: ESPN projects 34.88 at 32.1 min, but his preseason scored only 22.4/g at 26.6 min with 3.4 TO/g, a range of 26-37. Rollins has the second-lowest projection on the roster (31.86 + 0.97 = 32.8) after Herro's arrival, even though his starting job looks secure, a range of 31-37.",
+          "evidence": [
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74, PROJ_BLIND_SPOT_PG 3.76",
+            "data/processed/players_scored.csv: Caleb Wilson A_GP blank (NO_SAMPLE), FP_PROJ_PG_CORE 34.88, P_MIN 32.1, P_TO 2.1",
+            "data/processed/players_scored.csv: Ryan Rollins FP_ACT_PG 37.51, A_GP 74, FP_PROJ_PG_CORE 31.86, PROJ_BLIND_SPOT_PG 0.97",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14 (THIN), FP_PROJ_PG_CORE 39.05; Paul George FP_ACT_PG 35.96, A_GP 37, P_GP 55",
+            "data/processed/players_scored.csv (not in council/taken.txt): Andrew Wiggins FP_ACT_PG 33.78 A_GP 68; Neemias Queta 33.40 A_GP 76; CJ McCollum 32.68 A_GP 76",
+            "docs/research/20261019-0750-preseason-east.md CHI table: Caleb Wilson 5 GP, 26.6 MPG, 30-69 FG, 17 TO; league_scoring.per_game gives 22.4/g (no OREB)",
+            "docs/research/20261019-0820-roster-before-opener.md Ware: Sims started at C over Ware on 14 Oct with Turner resting; FantasyData has Turner starting 21 Oct",
+            "docs/research/20261019-0820-roster-before-opener.md Dejounte Murray: right toe contusion, questionable 21 Oct, no update since 16 Oct",
+            "docs/offseason-impact.md §3: Ryan Rollins demoted 37.50 -> 30-33; §7 #19 Turner status and #20 CHI PF/C ordering unresolved"
+          ],
+          "concerns": "Dejounte Murray (14 GP last season, toe injury) and Paul George (36, projected 55 GP) could finish with lower season totals than Rollins or Wilson if they play fewer than about 50 games, since every missed game is lost points."
+        },
+        {
+          "member": "ledger",
+          "vote": "Kel'el Ware",
+          "confidence": 0.62,
+          "rationale": "Ware scores 32.47 FP/g in 22.2 min off the bench (Sims started over him on 14 Oct), with a 34.5 projection including the blind spot, which is level with free agent Queta at 33.40, so he adds about 0-1.5 FP/g. Wilson has no NBA sample: his 34.88 ESPN projection is near replacement, and his preseason in our formula was 22.4 FP/g with 17 TO in 5 GP. Rollins has a real 37.51 over 74 GP, but ESPN projects 32.8 and the guard pool is deep (Holiday 34.93, Nembhard 35.18), so over about 72 games he adds less than George (about 4 FP/g over, times about 55 games) or Dejounte Murray (about 4 over, times about 60).",
+          "evidence": [
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74 + PROJ_BLIND_SPOT_PG 3.76, ADP 107.6",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, ADP 76.6",
+            "data/processed/players_scored.csv: Ryan Rollins FP_ACT_PG 37.51, A_GP 74, FP_PROJ_PG_CORE 31.86; docs/offseason-impact.md §3: Rollins 37.50 -> 30-33",
+            "data/processed/players_scored.csv (not in council/taken.txt): Neemias Queta 33.40 (76 GP), Jrue Holiday 34.93 (53 GP), Andrew Wiggins 33.78 (68 GP)",
+            "docs/research/20261019-0820-roster-before-opener.md: Sims, not Ware, started at C with Turner resting on 14 Oct; no October Turner trade report",
+            "docs/research/20261019-0750-preseason-east.md CHI table, scored with scripts/league_scoring.py per_game: Caleb Wilson 22.4 FP/g in 26.6 mpg, 17 TO in 5 GP",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49 on A_GP 14 (THIN); Paul George 35.96, A_GP 37, P_GP 55"
+          ],
+          "concerns": "Wilson's starting role and Ware's 52.7 per-36 both have more upside than Rollins' fixed role, and if Turner is traded (unresolved, §7 #19) Ware could jump past 40, which would make Wilson or Rollins the weakest instead.",
+          "ranking": [
+            "Kel'el Ware",
+            "Caleb Wilson",
+            "Ryan Rollins",
+            "Dejounte Murray",
+            "Paul George",
+            "Desmond Bane",
+            "Onyeka Okongwu",
+            "Trey Murphy III",
+            "Jalen Duren",
+            "Kawhi Leonard",
+            "Jamal Murray",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ]
+        },
+        {
+          "member": "medic",
+          "vote": "Dejounte Murray",
+          "confidence": 0.62,
+          "rationale": "Dejounte Murray has the worst availability profile: 14 games last season (THIN), 45 games over two Pelicans seasons, a toe contusion that cost him the last three exhibitions and has him questionable for the opener, and Fears pushing for his role. About 37 FP/g over about 50 games is roughly 1,850 points against roughly 2,415 from a free agent at 34.5 x 70. George ranks second on the same maths: age 36, 37 GP last season, P_GP 55, roughly 36 x 52 = about 1,870, but he is healthy for the opener. Ware is third: 77 GP but 32.47 FP/g in 22.2 minutes is below the healthy free agents (Nembhard 35.17, Holiday 34.93, Queta 33.40), and he came off the bench behind Turner and even Sims.",
+          "ranking": [
+            "Dejounte Murray",
+            "Paul George",
+            "Kel'el Ware",
+            "Caleb Wilson",
+            "Ryan Rollins",
+            "Onyeka Okongwu",
+            "Desmond Bane",
+            "Trey Murphy III",
+            "Kawhi Leonard",
+            "Jalen Duren",
+            "Jamal Murray",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ],
+          "evidence": [
+            "data/processed/players_scored.csv: Dejounte Murray A_GP 14, FP_ACT_PG 36.49, SAMPLE_FLAG THIN, P_GP 68, FP_PROJ_PG_CORE 39.05",
+            "data/processed/players_scored.csv: Paul George A_GP 37, FP_ACT_PG 35.96, P_GP 55",
+            "data/processed/players_scored.csv: Kel'el Ware A_GP 77, A_MIN 22.18, FP_ACT_PG 32.47, FP_PROJ_PG_CORE 30.74",
+            "data/processed/players_scored.csv: Caleb Wilson A_GP none (NO_SAMPLE), FP_PROJ_PG_CORE 34.88, P_GP 71",
+            "data/processed/players_scored.csv free agents (not in council/taken.txt): Nembhard 35.17 / 57 GP, Holiday 34.93 / 53 GP, Queta 33.40 / 76 GP, Kevin Porter Jr. 44.04 / 38 GP",
+            "docs/research/20261019-0820-roster-before-opener.md: Dejounte Murray right toe contusion, questionable 21 Oct, no update since 16 Oct; Sims started over Ware on 14 Oct; George 'hopefully I can remain healthy', 78 GP over two seasons",
+            "docs/research/20261009-0601-roster-and-waivers.md: George has played more than 56 games once in seven seasons",
+            "docs/offseason-impact.md section 6 (New Orleans): Dejounte Murray 45 games across two Pelicans seasons; section 7 #19 Turner and #20 Chicago PF/C unresolved",
+            "docs/data-dictionary.md trap 3: ESPN P_GP can be stale on injuries (Ingram projected 67 games while OUT)"
+          ],
+          "concerns": "If Dejounte Murray is cleared on tonight's official injury report and starts ahead of Fears, his per-game ceiling (39 projected) outweighs George's age risk and Ware's below-free-agent rate, so the order of the bottom three could flip."
+        },
+        {
+          "member": "scout",
+          "vote": "Caleb Wilson",
+          "confidence": 0.6,
+          "rationale": "Wilson has no NBA sample. His preseason scores 22.4 FP/g in 26.6 mpg (30-69 FG, 17 TO in 5 games), and even ESPN's 34.88 projection is barely above the 32-34 FP/g that waiver players give (Wiggins 33.78, Queta 33.40, McCollum 32.68). Ware's 32.47 in 22.2 mpg is real, but his role has not grown: 1 start in 5 preseason games, Sims started over him when Turner rested, and no October Turner trade news. That leaves him at pickup level unless Turner is traded, which is unresolved (§7 #19). George is third: 35.96 on only 37 GP, age 36 with a 55-game projection, and he shot 5-20 in preseason. That puts his season total (about 2,000-2,160) below Dejounte Murray's projection (39.05+0.50 over 68 GP), even though Murray's role is in doubt.",
+          "evidence": [
+            "data/processed/players_scored.csv: Caleb Wilson A_GP blank, SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1",
+            "docs/research/20261019-0750-preseason-east.md CHI table: Wilson 5 GP, 26.6 mpg, 30-69 FG, 17 TO; league_scoring.per_game = 22.4 FP/g (OREB omitted)",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74, PROJ_BLIND_SPOT_PG 3.76",
+            "docs/research/20261019-0820-roster-before-opener.md: Sims started over Ware with Turner resting (NBC 14 Oct); Turner FantasyData 21 Oct starting C; no October Turner trade report",
+            "data/processed/players_scored.csv: Paul George FP_ACT_PG 35.96, A_GP 37, P_GP 55, FP_PROJ_PG_CORE 38.48",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14 (THIN), FP_PROJ_PG_CORE 39.05, P_GP 68",
+            "data/processed/players_scored.csv waiver pool (not in council/taken.txt): Andrew Wiggins 33.78 (68 GP), Neemias Queta 33.40 (76 GP), CJ McCollum 32.68 (76 GP), Kyshawn George 32.34",
+            "docs/offseason-impact.md §2 rookies: 'Rookie efficiency and turnovers are both punished hard by this formula'; §7 #19 Turner status and #20 CHI PF/C unresolved"
+          ],
+          "concerns": "Wilson starts and plays about 26-32 minutes, so normal rookie improvement could push him past Ware and George by midseason, and Dejounte Murray's toe and the Fears competition could make him the real third-weakest if he misses early games.",
+          "ranking": [
+            "Caleb Wilson",
+            "Kel'el Ware",
+            "Paul George",
+            "Dejounte Murray",
+            "Ryan Rollins",
+            "Desmond Bane",
+            "Onyeka Okongwu",
+            "Trey Murphy III",
+            "Jalen Duren",
+            "Jamal Murray",
+            "Kawhi Leonard",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ]
+        },
+        {
+          "member": "tempo",
+          "vote": "Kel'el Ware",
+          "confidence": 0.55,
+          "rationale": "Ware's 32.47 FP/G (77 GP, 22.2 MIN) is below three free centers (Nurkic 36.76, Queta 33.40, Claxton 33.36). He came off the bench even when Turner rested, and as our third C he only fills UTIL. Caleb Wilson has no NBA sample; his preseason scores 22.4 FP/G (30-69 FG, 17 TO in 5 GP) and his 34.9 projection is only replacement level for an SF-only player on a roster with five other SF-eligible players. Dejounte Murray's 36.49 is a THIN 14-GP sample, he is questionable with a toe contusion and Fears threatens his job, while free guards Nembhard (35.17) and Holiday (34.93) cover him. George ranks 4th because his 37-GP 35.96 counts as evidence and he is one of our only two PF-eligible players.",
+          "evidence": [
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18; Nurkic 36.76 (41 GP), Queta 33.40 (76 GP), Claxton 33.36 (69 GP), none in council/taken.txt",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1",
+            "docs/research/20261019-0750-preseason-east.md CHI table: Wilson 5 GP, 26.6 MPG, 30-69 FG, 9 3PM, 10-18 FT, 23 REB, 14 AST, 3 STL, 3 BLK, 17 TO -> 22.4 FP/G via scripts/league_scoring.py per_game (OREB excluded)",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14, SAMPLE_FLAG THIN; Nembhard 35.17 (57 GP), Holiday 34.93 (53 GP) free",
+            "docs/research/20261019-0820-roster-before-opener.md: D. Murray right toe contusion, questionable 21 Oct, no update since 16 Oct; Fears 13.3 ppg as preseason starter; Sims started over Ware 14 Oct",
+            "data/processed/players_scored.csv: Paul George FP_ACT_PG 35.96, A_GP 37, Pos SF/PF; Kawhi Leonard (SF/PF) is the only other PF-eligible player on council/roster.csv",
+            "docs/offseason-impact.md §7 #19: Myles Turner's roster status unresolved (Ware ceiling depends on it)"
+          ],
+          "concerns": "Wilson is a No. 4 pick with a starting role and ESPN projects 32 minutes, so he could quickly pass Ware, whose minutes are capped behind Turner. That would flip my top two.",
+          "ranking": [
+            "Kel'el Ware",
+            "Caleb Wilson",
+            "Dejounte Murray",
+            "Paul George",
+            "Ryan Rollins",
+            "Desmond Bane",
+            "Onyeka Okongwu",
+            "Trey Murphy III",
+            "Jalen Duren",
+            "Kawhi Leonard",
+            "Jamal Murray",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ]
+        },
+        {
+          "member": "vex",
+          "vote": "Kel'el Ware",
+          "confidence": 0.6,
+          "ranking": [
+            "Kel'el Ware",
+            "Caleb Wilson",
+            "Dejounte Murray",
+            "Paul George",
+            "Ryan Rollins",
+            "Desmond Bane",
+            "Onyeka Okongwu",
+            "Trey Murphy III",
+            "Jalen Duren",
+            "Kawhi Leonard",
+            "Jamal Murray",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ],
+          "rationale": "Ware's case is a per-36 of 52.69 that never becomes minutes. He scored 32.47 FP/g in 22.18 min over 77 GP, below free agents Nurkic 36.76, Nembhard 35.17 and Holiday 34.93. Sims started over him when Turner rested on 14 Oct, and his upside depends on a Turner trade that is unresolved (section 7 #19) with no reports since June. Wilson has no NBA games: his only support is ESPN's 34.88 projection, and his preseason scores 22.4 FP/g with 17 turnovers in 5 games, though his 26.6 mpg means his minutes are safer than Ware's. Dejounte Murray's 36.49 FP/g comes from 14 games (THIN); he is questionable with a toe contusion, played 45 games in two seasons, and Fears started while he was out.",
+          "evidence": [
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, P_MIN 24.3, FP_ACT_PER36 52.69",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14, SAMPLE_FLAG THIN, P_GP 68",
+            "data/processed/players_scored.csv free agents (not in council/taken.txt): Nurkic 36.76 (41 GP), Andrew Nembhard 35.17 (57), Holiday 34.93 (53), Queta 33.40 (76)",
+            "docs/research/20261019-0820-roster-before-opener.md: Sims started over Ware on 14 Oct; Turner trade reports end in June ('not actively engaged'); D. Murray questionable for 21 Oct with a toe contusion; Fears 13.3 ppg as a starter",
+            "docs/research/20261019-0750-preseason-east.md: Wilson 5 GP, 26.6 mpg, 30-69 FG, 17 TO, which scores 22.4 FP/g via scripts/league_scoring.per_game (no OREB/DD)",
+            "docs/offseason-impact.md section 7 #19 (Turner) and #10 (NO SG) are unresolved; Murray's 'declared himself healthy' (section 6) is contradicted by the briefing"
+          ],
+          "concerns": "Wilson might be the weaker keep: his rookie rate is untested and his preseason scored about 22 FP/g, so his expected value could fall below Ware's measured 32.47."
+        },
+        {
+          "member": "quill",
+          "vote": "Kel'el Ware",
+          "confidence": 0.6,
+          "ranking": [
+            "Kel'el Ware",
+            "Paul George",
+            "Caleb Wilson",
+            "Dejounte Murray",
+            "Ryan Rollins",
+            "Desmond Bane",
+            "Onyeka Okongwu",
+            "Trey Murphy III",
+            "Jalen Duren",
+            "Kawhi Leonard",
+            "Jamal Murray",
+            "Scottie Barnes",
+            "Cade Cunningham"
+          ],
+          "rationale": "Ware has the roster's lowest actual rate (32.47 FP/G on 22.2 min) and comes off the bench behind Turner, whose trade status is unresolved (offseason-impact §7.19). Undrafted Nurkic (36.76), Queta (33.40) and Claxton (33.36) match or beat him. George's 38.48 projection over 55 P_GP is about 2,116 points, below Bridges' 33.92 x 71 (about 2,408), and he is 36 with 37 GP last season. Wilson has no NBA sample, projects 34.88 (about waiver level) and scored about 22.4 FP/G in preseason with 17 TO in 5 games, but he starts and the rookie-shortlist plan bought his upside. This ballot departs from the 8 Oct waiver verdict (Rollins as the drop, 0.882 share) because Rollins has since started 4 of 4 and Ware lost the starting role.",
+          "evidence": [
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74, PROJ_BLIND_SPOT_PG 3.76",
+            "data/processed/players_scored.csv: Paul George FP_ACT_PG 35.96, A_GP 37, FP_PROJ_PG_CORE 38.48, P_GP 55",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_GP 71",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14 (THIN); Ryan Rollins FP_ACT_PG 37.51, A_GP 74, FP_PROJ_PG_CORE 31.86",
+            "data/processed/players_scored.csv (undrafted per council/taken.txt): Jusuf Nurkic 36.76 (41 GP), Neemias Queta 33.40, Nic Claxton 33.36, Kevin Porter Jr. 44.04 (38 GP)",
+            "docs/research/20261019-0820-roster-before-opener.md: Ware came off the bench on 14 Oct while Sims started for the resting Turner; no October Turner trade report; Dejounte Murray questionable (toe)",
+            "docs/research/20261019-0750-preseason-east.md CBS table, scored with scripts/league_scoring.py: Wilson 5 GP, 26.6 mpg, about 22.4 FP/G, 17 TO; Rollins 4/4 starts, about 30.8 FP/G",
+            "council/sessions/20261008-1030-waivers.json: drop round verdict Ryan Rollins, share 0.882"
+          ],
+          "concerns": "If Turner is traded, which is unresolved, Ware's ceiling is 40+ (offseason-impact §4), and George's 38.48 projection rate is higher than Wilson's or Ware's if he stays healthy."
+        }
+      ]
+    },
+    {
+      "name": "weakest #1",
+      "options": [
+        "Cade Cunningham",
+        "Scottie Barnes",
+        "Jalen Duren",
+        "Jamal Murray",
+        "Kawhi Leonard",
+        "Dejounte Murray",
+        "Trey Murphy III",
+        "Desmond Bane",
+        "Onyeka Okongwu",
+        "Caleb Wilson",
+        "Ryan Rollins",
+        "Kel'el Ware",
+        "Paul George"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Kel'el Ware",
+          "confidence": 0.6
+        },
+        {
+          "member": "archivist",
+          "vote": "Caleb Wilson",
+          "confidence": 0.7
+        },
+        {
+          "member": "cipher",
+          "vote": "Kel'el Ware",
+          "confidence": 0.55
+        },
+        {
+          "member": "ledger",
+          "vote": "Kel'el Ware",
+          "confidence": 0.62
+        },
+        {
+          "member": "medic",
+          "vote": "Dejounte Murray",
+          "confidence": 0.62
+        },
+        {
+          "member": "scout",
+          "vote": "Caleb Wilson",
+          "confidence": 0.6
+        },
+        {
+          "member": "tempo",
+          "vote": "Kel'el Ware",
+          "confidence": 0.55
+        },
+        {
+          "member": "vex",
+          "vote": "Kel'el Ware",
+          "confidence": 0.6
+        },
+        {
+          "member": "quill",
+          "vote": "Kel'el Ware",
+          "confidence": 0.6
+        }
+      ],
+      "result": {
+        "winner": "Kel'el Ware",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.684,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Kel'el Ware",
+            "weight": 13,
+            "confidence_weight": 7.64,
+            "voters": [
+              "coach",
+              "cipher",
+              "ledger",
+              "tempo",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Caleb Wilson",
+            "weight": 4,
+            "confidence_weight": 2.6,
+            "voters": [
+              "archivist",
+              "scout"
+            ]
+          },
+          {
+            "option": "Dejounte Murray",
+            "weight": 2,
+            "confidence_weight": 1.24,
+            "voters": [
+              "medic"
+            ]
+          },
+          {
+            "option": "Cade Cunningham",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Scottie Barnes",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Jalen Duren",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Jamal Murray",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Kawhi Leonard",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Trey Murphy III",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Desmond Bane",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Onyeka Okongwu",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Ryan Rollins",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Paul George",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "weakest #2",
+      "options": [
+        "Cade Cunningham",
+        "Scottie Barnes",
+        "Jalen Duren",
+        "Jamal Murray",
+        "Kawhi Leonard",
+        "Dejounte Murray",
+        "Trey Murphy III",
+        "Desmond Bane",
+        "Onyeka Okongwu",
+        "Caleb Wilson",
+        "Ryan Rollins",
+        "Paul George"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Caleb Wilson",
+          "confidence": 0.6
+        },
+        {
+          "member": "archivist",
+          "vote": "Caleb Wilson",
+          "confidence": 0.7
+        },
+        {
+          "member": "cipher",
+          "vote": "Caleb Wilson",
+          "confidence": 0.55
+        },
+        {
+          "member": "ledger",
+          "vote": "Caleb Wilson",
+          "confidence": 0.62
+        },
+        {
+          "member": "medic",
+          "vote": "Dejounte Murray",
+          "confidence": 0.62
+        },
+        {
+          "member": "scout",
+          "vote": "Caleb Wilson",
+          "confidence": 0.6
+        },
+        {
+          "member": "tempo",
+          "vote": "Caleb Wilson",
+          "confidence": 0.55
+        },
+        {
+          "member": "vex",
+          "vote": "Caleb Wilson",
+          "confidence": 0.6
+        },
+        {
+          "member": "quill",
+          "vote": "Paul George",
+          "confidence": 0.6
+        }
+      ],
+      "result": {
+        "winner": "Caleb Wilson",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.789,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Caleb Wilson",
+            "weight": 15,
+            "confidence_weight": 9.04,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "scout",
+              "tempo",
+              "vex"
+            ]
+          },
+          {
+            "option": "Dejounte Murray",
+            "weight": 2,
+            "confidence_weight": 1.24,
+            "voters": [
+              "medic"
+            ]
+          },
+          {
+            "option": "Paul George",
+            "weight": 2,
+            "confidence_weight": 1.2,
+            "voters": [
+              "quill"
+            ]
+          },
+          {
+            "option": "Cade Cunningham",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Scottie Barnes",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Jalen Duren",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Jamal Murray",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Kawhi Leonard",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Trey Murphy III",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Desmond Bane",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Onyeka Okongwu",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Ryan Rollins",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "weakest #3",
+      "options": [
+        "Cade Cunningham",
+        "Scottie Barnes",
+        "Jalen Duren",
+        "Jamal Murray",
+        "Kawhi Leonard",
+        "Dejounte Murray",
+        "Trey Murphy III",
+        "Desmond Bane",
+        "Onyeka Okongwu",
+        "Ryan Rollins",
+        "Paul George"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Ryan Rollins",
+          "confidence": 0.6
+        },
+        {
+          "member": "archivist",
+          "vote": "Dejounte Murray",
+          "confidence": 0.7
+        },
+        {
+          "member": "cipher",
+          "vote": "Ryan Rollins",
+          "confidence": 0.55
+        },
+        {
+          "member": "ledger",
+          "vote": "Ryan Rollins",
+          "confidence": 0.62
+        },
+        {
+          "member": "medic",
+          "vote": "Dejounte Murray",
+          "confidence": 0.62
+        },
+        {
+          "member": "scout",
+          "vote": "Paul George",
+          "confidence": 0.6
+        },
+        {
+          "member": "tempo",
+          "vote": "Dejounte Murray",
+          "confidence": 0.55
+        },
+        {
+          "member": "vex",
+          "vote": "Dejounte Murray",
+          "confidence": 0.6
+        },
+        {
+          "member": "quill",
+          "vote": "Paul George",
+          "confidence": 0.6
+        }
+      ],
+      "result": {
+        "winner": "Dejounte Murray",
+        "weight_cast": 19,
+        "majority": false,
+        "share": 0.421,
+        "tiebreak": null,
+        "needs_runoff": true,
+        "runoff_options": [
+          "Dejounte Murray",
+          "Ryan Rollins"
+        ],
+        "standings": [
+          {
+            "option": "Dejounte Murray",
+            "weight": 8,
+            "confidence_weight": 4.94,
+            "voters": [
+              "archivist",
+              "medic",
+              "tempo",
+              "vex"
+            ]
+          },
+          {
+            "option": "Ryan Rollins",
+            "weight": 7,
+            "confidence_weight": 4.14,
+            "voters": [
+              "coach",
+              "cipher",
+              "ledger"
+            ]
+          },
+          {
+            "option": "Paul George",
+            "weight": 4,
+            "confidence_weight": 2.4,
+            "voters": [
+              "scout",
+              "quill"
+            ]
+          },
+          {
+            "option": "Cade Cunningham",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Scottie Barnes",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Jalen Duren",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Jamal Murray",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Kawhi Leonard",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Trey Murphy III",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Desmond Bane",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Onyeka Okongwu",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "weakest #3 runoff",
+      "options": [
+        "Dejounte Murray",
+        "Ryan Rollins"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Ryan Rollins",
+          "confidence": 0.6
+        },
+        {
+          "member": "archivist",
+          "vote": "Dejounte Murray",
+          "confidence": 0.7
+        },
+        {
+          "member": "cipher",
+          "vote": "Ryan Rollins",
+          "confidence": 0.55
+        },
+        {
+          "member": "ledger",
+          "vote": "Ryan Rollins",
+          "confidence": 0.62
+        },
+        {
+          "member": "medic",
+          "vote": "Dejounte Murray",
+          "confidence": 0.62
+        },
+        {
+          "member": "scout",
+          "vote": "Dejounte Murray",
+          "confidence": 0.6
+        },
+        {
+          "member": "tempo",
+          "vote": "Dejounte Murray",
+          "confidence": 0.55
+        },
+        {
+          "member": "vex",
+          "vote": "Dejounte Murray",
+          "confidence": 0.6
+        },
+        {
+          "member": "quill",
+          "vote": "Dejounte Murray",
+          "confidence": 0.6
+        }
+      ],
+      "result": {
+        "winner": "Dejounte Murray",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.632,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Dejounte Murray",
+            "weight": 12,
+            "confidence_weight": 7.34,
+            "voters": [
+              "archivist",
+              "medic",
+              "scout",
+              "tempo",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Ryan Rollins",
+            "weight": 7,
+            "confidence_weight": 4.14,
+            "voters": [
+              "coach",
+              "cipher",
+              "ledger"
+            ]
+          }
+        ]
+      }
+    }
+  ],
   "research_also": [
     "docs/research/20261019-0750-preseason-east.md",
     "docs/research/20261019-0745-preseason-west.md"
-  ]
+  ],
+  "verdict": {
+    "answer": [
+      "Kel'el Ware",
+      "Caleb Wilson",
+      "Dejounte Murray"
+    ],
+    "rounds": [
+      "weakest #1",
+      "weakest #2",
+      "weakest #3",
+      "weakest #3 runoff"
+    ]
+  }
 }
