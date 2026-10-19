@@ -59,10 +59,11 @@ and report the highest-voted answer. See `council/PROTOCOL.md`.
 council/      members.json          personas, skills, sources, vote weights
               PROTOCOL.md           how a question is decided
               lookup.py             fast queries over players_scored.csv
+              espn_sync.py          live league check (needs ESPN_S2, ESPN_SWID)
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)
-              taken.txt             players already drafted
+              taken.txt             players on any league roster
               roster.csv            our live roster, updated after every move
               sessions/             every council session, as JSON
 ```

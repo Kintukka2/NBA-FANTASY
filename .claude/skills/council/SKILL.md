@@ -29,6 +29,13 @@ how and when acquired). Include it in the researcher's prompt and every
 member prompt. If the user reports a move that is not in the file yet,
 update the file first (see "During the season" in `council/PROTOCOL.md`).
 
+If `ESPN_S2` and `ESPN_SWID` are set, sync with the live league first:
+`python council/espn_sync.py --write-taken --check "<player>" ...` for
+every player the question names. It rebuilds `taken.txt` from all eight
+ESPN rosters and says whether each named player is on a roster. Put the
+result in every prompt. If `roster.csv` differs from ESPN, tell the user
+rather than editing it: that file records the moves the user reports.
+
 Create `council/sessions/<YYYYMMDD-HHMMSS>-<slug>.json`:
 
 ```json
