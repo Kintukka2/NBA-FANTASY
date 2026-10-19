@@ -1,0 +1,674 @@
+{
+  "question": "What one roster move should we make before the opener (Tue 20 Oct)? 'Add X, drop Y' (X undrafted per council/taken.txt, Y one of our 13 active players) or 'No move'.",
+  "type": "suggestion",
+  "options": [],
+  "asked_at": "2026-10-19T10:05:08Z",
+  "taken": [
+    "# Players already off the board, one per line. Lines starting with # are ignored.",
+    "# Full draft: see council/draft_results.csv for all 104 picks.",
+    "Nikola Jokic",
+    "Shai Gilgeous-Alexander",
+    "Luka Doncic",
+    "Victor Wembanyama",
+    "Jalen Johnson",
+    "Cade Cunningham",
+    "Giannis Antetokounmpo",
+    "Anthony Edwards",
+    "Jalen Brunson",
+    "Donovan Mitchell",
+    "Scottie Barnes",
+    "Jayson Tatum",
+    "Josh Giddey",
+    "Tyrese Maxey",
+    "Cooper Flagg",
+    "Tyrese Haliburton",
+    "Kevin Durant",
+    "Amen Thompson",
+    "Domantas Sabonis",
+    "Alperen Sengun",
+    "Devin Booker",
+    "Jalen Duren",
+    "Deni Avdija",
+    "Karl-Anthony Towns",
+    "Jalen Williams",
+    "Paolo Banchero",
+    "Jamal Murray",
+    "Jaylen Brown",
+    "LaMelo Ball",
+    "James Harden",
+    "Evan Mobley",
+    "Bam Adebayo",
+    "Darius Garland",
+    "Pascal Siakam",
+    "Chet Holmgren",
+    "Austin Reaves",
+    "Dyson Daniels",
+    "Kawhi Leonard",
+    "Nikola Vucevic",
+    "Stephon Castle",
+    "Anthony Davis",
+    "Derrick White",
+    "Dejounte Murray",
+    "Julius Randle",
+    "LeBron James",
+    "Trae Young",
+    "Brandon Miller",
+    "Stephen Curry",
+    "Lauri Markkanen",
+    "Naz Reid",
+    "Kon Knueppel",
+    "Mikal Bridges",
+    "Donovan Clingan",
+    "Trey Murphy III",
+    "Nickeil Alexander-Walker",
+    "Dylan Harper",
+    "Brandon Ingram",
+    "Matas Buzelis",
+    "Desmond Bane",
+    "Tyler Herro",
+    "Franz Wagner",
+    "Michael Porter Jr.",
+    "Jaren Jackson Jr.",
+    "Cameron Boozer",
+    "Norman Powell",
+    "De'Aaron Fox",
+    "Jarrett Allen",
+    "Keyonte George",
+    "AJ Dybantsa",
+    "Onyeka Okongwu",
+    "Josh Hart",
+    "VJ Edgecombe",
+    "Zion Williamson",
+    "RJ Barrett",
+    "Caleb Wilson",
+    "Joel Embiid",
+    "Rudy Gobert",
+    "Alex Sarr",
+    "Ryan Rollins",
+    "Ja Morant",
+    "Brandin Podziemski",
+    "Ivica Zubac",
+    "Ausar Thompson",
+    "Derik Queen",
+    "Payton Pritchard",
+    "Walker Kessler",
+    "Isaiah Hartenstein",
+    "DeMar DeRozan",
+    "Jaden McDaniels",
+    "Keegan Murray",
+    "Kyrie Irving",
+    "OG Anunoby",
+    "Darryn Peterson",
+    "Damian Lillard",
+    "Zach Edey",
+    "Ajay Mitchell",
+    "Anthony Black",
+    "Darius Acuff Jr.",
+    "Immanuel Quickley",
+    "Cedric Coward",
+    "Kel'el Ware",
+    "Ace Bailey",
+    "Ty Jerome",
+    "Paul George",
+    "Jimmy Butler III"
+  ],
+  "research": null,
+  "research_note": "Wire was deactivated for this meeting at the user's request. Each member instead had WebSearch/WebFetch and did its own web research (run as a general-purpose agent loading its .claude/agents/council-<id>.md persona). Members also had today's briefings in docs/research/.",
+  "supersedes": "council/sessions/20261019-100110-pickup-before-opener.json (withdrawn: pre-chosen options)",
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.5,
+          "rationale": "Ware is a bench C (32.47 FP/g in 22.2 min over 77 GP; started 1 of 5 preseason games, and Sims started over him when Turner rested). Wiggins is a projected starter at SF with a longer record (33.78 over 68 GP, 2.13 steals and blocks a game, preseason 57.0 per 36 against Ware's 36.0), plays the same 3 Week 1 games, and is forward-eligible, so the max-4 G rule doesn't apply. The rate gain is small (+1.3 on actuals, about level on projection); the real gain is a settled role on a slot that plays most days. I keep Wilson (starter, upside) and Dejounte Murray (39.05 projection, short-term toe issue).",
+          "evidence": [
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, A_MIN 30.35, A_STL 1.12, A_BLK 1.01, FP_PROJ_PG_CORE 32.00, PROJ_BLIND_SPOT_PG 1.78",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74, PROJ_BLIND_SPOT_PG 3.76",
+            "data/processed/players_scored.csv: Jalen Suggs FP_ACT_PG 34.71, A_GP 57; Kevin Porter Jr. 44.04, A_GP 38 (now third guard per docs/offseason-impact.md line 149)",
+            "data/processed/players_scored.csv: Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88; Dejounte Murray 36.49, A_GP 14, FP_PROJ_PG_CORE 39.05",
+            "docs/analysis/20261019-preseason-fast-starts.md: Wiggins preFP36 57.0 (4/4 starts); Ware 36.0 per 36, 1 of 5 starts",
+            "https://fantasydata.com/nba/starting-lineups?date=2026-10-21 (fetched 19 Oct 2026): MIA five Mitchell, Thompson, Wiggins, Giannis, Adebayo(Q); MIL C Turner",
+            "https://clutchpoints.com/nba/miami-heat/heat-news-erik-spoelstra-superpower-andrew-wiggins-has-playing-with-giannis-bam-adebayo (10 Oct 2026): Wiggins 'projected to start'",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (fetched 19 Oct 2026): injury list Adebayo, Larsson, Dru Smith only",
+            "https://www.nbcsports.com/fantasy/basketball/news/sunday-musings-knicks-get-their-rings-dylan-harper-starting-and-more-going-into-week-1 (18 Oct 2026): MIA and MIL 3 Week 1 games",
+            "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-14/kelel-ware-used-in-reserve-role-vs-chicago (14 Oct 2026): Sims started over Ware",
+            "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-12/dejounte-murray-toe-misses-another-practice (12 Oct 2026): 'no reason to think Murray will miss the season opener'",
+            "https://www.cbssports.com/nba/teams/HOU/houston-rockets/ (Rotowire note 18 Oct 2026): VanVleet starting PG, no minutes restriction",
+            "https://www.cbssports.com/nba/teams/ORL/orlando-magic/ (fetched 19 Oct 2026): Suggs not on injury list"
+          ],
+          "concerns": "The rate gain over Ware is only about 1 FP/g, Ware's 40+ ceiling returns if Turner is traded, and Wiggins (72% owned in ESPN leagues generally) may already have been picked up since the draft."
+        },
+        {
+          "member": "archivist",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "rationale": "Wilson is NO_SAMPLE: his only case is ESPN's 34.88 projection, and his measured preseason scores 22.4 FP/g in 26.6 mpg (30.3/36, 17 TO), the worst rate on our roster. Ware keeps a full 77-GP 32.47 line (52.7/36, projection 34.50 incl. blind spot). Wiggins is the best healthy undrafted starter on a full sample: 33.78 FP/g over 68 GP at 30.4 min, 4/4 preseason starts at 57.0 per 36, listed starting SF on 21 Oct, and on no injury list.",
+          "evidence": [
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, A_MIN 30.35, FP_PROJ_PG_CORE 32.00 + PROJ_BLIND_SPOT_PG 1.78, %Own 72.4, Injury DAY_TO_DAY (unsourced)",
+            "data/processed/players_scored.csv: Caleb Wilson A_GP NaN, SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1, %Own 74.9",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_ACT_PER36 52.69, FP_PROJ_PG_CORE 30.74 + 3.76",
+            "data/processed/players_scored.csv FA checks: Nurkic 36.76/41 GP (out to 4 Nov), Westbrook 35.10 (retired, offseason-impact l.41), Nembhard 35.17/57, Suggs 34.71/57 (proj 30.0), Queta 33.40/76, Jabari Smith Jr. 32.61/77, Kyshawn George 32.34/48, Kevin Porter Jr. 44.04/38 (bench)",
+            "docs/research/20261019-0750-preseason-east.md tables scored via scripts/league_scoring.py (no OREB/DD): Wiggins 25.8 FP/g, 57.0/36 in 4 GP; Wilson 22.4, 30.3/36 in 5 GP; Ware 24.0, 36.0/36 in 5 GP; Kyshawn George 34.3, 51.4/36",
+            "https://fantasydata.com/nba/starting-lineups?date=2026-10-21 (fetched 19 Oct 2026; no publish date): Wiggins SF in MIA five; Wilson PF in CHI five; Turner C for MIL; D. Murray (Q)",
+            "https://www.cbssports.com/nba/injuries/ (fetched 19 Oct 2026; no publish date): Wiggins not listed; Dejounte Murray Toe 'Game Time Decision', updated Fri 16 Oct",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (fetched 19 Oct 2026; notes dated 16-18 Oct): no Wiggins injury note; started 16 Oct finale",
+            "https://www.cbssports.com/nba/teams/MIL/milwaukee-bucks/ (fetched 19 Oct 2026; Rotowire note 17 Oct): Ware 25 min off bench, playing time 'unclear'",
+            "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/ (fetched 19 Oct 2026; Rotowire note 17 Oct): Wilson 'thrust into a meaningful role immediately'",
+            "https://roundtable.io/sports/nba/bucks/news/myles-turner-admits-he-is-ready-to-move-forward-with-new-look-bucks (2 Oct 2026, search listing): newest Turner item, no trade",
+            "docs/league-rules.md §3-4: F slot (SF/PF), 3 bench spots, drops go to 24-hour waivers"
+          ],
+          "concerns": "On ESPN's projections Wiggins (33.78) trails both Wilson (34.88) and Ware (34.50), Wilson's role and minutes are firmer than Ware's, and Wiggins (72% owned on ESPN) may already have been picked up since the draft, so check ESPN before acting."
+        },
+        {
+          "member": "cipher",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "rationale": "Wiggins has a 68-GP actual of 33.78 FP/G (projection 32.0 + 1.78 blind spot), so his range is about 31-35. Wilson has zero NBA games, and his only real data is a 22.4 FP/G preseason on 26.6 mpg with 17 TO in 5 games, so his range is about 25-35 centred near 30, not ESPN's 34.88, which assumes 32.1 min. Ware (32.47 over 77 GP, 52.7 per 36, 24 mpg in preseason) and Dejounte Murray (projected 39.05) both rate above Wilson on the numbers. MIA and CHI each play 3 games in Week 1, so the swap is worth about +3 FP/G from the first night.",
+          "evidence": [
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, A_MIN 30.35, FP_PROJ_PG_CORE 32.0, PROJ_BLIND_SPOT_PG 1.78, P_MIN 30.4",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1, FP_PROJ_PER36 39.1",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_ACT_PER36 52.7, FP_PROJ_PG_CORE 30.74, PROJ_BLIND_SPOT_PG 3.76",
+            "data/processed/players_scored.csv: Kevin Porter Jr. FP_ACT_PG 44.04, A_GP 38, FP_PROJ_PG_CORE 33.02; Dejounte Murray FP_ACT_PG 36.49, A_GP 14 THIN, FP_PROJ_PG_CORE 39.05",
+            "docs/research/20261019-0750-preseason-east.md CHI/MIA/MIL tables, scored with scripts/league_scoring.py (no OREB): Wilson 22.4 FP/G at 26.6 mpg; Wiggins 25.8 at 16.3 mpg; Ware 24.0 at 24.0 mpg; Porter Jr. 13.7 at 17.3 mpg",
+            "https://www.cbssports.com/nba/injuries/ (fetched 19 Oct 2026; entries updated through 18 Oct): no Wiggins entry; Dejounte Murray toe Game Time Decision, updated 16 Oct",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (Rotowire notes 16-18 Oct 2026): Wiggins in the starting five, no injury note",
+            "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/ (Rotowire notes 15 and 17 Oct 2026): Wilson 'thrust into a meaningful role immediately', worked with the first unit",
+            "https://www.cbssports.com/nba/teams/MIL/milwaukee-bucks/ (Rotowire notes 17 Oct 2026): Ware playing time 'no clearer'; Porter 'projected to come off the bench'",
+            "https://www.cbssports.com/nba/teams/NO/new-orleans-pelicans/ (Rotowire notes 16-17 Oct 2026): Murray questionable for 21 Oct, no later update",
+            "https://www.nbcsports.com/fantasy/basketball/news/sunday-musings-knicks-get-their-rings-dylan-harper-starting-and-more-going-into-week-1 (Raphielle Johnson, 18 Oct 2026): MIA, CHI, MIL 3 games in Week 1",
+            "https://www.cbssports.com/nba/teams/HOU/houston-rockets/ (Rotowire 18 Oct 2026): VanVleet no minutes restriction, may sit back-to-backs"
+          ],
+          "concerns": "Wiggins may already be on another team (72.4% rostered on ESPN, and taken.txt does not track pickups since the draft); and Wilson, a No. 4 pick starting while Claxton is out, could grow into ESPN's 32-minute projection, so we would lose the upside to a rival for about 3 FP/G."
+        },
+        {
+          "member": "ledger",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55,
+          "rationale": "Wilson's only support is ESPN's 34.88 projection at 32.1 min. His preseason as a starter scores 22.4 FP/g in 26.6 min (30.3 per 36, 17 TO in 5 GP), and ADP 76.6 prices him for standard scoring, not a -2 TO / -1 FGA format. Wiggins has a measured 33.78 FP/g over 68 GP (2.13 stocks, 1.51 TO), starts for MIA and is healthy, worth about 2,260 points against about 2,095 for Wilson on a preseason-informed blend. Ware (32.47 over 77 GP, 52.69 per 36, 34.50 projected) is about level with every free agent, so swapping him gains 0-1.3 FP/g at most.",
+          "evidence": [
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, A_MIN 30.35, FP_PROJ_PG_CORE 32.00 + PROJ_BLIND_SPOT_PG 1.78, A_STL 1.12, A_BLK 1.01, A_TO 1.51, ADP 116, %Own 72.4",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1, ADP 76.6",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_ACT_PER36 52.69, projection 34.50 incl. blind spot",
+            "data/processed/players_scored.csv: Kevin Porter Jr. FP_ACT_PG 44.04, A_GP 38, FP_ACT_PER36 47.78 (31.9 at 24 min); Kyshawn George 32.34, A_GP 48, projection 31.23",
+            "docs/research/20261019-0750-preseason-east.md CHI table: Wilson 5/5 GS, 26.6 mpg, 30-69 FG, 10-18 FT, 17 TO = 22.4 FP/g via league_scoring.per_game (OREB excluded)",
+            "docs/research/20261019-0750-preseason-east.md MIA table: Wiggins 4/4 GS, 16.3 mpg, 20-33 FG, 5 STL, 2 TO = 25.8 FP/g (OREB excluded); item 33: no injury behind CSV DAY_TO_DAY",
+            "https://fantasydata.com/nba/starting-lineups?date=2026-10-21 (fetched 19 Oct 2026): Wiggins in MIA five, Wilson in CHI five, Dejounte Murray (Q)",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (notes 16-18 Oct 2026): Wiggins in first unit; injury table Adebayo, Larsson, Dru Smith only",
+            "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/ (15 and 17 Oct 2026): Wilson 4 TO, 1-5 3PT on 15 Oct; 'thrust into a meaningful role immediately'",
+            "https://www.cbssports.com/nba/teams/MIL/milwaukee-bucks/ (17 Oct 2026): Porter 'projected to come off the bench'; Ware 'expected to see more floor time'",
+            "https://roundtable.io/sports/nba/bucks/news/bucks-kevin-porter-jr-has-high-expectations-for-upcoming-nba-season (12 Oct 2026): Porter 19 and 18 min off the bench",
+            "https://www.cbssports.com/nba/players/2203544/dejounte-murray/fantasy/ (16 Oct 2026): toe, questionable for 21 Oct, no later note",
+            "https://www.cbssports.com/nba/teams/BOS/boston-celtics/ (17 Oct 2026): Queta 'may keep his starting spot over Robinson'"
+          ],
+          "concerns": "Wilson is a No. 4 pick who starts and may grow into ESPN's 34.88 as the season goes on, and Wiggins (ESPN 72.4% owned) may already have been picked up since the draft, which taken.txt cannot show, so check our league's free-agent list before dropping Wilson."
+        },
+        {
+          "member": "medic",
+          "vote": "Add Andrew Wiggins, drop Dejounte Murray",
+          "confidence": 0.6,
+          "rationale": "Dejounte Murray has the worst availability on our roster: 14 GP last season (THIN), 45 games over two Pelicans seasons, Achilles-management and hand absences in Mar-Apr 2026, and now a toe contusion that cost him 3 of 4 exhibitions and leaves him questionable for 21 Oct, with no update since 16 Oct. About 37.5 FP/g x about 50 games is roughly 1,875 points, while Wiggins at about 33.8 FP/g (33.78 actual, 32.0 + 1.78 projected) x about 65 games is roughly 2,200. Wiggins started every preseason game and is not on Miami's injury list. Ware is healthy (77 GP) and is a role problem, not an availability problem, so he is not the drop on my angle.",
+          "evidence": [
+            "data/processed/players_scored.csv: Dejounte Murray A_GP 14, SAMPLE_FLAG THIN, FP_ACT_PG 36.49, FP_PROJ_PG_CORE 39.05, P_GP 68",
+            "data/processed/players_scored.csv: Andrew Wiggins A_GP 68, A_MIN 30.35, FP_ACT_PG 33.78, FP_PROJ_PG_CORE 32.0, PROJ_BLIND_SPOT_PG 1.78, P_GP 67, Injury DAY_TO_DAY (no web basis)",
+            "data/processed/players_scored.csv: Kel'el Ware A_GP 77, FP_ACT_PG 32.47 (healthy, role-limited)",
+            "docs/offseason-impact.md section 6 New Orleans: Murray 45 games across two Pelicans seasons, 'a self-assessment, not a clearance'",
+            "docs/research/20261019-0750-preseason-east.md MIA: Wiggins started 4 of 4; #33 DAY_TO_DAY tag has no injury found",
+            "https://www.cbssports.com/nba/players/2203544/dejounte-murray/fantasy/ (notes 16 Oct 2026: questionable for 21 Oct; Mar-Apr 2026 Achilles management and hand contusion absences)",
+            "https://www.cbssports.com/nba/teams/NO/new-orleans-pelicans/ (fetched 19 Oct 2026: Murray on injury list, no notes 18-19 Oct; Fears note 17 Oct)",
+            "https://www.hoopsrumors.com/2026/10/injury-notes-mavericks-d-murray-haliburton-bryant.html (11 Oct 2026: Mosley 'precautionary')",
+            "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-12/dejounte-murray-toe-misses-another-practice (12 Oct 2026)",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (fetched 19 Oct 2026: injury list Adebayo, Larsson, Dru Smith only; Wiggins in 16 Oct starting five)",
+            "https://www.nbcsports.com/nba/andrew-wiggins/10207/news (fetched 19 Oct 2026: 3yr/$64M deal; toe cost 8 games, cleared about 1 Apr 2026)"
+          ],
+          "concerns": "If Murray is cleared this week and keeps the starting PG job over Fears, his roughly 39 FP/g projection beats Wiggins by about 5 a game and a rival will pick him up; separately, Wiggins may already have been claimed in the 11 or 18 Oct waiver runs, which taken.txt would not show."
+        },
+        {
+          "member": "scout",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "rationale": "Wilson has no NBA sample, and his preseason scores 22.4 FP/g in 26.6 mpg (30.3 per 36, 17 TO in 5 GP). Real starter minutes are not yet turning into points. Ware's 32.47 over 77 GP at about 52.7 per 36 is a proven rate, and his minutes are rising (25 in the finale). Wiggins is a locked Miami starter at 33.78 over 68 GP with a 33.8 adjusted projection and 3 Week-1 games. Swapping forward for forward avoids the G-limit question, and we keep three centres.",
+          "evidence": [
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, A_MIN 30.35, FP_PROJ_PG_CORE 32.0 + PROJ_BLIND_SPOT_PG 1.8",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88; Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18",
+            "docs/research/20261019-0750-preseason-east.md CBS CHI table scored with league_scoring.py: Wilson 22.4 FP/g, 26.6 mpg, 17 TO in 5 GP",
+            "https://fantasydata.com/nba/starting-lineups?date=2026-10-21 (fetched 19 Oct 2026): Wiggins in MIA five",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (notes 16-18 Oct 2026): no Wiggins injury; Adebayo Q",
+            "https://www.cbssports.com/nba/teams/MIL/milwaukee-bucks/ (notes 16-17 Oct 2026): Ware 25 min, 'will almost certainly see more of the floor'; Porter Jr. bench",
+            "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/ (notes 15-17 Oct 2026): Wilson 23-24 mpg",
+            "https://www.nbcsports.com/fantasy/basketball/news/sunday-musings-knicks-get-their-rings-dylan-harper-starting-and-more-going-into-week-1 (18 Oct 2026): MIA and CHI 3 games in Week 1",
+            "https://www.cbssports.com/nba/teams/ORL/orlando-magic/ (notes 14-18 Oct 2026): Suggs fallback context",
+            "https://www.cbssports.com/nba/teams/WAS/washington-wizards/ (notes 13-18 Oct 2026): Kyshawn George fallback context"
+          ],
+          "concerns": "Wilson's ESPN projection (34.88) is above Wiggins' adjusted 33.8 and a rookie starter can grow, while Wiggins (72.4% owned in the CSV) may already have been picked up since the draft."
+        },
+        {
+          "member": "tempo",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.5,
+          "rationale": "On value it is a near-tie: Wiggins 33.78 FP/g over 68 GP against Ware's 32.47 over 77, while projections plus blind spot have Ware 34.5 and Wiggins 33.8. On fit, Ware is a third C whose Wed, Fri and Sat games all overlap Okongwu's, so he only fills UTIL. Wiggins is a third PF-eligible player behind rest-prone Kawhi and George, and a C-for-SF/PF swap leaves any G count unchanged. The week-1 lineup simulation is flat (1457.3 now, 1459.9 after) and C is the deepest position on the wire (Queta 33.40, Claxton 33.36, Ayton 31.59), so Ware is the cheaper player to give up.",
+          "evidence": [
+            "data/processed/players_scored.csv: Andrew Wiggins SF/PF FP_ACT_PG 33.78, A_GP 68, A_MIN 30.35, FP_PROJ_PG_CORE 32.0, PROJ_BLIND_SPOT_PG 1.78, %Own 72.4",
+            "data/processed/players_scored.csv: Kel'el Ware C FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74, PROJ_BLIND_SPOT_PG 3.76, FP_ACT_PER36 52.69",
+            "data/processed/players_scored.csv: wire C depth Queta 33.40 (76 GP), Claxton 33.36 (69 GP), Ayton 31.59 (72 GP); Nurkic out until at least 4 Nov per docs/research/20261019-0745-preseason-west.md",
+            "docs/league-rules.md §3: 1 C, 1 PF, G, F, 3 UTIL, max 4 at G; roster already holds 7 PG/SG-eligible players, so the cap cannot mean eligibility and this swap leaves G count unchanged",
+            "scratchpad wk1b.py: week-1 optimal lineups 1457.3 (current) vs 1459.9 (Wiggins for Ware); Fri 23 Oct 12 of our players play, so 2 sit",
+            "https://www.nbcsports.com/fantasy/basketball/news/sunday-musings-knicks-get-their-rings-dylan-harper-starting-and-more-going-into-week-1 (18 Oct 2026): Week 1 MIA, MIL, DET, TOR, NO, ORL, ATL, CHI 3 games; BOS, DEN 2",
+            "https://www.cbssports.com/nba/schedule/20261021/ , /20261022/ , /20261023/ , /20261024/ , /20261025/ (no publish date, fetched 19 Oct 2026): daily slates",
+            "https://www.cbssports.com/nba/teams/DET/detroit-pistons/schedule/ (fetched 19 Oct 2026): DET 20, 23, 25 Oct",
+            "https://www.cbssports.com/nba/players/2135571/andrew-wiggins/fantasy/ (Rotowire notes 2-15 Oct 2026): no active injury, illness resolved, 19 pts in 22 min on 15 Oct, Spoelstra praise on 2 Oct",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/stats/ (fetched 19 Oct 2026): Wiggins 4 GP/4 GS, 16.3 mpg, 20-33 FG, 5 stl",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (notes 16-18 Oct 2026): Wiggins in the finale starting five; Adebayo (groin) questionable",
+            "https://www.cbssports.com/nba/teams/MIL/milwaukee-bucks/ (Rotowire note 17 Oct 2026): Ware 13 pts in 25 min, 'play more than last season'",
+            "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-14/kelel-ware-used-in-reserve-role-vs-chicago (14 Oct 2026): Sims started over Ware with Turner resting",
+            "https://roundtable.io/sports/nba/bucks/news/who-should-bucks-look-to-trade-myles-turner-or-kelel-ware (Grant Mona, 6 Oct 2026): Turner the more likely one moved, no talks reported",
+            "https://roundtable.io/sports/nba/bucks/news/myles-turner-could-stay-with-bucks-despite-trade-rumors (29 Jun 2026): Milwaukee 'not actively engaged in moving him'",
+            "https://www.cbssports.com/nba/teams/NO/new-orleans-pelicans/ (Rotowire notes 15-17 Oct 2026): Dejounte Murray questionable for 21 Oct with a toe injury, so bench him daily rather than drop"
+          ],
+          "concerns": "Wiggins may already be on another team since the draft (72.4% owned on ESPN), and if Turner is traded Ware's 52.7 FP per 36 at starter minutes would beat Wiggins by about 8 FP a game."
+        },
+        {
+          "member": "vex",
+          "vote": "Add Kyshawn George, drop Caleb Wilson",
+          "confidence": 0.55,
+          "rationale": "Wilson is the only one of our 13 with no NBA sample (A_GP blank). His 34.88 projection assumes 32.1 min and 2.1 TO, but preseason showed 26.6 min and 3.4 TO, for 22.4 FP/g (30.3 per 36), the worst rate on our roster. Ware, the council's pick, has 32.47 FP/g over 77 GP at 52.7 per 36, so he should stay. Kyshawn George has 32.3 FP/g over 48 GP (40.2 per 36), started all 4 preseason games at 24-27 min with 51.4 per 36, and is healthy; every other free agent loses role, health or availability under attack.",
+          "evidence": [
+            "data/processed/players_scored.csv: Caleb Wilson A_GP blank, FP_PROJ_PG_CORE 34.88, P_MIN 32.1, P_TO 2.1, SAMPLE_FLAG NO_SAMPLE",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_ACT_PER36 52.69, A_DD 24, PROJ_BLIND_SPOT_PG 3.76",
+            "data/processed/players_scored.csv: Kyshawn George FP_ACT_PG 32.34, A_GP 48, A_MIN 28.94, FP_ACT_PER36 40.23, P_MIN 29.4, %Own 25.9",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14 (THIN), FP_PROJ_PG_CORE 39.05",
+            "data/processed/players_scored.csv: Kevin Porter Jr. 44.04 FP/g, A_GP 38; Jalen Suggs 34.71, A_GP 57; Andrew Wiggins 33.78, A_GP 68, %Own 72.4",
+            "docs/research/20261019-0750-preseason-east.md CHI/MIL/WSH tables scored with scripts/league_scoring.py: Wilson 22.4 FP/g (30.3/36), Ware 24.0 (36.0/36), K. George 34.3 (51.4/36), Porter Jr. 13.7 in 17.3 min",
+            "docs/offseason-impact.md §7 #20: Chicago PF/C order unresolved once Claxton returns",
+            "https://www.cbssports.com/nba/teams/WAS/washington-wizards/ (Rotowire notes 16-18 Oct 2026: K. George 'strong case for a full-time starting role'; Dybantsa day-to-day, ankle)",
+            "https://www.cbssports.com/nba/players/29232627/kyshawn-george/fantasy/ (Rotowire notes 9 Oct 2026 'penciled in' as starting SG; 12 Oct 'may struggle to assert himself'; Jul 2026 'deemed 100 percent'; Mar 2026 elbow UCL tear)",
+            "https://www.rotowire.com/basketball/headlines/kyshawn-george-injury-more-competition-for-minutes-531001 (undated profile, latest item 16 Oct 2026: starting spots 'up for grabs')",
+            "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/ (Rotowire 15 and 17 Oct 2026: Wilson with the first unit, 16/7/4 in 23 min; Claxton and Collins injured)",
+            "https://www.cbssports.com/nba/teams/MIL/milwaukee-bucks/ (Rotowire 17 Oct 2026: Porter 'projected to come off the bench'; Ware 'will almost certainly see more of the floor')",
+            "https://www.cbssports.com/nba/players/2203544/dejounte-murray/fantasy/ (latest note 16 Oct 2026: questionable for 21 Oct, toe)",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (notes 16-18 Oct 2026: no Wiggins injury note; Adebayo questionable)",
+            "https://www.nbcsports.com/fantasy/basketball/news/sunday-musings-knicks-get-their-rings-dylan-harper-starting-and-more-going-into-week-1 (18 Oct 2026: WAS, CHI, MIL, ORL, NO each play 3 Week 1 games)"
+          ],
+          "concerns": "Wilson is a No. 4 pick at 74.9% ESPN ownership who will likely be claimed and could grow into a 35 FP/g player by midseason, while George has to share the ball with Trae Young, Anthony Davis and Dybantsa and missed time often last season."
+        },
+        {
+          "member": "quill",
+          "vote": "No move",
+          "confidence": 0.6,
+          "rationale": "The 08:19 vote ranked Ware weakest because the free agents that 'match or beat' him were Nurkic 36.76, Queta 33.40 and Claxton 33.36. Nurkic is out until at least 4 Nov, Claxton is likely out for the opener and Queta is in a contested starting battle. Of the healthy free-agent starters, only Suggs (34.71/57 GP) beats Ware's 32.47/77 GP on actuals, by 2.2, and his projection is 4.5 lower (30.0 vs 34.5), while Ware has the group's best per-36 (52.69) on rising minutes (24.0 mpg preseason). None of Ware, Wilson or D. Murray plays before Wed 21 Oct, and the first official injury report comes at 21:00 UTC today, so holding costs nothing and keeps the swap open for Week 1, when about 7 adds are allowed.",
+          "evidence": [
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_ACT_PER36 52.69, proj 30.74+3.76",
+            "data/processed/players_scored.csv: Jalen Suggs FP_ACT_PG 34.71, A_GP 57, proj 29.07+0.95, Injury DAY_TO_DAY; Andrew Wiggins 33.78/68 GP, proj 32.0+1.78; Day'Ron Sharpe 26.15/62 GP, per36 50.37; Kyshawn George 32.34/48 GP, per36 40.23",
+            "council/sessions/20261019-081948-three-weakest.json: Ware 13/19; quill ballot cited Nurkic 36.76, Queta 33.40, Claxton 33.36",
+            "council/sessions/20261019-100110-pickup-before-opener.json: withdrawn (drop fixed as Ware in advance)",
+            "docs/league-rules.md section 4: preseason matchupAcquisitionLimit 1, about 7 adds a week in season, 24h waivers",
+            "https://www.cbssports.com/nba/teams/MIL/milwaukee-bucks/ (Rotowire notes 16-17 Oct 2026): Ware 'will almost certainly see more of the floor'; Porter 'projected to come off the bench'",
+            "https://www.cbssports.com/nba/teams/NO/new-orleans-pelicans/ (Rotowire notes 15-17 Oct 2026): D. Murray questionable for 21 Oct, no newer update",
+            "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/ (Rotowire notes 15-17 Oct 2026): Wilson 16 pts in 23 min, worked with starters",
+            "https://www.cbssports.com/nba/teams/WAS/washington-wizards/ (Rotowire notes 13-18 Oct 2026): Kyshawn George in 16 Oct starting five",
+            "https://www.cbssports.com/nba/teams/MIA/miami-heat/ (Rotowire notes 15-18 Oct 2026): Wiggins in 16 Oct five, no injury note",
+            "https://www.cbssports.com/nba/teams/BKN/brooklyn-nets/ (Rotowire notes 12-16 Oct 2026): Wagner backup C behind Sharpe",
+            "https://www.cbssports.com/nba/teams/ORL/orlando-magic/ (Rotowire notes 14-18 Oct 2026): Suggs back from illness; Black practised 18 Oct",
+            "https://roundtable.io/sports/nba/bucks/news/myles-turner-could-stay-with-bucks-despite-trade-rumors (29 Jun 2026): Bucks 'not actively engaged in moving' Turner; no October report found",
+            "https://official.nba.com/nba-injury-report-2025-26-season/ (via docs/research/20261019-0820-roster-before-opener.md, not fetched by me): first report for 20 Oct games due 21:00 UTC 19 Oct"
+          ],
+          "concerns": "If Dejounte Murray is ruled out for several games, or Ware stays below 22 minutes behind Turner, Suggs (+2.2 FP/g on actuals, starting) could be gone by the time we act, so waiting costs us the first pick of the wire."
+        }
+      ],
+      "result": {
+        "winner": "Add Andrew Wiggins, drop Caleb Wilson",
+        "weight_cast": 19,
+        "majority": false,
+        "share": 0.421,
+        "tiebreak": null,
+        "needs_runoff": true,
+        "runoff_options": [
+          "Add Andrew Wiggins, drop Caleb Wilson",
+          "Add Andrew Wiggins, drop Kel'el Ware"
+        ],
+        "standings": [
+          {
+            "option": "Add Andrew Wiggins, drop Caleb Wilson",
+            "weight": 8,
+            "confidence_weight": 4.1,
+            "voters": [
+              "archivist",
+              "cipher",
+              "ledger",
+              "scout"
+            ]
+          },
+          {
+            "option": "Add Andrew Wiggins, drop Kel'el Ware",
+            "weight": 5,
+            "confidence_weight": 2.5,
+            "voters": [
+              "coach",
+              "tempo"
+            ]
+          },
+          {
+            "option": "Add Andrew Wiggins, drop Dejounte Murray",
+            "weight": 2,
+            "confidence_weight": 1.2,
+            "voters": [
+              "medic"
+            ]
+          },
+          {
+            "option": "No move",
+            "weight": 2,
+            "confidence_weight": 1.2,
+            "voters": [
+              "quill"
+            ]
+          },
+          {
+            "option": "Add Kyshawn George, drop Caleb Wilson",
+            "weight": 2,
+            "confidence_weight": 1.1,
+            "voters": [
+              "vex"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "vote",
+      "options": [
+        "Add Andrew Wiggins, drop Caleb Wilson",
+        "Add Andrew Wiggins, drop Kel'el Ware",
+        "Add Andrew Wiggins, drop Dejounte Murray",
+        "Add Kyshawn George, drop Caleb Wilson",
+        "No move"
+      ],
+      "note": "Ballots via SendMessage to the same web-enabled agents, with every opening rationale attached; evidence lists are in each member's opening ballot.",
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.45,
+          "ranking": [
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "No move",
+            "Add Andrew Wiggins, drop Dejounte Murray",
+            "Add Kyshawn George, drop Caleb Wilson"
+          ],
+          "rationale": "Unchanged on the add: Wiggins beats every pooled alternative. On the drop I stay with Ware: a third C behind Duren and Okongwu who only plays UTIL; Turner holds the job and Sims started over him on 14 Oct; C is the deepest position on the wire. Wilson starts at about 32 projected minutes (34.88) and the end of a 3-deep bench should hold upside. Quill's add-limit point lowered my confidence, so No move ranks above dropping Dejounte Murray (39.05 projection, short-term toe).",
+          "concerns": "On evidence Wilson may be the weaker player (22.4 FP/g preseason, 3.4 TO/g, no NBA sample), so A could be right; Wiggins may already be rostered or the add blocked until Week 1."
+        },
+        {
+          "member": "archivist",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "ranking": [
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "No move",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wilson rests only on a NO_SAMPLE projection (34.88); his measured preseason is 22.4 FP/g (30.3 per 36, 17 TO), the worst rate on our roster. Wiggins has a full 68-GP line at 33.78, so A swaps no sample for a full one while keeping Ware's 77-GP 32.47. Quill's wait-costs-nothing point is fair, so No move is second. B and C drop measured lines; D adds George (32.34 over 48 GP), below Ware.",
+          "concerns": "Wiggins is 72% owned on ESPN and may be gone; on ESPN projections he trails Wilson (34.88) and Ware (34.50)."
+        },
+        {
+          "member": "cipher",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "ranking": [
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "No move",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged: Wilson is our lowest rate at about 30 FP/G (range 25-35), so the best moves drop him. Wiggins (33.78 over 68 GP) gains about 3; George (32.34 over 48 GP, 4/4 starts) gains about 1.5 and is likelier to be on the wire, so D is a close second. B gains about 1. C is last: Murray's playing rate (36.5 actual, 39.05 projected) beats Wiggins and missed games can be streamed. The injury report cannot change Wilson-vs-Wiggins, and waiting risks losing Wiggins.",
+          "concerns": "Wiggins may be gone and the preseason add limit may block the move today; either would make D or waiting the practical choice."
+        },
+        {
+          "member": "ledger",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55,
+          "ranking": [
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "No move",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wilson's only support is ESPN's 34.88 at 32.1 min; his measured preseason is 22.4 FP/g (17 TO in 5 GP). Ware's 32.47 over 77 GP (52.69 per 36, 34.50 projected) is level with the best free agent, so cutting Ware gains 0-1.3 while cutting Wilson gains about 4 on measured evidence. D second (George, fallback), B third, E fourth (starting free agents get claimed once the season starts; an add limit blocks every move equally), C last (Murray projects 39.55).",
+          "concerns": "Wiggins may already be rostered and the one-add preseason limit could block the move; if so, D is the move."
+        },
+        {
+          "member": "medic",
+          "vote": "Add Andrew Wiggins, drop Dejounte Murray",
+          "confidence": 0.55,
+          "ranking": [
+            "Add Andrew Wiggins, drop Dejounte Murray",
+            "No move",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Kyshawn George, drop Caleb Wilson"
+          ],
+          "rationale": "I keep C first: Dejounte Murray is the only drop candidate with an availability problem (14 GP last season, 45 over two seasons, Mar-Apr 2026 absences, toe now; questionable 21 Oct, no update since 16 Oct), about 1,875 expected points vs Wiggins' about 2,200. Quill moved me to put No move second, since the 21:00 UTC report could settle Murray for free. If we drop a healthy player, Wilson (no sample) before Ware (77 GP). George last as the least proven add.",
+          "concerns": "If Murray is cleared and keeps the PG job, his about 39 FP/g beats Wiggins by about 5; waiting for the report could be strictly better."
+        },
+        {
+          "member": "scout",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "ranking": [
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "No move",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wilson's preseason is 22.4 FP/g (30.3 per 36, 17 TO) with no NBA sample; Ware's 32.47 over 77 GP is proven and his minutes are rising (25 in the finale). Wiggins is a 4/4 starter at 33.78 over 68 GP with 3 Week-1 games. Vex's 72%-owned point is fair, so D (same drop) is my fallback; C last because Murray's 39.05 is the highest projection of the three.",
+          "concerns": "Wiggins may be rostered and the add limit may block a third add today, which would make No move the practical outcome."
+        },
+        {
+          "member": "tempo",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.5,
+          "ranking": [
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "No move",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Ware is a third C whose Week-1 games all fall on Okongwu's days, so he only fills UTIL; C is the deepest position on the wire; Wiggins adds a third PF-eligible player and leaves G count unchanged. No move second: the gap is about 1 FP/g and no drop candidate plays before 21 Oct. The add-limit worry looks weak: Butler and George were both added on 19 Oct. Dropping Wilson (5-game sample) or Murray (benchable daily, 39.05) gives up harder-to-replace upside.",
+          "concerns": "Wiggins may be gone, and a Turner trade would make Ware's 52.7 per 36 a starter's line that beats Wiggins."
+        },
+        {
+          "member": "vex",
+          "vote": "Add Kyshawn George, drop Caleb Wilson",
+          "confidence": 0.55,
+          "ranking": [
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "No move",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wilson is the only one of our 13 with no NBA games (22.4 FP/g preseason) against Ware's 77-GP 32.47 and Murray's 39.05 projection, so B and C drop the wrong player. Wiggins' baseline beats George's, but he played 16.3 mpg in preseason, shares the ball with Giannis and Bam, and at 72.4% ownership is probably taken; George (25.9%) started 4/4 at 24-27 min, 51.4 per 36. No move ranks above B and C. roster.csv shows two adds on 19 Oct, so the limit of 1 did not block a second add.",
+          "concerns": "If Wiggins is actually available his baseline beats George's; Wilson will likely be claimed and could become a 35 FP/g player."
+        },
+        {
+          "member": "quill",
+          "vote": "No move",
+          "confidence": 0.58,
+          "ranking": [
+            "No move",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wiggins (33.78 over 68 GP, projection 33.8) roughly ties all three drop candidates, so no swap is a clear gain, and none plays before 21 Oct, so we can decide after tonight's 21:00 UTC report at no cost. If the council wants a move, dropping Ware fits its own 08:19 verdict (Ware weakest, 13/19); Wilson next (5 preseason games); Murray last (39.6 projection, status unknown).",
+          "concerns": "If Wiggins is still free and Murray is ruled out tonight, waiting a day could cost us Wiggins."
+        }
+      ],
+      "result": {
+        "winner": "Add Andrew Wiggins, drop Caleb Wilson",
+        "weight_cast": 19,
+        "majority": false,
+        "share": 0.421,
+        "tiebreak": null,
+        "needs_runoff": true,
+        "runoff_options": [
+          "Add Andrew Wiggins, drop Caleb Wilson",
+          "Add Andrew Wiggins, drop Kel'el Ware"
+        ],
+        "standings": [
+          {
+            "option": "Add Andrew Wiggins, drop Caleb Wilson",
+            "weight": 8,
+            "confidence_weight": 4.1,
+            "voters": [
+              "archivist",
+              "cipher",
+              "ledger",
+              "scout"
+            ]
+          },
+          {
+            "option": "Add Andrew Wiggins, drop Kel'el Ware",
+            "weight": 5,
+            "confidence_weight": 2.35,
+            "voters": [
+              "coach",
+              "tempo"
+            ]
+          },
+          {
+            "option": "No move",
+            "weight": 2,
+            "confidence_weight": 1.16,
+            "voters": [
+              "quill"
+            ]
+          },
+          {
+            "option": "Add Andrew Wiggins, drop Dejounte Murray",
+            "weight": 2,
+            "confidence_weight": 1.1,
+            "voters": [
+              "medic"
+            ]
+          },
+          {
+            "option": "Add Kyshawn George, drop Caleb Wilson",
+            "weight": 2,
+            "confidence_weight": 1.1,
+            "voters": [
+              "vex"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "runoff",
+      "options": [
+        "Add Andrew Wiggins, drop Caleb Wilson",
+        "Add Andrew Wiggins, drop Kel'el Ware"
+      ],
+      "note": "Derived from each member's vote-round ranking",
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.45
+        },
+        {
+          "member": "archivist",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5
+        },
+        {
+          "member": "cipher",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5
+        },
+        {
+          "member": "ledger",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55
+        },
+        {
+          "member": "medic",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55
+        },
+        {
+          "member": "scout",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5
+        },
+        {
+          "member": "tempo",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.5
+        },
+        {
+          "member": "vex",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55
+        },
+        {
+          "member": "quill",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.58
+        }
+      ],
+      "result": {
+        "winner": "Add Andrew Wiggins, drop Caleb Wilson",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.632,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Add Andrew Wiggins, drop Caleb Wilson",
+            "weight": 12,
+            "confidence_weight": 6.3,
+            "voters": [
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "scout",
+              "vex"
+            ]
+          },
+          {
+            "option": "Add Andrew Wiggins, drop Kel'el Ware",
+            "weight": 7,
+            "confidence_weight": 3.51,
+            "voters": [
+              "coach",
+              "tempo",
+              "quill"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "verdict": {
+    "answer": "Add Andrew Wiggins, drop Caleb Wilson",
+    "round": "runoff",
+    "share": 0.632,
+    "majority": true,
+    "tiebreak": null
+  }
+}
