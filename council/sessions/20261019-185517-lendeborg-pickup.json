@@ -116,5 +116,202 @@
     "Jimmy Butler III"
   ],
   "research": "docs/research/20261019-1855-lendeborg.md",
-  "rounds": []
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Yes",
+          "confidence": 0.62,
+          "rationale": "Drop Caleb Wilson. This replaces this morning's Wiggins-for-Wilson as the first move. If a second add is allowed, also do Wiggins for Ware, which was my morning vote. Neither rookie has an NBA game, so preseason is the only measured evidence. Scored with league_scoring, Lendeborg is 44.25 FP/g (65.7 per 36, about 41 if I estimate the unreported turnovers) against Wilson's 22.4 (30.3 per 36, 17 TO), and both play forward, so the G count doesn't change. Lendeborg's ESPN ownership is 51.81% and rising, and his first starter's line on 21 Oct gets him claimed, while Wiggins at 71% and flat is the player more likely to still be there next week.",
+          "evidence": [
+            "data/processed/players_scored.csv: Yaxel Lendeborg SF/PF, SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 23.49, ADP 132.3, Injury DAY_TO_DAY (briefing conflict #1: ESPN ACTIVE)",
+            "data/processed/players_scored.csv: Caleb Wilson SF, SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, ADP 76.6",
+            "docs/research/20261019-1855-lendeborg.md CBS game log scored via scripts/league_scoring.per_game (no OREB, TO mostly unreported): 34, 64, 33, 46 FP; 44.25 FP/g, 24.3 min, 65.7 per 36",
+            "docs/research/20261019-0750-preseason-east.md line 163: Wilson 5/5 GS, 26.6 min, 30-69 FG, 17 TO; docs/analysis/20261019-preseason-fast-starts.md line 53: 30.3 per 36",
+            "docs/research/20261019-1855-lendeborg.md: Kerr 13 Oct 'looking that way, for sure'; NBC 18 Oct 'will start'; starters 25-30 min (SI 17 Oct); ESPN 51.81% rostered (+1.37)",
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68; Kel'el Ware FP_ACT_PG 32.47, A_GP 77, both fallback pieces for a second move",
+            "docs/league-rules.md §3-4: max 4 at G; 24h waivers; preseason matchupAcquisitionLimit 1, about 7 a week in season"
+          ],
+          "concerns": "The case rests on four preseason games against an ESPN projection of 23.49 on 24.6 min, and once Curry and Bassey are healthy Lendeborg could fall into a 24-minute role while Wilson, starting for Chicago with Claxton out for 7 games, gets claimed and grows."
+        },
+        {
+          "member": "archivist",
+          "vote": "No",
+          "confidence": 0.6,
+          "rationale": "Lendeborg is NO_SAMPLE (A_GP blank) and the only CSV number behind him is FP_PROJ_PG_CORE 23.49 on P_MIN 24.6. Even at Kerr's 25-30 starter minutes his 34.38 per-36 projects about 24-29, below every active player we would drop. Adding him alongside the Wiggins move would cost Ware's 77-GP 32.47, which I reject. Adding him instead of Wiggins would drop Wilson (NO_SAMPLE, 34.88 projected), swapping one no-sample player for another when Wiggins offers 33.78 over 68 GP for the same drop. Keep 'Add Andrew Wiggins, drop Caleb Wilson'; if the council votes Yes anyway, the drop should be Wilson in place of Wiggins, not alongside.",
+          "evidence": [
+            "data/processed/players_scored.csv: Yaxel Lendeborg A_GP blank, FP_ACT_PG 0.0, SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 23.49, P_MIN 24.6, FP_PROJ_PER36 34.38, ADP 132.3, %Own 33.1",
+            "data/processed/players_scored.csv: Caleb Wilson SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1, ADP 76.6",
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, A_MIN 30.35, FP_PROJ_PG_CORE 32.0, PROJ_BLIND_SPOT_PG 1.78",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18 (weakest measured active line)",
+            "docs/research/20261019-1855-lendeborg.md Findings: 4 logged preseason games, 24.3 mpg, 28-45 FG, 6-13 3PT, 12-18 FT, TO unreported in 3 of 4; scored via league_scoring.per_game at 38.8-44.3 FP/g depending on assumed TO",
+            "docs/research/20261019-0750-preseason-east.md line 163: Caleb Wilson preseason 5 GP, 30-69 FG, 17 TO, 22.4 FP/g in league scoring",
+            "docs/research/20261019-1855-lendeborg.md: ESPN league endpoint HTTP 401, free-agent status of Lendeborg and Wiggins unconfirmed; CSV Injury DAY_TO_DAY is stale, ESPN ACTIVE"
+          ],
+          "concerns": "If his preseason is real signal, Lendeborg's 4-game rate of about 39-44 FP/g against Wilson's 22.4 would make 'Lendeborg for Wilson' better than 'Wiggins for Wilson', and his ESPN ownership is rising (51.81%), so waiting may cost us the chance."
+        },
+        {
+          "member": "cipher",
+          "vote": "No",
+          "confidence": 0.55,
+          "rationale": "Lendeborg has no 2026 sample and his only CSV number, FP_PROJ_PG_CORE 23.49 at 24.6 min, is the lowest of anyone in play. My range for him is about 25-37 FP/g, centred near 30: his projection scaled to Kerr's 25-30 min plus about 1.5-2 for rebounding ESPN omits, blended with four preseason games scored at 40.5-47.2 FP/g that fail the 20-game bar. That centre is below the realistic drop, Kel'el Ware (32.47 FP_ACT_PG over 77 GP, 30.74 projected plus 3.76 blind spot), and below Caleb Wilson's 34.88 projection. Keep this morning's Add Wiggins, drop Wilson as a separate move; if the council votes Yes, drop Ware alongside it, not Wilson.",
+          "evidence": [
+            "data/processed/players_scored.csv: Yaxel Lendeborg A_GP blank (NO_SAMPLE), FP_PROJ_PG_CORE 23.49, P_MIN 24.6, P_REB 5.1, P_STL 1.0, P_BLK 0.8, ADP 132.3",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74, PROJ_BLIND_SPOT_PG 3.76, FP_ACT_PER36 52.69",
+            "data/processed/players_scored.csv: Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1; Andrew Wiggins FP_ACT_PG 33.78, A_GP 68",
+            "scripts/league_scoring.py per_game on 4 Lendeborg preseason lines (docs/research/20261019-1855-lendeborg.md CBS log): 40.5 / 45.4 / 47.2 FP/g low/mid/high fill of missing stats, 60-70 per 36, on 28-45 FG",
+            "docs/research/20261019-1855-lendeborg.md: Kerr starters 25-30 min; projected starter, not announced; ESPN ACTIVE, 51.81% rostered, ADP 126.07; Porzingis out until at least 9 Nov, Moody until at least 1 Dec, Butler until at least 2 Jan",
+            "docs/analysis/20261019-preseason-fast-starts.md: Ware 36.0 per 36, 1 of 5 starts; Wilson 30.3 per 36 with 17 TO on 30-69 FG"
+          ],
+          "concerns": "Four preseason games at 40-47 FP/g in a starting role on a depleted GS frontcourt could be real, and a 52%-rostered rookie with that momentum may be claimed before we get a second look."
+        },
+        {
+          "member": "ledger",
+          "vote": "Yes",
+          "confidence": 0.6,
+          "rationale": "Drop Kel'el Ware, and keep this morning's Wiggins-for-Wilson move as well. Ware scored 32.47 FP/g over 77 games, but he started 1 of 5 preseason games at 36.0 per 36 behind Turner, which puts him near 29 FP/g as a backup. Lendeborg is the projected starter at 25-30 minutes. His preseason scores 62.4 per 36 in our scoring; taking off the usual preseason inflation (about 14) and splitting with ESPN's 34.4 puts him near 31 FP/g, a range of 28-36. He is 51.8% rostered and rising (ADP 132.3 to 126.1) and probably will not last a week of waivers, while backup centres like Ware's role are easy to find again (Sharpe 26.15 FP/g is undrafted).",
+          "evidence": [
+            "data/processed/players_scored.csv: Yaxel Lendeborg SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 23.49, P_MIN 24.6, FP_PROJ_PER36 34.38, ADP 132.3",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, ADP 107.6",
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, A_MIN 30.35; Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88",
+            "docs/research/20261019-1855-lendeborg.md: Kerr 'looking that way, for sure' on starting (Heavy and Yahoo, 14 Oct), starters at 25-30 min (SI, 17 Oct), ESPN 51.81% rostered (+1.37), ADP 126.07",
+            "scripts/league_scoring.py on the CBS preseason log in the briefing: 4 GP average 42.0 FP, 62.4 per 36 (steals/blocks counted as 0 where not reported, turnovers estimated)",
+            "docs/analysis/20261019-preseason-fast-starts.md: Ware started 1 of 5 at 36.0 per 36 while Turner started all 4; Wiggins preseason lift +16.9 over his 2026 rate",
+            "council/sessions/20261019-100508-move-before-opener.json: verdict 'Add Andrew Wiggins, drop Caleb Wilson' (runoff, 63.2%)"
+          ],
+          "concerns": "Ware's 32.47 FP/g over 77 games is real production, while Lendeborg's case rests on a projected role and preseason games that the README rules say are not evidence."
+        },
+        {
+          "member": "medic",
+          "vote": "No",
+          "confidence": 0.6,
+          "rationale": "Lendeborg is healthy (ESPN ACTIVE, ankle tweak cleared, 26 min on 16 Oct) with P_GP 71, but every drop candidate is equally healthy: Ware 77 GP last season and P_GP 72, Wilson P_GP 71. Availability gives him no edge, and on the CSV he is the lowest-rate option: about 25 FP/g x 71 = about 1,775, against Ware 32.47 x 72 = about 2,340 and Wiggins 33.78 x 67 = about 2,260. His roughly 43 FP/g preseason pace is four exhibitions at 62% FG and zero NBA games, which is not evidence. Keep the Wiggins-for-Wilson move as the only move; if the user wants a Yes, add Lendeborg alongside it and drop Kel'el Ware, not Wiggins.",
+          "evidence": [
+            "data/processed/players_scored.csv: Yaxel Lendeborg A_GP blank, SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 23.49, P_MIN 24.6, P_GP 71, Injury DAY_TO_DAY (superseded by briefing)",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, P_GP 72, FP_PROJ_PG_CORE 30.74",
+            "data/processed/players_scored.csv: Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_GP 71; Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, P_GP 67",
+            "docs/research/20261019-1855-lendeborg.md: Lendeborg ESPN ACTIVE, no CBS entry; 13 Oct ankle tweak, practised fully 15 Oct, 26 min 16 Oct; preseason min 21/24/26/26; Kerr starters 25-30 min",
+            "docs/research/20261019-1855-lendeborg.md: GS absences Butler (out until at least 2 Jan), Moody (out until at least 1 Dec), Porzingis (out until at least 9 Nov); Curry game-time decision with ankle; Bassey day-to-day with knee tendinitis",
+            "scripts/league_scoring.py per_game on 4 logged preseason games (74 pts, 28-45 FG, 6 3PM, 12-18 FT, 28 reb, 17 ast, 6 stl, 2 blk; TO and OREB assumed 1-2): about 42-44 FP/g at 24.3 min",
+            "docs/analysis/20261019-preseason-fast-starts.md: Ware 1 of 5 starts, 36.0 per 36; Wilson 30.3 per 36 with 17 TO; Lendeborg ranked 8th fast start",
+            "council/sessions/20261019-100508-move-before-opener.json: verdict Add Andrew Wiggins, drop Caleb Wilson (runoff share 0.632)"
+          ],
+          "concerns": "Golden State's frontcourt is depleted (Porzingis out, Bassey day-to-day, Horford limited), so Lendeborg could get 28-32 minutes, beat his 24.6-minute projection by several FP a game and be claimed by a rival (51.8% rostered and rising) before we act on the watch triggers."
+        },
+        {
+          "member": "scout",
+          "vote": "Yes",
+          "confidence": 0.5,
+          "rationale": "Add Lendeborg and drop Kel'el Ware, alongside (not instead of) the Wiggins-for-Wilson move. Lendeborg is the projected GS starter (Kerr 13 Oct 'looking that way'; NBC 18 Oct 'will start') on a frontcourt missing Porzingis, Butler and Moody, with Bassey day-to-day and Horford limited. His preseason minutes rose 21-24-26-26 into Kerr's 25-30 band, while ESPN's 23.49 still assumes 24.6 min at 34.4 per 36. His preseason scores 39.8-44.2 FP/g (league formula) against Wilson's 22.4. Regressed, that is about 31-37 FP/g, beside Ware's 32.47 on 22.2 min in an 'unclear' third-centre role that only fills UTIL. If only one add is possible, do Wiggins for Wilson first.",
+          "evidence": [
+            "data/processed/players_scored.csv: Yaxel Lendeborg SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 23.49, P_MIN 24.6, FP_PROJ_PER36 34.38, P_TO 1.51, %Own 33.1, ADP 132.3, Injury DAY_TO_DAY (stale)",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, FP_PROJ_PG_CORE 30.74 + PROJ_BLIND_SPOT_PG 3.76",
+            "data/processed/players_scored.csv: Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88, P_MIN 32.1; Andrew Wiggins FP_ACT_PG 33.78, A_GP 68",
+            "docs/research/20261019-1855-lendeborg.md: ESPN ACTIVE; preseason min 21/24/26/26; Kerr 'starters 25-30 min' (SI 17 Oct); start projected not announced; ESPN 51.81% rostered (+1.37)",
+            "docs/research/20261019-1855-lendeborg.md: Porzingis out (CBS: at least 9 Nov), Bassey day-to-day knee, Horford 'limited', Curry ankle game-time decision",
+            "scripts/league_scoring.per_game on the briefing's 4 logged preseason games: 39.8-44.2 FP/g, 59-66 per 36 (OREB missing, TO mostly unreported)",
+            "docs/analysis/20261019-preseason-fast-starts.md: Wilson 30.3 per 36 with 17 TO in 5 GP; Ware 36.0 per 36, started 1 of 5",
+            "docs/offseason-impact.md §2 line 134 (Lendeborg in 'rookies with real starting minutes'); §7 #1 Porzingis and #19 Turner unresolved"
+          ],
+          "concerns": "The whole case rests on 4 preseason games and an unannounced starting role. ESPN's 23.49 could be right if Kerr keeps him near 24 minutes, and in that case dropping Ware's 77-game 32.47 loses about 6-9 FP/g."
+        },
+        {
+          "member": "tempo",
+          "vote": "Yes",
+          "confidence": 0.6,
+          "rationale": "Add Lendeborg, drop Kel'el Ware, on top of the Wiggins-for-Wilson move. Ware's 32.47 FP/G (77 GP, 22.2 min, 1 of 5 preseason starts) is matched by undrafted Neemias Queta (33.40, 76 GP), but Lendeborg's projected start is not on waivers: my league-scored total for his 4 preseason games is about 41.75 FP/G in 24.3 min, and he is 51.8% rostered and rising. He is SF/PF, so we go from 2 PF-eligible players (Leonard, George) to 4 with Wiggins, the max-4 G count is unchanged, and Week 1 games are level (GS, MIL, CHI each 3).",
+          "evidence": [
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, A_MIN 22.18, Pos C",
+            "data/processed/players_scored.csv: Neemias Queta FP_ACT_PG 33.40, A_GP 76, Pos C, not in council/taken.txt",
+            "data/processed/players_scored.csv: Yaxel Lendeborg Pos SF/PF, A_GP 0 NO_SAMPLE, FP_PROJ_PG_CORE 23.49, P_MIN 24.6; Caleb Wilson Pos SF, NO_SAMPLE, FP_PROJ_PG_CORE 34.88",
+            "docs/research/20261019-1855-lendeborg.md: preseason 74 pts, 28-45 FG, 6-13 3PT, 12-18 FT, 28 reb, 17 ast, 6 stl, 2 blk in 4 games; scored with scripts/league_scoring.py = about 41.75 FP/G (TO assumed 1.5)",
+            "docs/research/20261019-1855-lendeborg.md: Kerr 'looking that way, for sure' (13 Oct); starters 25-30 min; ESPN 51.81% rostered (+1.37); GS 3 Week 1 games (NBC)",
+            "docs/analysis/20261019-preseason-fast-starts.md: Ware 1 of 5 starts, 36.0 per 36; Wilson 30.3 per 36, 17 TO in 5 games",
+            "docs/league-rules.md §3-4: 10 starters, 3 bench, max 4 G; about 7 adds per matchup, about 4 in light weeks; preseason config matchupAcquisitionLimit 1"
+          ],
+          "concerns": "The case rests on four preseason games at 62% FG and a projected (not announced) start against ESPN's 23.49 projection, and the drop leaves only two C-eligible players (Duren, Okongwu) for the C slot."
+        },
+        {
+          "member": "vex",
+          "vote": "No",
+          "confidence": 0.6,
+          "rationale": "A Yes rests on 4 exhibition games (about 41.3 FP/g with TO assumed for 3, about 35 without the 60-FP 10 Oct spike) against a CSV projection of 23.49 at 24.6 min, the lowest of any player in the comparison. The only sensible drop is Caleb Wilson, and that slot is already earmarked for Andrew Wiggins (33.78 FP/g over 68 GP), so Lendeborg should not replace that move. Adding him alongside it would mean dropping a measured player like Ware (32.47 over 77 GP), which is worse. 81 undrafted players project at or above 23.49 and we get about 7 adds a week, so we can claim him after Week 1 if he really plays starter minutes.",
+          "evidence": [
+            "data/processed/players_scored.csv: Yaxel Lendeborg A_GP blank, SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 23.49, P_MIN 24.6, FP_PROJ_PER36 34.38, ADP 132.3",
+            "data/processed/players_scored.csv: Andrew Wiggins FP_ACT_PG 33.78, A_GP 68, FP_PROJ_PG_CORE 32.00, PROJ_BLIND_SPOT_PG 1.78",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77, FP_ACT_PER36 52.69, PROJ_BLIND_SPOT_PG 3.76; Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88",
+            "docs/research/20261019-1855-lendeborg.md: preseason 21/24/26/26 min, TO mostly not reported; scored with scripts/league_scoring.per_game, about 41.3 FP/g (61.2 per 36), about 35 without 10 Oct",
+            "docs/research/20261019-1855-lendeborg.md: start projected, not announced; Kerr 'noncommittal' (NBC Bay Area, 16 Oct); 32 min is a writer's prediction (SI, 15 Oct); league free-agent check returned HTTP 401",
+            "docs/analysis/20261019-preseason-fast-starts.md: Caleb Wilson preseason 30.3 per 36, 17 TO; Wiggins preFP36 57.0, 4/4 starts",
+            "docs/offseason-impact.md §7 item 1: Porzingis diagnosis unresolved",
+            "players_scored.csv + council/taken.txt: 81 undrafted players with FP_PROJ_PG_CORE >= 23.49; 25 with FP_ACT_PG >= 30 and A_GP >= 40"
+          ],
+          "concerns": "If Lendeborg really starts at 28-30 min and keeps about 2 steals plus blocks a game, his preseason rate puts him near 40 FP/g, above Wiggins, and at 51.8% ESPN ownership he may be gone before we can wait-and-see."
+        },
+        {
+          "member": "quill",
+          "vote": "No",
+          "confidence": 0.56,
+          "rationale": "The 10:05 verdict (runoff 12-7, share 0.632) dropped Wilson because his case was projection-only (NO_SAMPLE, 34.88) and kept Ware's 77-GP 32.47. Lendeborg is also NO_SAMPLE with a lower projection (23.49 at 24.6 min), and his 44.25 FP/g preseason (my scoring of 4 logged games; TO mostly unreported) is a sample the README says is not evidence. If the council votes Yes, the drop should be Kel'el Ware, alongside Wiggins-for-Wilson rather than in place of it. That fits the 08:19 weakest list (Ware #1) and avoids swapping Wiggins' 68-GP 33.78 for another no-sample player.",
+          "evidence": [
+            "data/processed/players_scored.csv: Yaxel Lendeborg A_GP blank (NO_SAMPLE), FP_PROJ_PG_CORE 23.49, P_MIN 24.6, ADP 132.3",
+            "data/processed/players_scored.csv: Kel'el Ware FP_ACT_PG 32.47, A_GP 77; Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88; Andrew Wiggins FP_ACT_PG 33.78, A_GP 68",
+            "scripts/league_scoring.py applied to docs/research/20261019-1855-lendeborg.md CBS preseason log: 34/64/33/46 FP, 44.25 FP/g in 24.3 min, 65.7 per 36 (TO unreported in 3 of 4)",
+            "council/sessions/20261019-100508-move-before-opener.json: verdict 'Add Andrew Wiggins, drop Caleb Wilson', runoff share 0.632, majority rationale was to swap a NO_SAMPLE player for a full sample",
+            "council/sessions/20261019-081948-three-weakest.json: weakest = Kel'el Ware, Caleb Wilson, Dejounte Murray",
+            "council/sessions/20261008-0915-rookie-shortlist.json: Lendeborg 3 points, last of seven (Boozer 99, Wilson 88)",
+            "docs/research/20261019-1855-lendeborg.md: start projected not announced, starters 25-30 min, ESPN 51.81% rostered (+1.37), league free-agent status unconfirmed (HTTP 401)"
+          ],
+          "concerns": "His preseason rate (about 44 FP/g even before missing turnovers) is far above anything Ware or Wilson showed, and in an 8-team league a starting forward with Curry, Porzingis and Bassey all uncertain may be claimed before we get a regular-season sample."
+        }
+      ],
+      "result": {
+        "winner": "No",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.526,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "No",
+            "weight": 10,
+            "confidence_weight": 5.82,
+            "voters": [
+              "archivist",
+              "cipher",
+              "medic",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Yes",
+            "weight": 9,
+            "confidence_weight": 5.26,
+            "voters": [
+              "coach",
+              "ledger",
+              "scout",
+              "tempo"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "verdict": {
+    "answer": "No",
+    "round": "opening",
+    "share": 0.526,
+    "majority": true,
+    "tiebreak": null
+  }
 }
