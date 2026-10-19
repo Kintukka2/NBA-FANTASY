@@ -124,5 +124,6 @@
   ],
   "research": null,
   "method": "Each member ranks all 9 options best-first; tally.py counts first choices. If no majority, the runoff between the top two is derived from each member's full ranking. Candidates are undrafted per council/taken.txt; ESPN availability must be confirmed before claiming.",
-  "rounds": []
+  "rounds": [],
+  "withdrawn": "Withdrawn before any research or ballots: the options were Claude's own eight-player shortlist plus 'no move', and the drop was fixed as Ware. An open question like this must be a suggestion where members propose the move. Superseded by a new suggestion session."
 }
