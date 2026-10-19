@@ -376,6 +376,299 @@
           }
         ]
       }
+    },
+    {
+      "name": "vote",
+      "options": [
+        "Add Andrew Wiggins, drop Caleb Wilson",
+        "Add Andrew Wiggins, drop Kel'el Ware",
+        "Add Andrew Wiggins, drop Dejounte Murray",
+        "Add Kyshawn George, drop Caleb Wilson",
+        "No move"
+      ],
+      "note": "Ballots via SendMessage to the same web-enabled agents, with every opening rationale attached; evidence lists are in each member's opening ballot.",
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.45,
+          "ranking": [
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "No move",
+            "Add Andrew Wiggins, drop Dejounte Murray",
+            "Add Kyshawn George, drop Caleb Wilson"
+          ],
+          "rationale": "Unchanged on the add: Wiggins beats every pooled alternative. On the drop I stay with Ware: a third C behind Duren and Okongwu who only plays UTIL; Turner holds the job and Sims started over him on 14 Oct; C is the deepest position on the wire. Wilson starts at about 32 projected minutes (34.88) and the end of a 3-deep bench should hold upside. Quill's add-limit point lowered my confidence, so No move ranks above dropping Dejounte Murray (39.05 projection, short-term toe).",
+          "concerns": "On evidence Wilson may be the weaker player (22.4 FP/g preseason, 3.4 TO/g, no NBA sample), so A could be right; Wiggins may already be rostered or the add blocked until Week 1."
+        },
+        {
+          "member": "archivist",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "ranking": [
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "No move",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wilson rests only on a NO_SAMPLE projection (34.88); his measured preseason is 22.4 FP/g (30.3 per 36, 17 TO), the worst rate on our roster. Wiggins has a full 68-GP line at 33.78, so A swaps no sample for a full one while keeping Ware's 77-GP 32.47. Quill's wait-costs-nothing point is fair, so No move is second. B and C drop measured lines; D adds George (32.34 over 48 GP), below Ware.",
+          "concerns": "Wiggins is 72% owned on ESPN and may be gone; on ESPN projections he trails Wilson (34.88) and Ware (34.50)."
+        },
+        {
+          "member": "cipher",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "ranking": [
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "No move",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged: Wilson is our lowest rate at about 30 FP/G (range 25-35), so the best moves drop him. Wiggins (33.78 over 68 GP) gains about 3; George (32.34 over 48 GP, 4/4 starts) gains about 1.5 and is likelier to be on the wire, so D is a close second. B gains about 1. C is last: Murray's playing rate (36.5 actual, 39.05 projected) beats Wiggins and missed games can be streamed. The injury report cannot change Wilson-vs-Wiggins, and waiting risks losing Wiggins.",
+          "concerns": "Wiggins may be gone and the preseason add limit may block the move today; either would make D or waiting the practical choice."
+        },
+        {
+          "member": "ledger",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55,
+          "ranking": [
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "No move",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wilson's only support is ESPN's 34.88 at 32.1 min; his measured preseason is 22.4 FP/g (17 TO in 5 GP). Ware's 32.47 over 77 GP (52.69 per 36, 34.50 projected) is level with the best free agent, so cutting Ware gains 0-1.3 while cutting Wilson gains about 4 on measured evidence. D second (George, fallback), B third, E fourth (starting free agents get claimed once the season starts; an add limit blocks every move equally), C last (Murray projects 39.55).",
+          "concerns": "Wiggins may already be rostered and the one-add preseason limit could block the move; if so, D is the move."
+        },
+        {
+          "member": "medic",
+          "vote": "Add Andrew Wiggins, drop Dejounte Murray",
+          "confidence": 0.55,
+          "ranking": [
+            "Add Andrew Wiggins, drop Dejounte Murray",
+            "No move",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Kyshawn George, drop Caleb Wilson"
+          ],
+          "rationale": "I keep C first: Dejounte Murray is the only drop candidate with an availability problem (14 GP last season, 45 over two seasons, Mar-Apr 2026 absences, toe now; questionable 21 Oct, no update since 16 Oct), about 1,875 expected points vs Wiggins' about 2,200. Quill moved me to put No move second, since the 21:00 UTC report could settle Murray for free. If we drop a healthy player, Wilson (no sample) before Ware (77 GP). George last as the least proven add.",
+          "concerns": "If Murray is cleared and keeps the PG job, his about 39 FP/g beats Wiggins by about 5; waiting for the report could be strictly better."
+        },
+        {
+          "member": "scout",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5,
+          "ranking": [
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "No move",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wilson's preseason is 22.4 FP/g (30.3 per 36, 17 TO) with no NBA sample; Ware's 32.47 over 77 GP is proven and his minutes are rising (25 in the finale). Wiggins is a 4/4 starter at 33.78 over 68 GP with 3 Week-1 games. Vex's 72%-owned point is fair, so D (same drop) is my fallback; C last because Murray's 39.05 is the highest projection of the three.",
+          "concerns": "Wiggins may be rostered and the add limit may block a third add today, which would make No move the practical outcome."
+        },
+        {
+          "member": "tempo",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.5,
+          "ranking": [
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "No move",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Ware is a third C whose Week-1 games all fall on Okongwu's days, so he only fills UTIL; C is the deepest position on the wire; Wiggins adds a third PF-eligible player and leaves G count unchanged. No move second: the gap is about 1 FP/g and no drop candidate plays before 21 Oct. The add-limit worry looks weak: Butler and George were both added on 19 Oct. Dropping Wilson (5-game sample) or Murray (benchable daily, 39.05) gives up harder-to-replace upside.",
+          "concerns": "Wiggins may be gone, and a Turner trade would make Ware's 52.7 per 36 a starter's line that beats Wiggins."
+        },
+        {
+          "member": "vex",
+          "vote": "Add Kyshawn George, drop Caleb Wilson",
+          "confidence": 0.55,
+          "ranking": [
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "No move",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wilson is the only one of our 13 with no NBA games (22.4 FP/g preseason) against Ware's 77-GP 32.47 and Murray's 39.05 projection, so B and C drop the wrong player. Wiggins' baseline beats George's, but he played 16.3 mpg in preseason, shares the ball with Giannis and Bam, and at 72.4% ownership is probably taken; George (25.9%) started 4/4 at 24-27 min, 51.4 per 36. No move ranks above B and C. roster.csv shows two adds on 19 Oct, so the limit of 1 did not block a second add.",
+          "concerns": "If Wiggins is actually available his baseline beats George's; Wilson will likely be claimed and could become a 35 FP/g player."
+        },
+        {
+          "member": "quill",
+          "vote": "No move",
+          "confidence": 0.58,
+          "ranking": [
+            "No move",
+            "Add Andrew Wiggins, drop Kel'el Ware",
+            "Add Andrew Wiggins, drop Caleb Wilson",
+            "Add Kyshawn George, drop Caleb Wilson",
+            "Add Andrew Wiggins, drop Dejounte Murray"
+          ],
+          "rationale": "Unchanged. Wiggins (33.78 over 68 GP, projection 33.8) roughly ties all three drop candidates, so no swap is a clear gain, and none plays before 21 Oct, so we can decide after tonight's 21:00 UTC report at no cost. If the council wants a move, dropping Ware fits its own 08:19 verdict (Ware weakest, 13/19); Wilson next (5 preseason games); Murray last (39.6 projection, status unknown).",
+          "concerns": "If Wiggins is still free and Murray is ruled out tonight, waiting a day could cost us Wiggins."
+        }
+      ],
+      "result": {
+        "winner": "Add Andrew Wiggins, drop Caleb Wilson",
+        "weight_cast": 19,
+        "majority": false,
+        "share": 0.421,
+        "tiebreak": null,
+        "needs_runoff": true,
+        "runoff_options": [
+          "Add Andrew Wiggins, drop Caleb Wilson",
+          "Add Andrew Wiggins, drop Kel'el Ware"
+        ],
+        "standings": [
+          {
+            "option": "Add Andrew Wiggins, drop Caleb Wilson",
+            "weight": 8,
+            "confidence_weight": 4.1,
+            "voters": [
+              "archivist",
+              "cipher",
+              "ledger",
+              "scout"
+            ]
+          },
+          {
+            "option": "Add Andrew Wiggins, drop Kel'el Ware",
+            "weight": 5,
+            "confidence_weight": 2.35,
+            "voters": [
+              "coach",
+              "tempo"
+            ]
+          },
+          {
+            "option": "No move",
+            "weight": 2,
+            "confidence_weight": 1.16,
+            "voters": [
+              "quill"
+            ]
+          },
+          {
+            "option": "Add Andrew Wiggins, drop Dejounte Murray",
+            "weight": 2,
+            "confidence_weight": 1.1,
+            "voters": [
+              "medic"
+            ]
+          },
+          {
+            "option": "Add Kyshawn George, drop Caleb Wilson",
+            "weight": 2,
+            "confidence_weight": 1.1,
+            "voters": [
+              "vex"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "runoff",
+      "options": [
+        "Add Andrew Wiggins, drop Caleb Wilson",
+        "Add Andrew Wiggins, drop Kel'el Ware"
+      ],
+      "note": "Derived from each member's vote-round ranking",
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.45
+        },
+        {
+          "member": "archivist",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5
+        },
+        {
+          "member": "cipher",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5
+        },
+        {
+          "member": "ledger",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55
+        },
+        {
+          "member": "medic",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55
+        },
+        {
+          "member": "scout",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.5
+        },
+        {
+          "member": "tempo",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.5
+        },
+        {
+          "member": "vex",
+          "vote": "Add Andrew Wiggins, drop Caleb Wilson",
+          "confidence": 0.55
+        },
+        {
+          "member": "quill",
+          "vote": "Add Andrew Wiggins, drop Kel'el Ware",
+          "confidence": 0.58
+        }
+      ],
+      "result": {
+        "winner": "Add Andrew Wiggins, drop Caleb Wilson",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.632,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Add Andrew Wiggins, drop Caleb Wilson",
+            "weight": 12,
+            "confidence_weight": 6.3,
+            "voters": [
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "scout",
+              "vex"
+            ]
+          },
+          {
+            "option": "Add Andrew Wiggins, drop Kel'el Ware",
+            "weight": 7,
+            "confidence_weight": 3.51,
+            "voters": [
+              "coach",
+              "tempo",
+              "quill"
+            ]
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "verdict": {
+    "answer": "Add Andrew Wiggins, drop Caleb Wilson",
+    "round": "runoff",
+    "share": 0.632,
+    "majority": true,
+    "tiebreak": null
+  }
 }
