@@ -40,6 +40,7 @@ docs/         scoring.md            the formula and what it implies
               league-rules.md       full league configuration
               methodology.md        how the pool was extracted and verified
               research/             web briefings, one per council meeting
+              analysis/             Claude's analyses (not council verdicts)
 ```
 
 ## Ask the council
