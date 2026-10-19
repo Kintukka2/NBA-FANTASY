@@ -126,7 +126,11 @@
     "Paul George",
     "Jimmy Butler III"
   ],
-  "research": null,
+  "research": "docs/research/20261019-0820-roster-before-opener.md",
   "method": "Each member ranks all 13 active players weakest-first. Three sequential selection counts by tally.py: weakest #1 over all 13; #2 and #3 with earlier picks removed. A member's vote in each count is their highest-ranked remaining player; runoffs are derived from the same full rankings. Jimmy Butler III (IR, out until at least 2 Jan) is not a candidate.",
-  "rounds": []
+  "rounds": [],
+  "research_also": [
+    "docs/research/20261019-0750-preseason-east.md",
+    "docs/research/20261019-0745-preseason-west.md"
+  ]
 }
