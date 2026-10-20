@@ -362,6 +362,354 @@
           }
         ]
       }
+    },
+    {
+      "name": "vote",
+      "options": [
+        "Send Caleb Wilson + Paul George, get Donovan Clingan",
+        "Send Caleb Wilson + Paul George, get Walker Kessler",
+        "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+        "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+        "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+        "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+        "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+        "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+        "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson"
+      ],
+      "note": "Each member ranked all nine pooled options after reading every opening rationale; 'vote' is the first choice.",
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+          "ranking": [
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Caleb Wilson + Paul George, get Walker Kessler",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid"
+          ],
+          "confidence": 0.5,
+          "rationale": "I re-ran all nine options through the lineup optimizer, with a ~34 free agent filling the open spot. Only the three Clingan offers both help us (E +4.1, C +3.5, A +4.1 FP/g) and look like a win on the ESPN projections Kyle sees (+2.6, +3.4, +2.8). All four Johnson offers and the Embiid offer look like a loss to Kyle (-0.8 to -6.3), and Kessler's offer (-0.1) rests on 5 games, so those are unlikely to be accepted or rest on thin evidence. I stay on E because Bane's ADP of 49.8 gives it the most market appeal of the Clingan offers, but Quill's case for C moved it to second: it sells our two voted-weakest players and shows Kyle the biggest gain."
+        },
+        {
+          "member": "archivist",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "ranking": [
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "Send Caleb Wilson + Paul George, get Walker Kessler"
+          ],
+          "confidence": 0.6,
+          "rationale": "Coach and Ledger changed my mind with the projection-gap argument, and it is my own brief's trap: Kyle's ESPN screen shows Clingan at 33.84 projected, but he scored 41.04 FP/g over a full 77 GP (blind spot 5.95). Option A adds Clingan to our top ten and drops neither Jamal Murray nor Bane. Our top-10 sum goes from 433.4 to 437.4, +4.0 FP/g, slightly more than my G (+3.85), and we give up only bench pieces: Wilson (no 2026 games, so a projection only) and George (37 GP). Kyle sees 34.88 + 38.48 projected for 33.84, so A is far likelier to be accepted than any ADP-8.7 Jalen Johnson deal. A also stays legal under the real 4-centre limit: Kyle drops to 2 C and we rise to 3. I rank C below A because it sells Dejounte, who has 14 GP and a toe contusion and is questionable for 21 Oct, so Kyle is likelier to balk. B is last because Kessler's 46.4 rests on 5 games."
+        },
+        {
+          "member": "cipher",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "ranking": [
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "Send Caleb Wilson + Paul George, get Walker Kessler",
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid"
+          ],
+          "confidence": 0.55,
+          "rationale": "I moved off my own option I because of the coach and ledger arguments. I multiplied each player's per-game FP (actuals lead, projections for the rookie) by projected games, and gave the freed spot about 34 FP/g over 72 games. Option A comes out about +990: Clingan 41.04 x 73 GP plus about 2,450 from the open spot, against Wilson's 34.88 projection x 71 and George's 35.96 x 55. My own I comes to only about +465, H about +640, and D about 0 once Embiid's 54 projected games are counted. A also looks like a win on Kyle's ESPN screen (about +9.8 FP/g after he drops Coward), so it is the likeliest to be accepted. Kessler's B scores well but rests on 5 games and a projection, so it ranks below the Johnson deals."
+        },
+        {
+          "member": "ledger",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "ranking": [
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Caleb Wilson + Paul George, get Walker Kessler",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid"
+          ],
+          "confidence": 0.5,
+          "rationale": "I scored each option as the incoming player plus a free agent at about 34 FP/g × 70 games (about 2,380 points), minus the two players we send. On that basis A is about +920 for the season (Clingan 41.04 × 73 = 2,996, against Wilson's 2,477 and George's 1,978), and Kyle still gains on ADP (76.6 + 105.0 for 81.8 + Coward's 127.8). The Jalen Johnson deals come out at only +214 to +396 unless Dejounte is heavily discounted, and Kyle is less likely to accept them. Quill's C is about equal to A once Dejounte's 14 GP and toe are priced in (about +890), so it is my second choice. I keep A first because Dejounte has a better chance than George of turning into a 39 FP/g starter for us. A also sends only SF-default players, so it is legal under either reading of the position limit. Under the docs' reading (max 4 guards), any deal that sends Kyle Dejounte or Bane would give him a fifth guard."
+        },
+        {
+          "member": "medic",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "ranking": [
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Caleb Wilson + Paul George, get Walker Kessler",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid"
+          ],
+          "confidence": 0.55,
+          "rationale": "I am switching from H to A. Clingan is the most durable player on Kyle's roster (77 games, 73 projected), and A sells Paul George, who played 37 games last season. Counting expected games, A comes out about +1,080 for the season (Clingan about 72 x 41 plus a 33 FP/g free agent, against Wilson about 68 x 34.9 and George about 50 x 36), against about +800 for H. Kyle is also far likelier to accept A, because it gains on both ADP and ESPN projections from his side (George 38.5 and Wilson 34.9, against Clingan 33.8 and Coward 29.8). I rank D last because Embiid played 38 and 19 games the last two seasons, and B low because Kessler's line rests on 5 games after labrum surgery."
+        },
+        {
+          "member": "scout",
+          "vote": "Send Caleb Wilson + Paul George, get Walker Kessler",
+          "ranking": [
+            "Send Caleb Wilson + Paul George, get Walker Kessler",
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson"
+          ],
+          "confidence": 0.55,
+          "rationale": "I keep B. It has the best balance of what we gain (about +7.6 FP/g after a ~34 free-agent refill) and what Kyle sees on ESPN (+5.0, 38.61 shown for Kessler against 34.90 + 38.47). Kessler's role is locked: named a starter, 4yr/$130M, fully cleared, projected 31.4 min. The four Johnson deals come out near zero or negative for us on my numbers: G +2.4, I +0.2, F -0.3, H -2.5. They only work if consolidation is worth more than a free-agent spot, so the archivist, cipher, vex and medic arguments did not move me. Coach and ledger convinced me that Clingan (41.04 over 77 GP, a 7.2-point gap from his ESPN projection) is the safer runner-up when sample size is the worry, so A comes second. C beats E because it sells Dejounte, whose New Orleans role (§7 #10) and 14-game sample carry more role risk than Bane's 82 games."
+        },
+        {
+          "member": "tempo",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+          "ranking": [
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Caleb Wilson + Paul George, get Walker Kessler",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson"
+          ],
+          "confidence": 0.55,
+          "rationale": "Kyle has 3 centres and none of the nine options sends him one, so all nine are legal under the 4-centre limit. They differ on gain and fit. D trades our two weakest players (36.49 on 14 GP, 34.88 projected) for 46.40 plus a ~35 waiver add, about +10 FP/g. The Jalen Johnson deals net only +1.2 to +3.8 because we give up a starter, Bane's 82 GP among them. Season totals favour Embiid over Clingan (option C, my close second) whenever Embiid plays more than about 38 games and his missed nights are streamed at ~35 (3,497 vs 3,308 at 55 GP). Coach's misprice argument and Medic's availability argument did not change my first choice. One fit point changed my order: options A and B send Paul George, who is one of only three PF-eligible players we have. That would leave Lendeborg (23.5) at PF whenever Kawhi rests, so I rank them below C."
+        },
+        {
+          "member": "vex",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+          "ranking": [
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+            "Send Caleb Wilson + Paul George, get Walker Kessler"
+          ],
+          "confidence": 0.55,
+          "rationale": "Coach's point moved me off F. A 2-for-1 is close to zero-sum, so our edge has to come from Kyle undervaluing what he gives up. Clingan is the clearest case: 41.04 FP/g over 77 GP actual against a 33.84 ESPN projection (blind spot 5.95), and Rotowire (17 Oct, cbssports.com POR page) has Robert Williams competing for minutes behind him, not for his starting job. The Jalen Johnson deals only work if Kyle gives up ADP 8.7 for less. C beats A and E because it sends the two least reliable pieces we have: Dejounte (36.49 on a THIN 14 GP, toe) and Wilson (no sample). By ADP Kyle gets 68.6 + 76.6 for 81.8, and he still has 2 centres, so the 4-centre cap (positionLimits '5':4) is no problem. I rank the Kessler (5 GP) and Embiid (38 GP, day-to-day) deals last because their numbers fail the A_GP check."
+        },
+        {
+          "member": "quill",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+          "ranking": [
+            "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+            "Send Caleb Wilson + Paul George, get Walker Kessler"
+          ],
+          "confidence": 0.58,
+          "rationale": "I keep C. It is the only option that sends the two players still on our roster from the council's weakest-three verdict (Wilson 15/19, Dejounte 12/19), and it brings back Clingan's 41.04 FP/g over 77 GP. Ledger and Coach moved me to rank the other Clingan offers next: A comes second, since George (35.96, 37 GP) is about as weak as Dejounte but carries a worse ADP for Kyle (105 against 68.6). E comes third because Bane's 82 GP is durability the council has always paid for. The Johnson offers rank fourth to seventh: he was the council's unanimous pick at 6, but Kyle is unlikely to give up an 8.7 ADP. Embiid (38 GP) and Kessler (5 GP, against the A_GP-first rule) come last."
+        }
+      ],
+      "result": {
+        "winner": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+        "weight_cast": 19,
+        "majority": false,
+        "share": 0.421,
+        "tiebreak": null,
+        "needs_runoff": true,
+        "runoff_options": [
+          "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan"
+        ],
+        "standings": [
+          {
+            "option": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "weight": 8,
+            "confidence_weight": 4.4,
+            "voters": [
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic"
+            ]
+          },
+          {
+            "option": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "weight": 4,
+            "confidence_weight": 2.26,
+            "voters": [
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "weight": 3,
+            "confidence_weight": 1.5,
+            "voters": [
+              "coach"
+            ]
+          },
+          {
+            "option": "Send Caleb Wilson + Paul George, get Walker Kessler",
+            "weight": 2,
+            "confidence_weight": 1.1,
+            "voters": [
+              "scout"
+            ]
+          },
+          {
+            "option": "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+            "weight": 2,
+            "confidence_weight": 1.1,
+            "voters": [
+              "tempo"
+            ]
+          },
+          {
+            "option": "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "runoff",
+      "options": [
+        "Send Caleb Wilson + Paul George, get Donovan Clingan",
+        "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan"
+      ],
+      "note": "Derived from each member's vote-round ranking",
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+          "confidence": 0.5
+        },
+        {
+          "member": "archivist",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "confidence": 0.6
+        },
+        {
+          "member": "cipher",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "confidence": 0.55
+        },
+        {
+          "member": "ledger",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "confidence": 0.5
+        },
+        {
+          "member": "medic",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "confidence": 0.55
+        },
+        {
+          "member": "scout",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "confidence": 0.55
+        },
+        {
+          "member": "tempo",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+          "confidence": 0.55
+        },
+        {
+          "member": "vex",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+          "confidence": 0.55
+        },
+        {
+          "member": "quill",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+          "confidence": 0.58
+        }
+      ],
+      "result": {
+        "winner": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.526,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "weight": 10,
+            "confidence_weight": 5.5,
+            "voters": [
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "scout"
+            ]
+          },
+          {
+            "option": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "weight": 9,
+            "confidence_weight": 4.86,
+            "voters": [
+              "coach",
+              "tempo",
+              "vex",
+              "quill"
+            ]
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "verdict": {
+    "answer": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+    "round": "runoff",
+    "share": 0.526,
+    "majority": true,
+    "tiebreak": null
+  }
 }
