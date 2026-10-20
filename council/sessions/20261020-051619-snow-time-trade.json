@@ -112,5 +112,256 @@
   ],
   "research": null,
   "research_note": "Wire was benched for this meeting at the user's request. Each member had WebSearch/WebFetch and did its own web research (run as a general-purpose agent loading its .claude/agents/council-<id>.md persona). Both rosters came from a live ESPN sync (council/espn_sync.py) at 05:16 UTC.",
-  "rounds": []
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Send Caleb Wilson + Paul George, get Donovan Clingan",
+        "Send Caleb Wilson + Paul George, get Walker Kessler",
+        "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+        "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+        "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+        "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+        "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+        "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+        "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+          "confidence": 0.55,
+          "rationale": "A 2-for-1 is near zero-sum in true points, so the edge has to come from where ESPN's projections, which Kyle sees, misprice our scoring. Clingan is the biggest such gap: 41.04 FP/g over 77 GP actual against a 33.84 ESPN projection (blind spot 5.95). Bane (36.85 actual vs 38.26 projected, ADP 49.8) and Wilson (rookie, projected 34.88, our second-weakest by council vote) look better to Kyle than they are to us. With a lineup optimizer and a ~34 FA refill, we gain +4.1 FP/g across our starting ten while Kyle sees +2.6. No star target (Johnson, Tatum, Embiid, Kyrie) nets us anything above zero on terms Kyle would accept.",
+          "evidence": [
+            "data/processed/players_scored.csv: Donovan Clingan FP_ACT_PG 41.04, A_GP 77, FP_PROJ_PG_ESPN 33.86, PROJ_BLIND_SPOT_PG 5.95, A_DD 37, ADP 81.8",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.85, A_GP 82, FP_PROJ_PG_ESPN 38.25, ADP 49.8",
+            "data/processed/players_scored.csv: Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88, ADP 76.6",
+            "data/processed/players_scored.csv: Walker Kessler FP_ACT_PG 46.4 on A_GP 5 (THIN), so passed over despite +7.5 modelled",
+            "council/sessions/20261019-081948-three-weakest.json: Caleb Wilson voted weakest #2 (15/19 weight)",
+            "docs/offseason-impact.md: Clingan 7.2 pt/g structural gap in ESPN projection; Kessler 'price the role, not the rate'",
+            "rosterSettings.positionLimits '5':4 likely = max 4 default-position C; post-trade Kyle 2 C, us 3 C, both legal",
+            "Web: Tatum/George off the 20 Oct injury report (heavy.com, 19 Oct 2026); Dybantsa day-to-day ankle (ClutchPoints/CBS)"
+          ],
+          "concerns": "Kyle may value players by ADP or name rather than ESPN projections, or refuse to give up a healthy starting centre while Embiid and Kessler are fragile, so the offer may need George in place of Wilson."
+        },
+        {
+          "member": "archivist",
+          "vote": "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+          "confidence": 0.62,
+          "rationale": "Jalen Johnson is the only full-sample elite line on Kyle's roster (53.08 FP/g, 72 GP, +3.125 bonus/g); Tatum and Kessler are THIN and Irving and Dybantsa are NO_SAMPLE. Murray (47.8, 75 GP) + Bane (36.86, 82 GP) lifts our top-10 sum by +3.85 FP/g, keeps both our centers, opens a waiver slot, and ADP 32.6 + 49.8 for 8.7 is a believable price. Under the real limit of at most 4 C, Kyle cannot take both Duren and Okongwu, since he already has 3 C.",
+          "evidence": [
+            "data/processed/players_scored.csv: Jalen Johnson FP_ACT_PG 53.075, A_GP 72, A_DD 49, A_TD 13, ADP 8.7",
+            "data/processed/players_scored.csv: Jamal Murray FP_ACT_PG 47.8, A_GP 75, ADP 32.6",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.8566, A_GP 82, ADP 49.8",
+            "data/processed/verification.csv: Johnson, Murray, Bane status ok (delta <= 0.01)",
+            "positionLimits {'5':4} = default position C (key 0 unused); docs/league-rules.md §3 calls it 'G', but our 5 PG/SG players disprove that",
+            "https://www.cbssports.com/nba/injuries/ (20 Oct 2026): Johnson, Murray, Bane not listed"
+          ],
+          "concerns": "Kyle may want more than Murray + Bane for an ADP-8.7 player, and the +3.85 FP/g gain is small enough that adding any sweetener would erase it."
+        },
+        {
+          "member": "cipher",
+          "vote": "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+          "confidence": 0.62,
+          "rationale": "Johnson is Kyle's best per-game player with a real sample: FP_ACT_PG 53.08 over 72 GP, projection 50.0-54.5 including a 4.5 blind spot. Kawhi plus Bane cost 86.9 actual and 86.6 projected FP/g; the freed spot streams at 33-37 FP/g against Coward's 28.1, so we net about 0 to +4 per game and roughly +500 to +600 points over the season. Kyle stays at 3 centres under the 4-centre limit, and the pair is the strongest offer by market price (ADP 30.5 and 49.8).",
+          "evidence": [
+            "data/processed/players_scored.csv: Jalen Johnson FP_ACT_PG 53.08, A_GP 72, FP_ACT_BONUS_PG 3.13 (49 DD, 13 TD), FP_PROJ_PG_CORE 50.01, PROJ_BLIND_SPOT_PG 4.53",
+            "data/processed/players_scored.csv: Kawhi Leonard FP_ACT_PG 50.01, A_GP 65, P_GP 63, DAY_TO_DAY; Desmond Bane FP_ACT_PG 36.86, A_GP 82",
+            "data/processed/players_scored.csv: Cedric Coward FP_ACT_PG 28.12 vs best free agents Nurkic 36.76, Nembhard 35.17, Holiday 34.93",
+            "positionLimits {'5': 4} = maximum 4 centres (ESPN default position 5 = C); Kyle has 3 (Clingan, Embiid, Kessler), so sending him Duren and Okongwu together would be illegal",
+            "Web: Rotoballer and CBS on Kawhi's workload plan; inquirer.com 19 Oct 2026, Embiid off the opener injury report"
+          ],
+          "concerns": "Kyle may refuse to move a top-10 pick for two mid-round players, and if the streamed spot averages under 33 FP/g the deal is only break-even for us."
+        },
+        {
+          "member": "ledger",
+          "vote": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+          "confidence": 0.6,
+          "rationale": "Clingan's 41.04 FP/g over 77 GP is worth about 2,996 points (P_GP 73). Adding a free agent at about 34 FP/g to the open spot brings in about 2,380 more, against about 4,455 from Wilson (34.88 projected × 71) and George (35.96 × 55): roughly +920 for us, or +1,400 if Wilson's 22.4 FP/g preseason holds. By ADP Kyle gets 76.6 + 105.0 for 81.8 + Coward's 127.8, an upgrade on both pieces, and he gives up a centre from his three-centre surplus. Clingan's RANK_GAP of +24 (ADP rank 61, league-scored rank 37) is what we are exploiting.",
+          "evidence": [
+            "data/processed/players_scored.csv: Donovan Clingan FP_ACT_PG 41.04, A_GP 77, P_GP 73, ADP 81.8, A_OREB 4.51, A_BLK 1.69",
+            "data/processed/players_scored.csv: Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88, ADP 76.6",
+            "data/processed/players_scored.csv: Paul George FP_ACT_PG 35.96, A_GP 37, P_GP 55, ADP 105.0",
+            "data/processed/players_scored.csv: Cedric Coward FP_ACT_PG 28.12, ADP 127.8; Joel Embiid 46.40 on 38 GP, P_GP 54; Walker Kessler 46.4 on 5 GP (THIN)",
+            "council/taken.txt vs CSV: free agents Andrew Wiggins 33.78 (68 GP), Neemias Queta 33.40 (76 GP), Andrew Nembhard 35.17 (57 GP)",
+            "council/sessions/20261019-100508-move-before-opener.json: council chose Wiggins for Caleb Wilson; Wilson preseason 22.4 FP/g",
+            "README.md: Clingan 41.0 FP/g at ADP 81.8, undersold by a third",
+            "CBS POR page, 14-17 Oct 2026: Clingan started on 13 Oct, 5 blocks in 20 min on 14 Oct, R. Williams 'behind Donovan Clingan', no injury",
+            "positionLimits {'5': 4}: default position ID 5 = C, so max 4 C. Trade leaves Kyle with 2 C and us with 3; both players sent are SF by default, so it is legal under docs/league-rules.md's 'G grouping' reading too"
+          ],
+          "concerns": "Kyle may value Clingan above his 81.8 ADP and turn down two players he has to bench, and Clingan's 20 preseason minutes, with Robert Williams behind him, could cut his 27.2-minute base."
+        },
+        {
+          "member": "medic",
+          "vote": "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+          "confidence": 0.55,
+          "rationale": "Johnson is the most bankable star on Kyle's roster: 53.08 FP/g over 72 GP, projected 72 GP, full go for the opener with two preseason double-doubles. We sell our two biggest games risks: Kawhi (load-management plan, rests on back-to-backs, CSV DAY_TO_DAY) and Dejounte (14 GP last year, toe contusion). Discounted for games missed, plus a ~33 FP/g free agent in the open spot, we gain about +800 FP for the season, and Kyle loses only about 340, which we can sell as depth for his injury-heavy roster. It sends no centres, so it cannot break the 4-C limit (positionLimits key 5) for Kyle, who already has 3.",
+          "evidence": [
+            "data/processed/players_scored.csv: Jalen Johnson FP_ACT_PG 53.08, A_GP 72, P_GP 72, ADP 8.7",
+            "data/processed/players_scored.csv: Kawhi Leonard FP_ACT_PG 50.01, A_GP 65, P_GP 63, Injury DAY_TO_DAY",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14 (THIN), FP_PROJ_PG_CORE 39.05",
+            "docs/offseason-impact.md §5: Jalen Johnson 49 DD + 13 TD = +225 season points",
+            "docs/research/20261019-0820-roster-before-opener.md: Raptors management plan for Leonard 'could mean sporadic absences'",
+            "cbssports.com/nba/teams/TOR (Rotowire 17 Oct 2026): Graves gets run 'on nights where Kawhi Leonard sits, particularly during back-to-back sets'",
+            "cbssports.com/nba/teams/ATL (Rotowire 16-17 Oct 2026): Johnson 'should be full go for the regular-season opener'; 20 pts / 14 reb in finale",
+            "Free-agent replacement level: Andrew Wiggins 33.77 FP/g (68 GP), Neemias Queta 33.40 (76 GP), from players_scored.csv minus council/taken.txt"
+          ],
+          "concerns": "Kyle may refuse on ADP alone (Kawhi 30.5 and Dejounte 68.6 against Johnson 8.7), and Johnson's own history (36 GP in 2024-25 after shoulder surgery) means 68 games is not guaranteed."
+        },
+        {
+          "member": "scout",
+          "vote": "Send Caleb Wilson + Paul George, get Walker Kessler",
+          "confidence": 0.6,
+          "rationale": "Kessler has a locked starting role (Redick named him a starter, 4yr/$130M), is fully cleared and projects 31.4 min, with a 5.80 FP/g OREB/BLK blind spot that ESPN cannot see, so Kyle undervalues him (38.61 on his screen vs about 44.4 for us). Wilson (0 NBA games, 34.88 projected) and George (35.96 over 37 games, age 36) are both near the 34 FP/g free-agent level, so with the freed spot we gain about +7.6 FP/g while Kyle's ESPN screen shows him +5.0, which makes the offer one he is likely to accept. If the C cap is read correctly (positionLimits '5' = C, max 4), Kyle cannot take both Duren and Okongwu, and this deal keeps both rosters legal (ours 3 C, his 2 C).",
+          "evidence": [
+            "data/processed/players_scored.csv: Walker Kessler A_GP 5, FP_ACT_PG 46.40, FP_PROJ_PG_CORE 38.60, PROJ_BLIND_SPOT_PG 5.80, P_MIN 31.4, P_FPTS_AVG 38.61, ADP 79.0",
+            "data/processed/players_scored.csv: Paul George A_GP 37, FP_ACT_PG 35.96, P_FPTS_AVG 38.47; Caleb Wilson A_GP none, FP_PROJ_PG_CORE 34.88, ADP 76.6",
+            "data/processed/players_scored.csv: Cedric Coward P_FPTS_AVG 29.74; best free agents Nurkic 36.76 (41 GP), Wiggins 33.78 (68 GP), Queta 33.40 (76 GP)",
+            "docs/offseason-impact.md §3: Kessler 'still the best buy in the Pacific, just don't anchor on 46'; LAL section: 4yr/$130M",
+            "docs/offseason-impact.md §5: Jaylen Brown 'single most over-valued player in the Atlantic', reason for rejecting the higher-scoring Brown deals",
+            "docs/research/20261019-0745-preseason-west.md: Redick names Doncic, Reaves, Kessler as the established starters",
+            "Web: NBC Sports 24 Sep 2026, Kessler shoulder fully cleared; ABC7, 16 min, 11 pts, 9 reb, +15 on 13 Oct; not on CBS injury report 19 Oct",
+            "Web: CBS BOS Rotowire 17 Oct, George 'will need to figure out how to stay on the floor'"
+          ],
+          "concerns": "Kessler's value rests on 5 games and a projection, and the Lakers' starting PF and Mamukelashvili's role are unresolved (offseason-impact.md §7 items 5-6), so his minutes could come in under 31.4."
+        },
+        {
+          "member": "tempo",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+          "confidence": 0.62,
+          "rationale": "The raw positionLimits key 5 is default position C (espn-api uses defaultPositionId-1), so the cap is max 4 centres, not 4 guards. Kyle holds 3 C and we hold 2, so this deal leaves him at 2 and us at 3, both legal, and his drop of Coward keeps him at 13. Embiid (46.40 FP/g, 38 GP) takes our 10th starter slot from Dejounte's 36.49, about +9.9 FP/g. The freed spot refills from waivers at about 35 FP/g (Nembhard 35.17), so Wilson (34.88 proj) costs us almost nothing.",
+          "evidence": [
+            "data/processed/players_scored.csv: Joel Embiid FP_ACT_PG 46.40, A_GP 38, ADP 65.3, FP_PROJ_PG_CORE 45.33",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14 (THIN), ADP 68.6; Caleb Wilson no sample, FP_PROJ_PG_CORE 34.88, ADP 76.6",
+            "data/processed/players_scored.csv + council/taken.txt: best free agents Andrew Nembhard 35.17 (57 GP), Jrue Holiday 34.93 (53 GP), Neemias Queta 33.40 (76 GP)",
+            "espn-api basketball/player.py: position = POSITION_MAP[defaultPositionId - 1], so positionLimits '5':4 = max 4 C; docs/league-rules.md §3 says 'max 4 at the G slot grouping', which is wrong",
+            "council/sessions/20261019-081948-three-weakest.json: Caleb Wilson weakest #2 (15/19), Dejounte Murray weakest #3 (runoff 12/19)",
+            "https://www.cbssports.com/nba/injuries/ (updates to 19 Oct): Embiid not listed; Dybantsa ankle GTD",
+            "Inquirer/BVM Sports 19 Oct 2026 and Bleacher Report: Embiid fully available since camp, no restrictions; 29 min, 27 pts in preseason finale"
+          ],
+          "concerns": "Embiid played 38 games last season and 19 the season before, and back-to-back rest could cost him 15-25 games, while Kyle may also simply turn down two lesser players."
+        },
+        {
+          "member": "vex",
+          "vote": "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+          "confidence": 0.45,
+          "rationale": "Jalen Johnson is the only Snow Time target whose number survives the A_GP check: 53.08 FP/g over 72 GP, healthy, two preseason double-doubles. Tatum (16 GP), Kessler (5 GP), Embiid (38 GP, DTD) and Kyrie/Dybantsa (no sample) do not. Packaging Dejounte Murray (36.49 on a THIN 14 GP, toe contusion all preseason) with Jamal Murray (47.8, 75 GP) adds about 4.8 FP per starting slot, frees a spot for streaming (Nurkic 36.8, Nembhard 35.2), and gives Kyle 84.3 FP/g against the 81.2 he loses (Johnson 53.1 + Coward 28.1), so it reads as fair to him. It also respects the real roster cap: rosterSettings.positionLimits '5':4 means a 4-C maximum, not the 4-G limit league-rules.md says, so no two-C package to a 3-C team works.",
+          "evidence": [
+            "data/processed/players_scored.csv: Jalen Johnson FP_ACT_PG 53.075, A_GP 72, ADP 8.7",
+            "data/processed/players_scored.csv: Jamal Murray FP_ACT_PG 47.8, A_GP 75, ADP 32.6",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14, SAMPLE_FLAG THIN, ADP 68.6",
+            "data/processed/players_scored.csv: Jayson Tatum A_GP 16 THIN; Walker Kessler A_GP 5 THIN; Joel Embiid A_GP 38 DAY_TO_DAY; Cedric Coward FP_ACT_PG 28.12",
+            "data/processed/players_scored.csv: best undrafted vs council/taken.txt: Jusuf Nurkic 36.8 (41 GP), Andrew Nembhard 35.2 (57 GP)",
+            "docs/league-rules.md line 100 says the 4-player limit is on G; raw positionLimits {'5':4} keys by default position ID, so 5 = C",
+            "council/sessions/20261019-081948-three-weakest.json: Dejounte Murray voted weakest #3 (share 0.632)",
+            "cbssports.com NO page, Rotowire 19 Oct 2026: Dejounte Murray (toe) 'will be fine to play in Wednesday's regular-season opener'",
+            "cbssports.com ATL page, Rotowire 17 Oct 2026: Jalen Johnson 20 pts / 14 reb, second preseason double-double; not on injury list"
+          ],
+          "concerns": "Kyle may judge by ADP (8.7 against 32.6 + 68.6) and refuse; Jamal Murray + Bane is more likely to be accepted, though it costs us a more durable player, and Johnson's own injury history (2024-25 labrum) means 72 GP is not guaranteed again."
+        },
+        {
+          "member": "quill",
+          "vote": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+          "confidence": 0.6,
+          "rationale": "This executes the council's own record: Wilson (15/19) and Dejounte Murray (12/19 runoff) are our two remaining voted-weakest players, and Clingan was third on our pick-54 board, taken one pick before us. Clingan's 41.04 FP/g over 77 GP plus a ~33 waiver add (Wiggins 33.78) beats Dejounte's 36.49 over 14 GP plus Wilson's 34.88 NO_SAMPLE projection by +2.7 to +7.5 FP/g. Kyle gains on ADP (68.6 + 76.6 for 81.8), both incoming players outrank Coward (ADP 127.8, 28.12) so he still drops Coward, and the C cap (positionLimits '5': 4) holds at 3 C for us and 2 for Kyle.",
+          "evidence": [
+            "data/processed/players_scored.csv: Donovan Clingan FP_ACT_PG 41.04, A_GP 77, ADP 81.8, PROJ_BLIND_SPOT_PG 5.95",
+            "data/processed/players_scored.csv: Dejounte Murray FP_ACT_PG 36.49, A_GP 14 (THIN), ADP 68.6; Caleb Wilson NO_SAMPLE, FP_PROJ_PG_CORE 34.88, ADP 76.6",
+            "data/processed/players_scored.csv: Cedric Coward FP_ACT_PG 28.12, ADP 127.8; Yaxel Lendeborg FP_PROJ_PG_CORE 23.49, ADP 132.3",
+            "council/sessions/20261019-081948-three-weakest.json: weakest = Ware, Caleb Wilson, Dejounte Murray",
+            "council/sessions/20261008-0920-pick-54-board.json: Clingan 3rd on board (68 pts); council/draft_results.csv: Snow Time Lakers took Clingan at 53",
+            "Raw positionLimits {'5': 4} = max 4 C by ESPN default position; docs/league-rules.md §3 'G grouping' wording contradicted by our 5 default guards",
+            "https://www.cbssports.com/nba/players/2203544/dejounte-murrays/ (Rotowire 19 Oct 2026): Murray expects to play 21 Oct opener"
+          ],
+          "concerns": "Kyle may judge Dejounte Murray by his 45 games over two seasons and Wilson by his 22.4 FP/g preseason rather than by ADP, and decline. And if Wilson's 34.88 projection is right, our gain shrinks to about +2.7 FP/g."
+        }
+      ],
+      "result": {
+        "winner": "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+        "weight_cast": 19,
+        "majority": false,
+        "share": 0.158,
+        "tiebreak": null,
+        "needs_runoff": true,
+        "runoff_options": [
+          "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+          "Send Dejounte Murray + Caleb Wilson, get Joel Embiid"
+        ],
+        "standings": [
+          {
+            "option": "Send Desmond Bane + Caleb Wilson, get Donovan Clingan",
+            "weight": 3,
+            "confidence_weight": 1.65,
+            "voters": [
+              "coach"
+            ]
+          },
+          {
+            "option": "Send Dejounte Murray + Caleb Wilson, get Joel Embiid",
+            "weight": 2,
+            "confidence_weight": 1.24,
+            "voters": [
+              "tempo"
+            ]
+          },
+          {
+            "option": "Send Jamal Murray + Desmond Bane, get Jalen Johnson",
+            "weight": 2,
+            "confidence_weight": 1.24,
+            "voters": [
+              "archivist"
+            ]
+          },
+          {
+            "option": "Send Kawhi Leonard + Desmond Bane, get Jalen Johnson",
+            "weight": 2,
+            "confidence_weight": 1.24,
+            "voters": [
+              "cipher"
+            ]
+          },
+          {
+            "option": "Send Caleb Wilson + Paul George, get Donovan Clingan",
+            "weight": 2,
+            "confidence_weight": 1.2,
+            "voters": [
+              "ledger"
+            ]
+          },
+          {
+            "option": "Send Caleb Wilson + Paul George, get Walker Kessler",
+            "weight": 2,
+            "confidence_weight": 1.2,
+            "voters": [
+              "scout"
+            ]
+          },
+          {
+            "option": "Send Dejounte Murray + Caleb Wilson, get Donovan Clingan",
+            "weight": 2,
+            "confidence_weight": 1.2,
+            "voters": [
+              "quill"
+            ]
+          },
+          {
+            "option": "Send Kawhi Leonard + Dejounte Murray, get Jalen Johnson",
+            "weight": 2,
+            "confidence_weight": 1.1,
+            "voters": [
+              "medic"
+            ]
+          },
+          {
+            "option": "Send Jamal Murray + Dejounte Murray, get Jalen Johnson",
+            "weight": 2,
+            "confidence_weight": 0.9,
+            "voters": [
+              "vex"
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }
