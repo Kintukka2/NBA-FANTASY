@@ -84,7 +84,6 @@ Brandin Podziemski
 Ivica Zubac
 Ausar Thompson
 Derik Queen
-Payton Pritchard
 Walker Kessler
 Isaiah Hartenstein
 DeMar DeRozan
@@ -105,3 +104,8 @@ Paul George
 Jimmy Butler III
 Miles Bridges
 Yaxel Lendeborg
+Andrew Nembhard
+CJ McCollum
+Jalen Green
+Peyton Watson
+Zach LaVine
