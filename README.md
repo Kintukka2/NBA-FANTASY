@@ -61,6 +61,7 @@ council/      members.json          personas, skills, sources, vote weights
               lookup.py             fast queries over players_scored.csv
               espn_sync.py          live league check (needs ESPN_S2, ESPN_SWID)
               slump_watch.py        every roster vs ESPN's projection (same cookies)
+              injuries.py           every injured NBA player, ESPN's estimated return
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)

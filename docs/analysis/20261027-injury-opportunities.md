@@ -59,55 +59,74 @@ Watch, not yet:
 
 These open roles the current averages do not show yet.
 
-| Player | NBA | Injury | Expected back | Minutes left (this season) | Fantasy status |
-|---|---|---|---|---:|---|
-| **Jalen Williams** | OKC | fractured fibula, dislocated left ankle (25 Oct); surgery | **likely the season** | 31.7 | Waivers |
-| **Cason Wallace** | OKC | torn left labrum (25 Oct); surgery | **5–6 months** | 16.3 | Free agent |
-| **Paolo Banchero** | ORL | low-grade high right ankle sprain (23 Oct) | **4–6 weeks** | 33.5 | Dr White Slong |
-| **Jalen Suggs** | ORL | right knee bone bruise (25 Oct) | re-eval in 2 weeks; at least 6 games | 33.3 | Waivers |
-| **Keegan Murray** | SAC | left ankle capsulitis | re-eval in 10–14 days from 26 Oct | 27.0 | Dr White Slong |
-| **Jalen Duren** | DET | right hamstring strain (23 Oct) | re-eval in 2 weeks; ~8 Nov at the earliest | 19.0 | **us** (IR) |
+| Player | NBA | Injury | Reported timeline | ESPN est. | Minutes left (this season) | Fantasy status |
+|---|---|---|---|---|---:|---|
+| **Jalen Williams** | OKC | fractured fibula, dislocated left ankle (25 Oct); surgery | **likely the season** | 2 Mar | 31.7 | Waivers |
+| **Cason Wallace** | OKC | torn left labrum (25 Oct); surgery | **5–6 months** | 2 Mar | 16.3 | Free agent |
+| **Paolo Banchero** | ORL | low-grade high right ankle sprain (23 Oct) | **4–6 weeks** | 22 Nov | 33.5 | Dr White Slong |
+| **Jalen Suggs** | ORL | right knee bone bruise (25 Oct) | re-eval in 2 weeks; at least 6 games | 10 Nov | 33.3 | Waivers |
+| **Keegan Murray** | SAC | left ankle capsulitis | re-eval in 10–14 days from 26 Oct | 6 Nov | 27.0 | Dr White Slong |
+| **Jalen Duren** | DET | right hamstring strain (23 Oct) | re-eval in 2 weeks; ~8 Nov at the earliest | 9 Nov | 19.0 | **us** (IR) |
 
 ### Out since the preseason
 
 The current minutes already reflect these absences.
 
-| Player | NBA | Injury | Expected back |
-|---|---|---|---|
-| Jusuf Nurkic | UTAH | partial plantar plate tear, right second toe (4 Oct) | at least 4 weeks; early Nov at the earliest |
-| Nic Claxton | CHI | hamstring (training camp) | at least one more week, then re-evaluated |
-| Dereck Lively II | DAL | right foot (Dec 2025 surgery) | no timetable; week-to-week |
-| Santi Aldama | DAL | knee (March surgery) | week-to-week |
-| Brandon Ingram | LAC | partial Achilles tear, found in May heel surgery | Nov–early Dec estimate; Lue: "vague" |
-| Bradley Beal, Max Strus | LAC | knee inflammation; plantar fasciitis | ESPN estimate 8 Nov |
-| Maxime Raynaud | SAC | right kneecap subluxation (10 Oct) | re-eval was due 25 Oct; no update found |
-| Kristaps Porziņģis | GS | undisclosed illness | indefinite |
-| Moses Moody; Jimmy Butler III | GS | knee surgery; torn ACL | Dec; Jan |
-| Shaedon Sharpe | POR | knee surgery | March |
-| Mark Williams | PHX | shoulder surgery | February |
-| Donte DiVincenzo | MIN | Achilles surgery | April |
+| Player | NBA | Injury | Reported timeline | ESPN est. |
+|---|---|---|---|---|
+| Jusuf Nurkic | UTAH | partial plantar plate tear, right second toe (4 Oct) | at least 4 weeks; early Nov at the earliest | 4 Nov |
+| Nic Claxton | CHI | hamstring (training camp) | at least one more week, then re-evaluated | 4 Nov |
+| Dereck Lively II | DAL | right foot (Dec 2025 surgery) | no timetable; week-to-week | 2 Nov |
+| Santi Aldama | DAL | knee (March surgery) | week-to-week | 2 Nov |
+| Brandon Ingram | LAC | partial Achilles tear, found in May heel surgery | Nov–early Dec estimate; Lue: "vague" | 8 Nov |
+| Bradley Beal | LAC | right knee inflammation | no timetable reported | 8 Nov |
+| Max Strus | LAC | right foot plantar fasciitis | no timetable reported | 8 Nov |
+| Maxime Raynaud | SAC | right kneecap subluxation (10 Oct) | re-eval was due 25 Oct; no update found | 10 Nov |
+| Kristaps Porziņģis | GS | undisclosed illness | indefinite | 1 Dec |
+| Moses Moody | GS | left knee surgery | no timetable reported | 1 Dec |
+| Jimmy Butler III | GS | torn right ACL | out until at least 2 Jan | 2 Jan |
+| Shaedon Sharpe | POR | right knee surgery | no timetable reported | 2 Mar |
+| Mark Williams | PHX | left shoulder surgery | no timetable reported | 3 Feb |
+| Donte DiVincenzo | MIN | right Achilles surgery | no timetable reported | 2 Apr |
 
 These players have small roles, and their teammates gain little:
 
-| Player | NBA | Expected back (ESPN) |
-|---|---|---|
-| Julian Strawther | DEN | 29 Nov |
-| Ben Sheppard | IND | 1 Dec |
-| Johnny Furphy | IND | Jan |
-| Mouhamed Gueye | ATL | 20 Nov |
-| Dominick Barlow | PHI | back fracture |
-| Jayden Quaintance | SA | Dec |
-| Devin Carter | BOS | illness |
-| Tristan Vukcevic | WSH | — |
-| Jamir Watkins | WSH | Apr |
-| Jordan Miller | LAC | Mar |
-| Noah Penda | ORL | — |
-| Izaiyah Nelson | ORL | — |
-| Dylan Cardwell | SAC | 6 Nov |
+| Player | NBA | Injury | ESPN est. |
+|---|---|---|---|
+| Julian Strawther | DEN | left knee sprain | 29 Nov |
+| Ben Sheppard | IND | left knee | 1 Dec |
+| Johnny Furphy | IND | right knee surgery | 2 Jan |
+| Mouhamed Gueye | ATL | left foot fracture, surgery (re-eval in 3–4 months, per ESPN's note) | 20 Nov |
+| Dominick Barlow | PHI | back fracture | 2 Nov |
+| Jayden Quaintance | SA | right knee surgery | 3 Dec |
+| Devin Carter | BOS | illness | 8 Nov |
+| Tristan Vukcevic | WSH | left hip, pinched nerve | 2 Nov |
+| Jamir Watkins | WSH | left knee surgery | 2 Apr |
+| Jordan Miller | LAC | left shoulder surgery | 2 Mar |
+| Noah Penda | ORL | right hamstring, partial tear | 18 Nov |
+| Izaiyah Nelson | ORL | left ankle surgery | 18 Nov |
+| Dylan Cardwell | SAC | left calf strain | 6 Nov |
 
 ### Short of a week
 
-Not in scope here: Holmgren (patellar tendinitis), Caruso (ankle), Zubac (ankle), Markkanen (wrist), Jaren Jackson Jr. (knee), Hayes (shoulder), Ausar Thompson (ankle), Coby White, Knueppel, Grant Williams, Dybantsa, Missi, Steven Adams, Tobias Harris.
+These are not in scope here, but each still has an expected return.
+
+| Player | NBA | Injury | Reported timeline | ESPN est. |
+|---|---|---|---|---|
+| Chet Holmgren | OKC | right patellar tendinitis | next chance Wed vs DAL | 28 Oct |
+| Alex Caruso | OKC | right ankle sprain (26 Oct) | MRI pending; monitor for Wed | 28 Oct |
+| Ivica Zubac | IND | left ankle sprain | no timetable; "improving" | 28 Oct |
+| Lauri Markkanen | UTAH | right wrist (26 Oct) | no diagnosis reported | 28 Oct |
+| Jaren Jackson Jr. | UTAH | right knee (26 Oct) | no diagnosis reported | 28 Oct |
+| Jaxson Hayes | UTAH | right shoulder soreness | next chance Wed vs SA | 28 Oct |
+| Ausar Thompson | DET | right ankle sprain | questionable Tue vs NY | 27 Oct |
+| Coby White | CHA | left calf strain | no timetable reported | 31 Oct |
+| Kon Knueppel | CHA | left hamstring | no timetable reported | 31 Oct |
+| Grant Williams | CHA | right hamstring | no timetable reported | 31 Oct |
+| AJ Dybantsa | WSH | left ankle sprain | no timetable reported | 28 Oct |
+| Yves Missi | NO | left knee bruise | no timetable reported | 2 Nov |
+| Steven Adams | HOU | right calf strain | no timetable reported | 2 Nov |
+| Tobias Harris | SA | left calf strain | no timetable reported | 28 Oct |
 
 ## Who took the minutes
 
