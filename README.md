@@ -60,6 +60,7 @@ council/      members.json          personas, skills, sources, vote weights
               PROTOCOL.md           how a question is decided
               lookup.py             fast queries over players_scored.csv
               espn_sync.py          live league check (needs ESPN_S2, ESPN_SWID)
+              slump_watch.py        every roster vs ESPN's projection (same cookies)
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)
@@ -67,6 +68,38 @@ council/      members.json          personas, skills, sources, vote weights
               roster.csv            our live roster, updated after every move
               sessions/             every council session, as JSON
 ```
+
+## Slump Watch
+
+```
+/slump-watch          # flag players 10+ FP/g under ESPN's projection
+/slump-watch 8        # a different threshold
+```
+
+`council/slump_watch.py` reads all eight rosters live and flags every
+player whose current FP/g is at or past the threshold below ESPN's
+projected FP/g. For each flagged player it gives:
+
+- minutes, current against projected
+- a driver label: *minutes*, *efficiency* or *both*
+- the category drivers of the gap
+
+The report also lists:
+
+- players near the line
+- players under their 2026 average but not under projection
+- our pending trades
+
+The skill adds sourced news for each flagged player and saves the report
+as `docs/analysis/<YYYYMMDD>-slump-watch.md`.
+
+The script has two guards:
+
+- It refuses to run while any NBA game is in progress, because ESPN counts
+  a half-played game as played.
+- It exits without a report if a figure fails to re-score with
+  `scripts/league_scoring.py`, or if the latest completed scoring period
+  fails to match ESPN's final box scores.
 
 ## Reproduce
 
