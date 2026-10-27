@@ -16,6 +16,11 @@ When the user asks for the slump watch, who is underperforming, or uses
 `council/slump_watch.py` and never compute its figures by hand. It refuses
 to run while NBA games are live.
 
+When the user asks for the injury watch, injury replacements, who to pick up
+because of injuries, or uses `/injury-watch`, follow
+`.claude/skills/injury-watch/SKILL.md`. Run `council/injury_watch.py`, then
+add sourced research. It refuses to run while NBA games are live.
+
 **Injury timelines, always.** Whenever a reply or a report names an injured
 player, give the expected return next to the name:
 

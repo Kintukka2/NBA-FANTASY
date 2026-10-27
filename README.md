@@ -62,6 +62,7 @@ council/      members.json          personas, skills, sources, vote weights
               espn_sync.py          live league check (needs ESPN_S2, ESPN_SWID)
               slump_watch.py        every roster vs ESPN's projection (same cookies)
               injuries.py           every injured NBA player, ESPN's estimated return
+              injury_watch.py       who takes injured players' minutes; pickups for us
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)
@@ -101,6 +102,36 @@ The script has two guards:
 - It exits without a report if a figure fails to re-score with
   `scripts/league_scoring.py`, or if the latest completed scoring period
   fails to match ESPN's final box scores.
+
+## Injury Watch
+
+```
+/injury-watch                  # out 7+ days; back-soon window 14 days
+/injury-watch --soon 21        # a longer back-soon window
+```
+
+`council/injury_watch.py` reads ESPN's injury feed and finds every player
+out longer than `--min-days` who has a real role. For each one it reads
+the team's recent box scores and splits every teammate's minutes, starts
+and FP into two groups:
+
+- games without the absentees
+- games with them, or ESPN's projection when the absence predates the
+  season
+
+The report then lists:
+
+- the best-placed replacements on each team
+- the free agents and waiver players among them, against our five lowest
+  FP/g
+- injured free agents due back soon, with our IR slot's status
+- every injury in the league, with ESPN's estimated return
+
+The skill adds sourced research on timelines and roles, plus a shortlist,
+and saves the report as `docs/analysis/<YYYYMMDD>-injury-watch.md`. Its
+guards match the Slump Watch: no runs while games are live, and no report
+if any average fails to re-score. Finished box scores are cached in
+`council/.cache/` (gitignored).
 
 ## Reproduce
 

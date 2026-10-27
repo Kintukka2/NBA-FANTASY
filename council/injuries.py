@@ -53,6 +53,7 @@ def injuries():
                             if v and v != "Not Specified")
             ret = det.get("returnDate")
             out[pid] = {"id": pid, "player": x["athlete"]["displayName"], "nba": team["displayName"],
+                        "team_id": int(team["id"]),
                         "status": x["status"], "injury": what or "—",
                         "return": dt.date.fromisoformat(ret) if ret else None,
                         "updated": x["date"][:10], "note": x.get("shortComment", "")}
