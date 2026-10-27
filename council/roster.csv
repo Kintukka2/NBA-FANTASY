@@ -1,15 +1,15 @@
 player,team,pos,slot,acquired,acquired_on,notes
 Cade Cunningham,DET,PG,roster,draft R1 P6,2026-10-08,
 Scottie Barnes,TOR,SG/SF,roster,draft R2 P11,2026-10-08,
-Jalen Duren,DET,C,roster,draft R3 P22,2026-10-08,
+Jalen Duren,DET,C,IR,draft R3 P22,2026-10-08,moved to IR 2026-10-25 (ESPN status OUT)
 Jamal Murray,DEN,PG,roster,draft R4 P27,2026-10-08,
 Kawhi Leonard,TOR,SF/PF,roster,draft R5 P38,2026-10-08,
 Dejounte Murray,NO,PG/SG,roster,draft R6 P43,2026-10-08,
 Trey Murphy III,NO,SG/SF,roster,draft R7 P54,2026-10-08,
 Desmond Bane,ORL,SG/SF,roster,draft R8 P59,2026-10-08,
-Onyeka Okongwu,ATL,C,roster,draft R9 P70,2026-10-08,
 Caleb Wilson,CHI,SF,roster,draft R10 P75,2026-10-08,
-Ryan Rollins,MIL,PG/SG,roster,draft R11 P86,2026-10-08,
-Jimmy Butler III,GS,SG/SF,IR,free agent,2026-10-19,"IR stash: torn right ACL, out until at least 2 Jan; added before Paul George"
 Paul George,BOS,SF/PF,roster,free agent,2026-10-19,added for Miles Bridges (dropped 2026-10-19)
 Yaxel Lendeborg,GS,SF/PF,roster,free agent,2026-10-19,added for Kel'el Ware (dropped 2026-10-19)
+Fred VanVleet,HOU,PG/SG,roster,free agent,2026-10-24,"added for Yves Missi (dropped 2026-10-24), who was added 2026-10-22 for Ryan Rollins"
+Paul Reed,DET,PF/C,roster,free agent,2026-10-25,added for Onyeka Okongwu (dropped 2026-10-25)
+Payton Pritchard,BOS,PG/SG,roster,free agent,2026-10-26,"added for Ayo Dosunmu (dropped 2026-10-26); chain began with Jimmy Butler III dropped 2026-10-24 for Aaron Gordon, Gordon dropped 2026-10-25 for Dosunmu"
