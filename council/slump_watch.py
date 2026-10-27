@@ -40,6 +40,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent / "scripts"))
 from league_scoring import per_game, season_total  # noqa: E402
+from injuries import injuries as injury_feed  # noqa: E402
 
 LEAGUE_ID = 423671879
 SEASON = 2027
@@ -215,7 +216,7 @@ def line(split):
             f'{f("STL"):.1f} stl, {f("BLK"):.1f} blk, {f("TO"):.1f} TO')
 
 
-def render(rows, teams, pro, args, checks, pending):
+def render(rows, teams, pro, args, checks, pending, back):
     """The whole report as markdown."""
     by_team = defaultdict(list)
     for r in rows:
@@ -230,7 +231,11 @@ def render(rows, teams, pro, args, checks, pending):
     flagged = [r for r in both if r["gap"] <= -args.threshold]
     near = [r for r in both if -args.threshold < r["gap"] <= -args.near]
     gps = sorted({r["current"]["gp"] for r in rows if r["current"]})
-    status = lambda r: STATUS.get(r["status"], r["status"].replace("_", " ").title() or "—")
+    def status(r):
+        label = STATUS.get(r["status"], r["status"].replace("_", " ").title() or "—")
+        if r["status"] not in ("", "ACTIVE") and back.get(r["id"]):
+            label += f', ESPN est. back {back[r["id"]]:%d %b}'
+        return label
     fmt = lambda x: "—" if x is None else f"{x:.1f}"
     name = lambda tid: teams[tid] + (" (us)" if tid == TEAM_ID else "")
 
@@ -394,7 +399,8 @@ def main():
                if tx.get("type") == "TRADE_PROPOSAL" and tx.get("status") == "PENDING"
                and any(TEAM_ID in (i["fromTeamId"], i["toTeamId"]) for i in tx.get("items", []))]
 
-    report = render(rows, teams, pro, args, checks, pending)
+    back = {pid: i["return"] for pid, i in injury_feed().items()}
+    report = render(rows, teams, pro, args, checks, pending, back)
     if args.out:
         Path(args.out).write_text(report)
         print(f"Wrote {args.out}")

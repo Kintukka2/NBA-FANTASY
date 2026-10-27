@@ -46,6 +46,9 @@ Under that player's driver line in the report, add one or two bullets:
   rotation change, an in-game injury exit, or a shooting slump with no news
   behind it.
 - **The latest status:** a diagnosis, a timeline, or a re-evaluation date.
+  Every injured player named anywhere in the report or the reply gets an
+  expected return: the reported timeline and ESPN's estimate (see CLAUDE.md).
+  The script already prints ESPN's estimate in the status column.
 
 Rules for those bullets:
 
