@@ -11,6 +11,11 @@ When the user asks "the council" anything, or uses `/council`, follow
 highest-voted answer is reported. Votes are counted by `council/tally.py`,
 never by hand. Sessions are saved to `council/sessions/`.
 
+When the user asks for the slump watch, who is underperforming, or uses
+`/slump-watch`, follow `.claude/skills/slump-watch/SKILL.md`. Run
+`council/slump_watch.py` and never compute its figures by hand. It refuses
+to run while NBA games are live.
+
 `council/roster.csv` is our live roster. Whenever the user reports a move
 (add, drop, IR, trade), update it in the same turn and commit: remove the
 dropped player, add the new one with `acquired` and `acquired_on`, set
