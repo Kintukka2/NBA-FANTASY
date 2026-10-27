@@ -21,6 +21,11 @@ because of injuries, or uses `/injury-watch`, follow
 `.claude/skills/injury-watch/SKILL.md`. Run `council/injury_watch.py`, then
 add sourced research. It refuses to run while NBA games are live.
 
+When the user asks to prepare for the matchup, who to stream, who to pick up
+for particular days, or uses `/matchup`, follow
+`.claude/skills/matchup/SKILL.md`. Run `council/matchup.py`, then add
+research and a plan. It refuses to run while NBA games are live.
+
 **Injury timelines, always.** Whenever a reply or a report names an injured
 player, give the expected return next to the name:
 
