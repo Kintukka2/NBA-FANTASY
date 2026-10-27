@@ -63,6 +63,7 @@ council/      members.json          personas, skills, sources, vote weights
               slump_watch.py        every roster vs ESPN's projection (same cookies)
               injuries.py           every injured NBA player, ESPN's estimated return
               injury_watch.py       who takes injured players' minutes; pickups for us
+              matchup.py            this week day by day; best streams for our slot
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)
@@ -132,6 +133,35 @@ and saves the report as `docs/analysis/<YYYYMMDD>-injury-watch.md`. Its
 guards match the Slump Watch: no runs while games are live, and no report
 if any average fails to re-score. Finished box scores are cached in
 `council/.cache/` (gitignored).
+
+## Matchup prep
+
+```
+/matchup                       # the skill picks the streaming slot
+/matchup Pritchard             # stream with a named player's slot
+```
+
+`council/matchup.py` reads our current matchup:
+
+- the score
+- both rosters' remaining games
+- our adds left
+
+For each remaining day, an exact optimiser fills the 10 starting slots
+(PG, SG, SF, PF, C, G, F and 3 UTIL). From that it reports:
+
+- the open slots and projected lineup totals for both teams, and the
+  projected final
+- what each of our players adds this week
+- every free agent valued as a replacement for the streaming slot: one
+  add now, two adds in a chain, and the best stream for each day
+- lineup sits on overfull days
+- tip-off times in ET and Melbourne
+
+A streamer is worth the change in our optimised total, so a game on a day
+we're already full counts for nothing. The skill adds sourced research and
+a plan, and saves the report as `docs/analysis/<YYYYMMDD>-matchup<N>.md`.
+Its guards match the Slump Watch.
 
 ## Reproduce
 
