@@ -24,7 +24,6 @@ Devin Booker
 Jalen Duren
 Deni Avdija
 Karl-Anthony Towns
-Jalen Williams
 Paolo Banchero
 Jamal Murray
 Jaylen Brown
@@ -38,7 +37,6 @@ Chet Holmgren
 Austin Reaves
 Dyson Daniels
 Kawhi Leonard
-Nikola Vucevic
 Stephon Castle
 Anthony Davis
 Derrick White
@@ -51,7 +49,6 @@ Stephen Curry
 Lauri Markkanen
 Naz Reid
 Kon Knueppel
-Mikal Bridges
 Donovan Clingan
 Trey Murphy III
 Nickeil Alexander-Walker
@@ -64,12 +61,10 @@ Franz Wagner
 Michael Porter Jr.
 Jaren Jackson Jr.
 Cameron Boozer
-Norman Powell
 De'Aaron Fox
 Jarrett Allen
 Keyonte George
 AJ Dybantsa
-Onyeka Okongwu
 Josh Hart
 VJ Edgecombe
 Zion Williamson
@@ -78,20 +73,17 @@ Caleb Wilson
 Joel Embiid
 Rudy Gobert
 Alex Sarr
-Ryan Rollins
 Ja Morant
 Brandin Podziemski
 Ivica Zubac
 Ausar Thompson
 Derik Queen
 Walker Kessler
-Isaiah Hartenstein
 DeMar DeRozan
 Jaden McDaniels
 Keegan Murray
 Kyrie Irving
 OG Anunoby
-Darryn Peterson
 Damian Lillard
 Zach Edey
 Ajay Mitchell
@@ -101,11 +93,21 @@ Cedric Coward
 Ace Bailey
 Ty Jerome
 Paul George
-Jimmy Butler III
 Miles Bridges
 Yaxel Lendeborg
 Andrew Nembhard
-CJ McCollum
-Jalen Green
-Peyton Watson
 Zach LaVine
+Alex Caruso
+Anthony Black
+Brook Lopez
+Davion Mitchell
+Fred VanVleet
+Jabari Smith Jr.
+Jaime Jaquez Jr.
+John Collins
+Jonathan Kuminga
+Kyshawn George
+Moussa Diabate
+Paul Reed
+Payton Pritchard
+Wendell Carter Jr.
