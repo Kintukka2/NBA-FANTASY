@@ -117,6 +117,8 @@ FPTS = PTS + 2·FGM − FGA + FTM − FTA + 3PM + REB + OREB + 2·AST + 4·STL +
 
 > The raw config shows `matchupAcquisitionLimit: 1`, but that is the value for the **current** (preseason) matchup period, not a season-long cap. Per league experience the limit is recalculated each week in proportion to the number of NBA game days in that period — typically around **7**, dropping to about **4** in compressed weeks (All-Star break, etc.). Confirmed by HIMOTHY, 8 Oct 2026.
 
+> **It is a matchup total, not a daily cap.** ESPN's `matchupLimitPerScoringPeriod: true` means the limit is `matchupAcquisitionLimit` (1) × the scoring periods in the matchup. Checked against ESPN's transaction log on 28 Oct 2026: five teams have made two or more adds in a single scoring period, including us (three in period 5, 24–25 Oct) and Melbourne poopoo (four on 26 Oct).
+
 **This is the single most strategically important setting in the league.** Around seven adds a week, combined with unlimited daily lineup changes, means the waiver wire is a live, continuously usable tool rather than an emergency measure. See §8.
 
 ---

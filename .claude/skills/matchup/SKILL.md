@@ -40,6 +40,23 @@ Options:
 | `--min-minutes` | 12 | minutes a game a streamer must be averaging this season |
 | `--tz` | Australia/Melbourne | the second time zone shown beside ET |
 | `--end YYYY-MM-DD` | this Sunday | the matchup's last US date, e.g. for two-week playoff rounds |
+| `--rotate NAME[@YYYY-MM-DD] ...` | — | our flexible slots: the best sequence of streamers through them for the rest of the week, at every add count. A date is the first US day that slot may change, e.g. to keep a player for one more game |
+| `--pool` | 14 | free agents `--rotate` considers, plus each day's top three |
+| `--sit NAME@YYYY-MM-DD ...` | — | treat a player as not playing that US date, e.g. a planned rest on a back-to-back |
+
+**When the user names two or more flexible slots, or asks for the best
+rotation,** pass `--rotate`. It reports:
+
+- the best plan at each add count, within the matchup's add limit. That limit is a matchup total, so several adds can go on one day
+- the gain from keeping each slot's player instead
+- each player's break-even rate, and the single-game score that would cross it
+- a day-by-day table with lineup sits
+- the moves, with deadlines
+
+If a rotated player may rest (the second night of a back-to-back, for
+example), run it again with `--sit` and add that run's rotation section as a
+*What-if*. Prefer a plan that keeps an add free for the day the rest would
+fall.
 
 If something goes wrong:
 
@@ -59,6 +76,10 @@ news from the last few days.
 2. **The top three to five streamers:** starting or bench, minutes trend,
    minutes restrictions, and whether an injured teammate's return threatens
    the role.
+   - Whether a player starts comes from the script's **Started** column, which
+     is read from ESPN's box scores. Never take it from a news summary alone.
+     If a source disagrees with the box scores, say so and go with the box
+     scores.
 3. **Any role change** the script can't see: a new starter, a trade, a
    suspension.
 
