@@ -64,6 +64,7 @@ council/      members.json          personas, skills, sources, vote weights
               injuries.py           every injured NBA player, ESPN's estimated return
               injury_watch.py       who takes injured players' minutes; pickups for us
               matchup.py            this week day by day; best streams for our slot
+              rookies.py            rookies' actual output against projection; estimate for one
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)
