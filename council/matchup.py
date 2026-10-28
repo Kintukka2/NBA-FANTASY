@@ -223,13 +223,20 @@ def main():
     out.append("")
 
     shown = set()
+    # A game that has already tipped can't be gained or lost by a roster move:
+    # the dropped player keeps it, and a streamer added now can't get it.
+    # ESPN won't drop a player once his game has started, so while the drop
+    # candidate is locked, no streamer can arrive that day either.
+    started = lambda r, p: (r["pro"], p) in tips and tips[(r["pro"], p)] <= now
     for d in drops:
         base = [r for r in ours if r is not d]
-        base_by = {p: total(base, p) for p in days}
+        stays = lambda p: ours if started(d, p) else base
+        base_by = {p: total(stays(p), p) for p in days}
         keep = {p: ours_by[p] - base_by[p] for p in days}
         gain = {}
         for x in fa:
-            m = {p: (total(base + [x], p) - base_by[p]) if plays(x, p) else 0.0 for p in days}
+            m = {p: (total(stays(p) + [x], p) - base_by[p])
+                 if plays(x, p) and not started(x, p) and not started(d, p) else 0.0 for p in days}
             if sum(m.values()) > 0:
                 gain[x["id"]] = (x, m)
         ranked = sorted(gain.values(), key=lambda g: -sum(g[1].values()))
@@ -240,7 +247,7 @@ def main():
                 "| Free agent | NBA | Games | Now: GP, min, FP/g | 2026 FP/g | Owned | vs keeping |", "|---|---|---|---|---:|---:|---:|"]
         for x, m in ranked[:args.top]:
             shown.add(x["pro"])
-            gd = ", ".join(label(p)[0][:3] for p in days if plays(x, p))
+            gd = ", ".join(label(p)[0][:3] for p in days if plays(x, p) and not started(x, p) and not started(d, p))
             out.append(f'| **{x["player"]}**{" (" + est(x) + ")" if est(x) else ""} | {abbrev.get(x["pro"])} | {gd} | '
                        f'{line(x)} | {fmt(x["last"] and x["last"]["fpg"])} | {x["owned"]:.0f}% | '
                        f'**{signed(sum(m.values()) - sum(keep.values()), True)}** |')
@@ -280,10 +287,11 @@ def main():
             plan = base + [x]
             out += ["", f"### Lineup with {x['player']} in the slot", "", "| Day | Lineup | Playing | Sits |", "|---|---:|---:|---|"]
             for p in days:
-                live_ = [r for r in plan if plays(r, p)]
-                v = total(plan, p)
+                day_roster = ours if started(d, p) else plan
+                live_ = [r for r in day_roster if plays(r, p)]
+                v = total(day_roster, p)
                 sits = [r["player"] for r in live_ if len(live_) > len(SLOTS)
-                        and abs(total([q for q in plan if q is not r], p) - v) < 1e-6]
+                        and abs(total([q for q in day_roster if q is not r], p) - v) < 1e-6]
                 out.append(f'| {label(p)[0]} | {v:.0f} | {len(live_)} | {", ".join(sits) or "—"} |')
         out.append("")
 
