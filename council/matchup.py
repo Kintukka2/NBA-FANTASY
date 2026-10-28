@@ -488,7 +488,8 @@ def main():
             out.append(line_)
 
         occupants = list(origs)
-        out += ["", f"### Best plan: {len(top_moves)} adds, {signed(top_total - hold, True)}", "",
+        out += ["", f"### Best plan: {len(top_moves)} adds, {signed(top_total - hold, True)} "
+                f"({top_total:.0f} in our lineup over these days)", "",
                 "| Day (US) | " + args.tz.split("/")[-1] + " | " + " | ".join(f"Slot {s + 1}" for s in range(n))
                 + " | Our lineup | vs keeping | Sits |",
                 "|---|---|" + "---|" * n + "---:|---:|---|"]
