@@ -47,7 +47,7 @@ Options:
 **When the user names two or more flexible slots, or asks for the best
 rotation,** pass `--rotate`. It reports:
 
-- the best plan at each add count, within the league's add limit, including any per-day cap
+- the best plan at each add count, within the matchup's add limit. That limit is a matchup total, so several adds can go on one day
 - the gain from keeping each slot's player instead
 - each player's break-even rate, and the single-game score that would cross it
 - a day-by-day table with lineup sits

@@ -340,7 +340,6 @@ def main():
             origs.append(r)
             frees.append(free)
         n = len(origs)
-        cap = int(per) if per >= 0 and acq.get("matchupLimitPerScoringPeriod") else None
         budget = int(limit - used) if limit is not None else len(days) * n
         rdays = [p for p in days if p >= min(frees)]
         empty = [r for r in ours if all(r is not o for o in origs)]
@@ -373,7 +372,7 @@ def main():
                     for new in itertools.product(*choices):
                         changed = [s for s in range(n) if new[s] != occ[s]]
                         k = len(changed)
-                        if adds + k > budget or (cap is not None and k > cap) or len(set(new)) < n:
+                        if adds + k > budget or len(set(new)) < n:
                             continue
                         day = value(p, tuple(sorted(new)))
                         for v, done, moves in entries:
@@ -406,9 +405,8 @@ def main():
         out += [f"## Rotating {title} slot{'s' if n > 1 else ''}", "",
                 "- Free from: " + ", ".join(f"{o['player']} {label(f)[0]}" for o, f in zip(origs, frees))
                 + ". A slot can change from that US day, before its occupant's game that day.",
-                f"- Each change is one add. {budget} left this matchup"
-                + (f", at most {cap} per scoring period (US day) as the league is set, so "
-                   f"{min(budget, cap * len(rdays))} usable over these {len(rdays)} days." if cap is not None else "."),
+                f"- Each change is one add. {budget} left this matchup, usable on any day: the limit is a "
+                "matchup total, not a daily cap.",
                 f"- Streamers considered: the {len(cands)} free agents worth most to an empty slot over these days "
                 f"(with {args.min_minutes:g}+ minutes), plus the top three for each day.",
                 f"- Keeping {'both' if n == 2 else 'them'} scores **{hold:.0f}** in our lineup over "
@@ -423,21 +421,44 @@ def main():
         for x in {id(x): x for _, _, _, x in top_moves}.values():
             shown.add(x["pro"])
 
+        nxt_week = [q for q in first if end < first[q].astimezone(ET).date() <= end + dt.timedelta(days=7)]
+        later = lambda r: sum((r["pro"], q) in tips for q in nxt_week)
+        finale = {s: max((p for p in rdays if plays(o, p)), default=None) for s, o in enumerate(origs)}
+
+        def kept(s):
+            """The slots' free days with slot s held through its player's last game this week."""
+            after = next((p for p in rdays if finale[s] is None or p > finale[s]), None)
+            return [after if t == s else f for t, f in enumerate(frees)]
+
+        out += ["", "Every drop of a player below is permanent: after his last game this week, dropping him still "
+                "gains this week but costs his games next week ("
+                + ", ".join(f"{o['player']} {later(o)}" for o in origs) + ").", ""]
         if n > 1:
-            out += ["", "### Keep one, rotate the other", "", "| Scenario | Adds | vs keeping both |", "|---|---:|---:|"]
+            out += ["### Keep one, rotate the other", "",
+                    "Keeping a player here means through his last game this week; his slot can still turn over after it.", "",
+                    "| Scenario | Adds | vs keeping both |", "|---|---:|---:|"]
             out.append(f"| Rotate both | {len(top_moves)} | {signed(top_total - hold, True)} |")
             for s, o in enumerate(origs):
-                alone, _ = rotate(origs, [None if t == s else f for t, f in enumerate(frees)])
-                out.append(f"| Keep {o['player']}, rotate the rest | {len(alone[budget][1])} | "
+                alone, _ = rotate(origs, kept(s))
+                until = f" through {label(finale[s])[0]}" if finale[s] is not None else ""
+                out.append(f"| Keep {o['player']}{until}, rotate the rest | {len(alone[budget][1])} | "
                            f"{signed(alone[budget][0] - hold, True)} |")
-        out += ["", "### Break-even", "",
-                "The rate a player needs for keeping him to beat streaming his slot, with the other slots "
-                "rotating as above.", ""]
+                if kept(s)[s] is not None:
+                    never, _ = rotate(origs, [None if t == s else f for t, f in enumerate(frees)])
+                    out.append(f"| Keep {o['player']} all week (never drop), rotate the rest | {len(never[budget][1])} | "
+                               f"{signed(never[budget][0] - hold, True)} |")
+            out.append("")
+        out += ["### Break-even", "",
+                "The rate a player needs for keeping him through his last game this week to beat dropping him "
+                "sooner, with the other slots rotating as above.", ""]
         for s, o in enumerate(origs):
+            if kept(s)[s] is not None and kept(s)[s] <= frees[s]:
+                out.append(f"- **{o['player']}**: no game left after his slot frees up, so there is nothing to weigh.")
+                continue
+
             def moved(R, s=s):
                 trial = [dict(q, rate=R) if t == s else q for t, q in enumerate(origs)]
-                fixed = [None if t == s else f for t, f in enumerate(frees)]
-                return rotate(trial, frees)[0][budget][0] > rotate(trial, fixed)[0][budget][0] + 0.05
+                return rotate(trial, frees)[0][budget][0] > rotate(trial, kept(s))[0][budget][0] + 0.05
             lo, hi = 0.0, 90.0
             if not moved(lo):
                 out.append(f"- **{o['player']}** (rate {rate(o):.1f}): keeping him wins at any rate.")
@@ -467,7 +488,6 @@ def main():
             out.append(line_)
 
         occupants = list(origs)
-        nxt_week = [q for q in first if end < first[q].astimezone(ET).date() <= end + dt.timedelta(days=7)]
         out += ["", f"### Best plan: {len(top_moves)} adds, {signed(top_total - hold, True)}", "",
                 "| Day (US) | " + args.tz.split("/")[-1] + " | " + " | ".join(f"Slot {s + 1}" for s in range(n))
                 + " | Our lineup | vs keeping | Sits |",
@@ -491,9 +511,10 @@ def main():
             by = min(tips[(r["pro"], p)] for r in (a, x) if (r["pro"], p) in tips)
             out.append(f'{i}. **{label(p)[0]}:** drop {a["player"]}, add **{x["player"]}** ({abbrev.get(x["pro"])}; '
                        f'GP, min, FP/g {line(x)}; started {starts(x)}{"; " + est(x) if est(x) else ""}). By {by.astimezone(ET):%I:%M%p} ET / '
-                       f'{by.astimezone(local):%a %d %I:%M%p}.')
+                       f'{by.astimezone(local):%a %d %I:%M%p}.'
+                       + (f' Losing {a["player"]} also costs his {later(a)} games next week.' if any(a is o for o in origs) else ''))
         out += ["", "Left holding at the end of the week: " + ", ".join(
-            f'{o["player"]} ({abbrev.get(o["pro"])}, {sum((o["pro"], q) in tips for q in nxt_week)} games next week)'
+            f'{o["player"]} ({abbrev.get(o["pro"])}, {later(o)} games next week)'
             for o in occupants) + ".", ""]
 
     out += ["## Tip-off times", "", f"For the teams named above. Times are ET / {args.tz.split('/')[-1].replace('_', ' ')}.", ""]

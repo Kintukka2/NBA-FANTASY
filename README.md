@@ -159,8 +159,8 @@ For each remaining day, an exact optimiser fills the 10 starting slots
 - lineup sits on overfull days
 - tip-off times in ET and Melbourne
 - with `--rotate`, the best sequence of streamers through one or more
-  flexible slots at every add count, within the league's daily cap, with each
-  slot's break-even rate
+  flexible slots at every add count, within the matchup's add limit (a total;
+  several adds can go on one day), with each slot's break-even rate
 - with `--sit`, a what-if for a planned rest
 
 Whether a player is starting comes from ESPN's box scores (the *Started*
