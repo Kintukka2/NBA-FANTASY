@@ -139,6 +139,7 @@ if any average fails to re-score. Finished box scores are cached in
 ```
 /matchup                       # the skill picks the streaming slot
 /matchup Pritchard             # stream with a named player's slot
+/matchup Pritchard VanVleet    # rotate two flexible slots
 ```
 
 `council/matchup.py` reads our current matchup:
@@ -157,6 +158,13 @@ For each remaining day, an exact optimiser fills the 10 starting slots
   add now, two adds in a chain, and the best stream for each day
 - lineup sits on overfull days
 - tip-off times in ET and Melbourne
+- with `--rotate`, the best sequence of streamers through one or more
+  flexible slots at every add count, within the league's daily cap, with each
+  slot's break-even rate
+- with `--sit`, a what-if for a planned rest
+
+Whether a player is starting comes from ESPN's box scores (the *Started*
+column).
 
 A streamer is worth the change in our optimised total, so a game on a day
 we're already full counts for nothing. The skill adds sourced research and

@@ -34,10 +34,13 @@ Usage:
   python council/matchup.py                              # drop candidate: our lowest-rate player
   python council/matchup.py --drop "Payton Pritchard"    # the slot we stream with
   python council/matchup.py --drop "Payton Pritchard" "Paul Reed" --out docs/analysis/20261027-matchup2.md
+  python council/matchup.py --rotate "Payton Pritchard" "Fred VanVleet@2026-10-29"   # two slots, VanVleet's from Thu
 """
 import argparse
 import datetime as dt
+import itertools
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -45,7 +48,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
-from injury_watch import player_pool  # noqa: E402
+from injury_watch import box, player_pool  # noqa: E402
 from slump_watch import ET, FANTASY, LEAGUE, TEAM_ID, get, live_games, signed  # noqa: E402
 
 SLOTS = (0, 1, 2, 3, 4, 5, 6, 11, 11, 11)  # PG SG SF PF C G F UTIL UTIL UTIL
@@ -54,6 +57,8 @@ IR_SLOT = 13
 
 
 def rate(r):
+    if "rate" in r:  # a what-if override (--rotate's break-even search)
+        return r["rate"]
     cur, other = r["current"], (r["last"] or r["projected"] or {}).get("fpg")
     if cur and cur["gp"] >= 3:
         return 0.7 * cur["fpg"] + 0.3 * (cur["fpg"] if other is None else other)
@@ -91,6 +96,12 @@ def main():
     ap.add_argument("--tz", default="Australia/Melbourne", help="second time zone shown beside ET")
     ap.add_argument("--end", help="last day of the matchup, YYYY-MM-DD (US date); default: this Sunday")
     ap.add_argument("--out", help="write the report here instead of stdout")
+    ap.add_argument("--rotate", nargs="+", metavar="NAME[@YYYY-MM-DD]",
+                    help="our flexible slots: the best sequence of streamers through them for the rest of the week. "
+                         "A date is the first US day the slot may change (default: the first day his game hasn't started)")
+    ap.add_argument("--sit", nargs="+", default=[], metavar="NAME@YYYY-MM-DD",
+                    help="treat a player as not playing on that US date, e.g. a planned rest on a back-to-back")
+    ap.add_argument("--pool", type=int, default=14, help="free agents --rotate considers (default 14, plus each day's top 3)")
     ap.add_argument("--allow-live", action="store_true", help="run even while games are in progress")
     args = ap.parse_args()
     local = ZoneInfo(args.tz)
@@ -117,11 +128,14 @@ def main():
     abbrev = {t["id"]: t["abbrev"] for t in pro_teams}
     tips = {}  # (pro team, period) -> tip-off (UTC)
     first = {}  # period -> first tip-off
+    tipped = {}  # pro team -> ids of games that have tipped
     for t in pro_teams:
         for p, gs in t.get("proGamesByScoringPeriod", {}).items():
             for g in gs:
                 when = dt.datetime.fromtimestamp(g["date"] / 1000, dt.timezone.utc)
                 tips[(t["id"], int(p))] = when
+                if when <= now:
+                    tipped.setdefault(t["id"], []).append(g["id"])
                 first[int(p)] = min(first.get(int(p), when), when)
     today = now.astimezone(ET).date()
     monday = today - dt.timedelta(days=today.weekday())
@@ -132,8 +146,13 @@ def main():
         sys.exit("No games left in this matchup.")
     label = lambda p: (f'{first[p].astimezone(ET):%a %d %b}', f'{first[p].astimezone(local):%a %d}')
 
+    sits_out = set()
+    for spec in args.sit:
+        name, _, when = spec.rpartition("@")
+        sits_out.add((name.strip().lower(), dt.date.fromisoformat(when)))
+
     def plays(r, p):
-        if (r["pro"], p) not in tips:
+        if (r["pro"], p) not in tips or (r["player"].lower(), first[p].astimezone(ET).date()) in sits_out:
             return False
         i = feed.get(r["id"])
         if i and i["status"].lower() == "out":
@@ -176,6 +195,16 @@ def main():
                       if r["current"] else "—")
     owner = lambda r: teams[r["owner"]]["name"].strip() if r.get("owner") else ""
 
+    @lru_cache(maxsize=None)
+    def team_boxes(tid):
+        with ThreadPoolExecutor(8) as ex:
+            return tuple(b["lines"].get(str(tid), {}) for b in ex.map(box, tipped.get(tid, [])))
+
+    def starts(r):
+        """Games started of games played this season, from ESPN's box scores."""
+        games = [g[str(r["id"])] for g in team_boxes(r["pro"]) if str(r["id"]) in g]
+        return f'{sum(g[2] for g in games)} of {len(games)}' if games else "—"
+
     out = [f"# Matchup {matchup}: {teams[TEAM_ID]['name'].strip()} vs {teams[opp]['name'].strip()}", "",
            f"- Generated {now:%Y-%m-%d %H:%M} UTC by `council/matchup.py`. This is **a report, not a council verdict**.",
            f"- **Score:** {us['totalPoints']:.0f} to {them['totalPoints']:.0f} "
@@ -190,7 +219,8 @@ def main():
            f"listed OUT is left out until ESPN's estimated return. Streamers need {args.min_minutes:g}+ minutes this season.",
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "
            f"All {len(pool)} pool players re-score with `scripts/league_scoring.py` (0 mismatches).",
-           f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}.", ""]
+           f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}."]
+    out += ([f"- **What-if:** treated as sitting: {', '.join(args.sit)}."] if args.sit else []) + [""]
 
     out += ["## The rest of the week", "",
             f"| Day (US) | {args.tz.split('/')[-1]} | Ours playing | Open slots | Our lineup | Theirs playing | Their lineup |",
@@ -244,12 +274,13 @@ def main():
                 f"Keeping {d['player']} ({abbrev.get(d['pro'])}) is worth **{sum(keep.values()):.1f}** this week: "
                 + ", ".join(f"{label(p)[0][:6]} {keep[p]:.0f}" for p in days if (d['pro'], p) in tips) + ".", "",
                 "### One add, now", "",
-                "| Free agent | NBA | Games | Now: GP, min, FP/g | 2026 FP/g | Owned | vs keeping |", "|---|---|---|---|---:|---:|---:|"]
+                "| Free agent | NBA | Games | Now: GP, min, FP/g | Started | 2026 FP/g | Owned | vs keeping |",
+                "|---|---|---|---|---|---:|---:|---:|"]
         for x, m in ranked[:args.top]:
             shown.add(x["pro"])
             gd = ", ".join(label(p)[0][:3] for p in days if plays(x, p) and not started(x, p) and not started(d, p))
             out.append(f'| **{x["player"]}**{" (" + est(x) + ")" if est(x) else ""} | {abbrev.get(x["pro"])} | {gd} | '
-                       f'{line(x)} | {fmt(x["last"] and x["last"]["fpg"])} | {x["owned"]:.0f}% | '
+                       f'{line(x)} | {starts(x)} | {fmt(x["last"] and x["last"]["fpg"])} | {x["owned"]:.0f}% | '
                        f'**{signed(sum(m.values()) - sum(keep.values()), True)}** |')
         out += ["", "### Best streamer each day", "",
                 "If the slot turns over daily, these are the best adds for each day alone.", ""]
@@ -294,6 +325,176 @@ def main():
                         and abs(total([q for q in day_roster if q is not r], p) - v) < 1e-6]
                 out.append(f'| {label(p)[0]} | {v:.0f} | {len(live_)} | {", ".join(sits) or "—"} |')
         out.append("")
+
+    if args.rotate:
+        origs, frees = [], []
+        for spec in args.rotate:
+            name, _, when = spec.partition("@")
+            r = names.get(name.strip().lower())
+            if r is None:
+                sys.exit(f"Not on our active roster: {name}")
+            on = dt.date.fromisoformat(when) if when else None
+            free = next((p for p in days if (first[p].astimezone(ET).date() >= on if on else not started(r, p))), None)
+            if free is None:
+                sys.exit(f"No day left in this matchup when {name}'s slot can change.")
+            origs.append(r)
+            frees.append(free)
+        n = len(origs)
+        cap = int(per) if per >= 0 and acq.get("matchupLimitPerScoringPeriod") else None
+        budget = int(limit - used) if limit is not None else len(days) * n
+        rdays = [p for p in days if p >= min(frees)]
+        empty = [r for r in ours if all(r is not o for o in origs)]
+        counts = lambda r, p: plays(r, p) and not started(r, p)
+        solo = {x["id"]: {p: total(empty + [x], p) - total(empty, p) if counts(x, p) else 0.0 for p in rdays}
+                for x in fa}
+        cands = sorted(fa, key=lambda x: -sum(solo[x["id"]].values()))[:args.pool]
+        for p in rdays:  # one-day specialists, so a single big day is never missed
+            cands += [x for x in sorted(fa, key=lambda x: -solo[x["id"]][p])[:3]
+                      if solo[x["id"]][p] > 0 and all(x is not c for c in cands)]
+
+        def rotate(origs, frees, keep=6):
+            """Best moves through the slots at each add count: {adds: (total, moves)}, and keeping all.
+
+            A slot changes only from its free day, and only before its occupant's game
+            that day. A streamer scores games that haven't tipped. Nobody is added twice."""
+            people = origs + cands
+            rank = lambda v, moves: (round(v, 6), -sum(m[2] in origs for m in moves), -len(moves))
+            @lru_cache(maxsize=None)
+            def value(p, occ):
+                return total(empty + [people[i] for i in occ if i < n or counts(people[i], p)], p)
+            start = tuple(range(n))
+            states = {(start, 0): [(0.0, frozenset(), ())]}
+            for p in rdays:
+                movers = [i for i in range(n, len(people)) if counts(people[i], p)]
+                nxt = {}
+                for (occ, adds), entries in states.items():
+                    choices = [[occ[s]] + (movers if frees[s] is not None and p >= frees[s]
+                                           and not started(people[occ[s]], p) else []) for s in range(n)]
+                    for new in itertools.product(*choices):
+                        changed = [s for s in range(n) if new[s] != occ[s]]
+                        k = len(changed)
+                        if adds + k > budget or (cap is not None and k > cap) or len(set(new)) < n:
+                            continue
+                        day = value(p, tuple(sorted(new)))
+                        for v, done, moves in entries:
+                            if not any(new[s] in done for s in changed):
+                                nxt.setdefault((new, adds + k), []).append(
+                                    (v + day, done | {new[s] for s in changed},
+                                     moves + tuple((p, s, people[occ[s]], people[new[s]]) for s in changed)))
+                states = {}
+                for key, entries in nxt.items():
+                    entries.sort(key=lambda e: rank(e[0], e[2]), reverse=True)
+                    seen, kept = set(), []
+                    for e in entries:
+                        if e[1] not in seen and len(kept) < keep:
+                            seen.add(e[1])
+                            kept.append(e)
+                    states[key] = kept
+            best = {}
+            for (occ, adds), entries in states.items():
+                for b in range(adds, budget + 1):
+                    if b not in best or rank(*entries[0][::2]) > rank(*best[b]):
+                        best[b] = (entries[0][0], entries[0][2])
+            return best, sum(value(p, start) for p in rdays)
+
+        best, hold = rotate(origs, frees)
+        short = lambda r: r["player"].split(" ", 1)[-1]
+        when = lambda p: f'{label(p)[0][:6]}'
+        summary = lambda moves: "; ".join(f'{when(p)}: {short(a)} → {x["player"]} ({abbrev.get(x["pro"])})'
+                                          for p, s, a, x in moves) or "keep"
+        title = " and ".join(f"{o['player']}'s" for o in origs)
+        out += [f"## Rotating {title} slot{'s' if n > 1 else ''}", "",
+                "- Free from: " + ", ".join(f"{o['player']} {label(f)[0]}" for o, f in zip(origs, frees))
+                + ". A slot can change from that US day, before its occupant's game that day.",
+                f"- Each change is one add. {budget} left this matchup"
+                + (f", at most {cap} per scoring period (US day) as the league is set, so "
+                   f"{min(budget, cap * len(rdays))} usable over these {len(rdays)} days." if cap is not None else "."),
+                f"- Streamers considered: the {len(cands)} free agents worth most to an empty slot over these days "
+                f"(with {args.min_minutes:g}+ minutes), plus the top three for each day.",
+                f"- Keeping {'both' if n == 2 else 'them'} scores **{hold:.0f}** in our lineup over "
+                f"{label(rdays[0])[0]} to {label(rdays[-1])[0]}.", "",
+                f"| Adds | vs keeping | Moves |", "|---:|---:|---|"]
+        prev = None
+        for b in range(1, budget + 1):
+            if b in best and (prev is None or best[b][0] > prev + 0.05):
+                out.append(f"| {len(best[b][1])} | **{signed(best[b][0] - hold, True)}** | {summary(best[b][1])} |")
+                prev = best[b][0]
+        top_total, top_moves = best[budget]
+        for x in {id(x): x for _, _, _, x in top_moves}.values():
+            shown.add(x["pro"])
+
+        if n > 1:
+            out += ["", "### Keep one, rotate the other", "", "| Scenario | Adds | vs keeping both |", "|---|---:|---:|"]
+            out.append(f"| Rotate both | {len(top_moves)} | {signed(top_total - hold, True)} |")
+            for s, o in enumerate(origs):
+                alone, _ = rotate(origs, [None if t == s else f for t, f in enumerate(frees)])
+                out.append(f"| Keep {o['player']}, rotate the rest | {len(alone[budget][1])} | "
+                           f"{signed(alone[budget][0] - hold, True)} |")
+        out += ["", "### Break-even", "",
+                "The rate a player needs for keeping him to beat streaming his slot, with the other slots "
+                "rotating as above.", ""]
+        for s, o in enumerate(origs):
+            def moved(R, s=s):
+                trial = [dict(q, rate=R) if t == s else q for t, q in enumerate(origs)]
+                fixed = [None if t == s else f for t, f in enumerate(frees)]
+                return rotate(trial, frees)[0][budget][0] > rotate(trial, fixed)[0][budget][0] + 0.05
+            lo, hi = 0.0, 90.0
+            if not moved(lo):
+                out.append(f"- **{o['player']}** (rate {rate(o):.1f}): keeping him wins at any rate.")
+                continue
+            if moved(hi):
+                out.append(f"- **{o['player']}** (rate {rate(o):.1f}): streaming his slot wins at any rate.")
+                continue
+            for _ in range(8):
+                mid = (lo + hi) / 2
+                lo, hi = (mid, hi) if moved(mid) else (lo, mid)
+            line_ = f"- **{o['player']}** (rate {rate(o):.1f}): keep him while his rate is above **{hi:.1f}**."
+            before = [p for p in days if p < frees[s] and counts(o, p)]
+            if before and o["current"]:
+                c = o["current"]
+                after = lambda g: rate(dict(o, current=dict(c, gp=c["gp"] + 1, fpg=(c["fpg"] * c["gp"] + g) / (c["gp"] + 1))))
+                g_lo, g_hi = -20.0, 150.0
+                if after(g_lo) >= hi:
+                    line_ += f" No single game on {when(before[0])} takes him below it."
+                elif after(g_hi) < hi:
+                    line_ += f" No single game on {when(before[0])} lifts him above it."
+                else:
+                    for _ in range(30):
+                        g = (g_lo + g_hi) / 2
+                        g_lo, g_hi = (g, g_hi) if after(g) < hi else (g_lo, g)
+                    line_ += (f" His {when(before[0])} game moves it: under **{g_hi:.0f} FP** "
+                              f"(he averages {c['fpg']:.1f}) takes it below.")
+            out.append(line_)
+
+        occupants = list(origs)
+        nxt_week = [q for q in first if end < first[q].astimezone(ET).date() <= end + dt.timedelta(days=7)]
+        out += ["", f"### Best plan: {len(top_moves)} adds, {signed(top_total - hold, True)}", "",
+                "| Day (US) | " + args.tz.split("/")[-1] + " | " + " | ".join(f"Slot {s + 1}" for s in range(n))
+                + " | Our lineup | vs keeping | Sits |",
+                "|---|---|" + "---|" * n + "---:|---:|---|"]
+        for p in rdays:
+            for q, s, a, x in top_moves:
+                if q == p:
+                    occupants[s] = x
+            scoring = [r for r in empty if plays(r, p)] + [o for t, o in enumerate(occupants)
+                                                         if (counts(o, p) if o is not origs[t] else plays(o, p))]
+            v = best_lineup(tuple(sorted((rate(r), slots_for(r)) for r in scoring)))
+            k = best_lineup(tuple(sorted((rate(r), slots_for(r)) for r in empty + origs if plays(r, p))))
+            sits = [r["player"] for r in scoring if len(scoring) > len(SLOTS) and abs(best_lineup(tuple(sorted(
+                (rate(q), slots_for(q)) for q in scoring if q is not r))) - v) < 1e-6]
+            cell = lambda o, t: (f'{o["player"]} ({abbrev.get(o["pro"])})'
+                                 + (" plays" if (counts(o, p) if o is not origs[t] else plays(o, p)) else ", idle"))
+            out.append(f"| {label(p)[0]} | {label(p)[1]} | " + " | ".join(cell(o, t) for t, o in enumerate(occupants))
+                       + f" | {v:.0f} | {signed(v - k, True)} | {', '.join(sits) or '—'} |")
+        out += ["", "Moves, each made before the earlier tip-off of the two players that day:", ""]
+        for i, (p, s, a, x) in enumerate(top_moves, 1):
+            by = min(tips[(r["pro"], p)] for r in (a, x) if (r["pro"], p) in tips)
+            out.append(f'{i}. **{label(p)[0]}:** drop {a["player"]}, add **{x["player"]}** ({abbrev.get(x["pro"])}; '
+                       f'GP, min, FP/g {line(x)}; started {starts(x)}{"; " + est(x) if est(x) else ""}). By {by.astimezone(ET):%I:%M%p} ET / '
+                       f'{by.astimezone(local):%a %d %I:%M%p}.')
+        out += ["", "Left holding at the end of the week: " + ", ".join(
+            f'{o["player"]} ({abbrev.get(o["pro"])}, {sum((o["pro"], q) in tips for q in nxt_week)} games next week)'
+            for o in occupants) + ".", ""]
 
     out += ["## Tip-off times", "", f"For the teams named above. Times are ET / {args.tz.split('/')[-1].replace('_', ' ')}.", ""]
     for tid in sorted(shown | {d["pro"] for d in drops}, key=lambda t: abbrev.get(t, "")):
