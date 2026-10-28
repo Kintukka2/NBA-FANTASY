@@ -101,6 +101,10 @@ def main():
                          "A date is the first US day the slot may change (default: the first day his game hasn't started)")
     ap.add_argument("--sit", nargs="+", default=[], metavar="NAME@YYYY-MM-DD",
                     help="treat a player as not playing on that US date, e.g. a planned rest on a back-to-back")
+    ap.add_argument("--swap", nargs="+", default=[], metavar="OUT=IN",
+                    help="what-if: our roster with OUT replaced by IN, e.g. a planned add or waiver claim")
+    ap.add_argument("--from", dest="start", metavar="YYYY-MM-DD",
+                    help="count only days from this US date, e.g. what each player is worth after a claim processes")
     ap.add_argument("--pool", type=int, default=14, help="free agents --rotate considers (default 14, plus each day's top 3)")
     ap.add_argument("--allow-live", action="store_true", help="run even while games are in progress")
     args = ap.parse_args()
@@ -142,6 +146,8 @@ def main():
     end = dt.date.fromisoformat(args.end) if args.end else monday + dt.timedelta(days=6)
     in_matchup = [p for p, w in first.items() if monday <= w.astimezone(ET).date() <= end]
     days = sorted(p for p in in_matchup if any(w > now for (tid, q), w in tips.items() if q == p))
+    if args.start:
+        days = [p for p in days if first[p].astimezone(ET).date() >= dt.date.fromisoformat(args.start)]
     if not days:
         sys.exit("No games left in this matchup.")
     label = lambda p: (f'{first[p].astimezone(ET):%a %d %b}', f'{first[p].astimezone(local):%a %d}')
@@ -167,6 +173,14 @@ def main():
                 if e["lineupSlotId"] != IR_SLOT and e["playerPoolEntry"]["player"]["id"] in pool]
 
     ours, theirs = roster(TEAM_ID), roster(opp)
+    for spec in args.swap:
+        name_out, _, name_in = spec.partition("=")
+        gone = next((r for r in ours if r["player"].lower() == name_out.strip().lower()), None)
+        new = next((r for r in pool.values() if r["player"].lower() == name_in.strip().lower()), None)
+        if gone is None or new is None:
+            sys.exit(f"--swap {spec}: " + (f"{name_out} is not on our active roster" if gone is None
+                                           else f"{name_in} is not in the player pool"))
+        ours = [new if r is gone else r for r in ours]
     ir = [e["playerPoolEntry"]["player"]["fullName"] for e in teams[TEAM_ID]["roster"]["entries"]
           if e["lineupSlotId"] == IR_SLOT]
     ours_by = {p: total(ours, p) for p in days}
@@ -220,7 +234,9 @@ def main():
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "
            f"All {len(pool)} pool players re-score with `scripts/league_scoring.py` (0 mismatches).",
            f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}."]
-    out += ([f"- **What-if:** treated as sitting: {', '.join(args.sit)}."] if args.sit else []) + [""]
+    out += ([f"- **What-if:** treated as sitting: {', '.join(args.sit)}."] if args.sit else [])
+    out += ([f"- **What-if:** roster swaps {', '.join(s.replace('=', ' → ') for s in args.swap)}."] if args.swap else [])
+    out += ([f"- **From {args.start}:** only days from this US date are counted."] if args.start else []) + [""]
 
     out += ["## The rest of the week", "",
             f"| Day (US) | {args.tz.split('/')[-1]} | Ours playing | Open slots | Our lineup | Theirs playing | Their lineup |",
@@ -232,8 +248,9 @@ def main():
         out.append(f"| {a} | {b} | {n_us} | {max(0, len(SLOTS) - n_us)}{' (overfull)' if n_us > len(SLOTS) else ''} | "
                    f"{ours_by[p]:.0f} | {n_them} | {theirs_by[p]:.0f} |")
     rest_us, rest_them = sum(ours_by.values()), sum(theirs_by.values())
-    out += ["", f"**Projection:** {rest_us:.0f} more for us and {rest_them:.0f} for them, for a final of "
-            f"**{us['totalPoints'] + rest_us:.0f} to {them['totalPoints'] + rest_them:.0f}**.", ""]
+    out += ["", (f"**Projection from {args.start}:** {rest_us:.0f} for us and {rest_them:.0f} for them." if args.start else
+                 f"**Projection:** {rest_us:.0f} more for us and {rest_them:.0f} for them, for a final of "
+                 f"**{us['totalPoints'] + rest_us:.0f} to {them['totalPoints'] + rest_them:.0f}**."), ""]
 
     head = "| Player | NBA | Rate | " + " | ".join(label(p)[0][:6] for p in days) + " | Status |"
     rule = "|---|---|---:|" + ":-:|" * len(days) + "---|"

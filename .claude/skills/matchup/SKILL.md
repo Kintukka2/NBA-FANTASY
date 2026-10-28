@@ -43,6 +43,8 @@ Options:
 | `--rotate NAME[@YYYY-MM-DD] ...` | — | our flexible slots: the best sequence of streamers through them for the rest of the week, at every add count. A date is the first US day that slot may change, e.g. to keep a player for one more game |
 | `--pool` | 14 | free agents `--rotate` considers, plus each day's top three |
 | `--sit NAME@YYYY-MM-DD ...` | — | treat a player as not playing that US date, e.g. a planned rest on a back-to-back |
+| `--swap OUT=IN ...` | — | what-if: our roster with OUT replaced by IN (a free agent, a waiver claim, anyone in the pool) |
+| `--from YYYY-MM-DD` | — | count only days from this US date. With `--swap`, it prices a move that lands later in the week, such as a waiver claim. A swap that drops a player who has already played this week needs `--from` today, or it also erases his banked game |
 
 **When the user names two or more flexible slots, or asks for the best
 rotation,** pass `--rotate`. It reports:

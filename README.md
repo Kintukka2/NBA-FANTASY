@@ -163,6 +163,8 @@ For each remaining day, an exact optimiser fills the 10 starting slots
   flexible slots at every add count, within the matchup's add limit (a total;
   several adds can go on one day), with each slot's break-even rate
 - with `--sit`, a what-if for a planned rest
+- with `--swap OUT=IN` and `--from DATE`, what a roster move is worth from the day it lands, e.g. a
+  waiver claim's drop player
 
 Whether a player is starting comes from ESPN's box scores (the *Started*
 column).
