@@ -16,6 +16,10 @@ Usage:
 The report compares our ESPN roster with council/roster.csv and lists
 players whose rostered status differs from council/taken.txt. It never
 writes roster.csv: that file records moves the user reports.
+
+Rosters are read for ESPN's transaction scoring period, the one a move made
+now lands in. Once a day's games lock, ESPN applies a move from the next
+day, so the current period's roster would still show the dropped player.
 """
 import argparse
 import csv
@@ -30,7 +34,7 @@ LEAGUE_ID = 423671879
 SEASON = 2027
 TEAM_ID = 5  # Come-in Cider
 URL = (f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/{SEASON}"
-       f"/segments/0/leagues/{LEAGUE_ID}?view=mTeam&view=mRoster&view=mSettings")
+       f"/segments/0/leagues/{LEAGUE_ID}?view=mTeam&view=mRoster&view=mSettings&view=mStatus")
 SLOTS = {0: "PG", 1: "SG", 2: "SF", 3: "PF", 4: "C", 5: "G", 6: "F", 11: "UTIL",
          12: "BE", 13: "IR"}
 ROOT = Path(__file__).resolve().parent
@@ -38,11 +42,12 @@ TAKEN = ROOT / "taken.txt"
 ROSTER = ROOT / "roster.csv"
 
 
-def fetch():
+def fetch(period=None):
     s2, swid = os.environ.get("ESPN_S2"), os.environ.get("ESPN_SWID")
     if not s2 or not swid:
         sys.exit("ESPN_S2 and ESPN_SWID must be set (see the docstring).")
-    req = urllib.request.Request(URL, headers={"Cookie": f"espn_s2={s2}; SWID={swid}"})
+    url = URL + (f"&scoringPeriodId={period}" if period else "")
+    req = urllib.request.Request(url, headers={"Cookie": f"espn_s2={s2}; SWID={swid}"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.load(r)
@@ -77,11 +82,15 @@ def main():
                     help="rewrite taken.txt as every player on an ESPN roster")
     args = ap.parse_args()
 
-    teams = rosters(fetch())
+    league = fetch()
+    period = league.get("status", {}).get("transactionScoringPeriod")
+    if period and period != league.get("scoringPeriodId"):
+        league = fetch(period)
+    teams = rosters(league)
     owner = {p: (tid, name) for tid, (name, ps) in teams.items() for p, _, _ in ps}
 
     ours = teams[TEAM_ID][1]
-    print(f"Our ESPN roster ({len(ours)}):")
+    print(f"Our ESPN roster ({len(ours)}), scoring period {league.get('scoringPeriodId')}:")
     for p, slot, inj in ours:
         print(f"  {slot:<5} {p}  {inj}")
     with ROSTER.open() as f:
