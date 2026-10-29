@@ -108,6 +108,14 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 - **Jalen Duren** (DET): Out, Right Hamstring Strain; ESPN est. back 09 Nov.
 - **Kawhi Leonard** (TOR): Out, Left Knee Inflammation; ESPN est. back 23 Nov.
 
+**Reported timeline:**
+
+- **Jalen Duren:** strained right hamstring (23 Oct), out at least two weeks from 25 Oct (about 8 Nov); ESPN est. 9 Nov [CBS Detroit / AP](https://www.cbsnews.com/detroit/news/pistons-center-jalen-duren-strained-hamstring/).
+- **Kawhi Leonard:** left knee swelling, with no structural damage on the MRI.
+  - The Raptors said on 27 Oct he will be re-evaluated in one week (about 3 Nov); Charania reports he will miss "a period of weeks".
+  - ESPN est. 23 Nov [Yahoo Sports](https://sports.yahoo.com/articles/kawhi-leonard-injury-latest-news-160039647.html).
+  - Duren holds our only IR slot, so Leonard takes an active roster spot until one of them returns.
+
 ## Who takes the minutes, team by team
 
 ### LAC
@@ -118,6 +126,13 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 | Max Strus | Right Foot Plantar Fasciitis | 08 Nov | 25.9 | 22.4 | Free agent |
 | Bradley Beal | Right Knee Inflammation | 08 Nov | 25.3 | 10.5 | Free agent |
 | Jordan Miller | Left Shoulder Surgery | 02 Mar | 22.0 | 20.4 | Free agent |
+
+**Reported timeline:**
+
+- **Max Strus:** Partial plantar fascia tear in his right foot (5 Oct preseason opener), with re-evaluation set for four weeks; on 28 Oct the Clippers said he is progressing but will stay in LA for the MIN/GSW trip and is out at least another week; ESPN est. 8 Nov. [Yahoo Sports](https://sports.yahoo.com/articles/clippers-injury-woes-pile-latest-005153258.html) [Basketnews](https://basketnews.com/news-258395-la-clippers-provide-new-huge-injury-updates-on-brandon-ingram-others.html)
+- **Brandon Ingram:** Partially torn Achilles, found during his May heel surgery; on 28 Oct the Clippers said he is progressing but will not travel for the MIN/GSW games and is out at least another week; ESPN est. 8 Nov. [Basketnews](https://basketnews.com/news-258395-la-clippers-provide-new-huge-injury-updates-on-brandon-ingram-others.html) [Hoops Rumors](https://www.hoopsrumors.com/2026/10/brandon-ingram-returns-to-on-court-work.html)
+- **Bradley Beal:** Right knee inflammation, being managed for pain; still no timetable reported as of 25 Oct; ESPN est. 8 Nov. [SI](https://www.si.com/nba/clippers/onsi/clippers-injury-report-thunder-latest-brandon-ingram-bradley-beal-01m5t411kj1v)
+- **Jordan Miller:** Torn left rotator cuff, repaired surgically on 26 Aug; expected to be re-evaluated in about six months (late Feb); ESPN est. 2 Mar. [Hoops Rumors](https://www.hoopsrumors.com/2026/08/clippers-jordan-miller-out-at-least-six-months-following-shoulder-surgery.html)
 
 Last 4 games: 4 game(s) this season, all without them; compared with ESPN's projection.
 
@@ -137,6 +152,13 @@ Last 4 games: 4 game(s) this season, all without them; compared with ESPN's proj
 | Ben Simmons | Right Achilles Surgery | 01 Oct 2027 | 21.2 | — | Free agent |
 | Dylan Cardwell | Left Calf Strain | 06 Nov | 20.7 | 26.6 | Free agent |
 
+**Reported timeline:**
+
+- **Dylan Cardwell:** Left calf strain (8 Oct preseason); began on-court activities and will be re-evaluated about seven days from 26 Oct (about 2 Nov); ESPN est. 6 Nov. [Hoops Rumors](https://www.hoopsrumors.com/2026/10/kings-announce-injury-updates-on-murray-raynaud-cardwell.html)
+- **Maxime Raynaud:** Right patellar subluxation (10 Oct preseason at GSW); progressing well, to be checked again about two weeks from 26 Oct (about 9 Nov); ESPN est. 10 Nov. [Hoops Rumors](https://www.hoopsrumors.com/2026/10/kings-announce-injury-updates-on-murray-raynaud-cardwell.html)
+- **Keegan Murray:** Capsulitis in his surgically repaired left ankle; to be re-evaluated 10-14 days from 26 Oct (about 5-9 Nov); ESPN est. 6 Nov. [Hoops Rumors](https://www.hoopsrumors.com/2026/10/kings-announce-injury-updates-on-murray-raynaud-cardwell.html)
+- **Ben Simmons:** Torn right Achilles at practice on 18 Oct, surgically repaired 20 Oct; out for the 2026-27 season with no official timetable; ESPN est. Oct 2027. [NBC Sports](https://www.nbcsports.com/nba/news/kings-ben-simmons-suffers-torn-achilles-at-practice-sunday-will-miss-entire-season) [RotoWire](https://www.rotowire.com/basketball/headlines/ben-simmons-injury-undergoes-successful-surgery-tuesday-535308)
+
 Last 4 games: 2 game(s) without them, 2 with them.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | League | Owned |
@@ -151,6 +173,12 @@ Last 4 games: 2 game(s) without them, 2 with them.
 | Jimmy Butler III | Right Knee Surgery | 02 Jan | 32.4 | 41.6 | Free agent |
 | Kristaps Porzingis | Illness | 01 Dec | 27.7 | 32.3 | Free agent |
 | Moses Moody | Left Knee Surgery | 01 Dec | 25.7 | 24.8 | Free agent |
+
+**Reported timeline:**
+
+- **Jimmy Butler III:** Torn right ACL (19 Jan 2026), reconstructed on 9 Feb; still sidelined and observing at training camp; no official timetable; ESPN est. 2 Jan. [Yahoo Sports](https://sports.yahoo.com/articles/warriors-star-jimmy-butler-undergoes-011844268.html) [SF Chronicle](https://www.sfchronicle.com/sports/warriors/article/warriors-jimmy-butler-though-injured-makes-22461500.php)
+- **Kristaps Porzingis:** Undisclosed health matter; the Warriors list him out indefinitely, with an update "when available and appropriate"; no timetable reported; ESPN est. 1 Dec. [ESPN](https://www.espn.com/nba/story/_/id/50184641/warriors-kristaps-porzingis-indefinitely-team) [CBS Sports](https://www.cbssports.com/nba/news/warriors-kristaps-porzingis-mysterious-health-issues-timeline/)
+- **Moses Moody:** Torn left patellar tendon (March 2026), surgically repaired; light on-court work since late September, and the team hopes for a return in early 2027; no official timetable; ESPN est. 1 Dec. [NBC Sports](https://www.nbcsports.com/fantasy/basketball/player-news/2026-09-29/moses-moody-knee-limited-to-light-on-court-work)
 
 Last 5 games: 5 game(s) this season, all without them; compared with ESPN's projection.
 
@@ -169,6 +197,14 @@ Last 5 games: 5 game(s) this season, all without them; compared with ESPN's proj
 | Tyrese Haliburton | Left Hamstring Strain | 13 Nov | 33.1 | 53.2 | Lauri Birds |
 | Ben Sheppard | Left Knee | 02 Jan | 21.4 | 5.0 | Free agent |
 | Johnny Furphy | Right Knee Surgery | 02 Jan | 18.3 | 14.2 | Free agent |
+
+**Reported timeline:**
+
+- **Ben Sheppard:** Torn left meniscus (21 Oct opener at NOP); the surgery turned out to need a full repair, and on 28 Oct Carlisle said he will miss multiple months, revising an earlier "a few weeks"; no timetable; ESPN est. 2 Jan. [NBC Sports](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-ben-sheppard-knee-out-for-months) [Hoops Rumors](https://www.hoopsrumors.com/2026/10/pacers-ben-sheppard-suffers-torn-left-meniscus.html)
+- **Tyrese Haliburton:** Mild left hamstring strain (reported 28 Oct), four games into his return from a torn Achilles; Carlisle calls him week-to-week, gives the next update in two weeks (about 11 Nov) and doesn't expect him to play before then; ESPN est. 13 Nov. [Hoops Wire](https://hoopswire.com/pacers-tyrese-haliburton-unlikely-to-return-before-two-week-injury-update/)
+- **Johnny Furphy:** Torn right ACL (8 Feb 2026), surgically repaired; on 25 Sep the Pacers said he has hit every benchmark and the original timeline points to midseason, without naming a date; ESPN est. 2 Jan. [Yahoo Sports](https://sports.yahoo.com/articles/pacers-johnny-furphy-hit-benchmarks-083112900.html)
+- **Ivica Zubac:** Left ankle sprain (25 Oct at BKN), with negative X-rays but swelling; Carlisle hoped it would be day-to-day, and he was ruled out for 27 Oct at MIL; no timetable reported; ESPN est. 30 Oct. [iPacers](https://ipacers.com/2026/10/26/indiana-pacers-injury-report-ivica-zubac-leaves-on-crutches-after-pacers-win-in-brooklyn/) [Yahoo Sports](https://sports.yahoo.com/articles/long-ivica-zubac-pacers-latest-192453932.html)
+- **T.J. McConnell:** Right hamstring strain from the preseason and has not played this season; on 28 Oct Carlisle said he is "getting closer" but gave no date; ESPN est. 2 Nov. [RotoWire](https://www.rotowire.com/basketball/headlines/tj-mcconnell-injury-getting-closer-to-return-536530)
 
 Last 5 games: 1 game(s) without them, 4 with them.
 
@@ -189,6 +225,11 @@ Also out in those games, so part of the gain is theirs: Ivica Zubac (left ankle 
 | Paolo Banchero | Right Ankle Sprain | 22 Nov | 35.2 | 47.0 | Dr White Slong |
 | Jalen Suggs | Right Knee | 10 Nov | 33.3 | 26.3 | Free agent |
 
+**Reported timeline:**
+
+- **Jalen Suggs:** Mild right knee bone bruise with no structural damage (25 Oct vs NYK); to be re-evaluated in two weeks from 26 Oct (about 9 Nov); ESPN est. 10 Nov. [Yahoo Sports](https://sports.yahoo.com/articles/jalen-suggs-injury-magic-announce-195344477.html)
+- **Paolo Banchero:** Low-grade right high ankle sprain (23 Oct vs MIN); Charania reported the usual recovery is four to six weeks (about 20 Nov to 4 Dec), which the team has not confirmed; ESPN est. 22 Nov. [Yahoo Sports](https://sports.yahoo.com/nba/breaking-news/article/magics-paolo-banchero-suffers-high-ankle-sprain-in-loss-to-timberwolves-reportedly-could-be-out-4-6-weeks-173753794.html)
+
 Last 4 games: 1 game(s) without them, 3 with them.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | League | Owned |
@@ -203,6 +244,11 @@ Last 4 games: 1 game(s) without them, 3 with them.
 |---|---|---|---:|---:|---|
 | Anthony Edwards | Right Knee Surgery | 21 Dec | 35.8 | 52.5 | Melbourne poopoo |
 | Donte DiVincenzo | Right Achilles Surgery | 02 Apr | 30.5 | 29.4 | Free agent |
+
+**Reported timeline:**
+
+- **Anthony Edwards:** Right knee problem that the team says is not the meniscus; arthroscopic cleanup surgery set for 29 Oct; reports say he will miss around two months and "could be out until the calendar flips to 2027", and the team gave no specific timeline; ESPN est. 21 Dec. [Yahoo Sports / USA Today](https://uk.sports.yahoo.com/news/anthony-edwards-injury-timberwolves-star-230840389.html) [NY1 / AP](https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/28/timberwolves-say-anthony-edwards-will-be-good-as-new-with-no-long-term-concern-after-knee-surgery)
+- **Donte DiVincenzo:** Torn right Achilles (25 Apr, playoffs), surgery in late April; Windhorst reported Minnesota is cautiously optimistic he returns near the end of the 2026-27 season, with no timetable set; ESPN est. 2 Apr. [RotoWire](https://www.rotowire.com/basketball/headlines/donte-divincenzo-injury-targeting-late-season-return-533214)
 
 Last 5 games: 1 game(s) without them, 4 with them.
 
@@ -220,6 +266,13 @@ Last 5 games: 1 game(s) without them, 4 with them.
 |---|---|---|---:|---:|---|
 | Jalen Williams | Left Leg Fracture | 02 Mar | 32.8 | 26.3 | Free agent |
 | Cason Wallace | Left Shoulder | 02 Mar | 26.6 | 18.7 | Free agent |
+
+**Reported timeline:**
+
+- **Jalen Williams:** Fractured left fibula and dislocated left ankle on 25 Oct vs LAC; had surgery in New York on 28 Oct and will be re-evaluated before the end of the regular season, expected to miss most if not all of it; ESPN est. 2 Mar. [Yahoo Sports](https://sports.yahoo.com/nba/breaking-news/article/thunders-jalen-williams-has-surgery-on-ankle-fractured-fibula-will-be-reevaluated-before-end-of-season-011001403.html)
+- **Cason Wallace:** Torn left shoulder labrum on 25 Oct, needs surgery; Presti said on 26 Oct there is no timeline and the team will reassess after surgery, while Brett Siegel reported a 5-6 month recovery; ESPN est. 2 Mar. [SI](https://www.si.com/nba/thunder/onsi/okc-thunder-guard-cason-wallace-will-require-surgery-for-labrum-tear) [ClutchPoints](https://clutchpoints.com/nba/oklahoma-city-thunder/thunder-news-cason-wallace-miss-significant-time-shoulder-injury)
+- **Chet Holmgren:** Right knee patellar tendinitis; missed 26 Oct vs PHX and was ruled out for 28 Oct at DAL; no timetable reported; ESPN est. 31 Oct. [NBC Sports](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-27/chet-holmgren-knee-remains-out-wednesday-vs-dal)
+- **Nikola Topic:** Recovering from a June lumbar microdiscectomy. CBS reported on 26 Oct that he was off the injury report and ready to debut, but he was inactive that night and was listed out (lower back surgery) for 28 Oct at DAL; no timetable reported; ESPN est. 4 Nov. [CBS Sports](https://www.cbssports.com/fantasy/basketball/news/thunders-nikola-topic-ready-for-season-debut/) [Basketball-Reference](https://www.basketball-reference.com/boxscores/202610260OKC.html) [SI](https://si.com/nba/mavericks/onsi/kyrie-irving-injury-status-dallas-mavericks-get-set-battered-okc-thunder-)
 
 Last 5 games: 2 game(s) without them, 3 with them.
 
@@ -240,6 +293,11 @@ Also out in those games, so part of the gain is theirs: Chet Holmgren (right kne
 | Jamir Watkins | Left Knee Surgery | 02 Apr | 20.6 | 19.4 | Free agent |
 | Justin Champagnie | Right Foot | 25 Feb | 20.0 | 25.0 | Free agent |
 
+**Reported timeline:**
+
+- **Jamir Watkins:** Torn left ACL in Summer League (9 Jul), reconstructed on 30 Jul; no timetable reported, and he could miss the season; ESPN est. 2 Apr. [RotoWire](https://www.rotowire.com/basketball/headlines/jamir-watkins-injury-undergoes-surgery-for-torn-acl-532251)
+- **Justin Champagnie:** Fractured right foot on 26 Oct at Charlotte, surgery on 28 Oct; expected to miss several months, and Washington hopes he is back by the All-Star break (19–24 Feb); ESPN est. 25 Feb. [Josh Robbins](https://x.com/JoshuaBRobbins/status/2115511438341185737) [Yahoo Sports](https://sports.yahoo.com/articles/justin-champagnie-gets-injury-timeline-195034430.html)
+
 Last 5 games: 1 game(s) without them, 4 with them.
 
 Also out in those games, so part of the gain is theirs: Tre Johnson (right achilles soreness; ESPN est. 30 Oct).
@@ -255,6 +313,10 @@ Also out in those games, so part of the gain is theirs: Tre Johnson (right achil
 |---|---|---|---:|---:|---|
 | Kawhi Leonard | Left Knee Inflammation | 23 Nov | 32.8 | 40.0 | **us** |
 
+**Reported timeline:**
+
+- **Kawhi Leonard:** Left knee swelling, and the MRI showed no structural damage; the Raptors said on 27 Oct he begins a treatment and rehab program and will be re-evaluated in one week (about 3 Nov), and Charania reports he will miss "a period of weeks"; ESPN est. 23 Nov. [Yahoo Sports](https://sports.yahoo.com/articles/kawhi-leonard-injury-latest-news-160039647.html)
+
 Last 4 games: 2 game(s) without them, 2 with them.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | League | Owned |
@@ -269,6 +331,12 @@ Last 4 games: 2 game(s) without them, 2 with them.
 | Out | Injury | ESPN est. | Min left | Season FP/g | League |
 |---|---|---|---:|---:|---|
 | Jaren Jackson Jr. | Right Knee | 14 Dec | 31.4 | 27.0 | Matt Wright's Foxies |
+
+**Reported timeline:**
+
+- **Jaren Jackson Jr.:** Torn right MCL (26 Oct vs MEM); the team says at least six weeks and ESPN sources say six to eight with no surgery (about 7-21 Dec); ESPN est. 14 Dec. [Salt Lake Tribune](https://www.sltrib.com/sports/jazz/2026/10/27/utah-jazz-forward-jaren-jackson-jr/)
+- **Lauri Markkanen:** Right wrist sprain (26 Oct vs MEM), day-to-day; downgraded to out for 28 Oct vs SAS; no timetable reported; ESPN est. 31 Oct. [CBS Sports](https://www.cbssports.com/fantasy/basketball/news/jazzs-lauri-markkanen-wont-play-wednesday-536560/)
+- **Jusuf Nurkic:** Partial plantar plate tear in the second toe of his right foot (4 Oct preseason); re-evaluation in four weeks from the 7 Oct announcement (about 4 Nov); ESPN est. 4 Nov. [NBA.com](https://www.nba.com/news/jazz-jusuf-nurkic-foot-injury)
 
 Last 5 games: 1 game(s) without them, 4 with them.
 
@@ -288,6 +356,10 @@ Also out in those games, so part of the gain is theirs: Lauri Markkanen (right w
 |---|---|---|---:|---:|---|
 | Jalen Duren | Right Hamstring Strain | 09 Nov | 31.0 | 33.5 | **us** |
 
+**Reported timeline:**
+
+- **Jalen Duren:** Strained right hamstring (23 Oct vs MIA); announced on 25 Oct as out at least two weeks (about 8 Nov); ESPN est. 9 Nov. [CBS Detroit / AP](https://www.cbsnews.com/detroit/news/pistons-center-jalen-duren-strained-hamstring/)
+
 Last 5 games: 3 game(s) without them, 2 with them.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | League | Owned |
@@ -304,6 +376,10 @@ Last 5 games: 3 game(s) without them, 2 with them.
 |---|---|---|---:|---:|---|
 | Shaedon Sharpe | Right Knee Surgery | 02 Mar | 29.4 | 31.2 | Free agent |
 
+**Reported timeline:**
+
+- **Shaedon Sharpe:** Torn right meniscus in an offseason workout, with surgery in late Aug; the team said he will be re-evaluated in six months (about 27 Feb); ESPN est. 2 Mar. [SI](https://www.si.com/nba/trailblazers/onsi/portland-trail-blazers-shaedon-sharpe-undergoes-surgery-whats-next)
+
 Last 3 games: 3 game(s) this season, all without them; compared with ESPN's projection.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | League | Owned |
@@ -317,6 +393,10 @@ Last 3 games: 3 game(s) this season, all without them; compared with ESPN's proj
 |---|---|---|---:|---:|---|
 | Mark Williams | Left Shoulder Surgery | 03 Feb | 24.9 | 31.9 | Free agent |
 
+**Reported timeline:**
+
+- **Mark Williams:** Torn left shoulder labrum, surgically repaired 10 Sep; the Suns have set no timetable, and Arizona Sports' John Gambadoro reported a five-month minimum (about 10 Feb at the earliest); ESPN est. 3 Feb. [Yahoo Sports](https://sports.yahoo.com/articles/phoenix-suns-mark-williams-injury-152918092.html)
+
 Last 3 games: 3 game(s) this season, all without them; compared with ESPN's projection.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | League | Owned |
@@ -329,6 +409,10 @@ Last 3 games: 3 game(s) this season, all without them; compared with ESPN's proj
 |---|---|---|---:|---:|---|
 | Devin Carter | Illness | 08 Nov | 18.4 | 18.9 | Free agent |
 
+**Reported timeline:**
+
+- **Devin Carter:** Mononucleosis, diagnosed after he missed the last three preseason games; still out on 27 Oct with no timetable reported; ESPN est. 8 Nov. [Yahoo Sports](https://sports.yahoo.com/articles/celtics-injury-report-two-way-193259841.html)
+
 Last 4 games: 4 game(s) this season, all without them; compared with ESPN's projection.
 
 No teammate has gained 3+ minutes in those games.
@@ -338,6 +422,11 @@ No teammate has gained 3+ minutes in those games.
 | Out | Injury | ESPN est. | Min left | Season FP/g | League |
 |---|---|---|---:|---:|---|
 | Julian Strawther | Left Knee Sprain | 29 Nov | 16.0 | 12.9 | Free agent |
+
+**Reported timeline:**
+
+- **Julian Strawther:** Left knee sprain (14 Oct preseason vs LAC); to be re-evaluated in six weeks (late Nov); ESPN est. 29 Nov. [NBC Sports](https://www.nbcsports.com/nba/news/nuggets-wing-julian-strawther-out-indefinitely-due-to-left-knee-sprain)
+- **Spencer Jones:** Hamstring injury from the preseason (listed as bilateral hamstring injury management) and has not played this season; on 27 Oct the Denver Gazette said he could be back within the next three games, but there is no firm timetable; ESPN est. 2 Nov. [CBS Sports](https://www.cbssports.com/fantasy/basketball/news/nuggets-spencer-jones-nearing-return-to-action/) [RotoWire](https://www.rotowire.com/basketball/headlines/spencer-jones-injury-remains-out-for-wednesday-536395)
 
 Last 4 games: 4 game(s) this season, all without them; compared with ESPN's projection.
 
@@ -356,6 +445,10 @@ Also out in those games, so part of the gain is theirs: Spencer Jones (hamstring
 | Out | Injury | ESPN est. | Min left | Season FP/g | League |
 |---|---|---|---:|---:|---|
 | Mouhamed Gueye | Left Foot Fracture | 20 Nov | 15.4 | 15.3 | Free agent |
+
+**Reported timeline:**
+
+- **Mouhamed Gueye:** Fractured left foot, surgically repaired 14 Jul; the team said he would be reassessed in three to four months (mid-Oct to mid-Nov), and he is still listed out with no update since; ESPN est. 20 Nov. [CBS Sports](https://www.cbssports.com/fantasy/basketball/news/hawks-mouhamed-gueye-out-3-to-4-months-with-foot-injury/)
 
 Last 5 games: 5 game(s) this season, all without them; compared with ESPN's projection.
 
