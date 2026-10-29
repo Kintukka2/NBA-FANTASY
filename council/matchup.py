@@ -186,6 +186,20 @@ def main():
     ours_by = {p: total(ours, p) for p in days}
     theirs_by = {p: total(theirs, p) for p in days}
 
+    # A game that has already tipped can't be gained or lost by a roster move:
+    # the dropped player keeps it, and a streamer added now can't get it.
+    # ESPN won't drop a player once his game has started, so while the drop
+    # candidate is locked, no streamer can arrive that day either.
+    started = lambda r, p: (r["pro"], p) in tips and tips[(r["pro"], p)] <= now
+    # ESPN moves a day's points into totalPoints only when the scoring period
+    # rolls over, hours after its last game; totalPointsLive has them at once.
+    # Games that have tipped are in that score, so only the rest is projected.
+    score_us = us.get("totalPointsLive", us["totalPoints"])
+    score_them = them.get("totalPointsLive", them["totalPoints"])
+    left = lambda roster, p: total(roster, p) - total([r for r in roster if started(r, p)], p)
+    rem_us = {p: left(ours, p) for p in days}
+    rem_them = {p: left(theirs, p) for p in days}
+
     acq = league["settings"]["acquisitionSettings"]
     per = acq.get("matchupAcquisitionLimit", -1)
     limit = (per * len(in_matchup) if acq.get("matchupLimitPerScoringPeriod") else per) if per >= 0 else None
@@ -221,9 +235,9 @@ def main():
 
     out = [f"# Matchup {matchup}: {teams[TEAM_ID]['name'].strip()} vs {teams[opp]['name'].strip()}", "",
            f"- Generated {now:%Y-%m-%d %H:%M} UTC by `council/matchup.py`. This is **a report, not a council verdict**.",
-           f"- **Score:** {us['totalPoints']:.0f} to {them['totalPoints']:.0f} "
-           f"({'up' if us['totalPoints'] >= them['totalPoints'] else 'down'} "
-           f"{abs(us['totalPoints'] - them['totalPoints']):.0f}). The matchup runs {monday:%a %d %b} to "
+           f"- **Score:** {score_us:.0f} to {score_them:.0f} "
+           f"({'up' if score_us >= score_them else 'down'} "
+           f"{abs(score_us - score_them):.0f}), every finished game included. The matchup runs {monday:%a %d %b} to "
            f"{end:%a %d %b} (US dates), with {len(days)} days left.",
            f"- **Adds:** {used} used this matchup"
            + (f" of {limit:g}, so **{limit - used:g} left**." if limit is not None else ", no limit.")
@@ -239,6 +253,7 @@ def main():
     out += ([f"- **From {args.start}:** only days from this US date are counted."] if args.start else []) + [""]
 
     out += ["## The rest of the week", "",
+            "Lineups count only games that have not tipped; the rest are in the score.", "",
             f"| Day (US) | {args.tz.split('/')[-1]} | Ours playing | Open slots | Our lineup | Theirs playing | Their lineup |",
             "|---|---|---:|---:|---:|---:|---:|"]
     for p in days:
@@ -246,11 +261,11 @@ def main():
         n_them = sum(plays(r, p) for r in theirs)
         a, b = label(p)
         out.append(f"| {a} | {b} | {n_us} | {max(0, len(SLOTS) - n_us)}{' (overfull)' if n_us > len(SLOTS) else ''} | "
-                   f"{ours_by[p]:.0f} | {n_them} | {theirs_by[p]:.0f} |")
-    rest_us, rest_them = sum(ours_by.values()), sum(theirs_by.values())
+                   f"{rem_us[p]:.0f} | {n_them} | {rem_them[p]:.0f} |")
+    rest_us, rest_them = sum(rem_us.values()), sum(rem_them.values())
     out += ["", (f"**Projection from {args.start}:** {rest_us:.0f} for us and {rest_them:.0f} for them." if args.start else
                  f"**Projection:** {rest_us:.0f} more for us and {rest_them:.0f} for them, for a final of "
-                 f"**{us['totalPoints'] + rest_us:.0f} to {them['totalPoints'] + rest_them:.0f}**."), ""]
+                 f"**{score_us + rest_us:.0f} to {score_them + rest_them:.0f}**."), ""]
 
     head = "| Player | NBA | Rate | " + " | ".join(label(p)[0][:6] for p in days) + " | Status |"
     rule = "|---|---|---:|" + ":-:|" * len(days) + "---|"
@@ -270,11 +285,6 @@ def main():
     out.append("")
 
     shown = set()
-    # A game that has already tipped can't be gained or lost by a roster move:
-    # the dropped player keeps it, and a streamer added now can't get it.
-    # ESPN won't drop a player once his game has started, so while the drop
-    # candidate is locked, no streamer can arrive that day either.
-    started = lambda r, p: (r["pro"], p) in tips and tips[(r["pro"], p)] <= now
     for d in drops:
         base = [r for r in ours if r is not d]
         stays = lambda p: ours if started(d, p) else base
