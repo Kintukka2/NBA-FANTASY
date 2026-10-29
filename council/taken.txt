@@ -54,7 +54,6 @@ Trey Murphy III
 Nickeil Alexander-Walker
 Dylan Harper
 Brandon Ingram
-Matas Buzelis
 Desmond Bane
 Tyler Herro
 Franz Wagner
@@ -64,7 +63,6 @@ Cameron Boozer
 De'Aaron Fox
 Jarrett Allen
 Keyonte George
-AJ Dybantsa
 Josh Hart
 VJ Edgecombe
 Zion Williamson
@@ -97,17 +95,19 @@ Miles Bridges
 Yaxel Lendeborg
 Andrew Nembhard
 Zach LaVine
-Alex Caruso
 Anthony Black
-Brook Lopez
 Davion Mitchell
 Fred VanVleet
 Jabari Smith Jr.
 Jaime Jaquez Jr.
-John Collins
 Jonathan Kuminga
 Kyshawn George
 Moussa Diabate
 Paul Reed
-Payton Pritchard
 Wendell Carter Jr.
+Ayo Dosunmu
+CJ McCollum
+Julian Champagnie
+Kris Dunn
+Peyton Watson
+Toumani Camara
