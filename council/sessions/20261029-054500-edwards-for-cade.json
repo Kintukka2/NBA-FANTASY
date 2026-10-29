@@ -1,0 +1,315 @@
+{
+  "question": "Melbourne poopoo has offered us Anthony Edwards (MIN) for Cade Cunningham (DET), one for one; the offer expires 30 Oct 2026 11:20 UTC. Edwards is out after arthroscopic right knee surgery (up to two months reported; ESPN est. return 21 Dec). Should we accept?",
+  "type": "yes_no",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "asked_at": "2026-10-29T05:39:36Z",
+  "taken": [
+    "Nikola Jokic",
+    "Shai Gilgeous-Alexander",
+    "Luka Doncic",
+    "Victor Wembanyama",
+    "Jalen Johnson",
+    "Cade Cunningham",
+    "Giannis Antetokounmpo",
+    "Anthony Edwards",
+    "Jalen Brunson",
+    "Donovan Mitchell",
+    "Scottie Barnes",
+    "Jayson Tatum",
+    "Josh Giddey",
+    "Tyrese Maxey",
+    "Cooper Flagg",
+    "Tyrese Haliburton",
+    "Kevin Durant",
+    "Amen Thompson",
+    "Domantas Sabonis",
+    "Alperen Sengun",
+    "Devin Booker",
+    "Jalen Duren",
+    "Deni Avdija",
+    "Karl-Anthony Towns",
+    "Paolo Banchero",
+    "Jamal Murray",
+    "Jaylen Brown",
+    "LaMelo Ball",
+    "James Harden",
+    "Evan Mobley",
+    "Bam Adebayo",
+    "Darius Garland",
+    "Pascal Siakam",
+    "Chet Holmgren",
+    "Austin Reaves",
+    "Dyson Daniels",
+    "Kawhi Leonard",
+    "Stephon Castle",
+    "Anthony Davis",
+    "Derrick White",
+    "Dejounte Murray",
+    "Julius Randle",
+    "LeBron James",
+    "Trae Young",
+    "Brandon Miller",
+    "Stephen Curry",
+    "Lauri Markkanen",
+    "Naz Reid",
+    "Kon Knueppel",
+    "Donovan Clingan",
+    "Trey Murphy III",
+    "Nickeil Alexander-Walker",
+    "Dylan Harper",
+    "Brandon Ingram",
+    "Desmond Bane",
+    "Tyler Herro",
+    "Franz Wagner",
+    "Michael Porter Jr.",
+    "Jaren Jackson Jr.",
+    "Cameron Boozer",
+    "De'Aaron Fox",
+    "Jarrett Allen",
+    "Keyonte George",
+    "Josh Hart",
+    "VJ Edgecombe",
+    "Zion Williamson",
+    "RJ Barrett",
+    "Caleb Wilson",
+    "Joel Embiid",
+    "Rudy Gobert",
+    "Alex Sarr",
+    "Ja Morant",
+    "Brandin Podziemski",
+    "Ivica Zubac",
+    "Ausar Thompson",
+    "Derik Queen",
+    "Walker Kessler",
+    "DeMar DeRozan",
+    "Jaden McDaniels",
+    "Keegan Murray",
+    "Kyrie Irving",
+    "OG Anunoby",
+    "Damian Lillard",
+    "Zach Edey",
+    "Ajay Mitchell",
+    "Darius Acuff Jr.",
+    "Immanuel Quickley",
+    "Cedric Coward",
+    "Ace Bailey",
+    "Ty Jerome",
+    "Paul George",
+    "Miles Bridges",
+    "Yaxel Lendeborg",
+    "Andrew Nembhard",
+    "Zach LaVine",
+    "Anthony Black",
+    "Davion Mitchell",
+    "Fred VanVleet",
+    "Jabari Smith Jr.",
+    "Jaime Jaquez Jr.",
+    "Jonathan Kuminga",
+    "Kyshawn George",
+    "Moussa Diabate",
+    "Paul Reed",
+    "Wendell Carter Jr.",
+    "Ayo Dosunmu",
+    "CJ McCollum",
+    "Julian Champagnie",
+    "Kris Dunn",
+    "Peyton Watson",
+    "Toumani Camara"
+  ],
+  "research": "docs/research/20261029-0545-edwards-for-cade.md",
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "No",
+          "confidence": 0.97,
+          "rationale": "Cade beats Edwards per game even when both are healthy: 53.33 vs 46.24 FP_ACT_PG on 2026 actuals and 53.42 vs 47.98 on projection plus blind spot, so Edwards never overtakes him at any point in the season. Edwards is out until about 21 Dec (ESPN est.) or January, which costs us roughly 1,400-1,700 FP rest of season. It would also leave 2 of our 3 bench spots dead next to Kawhi while Duren holds the only IR, at 0-1 with matchup 2 projected 1,112 to 1,451 against us.",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, FP_PROJ_PG_CORE 50.48 + PROJ_BLIND_SPOT_PG 2.94",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, FP_PROJ_PG_CORE 47.29 + PROJ_BLIND_SPOT_PG 0.69",
+            "docs/research/20261029-0545-edwards-for-cade.md: Edwards knee surgery 29 Oct, 'up to two months' (Charania) / 'early to mid-January' (Krawczynski); ESPN est. 21 Dec",
+            "council/roster.csv + council/injuries.py: Duren on IR (ESPN est. 9 Nov), Kawhi out on active roster (ESPN est. 23 Nov)",
+            "docs/analysis/20261029-matchup2.md: projected final 1,112 to 1,451, record 0-1"
+          ],
+          "concerns": "The only way this is wrong is if Edwards' 4-game 52.5 FP/g turns out to be his real level after the knee is fixed, which is a 4-game sample against 61 games at 46.24."
+        },
+        {
+          "member": "archivist",
+          "vote": "No",
+          "confidence": 0.95,
+          "rationale": "On every non-thin measure Cade outscores Edwards per game: FP_ACT_PG 53.33 vs 46.24 (A_GP 64 vs 61), and projection plus blind spot 53.42 vs 47.98. Edwards also misses about 25+ of 77 remaining games (ESPN est. 21 Dec, reports up to mid-January), so the season-total gap is about 1,400-1,700 FP and Edwards would need about 66-79 FP/g after returning to break even. The only figure favouring Edwards (52.5 vs 45.8 this season) rests on 4 and 5 games, a THIN sample, and his CSV row (Injury ACTIVE, P_GP 72) is stale on the surgery.",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, FP_PROJ_PG_CORE 50.48, PROJ_BLIND_SPOT_PG 2.94, A_DD 38, ADP 8",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, FP_PROJ_PG_CORE 47.29, PROJ_BLIND_SPOT_PG 0.69, P_GP 72 (stale, pre-surgery), Injury ACTIVE (stale), ADP 7.2",
+            "data/processed/verification.csv: Edwards delta -0.0216 ok, Cunningham delta -0.0075 ok; re-scored with scripts/league_scoring.py to the same values",
+            "docs/analysis/20261029-slump-watch.md 'Our pending trades': Edwards 52.5 FP/g on 4 GP, Cade 45.8 on 5 GP (both THIN)",
+            "docs/research/20261029-0545-edwards-for-cade.md: 'up to two months' (Charania via Yahoo), 'early to mid-January' (Krawczynski via MinnesotaSportsFan), ESPN est. 21 Dec, CBS about 25 games",
+            "council/roster.csv: IR held by Duren (ESPN est. 9 Nov); Kawhi Leonard out on active roster (ESPN est. 23 Nov)"
+          ],
+          "concerns": "If both 2026-27 thin samples hold (Edwards 52.5, Cade 45.8) and Edwards returns on 21 Dec at full strength, the per-game gap reverses after his return, but even then about 25 lost games cannot be made up."
+        },
+        {
+          "member": "cipher",
+          "vote": "No",
+          "confidence": 0.93,
+          "rationale": "Healthy, Cade beats Edwards in our scoring by 7.1 FP/g on actuals (53.33 vs 46.24) and 5.4 on projections (53.42 vs 47.98), because assists x2 (+12.4) and the DD/TD bonus (+2.0) outweigh Edwards' scoring edge (+7.0). Edwards then misses an estimated 25-45 games. My 9-scenario rest-of-season range runs from -135 to -1,948 FP if we accept (mid -1,261), even after crediting the Edwards side with an IR streaming slot. Break-even needs Edwards at 80 FP/g after his return in the mid case.",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, FP_PROJ_PG_CORE 50.48 + PROJ_BLIND_SPOT_PG 2.94, ADP 8.0",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, FP_PROJ_PG_CORE 47.29 + PROJ_BLIND_SPOT_PG 0.69, ADP 7.2",
+            "scripts/league_scoring.py per_game breakdown: AST x2 Cade 19.82 vs Edwards 7.40; DD/TD bonus/g 2.06 vs 0.10; net scoring 23.28 vs 30.26",
+            "council/injuries.py: Edwards Out, right knee surgery, ESPN est. 21 Dec 2026; briefing 20261029-0545: Charania 'up to two months', Krawczynski 'early to mid-January'",
+            "docs/analysis/20261029-slump-watch.md Our pending trades: Edwards 52.5 current on 4 GP, Cade 45.8 on 5 GP (both under 20 GP, not evidence)",
+            "council/roster.csv: Duren holds the only IR slot (ESPN est. 9 Nov) and Kawhi is out on the active roster (ESPN est. 23 Nov)"
+          ],
+          "concerns": "If Edwards returns by 21 Dec at full strength and Cade keeps his 45.8 FP/g pace from 5 games, the gap shrinks to about -135 FP, close to a coin flip."
+        },
+        {
+          "member": "ledger",
+          "vote": "No",
+          "confidence": 0.95,
+          "rationale": "In our scoring Cade is worth 53.33 FP/g over 64 GP and Edwards 46.24 over 61 GP, so the deal loses 7.1 FP/g even with Edwards healthy, before his knee absence (ESPN est. 21 Dec, about 25 games). Against a 35 FP/g replacement over 77 games left, the trade costs us 793 to 940 FP. Edwards would need 62.2 FP/g after a 25-game absence to break even, above Luka's 62.11. ADP prices them as equals (7.2 against 8.0), but our scoring ranks Cade 5th and Edwards 11th, so this offer pays market value for a player we value more.",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, ADP 8.0, FP_PROJ_PG_CORE 50.48 + PROJ_BLIND_SPOT_PG 2.94",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, ADP 7.2, FP_PROJ_PG_CORE 47.29 + PROJ_BLIND_SPOT_PG 0.69",
+            "council/lookup.py gap: Cade FP_RANK 5 RANK_GAP +1; Edwards FP_RANK 11 RANK_GAP -6",
+            "docs/research/20261029-0545-edwards-for-cade.md: Edwards 'up to two months' (Charania), 'early to mid-January' (attributed to Krawczynski), CBS about 25 games; ESPN est. 21 Dec",
+            "players_scored.csv + council/taken.txt: top unrostered A_GP>=40 run 37.66 (Okongwu) to 33.78 (Wiggins), replacement about 35 FP/g",
+            "docs/analysis/20261029-slump-watch.md Our pending trades: Edwards 52.5 FP/g over 4 GP, Cade 45.8 over 5 GP, both under the 20-GP evidence floor",
+            "docs/analysis/20261029-matchup2.md: projected 1,112 to 1,451; Duren on IR (ESPN est. 9 Nov), Kawhi out on active (ESPN est. 23 Nov)"
+          ],
+          "concerns": "If Edwards' 52.5 FP/g over 4 GP is a real new level and Cade's 45.8 over 5 GP is a real decline, a fast return makes the deal +78 to +131 FP, but both samples are under 20 games and his surgery timetable is unresolved."
+        },
+        {
+          "member": "medic",
+          "vote": "No",
+          "confidence": 0.92,
+          "rationale": "Edwards misses 22 MIN games at ESPN's 21 Dec estimate and 33-35 if Krawczynski's early-to-mid-January timeline holds, while Cade is healthy with 75 games left (about 63 expected at P_GP 69/82). Cade also out-scores him per game when both are healthy: FP_ACT_PG 53.33 vs 46.24 (+7.09), and +5.44 on projections with the blind spot added back. Rest of season that is about 3,033 FP for Cade against 1,823-1,892 for Edwards discounted, or 2,543 even if Edwards plays every game from 21 Dec. Taking him also leaves two Out players on our active roster until Duren leaves IR (ESPN est. 9 Nov) and locks the IR slot until at least late December.",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, P_GP 69, FP_PROJ_PG_CORE 50.48, A_DD 38, ADP 8",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, P_GP 72 (stale, Injury still ACTIVE), FP_PROJ_PG_CORE 47.29, ADP 7.2",
+            "council/injuries.py --rostered: Edwards Out, Right Knee Surgery, ESPN est. 21 Dec 2026 (53 days)",
+            "docs/research/20261029-0545-edwards-for-cade.md: 'up to two months' (Charania via Yahoo); 'early to mid-January' (Krawczynski via MinnesotaSportsFan); team timetable only after surgery (AP/KPRC)",
+            "docs/data-dictionary.md Known traps #3: ESPN projects Ingram 67 GP while listing him OUT; Edwards' P_GP 72 is the same failure",
+            "docs/offseason-impact.md §1: 'Out into the new year — do not spend a pick'",
+            "ESPN proTeamSchedules_wl via council/slump_watch.get: MIN and DET 75 games left; DET plays 20 games in matchups 3-9 (2 Nov-20 Dec)",
+            "council/roster.csv + docs/analysis/20261029-injury-watch.md: Duren holds our only IR slot (ESPN est. 9 Nov); Leonard Out on active roster (ESPN est. 23 Nov)",
+            "docs/analysis/20261029-matchup2.md: 0-1 and projected to lose matchup 2, 1,112 to 1,451"
+          ],
+          "concerns": "If the post-surgery update gives a short timeline (the AP says 'weeks or months') and the fantasy playoffs are what matter, a healthy Edwards in March is close to Cade, but he still trails by 5-7 FP/g, so even that case does not make the trade a win."
+        },
+        {
+          "member": "scout",
+          "vote": "No",
+          "confidence": 0.9,
+          "rationale": "On 2026 actuals Cade scores 53.33 FP/g (64 GP, 1.571 FP/min) against Edwards' 46.24 (61 GP, 1.322 FP/min), and the projection with the blind spot added still favours Cade 53.42 to 47.98, so Edwards is the lesser player per game even when healthy. Cade's minutes hold (34.6 against 34.8 projected) and §5 lists him as elite and stable, while Edwards misses about 24 to 34 games (ESPN est. 21 Dec; Krawczynski early to mid January). My rest-of-season estimate puts the trade about 900 to 1,200 FP behind, and Edwards would need about 73 FP/g after returning to break even. Accepting also leaves us two dead active spots, Kawhi and Edwards, while Duren holds the only IR slot until about 9 Nov.",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, A_MIN 33.94, A_AST 9.91, A_DD 38, FP_PROJ_PG_CORE 50.48 + PROJ_BLIND_SPOT_PG 2.94",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, A_MIN 34.98, A_FGA 20.18, A_AST 3.70, FP_PROJ_PG_CORE 47.29 + PROJ_BLIND_SPOT_PG 0.69",
+            "docs/offseason-impact.md §5: Cade Cunningham 53.34, 'Elite and stable — the number means what it says'",
+            "docs/analysis/20261029-slump-watch.md Our pending trades: Cade 34.6/34.8 min, 45.8 vs 50.4 (efficiency gap, minutes intact); Edwards 52.5 on 4 GP, Out, ESPN est. 21 Dec",
+            "docs/research/20261029-0545-edwards-for-cade.md: 'up to two months' (Charania via Yahoo) vs 'early to mid-January' (Krawczynski via MinnesotaSportsFan); no post-surgery timetable published",
+            "council/roster.csv: Duren in the only IR slot (ESPN est. 9 Nov), Kawhi Leonard out on the active roster (ESPN est. 23 Nov)"
+          ],
+          "concerns": "If Edwards returns on ESPN's 21 Dec date at his 52.5 FP/g 4-game pace and Cade's 45.8 slump persists all season, the deal roughly breaks even (about 2,830 against 2,752), but that needs two sub-20-game samples to both hold."
+        },
+        {
+          "member": "tempo",
+          "vote": "No",
+          "confidence": 0.95,
+          "rationale": "Duren holds our only IR slot until about 9 Nov and Kawhi is out on the active roster (ESPN est. 23 Nov). So Edwards would leave us with 11 healthy players for 10 starting slots now, and keep a dead active spot until about 23 Nov. That costs roughly 12 Cade games at 48.1, about 577 FP, before Edwards can even sit on IR, and about 725 FP across matchups 2 to 9, when we are already 0-1. No waiver player tops 37.7 FP/g, so the Cade slot cannot be refilled. When both are healthy Cade is still the better player on 2026 actuals (53.33 against 46.24 FP/g).",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, FP_PROJ_PG_CORE 50.48, PROJ_BLIND_SPOT_PG 2.94, Pos PG",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, FP_PROJ_PG_CORE 47.29, PROJ_BLIND_SPOT_PG 0.69, Pos SG/SF",
+            "council/roster.csv: Jalen Duren slot IR (only IR slot); Kawhi Leonard slot roster (active, out)",
+            "docs/analysis/20261029-injury-watch.md: Edwards ESPN est. 21 Dec; Kawhi ESPN est. 23 Nov; Duren holds IR, so a stash costs a bench spot",
+            "docs/research/20261029-0545-edwards-for-cade.md: Charania 'up to two months'; Krawczynski reported 'early to mid-January'; Edwards missed 11 of MIN's last 14 games of 2025-26 with right-knee pain",
+            "docs/analysis/20261029-matchup2.md: projected loss 1,112 to 1,451; open lineup slots on most days; Cade rate 48.1",
+            "players_scored.csv filtered by council/taken.txt: best untaken players with A_GP 40+ are Onyeka Okongwu 37.66 and Ryan Rollins 37.51 FP_ACT_PG",
+            "docs/league-rules.md §3 line 100: max 4 at G; Cade PG and Edwards SG are both G-eligible, so the G count is unchanged and the trade is legal",
+            "docs/league-rules.md §5: cut off at line 130 ('Regular season | **20 match'), so the playoff weeks are not recorded; data/raw/league_settings.csv: Matchup periods 20"
+          ],
+          "concerns": "If Edwards's 52.5 FP/g in 4 games is real and he is back by mid-December, he could make up part of the per-game gap later, but a 4-game sample is not evidence and he would still miss 7 weeks."
+        },
+        {
+          "member": "vex",
+          "vote": "No",
+          "confidence": 0.95,
+          "rationale": "The CSV has Cade ahead per game on actuals (53.33 vs 46.24 FP/g, 64 vs 61 GP) and on projection including the blind spot (about 53.4 vs 48.0), so 'Yes' loses even if Edwards never missed a game. With about 25 games lost to surgery, Edwards's best case (21 missed, every game after at his 4-GP 52.5) comes to about 2,940 rest-of-season FP, which is still below Cade's worst case at his 5-GP 45.8 (about 2,968). Edwards would need about 72 games at his projection to match Cade's projected 3,461, and only about 52 remain. Taking him also adds a second dead active slot while Duren holds IR and Kawhi is out.",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, FP_ACT_PER36 56.57, A_DD 38, A_TD 3, FP_PROJ_PG_CORE 50.48 + PROJ_BLIND_SPOT_PG 2.94",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, FP_ACT_PER36 47.59, A_DD 2, FP_PROJ_PG_CORE 47.29 + PROJ_BLIND_SPOT_PG 0.69",
+            "docs/research/20261029-0545-edwards-for-cade.md: Edwards out after arthroscopic right knee surgery 29 Oct, 'up to two months' (Charania via Yahoo) / 'early to mid-January' (Krawczynski via MinnesotaSportsFan); ESPN est. 21 Dec; no team diagnosis or timetable",
+            "docs/analysis/20261029-slump-watch.md 'Our pending trades': Edwards current 52.5 on 4 GP, Cade 45.8 on 5 GP (both under 20 GP, not evidence)",
+            "docs/analysis/20261029-matchup2.md: projected 1,112 to 1,451; Cade adds 48.1 this week; Duren holds IR (ESPN est. 9 Nov), Kawhi out on active roster (ESPN est. 23 Nov)"
+          ],
+          "concerns": "If Cade himself suffers a long injury (more than about 37 of his remaining 77 games), Edwards's back half could come out ahead, but nothing in the briefing or the CSV points to that."
+        },
+        {
+          "member": "quill",
+          "vote": "No",
+          "confidence": 0.93,
+          "rationale": "The record says keep Cade: 9/9 ballots put him ahead of Edwards at pick 6 (Edwards 0 votes for option B or C), and 9/9 ranked him our most valuable player on 19 Oct; accepting contradicts both verdicts. On the CSV, Cade leads by 7.09 FP/g in 2026 actuals (53.33 vs 46.24) and 5.44 on projection plus blind spot, and with Edwards missing about 25 games the rest-of-season gap is about 1,271 FP (731 even in the generous case). Edwards would need 66.6 FP/g after his return just to break even, and he would hold our only IR slot until 21 Dec while Kawhi is also out.",
+          "evidence": [
+            "data/processed/players_scored.csv: Cade Cunningham FP_ACT_PG 53.33, A_GP 64, FP_PROJ_PG_CORE 50.48 + PROJ_BLIND_SPOT_PG 2.94, P_GP 69, ADP 8",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, FP_PROJ_PG_CORE 47.29 + PROJ_BLIND_SPOT_PG 0.69, P_GP 72, ADP 7.2",
+            "council/sessions/20261008-0834-pick-6-backups.json: option B Cade 9/9 ballots; Edwards 0 votes for option B or C",
+            "council/sessions/20261019-081948-three-weakest.json: every ballot ranks Cade 13th of 13 (last to drop)",
+            "docs/research/20261029-0545-edwards-for-cade.md: Edwards up to two months (Charania via Yahoo), 'early to mid-January' (Krawczynski via MinnesotaSportsFan), about 25 games (CBS); ESPN est. 21 Dec",
+            "council/injuries.py: Edwards Out, ESPN est. 21 Dec (53 days); Duren ESPN est. 9 Nov; Kawhi ESPN est. 23 Nov",
+            "docs/analysis/20261029-matchup2.md: Cade adds 48.1 FP this week; we trail 381 to 513"
+          ],
+          "concerns": "The rest-of-season gap rests on ESPN's 21 Dec estimate and CBS's 25-game figure, and Edwards' 4-game start (52.5 FP/g, 47 points at CLE) could mean a real step up that the 2026 rate does not capture, though even at 52.5 he falls about 731 FP short."
+        }
+      ],
+      "result": {
+        "winner": "No",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 1.0,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "No",
+            "weight": 19,
+            "confidence_weight": 17.87,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "scout",
+              "tempo",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Yes",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    }
+  ],
+  "verdict": {
+    "answer": "No",
+    "round": "opening",
+    "share": 1.0,
+    "majority": true,
+    "tiebreak": null
+  }
+}
