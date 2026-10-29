@@ -311,5 +311,6 @@
     "share": 1.0,
     "majority": true,
     "tiebreak": null
-  }
+  },
+  "correction": "29 Oct 21:04 UTC: members cited a matchup-2 projection of 1,112 to 1,451. That run left out Wednesday's points; the projection was about 1,486 to 1,672 (council/matchup.py now reads the live total). No ballot's verdict rests on this week's result."
 }
