@@ -251,7 +251,7 @@ With **Melbourne poopoo**, proposed by us, expires 31 Oct 21:59 UTC.
 - **Anthony Edwards** had right knee arthroscopic debridement on 29 Oct. The team gave no timetable; KSTP was told "around two months" [KSTP, 29 Oct](https://kstp.com/minnesota-sports/timberwolves-star-anthony-edwards-officially-undergoes-successful-surgery/). *ESPN est.* 21 Dec.
 - **Kawhi Leonard** is re-evaluated about 3 Nov, and "at least 3-4 weeks" per Chris Haynes [Yardbarker, 29 Oct](https://www.yardbarker.com/nba/articles/worrisome_update_in_toronto_kawhi_leonard_sidelined_3_4_weeks_as_knee_swelling_worsens/s1_17810_44489535). *ESPN est.* 23 Nov.
 - **Fred VanVleet** sits one game of each back-to-back early in the season [CBS Sports, 20 Oct](https://www.cbssports.com/fantasy/basketball/news/rockets-fred-vanvleet-to-miss-back-to-backs/).
-- **Edwards for Cade** (proposed to us, expires 30 Oct 11:20 UTC): the council voted No on 29 Oct (`council/sessions/20261029-054500-edwards-for-cade.json`). The three offers we proposed go to the council today (`council/sessions/20261030-060000-trade-offers.json`).
+- **Edwards for Cade** (proposed to us, expires 30 Oct 11:20 UTC): the council voted No on 29 Oct (`council/sessions/20261029-054500-edwards-for-cade.json`). On our three proposed offers, the council voted to keep **James Harden** pending and withdraw the other two: 15 of 19 weight, opening round (`council/sessions/20261030-060000-trade-offers.json`).
 
 ## Sources
 

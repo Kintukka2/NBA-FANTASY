@@ -14,5 +14,217 @@
   ],
   "research": "docs/research/20261030-0600-trade-offers.md",
   "form": "docs/research/20261030-0600-trade-offers-form.md",
-  "rounds": []
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Derrick White + RJ Barrett",
+        "James Harden",
+        "Anthony Edwards",
+        "Withdraw all three"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "James Harden",
+          "confidence": 0.68,
+          "rationale": "With VanVleet's slot treated as replacement level, B is Harden for Murphy straight, and Harden leads on every lens: +3.51 FP/g on 2026 actuals (45.11 vs 41.60), +5.81 on projection plus blind spot (43.70 vs 37.89), and +3.2 this season (29.8 in 5 games vs 26.6 in 5). That is about +335 to +561 FP rest of season whatever replacement level we assume. White + Barrett (38.35 + 32.98) beat Murphy plus a free agent only on 4-game samples: Barrett's 2026 rate is below six free agents, and his 40.5 is a bump while Kawhi is out. Edwards ranges from -446 to +580 depending on assumptions, on an unresolved post-surgery timetable (ESPN est. 21 Dec, possibly January).",
+          "evidence": [
+            "data/processed/players_scored.csv: James Harden FP_ACT_PG 45.11, A_GP 70, FP_PROJ_PG_CORE 42.1 + PROJ_BLIND_SPOT_PG 1.60, P_GP 73",
+            "data/processed/players_scored.csv: Trey Murphy III FP_ACT_PG 41.60, A_GP 66, FP_PROJ_PG_CORE 36.76 + 1.13",
+            "data/processed/players_scored.csv: Derrick White FP_ACT_PG 38.35 (A_GP 77); RJ Barrett FP_ACT_PG 32.98 (A_GP 57); free agents Gobert 38.23, Rollins 37.51, Pritchard 34.54 (not in council/taken.txt)",
+            "docs/research/20261030-0600-trade-offers-form.md: Harden 29.8 (5), L7/L15/L30 29.8 (5), 35.0 min; Murphy 26.6 (5), L7 29.2 (4); White 30.2 (4), L7 28.7 (3); Barrett 40.5 (4), L7 44.7 (3); Edwards 52.5 (4), L7 43.7 (3); Kawhi 40.0 (2), L7 31.0 (1)",
+            "docs/research/20261030-0600-trade-offers.md: Edwards no team timetable after 29 Oct debridement, up to two months (Charania) or possibly January (Krawczynski); Kawhi at least 3-4 weeks (Haynes, RotoWire 29 Oct); Murphy usage 14.6% vs 22.9%",
+            "docs/analysis/20261030-matchup2.md: trail 806-927, project 1,437-1,674; Team Nic Kerr 9 playing for 10 slots Saturday"
+          ],
+          "concerns": "Harden is 37 and producing 0.68 of his projected per-minute rate over 5 games (29.8 FP/g in 35 minutes) with Meleek Thomas returning for more minutes; if that is decline rather than a slump and Murphy's role recovers, B loses about 10 FP/g."
+        },
+        {
+          "member": "archivist",
+          "vote": "James Harden",
+          "confidence": 0.6,
+          "rationale": "With VanVleet weighted at zero, B nets +3.51 FP/g on 2026 actuals (Harden 45.11 over 70 GP vs Murphy 41.60 over 66 GP) and +5.81 on projection plus blind spot, and it frees a streaming spot. A is -0.27 to -4.27/g on actuals, and C loses roughly 730-1,170 FP over the rest of the season by sending Kawhi (50.01) and Murphy for an Edwards (46.24) out until an ESPN est. of 21 Dec, with no team timetable. A and C only win on THIN 2026-27 lines (Barrett 4 GP; Kawhi 2, Edwards 4, Murphy 5).",
+          "evidence": [
+            "data/processed/players_scored.csv: James Harden FP_ACT_PG 45.11, A_GP 70, FP_PROJ_PG_CORE 42.10, PROJ_BLIND_SPOT_PG 1.60",
+            "data/processed/players_scored.csv: Trey Murphy III FP_ACT_PG 41.60, A_GP 66, FP_PROJ_PG_CORE 36.76, PROJ_BLIND_SPOT_PG 1.13",
+            "data/processed/players_scored.csv: Derrick White 38.35 (77 GP); RJ Barrett 32.98 (57 GP); Kawhi Leonard 50.01 (65 GP); Anthony Edwards 46.24 (61 GP)",
+            "data/processed/verification.csv: all six status ok, |delta| <= 0.04",
+            "docs/research/20261030-0600-trade-offers-form.md: Harden 29.8 (5), L7 29.8 (5), L15/L30 29.8 (5); Murphy 26.6 (5), L7 29.2 (4); Barrett 40.5 (4), L7 44.7 (3); White 30.2 (4), L7 28.7 (3); Edwards 52.5 (4), L7 43.7 (3); Kawhi 40.0 (2), L7 31.0 (1)",
+            "docs/research/20261030-0600-trade-offers.md: Edwards no team timetable after 29 Oct surgery, 'up to two months'/January, ESPN est. 21 Dec; Kawhi 'at least 3-4 weeks', ESPN est. 23 Nov",
+            "council/lookup.py gap: league-scored FP rank Kawhi 8, Edwards 13, Harden 16, Murphy 28 (Edwards ADP 7.2 is standard scoring)"
+          ],
+          "concerns": "Harden's 29.8 over 5 GP (-12.3 vs projection, 32.7% FG, 3.8 TO/g, Meleek Thomas returning) may be his true 2026-27 level, in which case B is only a wash and withdrawing all three costs nothing."
+        },
+        {
+          "member": "cipher",
+          "vote": "James Harden",
+          "confidence": 0.55,
+          "rationale": "Counting VanVleet's spot as a free agent in every option, B swaps Murphy for Harden at +3.5 FP/g on 2026 actuals (45.11 vs 41.60), +5.8 on projection plus blind spot (43.70 vs 37.89) and +3.2 on current form (29.8 vs 26.6). It is the only option ahead on all three. A is -1.3 on 2026 actuals and +2.7 on projection, and wins mainly on the 4-game samples. In 200k rest-of-season simulations, B's median is +298 FP above a free agent (p10 +99, p90 +487) and A's is +231 (+54 to +410). B is best in 66% of runs and A in 34%. C's median is -118 and it beats withdrawing in only 24%, because Edwards (out 22-35 MIN games) costs us both Murphy and Kawhi.",
+          "evidence": [
+            "data/processed/players_scored.csv: James Harden FP_ACT_PG 45.11, A_GP 70, A_MIN 34.9, FP_PROJ_PG_CORE 42.10 + PROJ_BLIND_SPOT_PG 1.60",
+            "data/processed/players_scored.csv: Trey Murphy III FP_ACT_PG 41.60, A_GP 66, A_MIN 35.47, FP_PROJ_PG_CORE 36.76 + 1.13",
+            "data/processed/players_scored.csv: Derrick White FP_ACT_PG 38.35 (A_GP 77); RJ Barrett 32.98 (A_GP 57); projections 38.14 and 33.50 with blind spot",
+            "data/processed/players_scored.csv: Anthony Edwards FP_ACT_PG 46.24, A_GP 61, proj 47.98; Kawhi Leonard 50.01, A_GP 65, proj 47.07",
+            "docs/research/20261030-0600-trade-offers-form.md: Harden 29.8 (5), L7 29.8 (5), minutes 35.0; Murphy 26.6 (5), L7 29.2 (4); White 30.2 (4), L7 28.7 (3); Barrett 40.5 (4), L7 44.7 (3); Edwards L7 43.7 (3); Kawhi L7 31.0 (1)",
+            "docs/research/20261030-0600-trade-offers.md: Murphy usage 14.6% vs 22.9%; Edwards no team timetable, 'up to two months'/January; Kawhi 'at least 3-4 weeks', ESPN est. 23 Nov",
+            "docs/analysis/20261030-slump-watch.md: Harden gap -12.3 from efficiency (scoring -5.5, ast -3.8), not minutes (35.0)",
+            "ESPN proTeamSchedules: MIN 22 games to 21 Dec and 35 to 15 Jan; TOR 12 to 23 Nov; ~75-76 left per team",
+            "council/taken.txt vs players_scored.csv: best unrostered FP_ACT_PG Holiday 34.93, Pritchard 34.54, Hartenstein 34.01, Queta 33.40, Powell 32.96 (replacement level ~31)"
+          ],
+          "concerns": "If free agents are worth only about 28 or Harden's true level is about 36, White + Barrett becomes the better trade (best in 59-66% of those runs), and Harden at 37 with Meleek Thomas returning makes the lower Harden case plausible."
+        },
+        {
+          "member": "ledger",
+          "vote": "James Harden",
+          "confidence": 0.6,
+          "rationale": "With VanVleet at zero weight, B is Murphy (FP_RANK 28, 41.60 over 66 GP) for Harden (FP_RANK 16, 45.11 over 70 GP) plus a free roster spot, worth +156 to +454 FP over 77 games against withdrawing, on the 2026, projection and blend bases. Harden needs only 37.1 to 39.3 FP/g for the rest of the season to break even, and his 29.8 over 5 GP is an efficiency gap with minutes intact. Murphy's gap is a role cut (usage 14.6% from 22.9%). C is the ADP trap: it sells Kawhi (rank gap +16) and Murphy (+22) for Edwards (−8), who has no team timetable, and on central inputs it runs between 183 FP behind and 82 FP ahead of B. A (+63 to +217) swaps Murphy for White (rank 42) plus waiver-level Barrett (rank 67, 32.98), and the same Kawhi-out role is free in Walter.",
+          "evidence": [
+            "data/processed/players_scored.csv: James Harden FP_ACT_PG 45.11, A_GP 70, ADP 28.3, FP_PROJ_PG_CORE 42.1 + PROJ_BLIND_SPOT_PG 1.60",
+            "data/processed/players_scored.csv: Trey Murphy III FP_ACT_PG 41.60, A_GP 66, ADP 75; Kawhi Leonard 50.01, A_GP 65, ADP 30.5; Anthony Edwards 46.24, A_GP 61, ADP 7.2",
+            "data/processed/players_scored.csv: Derrick White FP_ACT_PG 38.35, A_GP 77, ADP 40.3; RJ Barrett 32.98, A_GP 57, ADP 112.6",
+            "council/lookup.py gap: FP_RANK/RANK_GAP Kawhi 8/+16, Edwards 13/-8, Harden 16/+4, Murphy 28/+22, White 42/-10, Barrett 67/+11",
+            "docs/research/20261030-0600-trade-offers-form.md: Harden 29.8 (5), L7 29.8 (5); Murphy 26.6 (5), L7 29.2 (4); Barrett 40.5 (4), L7 44.7 (3); White 30.2 (4), L7 28.7 (3); Edwards 52.5 (4), L7 43.7 (3); Kawhi 40.0 (2), L7 31.0 (1); L15/L30 equal the season",
+            "docs/analysis/20261030-slump-watch.md: Harden 35.0 min against 33.6 projected, 5.0-13.8 FG (efficiency gap); Murphy usage 14.6% from 22.9% (role gap)",
+            "docs/research/20261030-0600-trade-offers.md: Edwards no team timetable, 'up to two months' or January, ESPN est. 21 Dec; Kawhi re-evaluation ~3 Nov, 'at least 3-4 weeks', ESPN est. 23 Nov",
+            "scratchpad val2.py, 77 games, R 33-35: B +156 to +454; A -25 to +217; C -144 to +298; C against B, central inputs: -183 to +82"
+          ],
+          "concerns": "If Harden at 37 really is the 29.8 FP/g player of his first 5 games (below the 37.1-39.3 break-even), or Kawhi plays only about 65% of games after he returns, Edwards beats Harden by up to 461 FP."
+        },
+        {
+          "member": "medic",
+          "vote": "Derrick White + RJ Barrett",
+          "confidence": 0.58,
+          "rationale": "Over the next ~63 team games, (A) brings 103 expected games: White 59.2 (A_GP 77) and Barrett 43.8 (A_GP 57). That is about 3,660 FP for Murphy's ~1,775 (50.7 games), and about +356 over a 33 FP/g streamer. (B) Harden gives 53.8 games (A_GP 70, age 37) and about +269, but his L7 29.8 (5) is 15.3 below his 2026 45.1 for role reasons. (C) gives up 90 expected games (Murphy plus Kawhi, back about 23 Nov) for 23.8 from Edwards, who is out until 21 Dec on ESPN's estimate and possibly January per Krawczynski, and it locks our only IR slot for about 2 months. That nets about -300 against replacement.",
+          "evidence": [
+            "data/processed/players_scored.csv: Derrick White A_GP 77, P_GP 77, FP_ACT_PG 38.35; RJ Barrett A_GP 57, P_GP 66, FP_ACT_PG 32.98",
+            "data/processed/players_scored.csv: James Harden A_GP 70, FP_ACT_PG 45.11; Anthony Edwards A_GP 61, P_GP 72 (pre-surgery, stale per data-dictionary trap 3), FP_ACT_PG 46.24",
+            "docs/research/20261030-0600-trade-offers-form.md: White 30.2 (4), L7 28.7 (3); Barrett 40.5 (4), L7 44.7 (3); Harden 29.8 (5), L7 29.8 (5); Edwards 52.5 (4), L7 43.7 (3); Murphy 26.6 (5), L7 29.2 (4); Kawhi 40.0 (2), L7 31.0 (1); L15 and L30 equal season for all",
+            "docs/research/20261030-0600-trade-offers.md: Edwards had arthroscopic debridement 29 Oct, no team timetable, Charania 'up to two months', Krawczynski January possible; Kawhi 'at least three to four weeks' (Haynes); White hip synovitis, probable then played 33 min on 27 Oct",
+            "council/injuries.py: Edwards ESPN est. 21 Dec (52 days); Kawhi ESPN est. 23 Nov (24 days); Duren ESPN est. 9 Nov (holds our IR)",
+            "docs/research/20261029-0545-edwards-for-cade.md: Edwards missed 11 of MIN's last 14 regular-season games in 2025-26 with right-knee patellofemoral pain"
+          ],
+          "concerns": "If Harden returns to his 2026 45.1 FP/g, (B) plus its open roster spot beats (A) by about 150 FP, and White's new hip synovitis could cut into the 77-game durability that this vote rests on."
+        },
+        {
+          "member": "scout",
+          "vote": "Derrick White + RJ Barrett",
+          "confidence": 0.5,
+          "rationale": "Murphy's 2026 line (41.6 over 66 GP) no longer fits his role: 26.6 now, shots down from 15.9 to 11.2 a game and usage 14.6% from 22.9%, so keeping him loses. White's 2026 role is intact (started every game in the same five, 33-36 min in competitive games), and Barrett's grows while Kawhi is out (40.5, L7 44.7 in 3), giving 70.7 FP/g now against Harden plus a free agent at about 63.8. Harden kept his 35 min but his rate fell to 0.85 FP/min from 1.29 beside Mitchell, with Meleek Thomas due more time. Edwards for Kawhi gives up the player due back about 13 or more games sooner (ESPN est. 23 Nov against 21 Dec or January).",
+          "evidence": [
+            "docs/research/20261030-0600-trade-offers-form.md: Trey Murphy III 26.6 (5), L7 29.2 (4), L15 26.6 (5), L30 26.6 (5), proj 36.8, 2026 41.6",
+            "docs/research/20261030-0600-trade-offers-form.md: RJ Barrett 40.5 (4), L7 44.7 (3), L15/L30 40.5 (4), min 31.0/32.7; Derrick White 30.2 (4), L7 28.7 (3), L15/L30 30.2 (4), min 30.0/28.0",
+            "docs/research/20261030-0600-trade-offers-form.md: James Harden 29.8 (5), L7/L15/L30 29.8 (5), min 35.0, proj 42.1",
+            "data/processed/players_scored.csv: Harden FP_ACT_PG 45.11, A_MIN 34.9, A_GP 70; White FP_ACT_PG 38.35, A_GP 77; Barrett FP_ACT_PG 32.98, A_GP 57; Murphy FP_ACT_PG 41.60, A_FGA 15.91; Kawhi FP_ACT_PG 50.01, A_GP 65; Edwards FP_ACT_PG 46.24, A_GP 61",
+            "docs/research/20261030-0600-trade-offers.md: Murphy usage 14.6% vs 22.9% (Pelicans On SI, 24 Oct); White started every game in the same five through 27 Oct; Atkinson says Meleek Thomas gets more time on return",
+            "docs/analysis/20261030-slump-watch.md: Harden 5.0-13.8 FG, 6.2 ast vs projected 8.1; Murphy 11.2 FGA vs projected 14.5",
+            "docs/analysis/20261030-injury-watch.md: Kawhi ESPN est. 23 Nov (Haynes: at least 3-4 weeks); Edwards ESPN est. 21 Dec, no team timetable; Walter 34.0 FP/g, starting while Kawhi is out"
+          ],
+          "concerns": "Over the full season it is a coin flip: give Barrett his 2026 availability (57 of 82 games) and let Harden's 5-game shooting slump regress, and Harden plus a free roster spot comes out about 140-280 FP ahead."
+        },
+        {
+          "member": "tempo",
+          "vote": "James Harden",
+          "confidence": 0.6,
+          "rationale": "B is the only offer positive under every lens: Harden minus Murphy is +3.5 FP/g on 2026 actuals (45.1 vs 41.6), +5.3 on projection (42.1 vs 36.8) and +3.3 on the blend (34.4 vs 31.1), about +333 to +487 FP rest of season, and the 2-for-1 frees a spot we can fill at the wire's 30-34 FP/g level (Walter 34.0 in 4 GP, Achiuwa 34.4 in 5). A runs -658 to +401 and is negative on 2026 actuals (-0.3 FP/g with VanVleet's spot valued at replacement). C runs -832 to +1056, is negative on 2026 actuals in every case, and parks Edwards (ESPN est. 21 Dec, possibly January) on our only IR slot past Kawhi's 23 Nov. B also keeps the G count legal (one guard-eligible fewer), leaves a spot for a streaming C while Reed is our only active centre with Duren out (ESPN est. 9 Nov), and lets Kawhi use the IR from about 9 to 23 Nov.",
+          "evidence": [
+            "data/processed/players_scored.csv: James Harden FP_ACT_PG 45.11, A_GP 70; Trey Murphy III FP_ACT_PG 41.60, A_GP 66; Derrick White 38.35, A_GP 77; RJ Barrett 32.98, A_GP 57; Anthony Edwards 46.24, A_GP 61; Kawhi Leonard 50.01, A_GP 65",
+            "docs/research/20261030-0600-trade-offers-form.md: Harden 29.8 (5), L7 29.8 (5), L15 29.8 (5), L30 29.8 (5), proj 42.1; Murphy 26.6 (5), L7 29.2 (4), L15/L30 26.6 (5), proj 36.8; White 30.2 (4), L7 28.7 (3); Barrett 40.5 (4), L7 44.7 (3); Edwards 52.5 (4), L7 43.7 (3), out; Kawhi 40.0 (2), L7 31.0 (1), noise",
+            "docs/analysis/20261030-matchup2.md Rate column: Murphy 31.1, Harden 34.4, matching a 70/30 blend of this season and 2026; 5 adds left this matchup; Reed (PF/C) is our only active C",
+            "docs/analysis/20261030-injury-watch.md shortlist: Walter 34.0 (4 GP), Achiuwa 34.4 (5), Wiggins 30.8 (6), the wire's replacement level; Edwards ESPN est. 21 Dec, Kawhi 23 Nov, Duren 9 Nov",
+            "docs/research/20261030-0600-trade-offers.md: Edwards has no team timetable after the 29 Oct debridement, 'up to two months' (Charania), possibly January (Krawczynski); Murphy usage 14.6% vs 22.9% (Pelicans On SI, 24 Oct)",
+            "docs/league-rules.md §3: 10 starters, 3 bench, 1 IR, max 4 at G; §5 stops at 'Regular season | 20 match', so the playoff weeks are not recorded"
+          ],
+          "concerns": "Harden's 29.8 over 5 games with 3.6 TO/g, an extra 6.2 FP/g below Murphy's current gap to projection, may reflect a real age-37 decline beside Mitchell rather than noise, and if Edwards returns by about 21 Dec at 50+ FP/g, C's upside beats B."
+        },
+        {
+          "member": "vex",
+          "vote": "James Harden",
+          "confidence": 0.6,
+          "rationale": "With VanVleet's slot valued at a stream and cancelling out, Harden for Murphy comes out ahead on every measure: +3.51 FP/g on 2026 actuals (45.11 vs 41.60), +5.81 on projection plus blind spot (43.70 vs 37.89), and +3.2 this season (29.8 vs 26.6). Murphy's drop is a role cut (usage 14.6% from 22.9%, New Orleans' lineup still unresolved under §7 item 10), while Harden's is cold shooting at 35.0 minutes. White + Barrett flips sign by measure (−3.25 / +0.25 / +6.50) and rests on Barrett's 4 games, two of them without Kawhi, against a stream-level 2026 of 32.98. Edwards loses 861 to 1,424 FP on ESPN's 21 Dec estimate, because Kawhi scores more per game (50.01 vs 46.24) and returns about four weeks sooner (ESPN est. 23 Nov).",
+          "evidence": [
+            "data/processed/players_scored.csv: James Harden FP_ACT_PG 45.11, A_GP 70, FP_PROJ_PG_CORE 42.1, PROJ_BLIND_SPOT_PG 1.60",
+            "data/processed/players_scored.csv: Trey Murphy III FP_ACT_PG 41.60, A_GP 66, FP_PROJ_PG_CORE 36.76, PROJ_BLIND_SPOT_PG 1.13",
+            "data/processed/players_scored.csv: Kawhi Leonard FP_ACT_PG 50.01, A_GP 65; Anthony Edwards FP_ACT_PG 46.24, A_GP 61",
+            "data/processed/players_scored.csv: Derrick White FP_ACT_PG 38.35, A_GP 77; RJ Barrett FP_ACT_PG 32.98, A_GP 57",
+            "docs/research/20261030-0600-trade-offers-form.md: Harden 29.8 (5), L7 29.8 (5), L15 29.8 (5), L30 29.8 (5), proj 42.1; Murphy 26.6 (5), L7 29.2 (4), L15 26.6 (5), L30 26.6 (5), proj 36.8",
+            "docs/research/20261030-0600-trade-offers-form.md: Barrett 40.5 (4), L7 44.7 (3); White 30.2 (4), L7 28.7 (3); Edwards 52.5 (4), L7 43.7 (3); Kawhi 40.0 (2), L7 31.0 (1)",
+            "docs/analysis/20261030-slump-watch.md: Murphy usage 14.6% from 22.9%, about 10 FGA from 15.9; Harden 35.0 min, 5.0-13.8 FG, 3.6 TO",
+            "docs/research/20261030-0600-trade-offers.md: Edwards had knee debridement 29 Oct, no team timetable, ESPN est. 21 Dec; Kawhi 'at least 3-4 weeks' (Haynes), ESPN est. 23 Nov",
+            "docs/analysis/20261030-matchup2.md: stream tier Walter 34.0, Achiuwa 34.4, Powell 32.2; Team Nic Kerr is our current opponent, 806-927"
+          ],
+          "concerns": "Harden's 45.11 was earned with the Clippers; if his 29.8 over 5 games beside Mitchell (and soon Meleek Thomas) is his new level and Murphy's role comes back, Harden trails Murphy by about 7 to 11 FP/g."
+        },
+        {
+          "member": "quill",
+          "vote": "James Harden",
+          "confidence": 0.66,
+          "rationale": "Harden for Murphy is the 2-for-1 shape the council chose on 20 Oct, and it follows the draft boards, where Harden ranked above where Murphy went. Harden leads Murphy on all three bases: 2026 actuals 45.11 vs 41.60, projection plus blind spot 43.70 vs 37.89, this season 29.8 (5) vs 26.6 (5). My rest-of-season model puts B at +344 to +576 FP and never negative; A is -196 to +639. C (-399 to +174 on full samples) wins only by treating Edwards' 4 games (52.5) and Murphy's 5 games as decisive, the method the council rejected 19-0 on 29 Oct, and it ties up our only IR slot with Edwards from about 9 Nov until late December or January.",
+          "evidence": [
+            "data/processed/players_scored.csv: James Harden FP_ACT_PG 45.11, A_GP 70, FP_PROJ_PG_CORE 42.1 + PROJ_BLIND_SPOT_PG 1.60, P_GP 73",
+            "data/processed/players_scored.csv: Trey Murphy III FP_ACT_PG 41.60, A_GP 66, FP_PROJ_PG_CORE 36.76 + 1.13; Derrick White 38.35 (77 GP); RJ Barrett 32.98 (57 GP); Anthony Edwards 46.24 (61 GP); Kawhi Leonard 50.01 (65 GP)",
+            "docs/research/20261030-0600-trade-offers-form.md: Harden 29.8 (5), L7 29.8 (5); Murphy 26.6 (5), L7 29.2 (4); White 30.2 (4), L7 28.7 (3); Barrett 40.5 (4), L7 44.7 (3); Edwards 52.5 (4), L7 43.7 (3); Kawhi 40.0 (2), L7 31.0 (1)",
+            "docs/research/20261030-0600-trade-offers.md: Edwards no team timetable, 'up to two months' (Charania), possibly January (Krawczynski), ESPN est. 21 Dec; Kawhi 'at least 3-4 weeks' (Haynes), ESPN est. 23 Nov; Murphy usage 14.6% vs 22.9% (Pelicans On SI, 24 Oct); Barrett's L7 lift came with Kawhi out in 2 of 3 games",
+            "council/sessions/20261029-054500-edwards-for-cade.json: No 19-0; ballots rejected Edwards' 4-GP 52.5 as THIN and cited the IR lock until late December",
+            "council/sessions/20261020-051619-snow-time-trade.json: verdict 'Send Caleb Wilson + Paul George, get Donovan Clingan' (2-for-1 with a waiver refill)",
+            "council/sessions/20261008-0900-pick-27-board.json: Harden on coach's and archivist's boards, below Kawhi; 20261008-0920-pick-54-board.json: Murphy first choice at 54 (0.706)",
+            "docs/analysis/20261030-matchup2.md: waiver level Walter 34.0 (4), Achiuwa 34.4 (5), Powell 32.2 (5); 5 adds left this matchup"
+          ],
+          "concerns": "If Harden's 29.8 FP/g over 5 games in Cleveland, sharing the ball with Mitchell, is his real level (his 2026 line partly came at LAC before the in-season trade, offseason-impact §0), he sits below a 34 FP/g waiver player, and C's two open spots plus Edwards would have been worth more."
+        }
+      ],
+      "result": {
+        "winner": "James Harden",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.789,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "James Harden",
+            "weight": 15,
+            "confidence_weight": 9.26,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "tempo",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Derrick White + RJ Barrett",
+            "weight": 4,
+            "confidence_weight": 2.16,
+            "voters": [
+              "medic",
+              "scout"
+            ]
+          },
+          {
+            "option": "Anthony Edwards",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Withdraw all three",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    }
+  ],
+  "verdict": {
+    "answer": "James Harden",
+    "round": "opening",
+    "share": 0.789,
+    "majority": true,
+    "tiebreak": null
+  }
 }
