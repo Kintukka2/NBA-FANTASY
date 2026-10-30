@@ -243,6 +243,16 @@ With **Melbourne poopoo**, proposed by us, expires 31 Oct 21:59 UTC.
 | Trey Murphy III | we send | 5 | 32.4 / 32.5 | 26.6 | 29.2 (4) | 26.6 (5) | 26.6 (5) | 36.8 | −10.1 | Active |
 | Kawhi Leonard | we send | 2 | 26.0 / 32.8 | 40.0 | 31.0 (1) | 40.0 (2) | 40.0 (2) | 45.7 | −5.7 | **Out**, ESPN est. back 23 Nov |
 
+### Notes
+
+- **Derrick White** was probable with right hip synovitis on 27 Oct, then played 33 minutes. His lower minutes over 7 days come from 18 in the 134-99 blowout of Chicago, "largely a product of the lopsided score" [CBS Sports, 27 Oct](https://www.cbssports.com/fantasy/basketball/news/celtics-derrick-white-poor-showing-in-win/) [Heavy via Yahoo, 27 Oct](https://sports.yahoo.com/articles/celtics-announce-concerning-derrick-white-203451154.html).
+- **RJ Barrett** is healthy. He played 32 minutes in each of the two games without Kawhi Leonard (20 and 25 points), but Ja'Kobe Walter took Leonard's start. RotoWire names Barrett, Barnes and Graves for more usage while Leonard is out [AP, 28 Oct](https://mymotherlode.com/sports/basketball-game-stories/11262082/barrett-barnes-lead-the-raptors-in-a-129-99-romp-over-the-magic.html) [RotoWire](https://www.rotowire.com/basketball/player/rj-barrett-4767).
+- **James Harden, Trey Murphy III:** see their notes above.
+- **Anthony Edwards** had right knee arthroscopic debridement on 29 Oct. The team gave no timetable; KSTP was told "around two months" [KSTP, 29 Oct](https://kstp.com/minnesota-sports/timberwolves-star-anthony-edwards-officially-undergoes-successful-surgery/). *ESPN est.* 21 Dec.
+- **Kawhi Leonard** is re-evaluated about 3 Nov, and "at least 3-4 weeks" per Chris Haynes [Yardbarker, 29 Oct](https://www.yardbarker.com/nba/articles/worrisome_update_in_toronto_kawhi_leonard_sidelined_3_4_weeks_as_knee_swelling_worsens/s1_17810_44489535). *ESPN est.* 23 Nov.
+- **Fred VanVleet** sits one game of each back-to-back early in the season [CBS Sports, 20 Oct](https://www.cbssports.com/fantasy/basketball/news/rockets-fred-vanvleet-to-miss-back-to-backs/).
+- **Edwards for Cade** (proposed to us, expires 30 Oct 11:20 UTC): the council voted No on 29 Oct (`council/sessions/20261029-054500-edwards-for-cade.json`). The three offers we proposed go to the council today (`council/sessions/20261030-060000-trade-offers.json`).
+
 ## Sources
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-10-30 05:58 UTC.
@@ -278,3 +288,10 @@ With **Melbourne poopoo**, proposed by us, expires 31 Oct 21:59 UTC.
   - [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/cavaliers-james-harden-drops-24-points-in-loss/)
   - [CBS Sports game log](https://www.cbssports.com/nba/players/1992786/anthony-davis/game-log/)
   - [NBA.com, 6 Feb 2026](https://nba.com/news/wizards-mavericks-anthony-davis-trade)
+  - [CBS Sports, 27 Oct](https://www.cbssports.com/fantasy/basketball/news/celtics-derrick-white-poor-showing-in-win/)
+  - [Heavy via Yahoo, 27 Oct](https://sports.yahoo.com/articles/celtics-announce-concerning-derrick-white-203451154.html)
+  - [AP, 28 Oct](https://mymotherlode.com/sports/basketball-game-stories/11262082/barrett-barnes-lead-the-raptors-in-a-129-99-romp-over-the-magic.html)
+  - [RotoWire: RJ Barrett](https://www.rotowire.com/basketball/player/rj-barrett-4767)
+  - [KSTP, 29 Oct](https://kstp.com/minnesota-sports/timberwolves-star-anthony-edwards-officially-undergoes-successful-surgery/)
+  - [Yardbarker, 29 Oct](https://www.yardbarker.com/nba/articles/worrisome_update_in_toronto_kawhi_leonard_sidelined_3_4_weeks_as_knee_swelling_worsens/s1_17810_44489535)
+  - [CBS Sports, 20 Oct](https://www.cbssports.com/fantasy/basketball/news/rockets-fred-vanvleet-to-miss-back-to-backs/)
