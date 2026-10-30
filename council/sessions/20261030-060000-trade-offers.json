@@ -1,0 +1,11 @@
+{
+  "question": "We have three trade offers pending, all proposed by us, and all three send Trey Murphy III and Fred VanVleet. Only one can execute. Which one should we keep pending (withdrawing the other two), or should we withdraw all three? (A) Derrick White + RJ Barrett from Dr White Slong, for Murphy + VanVleet, expires 31 Oct 06:39 UTC. (B) James Harden from Team Nic Kerr, for VanVleet + Murphy, expires 31 Oct 06:41 UTC. (C) Anthony Edwards from Melbourne poopoo, for VanVleet + Murphy + Kawhi Leonard, expires 31 Oct 21:59 UTC.",
+  "type": "selection",
+  "options": ["Derrick White + RJ Barrett", "James Harden", "Anthony Edwards", "Withdraw all three"],
+  "asked_at": "2026-10-30T06:00:00Z",
+  "taken": "council/taken.txt (110 players, rebuilt 2026-10-30 05:58 UTC)",
+  "constraints": ["The owner: Fred VanVleet is not a consideration in trades at all; give his value no weight either way."],
+  "research": null,
+  "form": "docs/research/20261030-0600-trade-offers-form.md",
+  "rounds": []
+}
