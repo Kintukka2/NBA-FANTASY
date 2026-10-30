@@ -69,17 +69,14 @@ Zion Williamson
 RJ Barrett
 Caleb Wilson
 Joel Embiid
-Rudy Gobert
 Alex Sarr
 Ja Morant
 Brandin Podziemski
 Ivica Zubac
-Ausar Thompson
 Derik Queen
 Walker Kessler
 DeMar DeRozan
 Jaden McDaniels
-Keegan Murray
 Kyrie Irving
 OG Anunoby
 Damian Lillard
@@ -95,7 +92,6 @@ Miles Bridges
 Yaxel Lendeborg
 Andrew Nembhard
 Zach LaVine
-Anthony Black
 Davion Mitchell
 Fred VanVleet
 Jabari Smith Jr.
@@ -109,5 +105,8 @@ Ayo Dosunmu
 CJ McCollum
 Julian Champagnie
 Kris Dunn
-Peyton Watson
 Toumani Camara
+AJ Dybantsa
+Derrick Jones Jr.
+Onyeka Okongwu
+Tari Eason
