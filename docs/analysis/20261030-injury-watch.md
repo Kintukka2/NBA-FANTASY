@@ -10,6 +10,38 @@
 - **Games** is games left this week (26 Oct–01 Nov) / next week (02 Nov–08 Nov).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
+## Shortlist
+
+The droppable slot is CJ McCollum's (25.2 FP/g, L7 24.2 (5)). Our five-lowest floor is 35.5, which only the first two below clear in the games without the absentee.
+
+| Player | NBA | Opening and its window | FP/g without | Season | L7 / L15 / L30 | Min without | Games this / next week |
+|---|---|---|---:|---:|---|---:|---|
+| **Ja'Kobe Walter** | TOR | Kawhi Leonard: re-evaluated about 3 Nov, "at least 3-4 weeks" (Haynes); *ESPN est.* 23 Nov | 40.0 | 34.0 | 35.0 (3) / 34.0 (4) / 34.0 (4) | 29.5 | 2 / 3 |
+| **Precious Achiuwa** | SAC | Keegan Murray (reassessed about 5–9 Nov; *ESPN est.* 6 Nov) and Raynaud (about 9 Nov; *ESPN est.* 10 Nov) | 34.4 | 34.4 | 34.2 (4) / 34.4 (5) / 34.4 (5) | 29.8 | 1 / 4 |
+| **Aaron Wiggins** | ATL | Bench role not tied to Gueye's absence, so it lasts | 30.8 | 30.8 | 31.4 (5) / 30.8 (6) / 30.8 (6) | 26.3 | 1 / 4 |
+| **Isaiah Hartenstein** | OKC | Short-term: Holmgren is day-to-day for Saturday, no timetable reported; *ESPN est.* 31 Oct | 40.5 | 29.6 | 32.5 (4) / 29.6 (5) / 29.6 (5) | 26.0 | 1 / 4 |
+| **Jaxson Hayes** | UTAH | Short-term: Nurkic is re-evaluated about 4 Nov; *ESPN est.* 4 Nov | 30.0 | 34.2 | 30.7 (3) / 34.2 (4) / 34.2 (4) | 37.0 | 1 / 4 |
+
+- **Walter** is the add whose role outlasts this week. He starts while Leonard is out, and Leonard's absence runs into mid-to-late November. That cuts both ways for us: Leonard is our player.
+- **Achiuwa** has four games next week and a start until Murray returns, likely in the second half of next week.
+- **Back-soon stash:** **Nic Claxton** (CHI; projected 30.3, 2026 33.3; *ESPN est.* 4 Nov) is expected back at practice next week and takes the center job back. Our IR slot holds Duren, so a stash costs a bench spot.
+- None of the five shows an L7 5+ FP/g off its season average, except Hartenstein's 40.5 in the games without the absentees, which rests on 2 games.
+
+## Since the last Injury Watch
+
+Against `docs/analysis/20261029-injury-watch.md`.
+
+- **New long absence:** Egor Demin (BKN, right leg bone bruise, re-evaluated about 5 Nov; *ESPN est.* 7 Nov).
+- **No longer long absences:** ESPN now expects Keegan Murray (6 Nov) and Dylan Cardwell (6 Nov) back within 7 days.
+- **Back from injury:** Luka Doncic (Team Nic Kerr) has left ESPN's injury feed.
+- **New in the feed:**
+  - Ja Morant (Team Nic Kerr) left Thursday's game with a left hamstring injury; no timetable reported [ClutchPoints, 30 Oct](https://clutchpoints.com/nba/portland-trail-blazers/blazers-news-ja-morant-exits-grizzlies-game-hamstring-injury). *ESPN est.* 31 Oct.
+  - Dejounte Murray (ours): personal, back Saturday at the earliest.
+  - Jaylen Brown (Snow Time Lakers) and Andrew Nembhard (Matt Wright's Foxies) are day-to-day: no timetable reported, *ESPN est.* in the table below.
+- **Pickups:**
+  - Joined: Precious Achiuwa.
+  - Left: Derrick Jones Jr., now rostered by Lauri Birds. De'Andre Hunter and Sidy Cissoko left once Keegan Murray stopped counting as a long absence.
+
 ## Pickups for us
 
 Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
@@ -40,6 +72,18 @@ Our five lowest current FP/g: Desmond Bane 24.0 (L7 23.0), CJ McCollum 25.2 (L7 
 | **Trey Lyles** | MIN | Anthony Edwards (21 Dec), Donte DiVincenzo (02 Apr) | 1 | 22.0 | +8.0 | **22.0** | 13.2 | 16.5 (4) | 13.2 (5) | 13.2 (5) | Free agent | 0% | 2 / 4 |
 | **Jared McCain** | OKC | Jalen Williams (02 Mar), Cason Wallace (02 Mar); also out: Chet Holmgren (31 Oct), Nikola Topic (04 Nov) | 2 | 29.5 | +9.2 | **22.0** | 16.2 | 11.0 (4) | 16.2 (5) | 16.2 (5) | Free agent | 36% | 1 / 4 |
 | **Allen Graves** | TOR | Kawhi Leonard (23 Nov) | 2 | 19.0 | +6.5 | **21.5** | 20.2 | 17.7 (3) | 20.2 (4) | 20.2 (4) | Free agent | 1% | 2 / 3 |
+
+### Notes
+
+- **Isaiah Hartenstein** starts and has three straight double-doubles, the last 10 and 14 in 26 minutes at Dallas on 28 Oct [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/thunders-isaiah-hartenstein-double-double-in-wednesdays-loss/). The bump could end within days: Chet Holmgren (patellar tendinitis) is day-to-day for Saturday at Houston, with no timetable reported [FanDuel Research, 29 Oct](https://www.fanduel.com/research/nba/player-news/injuries/chet-holmgren-dtd-october-31-2026-against-rockets-knee).
+- **Ja'Kobe Walter** has started both games since Kawhi Leonard went out. Rajakovic said he "will definitely get more playing time" but would not commit to starting him every night [Last Word On Basketball, 28 Oct](https://lastwordonsports.com/basketball/2026/10/28/raptors-starting-spot/). RotoWire calls the start temporary until Leonard is back [CBS Sports, 25 Oct](https://www.cbssports.com/fantasy/basketball/news/raptors-jakobe-walter-thrives-in-starting-role/). Leonard is re-evaluated about 3 Nov and reported out "at least 3-4 weeks" [Yardbarker, 29 Oct](https://www.yardbarker.com/nba/articles/worrisome_update_in_toronto_kawhi_leonard_sidelined_3_4_weeks_as_knee_swelling_worsens/s1_17810_44489535).
+- **Precious Achiuwa** made his third straight start at power forward in place of Keegan Murray. He set season highs on 29 Oct: 24 points (12-of-17), 9 rebounds and 3 steals in 41 minutes [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/precious-achiuwa-scores-season-high-24-points). Murray's reassessment, about 5–9 Nov, should end the start [SactownSports, 26 Oct](https://sactownsports.com/nba/sacramento-kings/kings-raynaud-cardwell-murray). Sacramento plays four games next week.
+- **Tristan da Silva** is still the sixth man; Anthony Black took the open start. He scored 20 in 31 minutes at Toronto [Orlando Sentinel via Yahoo, 29 Oct](https://sports.yahoo.com/articles/minus-banchero-suggs-magic-fall-022900015.html).
+- **Aaron Wiggins** comes off the bench and had a season-high 20 against Cleveland on 29 Oct. No source ties his role to Gueye, a big who has not played, so it should last [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/aaron-wiggins-scores-20-points-off-bench-vs-cavs).
+- **Daniss Jenkins** is a reserve. His one start filled in for Ausar Thompson, and Isaiah Joe's return, not Duren's, is the bigger threat to his minutes [PistonPowered, 28 Oct](https://pistonpowered.com/daniss-jenkins-creating-pistons-position-battle-must-improve-win) [Yahoo Sports, 28 Oct](https://sports.yahoo.com/articles/detroit-pistons-injury-report-delivers-175551062.html).
+- **Jaxson Hayes** is Utah's starting center (37 minutes on 28 Oct). His value is "tied to Nurkic's return": Nurkic is re-evaluated about 4 Nov [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/jaxson-hayes-shoulder-upgraded-to-available) [Deseret News, 27 Oct](https://deseret.com/sports/2026/10/27/utah-jazz-injury-update-jaren-jackson-jr-lauri-markkanen).
+- **Christian Braun** and **Duncan Robinson** are settled starters whose roles do not depend on Strawther or Duren. Duren's minutes went to Paul Reed [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/nuggets-christian-braun-goes-for-15-points-wednesday/) [SI Pistons, c. 29 Oct](https://www.si.com/nba/pistons/onsi/stock-up-stock-down-report-from-pistons-first-five-games-01m646yggprc).
+- **Brice Sensabaugh** is the backup shooting guard (16 points in 18 minutes). Hardy trusted him in overtime [Salt Lake Tribune, 29 Oct](https://www.sltrib.com/sports/jazz/2026/10/29/why-darryn-peterson-sat-out/).
 
 ## Injured and available, back soon
 
@@ -72,11 +116,41 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 | **T.J. McConnell** | IND | Right Hamstring Strain | 02 Nov | 3 | — | — | — | — | 24.4 | 25.5 | Free agent | 9% | 2 / 3 |
 | **Oso Ighodaro** | PHX | Oblique Strain | 30 Oct | 0 | 18.0 | 18.0 (1) | 18.0 (1) | 18.0 (1) | 25.3 | 22.4 | Free agent | 15% | 1 / 4 |
 
+### Notes
+
+- **Yves Missi:** no timetable reported; still out 29 Oct [CBS Sports, 24 Oct](https://www.cbssports.com/fantasy/basketball/news/pelicans-yves-missi-without-timetable-for-return/).
+- **Jusuf Nurkic:** re-evaluated about 4 Nov, and back at practice "in some capacity" [SI, 25 Oct](https://www.si.com/nba/jazz/onsi/jazz-vs-lakers-injury-report-latest-updates-on-jusuf-nurkic-others).
+- **Jalen Suggs:** re-evaluated about 9 Nov [Yahoo Sports, 26 Oct](https://sports.yahoo.com/articles/jalen-suggs-injury-magic-announce-195344477.html).
+- **Jalen Smith:** a new left finger sprain; questionable Friday at Boston. He has started all five games at center [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/jalen-smith-finger-questionable-friday-vs-bos).
+- **Nic Claxton:** expected to rejoin practice next week and likely to travel on the trip that starts Friday. He takes the center job back once ready [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/nic-claxton-hamstring-remains-out).
+- **Coby White:** "remains without a timeline" per Charles Lee on 26 Oct; nothing newer [RotoWire, 26 Oct](https://www.rotowire.com/basketball/headlines/coby-white-injury-wont-return-during-road-trip-536205).
+- **Santi Aldama:** doubtful Friday; his next chance is Monday, so ESPN's 30 Oct is early [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/santi-aldama-knee-doubtful-vs-houston).
+- **Keegan Murray:** left ankle capsulitis, reassessed about 5–9 Nov. He is on waivers in our league, not waived by the Kings [SactownSports, 26 Oct](https://sactownsports.com/nba/sacramento-kings/kings-raynaud-cardwell-murray).
+- **Naji Marshall:** questionable Friday with an illness [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/mavericks-naji-marshall-questionable-with-illness/).
+- **Robert Williams III:** rested his left knee on 29 Oct; his next chance is Saturday [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/robert-williams-knee-officially-out-vs-memphis).
+- **Alex Caruso:** day-to-day for Saturday at Houston; no timetable reported [FanDuel Research, 29 Oct](https://www.fanduel.com/research/nba/player-news/injuries/alex-caruso-dtd-october-31-2026-against-rockets-ankle).
+- **Reed Sheppard:** back soreness, out Friday; his next chance is Saturday [RotoWire, 29 Oct](https://www.rotowire.com/basketball/headlines/reed-sheppard-injury-ruled-out-for-friday-536734).
+- **Tobias Harris:** "getting closer", but the Spurs will be "conservative"; no timetable reported [San Antonio Express-News via Yahoo, 29 Oct](https://sports.yahoo.com/articles/spurs-harris-reaches-benchmark-recovery-132710180.html).
+- **Egor Demin:** a right leg bone bruise, re-evaluated about 5 Nov; his earliest game is 7 Nov [Hoops Rumors, 29 Oct](https://www.hoopsrumors.com/2026/10/nets-demin-bone-bruise-out-at-least-one-week.html).
+- **Ziaire Williams:** questionable Friday; Redick called his absence "overly cautious" [Heavy, 29 Oct](https://heavy.com/sports/nba/los-angeles-lakers/injury-report-vs-warriors-october-30/).
+- **Maxime Raynaud:** checked again about 9 Nov. **Dylan Cardwell:** re-examined about 2 Nov [Hoops Rumors, 26 Oct](https://www.hoopsrumors.com/2026/10/kings-announce-injury-updates-on-murray-raynaud-cardwell.html).
+- **Dereck Lively II:** ruled out again Friday, with no timetable reported; ESPN's 2 Nov looks optimistic [Dallas Sports Journal, 29 Oct](https://dallassportsjournal.com/mavericks-injury-report-rockets-caleb-martin-naji-marshall-aldama/).
+- **Cameron Johnson:** upgraded to questionable for Friday at Phoenix [SI Nuggets, 29 Oct](https://www.si.com/nba/nuggets/onsi/nuggets-update-cameron-johnson-injury-status-before-suns-game).
+- **Bradley Beal:** out at least another week as of 28 Oct, and not cleared for 5-on-5 [Basketnews, 29 Oct](https://basketnews.com/news-258395-la-clippers-provide-new-huge-injury-updates-on-brandon-ingram-others.html).
+- **T.J. McConnell:** "doing better" but out Friday at Miami [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-mcconnell-hamstring-doing-better).
+- **Oso Ighodaro:** questionable Friday and "trending in a good direction"; a start is a "big possibility" [Suns On SI via Yahoo, 29 Oct](https://sports.yahoo.com/articles/suns-center-trending-play-vs-203029020.html).
+
 ## Our injured players
 
 - **Jalen Duren** (DET): Out, Right Hamstring Strain; ESPN est. back 09 Nov.
 - **Dejounte Murray** (NO): Day-To-Day, Personal; ESPN est. back 31 Oct.
 - **Kawhi Leonard** (TOR): Out, Left Knee Inflammation; ESPN est. back 23 Nov.
+
+### Notes
+
+- **Jalen Duren:** out at least two weeks from 25 Oct and re-evaluated about 6–8 Nov; no progress update since [CBS Detroit / AP, 25 Oct](https://www.cbsnews.com/detroit/news/pistons-center-jalen-duren-strained-hamstring/).
+- **Dejounte Murray:** not an injury. He missed Thursday for the birth of his son and is a game-time decision for Saturday against Atlanta; no timetable reported [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/pelicans-dejounte-murray-late-scratch-thursday/) [RotoBaller, 29 Oct](https://www.rotoballer.com/player-news/dejounte-murray-out-thursday-for-birth-of-son/1978907).
+- **Kawhi Leonard:** re-evaluated about 3 Nov per the Raptors, and "at least 3-4 weeks" per Chris Haynes [Yahoo Sports, 27 Oct](https://sports.yahoo.com/articles/kawhi-leonard-injury-latest-news-160039647.html) [Yardbarker, 29 Oct](https://www.yardbarker.com/nba/articles/worrisome_update_in_toronto_kawhi_leonard_sidelined_3_4_weeks_as_knee_swelling_worsens/s1_17810_44489535).
 
 ## Who takes the minutes, team by team
 
@@ -90,6 +164,8 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 | Jordan Miller | Left Shoulder Surgery | 02 Mar | 22.0 | 20.4 | Free agent |
 
 Last 4 games: 4 game(s) this season, all without them; compared with ESPN's projection.
+
+**Reported timeline:** Ingram (partially torn right Achilles, light on-court work only), Strus (partial plantar fascia tear) and Beal (right knee inflammation, not cleared for 5-on-5) stay in LA and are out at least another week as of 28 Oct, no date set; Jordan Miller (rotator cuff surgery 26 Aug) is re-evaluated about late Feb [Basketnews, 29 Oct](https://basketnews.com/news-258395-la-clippers-provide-new-huge-injury-updates-on-brandon-ingram-others.html) [iHeart, 30 Oct](https://sportssd.iheart.com/content/2026-10-30-clippers-vs-timberwolves-injury-report-oct-30/) [Hoops Rumors, 26 Aug](https://www.hoopsrumors.com/2026/08/clippers-jordan-miller-out-at-least-six-months-following-shoulder-surgery.html).
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
@@ -108,6 +184,8 @@ Last 4 games: 4 game(s) this season, all without them; compared with ESPN's proj
 
 Last 5 games: 5 game(s) this season, all without them; compared with ESPN's projection.
 
+**Reported timeline:** Butler (torn ACL, Jan 2026): no official timeline, the team hopes for early 2027 [CBS Sports, 2 Oct](https://www.cbssports.com/fantasy/basketball/news/warriors-jimmy-butler-still-months-away-from-returning/). Porzingis: out indefinitely with a private health issue and not with the team; there is "an extreme level of pessimism" that he plays for Golden State again [Basketnews, 28 Oct](https://basketnews.com/news-258337-warriors-reportedly-extremely-pessimistic-on-porzingis-playing-for-them-again.html). Moody (patellar tendon): a December–January return reported on 16 Oct [CBS Sports, 16 Oct](https://www.cbssports.com/fantasy/basketball/news/warriors-moses-moody-could-return-by-december/).
+
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
 | Yaxel Lendeborg | SF/PF | 5 | 33.6 | +9.0 | 5 | **43.8** | 23.5 | 49.0 (4) | 43.8 (5) | 43.8 (5) | **us** | 87% |
@@ -125,6 +203,8 @@ Last 5 games: 5 game(s) this season, all without them; compared with ESPN's proj
 | Johnny Furphy | Right Knee Surgery | 02 Jan | 18.3 | 14.2 | Free agent |
 
 Last 5 games: 1 game(s) without them, 4 with them.
+
+**Reported timeline:** Haliburton (mild left hamstring strain): week-to-week, next update about 11 Nov [Hoops Wire, 28 Oct](https://hoopswire.com/pacers-tyrese-haliburton-unlikely-to-return-before-two-week-injury-update/). Sheppard (meniscus repair): out "months" [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-ben-sheppard-knee-out-for-months). Furphy (ACL): "middle of the year" [Yahoo Sports, 25 Sep](https://sports.yahoo.com/articles/pacers-johnny-furphy-hit-benchmarks-083112900.html). *Also out:* Zubac and McConnell are both out Friday at Miami; neither has a timetable reported [CBS Sports, 29 Oct](https://cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-still-out-with-ankle-sprain) [Heat Nation, 29 Oct](https://heatnation.com/team-news/heat-vs-pacers-injury-report-haliburton-zubac-out-for-nba-cup-opener/).
 
 Also out in those games, so part of the gain is theirs: Ivica Zubac (left ankle sprain; ESPN est. 01 Nov), T.J. McConnell (right hamstring strain; ESPN est. 02 Nov).
 
@@ -145,6 +225,8 @@ Also out in those games, so part of the gain is theirs: Ivica Zubac (left ankle 
 
 Last 4 games: 1 game(s) without them, 3 with them.
 
+**Reported timeline:** Banchero (low-grade right high ankle sprain): four to six weeks from 23 Oct, about 20 Nov to 4 Dec [Yahoo Sports, 24 Oct](https://sports.yahoo.com/nba/breaking-news/article/magics-paolo-banchero-suffers-high-ankle-sprain-in-loss-to-timberwolves-reportedly-could-be-out-4-6-weeks-173753794.html). Suggs (mild right knee bone bruise): re-evaluated about 9 Nov [Yahoo Sports, 26 Oct](https://sports.yahoo.com/articles/jalen-suggs-injury-magic-announce-195344477.html).
+
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
 | Tristan da Silva | SF/PF | 1 | 31.0 | +3.0 | 0 | **32.0** | 26.0 | 26.7 (3) | 27.5 (4) | 27.5 (4) | Free agent | 8% |
@@ -159,6 +241,8 @@ Last 4 games: 1 game(s) without them, 3 with them.
 | Donte DiVincenzo | Right Achilles Surgery | 02 Apr | 30.5 | 29.4 | Free agent |
 
 Last 5 games: 1 game(s) without them, 4 with them.
+
+**Reported timeline:** Edwards had a right knee arthroscopic debridement on Thu 29 Oct at Mayo Clinic. The team expects a full recovery but has given no official timetable. KSTP was told "around two months"; The Athletic's Jon Krawczynski says it could be more, possibly early-to-mid January [KSTP, 29 Oct](https://kstp.com/minnesota-sports/timberwolves-star-anthony-edwards-officially-undergoes-successful-surgery/) [Yahoo Sports, 29 Oct](https://sports.yahoo.com/articles/anthony-edwards-undergoes-arthroscopic-knee-185106176.html). DiVincenzo (Achilles): targeting late in the season [RotoWire, 5 Oct](https://www.rotowire.com/basketball/headlines/donte-divincenzo-injury-targeting-late-season-return-533214).
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
@@ -176,6 +260,8 @@ Last 5 games: 1 game(s) without them, 4 with them.
 | Cason Wallace | Left Shoulder | 02 Mar | 26.6 | 18.7 | Free agent |
 
 Last 5 games: 2 game(s) without them, 3 with them.
+
+**Reported timeline:** Jalen Williams (fibula fracture, surgery 28 Oct): re-evaluated "before the end of the regular season" [Yahoo Sports, 28 Oct](https://sports.yahoo.com/nba/breaking-news/article/thunders-jalen-williams-has-surgery-on-ankle-fractured-fibula-will-be-reevaluated-before-end-of-season-011001403.html). Wallace (labrum, surgery pending): five to six months reported [ClutchPoints, 26 Oct](https://clutchpoints.com/nba/oklahoma-city-thunder/thunder-news-cason-wallace-miss-significant-time-shoulder-injury). *Also out:* Holmgren (patellar tendinitis) is day-to-day and a game-time decision for Saturday at Houston, with no timetable reported [FanDuel Research, 29 Oct](https://www.fanduel.com/research/nba/player-news/injuries/chet-holmgren-dtd-october-31-2026-against-rockets-knee); Topic (back surgery) is week-to-week, with no timetable reported [CBS Sports, 27 Oct](https://www.cbssports.com/fantasy/basketball/news/thunders-nikola-topic-wont-play-wednesday/).
 
 Also out in those games, so part of the gain is theirs: Chet Holmgren (right knee; ESPN est. 31 Oct), Nikola Topic (back; ESPN est. 04 Nov).
 
@@ -196,6 +282,8 @@ Also out in those games, so part of the gain is theirs: Chet Holmgren (right kne
 
 Last 5 games: 5 game(s) this season, all without them; compared with ESPN's projection.
 
+**Reported timeline:** Raynaud (patellar subluxation): checked again about 9 Nov. Cardwell (calf): re-examined about 2 Nov [Hoops Rumors, 26 Oct](https://www.hoopsrumors.com/2026/10/kings-announce-injury-updates-on-murray-raynaud-cardwell.html). Simmons (Achilles surgery 20 Oct): expected to miss the season [NBC Sports, 18 Oct](https://www.nbcsports.com/nba/news/kings-ben-simmons-suffers-torn-achilles-at-practice-sunday-will-miss-entire-season).
+
 Also out in those games, so part of the gain is theirs: Dylan Cardwell (left calf strain; ESPN est. 06 Nov).
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
@@ -215,6 +303,8 @@ Also out in those games, so part of the gain is theirs: Dylan Cardwell (left cal
 
 Last 5 games: 1 game(s) without them, 4 with them.
 
+**Reported timeline:** Watkins: out after ACL surgery announced 30 Jul [ESPN](https://www.espn.com/nba/team/injuries/_/name/was/salary). Champagnie and Tre Johnson: no timetable reported.
+
 Also out in those games, so part of the gain is theirs: Tre Johnson (right achilles soreness; ESPN est. 30 Oct).
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
@@ -229,6 +319,8 @@ Also out in those games, so part of the gain is theirs: Tre Johnson (right achil
 | Kawhi Leonard | Left Knee Inflammation | 23 Nov | 32.8 | 40.0 | **us** |
 
 Last 4 games: 2 game(s) without them, 2 with them.
+
+**Reported timeline:** Kawhi Leonard (left knee swelling, MRI clean): the Raptors re-evaluate him about 3 Nov. Chris Haynes reports he is "expected to be sidelined for at least 3-4 weeks", which means mid-to-late November [Yahoo Sports, 27 Oct](https://sports.yahoo.com/articles/kawhi-leonard-injury-latest-news-160039647.html) [Yardbarker, 29 Oct](https://www.yardbarker.com/nba/articles/worrisome_update_in_toronto_kawhi_leonard_sidelined_3_4_weeks_as_knee_swelling_worsens/s1_17810_44489535).
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
@@ -255,6 +347,8 @@ No game yet without them. Same-position teammates by current minutes: Keon Ellis
 
 Last 5 games: 1 game(s) without them, 4 with them.
 
+**Reported timeline:** Jackson Jr. (torn right MCL, no surgery): at least six weeks, six to eight reported [Salt Lake Tribune, 27 Oct](https://www.sltrib.com/sports/jazz/2026/10/27/utah-jazz-forward-jaren-jackson-jr/). *Also out:* Markkanen (right wrist sprain) is a game-time decision for Saturday against Portland [Basketnews, 29 Oct](https://basketnews.com/news-258391-will-lauri-markkanen-play-jazz-announce-final-status-vs-spurs.html); Nurkic (plantar plate) is re-evaluated about 4 Nov and back at practice "in some capacity" [SI, 25 Oct](https://www.si.com/nba/jazz/onsi/jazz-vs-lakers-injury-report-latest-updates-on-jusuf-nurkic-others).
+
 Also out in those games, so part of the gain is theirs: Lauri Markkanen (right wrist; ESPN est. 31 Oct), Jusuf Nurkic (right foot strain; ESPN est. 04 Nov).
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
@@ -273,6 +367,8 @@ Also out in those games, so part of the gain is theirs: Lauri Markkanen (right w
 
 Last 5 games: 3 game(s) without them, 2 with them.
 
+**Reported timeline:** Duren (strained right hamstring, 23 Oct): out at least two weeks, re-evaluated about 6–8 Nov; no progress update since [CBS Detroit / AP, 25 Oct](https://www.cbsnews.com/detroit/news/pistons-center-jalen-duren-strained-hamstring/).
+
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
 | Cade Cunningham | PG | 3 | 36.0 | +3.5 | 3 | **50.3** | 39.0 | 47.5 (4) | 45.8 (5) | 45.8 (5) | **us** | 100% |
@@ -289,6 +385,8 @@ Last 5 games: 3 game(s) without them, 2 with them.
 
 Last 4 games: 4 game(s) this season, all without them; compared with ESPN's projection.
 
+**Reported timeline:** Sharpe (torn right meniscus, surgery late Aug): re-evaluated about 27 Feb [SI](https://www.si.com/nba/trailblazers/onsi/portland-trail-blazers-shaedon-sharpe-undergoes-surgery-whats-next).
+
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
 | Sidy Cissoko | SG | 4 | 22.5 | +6.3 | 0 | **19.8** | 10.6 | 21.7 (3) | 19.8 (4) | 19.8 (4) | Free agent | 2% |
@@ -302,6 +400,8 @@ Last 4 games: 4 game(s) this season, all without them; compared with ESPN's proj
 
 Last 3 games: 3 game(s) this season, all without them; compared with ESPN's projection.
 
+**Reported timeline:** Mark Williams (labrum surgery 10 Sep): a five-month minimum, around the All-Star break [Yahoo Sports, 26 Sep](https://sports.yahoo.com/articles/phoenix-suns-mark-williams-injury-152918092.html).
+
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
 | Jordan Goodwin | PG/SG | 3 | 19.7 | — | 0 | **24.0** | — | 29.5 (2) | 24.0 (3) | 24.0 (3) | Free agent | 1% |
@@ -314,6 +414,8 @@ Last 3 games: 3 game(s) this season, all without them; compared with ESPN's proj
 
 Last 4 games: 4 game(s) this season, all without them; compared with ESPN's projection.
 
+**Reported timeline:** Devin Carter (mononucleosis): rejoined the team 28 Oct but still unavailable; no timetable reported [Hoops Rumors, 28 Oct](https://www.hoopsrumors.com/2026/10/celtics-note-carter-pritchard-tatum-brown.html).
+
 No teammate has gained 3+ minutes in those games.
 
 ### DEN
@@ -323,6 +425,8 @@ No teammate has gained 3+ minutes in those games.
 | Julian Strawther | Left Knee Sprain | 29 Nov | 16.0 | 12.9 | Free agent |
 
 Last 4 games: 4 game(s) this season, all without them; compared with ESPN's projection.
+
+**Reported timeline:** Strawther (left knee sprain): re-evaluated about 29 Nov [NBC Sports, 18 Oct](https://www.nbcsports.com/nba/news/nuggets-wing-julian-strawther-out-indefinitely-due-to-left-knee-sprain). *Also out:* Spencer Jones (hamstrings) is ruled out again for Friday against Phoenix, with no firm timetable [Yahoo Sports / HoopsHype, 29 Oct](https://sports.yahoo.com/articles/cam-johnson-questionable-nuggets-tomorrow-001458305.html).
 
 Also out in those games, so part of the gain is theirs: Spencer Jones (hamstring; ESPN est. 02 Nov).
 
@@ -341,6 +445,8 @@ Also out in those games, so part of the gain is theirs: Spencer Jones (hamstring
 | Mouhamed Gueye | Left Foot Fracture | 20 Nov | 15.4 | 15.3 | Free agent |
 
 Last 6 games: 6 game(s) this season, all without them; compared with ESPN's projection.
+
+**Reported timeline:** Gueye (foot surgery 14 Jul): reassessment was due mid-Oct to mid-Nov; no result reported, and he was still out 29 Oct [Last Word on Sports, 29 Oct](https://lastwordonsports.com/basketball/2026/10/29/cavs-vs-hawks).
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
@@ -453,3 +559,72 @@ All 96 players in ESPN's injury feed, longest expected absence first.
 ## Sources
 
 - ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-10-30 05:58 UTC.
+- News, opened and checked 30 Oct 2026:
+  - [ClutchPoints, 30 Oct](https://clutchpoints.com/nba/portland-trail-blazers/blazers-news-ja-morant-exits-grizzlies-game-hamstring-injury)
+  - [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/thunders-isaiah-hartenstein-double-double-in-wednesdays-loss/)
+  - [FanDuel Research, 29 Oct](https://www.fanduel.com/research/nba/player-news/injuries/chet-holmgren-dtd-october-31-2026-against-rockets-knee)
+  - [Last Word On Basketball, 28 Oct](https://lastwordonsports.com/basketball/2026/10/28/raptors-starting-spot/)
+  - [CBS Sports, 25 Oct](https://www.cbssports.com/fantasy/basketball/news/raptors-jakobe-walter-thrives-in-starting-role/)
+  - [Yardbarker, 29 Oct](https://www.yardbarker.com/nba/articles/worrisome_update_in_toronto_kawhi_leonard_sidelined_3_4_weeks_as_knee_swelling_worsens/s1_17810_44489535)
+  - [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/precious-achiuwa-scores-season-high-24-points)
+  - [SactownSports, 26 Oct](https://sactownsports.com/nba/sacramento-kings/kings-raynaud-cardwell-murray)
+  - [Orlando Sentinel via Yahoo, 29 Oct](https://sports.yahoo.com/articles/minus-banchero-suggs-magic-fall-022900015.html)
+  - [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/aaron-wiggins-scores-20-points-off-bench-vs-cavs)
+  - [PistonPowered, 28 Oct](https://pistonpowered.com/daniss-jenkins-creating-pistons-position-battle-must-improve-win)
+  - [Yahoo Sports, 28 Oct](https://sports.yahoo.com/articles/detroit-pistons-injury-report-delivers-175551062.html)
+  - [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/jaxson-hayes-shoulder-upgraded-to-available)
+  - [Deseret News, 27 Oct](https://deseret.com/sports/2026/10/27/utah-jazz-injury-update-jaren-jackson-jr-lauri-markkanen)
+  - [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/nuggets-christian-braun-goes-for-15-points-wednesday/)
+  - [SI Pistons, c. 29 Oct](https://www.si.com/nba/pistons/onsi/stock-up-stock-down-report-from-pistons-first-five-games-01m646yggprc)
+  - [Salt Lake Tribune, 29 Oct](https://www.sltrib.com/sports/jazz/2026/10/29/why-darryn-peterson-sat-out/)
+  - [CBS Sports, 24 Oct](https://www.cbssports.com/fantasy/basketball/news/pelicans-yves-missi-without-timetable-for-return/)
+  - [SI, 25 Oct](https://www.si.com/nba/jazz/onsi/jazz-vs-lakers-injury-report-latest-updates-on-jusuf-nurkic-others)
+  - [Yahoo Sports, 26 Oct](https://sports.yahoo.com/articles/jalen-suggs-injury-magic-announce-195344477.html)
+  - [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/jalen-smith-finger-questionable-friday-vs-bos)
+  - [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/nic-claxton-hamstring-remains-out)
+  - [RotoWire, 26 Oct](https://www.rotowire.com/basketball/headlines/coby-white-injury-wont-return-during-road-trip-536205)
+  - [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/santi-aldama-knee-doubtful-vs-houston)
+  - [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/mavericks-naji-marshall-questionable-with-illness/)
+  - [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/robert-williams-knee-officially-out-vs-memphis)
+  - [FanDuel Research, 29 Oct](https://www.fanduel.com/research/nba/player-news/injuries/alex-caruso-dtd-october-31-2026-against-rockets-ankle)
+  - [RotoWire, 29 Oct](https://www.rotowire.com/basketball/headlines/reed-sheppard-injury-ruled-out-for-friday-536734)
+  - [San Antonio Express-News via Yahoo, 29 Oct](https://sports.yahoo.com/articles/spurs-harris-reaches-benchmark-recovery-132710180.html)
+  - [Hoops Rumors, 29 Oct](https://www.hoopsrumors.com/2026/10/nets-demin-bone-bruise-out-at-least-one-week.html)
+  - [Heavy, 29 Oct](https://heavy.com/sports/nba/los-angeles-lakers/injury-report-vs-warriors-october-30/)
+  - [Hoops Rumors, 26 Oct](https://www.hoopsrumors.com/2026/10/kings-announce-injury-updates-on-murray-raynaud-cardwell.html)
+  - [Dallas Sports Journal, 29 Oct](https://dallassportsjournal.com/mavericks-injury-report-rockets-caleb-martin-naji-marshall-aldama/)
+  - [SI Nuggets, 29 Oct](https://www.si.com/nba/nuggets/onsi/nuggets-update-cameron-johnson-injury-status-before-suns-game)
+  - [Basketnews, 29 Oct](https://basketnews.com/news-258395-la-clippers-provide-new-huge-injury-updates-on-brandon-ingram-others.html)
+  - [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-mcconnell-hamstring-doing-better)
+  - [Suns On SI via Yahoo, 29 Oct](https://sports.yahoo.com/articles/suns-center-trending-play-vs-203029020.html)
+  - [CBS Detroit / AP, 25 Oct](https://www.cbsnews.com/detroit/news/pistons-center-jalen-duren-strained-hamstring/)
+  - [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/pelicans-dejounte-murray-late-scratch-thursday/)
+  - [RotoBaller, 29 Oct](https://www.rotoballer.com/player-news/dejounte-murray-out-thursday-for-birth-of-son/1978907)
+  - [Yahoo Sports, 27 Oct](https://sports.yahoo.com/articles/kawhi-leonard-injury-latest-news-160039647.html)
+  - [iHeart, 30 Oct](https://sportssd.iheart.com/content/2026-10-30-clippers-vs-timberwolves-injury-report-oct-30/)
+  - [Hoops Rumors, 26 Aug](https://www.hoopsrumors.com/2026/08/clippers-jordan-miller-out-at-least-six-months-following-shoulder-surgery.html)
+  - [CBS Sports, 2 Oct](https://www.cbssports.com/fantasy/basketball/news/warriors-jimmy-butler-still-months-away-from-returning/)
+  - [Basketnews, 28 Oct](https://basketnews.com/news-258337-warriors-reportedly-extremely-pessimistic-on-porzingis-playing-for-them-again.html)
+  - [CBS Sports, 16 Oct](https://www.cbssports.com/fantasy/basketball/news/warriors-moses-moody-could-return-by-december/)
+  - [Hoops Wire, 28 Oct](https://hoopswire.com/pacers-tyrese-haliburton-unlikely-to-return-before-two-week-injury-update/)
+  - [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-ben-sheppard-knee-out-for-months)
+  - [Yahoo Sports, 25 Sep](https://sports.yahoo.com/articles/pacers-johnny-furphy-hit-benchmarks-083112900.html)
+  - [CBS Sports, 29 Oct](https://cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-still-out-with-ankle-sprain)
+  - [Heat Nation, 29 Oct](https://heatnation.com/team-news/heat-vs-pacers-injury-report-haliburton-zubac-out-for-nba-cup-opener/)
+  - [Yahoo Sports, 24 Oct](https://sports.yahoo.com/nba/breaking-news/article/magics-paolo-banchero-suffers-high-ankle-sprain-in-loss-to-timberwolves-reportedly-could-be-out-4-6-weeks-173753794.html)
+  - [KSTP, 29 Oct](https://kstp.com/minnesota-sports/timberwolves-star-anthony-edwards-officially-undergoes-successful-surgery/)
+  - [Yahoo Sports, 29 Oct](https://sports.yahoo.com/articles/anthony-edwards-undergoes-arthroscopic-knee-185106176.html)
+  - [RotoWire, 5 Oct](https://www.rotowire.com/basketball/headlines/donte-divincenzo-injury-targeting-late-season-return-533214)
+  - [Yahoo Sports, 28 Oct](https://sports.yahoo.com/nba/breaking-news/article/thunders-jalen-williams-has-surgery-on-ankle-fractured-fibula-will-be-reevaluated-before-end-of-season-011001403.html)
+  - [ClutchPoints, 26 Oct](https://clutchpoints.com/nba/oklahoma-city-thunder/thunder-news-cason-wallace-miss-significant-time-shoulder-injury)
+  - [CBS Sports, 27 Oct](https://www.cbssports.com/fantasy/basketball/news/thunders-nikola-topic-wont-play-wednesday/)
+  - [NBC Sports, 18 Oct](https://www.nbcsports.com/nba/news/kings-ben-simmons-suffers-torn-achilles-at-practice-sunday-will-miss-entire-season)
+  - [ESPN](https://www.espn.com/nba/team/injuries/_/name/was/salary)
+  - [Salt Lake Tribune, 27 Oct](https://www.sltrib.com/sports/jazz/2026/10/27/utah-jazz-forward-jaren-jackson-jr/)
+  - [Basketnews, 29 Oct](https://basketnews.com/news-258391-will-lauri-markkanen-play-jazz-announce-final-status-vs-spurs.html)
+  - [SI](https://www.si.com/nba/trailblazers/onsi/portland-trail-blazers-shaedon-sharpe-undergoes-surgery-whats-next)
+  - [Yahoo Sports, 26 Sep](https://sports.yahoo.com/articles/phoenix-suns-mark-williams-injury-152918092.html)
+  - [Hoops Rumors, 28 Oct](https://www.hoopsrumors.com/2026/10/celtics-note-carter-pritchard-tatum-brown.html)
+  - [NBC Sports, 18 Oct](https://www.nbcsports.com/nba/news/nuggets-wing-julian-strawther-out-indefinitely-due-to-left-knee-sprain)
+  - [Yahoo Sports / HoopsHype, 29 Oct](https://sports.yahoo.com/articles/cam-johnson-questionable-nuggets-tomorrow-001458305.html)
+  - [Last Word on Sports, 29 Oct](https://lastwordonsports.com/basketball/2026/10/29/cavs-vs-hawks)
