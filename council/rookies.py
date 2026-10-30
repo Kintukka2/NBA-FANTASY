@@ -39,7 +39,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
 from injury_watch import box, player_pool  # noqa: E402
-from slump_watch import LEAGUE, SITE, get, live_games  # noqa: E402
+from slump_watch import LEAGUE, SITE, WINDOWS, get, live_games, window_cells, windows_note  # noqa: E402
 
 CORE = "https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba"
 LOTTERY = 14
@@ -169,7 +169,9 @@ def main():
            "with 20+ preseason minutes.",
            f"- **Ratios** use players with {args.min_gp}+ games and {args.min_proj_min:g}+ projected minutes.",
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "
-           f"All {len(pool)} pool players re-score with `scripts/league_scoring.py` (0 mismatches).", ""]
+           f"All {len(pool)} pool players' current, L7, L15, L30, projected and 2026 averages re-score with "
+           "`scripts/league_scoring.py` (0 mismatches).",
+           windows_note(rows), ""]
 
     out += ["## Actual against projected", "",
             "| Group | Players | Median actual ÷ projected FP/g | Middle half | Median minutes ratio | Median FP/36 ratio |",
@@ -192,15 +194,15 @@ def main():
 
     out += ["## The rookie class", "",
             "Sorted by current FP/g. Draft pick is overall for the first round.", "",
-            "| Pick | Player | NBA | Pos | GP | Min | Started | FP/g | Projected FP/g (min) | Actual ÷ projected | "
-            "Preseason FP/36 | FP/36 now | League | Status |",
-            "|---:|---|---|---|---:|---:|---|---:|---:|---:|---:|---:|---|---|"]
+            "| Pick | Player | NBA | Pos | GP | Min | Started | FP/g | L7 | L15 | L30 | Projected FP/g (min) | "
+            "Actual ÷ projected | Preseason FP/36 | FP/36 now | League | Status |",
+            "|---:|---|---|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---|"]
     listed = sorted(rows, key=lambda r: -(r["current"]["fpg"] if r["current"] else -1))
     for r in [r for r in listed if r["current"]][:args.top]:
         c, p = r["current"], r["projected"]
         st = f'{r["starts"][0]} of {r["starts"][1]}' if r["starts"] else "—"
         out.append(f'| {pick_s(r)} | **{r["player"]}** | {r["nba"]} | {r["pos"]} | {c["gp"]} | {c["min"]:.1f} | {st} | '
-                   f'**{c["fpg"]:.1f}** | {fmt(p and p["fpg"])} ({fmt(p and p["min"])}) | '
+                   f'**{c["fpg"]:.1f}** | ' + " | ".join(window_cells(r)) + f' | {fmt(p and p["fpg"])} ({fmt(p and p["min"])}) | '
                    f'{fmt(c["fpg"] / p["fpg"] if p and p["fpg"] else None, 2)} | {fmt(r["pre36"])} | {fmt(r["cur36"])} | '
                    f'{status(r)} | {injury(r)} |')
     unplayed = [r for r in rows if not r["current"] and r["projected"] and r["projected"]["fpg"] >= 20]
@@ -231,7 +233,11 @@ def main():
                 f"{status(target)}{', ' + injury(target) if injury(target) else ''}.",
                 f"- **ESPN projects** {fmt(p and p['fpg'])} FP/g in {fmt(p and p['min'])} minutes "
                 f"({fmt(target['proj36'])} FP/36).",
-                f"- **Preseason:** {fmt(target['pre36'])} FP/36 over {target['pre_min']} minutes.", "",
+                f"- **Preseason:** {fmt(target['pre36'])} FP/36 over {target['pre_min']} minutes.",
+                f"- **This season:** " + (f"{target['current']['fpg']:.1f} FP/g in {target['current']['gp']} "
+                                          f"game{'s' if target['current']['gp'] != 1 else ''}; "
+                                          if target["current"] else "no games yet; ")
+                + ", ".join(f"{k} {v}" for k, v in zip(WINDOWS.values(), window_cells(target))) + ".", "",
                 "| Method | Estimate FP/g | Range |", "|---|---:|---|"]
         if est1:
             out.append(f"| Projection × lottery rookies' median ratio ({lot:.2f}) | **{est1:.1f}** | "

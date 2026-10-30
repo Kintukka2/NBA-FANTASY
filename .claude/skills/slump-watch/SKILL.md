@@ -35,16 +35,29 @@ overwrites that day's file, and git keeps the earlier version.
 - **Scoring or box-score mismatch**: the script exits without writing a
   report. Report the mismatch to the user. Never patch the numbers.
 
+Every player table carries **L7, L15 and L30** (FP/g over the last 7, 15
+and 30 days, games in brackets), and the **Last 7 days** section lists:
+
+- flagged players whose last 7 days are back within the threshold
+- unflagged players whose last 7 days are a threshold or more under
+  projection
+
+These windows are a hard rule (CLAUDE.md, "Recent form, always").
+
 ## 2. Add the news
 
-For each **flagged** player, and for each player in **our pending trades**,
-search the web for the latest injury, minutes-restriction and role news.
+For each **flagged** player, each player in the **Last 7 days** lists, and
+each player in **our pending trades**, search the web for the latest
+injury, minutes-restriction and role news.
 
 Under that player's driver line in the report, add one or two bullets:
 
 - **What explains the gap:** for example a minutes limit, a coach's
   rotation change, an in-game injury exit, or a shooting slump with no news
   behind it.
+- **The last 7 days:** when L7 is 5+ FP/g off the season average, what
+  changed (minutes, role, a teammate's absence, shooting), or that no
+  report was found.
 - **The latest status:** a diagnosis, a timeline, or a re-evaluation date.
   Every injured player named anywhere in the report or the reply gets an
   expected return: the reported timeline and ESPN's estimate (see CLAUDE.md).
@@ -78,8 +91,9 @@ Use the two reports' tables for this. Do not re-derive the numbers.
   the repository's usual flow.
 - In the reply, give:
   - how many players are flagged, and on how many teams
-  - a per-team table: player, current/projected, gap
-  - our flagged and near-the-line players
+  - a per-team table: player, current/projected, L7 / L15 / L30, gap
+  - our flagged and near-the-line players, with their L7
+  - the Last 7 days lists
   - the pending-trade table
   - the biggest news items, with links
   - the changes since the last run

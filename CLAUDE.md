@@ -35,6 +35,20 @@ player, give the expected return next to the name:
 If nothing has been reported, say "no timetable reported" and still give
 ESPN's estimate. Never list injured players by name alone.
 
+**Recent form, always: 7, 15 and 30 days.** Every player analysis (a reply,
+a report, a plan, a council ballot) that judges a player gives their FP/g
+over the last 7, 15 and 30 days, with games played, beside the season
+average and ESPN's projection:
+
+- The report scripts print them as `L7`, `L15` and `L30` columns. For any
+  other player, run `python council/form.py "<name>" ...` (or `--ours`) and
+  quote it. Never compute the windows by hand.
+- When L7 is 5+ FP/g off the season average, say so and give the reason
+  (minutes, role, injury, shooting), or say that none was found.
+- State the sample: a window of 1 or 2 games is noise and is called that.
+  Early in the season L15 and L30 equal the season average, and the scripts
+  say so.
+
 `council/roster.csv` is our live roster. Whenever the user reports a move
 (add, drop, IR, trade), update it in the same turn and commit: remove the
 dropped player, add the new one with `acquired` and `acquired_on`, set

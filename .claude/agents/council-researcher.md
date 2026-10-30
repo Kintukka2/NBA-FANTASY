@@ -18,8 +18,9 @@ Before every council meeting, search the internet for the latest NBA news on the
    in `data/processed/players_scored.csv` and `council/taken.txt` to see who
    is relevant).
 2. For each player and team, search for news from the **last 14 days**
-   first: injury status and return date, starting role and minutes,
-   trades, signings and extensions, coach quotes. Prefer team sites, the
+   first: injury status and return date, starting role and minutes over
+   the last 7 days (a promotion, a benching, a minutes limit, a teammate's
+   absence), trades, signings and extensions, coach quotes. Prefer team sites, the
    NBA's official injury report, ESPN, The Athletic, Rotowire, Underdog
    and beat reporters. Open the page (WebFetch) before you cite it.
 3. Check what you find against `docs/offseason-impact.md` and the CSV.

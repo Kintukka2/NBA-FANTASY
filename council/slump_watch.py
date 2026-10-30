@@ -6,6 +6,8 @@ council/espn_sync.py (ESPN_S2, ESPN_SWID). A player is flagged when his
 current FP/g sits --threshold (default 10) or more below ESPN's projected
 FP/g. The markdown report covers, per team:
   - the flagged players, their minutes, and the category drivers of each gap
+  - every player's FP/g over the last 7, 15 and 30 days (ESPN's rolling
+    splits), and who the last 7 days put on the other side of the line
   - the players near the line
   - players under their 2026 average but not under projection
   - our pending trades
@@ -54,7 +56,11 @@ ET = ZoneInfo("America/New_York")
 STAT = {"PTS": 0, "BLK": 1, "STL": 2, "AST": 3, "OREB": 4, "REB": 6, "TO": 11,
         "FGM": 13, "FGA": 14, "FTM": 15, "FTA": 16, "3PM": 17, "DD": 37, "TD": 38,
         "QD": 39, "MIN": 40, "GP": 42}
-SPLIT = {"current": f"00{SEASON}", "projected": f"10{SEASON}", "last": f"00{SEASON - 1}"}
+SPLIT = {"current": f"00{SEASON}", "projected": f"10{SEASON}", "last": f"00{SEASON - 1}",
+         "l7": f"01{SEASON}", "l15": f"02{SEASON}", "l30": f"03{SEASON}"}
+# ESPN's rolling splits: games in the last 7, 15 and 30 days. CLAUDE.md makes
+# them part of every player analysis.
+WINDOWS = {"l7": "L7", "l15": "L15", "l30": "L30"}
 # Category groups for the driver line; OREB, DD and TD are reported apart
 # because ESPN's projection has none of them.
 GROUPS = {"scoring": {"PTS": 1, "FGM": 2, "FGA": -1, "FTM": 1, "FTA": -1, "3PM": 1},
@@ -112,7 +118,7 @@ def rosters(league):
                    "team_id": t["id"], "pro": p["proTeamId"], "status": p.get("injuryStatus", "")}
             for name, sid in SPLIT.items():
                 s = splits.get(sid)
-                if not s or stat(s["stats"], "GP") == 0:
+                if not s or not s.get("stats") or stat(s["stats"], "GP") == 0:
                     row[name] = None
                     continue
                 total = fantasy_points(s["stats"])
@@ -209,6 +215,24 @@ def signed(x, plus=False):
     return (f"{x:+.1f}" if plus else f"{x:.1f}").replace("-", "\u2212")
 
 
+def window_cells(r):
+    """FP/g over the last 7, 15 and 30 days, games in brackets, as table cells."""
+    return [f'{r[k]["fpg"]:.1f} ({r[k]["gp"]})' if r.get(k) else "—" for k in WINDOWS]
+
+
+def windows_note(rows):
+    """Header bullet explaining the L7 / L15 / L30 columns for these rows."""
+    played = [r for r in rows if r.get("current")]
+    whole = [WINDOWS[k] for k in WINDOWS
+             if played and all((r.get(k) or {}).get("gp") == r["current"]["gp"] for r in played)]
+    note = ("- **L7 / L15 / L30:** FP/g over the last 7, 15 and 30 days, games in brackets, from ESPN's "
+            "rolling splits, re-scored with `scripts/league_scoring.py`.")
+    if whole:
+        note += (f" {' and '.join(whole)} cover{'s' if len(whole) == 1 else ''} every game so far for every "
+                 "player listed, so they equal the season average for now.")
+    return note
+
+
 def line(split):
     f = lambda k: pg(split, k)
     return (f'{f("MIN"):.1f} min, {f("PTS"):.1f} pts, {f("FGM"):.1f}-{f("FGA"):.1f} FG, '
@@ -246,9 +270,10 @@ def render(rows, teams, pro, args, checks, pending, back):
             f"*Near the line* is {args.near:g} to {args.threshold:g} below.",
             f"- **Data:** all {len(rows)} rostered players in league {LEAGUE_ID}, through scoring period "
             f"{checks['latest']}. Teams have played **{gps[0]} to {gps[-1]} games**.",
-            f"- **Checks:** {checks['live']}. Every current, projected and {SEASON - 1} average re-scored with "
-            "`scripts/league_scoring.py` matches ESPN's league-scored total (0 mismatches). "
+            f"- **Checks:** {checks['live']}. Every current, projected, L7, L15, L30 and {SEASON - 1} average "
+            "re-scored with `scripts/league_scoring.py` matches ESPN's league-scored total (0 mismatches). "
             f"{checks['box']}",
+            windows_note(rows),
             "- **Projection gap:** ESPN's projection carries no `OREB`, `DREB`, `DD` or `TD`; the current "
             "average does. Every gap is therefore smaller than a like-for-like gap, by the *bonus* figure "
             "on each player's driver line.",
@@ -275,24 +300,27 @@ def render(rows, teams, pro, args, checks, pending, back):
         nr = sorted((r for r in near if r["team_id"] == tid), key=lambda r: r["gap"])
         out += [f"### {name(tid)}: {len(fl)}", ""]
         if fl:
-            out += ["| Player | NBA | Rank | GP | Min | Rate | Current | Projected | Gap | "
-                    f"{SEASON - 1} | ESPN status |", "|---|---|---:|---:|---|---:|---:|---:|---:|---:|---|"]
+            out += ["| Player | NBA | Rank | GP | Min | Rate | Current | L7 | L15 | L30 | Projected | Gap | "
+                    f"{SEASON - 1} | ESPN status |", "|---|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|"]
             for r in fl:
                 out.append(f'| {r["player"]} | {pro[r["pro"]]} | #{rank[r["id"]]} | {r["current"]["gp"]} | '
                            f'{r["min"]:.1f} / {r["pmin"]:.1f} | {r["rate"]:.2f} | {r["current"]["fpg"]:.1f} | '
-                           f'{r["projected"]["fpg"]:.1f} | **{signed(r["gap"])}** | '
+                           + " | ".join(window_cells(r)) + f' | {r["projected"]["fpg"]:.1f} | **{signed(r["gap"])}** | '
                            f'{fmt(r["last"] and r["last"]["fpg"])} | {status(r)} |')
             out.append("")
             for r in fl:
                 d = ", ".join(f"{g} {signed(v, True)}" for g, v in r["drivers"].items())
                 out += [f'- **{r["player"]}** ({r["driver"]}): {d}; bonus {signed(r["bonus"], True)}.',
-                        f'  - Current: {line(r["current"])}',
-                        f'  - Projected: {line(r["projected"])}']
+                        f'  - Current: {line(r["current"])}']
+                if r["l7"] and r["l7"]["gp"] != r["current"]["gp"]:
+                    out.append(f'  - Last 7 days ({r["l7"]["gp"]} GP): {line(r["l7"])}')
+                out.append(f'  - Projected: {line(r["projected"])}')
         else:
             out += ["No one flagged.", ""]
         if nr:
             out.append("- **Near the line:** " + ", ".join(
-                f'{r["player"]} {signed(r["gap"])} (#{rank[r["id"]]}, {r["driver"]})' for r in nr) + ".")
+                f'{r["player"]} {signed(r["gap"])} (#{rank[r["id"]]}, {r["driver"]}, L7 {fmt(r["l7"] and r["l7"]["fpg"])})'
+                for r in nr) + ".")
         out.append("")
 
     out += ["## Drivers", "",
@@ -312,17 +340,32 @@ def render(rows, teams, pro, args, checks, pending, back):
             for r in unplayed) + ".")
     out.append("")
 
+    l7 = lambda r: r["l7"]["fpg"] - r["projected"]["fpg"]
+    recent = [r for r in both if r["l7"] and r["l7"]["gp"] >= 2]
+    better = [r for r in recent if r in flagged and l7(r) > -args.threshold]
+    colder = [r for r in recent if r not in flagged and l7(r) <= -args.threshold]
+    out += ["## Last 7 days", "",
+            "Players with 2+ games in the last 7 days whose L7 FP/g tells a different story from the season.", "",
+            f"- **Flagged, but within {args.threshold:g} of projection over the last 7 days:** " + (", ".join(
+                f'{r["player"]} ({name(r["team_id"])}, L7 {r["l7"]["fpg"]:.1f} in {r["l7"]["gp"]} vs projected '
+                f'{r["projected"]["fpg"]:.1f}, season gap {signed(r["gap"])})'
+                for r in sorted(better, key=lambda r: (r["team_id"] != TEAM_ID, -l7(r)))) or "none") + ".",
+            f"- **Not flagged, but {args.threshold:g}+ under projection over the last 7 days:** " + (", ".join(
+                f'{r["player"]} ({name(r["team_id"])}, L7 {r["l7"]["fpg"]:.1f} in {r["l7"]["gp"]} vs projected '
+                f'{r["projected"]["fpg"]:.1f}, L7 gap {signed(l7(r))}, season gap {signed(r["gap"])})'
+                for r in sorted(colder, key=lambda r: (r["team_id"] != TEAM_ID, l7(r)))) or "none") + ".", ""]
+
     last = [r for r in both if r["last"] and r["current"]["fpg"] - r["last"]["fpg"] <= -args.threshold
             and r["gap"] > -args.threshold]
     out += [f"## Under {SEASON - 1}, not under projection", "",
             f"{args.threshold:g}+ under last season's average, but within {args.threshold:g} of projection.", ""]
     if last:
-        out += ["| Player | Team | GP | Min | Current | Projected | " + str(SEASON - 1) + " |",
-                "|---|---|---:|---|---:|---:|---:|"]
+        out += ["| Player | Team | GP | Min | Current | L7 | L15 | L30 | Projected | " + str(SEASON - 1) + " |",
+                "|---|---|---:|---|---:|---:|---:|---:|---:|---:|"]
         for r in sorted(last, key=lambda r: (r["team_id"] != TEAM_ID, r["current"]["fpg"] - r["last"]["fpg"])):
             out.append(f'| {r["player"]} | {name(r["team_id"])} | {r["current"]["gp"]} | '
                        f'{r["min"]:.1f} / {r["pmin"]:.1f} | {r["current"]["fpg"]:.1f} | '
-                       f'{r["projected"]["fpg"]:.1f} | {r["last"]["fpg"]:.1f} |')
+                       + " | ".join(window_cells(r)) + f' | {r["projected"]["fpg"]:.1f} | {r["last"]["fpg"]:.1f} |')
     else:
         out.append("None.")
     out.append("")
@@ -336,15 +379,16 @@ def render(rows, teams, pro, args, checks, pending, back):
         expires = dt.datetime.fromtimestamp(tx["expirationDate"] / 1000, dt.timezone.utc)
         out += [f'With **{teams[other]}**, {"proposed by us" if tx["teamId"] == TEAM_ID else "proposed to us"}, '
                 f'expires {expires:%d %b %H:%M} UTC.', "",
-                "| Player | Side | GP | Min | Current | Projected | Gap | ESPN status |",
-                "|---|---|---:|---|---:|---:|---:|---|"]
+                "| Player | Side | GP | Min | Current | L7 | L15 | L30 | Projected | Gap | ESPN status |",
+                "|---|---|---:|---|---:|---:|---:|---:|---:|---:|---|"]
         for i in sorted(tx["items"], key=lambda i: i["toTeamId"] != TEAM_ID):
             r = by_id.get(i["playerId"])
             if not r or not r.get("current") or "gap" not in r:
                 continue
             side = "we receive" if i["toTeamId"] == TEAM_ID else "we send"
             out.append(f'| {r["player"]} | {side} | {r["current"]["gp"]} | {r["min"]:.1f} / {r["pmin"]:.1f} | '
-                       f'{r["current"]["fpg"]:.1f} | {r["projected"]["fpg"]:.1f} | {signed(r["gap"], True)} | {status(r)} |')
+                       f'{r["current"]["fpg"]:.1f} | ' + " | ".join(window_cells(r))
+                       + f' | {r["projected"]["fpg"]:.1f} | {signed(r["gap"], True)} | {status(r)} |')
         out.append("")
 
     out += ["## Sources", "",

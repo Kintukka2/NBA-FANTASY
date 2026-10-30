@@ -65,6 +65,7 @@ council/      members.json          personas, skills, sources, vote weights
               injury_watch.py       who takes injured players' minutes; pickups for us
               matchup.py            this week day by day; best streams for our slot
               rookies.py            rookies' actual output against projection; estimate for one
+              form.py               any player's L7 / L15 / L30 FP/g beside season and projection
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)
@@ -198,6 +199,11 @@ Nothing is in Git LFS, deliberately — agents cannot read pointer files.
 - **2026 actuals lead; 2027 projections inform.** Standing instruction
   from the owner. ESPN's projections also omit `OREB`, `DREB`, `PF`,
   `DD` and `TD` entirely, so they understate rebounding bigs by design.
+- **Recent form, always.** Every player analysis gives FP/g over the
+  last 7, 15 and 30 days (`L7`, `L15`, `L30`, ESPN's rolling splits) with
+  games played, beside the season and the projection. The report scripts
+  print them; `council/form.py` gives them for anyone else. A gap of 5+
+  FP/g between L7 and the season gets a reason or "none found".
 - **`ADP` is standard-scoring.** Treat it as market consensus, never as
   a valuation. The gap between ADP and league-scored production is the
   opportunity this whole repo exists to find.
