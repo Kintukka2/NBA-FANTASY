@@ -20,6 +20,8 @@ Rate per game:
   - 1–2 games: 50/50
   - none: last season's, else the projection
 A player listed OUT is left out until ESPN's estimated return date.
+Each player table also shows FP/g over the last 7, 15 and 30 days (ESPN's
+rolling splits). The rate does not use them; the reader weighs them.
 
 Matchups are taken as weeks running Monday to Sunday (US time), because
 ESPN publishes no matchup calendar. --end overrides the last day, for
@@ -49,7 +51,8 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
 from injury_watch import box, player_pool  # noqa: E402
-from slump_watch import ET, FANTASY, LEAGUE, TEAM_ID, get, live_games, signed  # noqa: E402
+from slump_watch import (ET, FANTASY, LEAGUE, TEAM_ID, WINDOWS, get, live_games, signed,  # noqa: E402
+                         window_cells, windows_note)
 
 SLOTS = (0, 1, 2, 3, 4, 5, 6, 11, 11, 11)  # PG SG SF PF C G F UTIL UTIL UTIL
 FITS = {"PG": {0, 5, 11}, "SG": {1, 5, 11}, "SF": {2, 6, 11}, "PF": {3, 6, 11}, "C": {4, 11}}
@@ -221,6 +224,7 @@ def main():
     grid = lambda r: " | ".join("x" if plays(r, p) else ("o" if (r["pro"], p) in tips else "") for p in days)
     line = lambda r: (f'{r["current"]["gp"]}, {r["current"]["min"]:.1f}, {r["current"]["fpg"]:.1f}'
                       if r["current"] else "—")
+    form = lambda r: ", ".join(f"{label_} {cell}" for label_, cell in zip(WINDOWS.values(), window_cells(r)))
     owner = lambda r: teams[r["owner"]]["name"].strip() if r.get("owner") else ""
 
     @lru_cache(maxsize=None)
@@ -246,7 +250,9 @@ def main():
            "season's FP/g and 30% last season's (or ESPN's projection) at 3+ games, otherwise 50/50. A player "
            f"listed OUT is left out until ESPN's estimated return. Streamers need {args.min_minutes:g}+ minutes this season.",
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "
-           f"All {len(pool)} pool players re-score with `scripts/league_scoring.py` (0 mismatches).",
+           f"All {len(pool)} pool players' current, L7, L15, L30, projected and 2026 averages re-score with "
+           "`scripts/league_scoring.py` (0 mismatches).",
+           windows_note(ours + theirs + fa) + " The rate does not use them; weigh them against it.",
            f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}."]
     out += ([f"- **What-if:** treated as sitting: {', '.join(args.sit)}."] if args.sit else [])
     out += ([f"- **What-if:** roster swaps {', '.join(s.replace('=', ' → ') for s in args.swap)}."] if args.swap else [])
@@ -267,10 +273,11 @@ def main():
                  f"**Projection:** {rest_us:.0f} more for us and {rest_them:.0f} for them, for a final of "
                  f"**{score_us + rest_us:.0f} to {score_them + rest_them:.0f}**."), ""]
 
-    head = "| Player | NBA | Rate | " + " | ".join(label(p)[0][:6] for p in days) + " | Status |"
-    rule = "|---|---|---:|" + ":-:|" * len(days) + "---|"
+    head = "| Player | NBA | Rate | L7 | L15 | L30 | " + " | ".join(label(p)[0][:6] for p in days) + " | Status |"
+    rule = "|---|---|---:|---:|---:|---:|" + ":-:|" * len(days) + "---|"
     out += ["## Our roster", "", "x = plays, o = has a game but is listed out.", "", head, rule]
-    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f} | {grid(r)} | {est(r)} |'
+    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f} | ' + " | ".join(window_cells(r))
+            + f' | {grid(r)} | {est(r)} |'
             for r in sorted(ours, key=rate, reverse=True)]
     if ir:
         out += ["", f"IR: {', '.join(ir)} (cannot score while in the IR slot)."]
@@ -280,7 +287,8 @@ def main():
     adds = {r["player"]: sum(ours_by[p] - total([x for x in ours if x is not r], p) for p in days) for r in ours}
     out += [f"| {n} | {v:.1f} |" for n, v in sorted(adds.items(), key=lambda kv: kv[1])]
     out += ["", f"## {teams[opp]['name'].strip()}", "", head, rule]
-    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f} | {grid(r)} | {est(r)} |'
+    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f} | ' + " | ".join(window_cells(r))
+            + f' | {grid(r)} | {est(r)} |'
             for r in sorted(theirs, key=rate, reverse=True)]
     out.append("")
 
@@ -301,13 +309,14 @@ def main():
                 f"Keeping {d['player']} ({abbrev.get(d['pro'])}) is worth **{sum(keep.values()):.1f}** this week: "
                 + ", ".join(f"{label(p)[0][:6]} {keep[p]:.0f}" for p in days if (d['pro'], p) in tips) + ".", "",
                 "### One add, now", "",
-                "| Free agent | NBA | Games | Now: GP, min, FP/g | Started | 2026 FP/g | Owned | vs keeping |",
-                "|---|---|---|---|---|---:|---:|---:|"]
+                "| Free agent | NBA | Games | Now: GP, min, FP/g | L7 | L15 | L30 | Started | 2026 FP/g | Owned | vs keeping |",
+                "|---|---|---|---|---:|---:|---:|---|---:|---:|---:|"]
         for x, m in ranked[:args.top]:
             shown.add(x["pro"])
             gd = ", ".join(label(p)[0][:3] for p in days if plays(x, p) and not started(x, p) and not started(d, p))
             out.append(f'| **{x["player"]}**{" (" + est(x) + ")" if est(x) else ""} | {abbrev.get(x["pro"])} | {gd} | '
-                       f'{line(x)} | {starts(x)} | {fmt(x["last"] and x["last"]["fpg"])} | {x["owned"]:.0f}% | '
+                       f'{line(x)} | ' + " | ".join(window_cells(x)) + f' | {starts(x)} | '
+                       f'{fmt(x["last"] and x["last"]["fpg"])} | {x["owned"]:.0f}% | '
                        f'**{signed(sum(m.values()) - sum(keep.values()), True)}** |')
         out += ["", "### Best streamer each day", "",
                 "If the slot turns over daily, these are the best adds for each day alone.", ""]
@@ -538,7 +547,7 @@ def main():
         for i, (p, s, a, x) in enumerate(top_moves, 1):
             by = min(tips[(r["pro"], p)] for r in (a, x) if (r["pro"], p) in tips)
             out.append(f'{i}. **{label(p)[0]}:** drop {a["player"]}, add **{x["player"]}** ({abbrev.get(x["pro"])}; '
-                       f'GP, min, FP/g {line(x)}; started {starts(x)}{"; " + est(x) if est(x) else ""}). By {by.astimezone(ET):%I:%M%p} ET / '
+                       f'GP, min, FP/g {line(x)}; {form(x)}; started {starts(x)}{"; " + est(x) if est(x) else ""}). By {by.astimezone(ET):%I:%M%p} ET / '
                        f'{by.astimezone(local):%a %d %I:%M%p}.'
                        + (f' Losing {a["player"]} also costs his {later(a)} games next week.' if any(a is o for o in origs) else ''))
         out += ["", "Left holding at the end of the week: " + ", ".join(

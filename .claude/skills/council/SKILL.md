@@ -66,6 +66,25 @@ If the web is unreachable or the researcher fails, write no briefing, set
 `"research": null`, carry on, and say in the report that the council
 decided without fresh news.
 
+### The form table: required in season
+
+The windows are a hard rule (CLAUDE.md, "Recent form, always"). While the
+researcher works, write the form table for the same players:
+
+```bash
+python council/form.py "<player>" ... [--ours] \
+  --out docs/research/<YYYYMMDD-HHMM>-<slug>-form.md
+```
+
+- Name every player the question or its options name.
+- Add `--ours` for a suggestion, or for any question that trades or drops
+  one of our players.
+- It gives each player's FP/g over the last 7, 15 and 30 days, with games
+  played, beside the season and the projection.
+- Record the path in the session JSON as `"form": "docs/research/<file>.md"`.
+- If games are live, it refuses to run. Pass `--allow-live` and say so in
+  the report.
+
 ## 3. Opening round — all nine members, in parallel
 
 Spawn one subagent per member in `council/members.json`, **all in a single
@@ -77,7 +96,9 @@ member for the rest of this task."*
 Each prompt contains: the question, the type, the exact options (or, for a
 suggestion, "propose one answer"), the taken list, **the research briefing
 path** with the instruction to read it first, and the instruction to
-research `docs/` and `data/` and end with the JSON ballot. Keep each agent's
+research `docs/` and `data/` and end with the JSON ballot. In season,
+add **the form table path**. Every ballot that argues about a player must
+cite that player's L7 / L15 / L30 from it. Keep each agent's
 id or name so you can message it again in a runoff.
 
 Collect the nine JSON ballots into `rounds[0]`:
@@ -121,6 +142,8 @@ Lead with the verdict in one line, then:
 - **Tally:** each option with its weight and who voted for it.
 - **Why:** the two or three strongest pieces of evidence behind the
   winner, with file and number, drawn from the winning ballots.
+- **Form:** each named player's L7 / L15 / L30 against the season, from
+  the form table.
 - **Dissent:** the strongest case on the losing side, in one or two lines.
 - **Flags:** anything a member called unresolved (§7), thin sample, or
   injury-dependent — the user must verify those in the draft room.
@@ -128,4 +151,4 @@ Lead with the verdict in one line, then:
   their source, and anything in "Could not confirm" that matters.
 
 Keep it short enough to read inside a 90-second pick clock. Then tell the
-user the session file path and the briefing path. Do not overrule the vote with your own opinion.
+user the session file path, the briefing path and the form table path. Do not overrule the vote with your own opinion.

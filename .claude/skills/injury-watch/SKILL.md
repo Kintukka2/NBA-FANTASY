@@ -45,6 +45,10 @@ What the script reports:
 | **Who takes the minutes** | Per team, each teammate's minutes, starts and FP in games without the absentees, against games with them (or against ESPN's projection when they have been out all season). *Also out* names short-term absences in those same games, which inflate the gain. |
 | **Every injury** | All players in ESPN's feed, with ESPN's estimate. |
 
+The pickup, back-soon and replacement tables carry **L7, L15 and L30**
+(FP/g over the last 7, 15 and 30 days, games in brackets). These windows
+are a hard rule (CLAUDE.md, "Recent form, always").
+
 If something goes wrong:
 
 - **`espn_sync.py` reports a difference between ESPN and `council/roster.csv`:** tell the user rather than editing the file (CLAUDE.md).
@@ -67,6 +71,8 @@ two bullets.
 2. **Every player in Pickups for us** (at least the first ten).
    - Find their role news: starting or bench, minutes, coach comments, and
      whether the absentee's return will end the role.
+   - When L7 is 5+ FP/g off the season average, find what changed, or
+     write that no report was found.
 3. **Every *also out* absence** behind a pickup.
    - Find when that player returns. That decides whether the pickup's gain
      lasts.
@@ -94,8 +100,9 @@ After the report header, add a `## Shortlist` of three to six players:
   for them, and a note on what a stash costs us. When our IR slot is taken,
   a stash costs a bench spot.
 
-For each player, give the opening, its window (reported and ESPN), FP/g,
-minutes, and games this week and next. The shortlist identifies the
+For each player, give the opening, its window (reported and ESPN), FP/g
+without the absentee, L7 / L15 / L30, minutes, and games this week and
+next. The shortlist identifies the
 candidates. The add/drop call is the user's, or the council's if they want
 a vote (`/council`).
 

@@ -44,7 +44,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
 from slump_watch import (ET, FANTASY, LEAGUE, SITE, SPLIT, TEAM_ID, box_points,  # noqa: E402
-                         fantasy_points, get, live_games, signed, stat)
+                         fantasy_points, get, live_games, signed, stat, window_cells, windows_note)
 
 CACHE = ROOT / ".cache" / "box"
 POS = {0: "PG", 1: "SG", 2: "SF", 3: "PF", 4: "C"}
@@ -69,7 +69,7 @@ def player_pool():
              "pos": "/".join(POS[s] for s in sorted(p.get("eligibleSlots", [])) if s in POS)}
         for name, sid in SPLIT.items():
             s = splits.get(sid)
-            if not s or stat(s["stats"], "GP") == 0:
+            if not s or not s.get("stats") or stat(s["stats"], "GP") == 0:
                 r[name] = None
                 continue
             total = fantasy_points(s["stats"])
@@ -257,12 +257,13 @@ def main():
                        + ", ".join(f'{r["player"]} ({r["pos"]}, {r["current"]["min"]:.1f} min, '
                                    f'{r["current"]["fpg"]:.1f} FP/g, {league_label(r, teams)})' for r in inline) + ".")
         elif best:
-            sec += ["| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | League | Owned |",
-                    "|---|---|---:|---:|---:|---:|---:|---:|---|---:|"]
+            sec += ["| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |",
+                    "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|"]
             for m in best:
                 sec.append(f'| {m["player"]}{status(m)} | {m["pos"]} | {m["n_wo"]} | {m["wo_min"]:.1f} | '
                            f'{"—" if m["gain"] is None else signed(m["gain"], True)} | {m["wo_starts"]} | '
-                           f'**{m["wo_fp"]:.1f}** | {fmt(m["base_fp"])} | {league_label(m, teams)} | {m["owned"]:.0f}% |')
+                           f'**{m["wo_fp"]:.1f}** | {fmt(m["base_fp"])} | ' + " | ".join(window_cells(m))
+                           + f' | {league_label(m, teams)} | {m["owned"]:.0f}% |')
                 if available(m) and m["wo_min"] >= PICKUP_MIN and m["wo_fp"] >= args.pickup_fp:
                     pickups.append({**m, "team": tid, "absent": split_on, "also": also})
         else:
@@ -285,7 +286,9 @@ def main():
            f"  - *Best placed* means {GAIN_MIN}+ minutes gained, ordered by FP/g in the games without the absentees.",
            f"  - A pickup is a free agent or waiver player getting {PICKUP_MIN}+ minutes in those games.",
            f"- **Checks:** {'**games were live** (--allow-live): ' + '; '.join(live) if live else 'no NBA game was in progress'}. "
-           f"All {len(pool)} pool players re-score with `scripts/league_scoring.py` to ESPN's totals (0 mismatches).",
+           f"All {len(pool)} pool players' current, projected, L7, L15, L30 and 2026 averages re-score with "
+           "`scripts/league_scoring.py` to ESPN's totals (0 mismatches).",
+           windows_note(list(pool.values())),
            f"- **Games** is games left this week ({weeks[0][0]:%d %b}–{weeks[0][1] - dt.timedelta(days=1):%d %b}) / "
            f"next week ({weeks[1][0]:%d %b}–{weeks[1][1] - dt.timedelta(days=1):%d %b}).",
            "- **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.", ""]
@@ -294,11 +297,12 @@ def main():
             f"Free agents and waiver players getting {PICKUP_MIN}+ minutes and {args.pickup_fp:g}+ FP/g since an absence "
             "opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences "
             "in the same games, which inflate the gain until those players return.", "",
-            f"Our five lowest current FP/g: " + ", ".join(f'{r["player"]} {r["current"]["fpg"]:.1f}' for r in our[:5])
+            "Our five lowest current FP/g: " + ", ".join(
+                f'{r["player"]} {r["current"]["fpg"]:.1f} (L7 {fmt(r["l7"] and r["l7"]["fpg"])})' for r in our[:5])
             + f". A pickup at or above **{floor:.1f}** beats all five.", ""]
     if pickups:
-        body += ["| Player | NBA | Opening | Games without | Min without | Δ min | FP/g without | Season FP/g | League | Owned | Games |",
-                 "|---|---|---|---:|---:|---:|---:|---:|---|---:|---|"]
+        body += ["| Player | NBA | Opening | Games without | Min without | Δ min | FP/g without | Season FP/g | L7 | L15 | L30 | League | Owned | Games |",
+                 "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|---|"]
         for m in sorted(pickups, key=lambda m: -m["wo_fp"]):
             opening = ", ".join(f'{feed[p]["player"]} ({est(feed[p])})' for p in m["absent"])
             if m["also"]:
@@ -306,6 +310,7 @@ def main():
             body.append(f'| **{m["player"]}**{status(m)} | {abbrev.get(m["team"])} | {opening} | {m["n_wo"]} | '
                         f'{m["wo_min"]:.1f} | {"—" if m["gain"] is None else signed(m["gain"], True)} | '
                         f'**{m["wo_fp"]:.1f}** | {fmt(m["current"] and m["current"]["fpg"])} | '
+                        + " | ".join(window_cells(m)) + f' | '
                         f'{league_label(m, teams)} | {m["owned"]:.0f}% | {left[m["team"]][0]} / {left[m["team"]][1]} |')
     else:
         body.append("None this time.")
@@ -315,12 +320,13 @@ def main():
              f'- **Our IR slot:** {"taken by " + ", ".join(ir_used) if ir_used else "free"}. '
              + ("A stash costs a bench spot until it frees up." if ir_used else "A stash can go straight to IR."), ""]
     if soon:
-        body += ["| Player | NBA | Injury | ESPN est. | Days | Current FP/g | Projected | 2026 | League | Owned | Games |",
-                 "|---|---|---|---|---:|---:|---:|---:|---|---:|---|"]
+        body += ["| Player | NBA | Injury | ESPN est. | Days | Current FP/g | L7 | L15 | L30 | Projected | 2026 | League | Owned | Games |",
+                 "|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|---:|---|"]
         for r in soon:
             i = r["inj"]
             body.append(f'| **{r["player"]}** | {abbrev.get(r["pro"])} | {i["injury"]} | {est(i)} | {back(i)} | '
-                        f'{fmt(r["current"] and r["current"]["fpg"])} | {fmt(r["projected"] and r["projected"]["fpg"])} | '
+                        f'{fmt(r["current"] and r["current"]["fpg"])} | ' + " | ".join(window_cells(r))
+                        + f' | {fmt(r["projected"] and r["projected"]["fpg"])} | '
                         f'{fmt(r["last"] and r["last"]["fpg"])} | {league_label(r, teams)} | {r["owned"]:.0f}% | '
                         f'{left[r["pro"]][0]} / {left[r["pro"]][1]} |')
     else:

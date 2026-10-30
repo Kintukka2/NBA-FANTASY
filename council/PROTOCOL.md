@@ -75,6 +75,13 @@ move or a trade), Claude updates the file in the same turn and commits it.
 A planned move is not a move; the file only changes once the user says it
 happened. Players other teams add go in `council/taken.txt`.
 
+In season, every meeting also gets a **form table**: `council/form.py` run
+for every player the question names (and our roster for a suggestion),
+saved beside the briefing as `docs/research/<stamp>-<slug>-form.md`. It
+gives each player's FP/g over the last 7, 15 and 30 days beside the season
+and the projection. Every ballot that argues about a player cites those
+windows (CLAUDE.md, "Recent form, always").
+
 ## During the draft
 
 List players as they go in `council/taken.txt`, one per line (or just tell
