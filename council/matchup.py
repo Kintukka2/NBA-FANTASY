@@ -110,6 +110,9 @@ def main():
     ap.add_argument("--from", dest="start", metavar="YYYY-MM-DD",
                     help="count only days from this US date, e.g. what each player is worth after a claim processes")
     ap.add_argument("--pool", type=int, default=14, help="free agents --rotate considers (default 14, plus each day's top 3)")
+    ap.add_argument("--returning", action="store_true",
+                    help="also consider injured free agents who have not played this season, from ESPN's estimated "
+                         "return, rated on last season (or the projection)")
     ap.add_argument("--next", action="store_true",
                     help="prepare for next week's matchup (its opponent and its Monday to Sunday) instead of this one")
     ap.add_argument("--allow-live", action="store_true", help="run even while games are in progress")
@@ -221,8 +224,9 @@ def main():
     if missing:
         sys.exit("Not on our active roster: " + ", ".join(missing))
 
-    fa = [r for r in pool.values() if r["league"] == "FREEAGENT" and r["current"]
-          and r["current"]["min"] >= args.min_minutes and all(r is not o for o in ours)]  # --swap may add one
+    fa = [r for r in pool.values() if r["league"] == "FREEAGENT" and all(r is not o for o in ours)  # --swap may add one
+          and ((r["current"] and r["current"]["min"] >= args.min_minutes)
+               or (args.returning and not r["current"] and r["id"] in feed and (r["last"] or r["projected"])))]
     fmt = lambda x: "—" if x is None else f"{x:.1f}"
     est = lambda r: (f'{feed[r["id"]]["status"].lower()}, ESPN est. {feed[r["id"]]["return"]:%d %b}'
                      if r["id"] in feed and feed[r["id"]]["return"] else
@@ -263,6 +267,9 @@ def main():
            windows_note(ours + theirs + fa) + " The rate does not use them; weigh them against it.",
            f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}."]
     out += ([f"- **What-if:** treated as sitting: {', '.join(args.sit)}."] if args.sit else [])
+    out += ([f"- **Returning players** (`--returning`): injured free agents yet to play this season are included "
+             "from ESPN's estimated return, rated on last season (or the projection). ESPN's estimate is often early."]
+            if args.returning else [])
     out += ([f"- **What-if:** roster swaps {', '.join(s.replace('=', ' → ') for s in args.swap)}."] if args.swap else [])
     out += ([f"- **From {args.start}:** only days from this US date are counted."] if args.start else []) + [""]
 

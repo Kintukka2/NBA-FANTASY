@@ -42,6 +42,7 @@ What the script reports:
 |---|---|
 | **Pickups for us** | Free agents and waiver players getting 18+ minutes and `--pickup-fp`+ FP/g since an absence opened their role, set against our five lowest current FP/g. |
 | **Injured and available, back soon** | Injured free agents and waiver players ESPN expects back within `--soon` days, with our IR slot's status. |
+| **Yet to play this season** | Injured players with no game yet this season (free agents, waivers and rostered), worth `--value`+ FP/g on ESPN's projection or last season, by expected return. They have no L7, L15 or L30, so the report says so and values them on 2026 and the projection. |
 | **Who takes the minutes** | Per team, each teammate's minutes, starts and FP in games without the absentees, against games with them (or against ESPN's projection when they have been out all season). *Also out* names short-term absences in those same games, which inflate the gain. |
 | **Every injury** | All players in ESPN's feed, with ESPN's estimate. |
 
@@ -76,7 +77,10 @@ two bullets.
 3. **Every *also out* absence** behind a pickup.
    - Find when that player returns. That decides whether the pickup's gain
      lasts.
-4. **Every player in Injured and available, back soon.**
+4. **Every free agent or waiver player in Yet to play this season**, and any
+   rostered one on our opponent this week: reported timeline, ramp-up or
+   minutes limit on return, and the role waiting for them.
+5. **Every player in Injured and available, back soon.**
    - Find their reported timeline, any minutes restriction on return, and
      their role once back.
 

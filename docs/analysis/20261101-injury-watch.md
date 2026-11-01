@@ -136,6 +136,50 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 - **Keegan Murray:** re-evaluated about 5–9 Nov [SactownSports, 26 Oct](https://sactownsports.com/nba/sacramento-kings/kings-raynaud-cardwell-murray).
 - **Santi Aldama** is "very close"; his next chance is Monday against Sacramento [Dallas Sports Journal, 30 Oct](https://dallassportsjournal.com/santi-aldama-close-mavericks-debut-stay-ready-game/).
 
+## Yet to play this season
+
+Injured players with no game yet this season, worth 25+ FP/g on ESPN's projection or last season, by expected return. None has played this season, so none has an L7, L15 or L30. Their value is last season and the projection. Our five-lowest floor is 35.4.
+
+| Player | NBA | Injury | ESPN est. | Days | Projected FP/g (min) | 2026 FP/g (GP) | League | Owned | Games |
+|---|---|---|---|---:|---:|---:|---|---:|---|
+| **Coby White** | CHA | Left Calf Strain | 02 Nov | 1 | 32.9 (33.5) | 26.5 (50) | Free agent | 64% | 0 / 3 |
+| **Dereck Lively II** | DAL | Right Foot Surgery | 02 Nov | 1 | 27.4 (23.6) | 21.3 (7) | Free agent | 5% | 0 / 4 |
+| **Kon Knueppel** | CHA | Left Hamstring | 02 Nov | 1 | 35.2 (34.2) | 34.1 (81) | Team Nic Kerr | 90% | 0 / 3 |
+| **Santi Aldama** | DAL | Right Knee Surgery | 02 Nov | 1 | 25.0 (23.7) | 32.4 (43) | Free agent | 6% | 0 / 4 |
+| **T.J. McConnell** | IND | Right Hamstring Strain | 02 Nov | 1 | 24.4 (17.8) | 25.5 (56) | Free agent | 8% | 1 / 3 |
+| **Jusuf Nurkic** | UTAH | Right Foot Strain | 04 Nov | 3 | 27.6 (23.1) | 36.7 (41) | Free agent | 6% | 0 / 4 |
+| **Nic Claxton** | CHI | Hamstring | 04 Nov | 3 | 30.3 (27.8) | 33.3 (69) | Free agent | 42% | 0 / 3 |
+| **Dylan Cardwell** | SAC | Left Calf Strain | 06 Nov | 5 | — (—) | 26.6 (44) | Free agent | 0% | 0 / 4 |
+| **Tobias Harris** | SA | Left Calf Strain | 06 Nov | 5 | 30.1 (30.5) | 28.0 (63) | Free agent | 46% | 0 / 4 |
+| **Bradley Beal** | LAC | Right Knee Inflammation | 08 Nov | 7 | 25.6 (25.3) | 10.5 (6) | Free agent | 2% | 1 / 3 |
+| **Brandon Ingram** | LAC | Right Achilles Surgery | 08 Nov | 7 | 38.5 (35.3) | 36.5 (77) | Melbourne poopoo | 64% | 1 / 3 |
+| **Maxime Raynaud** | SAC | Right Knee Dislocated | 10 Nov | 9 | — (—) | 28.1 (74) | Free agent | 1% | 0 / 4 |
+| **Kristaps Porzingis** | GS | Illness | 01 Dec | 30 | 36.9 (27.7) | 32.3 (32) | Free agent | 42% | 1 / 3 |
+| **Jimmy Butler III** | GS | Right Knee Surgery | 02 Jan | 62 | 38.8 (32.4) | 41.6 (38) | Free agent | 30% | 1 / 3 |
+| **Mark Williams** | PHX | Left Shoulder Surgery | 03 Feb | 94 | 31.0 (24.9) | 31.9 (60) | Free agent | 6% | 0 / 4 |
+| **Shaedon Sharpe** | POR | Right Knee Surgery | 02 Mar | 121 | 24.8 (25.4) | 31.2 (50) | Free agent | 7% | 0 / 4 |
+| **Donte DiVincenzo** | MIN | Right Achilles Surgery | 02 Apr | 152 | 23.0 (24.1) | 29.4 (82) | Free agent | 2% | 0 / 4 |
+
+### Notes
+
+- **Jusuf Nurkic** has a partial plantar plate tear. He is re-evaluated about 4 Nov, has been back at practice "in some capacity", and takes Utah's starting center job back from Hayes [Deseret News, 31 Oct](https://www.deseret.com/sports/2026/10/31/three-takeaways-from-the-jazzs-halloween-horror-show-against-the-blazers/) [SI, 25 Oct](https://www.si.com/nba/jazz/onsi/jazz-vs-lakers-injury-report-latest-updates-on-jusuf-nurkic-others). His 2026 average (36.7 over 41 games) is the only free agent's here above our floor. ESPN's 27.6 projection leaves out the offensive rebounds and double-doubles a center earns.
+- **Nic Claxton** has started conditioning and takes the starting job back from Jalen Smith once healthy [Gameday Chitown via Yahoo, 31 Oct](https://sports.yahoo.com/articles/bulls-face-celtics-again-nba-184144436.html).
+- **Santi Aldama** is "very close", and his next chance is Monday against Sacramento. Rotoworld says his place in the rotation is unclear [Dallas Sports Journal, 30 Oct](https://dallassportsjournal.com/santi-aldama-close-mavericks-debut-stay-ready-game/).
+- **Coby White:** still no timeline; out 31 Oct [Heavy, 31 Oct](https://heavy.com/sports/nba/charlotte-hornets/kon-knueppel-injury-sixers).
+- **Dereck Lively II:** ruled out again on 30 Oct, with no timetable reported after his third foot operation in a year [Dallas Sports Journal, 29 Oct](https://dallassportsjournal.com/mavericks-injury-report-rockets-caleb-martin-naji-marshall-aldama/).
+- **Tobias Harris** is "getting closer", but the Spurs will be "conservative" [San Antonio Express-News via Yahoo, 29 Oct](https://sports.yahoo.com/articles/spurs-harris-reaches-benchmark-recovery-132710180.html).
+- **T.J. McConnell** is "doing better" but was still out on 30 Oct [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-mcconnell-hamstring-doing-better).
+- **Kon Knueppel** (Team Nic Kerr) is working back through the G League, and Charles Lee has given no timeline [Heavy, 31 Oct](https://heavy.com/sports/nba/charlotte-hornets/kon-knueppel-injury-sixers).
+- **Brandon Ingram** (Melbourne poopoo, our matchup 3 opponent) has a partially torn right Achilles and was out at least another week as of 28 Oct. **Bradley Beal** isn't cleared for 5-on-5 [Basketnews, 29 Oct](https://basketnews.com/news-258395-la-clippers-provide-new-huge-injury-updates-on-brandon-ingram-others.html).
+- **Dylan Cardwell** is re-examined about 2 Nov and **Maxime Raynaud** about 9 Nov [Hoops Rumors, 26 Oct](https://www.hoopsrumors.com/2026/10/kings-announce-injury-updates-on-murray-raynaud-cardwell.html).
+- **The long absences:**
+  - Porzingis: out indefinitely, with "extreme pessimism" that he plays for Golden State again [Basketnews, 28 Oct](https://basketnews.com/news-258337-warriors-reportedly-extremely-pessimistic-on-porzingis-playing-for-them-again.html).
+  - Butler: the team hopes for early 2027 [CBS Sports, 2 Oct](https://www.cbssports.com/fantasy/basketball/news/warriors-jimmy-butler-still-months-away-from-returning/).
+  - Mark Williams: a five-month minimum [Yahoo Sports, 26 Sep](https://sports.yahoo.com/articles/phoenix-suns-mark-williams-injury-152918092.html).
+  - Sharpe: re-evaluated about 27 Feb [SI](https://www.si.com/nba/trailblazers/onsi/portland-trail-blazers-shaedon-sharpe-undergoes-surgery-whats-next).
+  - DiVincenzo: late in the season [RotoWire, 5 Oct](https://www.rotowire.com/basketball/headlines/donte-divincenzo-injury-targeting-late-season-return-533214).
+- **Butler** (41.6 in 2026) is the IR stash to watch. Our IR slot is spoken for until about 23 Nov (Duren, then Kawhi), so no stash is open before then.
+
 ## Our injured players
 
 - **Jalen Duren** (DET): Out, Right Hamstring Strain; ESPN est. back 09 Nov.

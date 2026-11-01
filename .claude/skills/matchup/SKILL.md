@@ -44,6 +44,7 @@ Options:
 | `--pool` | 14 | free agents `--rotate` considers, plus each day's top three |
 | `--sit NAME@YYYY-MM-DD ...` | — | treat a player as not playing that US date, e.g. a planned rest on a back-to-back |
 | `--swap OUT=IN ...` | — | what-if: our roster with OUT replaced by IN (a free agent, a waiver claim, anyone in the pool) |
+| `--returning` | — | also consider injured free agents who haven't played this season, from ESPN's estimated return, rated on last season (or the projection). ESPN's date is often early, so check the reported timeline before relying on one |
 | `--next` | — | prepare for next week's matchup instead: its opponent, Monday to Sunday, the rosters ESPN will field on its first day, and its own add limit |
 | `--from YYYY-MM-DD` | — | count only days from this US date. With `--swap`, it prices a move that lands later in the week, such as a waiver claim. A swap that drops a player who has already played this week needs `--from` today, or it also erases his banked game |
 

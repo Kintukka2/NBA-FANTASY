@@ -14,6 +14,8 @@ comparison is against ESPN's projection instead. From that split it reports:
   - the best-placed replacements on each team
   - free agents and waiver players among them, set against our weakest players
   - injured free agents and waiver players due back within --soon days (default 14)
+  - injured players who have not played yet this season, any league status,
+    valued on ESPN's projection and last season
   - our own injured players
   - every injury in the league, with ESPN's estimated return
 
@@ -329,6 +331,25 @@ def main():
                         + f' | {fmt(r["projected"] and r["projected"]["fpg"])} | '
                         f'{fmt(r["last"] and r["last"]["fpg"])} | {league_label(r, teams)} | {r["owned"]:.0f}% | '
                         f'{left[r["pro"]][0]} / {left[r["pro"]][1]} |')
+    else:
+        body.append("None this time.")
+
+    unplayed = sorted((({**pool[pid], "inj": i}) for pid, i in feed.items() if pid in pool and not pool[pid]["current"]
+                       and max([pool[pid][k]["fpg"] for k in ("projected", "last") if pool[pid].get(k)] or [0]) >= args.value),
+                      key=lambda r: (r["inj"]["return"] or dt.date.max, r["player"]))
+    body += ["", "## Yet to play this season", "",
+             f"Injured players with no game yet this season, worth {args.value:g}+ FP/g on ESPN's projection or last "
+             "season, by expected return. None has played this season, so none has an L7, L15 or L30. Their value "
+             f"is last season and the projection. Our five-lowest floor is {floor:.1f}.", ""]
+    if unplayed:
+        body += ["| Player | NBA | Injury | ESPN est. | Days | Projected FP/g (min) | 2026 FP/g (GP) | League | Owned | Games |",
+                 "|---|---|---|---|---:|---:|---:|---|---:|---|"]
+        for r in unplayed:
+            i, pr, la = r["inj"], r["projected"], r["last"]
+            body.append(f'| **{r["player"]}** | {abbrev.get(r["pro"])} | {i["injury"]} | {est(i)} | '
+                        f'{"—" if back(i) is None else back(i)} | '
+                        f'{fmt(pr and pr["fpg"])} ({fmt(pr and pr["min"])}) | {fmt(la and la["fpg"])} ({la["gp"] if la else "—"}) | '
+                        f'{league_label(r, teams)} | {r["owned"]:.0f}% | {left[r["pro"]][0]} / {left[r["pro"]][1]} |')
     else:
         body.append("None this time.")
 
