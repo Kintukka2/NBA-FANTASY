@@ -1,0 +1,229 @@
+{
+  "question": "For matchup 3 (Mon 2 to Sun 8 Nov, against Melbourne poopoo, projected 1,447 to 1,487), we will stream Fred VanVleet's slot (ESPN lists him out, right knee, est. 2 Nov, but he sat Saturday for rest on the second night of a back-to-back under Udoka's rule for him; he plays Mon, Wed and Sat next week). Which second player's slot should we also stream, dropping that player when the plan says, or should we stream VanVleet's slot only? council/matchup.py --next values: VanVleet + Bane +169.2 (6 adds), + Lendeborg +165.2, + Black +161.1, + Murphy +134.9, VanVleet alone +92.1 (4 adds). Matchup 3 allows 6 adds; matchup 2 has 2 adds left that can be used today (Sun 1 Nov US) for players who also play Monday.",
+  "type": "selection",
+  "options": [
+    "Desmond Bane",
+    "Yaxel Lendeborg",
+    "Anthony Black",
+    "Trey Murphy III",
+    "VanVleet's slot only"
+  ],
+  "asked_at": "2026-11-01T04:00:00Z",
+  "taken": "council/taken.txt (112 players, rebuilt 2026-11-01 03:39 UTC)",
+  "constraints": [
+    "The owner: Fred VanVleet is not a consideration in trades at all."
+  ],
+  "research": "docs/research/20261101-0400-second-stream-slot.md",
+  "form": "docs/research/20261101-0400-second-stream-slot-form.md",
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Desmond Bane",
+        "Yaxel Lendeborg",
+        "Anthony Black",
+        "Trey Murphy III",
+        "VanVleet's slot only"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Anthony Black",
+          "confidence": 0.8,
+          "rationale": "A second slot adds 69 to 77 points this week. That takes our projected margin from about +52 to about +121, worth roughly 0.17 of a win, so 'slot only' leaves value behind. Black's week gain (+161.1) is only 8.1 below Bane's and 4.1 below Lendeborg's. His 2026 baseline (30.64 FP/g over 64 games) equals the free agents we would stream (Gillespie 30.93, Watson 29.80, Gafford 28.14), so dropping him costs nothing measurable for the season. Bane (36.86 over 82 games) and Murphy (41.60 over 66 games) are well above that pool, and Lendeborg's 36.2 over 6 starts at 32 minutes looks safe while Golden State's injuries last.",
+          "evidence": [
+            "data/processed/players_scored.csv: Anthony Black FP_ACT_PG 30.64, A_GP 64, FP_PROJ_PG_CORE 28.20; Collin Gillespie 30.93 (80 GP); Daniel Gafford 28.14 (55 GP)",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.86, A_GP 82; Trey Murphy III 41.60, A_GP 66; Yaxel Lendeborg NO_SAMPLE",
+            "docs/analysis/20261101-matchup3.md: VanVleet+Bane +169.2, +Lendeborg +165.2, +Black +161.1, +Murphy +134.9, slot only +92.1; projection 1447 vs 1487",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black 36.0 (3), L7/L15/L30 36.0 (3); Lendeborg 36.2 (6), L7 36.5 (4); Bane 27.6 (5), L7 37.3 (3); Murphy 27.7 (6), L7 32.0 (4)",
+            "docs/research/20261101-0400-second-stream-slot.md: Suggs re-evaluation about 9 Nov (ESPN est. 10 Nov), Banchero 4-6 weeks (ESPN est. 22 Nov); Rotoworld 30 Oct: hold Black 'until Suggs returns'"
+          ],
+          "concerns": "If Orlando keeps Black as its starting PG after Suggs returns (Rotoworld's 'foreseeable future' note, though no coach statement was found), his 36.0 could hold up, and dropping him would cost a few FP/g per game for the season."
+        },
+        {
+          "member": "archivist",
+          "vote": "Anthony Black",
+          "confidence": 0.62,
+          "rationale": "Over VanVleet-only (+92.1), a second slot adds Bane +77.1, Lendeborg +73.1, Black +69.0, Murphy +42.8: one week, 8.1 points between Bane and Black. By full 2026 samples, Black is 30.64 over 64 GP, at free-agent replacement level (Gillespie 30.93/80, Ware 32.47/77, Queta 33.40/76), while Bane is 36.86 over 82 and Murphy 41.60 over 66. Lendeborg is NO_SAMPLE, so dropping him rests on a 23.49 projection that leaves out OREB and DD. Black's case to stay rests on 3 games (36.0) and a role created by injuries, so his slot gives a near-free +69.0.",
+          "evidence": [
+            "data/processed/players_scored.csv: Anthony Black FP_ACT_PG 30.64, A_GP 64, verification delta -0.026 ok",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.86, A_GP 82; Trey Murphy III 41.60, A_GP 66",
+            "data/processed/players_scored.csv: Yaxel Lendeborg SAMPLE_FLAG NO_SAMPLE, FP_PROJ_PG_CORE 23.49",
+            "docs/analysis/20261101-matchup3.md: VanVleet only +92.1; +Bane 169.2, +Lendeborg 165.2, +Black 161.1, +Murphy 134.9",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black 36.0 (3), L7 36.0 (3), L15 36.0 (3), L30 36.0 (3); Bane 27.6 (5), L7 37.3 (3); Lendeborg 36.2 (6), L7 36.5 (4); Murphy 27.7 (6), L7 32.0 (4)",
+            "council/injuries.py: Jalen Suggs ESPN est. 10 Nov (re-eval ~9 Nov, Yahoo 26 Oct); Banchero ESPN est. 22 Nov"
+          ],
+          "concerns": "Black may keep a starting point-guard role after Suggs returns (unresolved, no team statement), and his 3-game 36.0 could be real, in which case we drop a 36-FP/g player for one week's 69 points."
+        },
+        {
+          "member": "cipher",
+          "vote": "Anthony Black",
+          "confidence": 0.72,
+          "rationale": "Black's 2026 FP_ACT_PG is 30.64 over 64 GP. His shrunk ROS is 29.7 to 31.9, the same as the best free agents (Gafford 28.14, Gillespie 30.93), so dropping him costs about 0 to 95 FP over the season. Streaming his slot gains +69.0 this week (161.1 vs 92.1). Bane (36.86 over 82 GP, ROS 33.8 to 37.8) and Murphy (41.60 over 66 GP, ROS 34.1 to 39.3) are worth 190 to 470 FP above replacement, far more than their +77.1 and +42.8. Lendeborg's ROS range (26.7 to 33.7) is too wide to risk for 4 more FP than Black.",
+          "evidence": [
+            "data/processed/players_scored.csv: Anthony Black FP_ACT_PG 30.64, A_GP 64, FP_PROJ_PG_CORE 28.20 + PROJ_BLIND_SPOT_PG 0.82",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.86, A_GP 82, FP_PROJ_PG_CORE 38.26 + 1.24",
+            "data/processed/players_scored.csv: Trey Murphy III FP_ACT_PG 41.60, A_GP 66, FP_PROJ_PG_CORE 36.76 + 1.13",
+            "data/processed/players_scored.csv: Yaxel Lendeborg no 2026 sample, FP_PROJ_PG_CORE 23.49 at P_MIN 24.6",
+            "data/processed/players_scored.csv: Daniel Gafford FP_ACT_PG 28.14 (55 GP), Collin Gillespie 30.93 (80 GP), the replacement level",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black 36.0 (3), L7/L15/L30 all 36.0 (3); Bane 27.6 (5), L7 37.3 (3); Lendeborg 36.2 (6), L7 36.5 (4); Murphy 27.7 (6), L7 32.0 (4)",
+            "docs/analysis/20261101-matchup3.md: VanVleet+Bane +169.2, +Lendeborg +165.2, +Black +161.1, +Murphy +134.9, VanVleet only +92.1",
+            "docs/research/20261101-0400-second-stream-slot.md: Suggs re-evaluated about 9 Nov (ESPN est. 10 Nov), Banchero 4 to 6 weeks (ESPN est. 22 Nov); Black's start tied to their absence"
+          ],
+          "concerns": "Black's 3-game 36.0 could be a real breakout if he keeps the starting PG job after Suggs returns, as Rotoworld's 'foreseeable future' note suggests; that would put his ROS at 33 to 35, above replacement."
+        },
+        {
+          "member": "ledger",
+          "vote": "Anthony Black",
+          "confidence": 0.72,
+          "rationale": "Black's slot adds +69.0 this week (161.1 vs 92.1), only 8.1 below Bane, and that gap is two games times a rate gap built on 3- and 5-game samples. His 2026 baseline (30.64 FP/g over 64 games, ADP 137.3) is below a free agent's (Gillespie 30.93 over 80), so the permanent drop costs about 0 for the rest of the season, against about 290 for Bane (36.86 over 82) and about 523 for Murphy (41.60 over 66) at about 49 FP per FP/g of gap. His 36.0 (3 games) is a starting role filled while Suggs is out, and Suggs is re-evaluated about 9 Nov (ESPN est. 10 Nov), right after this matchup.",
+          "evidence": [
+            "docs/analysis/20261101-matchup3.md: VanVleet+Black +161.1, +Bane +169.2, +Lendeborg +165.2, +Murphy +134.9, VanVleet only +92.1; rates Black 34.4, Bane 30.4, Lendeborg 32.4, Murphy 31.9",
+            "data/processed/players_scored.csv: Anthony Black FP_ACT_PG 30.64, A_GP 64, ADP 137.3",
+            "data/processed/players_scored.csv: Collin Gillespie FP_ACT_PG 30.93, A_GP 80, ADP 127.5 (free agent per form table)",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.86, A_GP 82, ADP 49.8; Trey Murphy III FP_ACT_PG 41.60, A_GP 66, ADP 75",
+            "data/processed/players_scored.csv: Yaxel Lendeborg A_GP 0 (NO_SAMPLE), FP_PROJ_PG_CORE 23.49, ADP 132.3",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black 36.0 (3), L7/L15/L30 36.0 (3); Bane 27.6 (5), L7 37.3 (3); Lendeborg 36.2 (6), L7 36.5 (4); Murphy 27.7 (6), L7 32.0 (4)",
+            "docs/research/20261101-0400-second-stream-slot.md: Rotoworld 30 Oct, Black worth holding 'until Suggs returns'; Suggs re-evaluation about 9 Nov, ESPN est. 10 Nov; Banchero ESPN est. 22 Nov",
+            "docs/analysis/20261101-injury-watch.md: Jalen Suggs, Free agent, 2026 34.7, ESPN est. 10 Nov"
+          ],
+          "concerns": "If Orlando keeps Black as its starting point guard after Suggs returns (no coach statement found, so unresolved) and he holds about 34-36 FP/g, the drop costs about 150-250 FP for the rest of the season and Lendeborg becomes the closer call."
+        },
+        {
+          "member": "medic",
+          "vote": "Anthony Black",
+          "confidence": 0.62,
+          "rationale": "Streaming Black's slot adds +69.0 over VanVleet's slot only (161.1 vs 92.1). His rest-of-season value above a ~30 FP/g free agent is about 35 points ((30.6-30) x 73 games x 0.78 availability): A_GP 64, a preseason ankle sprain, and a 36.0 (3) that only holds while Suggs (ESPN est. 10 Nov) and Banchero (ESPN est. 22 Nov) are out. Bane (82 GP, 36.9 in 2026, about -500) and Murphy (66 GP, 41.6, about -670 for only +42.8) cost far more than one week buys. Lendeborg's role is propped up by absences into December and January, so his drop is break-even to negative.",
+          "evidence": [
+            "docs/analysis/20261101-matchup3.md: VanVleet+Black +161.1, +Lendeborg +165.2, +Bane +169.2, +Murphy +134.9, VanVleet only +92.1",
+            "data/processed/players_scored.csv: Anthony Black FP_ACT_PG 30.64, A_GP 64, P_GP 69, Injury DAY_TO_DAY",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.86, A_GP 82; Trey Murphy III FP_ACT_PG 41.60, A_GP 66; Yaxel Lendeborg NO_SAMPLE, FP_PROJ_PG_CORE 23.49",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black 36.0 (3), L7 36.0 (3); Lendeborg 36.2 (6), L7 36.5 (4); Bane 27.6 (5), L7 37.3 (3); Murphy 27.7 (6), L7 32.0 (4)",
+            "docs/research/20261101-0400-second-stream-slot.md: Black missed preseason and first 2 games with right ankle sprain; Rotoworld hold 'until Suggs returns'; Suggs re-eval ~9 Nov",
+            "docs/analysis/20261101-injury-watch.md: GS out Butler ESPN est. 02 Jan, Porzingis 01 Dec, Moody 01 Dec; Missi ESPN est. 08 Nov no timetable; Caruso ESPN est. 04 Nov"
+          ],
+          "concerns": "Rotoworld calls Black Orlando's starting PG 'for the foreseeable future', and if he keeps that job after Suggs returns he is a ~34-36 FP/g player, making him costlier to drop than Lendeborg, whose GS role is protected longer; both views rest on 3- and 6-game samples."
+        },
+        {
+          "member": "scout",
+          "vote": "Anthony Black",
+          "confidence": 0.72,
+          "rationale": "Black's 36.0 FP/g covers 3 games at 26.3 min, earned while Suggs (ESPN est. 10 Nov) and Banchero (ESPN est. 22 Nov) are out. His 2026 baseline of 30.64 at 29.9 min on 64 GP came while Wagner missed 48 games and equals the streamers we will hold anyway (Gillespie 30.93, Gafford 28.14). His slot still adds +69.0 over VanVleet only, against +77.1 for Bane, whose 82-GP, 36.86 line came alongside a healthy Banchero and is worth about 370 points over the rest of the season. Lendeborg's team-high 33.6 mpg is protected by about 81 vacant Warriors minutes into December, and Murphy (41.60 in 2026, 4 games this week, +42.8) is the worst slot to stream.",
+          "evidence": [
+            "data/processed/players_scored.csv: Anthony Black A_GP 64, A_MIN 29.89, FP_ACT_PG 30.64; Franz Wagner A_GP 34; Jalen Suggs A_GP 57",
+            "data/processed/players_scored.csv: Desmond Bane A_GP 82, A_MIN 33.62, FP_ACT_PG 36.86; Trey Murphy III A_GP 66, FP_ACT_PG 41.60; Yaxel Lendeborg NO_SAMPLE",
+            "docs/analysis/20261101-matchup3.md: VanVleet+Bane +169.2, +Lendeborg +165.2, +Black +161.1, +Murphy +134.9, VanVleet only +92.1",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black 36.0 (3), L7 36.0 (3), L15 36.0 (3), L30 36.0 (3), 26.3 min, proj 28.2; Lendeborg 36.2 (6), L7 36.5 (4), 32.0 min",
+            "docs/research/20261101-0400-second-stream-slot.md: Rotoworld 30 Oct says hold Black 'until Suggs returns'; no coach statement on the post-Suggs rotation; Lendeborg leads GS at 33.6 mpg (SF Standard 29 Oct)",
+            "docs/offseason-impact.md §7 items 1 and 10: Porzingis's diagnosis and NO's SG/Zion-at-centre question are still unresolved"
+          ],
+          "concerns": "If Sweeney keeps Black at point guard after Suggs returns, as Rotoworld's 'foreseeable future' note suggests, his 3-game 49 FP/36 pace could hold, and we would have dropped a 33-36 FP/g player for one week's gain."
+        },
+        {
+          "member": "tempo",
+          "vote": "Anthony Black",
+          "confidence": 0.72,
+          "rationale": "VanVleet's slot alone uses 4 of the 6 adds, so 2 go to waste. A second slot adds +69.0 (Black) against +77.1 (Bane), because both are ORL and play the same Mon/Thu/Sat games. Black's 2026 rate of 30.64 FP/g (64 GP) matches free agents like Gillespie (30.93, 80 GP), while Bane's 36.86 (82 GP) is +5.9 above that and Murphy's 41.60 is +10.7. Dropping Black removes a player from our deepest group (PG/SG) and keeps Lendeborg, one of our two healthy PF-eligibles until Kawhi returns (ESPN est. 23 Nov). It also keeps a streaming slot alive after the cut Kawhi's return forces.",
+          "evidence": [
+            "docs/analysis/20261101-matchup3.md: VanVleet only +92.1 with 4 adds; +Bane +169.2, +Lendeborg +165.2, +Black +161.1, +Murphy +134.9 with 6 adds",
+            "data/processed/players_scored.csv: Anthony Black FP_ACT_PG 30.64, A_GP 64; Desmond Bane 36.86, A_GP 82; Trey Murphy III 41.60, A_GP 66; Collin Gillespie 30.93, A_GP 80",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black season 36.0 (3), L7 36.0 (3), L15 36.0 (3), L30 36.0 (3); Bane 27.6 (5), L7 37.3 (3); Lendeborg 36.2 (6), L7 36.5 (4); Murphy 27.7 (6), L7 32.0 (4)",
+            "council/roster.csv Pos: PF-eligible only George, Lendeborg and Kawhi (out); PG/SG has Cade, J. Murray, D. Murray, VanVleet and Black, plus SG-eligible Barnes, Murphy and Bane",
+            "docs/research/20261101-0400-second-stream-slot.md: Rotoworld says hold Black 'until Suggs returns'; Suggs ESPN est. 10 Nov, Banchero ESPN est. 22 Nov",
+            "docs/league-rules.md §4: the add limit is a matchup total (6 this matchup); §5 playoff weeks cut off at 'Regular season | 20 match'"
+          ],
+          "concerns": "Black's 36.0 in 3 games as Orlando's starting PG could last past Suggs' return (Rotoworld says 'foreseeable future'), and once dropped he goes to waivers where any team can claim him."
+        },
+        {
+          "member": "vex",
+          "vote": "Anthony Black",
+          "confidence": 0.6,
+          "rationale": "Bane, Lendeborg and Black share a schedule this week (each scores +122.8 when kept through Sat 7), so the 8-FP spread between them comes only from rates built on 3 to 6 games. The real question is rest-of-season value. Black's 2026 baseline is 30.64 FP/g over 64 GP, the same as free agents Gillespie (30.93) and Watson (29.80). His 36.0 is 3 games on 57% three-point shooting in a role that ends when Suggs (ESPN est. 10 Nov) and Banchero (ESPN est. 22 Nov) return. Dropping Bane (36.86 over 82 GP) or Murphy (41.60 over 66 GP) for at most 77 FP in one week fails the CSV test, and Black's option still adds +69.0 over VanVleet's slot only, or +23.5 to +30.7 if Caruso and Brooks fall through.",
+          "evidence": [
+            "data/processed/players_scored.csv: Anthony Black FP_ACT_PG 30.64, A_GP 64, A_MIN 29.89, ADP 137.3",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.86, A_GP 82, ADP 49.8; Trey Murphy III FP_ACT_PG 41.60, A_GP 66, ADP 75",
+            "data/processed/players_scored.csv: Collin Gillespie FP_ACT_PG 30.93 (80 GP), Peyton Watson 29.80 (54 GP), Alex Caruso 17.99 (56 GP)",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black 36.0 (3) L7/L15/L30 all 36.0 (3), min 26.3; Bane 27.6 (5), L7 37.3 (3); Lendeborg 36.2 (6), L7 36.5 (4); Murphy 27.7 (6), L7 32.0 (4)",
+            "docs/analysis/20261101-matchup3.md: rotate both +169.2 Bane / +165.2 Lendeborg / +161.1 Black / +134.9 Murphy; VanVleet slot only +92.1; keep-through-Sat +122.8 for each of Bane, Lendeborg, Black; Black 4-add plan +115.6 uses no Caruso or Brooks",
+            "docs/research/20261101-0400-second-stream-slot.md: Black 8-14 3P over three games; Rotoworld hold 'until Suggs returns'; Suggs re-eval about 9 Nov; Banchero 4-6 weeks; Caruso out, ankle; Brooks Flagrant 2 under review"
+          ],
+          "concerns": "Suggs's bone bruise has a re-evaluation date, not a return date, and with Banchero out to about 22 Nov, Black's 36 FP/g starting role could last most of November and be worth more than a 2-add stream slot."
+        },
+        {
+          "member": "quill",
+          "vote": "Anthony Black",
+          "confidence": 0.6,
+          "rationale": "Black is the only candidate whose 2026 line (30.64 FP/g, 64 GP) matches the wire (Gillespie 30.93, Watson 29.80, Gafford 28.14), and his 36.0 in 3 games came in a starting role that lasts until Suggs is back (ESPN est. 10 Nov). Dropping him costs about nothing over the rest of the season for +69.0 this week (+161.1 against +92.1). Murphy (41.60, 66 GP) was priced as a trade asset in the 30 Oct Harden verdict, and Bane (36.86, 82 GP) is a keep under the rule that 2026 actuals lead. The 19 Oct No on Lendeborg was overtaken by his 36.2 in 6 games at 32 minutes, so it should not be used to drop him now.",
+          "evidence": [
+            "data/processed/players_scored.csv: Anthony Black FP_ACT_PG 30.64, A_GP 64, FP_PROJ_PG_CORE 28.2, ADP 137.3",
+            "data/processed/players_scored.csv: Desmond Bane FP_ACT_PG 36.86, A_GP 82; Trey Murphy III FP_ACT_PG 41.60, A_GP 66",
+            "data/processed/players_scored.csv: Collin Gillespie 30.93 (80 GP), Peyton Watson 29.80 (54), Daniel Gafford 28.14 (55)",
+            "docs/research/20261101-0400-second-stream-slot-form.md: Black 36.0 (3), L7 36.0 (3), L15 36.0 (3), L30 36.0 (3); Lendeborg 36.2 (6), L7 36.5 (4); Bane 27.6 (5), L7 37.3 (3); Murphy 27.7 (6), L7 32.0 (4)",
+            "docs/analysis/20261101-matchup3.md: VanVleet+Black +161.1 (6 adds) vs VanVleet only +92.1; keep Black through Sat +122.8",
+            "council/sessions/20261030-060000-trade-offers.json: verdict James Harden, share 0.789, Murphy valued at 41.60",
+            "docs/analysis/20261101-injury-watch.md Shortlist: floor 35.4, no pickup clears it"
+          ],
+          "concerns": "If Orlando keeps Black as its starting point guard after Suggs returns (Rotoworld: for the foreseeable future), he stays a 34-36 FP/g player, and the end-of-week holds would be worse: Gafford, with Lively's return unresolved, and Missi, on a bone bruise (2026: 28.1 and 22.5)."
+        }
+      ],
+      "result": {
+        "winner": "Anthony Black",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 1.0,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Anthony Black",
+            "weight": 19,
+            "confidence_weight": 13.04,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "scout",
+              "tempo",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Desmond Bane",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Yaxel Lendeborg",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "Trey Murphy III",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          },
+          {
+            "option": "VanVleet's slot only",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    }
+  ],
+  "verdict": {
+    "answer": "Anthony Black",
+    "round": "opening",
+    "share": 1.0,
+    "majority": true,
+    "tiebreak": null
+  }
+}

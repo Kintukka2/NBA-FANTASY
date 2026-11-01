@@ -37,6 +37,7 @@ Usage:
   python council/matchup.py --drop "Payton Pritchard"    # the slot we stream with
   python council/matchup.py --drop "Payton Pritchard" "Paul Reed" --out docs/analysis/20261027-matchup2.md
   python council/matchup.py --rotate "Payton Pritchard" "Fred VanVleet@2026-10-29"   # two slots, VanVleet's from Thu
+  python council/matchup.py --next --rotate "Fred VanVleet"   # next week's matchup, from Monday
 """
 import argparse
 import datetime as dt
@@ -109,6 +110,11 @@ def main():
     ap.add_argument("--from", dest="start", metavar="YYYY-MM-DD",
                     help="count only days from this US date, e.g. what each player is worth after a claim processes")
     ap.add_argument("--pool", type=int, default=14, help="free agents --rotate considers (default 14, plus each day's top 3)")
+    ap.add_argument("--returning", action="store_true",
+                    help="also consider injured free agents who have not played this season, from ESPN's estimated "
+                         "return, rated on last season (or the projection)")
+    ap.add_argument("--next", action="store_true",
+                    help="prepare for next week's matchup (its opponent and its Monday to Sunday) instead of this one")
     ap.add_argument("--allow-live", action="store_true", help="run even while games are in progress")
     args = ap.parse_args()
     local = ZoneInfo(args.tz)
@@ -125,7 +131,7 @@ def main():
     feed = injury_feed()
     league = get(f"{LEAGUE}?view=mTeam&view=mRoster&view=mMatchupScore&view=mSettings&view=mStatus", cookies=True)
     teams = {t["id"]: t for t in league["teams"]}
-    matchup = league["status"]["currentMatchupPeriod"]
+    matchup = league["status"]["currentMatchupPeriod"] + (1 if args.next else 0)
     game = next(m for m in league["schedule"] if m["matchupPeriodId"] == matchup
                 and TEAM_ID in (m["home"]["teamId"], m["away"]["teamId"]))
     us, them = (game["home"], game["away"]) if game["home"]["teamId"] == TEAM_ID else (game["away"], game["home"])
@@ -145,7 +151,7 @@ def main():
                     tipped.setdefault(t["id"], []).append(g["id"])
                 first[int(p)] = min(first.get(int(p), when), when)
     today = now.astimezone(ET).date()
-    monday = today - dt.timedelta(days=today.weekday())
+    monday = today - dt.timedelta(days=today.weekday()) + dt.timedelta(days=7 if args.next else 0)
     end = dt.date.fromisoformat(args.end) if args.end else monday + dt.timedelta(days=6)
     in_matchup = [p for p, w in first.items() if monday <= w.astimezone(ET).date() <= end]
     days = sorted(p for p in in_matchup if any(w > now for (tid, q), w in tips.items() if q == p))
@@ -153,6 +159,9 @@ def main():
         days = [p for p in days if first[p].astimezone(ET).date() >= dt.date.fromisoformat(args.start)]
     if not days:
         sys.exit("No games left in this matchup.")
+    if args.next:  # rosters as ESPN will field them on next week's first day, moves already made included
+        for t in get(f"{LEAGUE}?view=mRoster&scoringPeriodId={days[0]}", cookies=True)["teams"]:
+            teams[t["id"]]["roster"] = t["roster"]
     label = lambda p: (f'{first[p].astimezone(ET):%a %d %b}', f'{first[p].astimezone(local):%a %d}')
 
     sits_out = set()
@@ -197,8 +206,8 @@ def main():
     # ESPN moves a day's points into totalPoints only when the scoring period
     # rolls over, hours after its last game; totalPointsLive has them at once.
     # Games that have tipped are in that score, so only the rest is projected.
-    score_us = us.get("totalPointsLive", us["totalPoints"])
-    score_them = them.get("totalPointsLive", them["totalPoints"])
+    score_us = us.get("totalPointsLive", us.get("totalPoints", 0))
+    score_them = them.get("totalPointsLive", them.get("totalPoints", 0))
     left = lambda roster, p: total(roster, p) - total([r for r in roster if started(r, p)], p)
     rem_us = {p: left(ours, p) for p in days}
     rem_them = {p: left(theirs, p) for p in days}
@@ -215,8 +224,9 @@ def main():
     if missing:
         sys.exit("Not on our active roster: " + ", ".join(missing))
 
-    fa = [r for r in pool.values() if r["league"] == "FREEAGENT" and r["current"]
-          and r["current"]["min"] >= args.min_minutes]
+    fa = [r for r in pool.values() if r["league"] == "FREEAGENT" and all(r is not o for o in ours)  # --swap may add one
+          and ((r["current"] and r["current"]["min"] >= args.min_minutes)
+               or (args.returning and not r["current"] and r["id"] in feed and (r["last"] or r["projected"])))]
     fmt = lambda x: "—" if x is None else f"{x:.1f}"
     est = lambda r: (f'{feed[r["id"]]["status"].lower()}, ESPN est. {feed[r["id"]]["return"]:%d %b}'
                      if r["id"] in feed and feed[r["id"]]["return"] else
@@ -239,10 +249,12 @@ def main():
 
     out = [f"# Matchup {matchup}: {teams[TEAM_ID]['name'].strip()} vs {teams[opp]['name'].strip()}", "",
            f"- Generated {now:%Y-%m-%d %H:%M} UTC by `council/matchup.py`. This is **a report, not a council verdict**.",
-           f"- **Score:** {score_us:.0f} to {score_them:.0f} "
-           f"({'up' if score_us >= score_them else 'down'} "
-           f"{abs(score_us - score_them):.0f}), every finished game included. The matchup runs {monday:%a %d %b} to "
-           f"{end:%a %d %b} (US dates), with {len(days)} days left.",
+           (f"- **Next week's matchup** (`--next`): not started. It runs {monday:%a %d %b} to {end:%a %d %b} "
+            f"(US dates), {len(days)} game days." if args.next else
+            f"- **Score:** {score_us:.0f} to {score_them:.0f} "
+            f"({'up' if score_us >= score_them else 'down'} "
+            f"{abs(score_us - score_them):.0f}), every finished game included. The matchup runs {monday:%a %d %b} to "
+            f"{end:%a %d %b} (US dates), with {len(days)} days left."),
            f"- **Adds:** {used} used this matchup"
            + (f" of {limit:g}, so **{limit - used:g} left**." if limit is not None else ", no limit.")
            + " Free agents arrive at once; waiver players take 24 hours.",
@@ -255,6 +267,9 @@ def main():
            windows_note(ours + theirs + fa) + " The rate does not use them; weigh them against it.",
            f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}."]
     out += ([f"- **What-if:** treated as sitting: {', '.join(args.sit)}."] if args.sit else [])
+    out += ([f"- **Returning players** (`--returning`): injured free agents yet to play this season are included "
+             "from ESPN's estimated return, rated on last season (or the projection). ESPN's estimate is often early."]
+            if args.returning else [])
     out += ([f"- **What-if:** roster swaps {', '.join(s.replace('=', ' → ') for s in args.swap)}."] if args.swap else [])
     out += ([f"- **From {args.start}:** only days from this US date are counted."] if args.start else []) + [""]
 

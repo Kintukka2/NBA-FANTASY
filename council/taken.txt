@@ -33,7 +33,6 @@ Evan Mobley
 Bam Adebayo
 Darius Garland
 Pascal Siakam
-Chet Holmgren
 Austin Reaves
 Dyson Daniels
 Kawhi Leonard
@@ -70,12 +69,10 @@ RJ Barrett
 Caleb Wilson
 Joel Embiid
 Alex Sarr
-Ja Morant
 Brandin Podziemski
 Ivica Zubac
 Derik Queen
 Walker Kessler
-DeMar DeRozan
 Jaden McDaniels
 Kyrie Irving
 OG Anunoby
@@ -99,14 +96,19 @@ Jaime Jaquez Jr.
 Jonathan Kuminga
 Kyshawn George
 Moussa Diabate
-Paul Reed
 Wendell Carter Jr.
 Ayo Dosunmu
-CJ McCollum
-Julian Champagnie
 Kris Dunn
 Toumani Camara
 AJ Dybantsa
-Derrick Jones Jr.
 Onyeka Okongwu
 Tari Eason
+Aaron Wiggins
+Anthony Black
+Devin Vassell
+Isaiah Hartenstein
+Isaiah Jackson
+Jeremiah Fears
+Jrue Holiday
+Norman Powell
+Precious Achiuwa
