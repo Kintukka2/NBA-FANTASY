@@ -225,5 +225,11 @@
     "share": 1.0,
     "majority": true,
     "tiebreak": null
+  },
+  "owner_decision": {
+    "date": "2026-11-01",
+    "decision": "Keep Anthony Black for now; stream VanVleet's slot only in matchup 3.",
+    "reason": "Owner: Black's 11-FP game on 28 Oct came in 22 minutes of a 30-point loss at Toronto. In his other two games he scored 44 (26 min) and 53 (31 min). Suggs and Banchero are out, and Black is ramping up after his preseason ankle sprain, so his role and usage should grow.",
+    "evidence": "ESPN box scores: 25 Oct 26 min 44 FP (bench); 28 Oct 22 min 11 FP (start, ORL lost 99-129); 30 Oct 31 min 53 FP (start). Without 28 Oct: 48.5 FP/g, 61.3 FP/36, against 36.9 FP/36 in 2026. matchup.py --next --returning --rotate 'Fred VanVleet': 4 adds +98.7, against +161.1 for the council's plan."
   }
 }
