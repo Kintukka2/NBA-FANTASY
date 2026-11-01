@@ -13,7 +13,7 @@
   "constraints": [
     "The owner: Fred VanVleet is not a consideration in trades at all."
   ],
-  "research": null,
+  "research": "docs/research/20261101-0400-second-stream-slot.md",
   "form": "docs/research/20261101-0400-second-stream-slot-form.md",
   "rounds": []
 }
