@@ -222,7 +222,7 @@ def main():
         sys.exit("Not on our active roster: " + ", ".join(missing))
 
     fa = [r for r in pool.values() if r["league"] == "FREEAGENT" and r["current"]
-          and r["current"]["min"] >= args.min_minutes]
+          and r["current"]["min"] >= args.min_minutes and all(r is not o for o in ours)]  # --swap may add one
     fmt = lambda x: "—" if x is None else f"{x:.1f}"
     est = lambda r: (f'{feed[r["id"]]["status"].lower()}, ESPN est. {feed[r["id"]]["return"]:%d %b}'
                      if r["id"] in feed and feed[r["id"]]["return"] else
