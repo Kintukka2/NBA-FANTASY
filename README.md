@@ -63,7 +63,7 @@ council/      members.json          personas, skills, sources, vote weights
               slump_watch.py        every roster vs ESPN's projection (same cookies)
               injuries.py           every injured NBA player, ESPN's estimated return
               injury_watch.py       who takes injured players' minutes; pickups for us
-              matchup.py            this week day by day; best streams for our slot
+              matchup.py            this week (or --next week) day by day; best streams for our slot
               rookies.py            rookies' actual output against projection; estimate for one
               form.py               any player's L7 / L15 / L30 FP/g beside season and projection
               tally.py              weighted vote count, runoff, tiebreaks

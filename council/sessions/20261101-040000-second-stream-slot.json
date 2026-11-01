@@ -1,0 +1,11 @@
+{
+  "question": "For matchup 3 (Mon 2 to Sun 8 Nov, against Melbourne poopoo, projected 1,447 to 1,487), we will stream Fred VanVleet's slot (he is out with a right knee injury, ESPN est. 2 Nov). Which second player's slot should we also stream, dropping that player when the plan says, or should we stream VanVleet's slot only? council/matchup.py --next values: VanVleet + Bane +169.2 (6 adds), + Lendeborg +165.2, + Black +161.1, + Murphy +134.9, VanVleet alone +92.1 (4 adds). Matchup 3 allows 6 adds; matchup 2 has 2 adds left that can be used today (Sun 1 Nov US) for players who also play Monday.",
+  "type": "selection",
+  "options": ["Desmond Bane", "Yaxel Lendeborg", "Anthony Black", "Trey Murphy III", "VanVleet's slot only"],
+  "asked_at": "2026-11-01T04:00:00Z",
+  "taken": "council/taken.txt (112 players, rebuilt 2026-11-01 03:39 UTC)",
+  "constraints": ["The owner: Fred VanVleet is not a consideration in trades at all."],
+  "research": null,
+  "form": "docs/research/20261101-0400-second-stream-slot-form.md",
+  "rounds": []
+}

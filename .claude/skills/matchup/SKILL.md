@@ -44,6 +44,7 @@ Options:
 | `--pool` | 14 | free agents `--rotate` considers, plus each day's top three |
 | `--sit NAME@YYYY-MM-DD ...` | — | treat a player as not playing that US date, e.g. a planned rest on a back-to-back |
 | `--swap OUT=IN ...` | — | what-if: our roster with OUT replaced by IN (a free agent, a waiver claim, anyone in the pool) |
+| `--next` | — | prepare for next week's matchup instead: its opponent, Monday to Sunday, the rosters ESPN will field on its first day, and its own add limit |
 | `--from YYYY-MM-DD` | — | count only days from this US date. With `--swap`, it prices a move that lands later in the week, such as a waiver claim. A swap that drops a player who has already played this week needs `--from` today, or it also erases his banked game |
 
 Both roster tables, the streamer table and every move carry **L7, L15 and
@@ -56,6 +57,11 @@ does not include them, so weigh them yourself:
 - One whose L7 is well above it needs a reason it will last.
 - To price a form change, re-run with `--swap` for a different streamer.
   Never edit a rate.
+
+**When this matchup has a day or two left, or is decided,** also run
+`--next` and save it as `docs/analysis/<YYYYMMDD>-matchup<N+1>.md`. Adds
+made on this matchup's last day count against this matchup's limit, so a
+next-week pickup who also plays that day is free. Say so in the plan.
 
 **When the user names two or more flexible slots, or asks for the best
 rotation,** pass `--rotate`. It reports:
