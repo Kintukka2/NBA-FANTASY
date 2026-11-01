@@ -49,14 +49,17 @@ Against `docs/analysis/20261030-slump-watch.md` (30 Oct 05:58 UTC).
   - Current: 28.6 min, 15.4 pts, 4.4-12.4 FG, 4.2-4.8 FT, 5.6 reb, 1.6 ast, 0.6 stl, 0.6 blk, 1.4 TO
   - Last 7 days (3 GP): 24.3 min, 14.3 pts, 4.0-12.0 FG, 4.0-4.7 FT, 4.3 reb, 0.7 ast, 0.7 stl, 0.7 blk, 1.0 TO
   - Projected: 34.0 min, 23.8 pts, 8.0-17.3 FG, 4.7-5.3 FT, 7.2 reb, 1.9 ast, 0.9 stl, 0.5 blk, 1.5 TO
+  - **Latest:** he returned Saturday from the right wrist sprain. He played 29 minutes before fouling out, with 13 points on 3-of-14 (2-of-11 from three) [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/lauri-markkanen-wrist-returns-to-lineup-saturday). The 6-minute injury exit on 26 Oct is still in his average. **Status:** active; no restriction reported.
 - **Darius Garland** (efficiency): scoring −0.1, reb −1.4, ast −2.4, stocks −2.8, TO −5.0; bonus +1.0.
   - Current: 32.4 min, 22.0 pts, 8.2-17.8 FG, 2.8-3.6 FT, 1.6 reb, 6.2 ast, 0.8 stl, 0.0 blk, 5.6 TO
   - Last 7 days (3 GP): 31.0 min, 18.0 pts, 7.0-17.0 FG, 1.7-1.7 FT, 2.3 reb, 7.0 ast, 0.7 stl, 0.0 blk, 5.3 TO
   - Projected: 35.2 min, 21.6 pts, 7.8-17.0 FG, 3.0-3.5 FT, 3.0 reb, 7.4 ast, 1.3 stl, 0.2 blk, 3.1 TO
+  - **What explains it:** turnovers. He has had 5 or more in four straight games, 6 a game overall, while scoring 22 on 46% [HoopsHabit, 31 Oct](https://hoopshabit.com/darius-garland-s-turnover-problems-are-a-cause-for-concern-for-the-clippers-01m6adnqymke). **Status:** playing through minor back tightness; no games missed [NBC Sports, 30 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-30/darius-garland-leads-clippers-with-24-points).
 - **Ivica Zubac** (minutes): scoring −7.2, reb −2.3, ast −1.7, stocks −2.4, TO −0.1; bonus +3.7.
   - Current: 21.7 min, 9.0 pts, 4.0-6.7 FG, 1.0-2.0 FT, 9.0 reb, 1.3 ast, 0.0 stl, 1.0 blk, 1.7 TO
   - Last 7 days (1 GP): 7.0 min, 2.0 pts, 1.0-1.0 FG, 0.0-0.0 FT, 1.0 reb, 2.0 ast, 0.0 stl, 0.0 blk, 1.0 TO
   - Projected: 31.1 min, 14.9 pts, 6.4-10.3 FG, 2.0-2.9 FT, 11.3 reb, 2.2 ast, 0.5 stl, 1.1 blk, 1.6 TO
+  - **Status:** left ankle sprain. He is ruled out Sunday against Brooklyn, his fourth straight miss, and his next chance is Monday; no timetable reported [CBS Sports, 31 Oct](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-ruled-out-for-sunday/). *ESPN est.* 2 Nov.
 - **Near the line:** Zach Edey −10.0 (#10, minutes, L7 16.0), Nikola Jokic −7.4 (#1, efficiency, L7 68.5), Kevin Durant −5.2 (#4, efficiency, L7 37.0).
 
 ### Cream Abdul-Yammar: 2
@@ -70,10 +73,12 @@ Against `docs/analysis/20261030-slump-watch.md` (30 Oct 05:58 UTC).
   - Current: 26.5 min, 8.5 pts, 3.2-8.3 FG, 1.3-1.8 FT, 5.3 reb, 7.5 ast, 0.5 stl, 0.2 blk, 2.3 TO
   - Last 7 days (4 GP): 27.5 min, 10.8 pts, 3.8-7.8 FG, 2.0-2.2 FT, 5.2 reb, 7.5 ast, 0.8 stl, 0.2 blk, 2.0 TO
   - Projected: 35.5 min, 18.5 pts, 6.6-14.5 FG, 3.4-4.4 FT, 9.2 reb, 9.6 ast, 1.2 stl, 0.6 blk, 3.8 TO
+  - **What explains it:** Splitter's deep rotation caps his minutes. He scored a season-high 13 in 25 minutes at Boston on Friday [Basketball Australia, 31 Oct](https://www.basketball.com.au/news/aussies-in-nba-results-october-31-2026-kyrie-irving). SI says the depth of Caleb Wilson and Norman Powell means the offence doesn't need his scoring [SI Bulls, 30 Oct](https://www.si.com/nba/bulls/onsi/bulls-notes-some-positive-signs-schedule-only-gets-tougher-josh-giddey-s-growth-30). **Status:** a managed wrist sprain; no games missed.
 - **LaMelo Ball** (minutes): scoring −10.2, reb −2.3, ast −4.0, stocks +0.7, TO −0.8; bonus +1.0.
   - Current: 25.3 min, 14.4 pts, 5.0-12.9 FG, 1.6-2.1 FT, 3.3 reb, 6.3 ast, 1.9 stl, 0.0 blk, 3.7 TO
   - Last 7 days (5 GP): 25.0 min, 13.6 pts, 4.8-12.0 FG, 1.4-2.0 FT, 3.2 reb, 6.6 ast, 1.8 stl, 0.0 blk, 4.4 TO
   - Projected: 32.9 min, 23.9 pts, 8.3-20.5 FG, 2.8-3.2 FT, 5.6 reb, 8.3 ast, 1.4 stl, 0.3 blk, 3.3 TO
+  - **What explains it:** foul trouble and shooting. He fouled out after 20 minutes at San Antonio on Saturday, a day after 24 points on 6-of-15 from three against the Clippers [AP via Yahoo, 1 Nov](https://sports.yahoo.com/articles/wembanyama-43-points-6-blocks-025411260.html). **Status:** healthy.
 
 ### Matt Wright's Foxies: 2
 
@@ -86,10 +91,12 @@ Against `docs/analysis/20261030-slump-watch.md` (30 Oct 05:58 UTC).
   - Current: 32.7 min, 26.0 pts, 10.0-21.5 FG, 4.0-4.7 FT, 4.5 reb, 3.3 ast, 1.2 stl, 1.2 blk, 1.8 TO
   - Last 7 days (4 GP): 31.2 min, 26.8 pts, 10.2-20.8 FG, 4.8-5.5 FT, 4.8 reb, 3.2 ast, 1.0 stl, 0.8 blk, 2.2 TO
   - Projected: 33.8 min, 31.2 pts, 10.9-20.3 FG, 7.8-8.8 FT, 4.9 reb, 6.4 ast, 1.7 stl, 0.9 blk, 2.3 TO
+  - **What explains it:** career-low assists on a gutted roster: 26 points but only 3 assists at Houston on Saturday [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/shai-gilgeous-alexander-scores-team-high-26-points). Chet Holmgren will miss 8-10 weeks after treatment on a small right patellar tendon tear, and Alex Caruso was out Saturday [OKC Thunder On SI via Yahoo, 31 Oct](https://sports.yahoo.com/articles/okc-thunder-must-stay-afloat-210947089.html). **Status:** healthy.
 - **Jaren Jackson Jr.** (minutes): scoring −5.4, reb −0.7, ast −0.2, stocks −5.2, TO −1.4; bonus +1.8.
   - Current: 26.0 min, 16.2 pts, 5.5-11.0 FG, 4.0-5.2 FT, 5.0 reb, 2.0 ast, 0.2 stl, 1.2 blk, 3.0 TO
   - Last 7 days (2 GP): 21.5 min, 13.0 pts, 4.5-9.5 FG, 3.5-4.5 FT, 2.5 reb, 1.5 ast, 0.0 stl, 0.0 blk, 2.0 TO
   - Projected: 31.4 min, 21.9 pts, 7.8-16.7 FG, 4.3-5.4 FT, 5.7 reb, 2.1 ast, 1.2 stl, 1.6 blk, 2.3 TO
+  - **Status:** torn right MCL; re-evaluated about 8 Dec, six to eight weeks reported; nothing new since 27 Oct [NBA.com / AP, 27 Oct](https://www.nba.com/news/jaren-jackson-jr-torn-mcl-october-2026). *ESPN est.* 14 Dec.
 - **Near the line:** Damian Lillard −8.8 (#6, efficiency, L7 22.7), Naz Reid −6.9 (#10, efficiency, L7 26.6).
 
 ### Come-in Cider (us): 1
@@ -102,6 +109,7 @@ Against `docs/analysis/20261030-slump-watch.md` (30 Oct 05:58 UTC).
   - Current: 33.6 min, 17.2 pts, 4.8-14.2 FG, 4.4-5.2 FT, 4.0 reb, 2.8 ast, 0.8 stl, 1.0 blk, 2.4 TO
   - Last 7 days (3 GP): 36.0 min, 21.0 pts, 5.7-15.0 FG, 5.7-6.3 FT, 4.3 reb, 4.0 ast, 0.3 stl, 1.7 blk, 2.3 TO
   - Projected: 33.7 min, 20.7 pts, 7.4-15.5 FG, 3.4-3.8 FT, 4.8 reb, 4.8 ast, 1.1 stl, 0.5 blk, 2.3 TO
+  - **Last 7 days (+9.7):** his threes started falling. He had 28 points (6-of-12 from three) at Toronto on Friday and 22 against New York, carrying more of the load with Banchero and Suggs out [NBC Sports, 30 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-30/desmond-bane-with-a-bounce-back-28-and-6-assists) [AP via Yahoo, 31 Oct](https://sports.yahoo.com/articles/bane-scores-28-points-wagner-022317311.html). His slow first two games fall outside the window, and three games is a small sample. **Status:** healthy.
 - **Near the line:** Trey Murphy III −9.1 (#9, efficiency, L7 32.0), Jalen Duren −8.7 (#5, minutes, L7 —), Cade Cunningham −7.6 (#1, efficiency, L7 44.8), Kawhi Leonard −5.7 (#2, minutes, L7 —).
 
 ### Team Nic Kerr: 1
@@ -114,6 +122,7 @@ Against `docs/analysis/20261030-slump-watch.md` (30 Oct 05:58 UTC).
   - Current: 33.5 min, 16.7 pts, 4.8-12.8 FG, 4.5-5.3 FT, 4.8 reb, 6.3 ast, 0.8 stl, 0.3 blk, 3.3 TO
   - Last 7 days (5 GP): 33.6 min, 16.8 pts, 4.8-13.0 FG, 4.8-5.6 FT, 5.2 reb, 6.6 ast, 0.8 stl, 0.4 blk, 2.8 TO
   - Projected: 33.6 min, 20.6 pts, 6.1-14.3 FG, 5.6-6.4 FT, 5.0 reb, 8.1 ast, 1.2 stl, 0.6 blk, 3.4 TO
+  - **Latest:** 13 points and 7 assists in 26 minutes of a blowout at Milwaukee on Saturday; NBC calls him "underwhelming this season" [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/james-harden-dishes-out-seven-assists-vs-mil). His L7 (+3.0) is under the flag. **Status:** healthy.
 - **Near the line:** Alex Sarr −9.9 (#9, both, L7 27.8).
 
 ### Dr White Slong: 0
@@ -156,6 +165,11 @@ Players with 2+ games in the last 7 days whose L7 FP/g tells a different story f
 - **Flagged, but within 10 of projection over the last 7 days:** Desmond Bane (Come-in Cider (us), L7 37.3 in 3 vs projected 38.2, season gap −10.6), James Harden (Team Nic Kerr, L7 32.8 in 5 vs projected 42.1, season gap −11.2).
 - **Not flagged, but 10+ under projection over the last 7 days:** Zach Edey (Lauri Birds, L7 16.0 in 3 vs projected 33.2, L7 gap −17.2, season gap −10.0), Damian Lillard (Matt Wright's Foxies, L7 22.7 in 3 vs projected 38.6, L7 gap −15.9, season gap −8.8).
 
+### Notes
+
+- **Zach Edey** is on a managed workload after two left ankle surgeries: 18 to 22 minutes, plus early foul trouble. RotoWire expects "plenty of ups and downs" for about the first month [CBS Sports](https://www.cbssports.com/nba/players/3178244/zach-edey/fantasy/). He has no injury status.
+- **Damian Lillard** had two cold shooting nights and blowout minutes: 9 points on 3-of-13, then 22 in 27 minutes at Utah [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/damian-lillard-hits-three-triples-scores-22). Ja Morant (Grade 2 left hamstring) is out at least four weeks [CBS Sports, 30 Oct](https://www.cbssports.com/nba/news/ja-morant-injury-trail-blazers-star-miss-at-least-four-weeks-hamstring-strain/). *ESPN est.* for Morant: 1 Dec.
+
 ## Under 2026, not under projection
 
 10+ under last season's average, but within 10 of projection.
@@ -178,3 +192,20 @@ None.
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-01 03:40 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
+- News, opened and checked 1 Nov 2026:
+  - [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/lauri-markkanen-wrist-returns-to-lineup-saturday)
+  - [HoopsHabit, 31 Oct](https://hoopshabit.com/darius-garland-s-turnover-problems-are-a-cause-for-concern-for-the-clippers-01m6adnqymke)
+  - [NBC Sports, 30 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-30/darius-garland-leads-clippers-with-24-points)
+  - [CBS Sports, 31 Oct](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-ruled-out-for-sunday/)
+  - [Basketball Australia, 31 Oct](https://www.basketball.com.au/news/aussies-in-nba-results-october-31-2026-kyrie-irving)
+  - [SI Bulls, 30 Oct](https://www.si.com/nba/bulls/onsi/bulls-notes-some-positive-signs-schedule-only-gets-tougher-josh-giddey-s-growth-30)
+  - [AP via Yahoo, 1 Nov](https://sports.yahoo.com/articles/wembanyama-43-points-6-blocks-025411260.html)
+  - [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/shai-gilgeous-alexander-scores-team-high-26-points)
+  - [OKC Thunder On SI via Yahoo, 31 Oct](https://sports.yahoo.com/articles/okc-thunder-must-stay-afloat-210947089.html)
+  - [NBA.com / AP, 27 Oct](https://www.nba.com/news/jaren-jackson-jr-torn-mcl-october-2026)
+  - [NBC Sports, 30 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-30/desmond-bane-with-a-bounce-back-28-and-6-assists)
+  - [AP via Yahoo, 31 Oct](https://sports.yahoo.com/articles/bane-scores-28-points-wagner-022317311.html)
+  - [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/james-harden-dishes-out-seven-assists-vs-mil)
+  - [CBS Sports](https://www.cbssports.com/nba/players/3178244/zach-edey/fantasy/)
+  - [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/damian-lillard-hits-three-triples-scores-22)
+  - [CBS Sports, 30 Oct](https://www.cbssports.com/nba/news/ja-morant-injury-trail-blazers-star-miss-at-least-four-weeks-hamstring-strain/)
