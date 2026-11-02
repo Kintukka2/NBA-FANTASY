@@ -131,11 +131,6 @@ def main():
     feed = injury_feed()
     league = get(f"{LEAGUE}?view=mTeam&view=mRoster&view=mMatchupScore&view=mSettings&view=mStatus", cookies=True)
     teams = {t["id"]: t for t in league["teams"]}
-    matchup = league["status"]["currentMatchupPeriod"] + (1 if args.next else 0)
-    game = next(m for m in league["schedule"] if m["matchupPeriodId"] == matchup
-                and TEAM_ID in (m["home"]["teamId"], m["away"]["teamId"]))
-    us, them = (game["home"], game["away"]) if game["home"]["teamId"] == TEAM_ID else (game["away"], game["home"])
-    opp = them["teamId"]
 
     pro_teams = get(f"{FANTASY}?view=proTeamSchedules_wl")["settings"]["proTeams"]
     abbrev = {t["id"]: t["abbrev"] for t in pro_teams}
@@ -154,12 +149,25 @@ def main():
     monday = today - dt.timedelta(days=today.weekday()) + dt.timedelta(days=7 if args.next else 0)
     end = dt.date.fromisoformat(args.end) if args.end else monday + dt.timedelta(days=6)
     in_matchup = [p for p, w in first.items() if monday <= w.astimezone(ET).date() <= end]
+    # ESPN rolls currentMatchupPeriod over hours after a week's last game, so
+    # count weeks from the week of its latest scoring period instead.
+    matchup = league["status"]["currentMatchupPeriod"]
+    latest = first.get(league["status"].get("latestScoringPeriod"))
+    if latest:
+        latest_day = latest.astimezone(ET).date()
+        matchup += (monday - (latest_day - dt.timedelta(days=latest_day.weekday()))).days // 7
+    else:
+        matchup += 1 if args.next else 0
+    game = next(m for m in league["schedule"] if m["matchupPeriodId"] == matchup
+                and TEAM_ID in (m["home"]["teamId"], m["away"]["teamId"]))
+    us, them = (game["home"], game["away"]) if game["home"]["teamId"] == TEAM_ID else (game["away"], game["home"])
+    opp = them["teamId"]
     days = sorted(p for p in in_matchup if any(w > now for (tid, q), w in tips.items() if q == p))
     if args.start:
         days = [p for p in days if first[p].astimezone(ET).date() >= dt.date.fromisoformat(args.start)]
     if not days:
         sys.exit("No games left in this matchup.")
-    if args.next:  # rosters as ESPN will field them on next week's first day, moves already made included
+    if days[0] > league.get("scoringPeriodId", days[0]):  # rosters as ESPN will field them on the first day ahead, moves already made included
         for t in get(f"{LEAGUE}?view=mRoster&scoringPeriodId={days[0]}", cookies=True)["teams"]:
             teams[t["id"]]["roster"] = t["roster"]
     label = lambda p: (f'{first[p].astimezone(ET):%a %d %b}', f'{first[p].astimezone(local):%a %d}')
