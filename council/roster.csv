@@ -1,9 +1,9 @@
 player,team,pos,slot,acquired,acquired_on,notes
 Cade Cunningham,DET,PG,roster,draft R1 P6,2026-10-08,
 Scottie Barnes,TOR,SG/SF,roster,draft R2 P11,2026-10-08,
-Jalen Duren,DET,C,IR,draft R3 P22,2026-10-08,moved to IR 2026-10-25 (ESPN status OUT)
+Jalen Duren,DET,C,roster,draft R3 P22,2026-10-08,moved to IR 2026-10-25 (ESPN status OUT); back to bench 2026-11-02 for Kawhi Leonard
 Jamal Murray,DEN,PG,roster,draft R4 P27,2026-10-08,
-Kawhi Leonard,TOR,SF/PF,roster,draft R5 P38,2026-10-08,
+Kawhi Leonard,TOR,SF/PF,IR,draft R5 P38,2026-10-08,moved to IR 2026-11-02 (ESPN status OUT; Duren to bench)
 Dejounte Murray,NO,PG/SG,roster,draft R6 P43,2026-10-08,
 Trey Murphy III,NO,SG/SF,roster,draft R7 P54,2026-10-08,
 Desmond Bane,ORL,SG/SF,roster,draft R8 P59,2026-10-08,
