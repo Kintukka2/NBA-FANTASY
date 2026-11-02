@@ -1,0 +1,200 @@
+{
+  "question": "Lauri Birds offers Zach Edey (MEM) for Isaiah Hartenstein (OKC), proposed to us, expiring 4 Nov 06:43 UTC. Should we accept?",
+  "type": "yes_no",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "asked_at": "2026-11-02T07:00:00Z",
+  "taken": "council/taken.txt (111 players, rebuilt 2026-11-02 06:54 UTC)",
+  "research": "docs/research/20261102-0700-black-offers.md",
+  "form": "docs/research/20261102-0700-black-offers-form.md",
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "No",
+          "confidence": 0.7,
+          "rationale": "Edey's 2026 line (39.48 FP/g) is 11 games, which is THIN and not evidence. This season he is at 23.2 (5) on managed 18.5-22 minutes with no timeline to lift them, and about 41 FP per 36 against 55.1 in 2026. Hartenstein (34.01 over 47 GP in 2026) is at L7 34.8 (4) in 26 minutes as OKC's starting centre while Holmgren is out about two months (ESPN est. 2 Jan). The swap also costs about 40-55 FP this week (three Hartenstein games against two Edey games after Monday) in a matchup projected 1,461 to 1,487.",
+          "evidence": [
+            "data/processed/players_scored.csv: Zach Edey FP_ACT_PG 39.48, A_GP 11, SAMPLE_FLAG THIN, FP_ACT_PER36 55.05, FP_PROJ_PG_CORE 33.15 + PROJ_BLIND_SPOT_PG 5.27, P_MIN 26.4",
+            "data/processed/players_scored.csv: Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47, FP_PROJ_PG_CORE 30.55 + PROJ_BLIND_SPOT_PG 4.00, A_DD 11",
+            "docs/research/20261102-0700-black-offers-form.md: Edey 23.2 (5), L7 16.0 (3), L15/L30 23.2 (5), min 20.2/19.3; Hartenstein 28.7 (6), L7 34.8 (4), L15/L30 28.7 (6), min 24.0/26.0",
+            "docs/research/20261102-0700-black-offers.md: Edey 21/22/21/18.5 min, DNP 25 Oct ankle management, no timeline for lifting the limit, Stewart 24 pts in 21 min on 31 Oct; Holmgren out at least 8-10 weeks (ESPN est. 2 Jan); Hartenstein 26 min with 13 and 14 reb on 26 and 28 Oct",
+            "docs/analysis/20261102-matchup3.md: projected 1,461 to 1,487; Hartenstein plays Mon/Wed/Fri/Sat; Memphis plays Mon 2, Wed 4, Fri 6"
+          ],
+          "concerns": "If Memphis lifts Edey to 26+ minutes in December and Holmgren's return in January cuts Hartenstein back to about 24, Edey's projection (38.4 with the blind spot) could beat Hartenstein for the stretch that matters most."
+        },
+        {
+          "member": "archivist",
+          "vote": "No",
+          "confidence": 0.8,
+          "rationale": "Edey's case rests on a THIN line: 39.48 FP/g over only 11 games in 2026, a trap the data dictionary names him in. It also rests on a projection (38.42 with blind spot) that assumes 26.4 minutes while he plays 20.2, with no date for that to change. This season Hartenstein is ahead on every count: 28.7 in 6 games against 23.2 in 5, L7 34.8 in 4 against 16.0 in 3, and 1.20 against 1.15 FP per minute. He averages 35.0 FP/g without Holmgren, who is out until about 2 Jan. He also plays 4 games this week to Memphis's 3, in a matchup projected 1,461 to 1,487.",
+          "evidence": [
+            "data/processed/players_scored.csv: Zach Edey FP_ACT_PG 39.48, A_GP 11, SAMPLE_FLAG THIN, A_MIN 25.82, FP_PROJ_PG_CORE 33.15, PROJ_BLIND_SPOT_PG 5.27, P_MIN 26.4",
+            "data/processed/players_scored.csv: Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47, A_MIN 24.3, FP_PROJ_PG_CORE 30.55, PROJ_BLIND_SPOT_PG 4.00, P_MIN 25",
+            "data/processed/verification.csv: Edey delta 0.034, Hartenstein 0.010, both ok",
+            "docs/research/20261102-0700-black-offers-form.md: Edey 23.2 (5), L7 16.0 (3), L15/L30 23.2 (5), min 20.2/19.3; Hartenstein 28.7 (6), L7 34.8 (4), L15/L30 28.7 (6), min 24.0/26.0",
+            "docs/analysis/20261102-injury-watch.md: Hartenstein 35.0 FP/g in 25.7 min without Holmgren (3 games) vs 22.3 with him; Holmgren out 8-10 weeks (Yahoo, 31 Oct), ESPN est. 2 Jan",
+            "docs/research/20261102-0700-black-offers.md: Edey 18.5-22 min in every known game, ankle-management DNP 25 Oct, no team timeline for lifting the limit; Memphis plays Mon 2, Wed 4, Fri 6",
+            "docs/analysis/20261102-matchup3.md: projected 1,461-1,487; Hartenstein adds 121.1 this week (Mon/Wed/Fri/Sat)",
+            "docs/data-dictionary.md Known traps 2: 'Edey 11' named among sub-20-game rates that are not evidence"
+          ],
+          "concerns": "If Memphis lifts Edey's limit to about 26-30 minutes soon and his 2026 rate of 1.53 FP per minute returns, he would pass Hartenstein after Holmgren comes back around 2 Jan, but no source schedules that."
+        },
+        {
+          "member": "cipher",
+          "vote": "No",
+          "confidence": 0.7,
+          "rationale": "Edey's only winning number (proj 33.15 + blind 5.27 = 38.42, shrinkage ROS 33.5-36.9) assumes 26.4 P_MIN; he is playing 20.2 with no timeline, which is 23-34 FP/g at his season or 2026 per-minute rate, and his 2026 39.48 rests on 11 GP (THIN). Hartenstein at 26 min with Holmgren out until ~2 Jan projects 31-36 (L7 34.8 (4)), about +5 to +8 FP/g (~150-240 FP) over the next ~30 games, plus ~35 points in this week's tight matchup. Edey's possible later edge of ~+3 FP/g depends on a ramp and ankle health no source confirms.",
+          "evidence": [
+            "data/processed/players_scored.csv: Zach Edey FP_ACT_PG 39.48, A_GP 11, SAMPLE_FLAG THIN, A_MIN 25.8, P_MIN 26.4, FP_PROJ_PG_CORE 33.15, PROJ_BLIND_SPOT_PG 5.27",
+            "data/processed/players_scored.csv: Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47, A_MIN 24.3, FP_PROJ_PG_CORE 30.55, PROJ_BLIND_SPOT_PG 4.00",
+            "docs/research/20261102-0700-black-offers-form.md: Edey 23.2 (5), L7 16.0 (3), L15 23.2 (5), L30 23.2 (5), min 20.2/19.3; Hartenstein 28.7 (6), L7 34.8 (4), L15 28.7 (6), L30 28.7 (6), min 24.0/26.0",
+            "docs/research/20261102-0700-black-offers.md: Edey 18.5-22 min, DNP 25 Oct ankle management, no team timeline to lift the limit; Holmgren 'at least 8-10 weeks', ESPN est. 2 Jan",
+            "docs/analysis/20261102-matchup3.md: Hartenstein adds 121.1 this week (Mon/Wed/Fri/Sat); matchup projects 1,461 to 1,487"
+          ],
+          "concerns": "If Memphis lifts Edey to about 26 minutes before Holmgren returns, his 2026 per-minute rate (55.1 per 36) would make him the better centre for most of the season, and that ramp date is unknown, not known to be late."
+        },
+        {
+          "member": "ledger",
+          "vote": "No",
+          "confidence": 0.72,
+          "rationale": "Hartenstein's 34.01 FP/g over 47 GP is evidence; Edey's 39.48 is 11 GP (THIN), and his 38.42 projection assumes 26.4 min while he plays 20.2 with no timeline for lifting the limit, which works out to 23-32 FP/g at 20-22 min. With Holmgren out to about 2 Jan, Hartenstein leads by 5-11 FP/g for about 28 games (+140 to +300 FP). Edey's best case after that is about +175, so the deal at best breaks even. It also costs 37-51 FP this week (121.1 vs 70-84) in a matchup projected 1,461 to 1,487.",
+          "evidence": [
+            "data/processed/players_scored.csv: Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47, A_MIN 24.3, FP_PROJ_PG_CORE 30.55 + PROJ_BLIND_SPOT_PG 4.00, P_GP 64, ADP 133.2",
+            "data/processed/players_scored.csv: Zach Edey FP_ACT_PG 39.48, A_GP 11, SAMPLE_FLAG THIN, FP_ACT_PER36 55.05, FP_PROJ_PG_CORE 33.15 + 5.27, P_MIN 26.4, P_GP 62, ADP 124.3",
+            "docs/research/20261102-0700-black-offers-form.md: Edey 23.2 (5), L7 16.0 (3), L15/L30 23.2 (5), min 20.2/19.3, proj 33.2; Hartenstein 28.7 (6), L7 34.8 (4), L15/L30 28.7 (6), min 24.0/26.0, proj 30.5",
+            "docs/research/20261102-0700-black-offers.md: Edey no team or coach timeline for lifting the managed workload; 18.5-22 min in every known game; Stewart 18 in 16 min and 24 in 21; Holmgren small patellar tendon tear, at least 8-10 weeks, ESPN est. 2 Jan",
+            "docs/analysis/20261102-matchup3.md: Hartenstein adds 121.1 this week (Mon/Wed/Fri/Sat); projection 1,461 to 1,487; free-agent C Gafford 32.8 (6), Hayes 32.2 (5), Ware 29.5 (6)",
+            "docs/offseason-impact.md Appendix A: Edey 39.48 on 11 GP, 'Confidence downgraded; ceiling intact'"
+          ],
+          "concerns": "If Memphis lifts the limit soon and Edey plays 26+ minutes at his 2026 rate (1.53 FP/min, about 40 FP/g with 3.91 OREB and 1.91 BLK), he beats Hartenstein for most of the season, including the fantasy playoffs after Holmgren returns."
+        },
+        {
+          "member": "medic",
+          "vote": "No",
+          "confidence": 0.65,
+          "rationale": "Edey's 39.48 FP/g rests on A_GP 11 (THIN, data-dictionary trap 2). He is on a managed 20.2 minutes against ESPN's 26.4, with an ankle-management DNP and no timeline for lifting the limit. Hartenstein has started 6 of 6 at 34.8 L7 (4) and 35.0 without Holmgren, who is out until about 2 Jan. My two-phase model has Hartenstein about 1,911 FP rest of season to Edey's 1,809 (upside 1,992), and +51 this week (121.1 vs about 70).",
+          "evidence": [
+            "data/processed/players_scored.csv: Zach Edey FP_ACT_PG 39.48, A_GP 11, SAMPLE_FLAG THIN, P_GP 62, FP_PROJ_PG_CORE 33.15 + PROJ_BLIND_SPOT_PG 5.27",
+            "data/processed/players_scored.csv: Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47, P_GP 64, FP_PROJ_PG_CORE 30.55 + PROJ_BLIND_SPOT_PG 4.00",
+            "docs/research/20261102-0700-black-offers-form.md: Edey 23.2 (5), L7 16.0 (3), L15/L30 23.2 (5), min 20.2/19.3, proj 33.2; Hartenstein 28.7 (6), L7 34.8 (4), L15/L30 28.7 (6), min 24.0/26.0, proj 30.5",
+            "docs/research/20261102-0700-black-offers.md: Edey DNP 25 Oct for left ankle injury management, 18.5-22 min in every known game, no team timeline for the limit; Holmgren out at least 8-10 weeks, ESPN est. 2 Jan",
+            "docs/analysis/20261102-injury-watch.md: Hartenstein without Holmgren 3 games, 25.7 min, 35.0 FP/g",
+            "docs/analysis/20261102-matchup3.md: keeping Hartenstein worth 121.1 this week (Mon/Wed/Fri/Sat)",
+            "docs/data-dictionary.md Known traps 2: 'Edey 11 ... A per-36 extrapolation from seven games is not evidence'"
+          ],
+          "concerns": "If Memphis lifts the limit by December and Edey plays 26+ minutes at his 2026 rate, he outscores Hartenstein after Holmgren returns in January, and Hartenstein's own A_GP 47 could cut into his games."
+        },
+        {
+          "member": "scout",
+          "vote": "No",
+          "confidence": 0.75,
+          "rationale": "Hartenstein's role just grew: Holmgren is out 8-10 weeks (ESPN est. 2 Jan), and Hartenstein is up to 26 min with L7 34.8 (4) against a 28.7 (6) season. Edey is held to 18.5-22 min with no timeline for lifting it: L7 16.0 (3) against a 23.2 (5) season, and an ankle-rest DNP on a back-to-back. Edey's per-36 has dropped from 55.1 on an 11-GP 2026 sample to 41.3, below Hartenstein's 43.1 this season. Hartenstein also has 4 games this week to Edey's 3.",
+          "evidence": [
+            "docs/research/20261102-0700-black-offers-form.md: Zach Edey 23.2 (5), L7 16.0 (3), L15 23.2 (5), L30 23.2 (5), min 20.2 / 19.3, proj 33.2",
+            "docs/research/20261102-0700-black-offers-form.md: Isaiah Hartenstein 28.7 (6), L7 34.8 (4), L15 28.7 (6), L30 28.7 (6), min 24.0 / 26.0, proj 30.5",
+            "data/processed/players_scored.csv: Zach Edey FP_ACT_PG 39.48, A_GP 11, SAMPLE_FLAG THIN, FP_ACT_PER36 55.05, P_MIN 26.4, PROJ_BLIND_SPOT_PG 5.27",
+            "data/processed/players_scored.csv: Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47, A_MIN 24.30, P_MIN 25.0, PROJ_BLIND_SPOT_PG 4.00; Chet Holmgren A_MIN 28.96",
+            "docs/research/20261102-0700-black-offers.md: Edey managed minutes, no team statement on a timeline; DNP 25 Oct for ankle management; Stewart 24 pts in 21 min on 31 Oct",
+            "docs/research/20261102-0700-black-offers.md: Holmgren small patellar tendon tear, at least 8-10 weeks (Slam via RotoWire), ESPN est. 2 Jan; Hartenstein 26 min, 13 and 14 reb on 26 and 28 Oct",
+            "docs/offseason-impact.md §2: Edey's case 'rests on eleven games... Real upside, unreal confidence'"
+          ],
+          "concerns": "If Memphis lifts Edey's limit soon, his format-adjusted projection (about 38.4) beats Hartenstein's (about 34.5), and Hartenstein's bigger role ends when Holmgren returns around early January, or sooner if Aday Mara (28 min on 31 Oct) keeps eating minutes."
+        },
+        {
+          "member": "tempo",
+          "vote": "No",
+          "confidence": 0.68,
+          "rationale": "Both are C-only in a 1-for-1, so roster fit is a wash and the schedule decides: matchup 3 with Edey projects 1,424 against 1,461 keeping Hartenstein (-37; OKC has 4 games this week to Memphis's 3, and Hartenstein adds 121.1 to Edey's 84.2), and matchup 4 is -8 against Lauri Birds, the team offering. Edey's 2026 rate of 39.5 comes from 11 games (THIN) at 25.8 min, but he is at 20.2 min now with no timeline to lift the limit. His 23.2 (L7 16.0 over 3 games) is below waiver centres Gafford 32.8 and Hayes 32.2. Hartenstein (34.0 over 47 GP; L7 34.8 over 4) has a starting job secured until Holmgren returns around 2 Jan.",
+          "evidence": [
+            "docs/research/20261102-0700-black-offers-form.md: Edey 23.2 (5), L7 16.0 (3), L15 23.2 (5), L30 23.2 (5), min 20.2/19.3, proj 33.2; Hartenstein 28.7 (6), L7 34.8 (4), L15 28.7 (6), L30 28.7 (6), min 24.0/26.0, proj 30.5",
+            "data/processed/players_scored.csv: Zach Edey A_GP 11 (SAMPLE_FLAG THIN), A_MIN 25.82, FP_ACT_PG 39.48, P_MIN 26.4; Isaiah Hartenstein A_GP 47, FP_ACT_PG 34.01, FP_PROJ_PG_CORE 30.55",
+            "council/matchup.py --swap Hartenstein=Edey: matchup 3 1,424 vs 1,461 keeping; matchup 4 (vs Lauri Birds) 1,524 vs 1,532; Hartenstein adds 121.1 this week, Edey 84.2",
+            "docs/research/20261102-0700-black-offers.md: Edey 18.5-22 min, DNP 25 Oct (ankle management, first game of a back-to-back), no team timeline for lifting the limit; Holmgren 'at least 8-10 weeks', ESPN est. 2 Jan; Hartenstein 6 of 6 starts",
+            "docs/analysis/20261102-matchup3.md: waiver C Gafford 32.8 (6), Hayes 32.2 (5), Ware 29.5 (6)",
+            "docs/league-rules.md §5 cut off at 'Regular season | 20 match', so playoff weeks are not recorded"
+          ],
+          "concerns": "If Memphis lifts Edey's minutes limit within weeks and Hartenstein's role shrinks when Holmgren returns around January, Edey's 5.3 blind-spot-adjusted rebounding and 1.91 blocks could make him the better C for the fantasy playoffs."
+        },
+        {
+          "member": "vex",
+          "vote": "No",
+          "confidence": 0.75,
+          "rationale": "Edey's 39.48 FP/g is on 11 games (THIN), and his ESPN projection assumes 26.4 minutes when he is playing 18.5 to 22 on a cap with no timeline. That gives him 23.2 over 5 games and an L7 of 16.0 (3). Hartenstein has 34.01 over 47 games and a projection plus blind spot of 34.55. With Holmgren out until about 2 Jan he is at 34.8 over his last 4 games, 26 minutes a night. Accepting costs about 65 FP in a matchup we trail by 26, for an upside that depends on a cap with no end date.",
+          "evidence": [
+            "data/processed/players_scored.csv: Zach Edey FP_ACT_PG 39.48, A_GP 11, SAMPLE_FLAG THIN, FP_PROJ_PG_CORE 33.15 + PROJ_BLIND_SPOT_PG 5.27, P_MIN 26.4, P_GP 62",
+            "data/processed/players_scored.csv: Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47, FP_PROJ_PG_CORE 30.55 + PROJ_BLIND_SPOT_PG 4.00, P_GP 64",
+            "docs/research/20261102-0700-black-offers-form.md: Edey 23.2 (5), L7 16.0 (3), L15/L30 23.2 (5), 20.2 / 19.3 min; Hartenstein 28.7 (6), L7 34.8 (4), L15/L30 28.7 (6), 24.0 / 26.0 min",
+            "docs/research/20261102-0700-black-offers.md: Edey 21/22/21/18.5 min plus a 25 Oct ankle-management DNP, no team timeline for lifting the cap; Stewart 18 pts in 16 min and 24 pts in 21 min; Holmgren at least 8-10 weeks, ESPN est. 2 Jan; Hartenstein 13 and 14 reb in 26 min",
+            "docs/offseason-impact.md line 100: Edey's 39.5 'rests on eleven games... Real upside, unreal confidence'",
+            "docs/analysis/20261102-slump-watch.md: Edey gap -10.0 vs projection; Lauri Birds offer expires 04 Nov 06:43 UTC"
+          ],
+          "concerns": "If Memphis lifts Edey to 26+ minutes soon, his 55.1 per-36 rate and 5.27 blind spot would beat Hartenstein once Holmgren returns in January."
+        },
+        {
+          "member": "quill",
+          "vote": "No",
+          "confidence": 0.7,
+          "rationale": "Hartenstein's 2026 line is 34.01 over 47 GP; Edey's 39.48 comes from 11 GP (THIN), which the A_GP-first rule treats as no evidence, and this season Edey is at 23.2 (5), L7 16.0 (3), on 20.2 minutes against ESPN's assumed 26.4. Hartenstein is up to 34.8 (4) in L7 on 26 minutes with Holmgren out until about 2 Jan, and he adds 121.1 this week against about 70 from Edey, in a matchup projected 1,461 to 1,487. My scenarios put Edey at -136 to +167 FP for the rest of the season, depending on a minutes timeline nobody has reported, so the trade gives up certain points now for a guess.",
+          "evidence": [
+            "data/processed/players_scored.csv: Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47, FP_PROJ_PG_CORE 30.55 + PROJ_BLIND_SPOT_PG 4.00",
+            "data/processed/players_scored.csv: Zach Edey FP_ACT_PG 39.48, A_GP 11, SAMPLE_FLAG THIN, FP_PROJ_PG_CORE 33.15, P_MIN 26.4",
+            "docs/research/20261102-0700-black-offers-form.md: Hartenstein 28.7 (6), L7 34.8 (4), L15 28.7 (6), L30 28.7 (6), proj 30.5; Edey 23.2 (5), L7 16.0 (3), L15 23.2 (5), L30 23.2 (5), proj 33.2",
+            "docs/research/20261102-0700-black-offers.md: Edey at 18.5-22 min in every known game, no timeline for lifting the management; Holmgren out at least 8-10 weeks, ESPN est. 2 Jan",
+            "docs/analysis/20261102-matchup3.md: Hartenstein adds 121.1 this week (4 games); projection 1,461 to 1,487",
+            "docs/offseason-impact.md §2: Edey's 39.5 'rests on eleven games... Real upside, unreal confidence'"
+          ],
+          "concerns": "If Memphis lifts Edey's minutes management soon and he plays 26+ minutes at his 55.1 per-36 rate, he becomes a 38+ FP/g centre for the stretch after Holmgren returns (about 2 Jan) and cuts into Hartenstein's role."
+        }
+      ],
+      "result": {
+        "winner": "No",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 1.0,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "No",
+            "weight": 19,
+            "confidence_weight": 13.6,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "medic",
+              "scout",
+              "tempo",
+              "vex",
+              "quill"
+            ]
+          },
+          {
+            "option": "Yes",
+            "weight": 0,
+            "confidence_weight": 0,
+            "voters": []
+          }
+        ]
+      }
+    }
+  ],
+  "verdict": {
+    "answer": "No",
+    "round": "opening",
+    "share": 1.0,
+    "majority": true,
+    "tiebreak": null
+  }
+}
