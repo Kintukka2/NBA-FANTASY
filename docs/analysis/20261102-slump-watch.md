@@ -241,6 +241,39 @@ With **Snow Time Lakers**, proposed by us, expires 04 Nov 06:08 UTC.
 | Anthony Black | we send | 4 | 28.0 / 28.9 | 36.2 | 36.2 (4) | 36.2 (4) | 36.2 (4) | 28.2 | +8.1 | Active |
 | Fred VanVleet | we send | 5 | 30.6 / 32.2 | 35.4 | 31.3 (3) | 35.4 (5) | 35.4 (5) | 33.4 | +2.0 | Active |
 
+### Council verdicts on the pending trades
+
+**Our seven Black offers (only one can execute): keep Amen Thompson pending and withdraw the other six.** The council voted 17 of 19 (8 of 9 members) for Thompson, with Booker (scout) the only other vote. Session: `council/sessions/20261102-070000-black-offers.json`.
+
+- **Anthony Black:** 36.2 (4), L7 / L15 / L30 all 36.2 (4), projection 28.2, 2026 30.6 over 64 GP.
+  - His minutes are down, not up: 28.0 against 29.9 in 2026. The jump is per minute, 1.29 FP/min against 1.03, over four games.
+  - His larger role exists while Jalen Suggs and Paolo Banchero are out:
+    - Suggs (mild right knee bone bruise) is re-evaluated about 9 Nov ([Yahoo Sports, 26 Oct](https://sports.yahoo.com/articles/jalen-suggs-injury-magic-announce-195344477.html)); *ESPN est.* 10 Nov.
+    - Banchero (low-grade right high ankle sprain) is out four to six weeks from 23 Oct ([Yahoo Sports, 24 Oct](https://sports.yahoo.com/nba/breaking-news/article/magics-paolo-banchero-suffers-high-ankle-sprain-in-loss-to-timberwolves-reportedly-could-be-out-4-6-weeks-173753794.html)); *ESPN est.* 22 Nov.
+  - No Sweeney comment on Black's role after they return was found. His trade value is highest this week.
+- **Amen Thompson:** 37.9 (7), L7 29.5 (4), L15 / L30 37.9 (7), projection 40.0 plus a 3.73 blind spot, 2026 44.2 over 79 GP.
+  - L7 is 8.4 under his season. In those four games he averaged 3.75 rebounds against 6.6 for the season, three were wins by 10 or more, and he took 8 shots on 31 Oct. No injury or benching was found.
+  - His rate held: 1.13 FP/min against 1.18 in 2026. Only his minutes fell, from 37.4 to 33.7, with VanVleet back.
+  - Ledger's model has him gaining about +800 FP over keeping Black across the rest of the season. Black would need about 44 FP/g to match him.
+- **Why not the others:**
+  - **Jalen Brunson** also costs Kawhi Leonard (50.0 over 65 GP in 2026). Kawhi (left knee) is re-evaluated Wed 4 Nov, after the offers expire ([TSN, 29 Oct](https://www.tsn.ca/nba/article/nature-of-kawhis-knee-injury-makes-return-timeline-difficult-to-project/)). He is out "at least three to four weeks" per Haynes ([RotoWire TOR, 29 Oct](https://www.rotowire.com/basketball/news.php?team=TOR)); *ESPN est.* 23 Nov. He can go to IR once Jalen Duren returns (no timetable reported; *ESPN est.* 9 Nov).
+  - **James Harden** is at 0.92 FP/min against 1.29 in 2026, on full minutes, at 37.
+  - **Jaylen Brown:** L7 28.3 (3), 7.3 under his season. He has left patellar tendinopathy and missed 30 Oct; no timetable reported, and he is not in ESPN's feed, so there is no *ESPN est.* ([Bleacher Report, 30 Oct](https://bleacherreport.com/articles/25527375-jaylen-brown-injured-latest-updates-76ers-stars-knee-return-timeline)).
+  - **Devin Booker:** L7 22.0 (2) is noise. His 3 points on 26 Oct came with no injury reported ([Arizona Sports, 26 Oct](https://arizonasports.com/nba/phoenix-suns/devin-booker-scores-3-suns-vulnerable-thunder)). He played 64 games in 2026.
+  - **Dyson Daniels:** L7 25.0 (4), 11.6 under his season, on unchanged minutes (28.8). He has gone four games without double-figure scoring, and no injury was found.
+  - **Jabari Smith Jr.:** 39.1 (7) rests on 44.7% from three (21 of 47) against 36.3% in 2026. ESPN projects 27.6.
+- **Every member's concern was acceptance.** Thompson (ADP 20.2) for Black (137.3) and VanVleet is the least likely of the seven to be accepted. Ledger names Daniels as the best fallback if the owner prefers a likelier deal.
+
+**Lauri Birds' offer, Zach Edey for Isaiah Hartenstein: decline.** The council voted No, 19 of 19. Session: `council/sessions/20261102-070001-edey-for-hartenstein.json`.
+
+- **Zach Edey:** 23.2 (5), L7 16.0 (3), L15 / L30 23.2 (5), projection 33.2, 2026 39.5 over **11 GP** (THIN, not evidence under the README rule).
+  - L7 is 7.2 under his season. The reasons are managed minutes (18.5 to 22 in every known game, 19.3 over L7), early foul trouble on 26 Oct (4 points in 21 minutes), and Isaiah Stewart scoring 18 and 24 off the bench. He sat 25 Oct for "left ankle injury management" ([CBS/RotoWire, 24 Oct](https://www.cbssports.com/fantasy/basketball/news/grizzlies-zach-edey-resting-sunday/)). He is not in ESPN's injury feed.
+  - ESPN's projection assumes 26.4 minutes. No team or Iisalo statement gives a date for lifting the limit.
+- **Isaiah Hartenstein:** 28.7 (6), L7 34.8 (4), L15 / L30 28.7 (6), projection 30.5, 2026 34.0 over 47 GP.
+  - L7 is 6.1 over his season because Chet Holmgren is out. Holmgren has a small right patellar tendon tear and is out 8 to 10 weeks, about 25 Dec to 8 Jan ([Yahoo Sports, 31 Oct](https://sports.yahoo.com/nba/article/thunders-chet-holmgren-will-miss-8-10-weeks-after-undergoing-treatment-on-patellar-tendon-tear-010736245.html)); *ESPN est.* 2 Jan. Hartenstein has played 26 minutes with 13 and 14 rebounds since, and has started 6 of 6.
+- **This week:** Hartenstein adds 121.1 to matchup 3 over four games (Mon, Wed, Fri, Sat). Memphis plays three. Tempo's `matchup.py --swap` puts the trade at −37 this week and −8 next week against Lauri Birds, the team offering.
+- **What would change it:** Memphis lifting Edey to 26+ minutes. Edey's best case is roughly break-even over the rest of the season (Ledger: Hartenstein +140 to +300 FP until about 2 Jan, Edey about +175 after).
+
 ## Sources
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-02 06:54 UTC.
