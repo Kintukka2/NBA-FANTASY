@@ -77,7 +77,6 @@ Jaden McDaniels
 Kyrie Irving
 OG Anunoby
 Damian Lillard
-Zach Edey
 Ajay Mitchell
 Darius Acuff Jr.
 Immanuel Quickley
@@ -102,7 +101,6 @@ Kris Dunn
 AJ Dybantsa
 Onyeka Okongwu
 Anthony Black
-Devin Vassell
 Isaiah Hartenstein
 Isaiah Jackson
 Jeremiah Fears
@@ -111,3 +109,5 @@ Brook Lopez
 De'Anthony Melton
 Ja'Kobe Walter
 Payton Pritchard
+Paul Reed
+Zaccharie Risacher
