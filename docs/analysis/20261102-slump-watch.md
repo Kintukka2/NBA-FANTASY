@@ -46,14 +46,17 @@ Against `docs/analysis/20261101-slump-watch.md` (1 Nov).
   - Current: 28.6 min, 15.4 pts, 4.4-12.4 FG, 4.2-4.8 FT, 5.6 reb, 1.6 ast, 0.6 stl, 0.6 blk, 1.4 TO
   - Last 7 days (3 GP): 24.3 min, 14.3 pts, 4.0-12.0 FG, 4.0-4.7 FT, 4.3 reb, 0.7 ast, 0.7 stl, 0.7 blk, 1.0 TO
   - Projected: 34.0 min, 23.8 pts, 8.0-17.3 FG, 4.7-5.3 FT, 7.2 reb, 1.9 ast, 0.9 stl, 0.5 blk, 1.5 TO
+  - **Latest:** he returned on 31 Oct from the right wrist sprain: 13 points on 3-of-14 in 29 minutes before fouling out [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/lauri-markkanen-wrist-returns-to-lineup-saturday). The 6-minute injury exit on 26 Oct is still in his average. **Status:** active.
 - **Darius Garland** (efficiency): scoring −1.9, reb −1.7, ast −2.1, stocks −2.7, TO −4.1; bonus +0.8.
   - Current: 32.5 min, 20.8 pts, 7.5-16.8 FG, 3.3-4.0 FT, 1.3 reb, 6.3 ast, 0.8 stl, 0.0 blk, 5.2 TO
   - Last 7 days (4 GP): 31.5 min, 17.2 pts, 6.2-15.8 FG, 2.8-2.8 FT, 1.8 reb, 7.0 ast, 0.8 stl, 0.0 blk, 4.8 TO
   - Projected: 35.2 min, 21.6 pts, 7.8-17.0 FG, 3.0-3.5 FT, 3.0 reb, 7.4 ast, 1.3 stl, 0.2 blk, 3.1 TO
+  - **What explains it:** turnovers, with 5 or more in four straight games [HoopsHabit, 31 Oct](https://hoopshabit.com/darius-garland-s-turnover-problems-are-a-cause-for-concern-for-the-clippers-01m6adnqymke). In Sunday's loss to Golden State he scored 15 on 4-of-12 but had only 3 turnovers. **Status:** playing through minor back tightness.
 - **Ivica Zubac** (minutes): scoring −7.2, reb −2.3, ast −1.7, stocks −2.4, TO −0.1; bonus +3.7.
   - Current: 21.7 min, 9.0 pts, 4.0-6.7 FG, 1.0-2.0 FT, 9.0 reb, 1.3 ast, 0.0 stl, 1.0 blk, 1.7 TO
   - Last 7 days (1 GP): 7.0 min, 2.0 pts, 1.0-1.0 FG, 0.0-0.0 FT, 1.0 reb, 2.0 ast, 0.0 stl, 0.0 blk, 1.0 TO
   - Projected: 31.1 min, 14.9 pts, 6.4-10.3 FG, 2.0-2.9 FT, 11.3 reb, 2.2 ast, 0.5 stl, 1.1 blk, 1.6 TO
+  - **Status:** left ankle sprain. He missed Sunday's 98-90 loss to Brooklyn, his fourth straight absence, and Monday against Atlanta is his next chance; no timetable reported [CBS Sports / AP, 1 Nov](https://cbssports.com/nba/news/nets-hold-off-pacers-98-90-for-first-win-of-the-season) [CBS Sports, 31 Oct](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-ruled-out-for-sunday/). *ESPN est.* 2 Nov.
 - **Near the line:** Zach Edey −10.0 (#10, minutes, L7 16.0), Nikola Jokic −7.4 (#1, efficiency, L7 59.7), Kevin Durant −5.2 (#4, efficiency, L7 37.8).
 
 ### Cream Abdul-Yammar: 2
@@ -67,10 +70,12 @@ Against `docs/analysis/20261101-slump-watch.md` (1 Nov).
   - Current: 26.5 min, 8.5 pts, 3.2-8.3 FG, 1.3-1.8 FT, 5.3 reb, 7.5 ast, 0.5 stl, 0.2 blk, 2.3 TO
   - Last 7 days (3 GP): 26.7 min, 11.3 pts, 4.0-8.0 FG, 2.0-2.3 FT, 4.3 reb, 6.7 ast, 0.7 stl, 0.3 blk, 2.7 TO
   - Projected: 35.5 min, 18.5 pts, 6.6-14.5 FG, 3.4-4.4 FT, 9.2 reb, 9.6 ast, 1.2 stl, 0.6 blk, 3.8 TO
+  - **What explains it:** Splitter's deep rotation caps his minutes. He scored a season-high 13 in 25 minutes at Boston on 30 Oct [Basketball Australia, 31 Oct](https://www.basketball.com.au/news/aussies-in-nba-results-october-31-2026-kyrie-irving). **Status:** a managed wrist sprain; no games missed [Hoops Rumors, 23 Oct](https://www.hoopsrumors.com/2026/10/bulls-notes-wilson-jones-giddey-buzelis-essengue-swain.html).
 - **LaMelo Ball** (minutes): scoring −10.2, reb −2.3, ast −4.0, stocks +0.7, TO −0.8; bonus +1.0.
   - Current: 25.3 min, 14.4 pts, 5.0-12.9 FG, 1.6-2.1 FT, 3.3 reb, 6.3 ast, 1.9 stl, 0.0 blk, 3.7 TO
   - Last 7 days (5 GP): 25.0 min, 13.6 pts, 4.8-12.0 FG, 1.4-2.0 FT, 3.2 reb, 6.6 ast, 1.8 stl, 0.0 blk, 4.4 TO
   - Projected: 32.9 min, 23.9 pts, 8.3-20.5 FG, 2.8-3.2 FT, 5.6 reb, 8.3 ast, 1.4 stl, 0.3 blk, 3.3 TO
+  - **What explains it:** foul trouble and turnovers. He shot 2-of-10 with 5 turnovers on Saturday, and Finch called the turnovers "unnecessary" [CBS Sports / AP, 1 Nov](https://www.cbssports.com/nba/news/timberwolves-host-bucks-with-lamelo-ball-in-the-spotlight/). **Status:** healthy.
 - **Near the line:** Austin Reaves −6.5 (#4, efficiency, L7 31.8).
 
 ### Matt Wright's Foxies: 2
@@ -84,10 +89,12 @@ Against `docs/analysis/20261101-slump-watch.md` (1 Nov).
   - Current: 32.7 min, 26.0 pts, 10.0-21.5 FG, 4.0-4.7 FT, 4.5 reb, 3.3 ast, 1.2 stl, 1.2 blk, 1.8 TO
   - Last 7 days (4 GP): 31.2 min, 26.8 pts, 10.2-20.8 FG, 4.8-5.5 FT, 4.8 reb, 3.2 ast, 1.0 stl, 0.8 blk, 2.2 TO
   - Projected: 33.8 min, 31.2 pts, 10.9-20.3 FG, 7.8-8.8 FT, 4.9 reb, 6.4 ast, 1.7 stl, 0.9 blk, 2.3 TO
+  - **What explains it:** career-low assists on a gutted roster: 26 points but 3 assists at Houston on Saturday. Holmgren is out 8–10 weeks [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-shai-gilgeous-alexander-scores-26-points-in-loss/). **Status:** healthy.
 - **Jaren Jackson Jr.** (minutes): scoring −5.4, reb −0.7, ast −0.2, stocks −5.2, TO −1.4; bonus +1.8.
   - Current: 26.0 min, 16.2 pts, 5.5-11.0 FG, 4.0-5.2 FT, 5.0 reb, 2.0 ast, 0.2 stl, 1.2 blk, 3.0 TO
   - Last 7 days (2 GP): 21.5 min, 13.0 pts, 4.5-9.5 FG, 3.5-4.5 FT, 2.5 reb, 1.5 ast, 0.0 stl, 0.0 blk, 2.0 TO
   - Projected: 31.4 min, 21.9 pts, 7.8-16.7 FG, 4.3-5.4 FT, 5.7 reb, 2.1 ast, 1.2 stl, 1.6 blk, 2.3 TO
+  - **Status:** torn right MCL; re-evaluated about 8 Dec, six to eight weeks reported; nothing new [Hoops Rumors, 27 Oct](https://www.hoopsrumors.com/2026/10/jaren-jackson-jr-to-miss-6-8-weeks-due-to-torn-mcl.html). *ESPN est.* 14 Dec.
 - **Near the line:** Damian Lillard −8.8 (#6, efficiency, L7 22.7), Naz Reid −6.9 (#10, efficiency, L7 21.5), Pascal Siakam −5.3 (#4, efficiency, L7 37.0).
 
 ### Team Nic Kerr: 1
@@ -100,6 +107,7 @@ Against `docs/analysis/20261101-slump-watch.md` (1 Nov).
   - Current: 33.5 min, 16.7 pts, 4.8-12.8 FG, 4.5-5.3 FT, 4.8 reb, 6.3 ast, 0.8 stl, 0.3 blk, 3.3 TO
   - Last 7 days (4 GP): 33.8 min, 18.0 pts, 5.8-14.2 FG, 3.8-4.2 FT, 4.5 reb, 6.5 ast, 1.0 stl, 0.0 blk, 2.5 TO
   - Projected: 33.6 min, 20.6 pts, 6.1-14.3 FG, 5.6-6.4 FT, 5.0 reb, 8.1 ast, 1.2 stl, 0.6 blk, 3.4 TO
+  - **Latest:** 13 points and 7 assists in 26 minutes of a blowout on Saturday. His L7 of 34.2 (4) is +3.4 over his season, under the flag; no new news. **Status:** healthy.
 - **Near the line:** Alex Sarr −9.9 (#8, both, L7 27.0).
 
 ### Come-in Cider (us): 0
@@ -147,6 +155,13 @@ Players with 2+ games in the last 7 days whose L7 FP/g tells a different story f
 
 - **Flagged, but within 10 of projection over the last 7 days:** James Harden (Team Nic Kerr, L7 34.2 in 4 vs projected 42.1, season gap −11.2).
 - **Not flagged, but 10+ under projection over the last 7 days:** Devin Booker (Snow Time Lakers, L7 22.0 in 2 vs projected 43.2, L7 gap −21.2, season gap −5.2), Zach Edey (Lauri Birds, L7 16.0 in 3 vs projected 33.2, L7 gap −17.2, season gap −10.0), Jalen Johnson (Snow Time Lakers, L7 33.2 in 4 vs projected 50.0, L7 gap −16.7, season gap −6.8), Damian Lillard (Matt Wright's Foxies, L7 22.7 in 3 vs projected 38.6, L7 gap −15.9, season gap −8.8), Naz Reid (Matt Wright's Foxies, L7 21.5 in 4 vs projected 35.5, L7 gap −14.0, season gap −6.9), Joel Embiid (Snow Time Lakers, L7 31.5 in 2 vs projected 45.4, L7 gap −13.9, season gap −5.0), Austin Reaves (Cream Abdul-Yammar, L7 31.8 in 5 vs projected 43.3, L7 gap −11.5, season gap −6.5), Dyson Daniels (Snow Time Lakers, L7 25.0 in 4 vs projected 35.7, L7 gap −10.7, season gap 0.9), Derik Queen (Matt Wright's Foxies, L7 20.0 in 3 vs projected 30.5, L7 gap −10.5, season gap −3.8), Amen Thompson (Matt Wright's Foxies, L7 29.5 in 4 vs projected 40.0, L7 gap −10.5, season gap −2.1), Jaylen Brown (Snow Time Lakers, L7 28.3 in 3 vs projected 38.6, L7 gap −10.3, season gap −2.9), Nickeil Alexander-Walker (Dr White Slong, L7 24.0 in 4 vs projected 34.1, L7 gap −10.1, season gap −2.3), VJ Edgecombe (Melbourne poopoo, L7 23.7 in 3 vs projected 33.7, L7 gap −10.0, season gap −4.0).
+
+### Notes
+
+- **Jalen Johnson** sprained his left ankle on 31 Oct and is questionable for Monday at Indiana; no timetable reported [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/hawks-jalen-johnson-questionable-to-suit-up-monday/). His L7 also carries cold shooting: 5-of-23 from three as of 28 Oct [CBS Sports, 28 Oct](https://www.cbssports.com/fantasy/basketball/news/hawks-jalen-johnson-three-point-shooting-woes-continue/).
+- **Zach Edey** is on a managed workload after two left ankle surgeries (18–22 minutes) [CBS Sports](https://www.cbssports.com/nba/players/3178244/zach-edey/fantasy/).
+- **Damian Lillard:** two cold shooting nights and blowout minutes, then 22 at Utah on 31 Oct [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/trail-blazers-damian-lillard-drops-22-points-in-utah/). Morant is out at least four weeks [CBS Sports, 30 Oct](https://www.cbssports.com/nba/news/ja-morant-injury-trail-blazers-star-miss-at-least-four-weeks-hamstring-strain/).
+- **Devin Booker:** see the pending-trade notes below.
 
 ## Under 2026, not under projection
 
@@ -230,3 +245,18 @@ With **Snow Time Lakers**, proposed by us, expires 04 Nov 06:08 UTC.
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-02 06:54 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
+- News, opened and checked 2 Nov 2026:
+  - [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/lauri-markkanen-wrist-returns-to-lineup-saturday)
+  - [HoopsHabit, 31 Oct](https://hoopshabit.com/darius-garland-s-turnover-problems-are-a-cause-for-concern-for-the-clippers-01m6adnqymke)
+  - [CBS Sports / AP, 1 Nov](https://cbssports.com/nba/news/nets-hold-off-pacers-98-90-for-first-win-of-the-season)
+  - [CBS Sports, 31 Oct](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-ruled-out-for-sunday/)
+  - [Basketball Australia, 31 Oct](https://www.basketball.com.au/news/aussies-in-nba-results-october-31-2026-kyrie-irving)
+  - [Hoops Rumors, 23 Oct](https://www.hoopsrumors.com/2026/10/bulls-notes-wilson-jones-giddey-buzelis-essengue-swain.html)
+  - [CBS Sports / AP, 1 Nov](https://www.cbssports.com/nba/news/timberwolves-host-bucks-with-lamelo-ball-in-the-spotlight/)
+  - [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-shai-gilgeous-alexander-scores-26-points-in-loss/)
+  - [Hoops Rumors, 27 Oct](https://www.hoopsrumors.com/2026/10/jaren-jackson-jr-to-miss-6-8-weeks-due-to-torn-mcl.html)
+  - [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/hawks-jalen-johnson-questionable-to-suit-up-monday/)
+  - [CBS Sports, 28 Oct](https://www.cbssports.com/fantasy/basketball/news/hawks-jalen-johnson-three-point-shooting-woes-continue/)
+  - [CBS Sports](https://www.cbssports.com/nba/players/3178244/zach-edey/fantasy/)
+  - [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/trail-blazers-damian-lillard-drops-22-points-in-utah/)
+  - [CBS Sports, 30 Oct](https://www.cbssports.com/nba/news/ja-morant-injury-trail-blazers-star-miss-at-least-four-weeks-hamstring-strain/)
