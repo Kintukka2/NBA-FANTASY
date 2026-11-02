@@ -1,0 +1,13 @@
+{
+  "question": "Lauri Birds offers Zach Edey (MEM) for Isaiah Hartenstein (OKC), proposed to us, expiring 4 Nov 06:43 UTC. Should we accept?",
+  "type": "yes_no",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "asked_at": "2026-11-02T07:00:00Z",
+  "taken": "council/taken.txt (111 players, rebuilt 2026-11-02 06:54 UTC)",
+  "research": null,
+  "form": "docs/research/20261102-0700-black-offers-form.md",
+  "rounds": []
+}

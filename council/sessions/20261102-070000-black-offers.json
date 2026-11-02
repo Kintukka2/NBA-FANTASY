@@ -1,0 +1,23 @@
+{
+  "question": "We have seven trade offers pending, all proposed by us and all sending Anthony Black; only one can execute, and all expire on 4 Nov between 05:49 and 06:33 UTC. Which one should we keep pending (withdrawing the other six), or should we withdraw all seven? (1) Jabari Smith Jr. (HOU) from Team Nic Kerr for Black + VanVleet. (2) James Harden (CLE) from Team Nic Kerr for Black. (3) Jalen Brunson (NY) from Melbourne poopoo for Black + VanVleet + Kawhi Leonard. (4) Amen Thompson (HOU) from Matt Wright's Foxies for VanVleet + Black. (5) Jaylen Brown (PHI) from Snow Time Lakers for VanVleet + Black. (6) Devin Booker (PHX) from Snow Time Lakers for Black + VanVleet. (7) Dyson Daniels (ATL) from Snow Time Lakers for Black + VanVleet.",
+  "type": "selection",
+  "options": [
+    "Jabari Smith Jr.",
+    "James Harden",
+    "Jalen Brunson",
+    "Amen Thompson",
+    "Jaylen Brown",
+    "Devin Booker",
+    "Dyson Daniels",
+    "Withdraw all seven"
+  ],
+  "asked_at": "2026-11-02T07:00:00Z",
+  "taken": "council/taken.txt (111 players, rebuilt 2026-11-02 06:54 UTC)",
+  "constraints": [
+    "The owner: Fred VanVleet is not a consideration in trades at all; give his value no weight either way.",
+    "The owner is high on Anthony Black (kept him on 1 Nov over the council's 19-0 vote to stream his slot): without the 28 Oct blowout he scored 48.5 FP/g, 61.3 FP/36, and his role should grow with Suggs and Banchero out."
+  ],
+  "research": null,
+  "form": "docs/research/20261102-0700-black-offers-form.md",
+  "rounds": []
+}

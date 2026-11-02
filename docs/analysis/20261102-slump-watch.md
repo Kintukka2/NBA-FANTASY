@@ -22,6 +22,14 @@
 | Melbourne poopoo | 0 | Anthony Davis 41.5/49.6 · Anthony Edwards 52.5/47.2 · Karl-Anthony Towns 48.0/44.1 |
 | Snow Time Lakers | 0 | Jalen Johnson 43.1/50.0 · Jayson Tatum 47.8/48.1 · Joel Embiid 40.4/45.4 |
 
+## Since the last Slump Watch
+
+Against `docs/analysis/20261101-slump-watch.md` (1 Nov).
+
+- **Joined:** none.
+- **Left:** Desmond Bane (ours), now −9.2 and inside the line. His L7 is 37.0 (4).
+- **Moved 3+ FP/g:** none.
+
 ## By team
 
 **Rank** is the player's rank on their fantasy roster by projection. **Min** is current / projected minutes. **Rate** is current FP/min as a share of projected FP/min. The driver line splits the gap into category shortfalls, in FP/g.

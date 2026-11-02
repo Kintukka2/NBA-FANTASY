@@ -10,6 +10,30 @@
 - **Games** is games left this week (02 Nov–08 Nov) / next week (09 Nov–15 Nov).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
+## Since the last Injury Watch
+
+Against `docs/analysis/20261101-injury-watch.md`.
+
+- **New long absence:** Dereck Lively II (DAL; *ESPN est.* 12 Nov).
+- **No longer long absences:** ESPN now expects these players back within 7 days:
+  - Brandon Ingram, Max Strus, Bradley Beal (all LAC; 8 Nov)
+  - Jalen Duren (ours; 9 Nov)
+  - Yves Missi (8 Nov)
+  - Devin Carter (8 Nov)
+- **Back from injury** (left ESPN's feed):
+  - Ours: Fred VanVleet and Dejounte Murray.
+  - Other managers' players: Ty Jerome (Melbourne poopoo, our opponent this week) and LeBron James.
+  - Free agents: Rudy Gobert, Coby White and Aaron Nesmith.
+- **New in the feed** (*ESPN est.* in the table below):
+  - Ours: Trey Murphy III (knee, day-to-day).
+  - Peyton Watson, who is in our matchup plan for Friday.
+  - Jakob Poeltl, Derrick Jones Jr., Jalen Smith, Kyrie Irving, Alex Sarr, Zach LaVine and Clint Capela, all day-to-day.
+  - Kingston Flemings (suspension).
+- **Pickups:**
+  - **Joined:** Zaccharie Risacher, P.J. Washington and Naji Marshall (all DAL), plus Jamal Shead and Kobe Sanders.
+    - Also joined after other managers dropped them: Precious Achiuwa (Team Nic Kerr), Aaron Wiggins (Lauri Birds) and Toumani Camara.
+  - **Left:** Paul Reed, Daniss Jenkins and Duren's opening (no longer counted as a long absence), Ja'Kobe Walter (Lauri Birds rostered him), Jarace Walker, Larry Nance Jr., Kelly Oubre Jr., Jase Richardson and Aaron Nesmith.
+
 ## Pickups for us
 
 Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
