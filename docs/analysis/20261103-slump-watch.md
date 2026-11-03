@@ -54,13 +54,19 @@ Against `docs/analysis/20261102-slump-watch.md` (06:54 UTC this morning). No NBA
   - Current: 28.6 min, 15.4 pts, 4.4-12.4 FG, 4.2-4.8 FT, 5.6 reb, 1.6 ast, 0.6 stl, 0.6 blk, 1.4 TO
   - Last 7 days (2 GP): 17.5 min, 7.5 pts, 1.5-8.0 FG, 3.5-4.0 FT, 3.0 reb, 0.5 ast, 1.0 stl, 1.0 blk, 1.0 TO
   - Projected: 34.0 min, 23.8 pts, 8.0-17.3 FG, 4.7-5.3 FT, 7.2 reb, 1.9 ast, 0.9 stl, 0.5 blk, 1.5 TO
+  - **2 Nov:** he returned on 31 Oct from the right wrist sprain: 13 points on 3-of-14 in 29 minutes before fouling out [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/lauri-markkanen-wrist-returns-to-lineup-saturday). The 6-minute injury exit on 26 Oct is still in his average. **Status:** active.
+  - **Update 2 Nov:** not on Utah's report for Monday at San Antonio; the wrist is "no longer a concern" [Sports Mole, 2 Nov](https://www.sportsmole.co.uk/basketball/utah-jazz/preview/utah-jazz-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608201.html). The gameday preview has him "struggling from three-point range" [Yahoo Sports, 2 Nov](https://sports.yahoo.com/articles/spurs-vs-jazz-gameday-betting-153428767.html). His L7 is 13.0 (2), noise.
 - **Darius Garland** (efficiency): scoring −1.9, reb −1.7, ast −2.1, stocks −2.7, TO −4.1; bonus +0.8.
   - Current: 32.5 min, 20.8 pts, 7.5-16.8 FG, 3.3-4.0 FT, 1.3 reb, 6.3 ast, 0.8 stl, 0.0 blk, 5.2 TO
   - Last 7 days (3 GP): 30.0 min, 17.7 pts, 6.0-15.3 FG, 3.7-3.7 FT, 1.0 reb, 5.7 ast, 1.0 stl, 0.0 blk, 4.3 TO
   - Projected: 35.2 min, 21.6 pts, 7.8-17.0 FG, 3.0-3.5 FT, 3.0 reb, 7.4 ast, 1.3 stl, 0.2 blk, 3.1 TO
+  - **What explains it:** turnovers, with 5 or more in four straight games [HoopsHabit, 31 Oct](https://hoopshabit.com/darius-garland-s-turnover-problems-are-a-cause-for-concern-for-the-clippers-01m6adnqymke). In Sunday's loss to Golden State he scored 15 on 4-of-12 but had only 3 turnovers. **Status:** playing through minor back tightness.
+  - **Update 2 Nov:** he will play Monday against Toronto after being "noticeably banged up over the last few games" [Roundtable, 2 Nov](https://roundtable.io/sports/nba/clippers/news/la-clippers-vs-toronto-raptors-injury-report-is-kawhi-leonard-playing).
 - **Ivica Zubac** (minutes): scoring −7.2, reb −2.3, ast −1.7, stocks −2.4, TO −0.1; bonus +3.7.
   - Current: 21.7 min, 9.0 pts, 4.0-6.7 FG, 1.0-2.0 FT, 9.0 reb, 1.3 ast, 0.0 stl, 1.0 blk, 1.7 TO
   - Projected: 31.1 min, 14.9 pts, 6.4-10.3 FG, 2.0-2.9 FT, 11.3 reb, 2.2 ast, 0.5 stl, 1.1 blk, 1.6 TO
+  - **Status:** left ankle sprain. He missed Sunday's 98-90 loss to Brooklyn, his fourth straight absence, and Monday against Atlanta is his next chance; no timetable reported [CBS Sports / AP, 1 Nov](https://cbssports.com/nba/news/nets-hold-off-pacers-98-90-for-first-win-of-the-season) [CBS Sports, 31 Oct](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-ruled-out-for-sunday/). *ESPN est.* then 2 Nov.
+  - **Update 2 Nov:** out Monday against Atlanta, a fifth straight miss. RotoWire now treats him as "week-to-week"; no team timetable reported [CBS Sports / RotoWire, 2 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-remains-out-indefinitely/). *ESPN est.* 9 Nov.
 - **Near the line:** Nikola Jokic −7.4 (#1, efficiency, L7 59.7), Kevin Durant −5.2 (#4, efficiency, L7 37.8).
 
 ### Cream Abdul-Yammar: 2
@@ -74,10 +80,14 @@ Against `docs/analysis/20261102-slump-watch.md` (06:54 UTC this morning). No NBA
   - Current: 26.5 min, 8.5 pts, 3.2-8.3 FG, 1.3-1.8 FT, 5.3 reb, 7.5 ast, 0.5 stl, 0.2 blk, 2.3 TO
   - Last 7 days (3 GP): 26.7 min, 11.3 pts, 4.0-8.0 FG, 2.0-2.3 FT, 4.3 reb, 6.7 ast, 0.7 stl, 0.3 blk, 2.7 TO
   - Projected: 35.5 min, 18.5 pts, 6.6-14.5 FG, 3.4-4.4 FT, 9.2 reb, 9.6 ast, 1.2 stl, 0.6 blk, 3.8 TO
+  - **What explains it:** Splitter's deep rotation caps his minutes. He scored a season-high 13 in 25 minutes at Boston on 30 Oct [Basketball Australia, 31 Oct](https://www.basketball.com.au/news/aussies-in-nba-results-october-31-2026-kyrie-irving). **Status:** a managed wrist sprain; no games missed [Hoops Rumors, 23 Oct](https://www.hoopsrumors.com/2026/10/bulls-notes-wilson-jones-giddey-buzelis-essengue-swain.html).
+  - **Update 2 Nov:** not on Chicago's Monday report. RotoWire: "Giddey's usage is down 7 percentage points" [RotoWire, 2 Nov](https://www.rotowire.com/basketball/article/fantasy-basketball-buy-low-sell-high-week-3-trade-drop-targets-145002).
 - **LaMelo Ball** (minutes): scoring −10.1, reb −2.3, ast −4.0, stocks +0.7, TO −0.8; bonus +1.0.
   - Current: 25.3 min, 14.4 pts, 5.0-12.7 FG, 1.6-2.1 FT, 3.3 reb, 6.3 ast, 1.9 stl, 0.0 blk, 3.7 TO
   - Last 7 days (4 GP): 27.0 min, 13.2 pts, 4.8-12.8 FG, 1.5-2.0 FT, 3.8 reb, 6.2 ast, 1.8 stl, 0.0 blk, 5.0 TO
   - Projected: 32.9 min, 23.9 pts, 8.3-20.5 FG, 2.8-3.2 FT, 5.6 reb, 8.3 ast, 1.4 stl, 0.3 blk, 3.3 TO
+  - **What explains it:** foul trouble and turnovers. He shot 2-of-10 with 5 turnovers on Saturday, and Finch called the turnovers "unnecessary" [CBS Sports / AP, 1 Nov](https://www.cbssports.com/nba/news/timberwolves-host-bucks-with-lamelo-ball-in-the-spotlight/). **Status:** healthy.
+  - **Update 2 Nov:** new right wrist contusion; questionable Monday against Milwaukee, added hours before tip. Hyland and Dosunmu would gain minutes; no timetable reported [RotoWire, 2 Nov](https://www.rotowire.com/basketball/headlines/lamelo-ball-injury-iffy-with-wrist-issue-537212) [Yahoo Sports / ClutchPoints, 2 Nov](https://sports.yahoo.com/articles/timberwolves-lamelo-ball-lands-injury-220814099.html). *ESPN est.* 2 Nov.
 - **Near the line:** Austin Reaves −6.5 (#4, efficiency, L7 27.8).
 
 ### Matt Wright's Foxies: 2
@@ -91,10 +101,14 @@ Against `docs/analysis/20261102-slump-watch.md` (06:54 UTC this morning). No NBA
   - Current: 32.7 min, 26.0 pts, 10.0-21.5 FG, 4.0-4.7 FT, 4.5 reb, 3.3 ast, 1.2 stl, 1.2 blk, 1.8 TO
   - Last 7 days (3 GP): 29.7 min, 24.3 pts, 9.3-19.0 FG, 4.0-4.7 FT, 4.3 reb, 2.7 ast, 0.7 stl, 0.7 blk, 2.3 TO
   - Projected: 33.8 min, 31.2 pts, 10.9-20.3 FG, 7.8-8.8 FT, 4.9 reb, 6.4 ast, 1.7 stl, 0.9 blk, 2.3 TO
+  - **What explains it:** career-low assists on a gutted roster: 26 points but 3 assists at Houston on Saturday. Holmgren is out 8–10 weeks [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-shai-gilgeous-alexander-scores-26-points-in-loss/). **Status:** healthy.
+  - **Update 2 Nov:** healthy for Monday at Cleveland, with six Thunder players out (Caruso, Holmgren, Jalen Williams, Wallace, Topic, Sorber) [Cavaliers Nation, 2 Nov](https://cavaliersnation.com/2026/11/02/cavs-release-full-injury-report-ahead-of-mondays-matchup-vs-thunder/).
 - **Jaren Jackson Jr.** (minutes): scoring −5.4, reb −0.7, ast −0.2, stocks −5.1, TO −1.4; bonus +1.8.
   - Current: 26.0 min, 16.2 pts, 5.5-11.0 FG, 4.0-5.2 FT, 5.0 reb, 2.0 ast, 0.2 stl, 1.2 blk, 3.0 TO
   - Last 7 days (1 GP): 10.0 min, 6.0 pts, 2.0-5.0 FG, 2.0-3.0 FT, 3.0 reb, 2.0 ast, 0.0 stl, 0.0 blk, 0.0 TO
   - Projected: 31.4 min, 21.9 pts, 7.8-16.7 FG, 4.3-5.4 FT, 5.7 reb, 2.1 ast, 1.2 stl, 1.6 blk, 2.3 TO
+  - **Status:** torn right MCL; re-evaluated about 8 Dec, six to eight weeks reported; nothing new [Hoops Rumors, 27 Oct](https://www.hoopsrumors.com/2026/10/jaren-jackson-jr-to-miss-6-8-weeks-due-to-torn-mcl.html). *ESPN est.* 14 Dec.
+  - **Update 2 Nov:** out Monday at San Antonio, as expected; the six-week re-evaluation (about 8 Dec) stands [Yahoo Sports, 2 Nov](https://sports.yahoo.com/articles/spurs-vs-jazz-gameday-betting-153428767.html) [NBA.com / AP, 27 Oct](https://www.nba.com/news/jaren-jackson-jr-torn-mcl-october-2026). *ESPN est.* 14 Dec.
 - **Near the line:** Damian Lillard −8.8 (#6, efficiency, L7 22.7), Naz Reid −6.9 (#10, efficiency, L7 21.5), Pascal Siakam −5.3 (#4, efficiency, L7 35.8).
 
 ### Team Nic Kerr: 1
@@ -107,6 +121,8 @@ Against `docs/analysis/20261102-slump-watch.md` (06:54 UTC this morning). No NBA
   - Current: 33.5 min, 16.7 pts, 4.8-12.8 FG, 4.5-5.3 FT, 4.8 reb, 6.3 ast, 0.8 stl, 0.3 blk, 3.3 TO
   - Last 7 days (4 GP): 33.8 min, 18.0 pts, 5.8-14.2 FG, 3.8-4.2 FT, 4.5 reb, 6.5 ast, 1.0 stl, 0.0 blk, 2.5 TO
   - Projected: 33.6 min, 20.6 pts, 6.1-14.3 FG, 5.6-6.4 FT, 5.0 reb, 8.1 ast, 1.2 stl, 0.6 blk, 3.4 TO
+  - **2 Nov:** 13 points and 7 assists in 26 minutes of a blowout on Saturday. His L7 of 34.2 (4) is +3.4 over his season, under the flag; no new news. **Status:** healthy.
+  - **Update 2 Nov:** healthy and a projected starter Monday against OKC [Cavaliers Nation, 2 Nov](https://cavaliersnation.com/2026/11/02/cavs-release-full-injury-report-ahead-of-mondays-matchup-vs-thunder/).
 - **Near the line:** Alex Sarr −9.9 (#8, both, L7 27.0).
 
 ### Come-in Cider (us): 0
@@ -155,6 +171,18 @@ Players with 2+ games in the last 7 days whose L7 FP/g tells a different story f
 - **Flagged, but within 10 of projection over the last 7 days:** James Harden (Team Nic Kerr, L7 34.2 in 4 vs projected 42.1, season gap −11.2).
 - **Not flagged, but 10+ under projection over the last 7 days:** Ty Jerome (Melbourne poopoo, L7 21.0 in 2 vs projected 43.5, L7 gap −22.5, season gap −0.7), Devin Booker (Snow Time Lakers, L7 22.0 in 2 vs projected 43.2, L7 gap −21.2, season gap −5.2), Jalen Johnson (Snow Time Lakers, L7 33.2 in 4 vs projected 50.0, L7 gap −16.7, season gap −6.8), Damian Lillard (Matt Wright's Foxies, L7 22.7 in 3 vs projected 38.6, L7 gap −15.9, season gap −8.8), Austin Reaves (Cream Abdul-Yammar, L7 27.8 in 4 vs projected 43.3, L7 gap −15.6, season gap −6.5), Naz Reid (Matt Wright's Foxies, L7 21.5 in 4 vs projected 35.5, L7 gap −14.0, season gap −6.9), Joel Embiid (Snow Time Lakers, L7 31.5 in 2 vs projected 45.4, L7 gap −13.9, season gap −5.0), Brook Lopez (Team Nic Kerr, L7 13.7 in 3 vs projected 26.2, L7 gap −12.5, season gap −0.7), Dyson Daniels (Snow Time Lakers, L7 25.0 in 4 vs projected 35.7, L7 gap −10.7, season gap 0.9), Derik Queen (Matt Wright's Foxies, L7 20.0 in 3 vs projected 30.5, L7 gap −10.5, season gap −3.8), Amen Thompson (Matt Wright's Foxies, L7 29.5 in 4 vs projected 40.0, L7 gap −10.5, season gap −2.1), Keyonte George (Cream Abdul-Yammar, L7 26.7 in 3 vs projected 36.8, L7 gap −10.1, season gap −2.8), Nickeil Alexander-Walker (Dr White Slong, L7 24.0 in 4 vs projected 34.1, L7 gap −10.1, season gap −2.3), VJ Edgecombe (Melbourne poopoo, L7 23.7 in 3 vs projected 33.7, L7 gap −10.0, season gap −4.0), Josh Hart (Dr White Slong, L7 23.0 in 3 vs projected 33.0, L7 gap −10.0, season gap −3.5).
 
+
+### Notes
+
+- **Ty Jerome** (opponent this week): missed 31 Oct with back soreness and is off the report for Monday against New Orleans [NBC Sports/Rotoworld, 1 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-01/ty-jerome-back-removed-from-injury-report). His L7 is 21.0 (2), noise.
+- **Devin Booker:** L7 22.0 (2), noise. He scored 3 on 26 Oct with no injury reported [Arizona Sports, 26 Oct](https://arizonasports.com/nba/phoenix-suns/devin-booker-scores-3-suns-vulnerable-thunder). Snow Time Lakers declined our Black offer for him.
+- **Jalen Johnson** (2 Nov): sprained his left ankle on 31 Oct and was questionable for Monday at Indiana; no timetable reported [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/hawks-jalen-johnson-questionable-to-suit-up-monday/). *ESPN est.* 4 Nov.
+- **Damian Lillard** (2 Nov): two cold shooting nights and blowout minutes, then 22 at Utah on 31 Oct [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/trail-blazers-damian-lillard-drops-22-points-in-utah/).
+- **Dyson Daniels:** no double-figure scoring in four games on unchanged minutes; no injury found [RotoWire ATL](https://www.rotowire.com/basketball/news.php?team=ATL) [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/hawks-dyson-daniels-active-defensively-in-loss/). Snow Time Lakers declined our Black offer for him.
+- **Amen Thompson** (our pending target): in his L7 games he averaged 3.75 rebounds against 6.6 for the season, three of them were wins by 10 or more, and no injury or benching was found (`docs/research/20261102-0700-black-offers.md`). Only HotTakes reports an eye knock on 31 Oct, with no missed time; treat it as unconfirmed [HotTakes, 31 Oct](https://hottakes.com/articles/amen-thompson-heads-to-locker-room-with-eye-injury-as-rockets-keep-rolli-ce6532f8-5b8a-492e-bcee-1f930198a956) [RotoWire HOU, 2 Nov](https://www.rotowire.com/basketball/news.php?team=HOU).
+- **VJ Edgecombe** (opponent): no report found [RotoWire PHI, 2 Nov](https://www.rotowire.com/basketball/news.php?team=PHI).
+- **Not researched in this run:** Austin Reaves, Naz Reid, Joel Embiid, Brook Lopez, Derik Queen, Keyonte George, Nickeil Alexander-Walker, Josh Hart.
+
 ## Under 2026, not under projection
 
 10+ under last season's average, but within 10 of projection.
@@ -201,7 +229,51 @@ With **Matt Wright's Foxies**, proposed by us, expires 04 Nov 06:33 UTC.
 | Fred VanVleet | we send | 5 | 30.6 / 32.2 | 35.4 | 31.3 (3) | 35.4 (5) | 35.4 (5) | 33.4 | +2.0 | Active |
 | Anthony Black | we send | 4 | 28.0 / 28.9 | 36.2 | 33.7 (3) | 36.2 (4) | 36.2 (4) | 28.2 | +8.1 | **Out**, ESPN est. back 05 Nov |
 
+
+### Notes
+
+- **Anthony Black** (we send): out Monday against Washington with "right ankle injury management" on the second night of a back-to-back. RotoWire and FSR Orlando call it rest [Athlon via Yardbarker, 2 Nov](https://www.yardbarker.com/nba/articles/final_injury_report_for_wizards_magic_will_alex_sarr_anthony_black_play/s1_17615_44507641) [FSR Orlando, 2 Nov](https://fsrorlando.iheart.com/content/2026-11-02-wizards-vs-magic-injury-report-nov-2/).
+  - No timetable reported beyond Monday; *ESPN est.* 5 Nov.
+  - His last game was Sunday against Boston: a season-high 23 points, 8 rebounds, 3 assists and 2 steals in 33 minutes [RotoWire ORL](https://www.rotowire.com/basketball/news.php?team=ORL).
+  - His L7 dropped from 36.2 (4) to 33.7 (3) only because his 25 Oct game left the window.
+- **Kawhi Leonard** (in the Brunson offer): out Monday at LAC with left knee effusion. Rajakovic says he is "doing well", with the next update Tue 3 Nov [Basketnews, 2 Nov](https://basketnews.com/news-258646-kawhi-leonard-injury-update-raptors-coach-offers-promising-news.html). Haynes's "at least three to four weeks" stands; *ESPN est.* 23 Nov.
+- **Fred VanVleet** (we send in three offers): off Houston's report for Monday [RotoWire HOU](https://www.rotowire.com/basketball/news.php?team=HOU). The owner gives him no weight in trades.
+- **Amen Thompson** and **James Harden:** see the notes above.
+- **Council verdict (2 Nov):** keep only the Thompson offer and withdraw the rest; 17 of 19 (`council/sessions/20261102-070000-black-offers.json`). Snow Time Lakers have since declined their three. Smith Jr., Harden and Brunson are still pending.
+
 ## Sources
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-02 23:01 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
+- News opened 2 Nov 2026 (US) for this run:
+  - [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/lauri-markkanen-wrist-returns-to-lineup-saturday)
+  - [Sports Mole, 2 Nov](https://www.sportsmole.co.uk/basketball/utah-jazz/preview/utah-jazz-vs-san-antonio-spurs-player-props-injury-report-and-prediction--nba_608201.html)
+  - [Yahoo Sports, 2 Nov](https://sports.yahoo.com/articles/spurs-vs-jazz-gameday-betting-153428767.html)
+  - [HoopsHabit, 31 Oct](https://hoopshabit.com/darius-garland-s-turnover-problems-are-a-cause-for-concern-for-the-clippers-01m6adnqymke)
+  - [Roundtable, 2 Nov](https://roundtable.io/sports/nba/clippers/news/la-clippers-vs-toronto-raptors-injury-report-is-kawhi-leonard-playing)
+  - [CBS Sports / AP, 1 Nov](https://cbssports.com/nba/news/nets-hold-off-pacers-98-90-for-first-win-of-the-season)
+  - [CBS Sports, 31 Oct](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-ruled-out-for-sunday/)
+  - [CBS Sports / RotoWire, 2 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-remains-out-indefinitely/)
+  - [Basketball Australia, 31 Oct](https://www.basketball.com.au/news/aussies-in-nba-results-october-31-2026-kyrie-irving)
+  - [Hoops Rumors, 23 Oct](https://www.hoopsrumors.com/2026/10/bulls-notes-wilson-jones-giddey-buzelis-essengue-swain.html)
+  - [RotoWire, 2 Nov](https://www.rotowire.com/basketball/article/fantasy-basketball-buy-low-sell-high-week-3-trade-drop-targets-145002)
+  - [CBS Sports / AP, 1 Nov](https://www.cbssports.com/nba/news/timberwolves-host-bucks-with-lamelo-ball-in-the-spotlight/)
+  - [RotoWire, 2 Nov](https://www.rotowire.com/basketball/headlines/lamelo-ball-injury-iffy-with-wrist-issue-537212)
+  - [Yahoo Sports / ClutchPoints, 2 Nov](https://sports.yahoo.com/articles/timberwolves-lamelo-ball-lands-injury-220814099.html)
+  - [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-shai-gilgeous-alexander-scores-26-points-in-loss/)
+  - [Cavaliers Nation, 2 Nov](https://cavaliersnation.com/2026/11/02/cavs-release-full-injury-report-ahead-of-mondays-matchup-vs-thunder/)
+  - [Hoops Rumors, 27 Oct](https://www.hoopsrumors.com/2026/10/jaren-jackson-jr-to-miss-6-8-weeks-due-to-torn-mcl.html)
+  - [NBA.com / AP, 27 Oct](https://www.nba.com/news/jaren-jackson-jr-torn-mcl-october-2026)
+  - [NBC Sports/Rotoworld, 1 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-01/ty-jerome-back-removed-from-injury-report)
+  - [Arizona Sports, 26 Oct](https://arizonasports.com/nba/phoenix-suns/devin-booker-scores-3-suns-vulnerable-thunder)
+  - [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/hawks-jalen-johnson-questionable-to-suit-up-monday/)
+  - [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/trail-blazers-damian-lillard-drops-22-points-in-utah/)
+  - [RotoWire ATL](https://www.rotowire.com/basketball/news.php?team=ATL)
+  - [CBS Sports, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/hawks-dyson-daniels-active-defensively-in-loss/)
+  - [HotTakes, 31 Oct](https://hottakes.com/articles/amen-thompson-heads-to-locker-room-with-eye-injury-as-rockets-keep-rolli-ce6532f8-5b8a-492e-bcee-1f930198a956)
+  - [RotoWire HOU, 2 Nov](https://www.rotowire.com/basketball/news.php?team=HOU)
+  - [RotoWire PHI, 2 Nov](https://www.rotowire.com/basketball/news.php?team=PHI)
+  - [Athlon via Yardbarker, 2 Nov](https://www.yardbarker.com/nba/articles/final_injury_report_for_wizards_magic_will_alex_sarr_anthony_black_play/s1_17615_44507641)
+  - [FSR Orlando, 2 Nov](https://fsrorlando.iheart.com/content/2026-11-02-wizards-vs-magic-injury-report-nov-2/)
+  - [RotoWire ORL](https://www.rotowire.com/basketball/news.php?team=ORL)
+  - [Basketnews, 2 Nov](https://basketnews.com/news-258646-kawhi-leonard-injury-update-raptors-coach-offers-promising-news.html)
