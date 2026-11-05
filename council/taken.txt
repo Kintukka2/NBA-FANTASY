@@ -47,7 +47,6 @@ Brandon Miller
 Stephen Curry
 Lauri Markkanen
 Naz Reid
-Kon Knueppel
 Donovan Clingan
 Trey Murphy III
 Nickeil Alexander-Walker
@@ -59,7 +58,6 @@ Michael Porter Jr.
 Jaren Jackson Jr.
 Cameron Boozer
 De'Aaron Fox
-Jarrett Allen
 Keyonte George
 Josh Hart
 VJ Edgecombe
@@ -103,11 +101,12 @@ Anthony Black
 Isaiah Hartenstein
 Isaiah Jackson
 Jeremiah Fears
-Norman Powell
-Brook Lopez
-Ja'Kobe Walter
 Payton Pritchard
 Paul Reed
 Zaccharie Risacher
 Daniel Gafford
 Jrue Holiday
+Desmond Bane
+Duncan Robinson
+Klay Thompson
+Myles Turner
