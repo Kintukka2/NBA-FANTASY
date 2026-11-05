@@ -86,7 +86,6 @@ Yaxel Lendeborg
 Andrew Nembhard
 Zach LaVine
 Davion Mitchell
-Fred VanVleet
 Jabari Smith Jr.
 Jaime Jaquez Jr.
 Jonathan Kuminga
@@ -110,3 +109,4 @@ Desmond Bane
 Duncan Robinson
 Klay Thompson
 Myles Turner
+Dillon Brooks
