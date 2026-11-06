@@ -84,7 +84,6 @@ Paul George
 Miles Bridges
 Yaxel Lendeborg
 Andrew Nembhard
-Zach LaVine
 Davion Mitchell
 Jabari Smith Jr.
 Jaime Jaquez Jr.
@@ -105,8 +104,9 @@ Paul Reed
 Zaccharie Risacher
 Daniel Gafford
 Jrue Holiday
-Desmond Bane
 Duncan Robinson
 Klay Thompson
-Myles Turner
 Dillon Brooks
+Ausar Thompson
+CJ McCollum
+De'Anthony Melton
