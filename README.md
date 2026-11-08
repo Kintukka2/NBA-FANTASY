@@ -59,7 +59,7 @@ and report the highest-voted answer. See `council/PROTOCOL.md`.
 council/      members.json          personas, skills, sources, vote weights
               PROTOCOL.md           how a question is decided
               lookup.py             fast queries over players_scored.csv
-              espn_sync.py          live league check (needs ESPN_S2, ESPN_SWID)
+              espn_sync.py          syncs roster.csv and taken.txt to ESPN (needs ESPN_S2, ESPN_SWID)
               slump_watch.py        every roster vs ESPN's projection (same cookies)
               injuries.py           every injured NBA player, ESPN's estimated return
               injury_watch.py       who takes injured players' minutes; pickups for us
@@ -68,7 +68,7 @@ council/      members.json          personas, skills, sources, vote weights
               form.py               any player's L7 / L15 / L30 FP/g beside season and projection, and the rate
               gamelog.py            game logs from box scores, outlier games, the weighted rate
               opponents.py          FP each team gives up by position, against opponents' own averages;
-                                    the factor matchup.py applies to each game
+                                    --audit replays the season to test it against real results
               news_watch.py         ESPN player news against injury labels and box scores: injury,
                                     role, minutes, rest and gap flags, and the role rate
               news_overrides.csv    researched return dates, rest days and roles that matchup.py applies
@@ -76,7 +76,7 @@ council/      members.json          personas, skills, sources, vote weights
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)
               taken.txt             players on any league roster
-              roster.csv            our live roster, updated after every move
+              roster.csv            our live roster, synced from ESPN by espn_sync.py
               sessions/             every council session, as JSON
 ```
 
@@ -178,9 +178,13 @@ column).
 
 A streamer is worth the change in our optimised total, so a game on a day
 we're already full counts for nothing. Each game is valued at the player's
-rate times the opponent factor from `council/opponents.py`: how much
-opponents score against that team over their own averages, at his positions.
-The factor is shrunk toward even and capped at ±15%. `--no-opp` turns it off.
+rate. Beside it, the report shows the opponent factor from
+`council/opponents.py`: how much opponents score against that team over
+their own averages, at his positions, shrunk toward even and capped at ±15%.
+The factor stays out of the projections until
+`python council/opponents.py --audit` certifies it. The audit replays the
+season with only earlier games and tests the factor against what players
+actually scored. `--opp` applies it as a what-if.
 `council/news_overrides.csv` (from the news watch) sets researched returns,
 rest days and roles. The skill adds sourced research and
 a plan, and saves the report as `docs/analysis/<YYYYMMDD>-matchup<N>.md`.

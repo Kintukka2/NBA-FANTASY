@@ -70,11 +70,19 @@ game after his 9-minute injury exit was dropped.
 **The rate every plan uses** (`council/gamelog.py`, used by `matchup.py`):
 last season ×1 (ESPN's projection if none), this season ×2, L30 ×3, L15 ×4,
 L7 ×5, each outlier-adjusted, skipping parts with no games. `form.py` prints
-it as **Rate**. Never compute it by hand. `matchup.py` values each game at the
-rate × the **opponent factor** (`council/opponents.py`: what opponents score
-against that team over their own averages, by position, shrunk toward even
-and capped at ±15%). Quote it as `@WSH +6%`. `b2b` marks a back-to-back's
-second night.
+it as **Rate**. Never compute it by hand.
+
+**Opponent factor: information only.** `matchup.py` shows each game's
+**opponent factor** (`council/opponents.py`: what opponents score against
+that team over their own averages, by position, shrunk toward even and
+capped at ±15%) as `@WSH +6%`. `b2b` marks a back-to-back's second night.
+
+- The factor stays out of projections, gains and plans until its audit
+  (`python council/opponents.py --audit`) certifies it.
+- The audit replays the season with only earlier games and tests the factor
+  against what players actually scored. Every matchup header prints its
+  verdict.
+- `--opp` applies the factor as a what-if. Label any such figure as a what-if.
 
 **ESPN's labels are not taken at face value.** Return dates, roles and rest
 days that the news watch research confirms go into `council/news_overrides.csv`
@@ -91,8 +99,10 @@ adds used from the script's **Adds** line (`--next` for next week). Live
 games don't change that line, so `--allow-live` is fine for it. Never
 assume 7.
 
-`council/roster.csv` is our live roster. Whenever the user reports a move
-(add, drop, IR, trade), update it in the same turn and commit: remove the
-dropped player, add the new one with `acquired` and `acquired_on`, set
-`slot` to `IR` for an IR stash. Only record moves the user says were made,
-never planned ones.
+**ESPN is the source of truth for rosters.** `python council/espn_sync.py`
+writes `council/roster.csv` and `council/taken.txt` to match the ESPN app:
+adds, drops, IR moves and trades. Every skill runs it first. Commit what it
+changes and name the moves it recorded in the reply. No confirmation from the
+user is needed. When the user mentions a move, run the sync rather than
+editing the file by hand. A planned move is not on ESPN, so it is not
+recorded.

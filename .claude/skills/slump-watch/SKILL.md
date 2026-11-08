@@ -24,9 +24,9 @@ python council/slump_watch.py --threshold <N> --near <M> \
 Use today's UTC date in the filename. Running it again on the same day
 overwrites that day's file, and git keeps the earlier version.
 
-- **`espn_sync.py`** reports any difference between ESPN and
-  `council/roster.csv`. If there is one, tell the user rather than editing
-  the file. That file records moves the user reports (see CLAUDE.md).
+- **`espn_sync.py`** syncs `council/roster.csv` and `council/taken.txt` to
+  ESPN, the source of truth. If it records moves, commit them and name them
+  in your reply (see CLAUDE.md).
 - **"Games in progress"**: the script refuses to run while any NBA game is
   live, because ESPN counts a half-played game as a game played.
   - Tell the user which games are live and when to run it again.

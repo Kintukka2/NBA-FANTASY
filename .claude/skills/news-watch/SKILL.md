@@ -119,7 +119,7 @@ Edit `council/news_overrides.csv`:
 - Remove the rows the report's **Overrides** table marks *expired*.
 - Replace a row when newer news changes it, and keep one row per player and kind.
 - Never add a row without a linked source.
-- Never record a roster move here: `council/roster.csv` handles moves, and only moves the user says were made.
+- Never record a roster move here: `python council/espn_sync.py` syncs `council/roster.csv` from ESPN.
 
 `council/matchup.py` applies the file:
 - a player is out before his `return` date and plays from it, whatever ESPN says;
