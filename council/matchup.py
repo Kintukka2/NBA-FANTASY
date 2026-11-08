@@ -52,6 +52,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
+from gamelog import FIXED  # noqa: E402
 from injury_watch import LOG_NOTES, box, player_pool  # noqa: E402
 from slump_watch import (ET, FANTASY, LEAGUE, TEAM_ID, WINDOWS, get, live_games, signed,  # noqa: E402
                          window_cells, windows_note)
@@ -280,8 +281,10 @@ def main():
            windows_note(ours + theirs + fa) + " The rate uses the outlier-adjusted values.",
            "- **† Small sample:** the player's rate rests on 2 games or fewer this season (after any dropped "
            "outlier), so it can swing far from his true level.",
-           *([f"- **Game logs:** {len(LOG_NOTES)} pool players' box-score logs do not match ESPN's splits; "
-              "they keep ESPN's averages and no outliers."] if LOG_NOTES else []),
+           *([f"- **Game logs:** {len(LOG_NOTES)} pool players' box-score logs do not match ESPN's season "
+              "splits; they keep ESPN's averages and no outliers."] if LOG_NOTES else []),
+           *([f"- **Stale ESPN windows:** {len(FIXED)} L7/L15/L30 windows (injured players who have not played "
+              "in them) are taken from the box scores instead of ESPN's split."] if FIXED else []),
            f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}."]
     out += ([f"- **What-if:** treated as sitting: {', '.join(args.sit)}."] if args.sit else [])
     out += ([f"- **Returning players** (`--returning`): injured free agents yet to play this season are included "

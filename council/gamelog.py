@@ -5,8 +5,12 @@ Stdlib only and read-only. Every completed game this season is read once
 from ESPN's box scores (cached in council/.cache/box by injury_watch.box) and
 league-scored, which gives each player a game log: date, minutes, FP.
 
-The log is checked against ESPN's own splits: a player's season, L7, L15 and
-L30 windows must hold the same number of games as ESPN's. Windows are the N
+The log is checked against ESPN's own splits: a player's season must hold
+the same number of games as ESPN's, or he keeps ESPN's splits and no
+outliers. For L7, L15 and L30 the box scores decide which games fall in the
+window: ESPN keeps an injured player's last game in his L7 and L15 after he
+stops playing, so where ESPN's game count differs, the log's window replaces
+ESPN's. Windows are the N
 days ending on the last day with a completed game, inclusive, as ESPN counts
 them. ESPN's totals stay the source of truth (its later stat corrections can
 move a cached box score by a point or two): an adjusted average is ESPN's
@@ -49,6 +53,7 @@ SHORT_GAME_MIN = 10  # fewest minutes more than this below the second fewest is 
 SMALL_SAMPLE = 2   # a rate whose season part rests on this many games or fewer is flagged
 WEIGHTS = {"base": 1, "current": 2, "l30": 3, "l15": 4, "l7": 5}
 DAYS = {"l7": 7, "l15": 15, "l30": 30}
+FIXED = []  # windows where ESPN's split disagreed with the box scores and the log replaced it
 
 
 def season_logs(now=None):
@@ -121,19 +126,22 @@ def attach(rows, now=None):
     rows = list(rows)
     logs, last = season_logs(now)
     notes = []
+    FIXED.clear()
     for r in rows:
         r["adj"], r["drops"], r["log"] = {}, {}, None
         log = logs.get(r["id"], [])
         if r.get("current") and last:
             w = windows(log, last)
-            ok = True
-            for k, games in w.items():
-                espn = r.get(k)
-                if len(games) != (espn["gp"] if espn else 0):
-                    ok = False
-                    notes.append(f'{r["player"]} {k}: {len(games)} games in the box scores, '
-                                 f'{espn["gp"] if espn else 0} in ESPN\'s split')
-                    break
+            ok = len(w["current"]) == r["current"]["gp"]
+            if not ok:
+                notes.append(f'{r["player"]}: {len(w["current"])} games in the box scores, '
+                             f'{r["current"]["gp"]} in ESPN\'s season split')
+            else:
+                for k in DAYS:  # ESPN keeps a stale last game in a window the player has not played in
+                    espn = r.get(k)
+                    if len(w[k]) != (espn["gp"] if espn else 0):
+                        r[k] = _avg(w[k])
+                        FIXED.append(f'{r["player"]} {k}')
             if ok:
                 r["log"] = log
                 r["drops"] = outliers(log)
