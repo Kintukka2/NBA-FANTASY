@@ -48,7 +48,7 @@ average and ESPN's projection:
 - State the sample: a window of 1 or 2 games is noise and is called that.
   Early in the season L15 and L30 equal the season average, and the scripts
   say so.
-- **Outlier games** (`council/gamelog.py`): a bad game (worst FP, 15+ under
+- **Outlier games** (`council/gamelog.py`): a bad game (worst FP, 12+ under
   the next worst, 3+ games) and a short game (fewest minutes, more than 10
   under the next fewest, 2+ games) are dropped. The scripts show such a
   window as **A → B**, B being the average without the outlier. Quote both.
