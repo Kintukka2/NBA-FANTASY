@@ -55,6 +55,7 @@ from injuries import injuries as injury_feed  # noqa: E402
 from gamelog import FIXED  # noqa: E402
 from injury_watch import LOG_NOTES, box, player_pool  # noqa: E402
 from news_watch import overrides as news_overrides, role_rate  # noqa: E402
+from opponents import factors as opponent_factors, game_factor, pct  # noqa: E402
 from slump_watch import (ET, FANTASY, LEAGUE, TEAM_ID, WINDOWS, get, live_games, signed,  # noqa: E402
                          window_cells, windows_note)
 
@@ -122,6 +123,8 @@ def main():
                          "return, rated on last season (or the projection)")
     ap.add_argument("--next", action="store_true",
                     help="prepare for next week's matchup (its opponent and its Monday to Sunday) instead of this one")
+    ap.add_argument("--no-opp", action="store_true", help="value every game at the plain rate, without the opponent "
+                    "factor (council/opponents.py)")
     ap.add_argument("--allow-live", action="store_true", help="run even while games are in progress")
     args = ap.parse_args()
     local = ZoneInfo(args.tz)
@@ -144,11 +147,14 @@ def main():
     tips = {}  # (pro team, period) -> tip-off (UTC)
     first = {}  # period -> first tip-off
     tipped = {}  # pro team -> ids of games that have tipped
+    vs_team = {}  # (pro team, period) -> (opponent, at home)
     for t in pro_teams:
         for p, gs in t.get("proGamesByScoringPeriod", {}).items():
             for g in gs:
                 when = dt.datetime.fromtimestamp(g["date"] / 1000, dt.timezone.utc)
                 tips[(t["id"], int(p))] = when
+                home = g.get("homeProTeamId") == t["id"]
+                vs_team[(t["id"], int(p))] = (g.get("awayProTeamId") if home else g.get("homeProTeamId"), home)
                 if when <= now:
                     tipped.setdefault(t["id"], []).append(g["id"])
                 first[int(p)] = min(first.get(int(p), when), when)
@@ -204,8 +210,29 @@ def main():
             return bool(i["return"]) and i["return"] <= first[p].astimezone(ET).date()
         return True
 
+    fac = {} if args.no_opp else opponent_factors(pool, now)  # council/opponents.py
+    played_on = {}  # pro team -> ET dates it plays
+    for (tid, q), when in tips.items():
+        played_on.setdefault(tid, set()).add(when.astimezone(ET).date())
+
+    def factor(r, p):
+        return game_factor(fac, vs_team.get((r["pro"], p), (None, True))[0], r["pos"])
+
+    def value(r, p):
+        """A player's expected FP in his game on day p: his rate times the opponent's factor."""
+        return rate(r) * factor(r, p)
+
+    def second_night(tid, p):
+        return (tid, p) in tips and tips[(tid, p)].astimezone(ET).date() - dt.timedelta(days=1) in played_on.get(tid, ())
+
+    def vs(r, p):
+        """'@WSH +6%' (with ' b2b' on a back-to-back's second night) for a player's game on day p."""
+        opp, home = vs_team.get((r["pro"], p), (None, True))
+        return (f'{"" if home else "@"}{abbrev.get(opp, "?")}' + (f" {pct(factor(r, p))}" if fac else "")
+                + (" b2b" if second_night(r["pro"], p) else ""))
+
     def total(roster, p):
-        return best_lineup(tuple(sorted((rate(r), slots_for(r)) for r in roster if plays(r, p))))
+        return best_lineup(tuple(sorted((value(r, p), slots_for(r)) for r in roster if plays(r, p))))
 
     def roster(tid):
         return [pool[e["playerPoolEntry"]["player"]["id"]] for e in teams[tid]["roster"]["entries"]
@@ -270,7 +297,8 @@ def main():
                           if r["id"] in feed and feed[r["id"]]["return"] else
                           (feed[r["id"]]["status"].lower() if r["id"] in feed else ""))
     est = lambda r: "; ".join(x for x in (espn_est(r), news_note(r)) if x)
-    grid = lambda r: " | ".join("x" if plays(r, p) else ("o" if (r["pro"], p) in tips else "") for p in days)
+    mark = lambda r, p: "x" + ("+" if factor(r, p) >= 1.05 else "−" if factor(r, p) <= 0.95 else "")
+    grid = lambda r: " | ".join(mark(r, p) if plays(r, p) else ("o" if (r["pro"], p) in tips else "") for p in days)
     line = lambda r: (f'{r["current"]["gp"]}, {r["current"]["min"]:.1f}, {r["current"]["fpg"]:.1f}'
                       if r["current"] else "—")
     form = lambda r: ", ".join(f"{label_} {cell}" for label_, cell in zip(WINDOWS.values(), window_cells(r)))
@@ -300,7 +328,12 @@ def main():
            f"- **Method:** an exact optimiser fills the 10 starting slots each day. **Rate** per game "
            "(`council/gamelog.py`): last season ×1 (or ESPN's projection), this season ×2, last 30 days ×3, "
            "last 15 ×4, last 7 ×5, each without its outlier games (a bad game 12+ FP under the next worst, "
-           "a short game 10+ minutes under the next fewest). A player "
+           "a short game 10+ minutes under the next fewest). "
+           + ("Each game is worth the rate × the **opponent factor** at the player's positions "
+              "(`council/opponents.py`: what opponents score against that team over their own averages, shrunk "
+              "toward even and capped at ±15%), shown as `@WSH +6%`; `b2b` marks a back-to-back's second night. "
+              if fac else "Games are valued at the plain rate (`--no-opp`). ")
+           + "A player "
            f"listed OUT is left out until ESPN's estimated return, unless `council/news_overrides.csv` sets another. Streamers need {args.min_minutes:g}+ minutes this season.",
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "
            f"All {len(pool)} pool players' current, L7, L15, L30, projected and 2026 averages re-score with "
@@ -343,7 +376,8 @@ def main():
 
     head = "| Player | NBA | Rate | L7 | L15 | L30 | " + " | ".join(label(p)[0][:6] for p in days) + " | Status |"
     rule = "|---|---|---:|---:|---:|---:|" + ":-:|" * len(days) + "---|"
-    out += ["## Our roster", "", "x = plays, o = has a game but is listed out.", "", head, rule]
+    out += ["## Our roster", "", "x = plays (x+ a soft opponent, x− a tough one: 5%+ either way), "
+            "o = has a game but is listed out. Rate is before the opponent factor.", "", head, rule]
     out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f}{" †" if r.get("small") else ""}{" ‡" if r.get("role_rate") is not None else ""} | ' + " | ".join(window_cells(r))
             + f' | {grid(r)} | {est(r)} |'
             for r in sorted(ours, key=rate, reverse=True)]
@@ -381,7 +415,8 @@ def main():
                 "|---|---|---|---|---:|---:|---:|---|---:|---:|---:|"]
         for x, m in ranked[:args.top]:
             shown.add(x["pro"])
-            gd = ", ".join(label(p)[0][:3] for p in days if plays(x, p) and not started(x, p) and not started(d, p))
+            gd = ", ".join(f"{label(p)[0][:3]} {vs(x, p)}" for p in days
+                           if plays(x, p) and not started(x, p) and not started(d, p))
             out.append(f'| **{x["player"]}**{" (" + est(x) + ")" if est(x) else ""}{" † small sample" if x.get("small") else ""} | {abbrev.get(x["pro"])} | {gd} | '
                        f'{line(x)} | ' + " | ".join(window_cells(x)) + f' | {starts(x)} | '
                        f'{fmt(x["last"] and x["last"]["fpg"])} | {x["owned"]:.0f}% | '
@@ -603,12 +638,13 @@ def main():
                     occupants[s] = x
             scoring = [r for r in empty if plays(r, p)] + [o for t, o in enumerate(occupants)
                                                          if (counts(o, p) if o is not origs[t] else plays(o, p))]
-            v = best_lineup(tuple(sorted((rate(r), slots_for(r)) for r in scoring)))
-            k = best_lineup(tuple(sorted((rate(r), slots_for(r)) for r in empty + origs if plays(r, p))))
+            v = best_lineup(tuple(sorted((value(r, p), slots_for(r)) for r in scoring)))
+            k = best_lineup(tuple(sorted((value(r, p), slots_for(r)) for r in empty + origs if plays(r, p))))
             sits = [r["player"] for r in scoring if len(scoring) > len(SLOTS) and abs(best_lineup(tuple(sorted(
-                (rate(q), slots_for(q)) for q in scoring if q is not r))) - v) < 1e-6]
+                (value(q, p), slots_for(q)) for q in scoring if q is not r))) - v) < 1e-6]
             cell = lambda o, t: (f'{o["player"]} ({abbrev.get(o["pro"])})'
-                                 + (" plays" if (counts(o, p) if o is not origs[t] else plays(o, p)) else ", idle"))
+                                 + (f" plays {vs(o, p)}" if (counts(o, p) if o is not origs[t] else plays(o, p))
+                                    else ", idle"))
             out.append(f"| {label(p)[0]} | {label(p)[1]} | " + " | ".join(cell(o, t) for t, o in enumerate(occupants))
                        + f" | {v:.0f} | {signed(v - k, True)} | {', '.join(sits) or '—'} |")
         out += ["", "Moves, each made before the earlier tip-off of the two players that day:", ""]

@@ -53,6 +53,7 @@ Options:
 | `--swap OUT=IN ...` | — | what-if: our roster with OUT replaced by IN (a free agent, a waiver claim, anyone in the pool) |
 | `--returning` | — | also consider injured free agents who haven't played this season, from ESPN's estimated return, rated on last season (or the projection). ESPN's date is often early, so check the reported timeline before relying on one |
 | `--next` | — | prepare for next week's matchup instead: its opponent, Monday to Sunday, the rosters ESPN will field on its first day, and its own add limit |
+| `--no-opp` | — | value every game at the plain rate, without the opponent factor (for comparison) |
 | `--from YYYY-MM-DD` | — | count only days from this US date. With `--swap`, it prices a move that lands later in the week, such as a waiver claim. A swap that drops a player who has already played this week needs `--from` today, or it also erases his banked game |
 
 Both roster tables, the streamer table and every move carry **L7, L15 and
@@ -60,7 +61,21 @@ L30** (FP/g over the last 7, 15 and 30 days, games in brackets). These are
 a hard rule (CLAUDE.md, "Recent form, always"). The rate the optimiser uses
 is built from them (`council/gamelog.py`): last season ×1 (or the
 projection), this season ×2, L30 ×3, L15 ×4, L7 ×5, each without its outlier
-games. A window shown as **A → B** had an outlier dropped. Still check:
+games. A window shown as **A → B** had an outlier dropped.
+
+**Opponents.** Each game is worth the rate × the **opponent factor**
+(`council/opponents.py`). The factor is what opponents score against that
+team over their own averages, at the player's positions, shrunk toward even
+with 5 games of league-average defence and capped at ±15%. The streamer table
+lists each game as `Wed @NY −6% b2b`, where `b2b` marks a back-to-back's second
+night. The roster grids mark soft and tough games as `x+` and `x−`.
+`python council/opponents.py` prints every team's factors.
+
+- Quote a streamer's opponents when they decide between two close options.
+- Treat a `b2b` night as a rest risk for veterans and players on managed
+  minutes. The news watch records announced rests as `sit` overrides.
+
+Still check:
 
 - A streamer whose L7 is 5+ FP/g under his season average needs a reason
   (fewer minutes, a returning teammate) before he goes in the plan.

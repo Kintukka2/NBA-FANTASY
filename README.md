@@ -67,6 +67,8 @@ council/      members.json          personas, skills, sources, vote weights
               rookies.py            rookies' actual output against projection; estimate for one
               form.py               any player's L7 / L15 / L30 FP/g beside season and projection, and the rate
               gamelog.py            game logs from box scores, outlier games, the weighted rate
+              opponents.py          FP each team gives up by position, against opponents' own averages;
+                                    the factor matchup.py applies to each game
               news_watch.py         ESPN player news against injury labels and box scores: injury,
                                     role, minutes, rest and gap flags, and the role rate
               news_overrides.csv    researched return dates, rest days and roles that matchup.py applies
@@ -175,7 +177,12 @@ Whether a player is starting comes from ESPN's box scores (the *Started*
 column).
 
 A streamer is worth the change in our optimised total, so a game on a day
-we're already full counts for nothing. The skill adds sourced research and
+we're already full counts for nothing. Each game is valued at the player's
+rate times the opponent factor from `council/opponents.py`: how much
+opponents score against that team over their own averages, at his positions.
+The factor is shrunk toward even and capped at ±15%. `--no-opp` turns it off.
+`council/news_overrides.csv` (from the news watch) sets researched returns,
+rest days and roles. The skill adds sourced research and
 a plan, and saves the report as `docs/analysis/<YYYYMMDD>-matchup<N>.md`.
 Its guards match the Slump Watch.
 
