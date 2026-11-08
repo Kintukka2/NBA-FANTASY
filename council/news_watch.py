@@ -101,9 +101,15 @@ def hits(rx, text):
     for m in rx.finditer(text or ""):
         if NEGATION.search(text[max(0, m.start() - 6):m.start()]):
             continue
-        lo, hi = text.rfind(".", 0, m.start()) + 1, text.find(".", m.end())
-        out.append(text[lo:hi if hi > 0 else len(text)].strip())
+        ends = [e.end() for e in SENTENCE_END.finditer(text)]
+        lo = max((e for e in ends if e <= m.start()), default=0)
+        hi = min((e for e in ends if e > m.end()), default=len(text))
+        out.append(text[lo:hi].strip())
     return list(dict.fromkeys(out))
+
+
+# a sentence ends at . ! or ? followed by a space and a capital, but not after "Oct." or "Jr."
+SENTENCE_END = re.compile(r"(?<!\b[A-Z][a-z])(?<!\b[A-Z][a-z][a-z])(?<!\bvs)(?<!\bNo)(?<!\bSt)[.!?](?=\s+[A-Z\"]|$)")
 
 
 def news(pid, n=50, keep=12):
@@ -271,7 +277,7 @@ def check(r, items, inj, log, starts, team_days, today, args):
                 flags.append(("minutes", f"{m3:.1f} min over his last 3 games against {ms:.1f} for the season "
                               f"({signed(m3 - ms, True)})"))
     mins = said(MINUTES, recent, body) or said(BIGGER, recent, head)
-    if mins:
+    if mins and not (inj and inj["status"].lower() == "out"):  # an injured player's ramp-up is the injury's story
         flags.append(("minutes", f"news {mins}"))
 
     # rest: a back-to-back ahead, and a reason to think he sits one night of it
