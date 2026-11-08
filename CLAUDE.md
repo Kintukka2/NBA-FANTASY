@@ -21,6 +21,13 @@ because of injuries, or uses `/injury-watch`, follow
 `.claude/skills/injury-watch/SKILL.md`. Run `council/injury_watch.py`, then
 add sourced research. It refuses to run while NBA games are live.
 
+When the user asks for the news watch, what the news says, whether ESPN's
+injury dates are right, role or minutes changes, rest days, or uses
+`/news-watch`, follow `.claude/skills/news-watch/SKILL.md`. Run
+`council/news_watch.py`, then research agents check every flag on the web.
+When running all skills, run the news watch first so the matchup uses its
+overrides. It refuses to run while NBA games are live.
+
 When the user asks to prepare for the matchup, who to stream, who to pick up
 for particular days, or uses `/matchup`, follow
 `.claude/skills/matchup/SKILL.md`. Run `council/matchup.py`, then add
@@ -64,6 +71,15 @@ game after his 9-minute injury exit was dropped.
 last season ×1 (ESPN's projection if none), this season ×2, L30 ×3, L15 ×4,
 L7 ×5, each outlier-adjusted, skipping parts with no games. `form.py` prints
 it as **Rate**. Never compute it by hand.
+
+**ESPN's labels are not taken at face value.** Return dates, roles and rest
+days that the news watch research confirms go into `council/news_overrides.csv`
+(`return`, `sit`, `role`), one sourced row each, with a date it ends.
+`matchup.py` applies them in place of ESPN's estimate and the rate:
+
+- a **role rate** (FP per minute this season × the confirmed minutes) replaces the rate, marked **‡**;
+- quote the role rate beside the rate;
+- never add a row without a linked source, and remove expired rows.
 
 **Adds left: only from `matchup.py`.** The weekly limit follows that week's
 NBA game days, so a week with an empty day has 6. Quote the limit and the

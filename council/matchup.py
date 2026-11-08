@@ -54,6 +54,7 @@ sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
 from gamelog import FIXED  # noqa: E402
 from injury_watch import LOG_NOTES, box, player_pool  # noqa: E402
+from news_watch import overrides as news_overrides, role_rate  # noqa: E402
 from slump_watch import (ET, FANTASY, LEAGUE, TEAM_ID, WINDOWS, get, live_games, signed,  # noqa: E402
                          window_cells, windows_note)
 
@@ -65,6 +66,8 @@ IR_SLOT = 13
 def rate(r):
     if "rate" in r:  # a what-if override (--rotate's break-even search)
         return r["rate"]
+    if r.get("role_rate") is not None:  # council/news_overrides.csv: a role the news watch confirmed
+        return r["role_rate"]
     if r.get("wrate") is not None:  # council/gamelog.py: weighted, outlier-adjusted
         return r["wrate"]
     cur, other = r["current"], (r["last"] or r["projected"] or {}).get("fpg")
@@ -150,6 +153,12 @@ def main():
                     tipped.setdefault(t["id"], []).append(g["id"])
                 first[int(p)] = min(first.get(int(p), when), when)
     today = now.astimezone(ET).date()
+    news = news_overrides(today)  # council/news_overrides.csv: what the news watch research confirmed
+    by_name = {r["player"].lower(): r for r in pool.values()}
+    unknown = [n for n in news if n not in by_name]
+    for n, o in news.items():
+        if "role" in o and n in by_name:
+            by_name[n]["role_rate"] = role_rate(by_name[n], o["role"])
     monday = today - dt.timedelta(days=today.weekday()) + dt.timedelta(days=7 if args.next else 0)
     end = dt.date.fromisoformat(args.end) if args.end else monday + dt.timedelta(days=6)
     in_matchup = [p for p, w in first.items() if monday <= w.astimezone(ET).date() <= end]
@@ -182,8 +191,14 @@ def main():
         sits_out.add((name.strip().lower(), dt.date.fromisoformat(when)))
 
     def plays(r, p):
-        if (r["pro"], p) not in tips or (r["player"].lower(), first[p].astimezone(ET).date()) in sits_out:
+        day = first[p].astimezone(ET).date()
+        if (r["pro"], p) not in tips or (r["player"].lower(), day) in sits_out:
             return False
+        o = news.get(r["player"].lower())
+        if o and day in o["sit"]:
+            return False
+        if o and "return" in o:  # the researched return replaces ESPN's estimate and label
+            return day >= o["return"]
         i = feed.get(r["id"])
         if i and i["status"].lower() == "out":
             return bool(i["return"]) and i["return"] <= first[p].astimezone(ET).date()
@@ -240,9 +255,21 @@ def main():
           and ((r["current"] and r["current"]["min"] >= args.min_minutes)
                or (args.returning and not r["current"] and r["id"] in feed and (r["last"] or r["projected"])))]
     fmt = lambda x: "—" if x is None else f"{x:.1f}"
-    est = lambda r: (f'{feed[r["id"]]["status"].lower()}, ESPN est. {feed[r["id"]]["return"]:%d %b}'
-                     if r["id"] in feed and feed[r["id"]]["return"] else
-                     (feed[r["id"]]["status"].lower() if r["id"] in feed else ""))
+    def news_note(r):
+        """What council/news_overrides.csv says about this player, or ''."""
+        o = news.get(r["player"].lower())
+        if not o:
+            return ""
+        bits = ([f'news: back {o["return"]:%d %b}'] if "return" in o else []) + \
+               (["news: sits " + ", ".join(f"{d:%d %b}" for d in sorted(o["sit"]))] if o["sit"] else [])
+        if "role" in o and r.get("role_rate") is not None:
+            bits.append(f'news: {o["role"]:g} min, role rate {r["role_rate"]:.1f} ‡ (rate {r.get("wrate") or 0:.1f})')
+        return "; ".join(bits)
+
+    espn_est = lambda r: (f'{feed[r["id"]]["status"].lower()}, ESPN est. {feed[r["id"]]["return"]:%d %b}'
+                          if r["id"] in feed and feed[r["id"]]["return"] else
+                          (feed[r["id"]]["status"].lower() if r["id"] in feed else ""))
+    est = lambda r: "; ".join(x for x in (espn_est(r), news_note(r)) if x)
     grid = lambda r: " | ".join("x" if plays(r, p) else ("o" if (r["pro"], p) in tips else "") for p in days)
     line = lambda r: (f'{r["current"]["gp"]}, {r["current"]["min"]:.1f}, {r["current"]["fpg"]:.1f}'
                       if r["current"] else "—")
@@ -274,13 +301,19 @@ def main():
            "(`council/gamelog.py`): last season ×1 (or ESPN's projection), this season ×2, last 30 days ×3, "
            "last 15 ×4, last 7 ×5, each without its outlier games (a bad game 12+ FP under the next worst, "
            "a short game 10+ minutes under the next fewest). A player "
-           f"listed OUT is left out until ESPN's estimated return. Streamers need {args.min_minutes:g}+ minutes this season.",
+           f"listed OUT is left out until ESPN's estimated return, unless `council/news_overrides.csv` sets another. Streamers need {args.min_minutes:g}+ minutes this season.",
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "
            f"All {len(pool)} pool players' current, L7, L15, L30, projected and 2026 averages re-score with "
            "`scripts/league_scoring.py` (0 mismatches).",
            windows_note(ours + theirs + fa) + " The rate uses the outlier-adjusted values.",
            "- **† Small sample:** the player's rate rests on 2 games or fewer this season (after any dropped "
            "outlier), so it can swing far from his true level.",
+           *([f"- **News overrides** (`council/news_overrides.csv`, confirmed by the news watch research), applied "
+              "in place of ESPN's label and the rate: " + "; ".join(
+                  f'{by_name[n]["player"]}: {news_note(by_name[n])}' for n in news if n in by_name)
+              + ". **‡** marks a role rate (FP per minute this season × the confirmed minutes)."
+              + (f" Not in the player pool, so ignored: {', '.join(unknown)}." if unknown else "")]
+             if news else []),
            *([f"- **Game logs:** {len(LOG_NOTES)} pool players' box-score logs do not match ESPN's season "
               "splits; they keep ESPN's averages and no outliers."] if LOG_NOTES else []),
            *([f"- **Stale ESPN windows:** {len(FIXED)} L7/L15/L30 windows (injured players who have not played "
@@ -311,7 +344,7 @@ def main():
     head = "| Player | NBA | Rate | L7 | L15 | L30 | " + " | ".join(label(p)[0][:6] for p in days) + " | Status |"
     rule = "|---|---|---:|---:|---:|---:|" + ":-:|" * len(days) + "---|"
     out += ["## Our roster", "", "x = plays, o = has a game but is listed out.", "", head, rule]
-    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f}{" †" if r.get("small") else ""} | ' + " | ".join(window_cells(r))
+    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f}{" †" if r.get("small") else ""}{" ‡" if r.get("role_rate") is not None else ""} | ' + " | ".join(window_cells(r))
             + f' | {grid(r)} | {est(r)} |'
             for r in sorted(ours, key=rate, reverse=True)]
     if ir:
@@ -322,7 +355,7 @@ def main():
     adds = {r["player"]: sum(ours_by[p] - total([x for x in ours if x is not r], p) for p in days) for r in ours}
     out += [f"| {n} | {v:.1f} |" for n, v in sorted(adds.items(), key=lambda kv: kv[1])]
     out += ["", f"## {teams[opp]['name'].strip()}", "", head, rule]
-    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f}{" †" if r.get("small") else ""} | ' + " | ".join(window_cells(r))
+    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f}{" †" if r.get("small") else ""}{" ‡" if r.get("role_rate") is not None else ""} | ' + " | ".join(window_cells(r))
             + f' | {grid(r)} | {est(r)} |'
             for r in sorted(theirs, key=rate, reverse=True)]
     out.append("")

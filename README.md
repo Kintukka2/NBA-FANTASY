@@ -67,6 +67,9 @@ council/      members.json          personas, skills, sources, vote weights
               rookies.py            rookies' actual output against projection; estimate for one
               form.py               any player's L7 / L15 / L30 FP/g beside season and projection, and the rate
               gamelog.py            game logs from box scores, outlier games, the weighted rate
+              news_watch.py         ESPN player news against injury labels and box scores: injury,
+                                    role, minutes, rest and gap flags, and the role rate
+              news_overrides.csv    researched return dates, rest days and roles that matchup.py applies
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)

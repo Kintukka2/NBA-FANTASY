@@ -23,6 +23,13 @@ The streaming slot is the roster spot we churn for streamers.
 
 ## 2. Run the script
 
+**News first.** `matchup.py` applies `council/news_overrides.csv`:
+researched return dates, rest days and confirmed roles, in place of ESPN's
+estimate and the rate. The report header lists them, and **‡** marks a role
+rate. If no news watch ran today (`docs/analysis/<YYYYMMDD>-news-watch.md`),
+run it first (`/news-watch`), because ESPN's injury dates are often
+placeholders.
+
 ```bash
 python council/espn_sync.py
 python council/matchup.py --drop "<player>" ["<player>"] \
