@@ -23,6 +23,9 @@ Outlier rules, on the season's games (at most one game each):
 Each window (season, L30, L15, L7) is then averaged again without the dropped
 games: the *adjusted* averages. Both are shown; the rate uses the adjusted.
 
+Small sample: a rate whose season part rests on 2 games or fewer (after any
+dropped outlier) is flagged, and every report says so beside it.
+
 Weighted rate per game (the projection every report uses):
     last season x1 (ESPN's projection if there is no last season)
     this season x2, last 30 days x3, last 15 days x4, last 7 days x5
@@ -43,6 +46,7 @@ from slump_watch import ET, FANTASY, get  # noqa: E402
 
 BAD_GAME_FP = 15     # worst game this far below the second worst is dropped
 SHORT_GAME_MIN = 10  # fewest minutes more than this below the second fewest is dropped
+SMALL_SAMPLE = 2   # a rate whose season part rests on this many games or fewer is flagged
 WEIGHTS = {"base": 1, "current": 2, "l30": 3, "l15": 4, "l7": 5}
 DAYS = {"l7": 7, "l15": 15, "l30": 30}
 
@@ -140,6 +144,8 @@ def attach(rows, now=None):
                         r["adj"][k] = ({"gp": left, "fpg": (espn["fpg"] * espn["gp"] - sum(g[2] for g in out)) / left}
                                        if left else None)
         r["wrate"] = weighted_rate(r)
+        season = r["adj"]["current"] if "current" in r["adj"] else r.get("current")
+        r["small"] = bool(r.get("current")) and (season or {}).get("gp", 0) <= SMALL_SAMPLE
     return notes
 
 
@@ -178,7 +184,8 @@ def main():
                 print(f"- {lab}: {adj_cell(r, k)}")
             base = (r.get("last") or r.get("projected") or {}).get("fpg")
             print(f'- Base (last season, else projection): {base:.1f}' if base is not None else "- Base: none")
-            print(f'- Weighted rate: {r["wrate"]:.1f} (all games: {weighted_rate(r, False):.1f})')
+            print(f'- Weighted rate: {r["wrate"]:.1f} (all games: {weighted_rate(r, False):.1f})'
+                  + (" — small sample: the season part rests on 2 games or fewer" if r.get("small") else ""))
 
 
 if __name__ == "__main__":
