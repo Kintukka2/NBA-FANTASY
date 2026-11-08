@@ -55,7 +55,7 @@ from injuries import injuries as injury_feed  # noqa: E402
 from gamelog import FIXED  # noqa: E402
 from injury_watch import LOG_NOTES, box, player_pool  # noqa: E402
 from news_watch import overrides as news_overrides, role_rate  # noqa: E402
-from opponents import factors as opponent_factors, game_factor, pct  # noqa: E402
+from opponents import audit as opponent_audit, audit_line, compute as opponent_compute, game_factor, load_games, pct  # noqa: E402
 from slump_watch import (ET, FANTASY, LEAGUE, TEAM_ID, WINDOWS, get, live_games, signed,  # noqa: E402
                          window_cells, windows_note)
 
@@ -123,8 +123,8 @@ def main():
                          "return, rated on last season (or the projection)")
     ap.add_argument("--next", action="store_true",
                     help="prepare for next week's matchup (its opponent and its Monday to Sunday) instead of this one")
-    ap.add_argument("--no-opp", action="store_true", help="value every game at the plain rate, without the opponent "
-                    "factor (council/opponents.py)")
+    ap.add_argument("--opp", action="store_true", help="what-if: value each game at the rate x the opponent factor "
+                    "(council/opponents.py). Off by default until its audit certifies it")
     ap.add_argument("--allow-live", action="store_true", help="run even while games are in progress")
     args = ap.parse_args()
     local = ZoneInfo(args.tz)
@@ -210,7 +210,9 @@ def main():
             return bool(i["return"]) and i["return"] <= first[p].astimezone(ET).date()
         return True
 
-    fac = {} if args.no_opp else opponent_factors(pool, now)  # council/opponents.py
+    season_games = load_games(now)
+    fac = opponent_compute(season_games, pool)  # council/opponents.py: shown beside each game
+    opp_audit = opponent_audit(pool, season_games)  # replayed against real results; certifies the factor or not
     played_on = {}  # pro team -> ET dates it plays
     for (tid, q), when in tips.items():
         played_on.setdefault(tid, set()).add(when.astimezone(ET).date())
@@ -219,8 +221,8 @@ def main():
         return game_factor(fac, vs_team.get((r["pro"], p), (None, True))[0], r["pos"])
 
     def value(r, p):
-        """A player's expected FP in his game on day p: his rate times the opponent's factor."""
-        return rate(r) * factor(r, p)
+        """A player's expected FP in his game on day p: his rate (times the opponent factor with --opp)."""
+        return rate(r) * factor(r, p) if args.opp else rate(r)
 
     def second_night(tid, p):
         return (tid, p) in tips and tips[(tid, p)].astimezone(ET).date() - dt.timedelta(days=1) in played_on.get(tid, ())
@@ -329,16 +331,20 @@ def main():
            "(`council/gamelog.py`): last season ×1 (or ESPN's projection), this season ×2, last 30 days ×3, "
            "last 15 ×4, last 7 ×5, each without its outlier games (a bad game 12+ FP under the next worst, "
            "a short game 10+ minutes under the next fewest). "
-           + ("Each game is worth the rate × the **opponent factor** at the player's positions "
-              "(`council/opponents.py`: what opponents score against that team over their own averages, shrunk "
-              "toward even and capped at ±15%), shown as `@WSH +6%`; `b2b` marks a back-to-back's second night. "
-              if fac else "Games are valued at the plain rate (`--no-opp`). ")
+           + ("**What-if (`--opp`):** each game is worth the rate × the **opponent factor** at the player's "
+              "positions (`council/opponents.py`), which its audit has not certified. "
+              if args.opp else "Each game is valued at the plain rate. The **opponent factor** beside each game "
+              "(`@WSH +6%`: what opponents score against that team over their own averages, by position, shrunk "
+              "toward even and capped at ±15%) is for information only, and stays out of the projections until "
+              "its audit certifies it. ")
+           + "`b2b` marks a back-to-back's second night. "
            + "A player "
            f"listed OUT is left out until ESPN's estimated return, unless `council/news_overrides.csv` sets another. Streamers need {args.min_minutes:g}+ minutes this season.",
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "
            f"All {len(pool)} pool players' current, L7, L15, L30, projected and 2026 averages re-score with "
            "`scripts/league_scoring.py` (0 mismatches).",
            windows_note(ours + theirs + fa) + " The rate uses the outlier-adjusted values.",
+           f"- {audit_line(opp_audit)}",
            "- **† Small sample:** the player's rate rests on 2 games or fewer this season (after any dropped "
            "outlier), so it can swing far from his true level.",
            *([f"- **News overrides** (`council/news_overrides.csv`, confirmed by the news watch research), applied "
@@ -376,8 +382,9 @@ def main():
 
     head = "| Player | NBA | Rate | L7 | L15 | L30 | " + " | ".join(label(p)[0][:6] for p in days) + " | Status |"
     rule = "|---|---|---:|---:|---:|---:|" + ":-:|" * len(days) + "---|"
-    out += ["## Our roster", "", "x = plays (x+ a soft opponent, x− a tough one: 5%+ either way), "
-            "o = has a game but is listed out. Rate is before the opponent factor.", "", head, rule]
+    out += ["## Our roster", "", "x = plays (x+ a soft opponent, x− a tough one: 5%+ either way, "
+            + ("in the projection with `--opp`" if args.opp else "for information only") + "), "
+            "o = has a game but is listed out.", "", head, rule]
     out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f}{" †" if r.get("small") else ""}{" ‡" if r.get("role_rate") is not None else ""} | ' + " | ".join(window_cells(r))
             + f' | {grid(r)} | {est(r)} |'
             for r in sorted(ours, key=rate, reverse=True)]

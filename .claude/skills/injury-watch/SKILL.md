@@ -52,7 +52,7 @@ are a hard rule (CLAUDE.md, "Recent form, always").
 
 If something goes wrong:
 
-- **`espn_sync.py` reports a difference between ESPN and `council/roster.csv`:** tell the user rather than editing the file (CLAUDE.md).
+- **`espn_sync.py` records moves:** it syncs `council/roster.csv` and `council/taken.txt` to ESPN, the source of truth. Commit the change and name the moves in the reply (CLAUDE.md).
 - **"Games in progress":** tell the user which games are live and when to run it again. Pass `--allow-live` only if they ask for a mid-game read.
 - **A scoring mismatch:** the script exits without a report. Report it, and never patch the numbers.
 

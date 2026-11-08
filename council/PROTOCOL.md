@@ -69,11 +69,12 @@ reads, and the file the Draft Council UI replays on its ring.
 
 `council/roster.csv` is our live roster, one row per player: `player`,
 `team`, `pos`, `slot` (`roster` or `IR`), `acquired` (`draft R1 P6`,
-`waiver`, `free agent`, `trade`), `acquired_on` (date) and `notes`. Claude
-keeps it current: whenever the user reports a move (an add, a drop, an IR
-move or a trade), Claude updates the file in the same turn and commits it.
-A planned move is not a move; the file only changes once the user says it
-happened. Players other teams add go in `council/taken.txt`.
+`waivers`, `free agent`, `trade`), `acquired_on` (date) and `notes`.
+ESPN is the source of truth: `python council/espn_sync.py` rewrites the
+file to match the ESPN app (adds, drops, IR moves, trades) and rebuilds
+`council/taken.txt` from all eight rosters. No confirmation is needed. Claude
+runs it before any analysis and commits what it changes. A planned move is
+not on ESPN, so it is not recorded.
 
 In season, every meeting also gets a **form table**: `council/form.py` run
 for every player the question names (and our roster for a suggestion),

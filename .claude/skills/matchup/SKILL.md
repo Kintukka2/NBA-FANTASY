@@ -53,7 +53,7 @@ Options:
 | `--swap OUT=IN ...` | — | what-if: our roster with OUT replaced by IN (a free agent, a waiver claim, anyone in the pool) |
 | `--returning` | — | also consider injured free agents who haven't played this season, from ESPN's estimated return, rated on last season (or the projection). ESPN's date is often early, so check the reported timeline before relying on one |
 | `--next` | — | prepare for next week's matchup instead: its opponent, Monday to Sunday, the rosters ESPN will field on its first day, and its own add limit |
-| `--no-opp` | — | value every game at the plain rate, without the opponent factor (for comparison) |
+| `--opp` | — | what-if: value each game at the rate × the opponent factor. It is off by default until `python council/opponents.py --audit` certifies the factor. Label its figures as a what-if |
 | `--from YYYY-MM-DD` | — | count only days from this US date. With `--swap`, it prices a move that lands later in the week, such as a waiver claim. A swap that drops a player who has already played this week needs `--from` today, or it also erases his banked game |
 
 Both roster tables, the streamer table and every move carry **L7, L15 and
@@ -63,15 +63,19 @@ is built from them (`council/gamelog.py`): last season ×1 (or the
 projection), this season ×2, L30 ×3, L15 ×4, L7 ×5, each without its outlier
 games. A window shown as **A → B** had an outlier dropped.
 
-**Opponents.** Each game is worth the rate × the **opponent factor**
-(`council/opponents.py`). The factor is what opponents score against that
-team over their own averages, at the player's positions, shrunk toward even
-with 5 games of league-average defence and capped at ±15%. The streamer table
-lists each game as `Wed @NY −6% b2b`, where `b2b` marks a back-to-back's second
-night. The roster grids mark soft and tough games as `x+` and `x−`.
-`python council/opponents.py` prints every team's factors.
+**Opponents: information only.** Each game is valued at the plain rate.
+Beside it, the report shows the **opponent factor** (`council/opponents.py`):
+what opponents score against that team over their own averages, at the
+player's positions, shrunk toward even with 5 games of league-average defence
+and capped at ±15%.
 
-- Quote a streamer's opponents when they decide between two close options.
+- The streamer table lists each game as `Wed @NY −6% b2b`, where `b2b`
+  marks a back-to-back's second night.
+- The roster grids mark soft and tough games as `x+` and `x−`.
+- The factor stays out of projections and gains until its audit certifies it.
+  The header's **Opponent factor audit** line gives the verdict, and
+  `python council/opponents.py --audit` gives the detail.
+- Until then, quote a matchup as context, never as a reason a plan's numbers changed.
 - Treat a `b2b` night as a rest risk for veterans and players on managed
   minutes. The news watch records announced rests as `sit` overrides.
 
@@ -104,7 +108,7 @@ fall.
 
 If something goes wrong:
 
-- **`espn_sync.py` reports a difference between ESPN and `council/roster.csv`:** tell the user rather than editing the file (CLAUDE.md).
+- **`espn_sync.py` records moves:** it syncs `council/roster.csv` and `council/taken.txt` to ESPN, the source of truth. Commit the change and name the moves in the reply (CLAUDE.md).
 - **"Games in progress":** tell the user which games are live and when to run it again. Pass `--allow-live` only if they ask for a mid-game read.
 - **A scoring mismatch:** the script exits without a report. Report it, and never patch the numbers.
 
@@ -167,5 +171,5 @@ Rules for the plan:
   - the lineup sits
   - any optional later move
   - the projected final
-- When the user reports the moves they made, update `council/roster.csv`
-  in the same turn (CLAUDE.md).
+- When the user says they made the moves, run `python council/espn_sync.py`.
+  It records them from ESPN. Commit the change (CLAUDE.md).
