@@ -12,7 +12,8 @@ window: ESPN keeps an injured player's last game in his L7 and L15 after he
 stops playing, so where ESPN's game count differs, the log's window replaces
 ESPN's. Windows are the N
 days ending on the last day with a completed game, inclusive, as ESPN counts
-them. ESPN's totals stay the source of truth (its later stat corrections can
+them, or ending today once ESPN has rolled its day over (window_end picks the
+end date whose game counts agree with ESPN's). ESPN's totals stay the source of truth (its later stat corrections can
 move a cached box score by a point or two): an adjusted average is ESPN's
 window total minus the dropped games' logged FP, over the games left. A
 player whose game counts do not match keeps ESPN's splits, with no outliers.
@@ -107,6 +108,28 @@ def windows(log, last):
     return w
 
 
+def window_end(rows, logs, last, now=None):
+    """The day ESPN's rolling windows end on: the last day with a completed game, or today once ESPN's day rolls over.
+
+    ESPN moves its windows to the new day hours before that day's games, so
+    the end date is the one whose L7 game counts agree with ESPN's for more
+    players."""
+    if not last:
+        return last
+    today = (now or dt.datetime.now(dt.timezone.utc)).astimezone(ET).date()
+    if today <= last:
+        return last
+
+    def agree(end):
+        n = 0
+        for r in rows:
+            log = logs.get(r["id"], [])
+            if r.get("current") and len(log) == r["current"]["gp"]:
+                n += len(windows(log, end)["l7"]) == (r.get("l7") or {}).get("gp", 0)
+        return n
+    return max((last, today), key=agree)
+
+
 def weighted_rate(r, use_adjusted=True):
     """The weighted rate for one pool row (after attach)."""
     base = (r.get("last") or r.get("projected") or {}).get("fpg")
@@ -125,6 +148,7 @@ def attach(rows, now=None):
     """Add 'log', 'drops', 'adj' and 'wrate' to each row (an iterable of pool rows). Returns mismatch notes."""
     rows = list(rows)
     logs, last = season_logs(now)
+    last = window_end(rows, logs, last, now)
     notes = []
     FIXED.clear()
     for r in rows:

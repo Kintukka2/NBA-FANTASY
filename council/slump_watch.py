@@ -254,6 +254,8 @@ def windows_note(rows):
 
 
 def line(split):
+    if "st" not in split:  # a window council/gamelog.py rebuilt from box scores: no category stats
+        return f'{split["min"]:.1f} min, {split["fpg"]:.1f} FP/g (from box scores; ESPN\'s split was stale)'
     f = lambda k: pg(split, k)
     return (f'{f("MIN"):.1f} min, {f("PTS"):.1f} pts, {f("FGM"):.1f}-{f("FGA"):.1f} FG, '
             f'{f("FTM"):.1f}-{f("FTA"):.1f} FT, {f("REB"):.1f} reb, {f("AST"):.1f} ast, '
