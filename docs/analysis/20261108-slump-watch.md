@@ -1,10 +1,10 @@
 # Slump Watch: 08 Nov 2026
 
-- Generated 2026-11-08 05:58 UTC by `council/slump_watch.py`. This is **a report, not a council verdict**.
+- Generated 2026-11-08 07:44 UTC by `council/slump_watch.py`. This is **a report, not a council verdict**.
 - **Flag:** current FP/g **10 or more** below ESPN's projected FP/g. *Near the line* is 5 to 10 below.
 - **Data:** all 110 rostered players in league 423671879, through scoring period 19. Teams have played **2 to 11 games**.
 - **Checks:** No NBA game was in progress. Every current, projected, L7, L15, L30 and 2026 average re-scored with `scripts/league_scoring.py` matches ESPN's league-scored total (0 mismatches). Scoring period 19 (Sat 07 Nov US) re-scored from ESPN's final NBA box scores: all 47 rostered lines match.
-- **L7 / L15 / L30:** FP/g over the last 7, 15 and 30 days, games in brackets, from ESPN's rolling splits, re-scored with `scripts/league_scoring.py`. L30 covers every game so far for every player listed, so they equal the season average for now.
+- **L7 / L15 / L30:** FP/g over the last 7, 15 and 30 days, games in brackets, from ESPN's rolling splits, re-scored with `scripts/league_scoring.py`. L30 covers every game so far for every player listed, so they equal the season average for now. **A → B** means `council/gamelog.py` dropped an outlier from that window (a bad game 15+ FP under the next worst, or a short game 10+ minutes under the next fewest); B is the average without it.
 - **Projection gap:** ESPN's projection carries no `OREB`, `DREB`, `DD` or `TD`; the current average does. Every gap is therefore smaller than a like-for-like gap, by the *bonus* figure on each player's driver line.
 
 ## Headline
@@ -45,8 +45,8 @@ Against `docs/analysis/20261106-slump-watch.md` (05:40 UTC Fri 6).
 
 | Player | NBA | Rank | GP | Min | Rate | Current | L7 | L15 | L30 | Projected | Gap | 2026 | ESPN status |
 |---|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| Josh Giddey | CHI | #3 | 8 | 27.2 / 35.5 | 0.77 | 27.2 | 30.0 (2) | 30.7 (7) | 27.2 (8) | 46.2 | **−18.9** | 46.2 | Active |
-| LaMelo Ball | MIN | #2 | 10 | 27.6 / 32.9 | 0.89 | 34.5 | 38.5 (4) | 33.7 (9) | 34.5 (10) | 46.4 | **−11.9** | 41.1 | Active |
+| Josh Giddey | CHI | #3 | 8 | 27.2 / 35.5 | 0.77 | 27.2 (8) → 30.7 (7) | 30.0 (2) | 30.7 (7) | 27.2 (8) → 30.7 (7) | 46.2 | **−18.9** | 46.2 | Active |
+| LaMelo Ball | MIN | #2 | 10 | 27.6 / 32.9 | 0.89 | 34.5 (10) | 38.5 (4) | 33.7 (9) | 34.5 (10) | 46.4 | **−11.9** | 41.1 | Active |
 
 - **Josh Giddey** (both): scoring −10.5, reb −4.6, ast −4.0, stocks −3.7, TO +2.6; bonus +1.2.
   - Current: 27.2 min, 9.2 pts, 3.5-9.0 FG, 1.2-1.9 FT, 4.6 reb, 7.6 ast, 0.5 stl, 0.4 blk, 2.5 TO
@@ -62,8 +62,8 @@ Against `docs/analysis/20261106-slump-watch.md` (05:40 UTC Fri 6).
 
 | Player | NBA | Rank | GP | Min | Rate | Current | L7 | L15 | L30 | Projected | Gap | 2026 | ESPN status |
 |---|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| Ivica Zubac | IND | #8 | 5 | 20.6 / 31.1 | 0.98 | 23.0 | 19.5 (2) | 17.8 (4) | 23.0 (5) | 35.5 | **−12.5** | 36.3 | Active |
-| Darius Garland | LAC | #5 | 8 | 33.8 / 35.2 | 0.74 | 28.6 | 27.0 (3) | 27.0 (7) | 28.6 (8) | 40.4 | **−11.8** | 35.3 | Active |
+| Ivica Zubac | IND | #8 | 5 | 20.6 / 31.1 | 0.98 | 23.0 (5) → 27.2 (4) | 19.5 (2) | 17.8 (4) → 21.7 (3) | 23.0 (5) → 27.2 (4) | 35.5 | **−12.5** | 36.3 | Active |
+| Darius Garland | LAC | #5 | 8 | 33.8 / 35.2 | 0.74 | 28.6 (8) | 27.0 (3) | 27.0 (7) | 28.6 (8) | 40.4 | **−11.8** | 35.3 | Active |
 
 - **Ivica Zubac** (minutes): scoring −9.3, reb −2.7, ast −0.0, stocks −4.0, TO −0.4; bonus +4.0.
   - Current: 20.6 min, 7.6 pts, 3.2-6.0 FG, 1.2-2.0 FT, 8.6 reb, 2.2 ast, 0.0 stl, 0.6 blk, 1.8 TO
@@ -79,7 +79,7 @@ Against `docs/analysis/20261106-slump-watch.md` (05:40 UTC Fri 6).
 
 | Player | NBA | Rank | GP | Min | Rate | Current | L7 | L15 | L30 | Projected | Gap | 2026 | ESPN status |
 |---|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| Joel Embiid | PHI | #3 | 8 | 32.2 / 31.6 | 0.76 | 35.1 | 26.3 (3) | 34.0 (6) | 35.1 (8) | 45.4 | **−10.2** | 46.4 | Day-to-day, ESPN est. back 08 Nov |
+| Joel Embiid | PHI | #3 | 8 | 32.2 / 31.6 | 0.76 | 35.1 (8) | 26.3 (3) | 34.0 (6) | 35.1 (8) | 45.4 | **−10.2** | 46.4 | Day-to-day, ESPN est. back 08 Nov |
 
 - **Joel Embiid** (efficiency): scoring −13.1, reb +1.4, ast −0.4, stocks −1.6, TO −0.5; bonus +4.0.
   - Current: 32.2 min, 17.9 pts, 5.6-14.8 FG, 6.2-7.0 FT, 9.6 reb, 4.0 ast, 0.6 stl, 0.9 blk, 3.2 TO
@@ -91,7 +91,7 @@ Against `docs/analysis/20261106-slump-watch.md` (05:40 UTC Fri 6).
 
 | Player | NBA | Rank | GP | Min | Rate | Current | L7 | L15 | L30 | Projected | Gap | 2026 | ESPN status |
 |---|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| Jaren Jackson Jr. | UTAH | #8 | 4 | 26.0 / 31.4 | 0.86 | 27.0 | — | 26.3 (3) | 27.0 (4) | 38.1 | **−11.1** | 35.9 | **Out**, ESPN est. back 14 Dec |
+| Jaren Jackson Jr. | UTAH | #8 | 4 | 26.0 / 31.4 | 0.86 | 27.0 (4) → 32.3 (3) | — | 26.3 (3) → 34.0 (2) | 27.0 (4) → 32.3 (3) | 38.1 | **−11.1** | 35.9 | **Out**, ESPN est. back 14 Dec |
 
 - **Jaren Jackson Jr.** (minutes): scoring −5.4, reb −0.7, ast −0.2, stocks −5.1, TO −1.4; bonus +1.8.
   - Current: 26.0 min, 16.2 pts, 5.5-11.0 FG, 4.0-5.2 FT, 5.0 reb, 2.0 ast, 0.2 stl, 1.2 blk, 3.0 TO
@@ -102,7 +102,7 @@ Against `docs/analysis/20261106-slump-watch.md` (05:40 UTC Fri 6).
 
 | Player | NBA | Rank | GP | Min | Rate | Current | L7 | L15 | L30 | Projected | Gap | 2026 | ESPN status |
 |---|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| James Harden | CLE | #5 | 10 | 33.3 / 33.6 | 0.73 | 30.4 | 31.0 (5) | 31.4 (9) | 30.4 (10) | 42.1 | **−11.7** | 45.1 | Active |
+| James Harden | CLE | #5 | 10 | 33.3 / 33.6 | 0.73 | 30.4 (10) | 31.0 (5) | 31.4 (9) | 30.4 (10) | 42.1 | **−11.7** | 45.1 | Active |
 
 - **James Harden** (efficiency): scoring −6.4, reb +0.0, ast −4.6, stocks −2.0, TO +1.0; bonus +0.3.
   - Current: 33.3 min, 15.7 pts, 4.5-12.3 FG, 4.2-5.0 FT, 5.0 reb, 5.8 ast, 0.7 stl, 0.6 blk, 2.9 TO
@@ -156,9 +156,9 @@ Players with 2+ games in the last 7 days whose L7 FP/g tells a different story f
 | Player | Team | GP | Min | Current | L7 | L15 | L30 | Projected | 2026 |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|
 | Trey Murphy III | Come-in Cider (us) | 8 | 33.1 / 32.5 | 29.4 | 34.0 (3) | 31.3 (7) | 29.4 (8) | 36.8 | 41.6 |
-| Jalen Duren | Come-in Cider (us) | 2 | 19.0 / 31.0 | 33.5 | — | 23.0 (1) | 33.5 (2) | 42.2 | 44.3 |
-| Lauri Markkanen | Lauri Birds | 8 | 30.9 / 34.0 | 32.5 | 39.5 (4) | 33.4 (7) | 32.5 (8) | 38.7 | 44.4 |
-| Nikola Jokic | Lauri Birds | 8 | 35.9 / 35.6 | 64.4 | 72.0 (3) | 70.0 (7) | 64.4 (8) | 67.2 | 74.9 |
+| Jalen Duren | Come-in Cider (us) | 2 | 19.0 / 31.0 | 33.5 | — | 23.0 (1) → — | 33.5 (2) → 44.0 (1) | 42.2 | 44.3 |
+| Lauri Markkanen | Lauri Birds | 8 | 30.9 / 34.0 | 32.5 | 39.5 (4) | 33.4 (7) → 39.0 (6) | 32.5 (8) → 37.1 (7) | 38.7 | 44.4 |
+| Nikola Jokic | Lauri Birds | 8 | 35.9 / 35.6 | 64.4 | 72.0 (3) | 70.0 (7) | 64.4 (8) → 70.0 (7) | 67.2 | 74.9 |
 
 ## Our pending trades
 
@@ -166,7 +166,7 @@ With **Lauri Birds**, proposed by us, expires 10 Nov 03:00 UTC.
 
 | Player | Side | GP | Min | Current | L7 | L15 | L30 | Projected | Gap | ESPN status |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---|
-| Ivica Zubac | we receive | 5 | 20.6 / 31.1 | 23.0 | 19.5 (2) | 17.8 (4) | 23.0 (5) | 35.5 | −12.5 | Active |
+| Ivica Zubac | we receive | 5 | 20.6 / 31.1 | 23.0 | 19.5 (2) | 17.8 (4) → 21.7 (3) | 23.0 (5) → 27.2 (4) | 35.5 | −12.5 | Active |
 | Trey Murphy III | we send | 8 | 33.1 / 32.5 | 29.4 | 34.0 (3) | 31.3 (7) | 29.4 (8) | 36.8 | −7.4 | Active |
 | Isaiah Hartenstein | we send | 10 | 24.2 / 25.0 | 29.6 | 29.6 (5) | 32.9 (8) | 29.6 (10) | 30.5 | −0.9 | Active |
 | Daniel Gafford | we send | 9 | 22.7 / 22.5 | 30.1 | 24.7 (3) | 32.0 (8) | 30.1 (9) | 29.3 | +0.8 | Active |
@@ -186,9 +186,10 @@ With **Melbourne poopoo**, proposed by us, expires 10 Nov 02:55 UTC.
 - **Ivica Zubac:** played 19 minutes on Saturday for 10 points, 12 rebounds and 5 assists, with no injury reported ([Roundtable, 8 Nov](https://roundtable.io/sports/nba/pacers/news/pacers-cut-27-point-deficit-to-seven-fall-114-102-to-nuggets-in-mexico-city)).
 - **Jalen Brunson:** no injury news found in this run.
 - **Flagged players outside our trades:** not researched in this run. The 5 Nov notes are in `docs/analysis/20261105-slump-watch.md`.
+
 ## Sources
 
-- ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-08 05:58 UTC.
+- ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-08 07:44 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
 - News opened 2 Nov 2026 (US) for this run:
   - [NBA injury report, 8 Nov 1:00 am ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_01_00AM.pdf)

@@ -1,12 +1,12 @@
 # Injury Watch: 08 Nov 2026
 
-- Generated 2026-11-08 05:58 UTC by `council/injury_watch.py`. This is **a report, not a council verdict**.
+- Generated 2026-11-08 07:44 UTC by `council/injury_watch.py`. This is **a report, not a council verdict**.
 - **Injuries:** 88 players in ESPN's injury feed. 26 are out more than 7 days (ESPN est.) with a role of 15+ minutes, on 15 teams.
 - **Method:** each team's last 10 finished games, re-scored from ESPN's box scores. Each teammate's minutes and FP are split into games without the absentees against games with them, or against ESPN's projection when they have been out all season.
   - *Best placed* means 3+ minutes gained, ordered by FP/g in the games without the absentees.
   - A pickup is a free agent or waiver player getting 18+ minutes in those games.
 - **Checks:** no NBA game was in progress. All 1100 pool players' current, projected, L7, L15, L30 and 2026 averages re-score with `scripts/league_scoring.py` to ESPN's totals (0 mismatches).
-- **L7 / L15 / L30:** FP/g over the last 7, 15 and 30 days, games in brackets, from ESPN's rolling splits, re-scored with `scripts/league_scoring.py`. L30 covers every game so far for every player listed, so they equal the season average for now.
+- **L7 / L15 / L30:** FP/g over the last 7, 15 and 30 days, games in brackets, from ESPN's rolling splits, re-scored with `scripts/league_scoring.py`. L30 covers every game so far for every player listed, so they equal the season average for now. **A → B** means `council/gamelog.py` dropped an outlier from that window (a bad game 15+ FP under the next worst, or a short game 10+ minutes under the next fewest); B is the average without it.
 - **Games** is games left this week (02 Nov–08 Nov) / next week (09 Nov–15 Nov).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
@@ -31,7 +31,7 @@ Our five lowest current FP/g: Aday Mara 24.4 (L7 32.6), Trey Murphy III 29.4 (L7
 
 | Player | NBA | Opening | Games without | Min without | Δ min | FP/g without | Season FP/g | L7 | L15 | L30 | League | Owned | Games |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|---|
-| **Desmond Bane** (out, ESPN est. back 10 Nov) | ORL | Paolo Banchero (22 Nov) | 6 | 36.0 | +6.0 | **32.7** | 27.8 | 28.0 (3) | 27.9 (7) | 27.8 (8) | Free agent | 91% | 0 / 3 |
+| **Desmond Bane** (out, ESPN est. back 10 Nov) | ORL | Paolo Banchero (22 Nov) | 6 | 36.0 | +6.0 | **32.7** | 27.8 | 28.0 (3) | 27.9 (7) → 32.7 (6) | 27.8 (8) → 31.9 (7) | Free agent | 91% | 0 / 3 |
 | **Christian Braun** | DEN | Julian Strawther (29 Nov) | 8 | 34.2 | +6.8 | **30.1** | 30.1 | 22.7 (3) | 32.3 (7) | 30.1 (8) | Waivers | 42% | 0 / 3 |
 | **Spencer Jones** | DEN | Julian Strawther (29 Nov) | 1 | 21.0 | — | **30.0** | 30.0 | 30.0 (1) | 30.0 (1) | 30.0 (1) | Free agent | 0% | 0 / 3 |
 | **Derrick Jones Jr.** | LAC | Bradley Beal (29 Nov), Jordan Miller (02 Mar); also out: Brandon Ingram (10 Nov) | 7 | 30.0 | +4.6 | **29.4** | 29.4 | 26.0 (2) | 29.3 (6) | 29.4 (7) | Free agent | 11% | 1 / 3 |
@@ -44,7 +44,7 @@ Our five lowest current FP/g: Aday Mara 24.4 (L7 32.6), Trey Murphy III 29.4 (L7
 | **Quenton Jackson** | IND | Johnny Furphy (02 Jan), Ben Sheppard (02 Jan) | 9 | 22.0 | +6.0 | **23.0** | 23.3 | 27.2 (4) | 23.0 (9) | 23.3 (10) | Free agent | 7% | 0 / 4 |
 | **Leaky Black** | SAC | Ben Simmons (01 Oct); also out: Maxime Raynaud (10 Nov) | 5 | 19.0 | — | **20.6** | 20.6 | 30.3 (3) | 20.6 (5) | 20.6 (5) | Free agent | 0% | 1 / 3 |
 | **Jarace Walker** | IND | Johnny Furphy (02 Jan), Ben Sheppard (02 Jan) | 9 | 24.1 | +5.1 | **20.6** | 19.1 | 22.2 (4) | 20.6 (9) | 19.1 (10) | Free agent | 1% | 0 / 4 |
-| **Kobe Sanders** | LAC | Bradley Beal (29 Nov), Jordan Miller (02 Mar); also out: Brandon Ingram (10 Nov) | 8 | 24.4 | — | **20.5** | 20.5 | 23.0 (3) | 21.3 (7) | 20.5 (8) | Free agent | 1% | 1 / 3 |
+| **Kobe Sanders** | LAC | Bradley Beal (29 Nov), Jordan Miller (02 Mar); also out: Brandon Ingram (10 Nov) | 8 | 24.4 | — | **20.5** | 20.5 | 23.0 (3) → 35.0 (2) | 21.3 (7) → 25.0 (6) | 20.5 (8) → 23.6 (7) | Free agent | 1% | 1 / 3 |
 | **Trevon Brazile** | DEN | Julian Strawther (29 Nov) | 8 | 21.1 | — | **20.5** | 20.5 | 18.0 (3) | 21.6 (7) | 20.5 (8) | Free agent | 3% | 0 / 3 |
 
 ## Injured and available, back soon
@@ -55,8 +55,8 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 
 | Player | NBA | Injury | ESPN est. | Days | Current FP/g | L7 | L15 | L30 | Projected | 2026 | League | Owned | Games |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|---:|---|
-| **Yves Missi** | NO | Left Knee Bruise | 09 Nov | 1 | 41.5 | — | 15.0 (1) | 41.5 (2) | 24.7 | 22.5 | Free agent | 15% | 1 / 4 |
-| **Desmond Bane** | ORL | Illness | 10 Nov | 2 | 27.8 | 28.0 (3) | 27.9 (7) | 27.8 (8) | 38.2 | 36.9 | Free agent | 91% | 0 / 3 |
+| **Yves Missi** | NO | Left Knee Bruise | 09 Nov | 1 | 41.5 | — | 15.0 (1) → — | 41.5 (2) → 68.0 (1) | 24.7 | 22.5 | Free agent | 15% | 1 / 4 |
+| **Desmond Bane** | ORL | Illness | 10 Nov | 2 | 27.8 | 28.0 (3) | 27.9 (7) → 32.7 (6) | 27.8 (8) → 31.9 (7) | 38.2 | 36.9 | Free agent | 91% | 0 / 3 |
 | **Jusuf Nurkic** | UTAH | Right Foot Strain | 20 Nov | 12 | — | — | — | — | 27.6 | 36.7 | Free agent | 7% | 1 / 4 |
 | **Kon Knueppel** | CHA | Left Hamstring Strain | 09 Nov | 1 | -2.0 | -2.0 (1) | -2.0 (1) | -2.0 (1) | 35.2 | 34.1 | Free agent | 87% | 0 / 3 |
 | **Jalen Suggs** | ORL | Right Knee | 10 Nov | 2 | 26.3 | — | 29.5 (2) | 26.3 (3) | 29.2 | 34.7 | Free agent | 17% | 0 / 3 |
@@ -66,13 +66,13 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 | **Scotty Pippen Jr.** | MEM | Back Soreness | 09 Nov | 1 | 14.2 | — | 11.0 (4) | 14.2 (5) | 30.6 | 27.1 | Free agent | 10% | 0 / 4 |
 | **Tobias Harris** | SA | Left Calf Strain | 09 Nov | 1 | — | — | — | — | 30.1 | 28.0 | Free agent | 44% | 0 / 4 |
 | **Egor Demin** | BKN | Right Leg Bruise | 11 Nov | 3 | 15.0 | — | 18.0 (3) | 15.0 (4) | 30.0 | 22.2 | Free agent | 29% | 1 / 2 |
-| **Jalen Smith** | CHI | Left Finger Sprain | 08 Nov | 0 | 29.4 | 20.5 (2) | 29.0 (7) | 29.4 (8) | 22.4 | 25.5 | Free agent | 15% | 1 / 3 |
+| **Jalen Smith** | CHI | Left Finger Sprain | 08 Nov | 0 | 29.4 | 20.5 (2) → 31.0 (1) | 29.0 (7) → 32.2 (6) | 29.4 (8) → 32.1 (7) | 22.4 | 25.5 | Free agent | 15% | 1 / 3 |
 | **Jaylon Tyson** | CLE | Right Ankle Sprain | 09 Nov | 1 | 18.6 | — | 18.8 (4) | 18.6 (5) | 25.6 | 28.3 | Free agent | 2% | 0 / 4 |
 | **Robert Williams III** | POR | Rest | 10 Nov | 2 | 28.1 | 26.0 (4) | 29.5 (6) | 28.1 (7) | 26.9 | 26.6 | Free agent | 6% | 0 / 3 |
 | **Maxime Raynaud** | SAC | Right Knee Dislocated | 10 Nov | 2 | — | — | — | — | — | 28.1 | Free agent | 2% | 1 / 3 |
 | **Dereck Lively II** | DAL | Right Foot Surgery | 12 Nov | 4 | — | — | — | — | 27.4 | 21.3 | Free agent | 5% | 1 / 4 |
 | **Isaiah Jackson** | LAC | Left Groin Soreness | 10 Nov | 2 | 26.8 | 20.3 (3) | 27.1 (7) | 26.8 (8) | 20.6 | 20.9 | Free agent | 7% | 1 / 3 |
-| **Jock Landale** | ATL | Left Hip | 09 Nov | 1 | 16.4 | 0.0 (1) | 14.8 (6) | 16.4 (7) | — | 25.8 | Free agent | 0% | 0 / 3 |
+| **Jock Landale** | ATL | Left Hip | 09 Nov | 1 | 16.4 | 0.0 (1) → — | 14.8 (6) → 17.8 (5) | 16.4 (7) → 19.2 (6) | — | 25.8 | Free agent | 0% | 0 / 3 |
 | **Isaiah Stewart** | MEM | Right Knee Bruise | 09 Nov | 1 | 22.9 | 27.0 (3) | 22.9 (7) | 22.9 (7) | 25.3 | 25.1 | Free agent | 4% | 0 / 4 |
 
 ## Yet to play this season
@@ -106,6 +106,7 @@ Injured players with no game yet this season, worth 25+ FP/g on ESPN's projectio
 - **Scottie Barnes:** missed Friday at MIL with a left groin strain, his first missed game ([NBC Sports, 6 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/barnes-will-not-play-against-bucks-on-friday)). No timetable reported, and Toronto's Monday report was not yet filed; *ESPN est.* 9 Nov.
 - **Kawhi Leonard:** nothing newer than the 3 Nov statement that treatment is done and the return-to-play process has begun, with an update "in the next week" ([Raptors Republic, 3 Nov](https://raptorsrepublic.com/2026/11/03/raptors-announce-update-on-kawhi-leonards-health/)). *ESPN est.* 23 Nov.
 - **Pickups not researched in this run;** the 5 Nov notes are in `docs/analysis/20261105-injury-watch.md`.
+
 ## Who takes the minutes, team by team
 
 ### OKC
@@ -138,7 +139,7 @@ Last 10 games: 10 game(s) this season, all without them; compared with ESPN's pr
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
-| Yaxel Lendeborg | SF/PF | 10 | 32.2 | +3.6 | 10 | **40.7** | 33.7 | 47.5 (4) | 42.7 (9) | 40.7 (10) | **us** | 93% |
+| Yaxel Lendeborg | SF/PF | 10 | 32.2 | +3.6 | 10 | **40.7** | 33.7 | 47.5 (4) | 42.7 (9) → 48.2 (8) | 40.7 (10) → 45.4 (9) | **us** | 93% |
 | Brandin Podziemski | PG/SG | 8 | 34.0 | +3.1 | 8 | **35.9** | 30.8 | 35.0 (4) | 35.9 (8) | 35.9 (8) | Matt Wright's Foxies | 76% |
 | Brandon Williams | PG/SG | 9 | 17.8 | — | 1 | **20.3** | — | 24.3 (3) | 19.2 (8) | 20.3 (9) | Free agent | 2% |
 | Georges Niang | PF | 10 | 20.6 | — | 2 | **16.9** | — | 19.8 (4) | 17.1 (9) | 16.9 (10) | Free agent | 1% |
@@ -190,7 +191,7 @@ Last 9 games: 5 game(s) without them, 4 with them.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
-| Lauri Markkanen (day to day, ESPN est. back 08 Nov) | SF/PF | 4 | 33.2 | +4.8 | 4 | **39.5** | 25.5 | 39.5 (4) | 33.4 (7) | 32.5 (8) | Lauri Birds | 90% |
+| Lauri Markkanen (day to day, ESPN est. back 08 Nov) | SF/PF | 4 | 33.2 | +4.8 | 4 | **39.5** | 25.5 | 39.5 (4) | 33.4 (7) → 39.0 (6) | 32.5 (8) → 37.1 (7) | Lauri Birds | 90% |
 | Ace Bailey | SF/PF | 5 | 33.0 | +5.8 | 5 | **21.8** | 38.8 | 20.8 (4) | 28.5 (8) | 29.3 (9) | Dr White Slong | 60% |
 | Josh Okogie | SF | 5 | 22.2 | +9.2 | 0 | **15.8** | 3.3 | 13.2 (4) | 12.7 (7) | 11.1 (8) | Free agent | 0% |
 | Josh Green | SG | 5 | 17.6 | +3.6 | 1 | **8.2** | 7.5 | 6.2 (4) | 8.0 (7) | 8.0 (7) | Free agent | 0% |
@@ -210,7 +211,7 @@ Also out in those games, so part of the gain is theirs: Brandon Ingram (right ac
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
 | Kris Dunn | PG/SG | 8 | 30.5 | +8.5 | 8 | **33.4** | 20.0 | 34.0 (3) | 31.6 (7) | 33.1 (8) | Lauri Birds | 39% |
 | Derrick Jones Jr. | SF/PF | 7 | 30.0 | +4.6 | 7 | **29.4** | 21.1 | 26.0 (2) | 29.3 (6) | 29.4 (7) | Free agent | 11% |
-| Kobe Sanders | SG | 8 | 24.4 | — | 2 | **20.5** | — | 23.0 (3) | 21.3 (7) | 20.5 (8) | Free agent | 1% |
+| Kobe Sanders | SG | 8 | 24.4 | — | 2 | **20.5** | — | 23.0 (3) → 35.0 (2) | 21.3 (7) → 25.0 (6) | 20.5 (8) → 23.6 (7) | Free agent | 1% |
 
 ### WSH
 
@@ -223,7 +224,7 @@ Last 10 games: 6 game(s) without them, 4 with them.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
-| Kyshawn George | SG/SF | 6 | 35.2 | +5.2 | 6 | **43.2** | 29.8 | 49.0 (4) | 37.6 (9) | 37.0 (10) | Snow Time Lakers | 67% |
+| Kyshawn George | SG/SF | 6 | 35.2 | +5.2 | 6 | **43.2** | 29.8 | 49.0 (4) | 37.6 (9) → 41.2 (8) | 37.0 (10) → 40.2 (9) | Snow Time Lakers | 67% |
 
 ### IND
 
@@ -253,7 +254,7 @@ Last 9 games: 7 game(s) without them, 2 with them.
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
 | Franz Wagner | SF/PF | 7 | 38.0 | +7.0 | 7 | **44.7** | 30.0 | 48.5 (4) | 42.2 (8) | 41.4 (9) | Cream Abdul-Yammar | 91% |
-| Desmond Bane (out, ESPN est. back 10 Nov) | SG/SF | 6 | 36.0 | +6.0 | 6 | **32.7** | 13.0 | 28.0 (3) | 27.9 (7) | 27.8 (8) | Free agent | 91% |
+| Desmond Bane (out, ESPN est. back 10 Nov) | SG/SF | 6 | 36.0 | +6.0 | 6 | **32.7** | 13.0 | 28.0 (3) | 27.9 (7) → 32.7 (6) | 27.8 (8) → 31.9 (7) | Free agent | 91% |
 | Wendell Carter Jr. | C | 7 | 34.4 | +4.4 | 7 | **32.0** | 46.5 | 35.2 (4) | 33.9 (8) | 35.2 (9) | Dr White Slong | 56% |
 | Jamal Cain | SF | 7 | 21.4 | +8.9 | 1 | **15.9** | -5.0 | 16.5 (4) | 13.5 (8) | 11.2 (9) | Free agent | 0% |
 | Jase Richardson | SG | 7 | 25.0 | +11.0 | 7 | **15.4** | 14.5 | 15.8 (4) | 15.0 (8) | 15.2 (9) | Free agent | 1% |
@@ -268,7 +269,7 @@ Last 9 games: 7 game(s) without them, 2 with them.
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
-| RJ Barrett | SG/SF | 7 | 33.9 | +3.9 | 7 | **35.7** | 39.0 | 38.8 (4) | 37.8 (8) | 36.7 (9) | Dr White Slong | 82% |
+| RJ Barrett | SG/SF | 7 | 33.9 | +3.9 | 7 | **35.7** | 39.0 | 38.8 (4) | 37.8 (8) → 41.3 (7) | 36.7 (9) → 39.6 (8) | Dr White Slong | 82% |
 | Immanuel Quickley (day to day, ESPN est. back 09 Nov) | PG/SG | 6 | 32.8 | +4.3 | 6 | **35.2** | 35.0 | 34.3 (3) | 32.6 (7) | 35.1 (8) | Cream Abdul-Yammar | 77% |
 | Jamal Shead | PG | 7 | 23.7 | +3.7 | 1 | **27.3** | 11.0 | 30.8 (4) | 25.6 (8) | 23.7 (9) | Free agent | 3% |
 | Ja'Kobe Walter | SG | 7 | 30.7 | +7.2 | 7 | **25.3** | 28.0 | 18.8 (4) | 25.2 (8) | 25.9 (9) | Free agent | 13% |
@@ -311,7 +312,7 @@ Also out in those games, so part of the gain is theirs: Maxime Raynaud (right kn
 
 | Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
-| Darius Acuff Jr. | PG | 9 | 36.8 | +6.2 | 9 | **39.3** | 30.4 | 45.8 (4) | 42.6 (8) | 38.9 (9) | Team Nic Kerr | 86% |
+| Darius Acuff Jr. | PG | 9 | 36.8 | +6.2 | 9 | **39.3** | 30.4 | 45.8 (4) | 42.6 (8) | 38.9 (9) → 42.6 (8) | Team Nic Kerr | 86% |
 | Dylan Cardwell | C | 2 | 14.0 | — | 0 | **21.5** | — | 21.5 (2) | 21.5 (2) | 21.5 (2) | Free agent | 0% |
 | Leaky Black | SF | 5 | 19.0 | — | 1 | **20.6** | — | 30.3 (3) | 20.6 (5) | 20.6 (5) | Free agent | 0% |
 | De'Andre Hunter | SF/PF | 8 | 31.2 | +3.6 | 8 | **19.5** | 23.9 | 15.3 (3) | 20.9 (7) | 19.4 (8) | Free agent | 6% |
@@ -344,7 +345,7 @@ Last 10 games: 10 game(s) this season, all without them; compared with ESPN's pr
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
 | Aaron Wiggins | SG/SF | 10 | 25.7 | +5.4 | 0 | **28.8** | 19.2 | 26.2 (5) | 28.8 (10) | 28.7 (11) | Free agent | 34% |
 | Zuby Ejiofor | PF | 6 | 12.3 | — | 0 | **15.5** | — | 22.5 (4) | 15.5 (6) | 15.5 (6) | Free agent | 0% |
-| Jock Landale (out, ESPN est. back 09 Nov) | C | 6 | 14.7 | — | 0 | **14.8** | — | 0.0 (1) | 14.8 (6) | 16.4 (7) | Free agent | 0% |
+| Jock Landale (out, ESPN est. back 09 Nov) | C | 6 | 14.7 | — | 0 | **14.8** | — | 0.0 (1) → — | 14.8 (6) → 17.8 (5) | 16.4 (7) → 19.2 (6) | Free agent | 0% |
 
 ## Every injury
 
@@ -443,7 +444,7 @@ All 88 players in ESPN's injury feed, longest expected absence first.
 
 ## Sources
 
-- ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-08 05:58 UTC.
+- ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-08 07:44 UTC.
 - News opened 2 Nov 2026 (US) for this run:
   - [Detroit Sports Nation, 5 Nov](https://detroitsportsnation.com/jalen-duren-trainers-pistons-practice-thursday/gkaplan/detroit-pistons/11/05/2026/505199/)
   - [NBC Sports, 6 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/barnes-will-not-play-against-bucks-on-friday)
