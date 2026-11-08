@@ -49,6 +49,12 @@ average and ESPN's projection:
   Early in the season L15 and L30 equal the season average, and the scripts
   say so.
 
+**Adds left: only from `matchup.py`.** The weekly limit follows that week's
+NBA game days, so a week with an empty day has 6. Quote the limit and the
+adds used from the script's **Adds** line (`--next` for next week). Live
+games don't change that line, so `--allow-live` is fine for it. Never
+assume 7.
+
 `council/roster.csv` is our live roster. Whenever the user reports a move
 (add, drop, IR, trade), update it in the same turn and commit: remove the
 dropped player, add the new one with `acquired` and `acquired_on`, set
