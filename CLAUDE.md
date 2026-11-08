@@ -49,6 +49,14 @@ average and ESPN's projection:
   Early in the season L15 and L30 equal the season average, and the scripts
   say so.
 
+**Adds, always from ESPN.** The add limit changes every week. It is
+`matchupAcquisitionLimit` (1) × the scoring periods (days with an NBA game)
+in that week's matchup. A week with a no-game day has 6, not 7 (matchup 3:
+no games on Tue 3 Nov, so 6). Whenever a reply or a plan states adds left,
+read both the limit and the adds used from ESPN for that specific week:
+`matchup.py` prints them, and `--next` gives the following week's. Never
+assume 7, and never count by hand from the calendar.
+
 `council/roster.csv` is our live roster. Whenever the user reports a move
 (add, drop, IR, trade), update it in the same turn and commit: remove the
 dropped player, add the new one with `acquired` and `acquired_on`, set
