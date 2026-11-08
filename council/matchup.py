@@ -14,14 +14,15 @@ team's projected total, the open slots each day, and the value of any roster
 change. A streamer is worth the change in our optimised total, not his
 average: a game on a day our slots are full adds nothing.
 
-Rate per game:
-  - 3+ games this season: 70% this season's FP/g, 30% last season's (or
-    ESPN's projection when there is no last season)
-  - 1–2 games: 50/50
-  - none: last season's, else the projection
+Rate per game (council/gamelog.py): a weighted average of last season x1
+(ESPN's projection when there is no last season), this season x2, the last
+30 days x3, the last 15 days x4 and the last 7 days x5, each without its
+outlier games (a bad game 15+ FP under the next worst, a short game 10+
+minutes under the next fewest). Parts with no games are skipped; a player
+with no game yet is rated on last season, else the projection.
 A player listed OUT is left out until ESPN's estimated return date.
-Each player table also shows FP/g over the last 7, 15 and 30 days (ESPN's
-rolling splits). The rate does not use them; the reader weighs them.
+Each player table shows FP/g over the last 7, 15 and 30 days, with any
+outlier-adjusted value after an arrow.
 
 Matchups are taken as weeks running Monday to Sunday (US time), because
 ESPN publishes no matchup calendar. --end overrides the last day, for
@@ -51,7 +52,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
-from injury_watch import box, player_pool  # noqa: E402
+from injury_watch import LOG_NOTES, box, player_pool  # noqa: E402
 from slump_watch import (ET, FANTASY, LEAGUE, TEAM_ID, WINDOWS, get, live_games, signed,  # noqa: E402
                          window_cells, windows_note)
 
@@ -63,6 +64,8 @@ IR_SLOT = 13
 def rate(r):
     if "rate" in r:  # a what-if override (--rotate's break-even search)
         return r["rate"]
+    if r.get("wrate") is not None:  # council/gamelog.py: weighted, outlier-adjusted
+        return r["wrate"]
     cur, other = r["current"], (r["last"] or r["projected"] or {}).get("fpg")
     if cur and cur["gp"] >= 3:
         return 0.7 * cur["fpg"] + 0.3 * (cur["fpg"] if other is None else other)
@@ -266,13 +269,17 @@ def main():
            f"- **Adds:** {used} used this matchup"
            + (f" of {limit:g}, so **{limit - used:g} left**." if limit is not None else ", no limit.")
            + " Free agents arrive at once; waiver players take 24 hours.",
-           f"- **Method:** an exact optimiser fills the 10 starting slots each day. Rate per game: 70% this "
-           "season's FP/g and 30% last season's (or ESPN's projection) at 3+ games, otherwise 50/50. A player "
+           f"- **Method:** an exact optimiser fills the 10 starting slots each day. **Rate** per game "
+           "(`council/gamelog.py`): last season ×1 (or ESPN's projection), this season ×2, last 30 days ×3, "
+           "last 15 ×4, last 7 ×5, each without its outlier games (a bad game 15+ FP under the next worst, "
+           "a short game 10+ minutes under the next fewest). A player "
            f"listed OUT is left out until ESPN's estimated return. Streamers need {args.min_minutes:g}+ minutes this season.",
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "
            f"All {len(pool)} pool players' current, L7, L15, L30, projected and 2026 averages re-score with "
            "`scripts/league_scoring.py` (0 mismatches).",
-           windows_note(ours + theirs + fa) + " The rate does not use them; weigh them against it.",
+           windows_note(ours + theirs + fa) + " The rate uses the outlier-adjusted values.",
+           *([f"- **Game logs:** {len(LOG_NOTES)} pool players' box-score logs do not match ESPN's splits; "
+              "they keep ESPN's averages and no outliers."] if LOG_NOTES else []),
            f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}."]
     out += ([f"- **What-if:** treated as sitting: {', '.join(args.sit)}."] if args.sit else [])
     out += ([f"- **Returning players** (`--returning`): injured free agents yet to play this season are included "

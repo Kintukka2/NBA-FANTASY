@@ -80,7 +80,13 @@ def player_pool():
             gp = stat(s["stats"], "GP")
             r[name] = {"gp": int(gp), "fpg": total / gp, "min": stat(s["stats"], "MIN") / gp}
         rows[p["id"]] = r
+    if not mismatches:
+        from gamelog import attach  # imported here: gamelog imports this module
+        LOG_NOTES[:] = attach(rows.values())
     return rows, mismatches
+
+
+LOG_NOTES = []  # players whose box-score log does not match ESPN's splits (gamelog.attach)
 
 
 def box(gid):

@@ -215,9 +215,25 @@ def signed(x, plus=False):
     return (f"{x:+.1f}" if plus else f"{x:.1f}").replace("-", "\u2212")
 
 
+def adj_cell(r, k):
+    """'23.3 (6)', or '23.3 (6) → 28.6 (5)' when council/gamelog.py drops an outlier from that window."""
+    s, adj = r.get(k), r.get("adj") or {}
+    if not s:
+        return "—"
+    cell = f'{s["fpg"]:.1f} ({s["gp"]})'
+    if k in adj:
+        cell += f' → {adj[k]["fpg"]:.1f} ({adj[k]["gp"]})' if adj[k] else " → —"
+    return cell
+
+
 def window_cells(r):
-    """FP/g over the last 7, 15 and 30 days, games in brackets, as table cells."""
-    return [f'{r[k]["fpg"]:.1f} ({r[k]["gp"]})' if r.get(k) else "—" for k in WINDOWS]
+    """FP/g over the last 7, 15 and 30 days, games in brackets, as table cells (with any outlier-adjusted value)."""
+    return [adj_cell(r, k) for k in WINDOWS]
+
+
+def season_cell(r):
+    """This season's FP/g, with the outlier-adjusted value when there is one."""
+    return adj_cell(r, "current")
 
 
 def windows_note(rows):
@@ -230,6 +246,10 @@ def windows_note(rows):
     if whole:
         note += (f" {' and '.join(whole)} cover{'s' if len(whole) == 1 else ''} every game so far for every "
                  "player listed, so they equal the season average for now.")
+    if any(r.get("adj") for r in rows):
+        note += (" **A → B** means `council/gamelog.py` dropped an outlier from that window (a bad game 15+ FP "
+                 "under the next worst, or a short game 10+ minutes under the next fewest); B is the average "
+                 "without it.")
     return note
 
 
@@ -304,7 +324,7 @@ def render(rows, teams, pro, args, checks, pending, back):
                     f"{SEASON - 1} | ESPN status |", "|---|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---|"]
             for r in fl:
                 out.append(f'| {r["player"]} | {pro[r["pro"]]} | #{rank[r["id"]]} | {r["current"]["gp"]} | '
-                           f'{r["min"]:.1f} / {r["pmin"]:.1f} | {r["rate"]:.2f} | {r["current"]["fpg"]:.1f} | '
+                           f'{r["min"]:.1f} / {r["pmin"]:.1f} | {r["rate"]:.2f} | {season_cell(r)} | '
                            + " | ".join(window_cells(r)) + f' | {r["projected"]["fpg"]:.1f} | **{signed(r["gap"])}** | '
                            f'{fmt(r["last"] and r["last"]["fpg"])} | {status(r)} |')
             out.append("")
@@ -422,6 +442,8 @@ def main():
     rows, mismatches = rosters(league)
     if mismatches:
         sys.exit("league_scoring.py no longer reproduces ESPN:\n  " + "\n  ".join(mismatches))
+    from gamelog import attach  # imported here: gamelog imports this module
+    log_notes = attach(rows)
 
     checks = {"latest": latest,
               "live": ("**Games were in progress** (--allow-live): " + "; ".join(live)) if live
