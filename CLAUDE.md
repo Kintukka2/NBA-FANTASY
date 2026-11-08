@@ -54,6 +54,12 @@ average and ESPN's projection:
   window as **A → B**, B being the average without the outlier. Quote both.
   Good games are never dropped.
 
+**Small samples, always flagged.** When a player's rate or an average rests on
+2 games or fewer (after any dropped outlier), say "small sample" beside it,
+in every reply, report, plan and ballot. The scripts mark these rates with
+**†** or "(small sample)". Example: Yves Missi's rate rests on one 68-FP
+game after his 9-minute injury exit was dropped.
+
 **The rate every plan uses** (`council/gamelog.py`, used by `matchup.py`):
 last season ×1 (ESPN's projection if none), this season ×2, L30 ×3, L15 ×4,
 L7 ×5, each outlier-adjusted, skipping parts with no games. `form.py` prints

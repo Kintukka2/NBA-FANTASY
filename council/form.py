@@ -117,7 +117,7 @@ def main():
         mins = f'{fmt(c and c["min"])} / {fmt(l7 and l7["min"])}'
         out.append(f'| **{r["player"]}** | {abbrev.get(r["pro"], "FA")} | {league(r)} | {season_cell(r)} | '
                    + " | ".join(window_cells(r)) + f' | {trend} | {mins} | {fmt(r["projected"] and r["projected"]["fpg"])} | '
-                   f'{fmt(r["last"] and r["last"]["fpg"])} | **{fmt(r.get("wrate"))}** | {status(r)} |')
+                   f'{fmt(r["last"] and r["last"]["fpg"])} | **{fmt(r.get("wrate"))}**{" (small sample)" if r.get("small") else ""} | {status(r)} |')
         if drops_note(r):
             dropped.append(f'- **{r["player"]}:** {drops_note(r)}.')
     if dropped:

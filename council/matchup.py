@@ -278,6 +278,8 @@ def main():
            f"All {len(pool)} pool players' current, L7, L15, L30, projected and 2026 averages re-score with "
            "`scripts/league_scoring.py` (0 mismatches).",
            windows_note(ours + theirs + fa) + " The rate uses the outlier-adjusted values.",
+           "- **† Small sample:** the player's rate rests on 2 games or fewer this season (after any dropped "
+           "outlier), so it can swing far from his true level.",
            *([f"- **Game logs:** {len(LOG_NOTES)} pool players' box-score logs do not match ESPN's splits; "
               "they keep ESPN's averages and no outliers."] if LOG_NOTES else []),
            f"- Times are ET and {args.tz.split('/')[-1].replace('_', ' ')}."]
@@ -306,7 +308,7 @@ def main():
     head = "| Player | NBA | Rate | L7 | L15 | L30 | " + " | ".join(label(p)[0][:6] for p in days) + " | Status |"
     rule = "|---|---|---:|---:|---:|---:|" + ":-:|" * len(days) + "---|"
     out += ["## Our roster", "", "x = plays, o = has a game but is listed out.", "", head, rule]
-    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f} | ' + " | ".join(window_cells(r))
+    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f}{" †" if r.get("small") else ""} | ' + " | ".join(window_cells(r))
             + f' | {grid(r)} | {est(r)} |'
             for r in sorted(ours, key=rate, reverse=True)]
     if ir:
@@ -317,7 +319,7 @@ def main():
     adds = {r["player"]: sum(ours_by[p] - total([x for x in ours if x is not r], p) for p in days) for r in ours}
     out += [f"| {n} | {v:.1f} |" for n, v in sorted(adds.items(), key=lambda kv: kv[1])]
     out += ["", f"## {teams[opp]['name'].strip()}", "", head, rule]
-    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f} | ' + " | ".join(window_cells(r))
+    out += [f'| {r["player"]} | {abbrev.get(r["pro"])} | {rate(r):.1f}{" †" if r.get("small") else ""} | ' + " | ".join(window_cells(r))
             + f' | {grid(r)} | {est(r)} |'
             for r in sorted(theirs, key=rate, reverse=True)]
     out.append("")
@@ -344,7 +346,7 @@ def main():
         for x, m in ranked[:args.top]:
             shown.add(x["pro"])
             gd = ", ".join(label(p)[0][:3] for p in days if plays(x, p) and not started(x, p) and not started(d, p))
-            out.append(f'| **{x["player"]}**{" (" + est(x) + ")" if est(x) else ""} | {abbrev.get(x["pro"])} | {gd} | '
+            out.append(f'| **{x["player"]}**{" (" + est(x) + ")" if est(x) else ""}{" † small sample" if x.get("small") else ""} | {abbrev.get(x["pro"])} | {gd} | '
                        f'{line(x)} | ' + " | ".join(window_cells(x)) + f' | {starts(x)} | '
                        f'{fmt(x["last"] and x["last"]["fpg"])} | {x["owned"]:.0f}% | '
                        f'**{signed(sum(m.values()) - sum(keep.values()), True)}** |')
@@ -577,7 +579,7 @@ def main():
         for i, (p, s, a, x) in enumerate(top_moves, 1):
             by = min(tips[(r["pro"], p)] for r in (a, x) if (r["pro"], p) in tips)
             out.append(f'{i}. **{label(p)[0]}:** drop {a["player"]}, add **{x["player"]}** ({abbrev.get(x["pro"])}; '
-                       f'GP, min, FP/g {line(x)}; {form(x)}; started {starts(x)}{"; " + est(x) if est(x) else ""}). By {by.astimezone(ET):%I:%M%p} ET / '
+                       f'GP, min, FP/g {line(x)}; {form(x)}; started {starts(x)}{"; " + est(x) if est(x) else ""}{"; small sample: rate rests on 2 games or fewer" if x.get("small") else ""}). By {by.astimezone(ET):%I:%M%p} ET / '
                        f'{by.astimezone(local):%a %d %I:%M%p}.'
                        + (f' Losing {a["player"]} also costs his {later(a)} games next week.' if any(a is o for o in origs) else ''))
         out += ["", "Left holding at the end of the week: " + ", ".join(
