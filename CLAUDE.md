@@ -70,7 +70,11 @@ game after his 9-minute injury exit was dropped.
 **The rate every plan uses** (`council/gamelog.py`, used by `matchup.py`):
 last season ×1 (ESPN's projection if none), this season ×2, L30 ×3, L15 ×4,
 L7 ×5, each outlier-adjusted, skipping parts with no games. `form.py` prints
-it as **Rate**. Never compute it by hand.
+it as **Rate**. Never compute it by hand. `matchup.py` values each game at the
+rate × the **opponent factor** (`council/opponents.py`: what opponents score
+against that team over their own averages, by position, shrunk toward even
+and capped at ±15%). Quote it as `@WSH +6%`. `b2b` marks a back-to-back's
+second night.
 
 **ESPN's labels are not taken at face value.** Return dates, roles and rest
 days that the news watch research confirms go into `council/news_overrides.csv`
