@@ -100,6 +100,12 @@ Injured players with no game yet this season, worth 25+ FP/g on ESPN's projectio
 - **Scottie Barnes** (TOR): Day-To-Day, Left Groin Soreness; ESPN est. back 09 Nov.
 - **Kawhi Leonard** (TOR): Out, Left Knee Inflammation; ESPN est. back 23 Nov.
 
+### Notes
+
+- **Jalen Duren:** out Sunday against LAL. He is re-evaluated Sunday, and The Athletic cautions that this is "an evaluation, not a clearance to play" ([Detroit Sports Nation, 5 Nov](https://detroitsportsnation.com/jalen-duren-trainers-pistons-practice-thursday/gkaplan/detroit-pistons/11/05/2026/505199/)). No result yet; *ESPN est.* 9 Nov.
+- **Scottie Barnes:** missed Friday at MIL with a left groin strain, his first missed game ([NBC Sports, 6 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/barnes-will-not-play-against-bucks-on-friday)). No timetable reported, and Toronto's Monday report was not yet filed; *ESPN est.* 9 Nov.
+- **Kawhi Leonard:** nothing newer than the 3 Nov statement that treatment is done and the return-to-play process has begun, with an update "in the next week" ([Raptors Republic, 3 Nov](https://raptorsrepublic.com/2026/11/03/raptors-announce-update-on-kawhi-leonards-health/)). *ESPN est.* 23 Nov.
+- **Pickups not researched in this run;** the 5 Nov notes are in `docs/analysis/20261105-injury-watch.md`.
 ## Who takes the minutes, team by team
 
 ### OKC
@@ -438,3 +444,7 @@ All 88 players in ESPN's injury feed, longest expected absence first.
 ## Sources
 
 - ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-08 05:58 UTC.
+- News opened 2 Nov 2026 (US) for this run:
+  - [Detroit Sports Nation, 5 Nov](https://detroitsportsnation.com/jalen-duren-trainers-pistons-practice-thursday/gkaplan/detroit-pistons/11/05/2026/505199/)
+  - [NBC Sports, 6 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/barnes-will-not-play-against-bucks-on-friday)
+  - [Raptors Republic, 3 Nov](https://raptorsrepublic.com/2026/11/03/raptors-announce-update-on-kawhi-leonards-health/)

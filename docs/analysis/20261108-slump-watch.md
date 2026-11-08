@@ -179,7 +179,17 @@ With **Melbourne poopoo**, proposed by us, expires 10 Nov 02:55 UTC.
 | Kawhi Leonard | we send | 2 | 26.0 / 32.8 | 40.0 | — | 31.0 (1) | 40.0 (2) | 45.8 | −5.8 | **Out**, ESPN est. back 23 Nov |
 | Trey Murphy III | we send | 8 | 33.1 / 32.5 | 29.4 | 34.0 (3) | 31.3 (7) | 29.4 (8) | 36.8 | −7.4 | Active |
 
+### Notes
+
+- **Trey Murphy III:** not on Sunday's report. He played 33:53 on Friday, listed as available with bilateral patella tendinopathy ([NBA injury report, 8 Nov 1:00 am ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_01_00AM.pdf)).
+- **Kawhi Leonard:** see the injury watch; *ESPN est.* 23 Nov.
+- **Ivica Zubac:** played 19 minutes on Saturday for 10 points, 12 rebounds and 5 assists, with no injury reported ([Roundtable, 8 Nov](https://roundtable.io/sports/nba/pacers/news/pacers-cut-27-point-deficit-to-seven-fall-114-102-to-nuggets-in-mexico-city)).
+- **Jalen Brunson:** no injury news found in this run.
+- **Flagged players outside our trades:** not researched in this run. The 5 Nov notes are in `docs/analysis/20261105-slump-watch.md`.
 ## Sources
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-08 05:58 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
+- News opened 2 Nov 2026 (US) for this run:
+  - [NBA injury report, 8 Nov 1:00 am ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-08_01_00AM.pdf)
+  - [Roundtable, 8 Nov](https://roundtable.io/sports/nba/pacers/news/pacers-cut-27-point-deficit-to-seven-fall-114-102-to-nuggets-in-mexico-city)
