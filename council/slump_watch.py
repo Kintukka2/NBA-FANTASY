@@ -247,7 +247,7 @@ def windows_note(rows):
         note += (f" {' and '.join(whole)} cover{'s' if len(whole) == 1 else ''} every game so far for every "
                  "player listed, so they equal the season average for now.")
     if any(r.get("adj") for r in rows):
-        note += (" **A → B** means `council/gamelog.py` dropped an outlier from that window (a bad game 15+ FP "
+        note += (" **A → B** means `council/gamelog.py` dropped an outlier from that window (a bad game 12+ FP "
                  "under the next worst, or a short game 10+ minutes under the next fewest); B is the average "
                  "without it.")
     return note

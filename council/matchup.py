@@ -17,7 +17,7 @@ average: a game on a day our slots are full adds nothing.
 Rate per game (council/gamelog.py): a weighted average of last season x1
 (ESPN's projection when there is no last season), this season x2, the last
 30 days x3, the last 15 days x4 and the last 7 days x5, each without its
-outlier games (a bad game 15+ FP under the next worst, a short game 10+
+outlier games (a bad game 12+ FP under the next worst, a short game 10+
 minutes under the next fewest). Parts with no games are skipped; a player
 with no game yet is rated on last season, else the projection.
 A player listed OUT is left out until ESPN's estimated return date.
@@ -272,7 +272,7 @@ def main():
            + " Free agents arrive at once; waiver players take 24 hours.",
            f"- **Method:** an exact optimiser fills the 10 starting slots each day. **Rate** per game "
            "(`council/gamelog.py`): last season ×1 (or ESPN's projection), this season ×2, last 30 days ×3, "
-           "last 15 ×4, last 7 ×5, each without its outlier games (a bad game 15+ FP under the next worst, "
+           "last 15 ×4, last 7 ×5, each without its outlier games (a bad game 12+ FP under the next worst, "
            "a short game 10+ minutes under the next fewest). A player "
            f"listed OUT is left out until ESPN's estimated return. Streamers need {args.min_minutes:g}+ minutes this season.",
            f"- **Checks:** {'**games were live** (--allow-live)' if live else 'no NBA game was in progress'}. "

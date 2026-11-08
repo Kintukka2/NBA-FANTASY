@@ -18,7 +18,7 @@ window total minus the dropped games' logged FP, over the games left. A
 player whose game counts do not match keeps ESPN's splits, with no outliers.
 
 Outlier rules, on the season's games (at most one game each):
-  - Bad game: with 3+ games, the worst FP game is dropped when it is 15+ FP
+  - Bad game: with 3+ games, the worst FP game is dropped when it is 12+ FP
     below the second worst. A single bad night (foul trouble, an off night)
     should not drag the average. Good games are never dropped.
   - Short game: with 2+ games, the game with the fewest minutes is dropped
@@ -48,7 +48,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from slump_watch import ET, FANTASY, get  # noqa: E402
 
-BAD_GAME_FP = 15     # worst game this far below the second worst is dropped
+BAD_GAME_FP = 12     # worst game this far below the second worst is dropped
 SHORT_GAME_MIN = 10  # fewest minutes more than this below the second fewest is dropped
 SMALL_SAMPLE = 2   # a rate whose season part rests on this many games or fewer is flagged
 WEIGHTS = {"base": 1, "current": 2, "l30": 3, "l15": 4, "l7": 5}
