@@ -101,6 +101,7 @@ Add these instructions:
 > - **`return`**: value = the first date he can play.
 >   - When a source gives a re-evaluation date, use the day after it.
 >   - When it says "week-to-week" with no date, use 7 days after the note and say it is a floor.
+>   - When that floor has passed and he is still listed out with no timetable, use 7 days after the latest out report.
 > - **`sit`**: value = a date he will not play. Only when the team or a beat writer says so.
 > - **`role`**: value = expected minutes; `until` = when the role is expected to end, at most 14 days ahead. Only when the source reports the role as ongoing.
 >

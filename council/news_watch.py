@@ -393,6 +393,7 @@ def main():
            "- **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). **Role rate** is FP per minute "
            "this season (outliers out) times his minutes in the new role. The plans use it only once the research "
            "confirms the role and records it in `council/news_overrides.csv`.", ""]
+    link = lambda u: f"[link]({u})" if u.startswith("http") else (u or "—")
     if live_ov or old_ov:
         out += ["## Overrides (`council/news_overrides.csv`)", "",
                 "| Player | Kind | Value | Until | Source | State |", "|---|---|---|---|---|---|"]
@@ -400,7 +401,7 @@ def main():
             state = "expired: remove it" if row in old_ov else ("in force" if row["player"].lower() in known
                                                                 else "in force, but no such player in the pool")
             out.append(f'| {row["player"]} | {row["kind"]} | {row["value"]} | {row["until"] or "—"} | '
-                       f'{row["source"] or "—"} | {state} |')
+                       f'{link(row["source"])} | {state} |')
         out.append("")
 
     order = {"injury": 0, "role": 1, "minutes": 2, "rest": 3, "gap": 4}
