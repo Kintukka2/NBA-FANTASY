@@ -28,7 +28,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
-from gamelog import drops_note  # noqa: E402
+from gamelog import FIXED, drops_note  # noqa: E402
 from injury_watch import LOG_NOTES, player_pool  # noqa: E402
 from slump_watch import FANTASY, LEAGUE, TEAM_ID, get, live_games, season_cell, signed, window_cells, windows_note  # noqa: E402
 
@@ -105,8 +105,10 @@ def main():
            "DD and TD, so it reads low for players who earn them.",
            "- **Rate** is the weighted, outlier-adjusted rate the matchup plans use (`council/gamelog.py`): "
            "last season ×1 (or the projection), season ×2, L30 ×3, L15 ×4, L7 ×5.",
-           *([f"- **Game logs:** {len(LOG_NOTES)} pool players' box-score logs do not match ESPN's splits; they "
-              "keep ESPN's averages and no outliers."] if LOG_NOTES else []), "",
+           *([f"- **Game logs:** {len(LOG_NOTES)} pool players' box-score logs do not match ESPN's season splits; "
+              "they keep ESPN's averages and no outliers."] if LOG_NOTES else []),
+           *([f"- **Stale ESPN windows:** {len(FIXED)} L7/L15/L30 windows (injured players who have not played in "
+              "them) are taken from the box scores instead of ESPN's split."] if FIXED else []), "",
            "| Player | NBA | League | Season FP/g (GP) | L7 | L15 | L30 | L7 − season | Min: season / L7 | "
            "Projected | 2026 | Rate | ESPN status |",
            "|---|---|---|---:|---:|---:|---:|---:|---|---:|---:|---:|---|"]
