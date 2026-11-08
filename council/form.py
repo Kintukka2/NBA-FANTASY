@@ -28,8 +28,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from injuries import injuries as injury_feed  # noqa: E402
-from injury_watch import player_pool  # noqa: E402
-from slump_watch import FANTASY, LEAGUE, TEAM_ID, get, live_games, signed, windows_note  # noqa: E402
+from gamelog import drops_note  # noqa: E402
+from injury_watch import LOG_NOTES, player_pool  # noqa: E402
+from slump_watch import FANTASY, LEAGUE, TEAM_ID, get, live_games, season_cell, signed, window_cells, windows_note  # noqa: E402
 
 
 def norm(s):
@@ -101,17 +102,26 @@ def main():
            "`scripts/league_scoring.py` (0 mismatches).",
            windows_note(rows),
            "- **L7 − season** is the last 7 days' FP/g minus the season's. ESPN's projection leaves out OREB, DREB, "
-           "DD and TD, so it reads low for players who earn them.", "",
+           "DD and TD, so it reads low for players who earn them.",
+           "- **Rate** is the weighted, outlier-adjusted rate the matchup plans use (`council/gamelog.py`): "
+           "last season ×1 (or the projection), season ×2, L30 ×3, L15 ×4, L7 ×5.",
+           *([f"- **Game logs:** {len(LOG_NOTES)} pool players' box-score logs do not match ESPN's splits; they "
+              "keep ESPN's averages and no outliers."] if LOG_NOTES else []), "",
            "| Player | NBA | League | Season FP/g (GP) | L7 | L15 | L30 | L7 − season | Min: season / L7 | "
-           "Projected | 2026 | ESPN status |",
-           "|---|---|---|---:|---:|---:|---:|---:|---|---:|---:|---|"]
+           "Projected | 2026 | Rate | ESPN status |",
+           "|---|---|---|---:|---:|---:|---:|---:|---|---:|---:|---:|---|"]
+    dropped = []
     for r in rows:
         c, l7 = r["current"], r["l7"]
         trend = signed(l7["fpg"] - c["fpg"], True) if c and l7 else "—"
         mins = f'{fmt(c and c["min"])} / {fmt(l7 and l7["min"])}'
-        out.append(f'| **{r["player"]}** | {abbrev.get(r["pro"], "FA")} | {league(r)} | {cell(c)} | {cell(l7)} | '
-                   f'{cell(r["l15"])} | {cell(r["l30"])} | {trend} | {mins} | {fmt(r["projected"] and r["projected"]["fpg"])} | '
-                   f'{fmt(r["last"] and r["last"]["fpg"])} | {status(r)} |')
+        out.append(f'| **{r["player"]}** | {abbrev.get(r["pro"], "FA")} | {league(r)} | {season_cell(r)} | '
+                   + " | ".join(window_cells(r)) + f' | {trend} | {mins} | {fmt(r["projected"] and r["projected"]["fpg"])} | '
+                   f'{fmt(r["last"] and r["last"]["fpg"])} | **{fmt(r.get("wrate"))}** | {status(r)} |')
+        if drops_note(r):
+            dropped.append(f'- **{r["player"]}:** {drops_note(r)}.')
+    if dropped:
+        out += ["", "## Outlier games dropped", ""] + dropped
     out += ["", "## Sources", "",
             f"- ESPN fantasy API, league 423671879 (`kona_player_info` with ESPN's season, last-7, last-15 and "
             f"last-30-day splits, `mTeam`, `proTeamSchedules_wl`) and ESPN's NBA injury feed, read "

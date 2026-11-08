@@ -48,6 +48,16 @@ average and ESPN's projection:
 - State the sample: a window of 1 or 2 games is noise and is called that.
   Early in the season L15 and L30 equal the season average, and the scripts
   say so.
+- **Outlier games** (`council/gamelog.py`): a bad game (worst FP, 15+ under
+  the next worst, 3+ games) and a short game (fewest minutes, more than 10
+  under the next fewest, 2+ games) are dropped. The scripts show such a
+  window as **A → B**, B being the average without the outlier. Quote both.
+  Good games are never dropped.
+
+**The rate every plan uses** (`council/gamelog.py`, used by `matchup.py`):
+last season ×1 (ESPN's projection if none), this season ×2, L30 ×3, L15 ×4,
+L7 ×5, each outlier-adjusted, skipping parts with no games. `form.py` prints
+it as **Rate**. Never compute it by hand.
 
 **Adds left: only from `matchup.py`.** The weekly limit follows that week's
 NBA game days, so a week with an empty day has 6. Quote the limit and the

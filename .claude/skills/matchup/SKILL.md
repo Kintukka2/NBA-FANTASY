@@ -51,7 +51,9 @@ Options:
 Both roster tables, the streamer table and every move carry **L7, L15 and
 L30** (FP/g over the last 7, 15 and 30 days, games in brackets). These are
 a hard rule (CLAUDE.md, "Recent form, always"). The rate the optimiser uses
-does not include them, so weigh them yourself:
+is built from them (`council/gamelog.py`): last season ×1 (or the
+projection), this season ×2, L30 ×3, L15 ×4, L7 ×5, each without its outlier
+games. A window shown as **A → B** had an outlier dropped. Still check:
 
 - A streamer whose L7 is 5+ FP/g under his season average needs a reason
   (fewer minutes, a returning teammate) before he goes in the plan.
