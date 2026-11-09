@@ -23,6 +23,7 @@ import datetime as dt
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 
@@ -35,11 +36,15 @@ LEAGUE = (f"https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/{SEA
 
 
 def get(url, headers=None):
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=headers or {}), timeout=60) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        sys.exit(f"{url} returned HTTP {e.code}.")
+    for wait in (1, 2, 4, 8, None):  # ESPN throttles bursts with a 403 or 429; back off and try again
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=headers or {}), timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429) and wait:
+                time.sleep(wait)
+                continue
+            sys.exit(f"{url} returned HTTP {e.code}.")
 
 
 def injuries():

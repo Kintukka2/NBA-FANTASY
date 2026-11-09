@@ -33,6 +33,7 @@ import datetime as dt
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 from collections import defaultdict
@@ -78,11 +79,15 @@ def get(url, cookies=False, fantasy_filter=None):
         headers["Cookie"] = f"espn_s2={s2}; SWID={swid}"
     if fantasy_filter:
         headers["x-fantasy-filter"] = json.dumps(fantasy_filter)
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=60) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        sys.exit(f"{url} returned HTTP {e.code}. A 401 means the cookies expired: copy fresh ones.")
+    for wait in (1, 2, 4, 8, None):  # ESPN throttles bursts with a 403 or 429; back off and try again
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=60) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429) and wait:
+                time.sleep(wait)
+                continue
+            sys.exit(f"{url} returned HTTP {e.code}. A 401 means the cookies expired: copy fresh ones.")
 
 
 def live_games():
