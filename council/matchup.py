@@ -84,7 +84,7 @@ def slots_for(r):
     return frozenset(set().union(*fits)) if fits else frozenset({11})
 
 
-@lru_cache(maxsize=None)
+@lru_cache(maxsize=200_000)  # bounded: a three-slot --rotate visits millions of lineups and ran out of memory
 def best_lineup(players):
     """Highest total rate the 10 slots can hold. players: tuple of (rate, frozenset of slots)."""
     @lru_cache(maxsize=None)
