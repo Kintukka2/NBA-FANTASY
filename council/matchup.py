@@ -84,7 +84,7 @@ def slots_for(r):
     return frozenset(set().union(*fits)) if fits else frozenset({11})
 
 
-@lru_cache(maxsize=None)
+@lru_cache(maxsize=200_000)  # bounded: a three-slot --rotate visits millions of lineups and ran out of memory
 def best_lineup(players):
     """Highest total rate the 10 slots can hold. players: tuple of (rate, frozenset of slots)."""
     @lru_cache(maxsize=None)
@@ -118,6 +118,8 @@ def main():
     ap.add_argument("--from", dest="start", metavar="YYYY-MM-DD",
                     help="count only days from this US date, e.g. what each player is worth after a claim processes")
     ap.add_argument("--pool", type=int, default=14, help="free agents --rotate considers (default 14, plus each day's top 3)")
+    ap.add_argument("--beam", type=int, default=80, help="with 3+ --rotate slots, slot line-ups kept per add count each "
+                    "day (default 80); 1-2 slots are searched exactly")
     ap.add_argument("--returning", action="store_true",
                     help="also consider injured free agents who have not played this season, from ESPN's estimated "
                          "return, rated on last season (or the projection)")
@@ -509,6 +511,16 @@ def main():
                 return total(empty + [people[i] for i in occ if i < n or counts(people[i], p)], p)
             start = tuple(range(n))
             states = {(start, 0): [(0.0, frozenset(), ())]}
+
+            def prune(entries):
+                """The best `keep` entries, one per set of players used."""
+                entries.sort(key=lambda e: rank(e[0], e[2]), reverse=True)
+                seen, kept = set(), []
+                for e in entries:
+                    if e[1] not in seen and len(kept) < keep:
+                        seen.add(e[1])
+                        kept.append(e)
+                return kept
             for p in rdays:
                 movers = [i for i in range(n, len(people)) if counts(people[i], p)]
                 nxt = {}
@@ -521,20 +533,21 @@ def main():
                         if adds + k > budget or len(set(new)) < n:
                             continue
                         day = value(p, tuple(sorted(new)))
+                        bucket = nxt.setdefault((new, adds + k), [])
                         for v, done, moves in entries:
                             if not any(new[s] in done for s in changed):
-                                nxt.setdefault((new, adds + k), []).append(
-                                    (v + day, done | {new[s] for s in changed},
-                                     moves + tuple((p, s, people[occ[s]], people[new[s]]) for s in changed)))
-                states = {}
-                for key, entries in nxt.items():
-                    entries.sort(key=lambda e: rank(e[0], e[2]), reverse=True)
-                    seen, kept = set(), []
-                    for e in entries:
-                        if e[1] not in seen and len(kept) < keep:
-                            seen.add(e[1])
-                            kept.append(e)
-                    states[key] = kept
+                                bucket.append((v + day, done | {new[s] for s in changed},
+                                               moves + tuple((p, s, people[occ[s]], people[new[s]]) for s in changed)))
+                        if len(bucket) > 4 * keep:  # trim as we go, or three slots run out of memory
+                            bucket[:] = prune(bucket)
+                states = {key: kept for key, entries in nxt.items() if (kept := prune(entries))}
+                if n >= 3:  # beam: keep the best slot line-ups for each add count
+                    by_adds = {}
+                    for key, kept in states.items():
+                        by_adds.setdefault(key[1], []).append((rank(kept[0][0], kept[0][2]), key))
+                    allowed = {key for group in by_adds.values()
+                               for _, key in sorted(group, reverse=True)[:args.beam]}
+                    states = {key: kept for key, kept in states.items() if key in allowed}
             best = {}
             for (occ, adds), entries in states.items():
                 for b in range(adds, budget + 1):
@@ -554,7 +567,9 @@ def main():
                 f"- Each change is one add. {budget} left this matchup, usable on any day: the limit is a "
                 "matchup total, not a daily cap.",
                 f"- Streamers considered: the {len(cands)} free agents worth most to an empty slot over these days "
-                f"(with {args.min_minutes:g}+ minutes), plus the top three for each day.",
+                f"(with {args.min_minutes:g}+ minutes), plus the top three for each day."
+                + (f" With {n} slots the search keeps the best {args.beam} slot line-ups for each add count "
+                   "each day (`--beam`), so the plan is near-best rather than proven best." if n >= 3 else ""),
                 f"- Keeping {'both' if n == 2 else 'them'} scores **{hold:.0f}** in our lineup over "
                 f"{label(rdays[0])[0]} to {label(rdays[-1])[0]}.", "",
                 f"| Adds | vs keeping | Moves |", "|---:|---:|---|"]
