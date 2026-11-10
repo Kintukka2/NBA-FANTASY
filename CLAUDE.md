@@ -28,6 +28,12 @@ injury dates are right, role or minutes changes, rest days, or uses
 When running all skills, run the news watch first so the matchup uses its
 overrides. It refuses to run while NBA games are live.
 
+When the user asks for the trade watch, about NBA trades, who benefits from
+a trade, or a traded player's new role, or uses `/trade-watch`, follow
+`.claude/skills/trade-watch/SKILL.md`. Run `council/trade_watch.py`, then
+research agents check each trade. When running all skills, run it with the
+news watch, before the matchup. It refuses to run while NBA games are live.
+
 When the user asks to prepare for the matchup, who to stream, who to pick up
 for particular days, or uses `/matchup`, follow
 `.claude/skills/matchup/SKILL.md`. Run `council/matchup.py`, then add
