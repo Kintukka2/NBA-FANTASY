@@ -10,6 +10,34 @@
 - **Games** is games left this week (09 Nov–15 Nov) / next week (16 Nov–22 Nov).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
+## Shortlist
+
+Our five-lowest floor is 32.8. No pickup clears it on more than one game.
+
+| Player | Opening (reported / ESPN) | FP/g without | L7 | L15 | L30 | Min | Games (this wk / next) |
+|---|---|---:|---:|---:|---:|---:|---|
+| **Aday Mara** (OKC) | Holmgren 8–10 wks from 30 Oct / 2 Jan; Wallace, J. Williams late season / 2 Mar | 30.5 | 34.2 (4) | 30.5 (8) | 25.4 (11) | 23.1 | 3 / 3 |
+| **Daniss Jenkins** (DET) | Duren re-evaluated ~22 Nov / 24 Nov | 29.9 | 40.0 (3) | 27.9 (7) | 28.1 (10) | 27.8 | 2 / 4 |
+| **Christian Braun** (DEN) | Strawther ~25 Nov, maybe Dec / 29 Nov | 29.0 | 19.3 (3) | 29.9 (7) | 29.0 (9) | 34.0 | 2 / 4 |
+| **Jared McCain** (OKC) | as Mara | 25.4 | 32.2 (4) | 25.4 (8) | 21.8 (11) | 27.8 | 3 / 3 |
+| **Quenton Jackson** (IND) | Furphy mid-season, Sheppard months / 2 Jan | 24.1 | 25.3 (3) | 26.2 (8) | 24.3 (11) | 22.3 | 3 / 3 |
+
+**Stash candidates.** Our IR slot is taken by Duren, so a stash costs a bench spot.
+- **Lauri Markkanen** (UTAH, waivers): rate 40.0, re-evaluated about 9 Dec ([Yardbarker, 11 Nov](https://www.yardbarker.com/nba/articles/jazzs_lauri_markkanen_out_with_hand_fractures_to_be_reevaluated_in_four_weeks/s1_17038_44548155)); *ESPN est.* 4 Jan. A month or more away.
+- **Jalen Suggs** (ORL): back to court work, week-to-week ([NBC Sports, 9 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/report-suggs-knee-progressing-positively)); *ESPN est.* 16 Nov; projected 29.2.
+
+The add/drop call is yours, or the council's (`/council`).
+
+## Since the last Injury Watch (9 Nov)
+
+- **Long absences:** 32 players are now out more than 7 days, up from 29.
+  - New: Lauri Markkanen (hand fractures), Brandon Williams (GS, hamstring) and Scotty Pippen Jr. (now a disc herniation).
+  - Kon Knueppel re-injured his hamstring.
+- **Pickups joined:** Charles Bassey, Kris Dunn (waivers), Ryan Kalkbrenner, Dylan Cardwell, De'Andre Hunter, Kobe Sanders.
+- **Pickups left:** Desmond Bane (rostered), Hannes Steinbach, Spencer Jones, Leaky Black, Jarace Walker, Trevon Brazile.
+- **Back soon, joined:** Myles Turner (rest only), Precious Achiuwa, Bennedict Mathurin, Nolan Traore, Tristan da Silva, Collin Murray-Boyles.
+- **Back soon, left:** Desmond Bane, DeMar DeRozan, Aaron Gordon, Christian Braun, Egor Demin, Robert Williams III, Isaiah Jackson, Cameron Johnson, Jock Landale.
+
 ## Pickups for us
 
 Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
@@ -36,6 +64,27 @@ Our five lowest current FP/g: Jrue Holiday 28.7 (L7 19.5), Isaiah Hartenstein 29
 | **Dylan Cardwell** | SAC | Ben Simmons (01 Oct); also out: Maxime Raynaud (15 Nov) | 4 | 18.8 | — | **21.8** | 21.8 | 21.8 (4) | 21.8 (4) | 21.8 (4) | Free agent | 1% | 2 / 3 |
 | **De'Andre Hunter** | SAC | Ben Simmons (01 Oct); also out: Maxime Raynaud (15 Nov) | 9 | 32.8 | +5.2 | **20.8** | 19.5 | 18.3 (3) | 23.1 (7) | 19.5 (10) | Free agent | 6% | 2 / 3 |
 | **Kobe Sanders** | LAC | Bradley Beal (29 Nov), Jordan Miller (02 Mar); also out: Brandon Ingram (13 Nov) | 10 | 24.3 | — | **20.4** | 20.4 | 13.0 (3) → 20.0 (2) | 21.4 (7) → 25.2 (6) | 20.4 (10) → 22.8 (9) | Free agent | 1% | 2 / 3 |
+
+### Notes
+
+- **Charles Bassey** (GS): backup center at 9–23 min. His starts came only when Draymond Green rested ([CBS/RotoWire, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/warriors-charles-bassey-enters-starting-lineup-sunday/)). His one game "without" was the 138–87 rout of NOP ([Sports Leader, 9 Nov](https://www.thesportsleader.com/2026/11/09/warriors-crush-pelicans-make-nba-history-with-8th-win-after-0-3-start/)), a small sample; his L7 is blowout minutes.
+  - Brandon Williams: mild hamstring strain, re-evaluated in a week ([TSN, 10 Nov](https://www.tsn.ca/nba/article/warriors-guard-williams-out-at-least-a-week-with-strained-left-hamstring/)); *ESPN est.* 22 Nov.
+  - Moses Moody: back "by December or January" ([FantasyPros, 17 Oct](https://www.fantasypros.com/nba/news/614410/moses-moody-knee-could-return-december-or-january.php)); *ESPN est.* 1 Dec.
+  - Porzingis: stepped away, no timetable reported ([Bleacher Report, 6 Nov](https://bleacherreport.com/articles/25529995-kristaps-porzingis-announces-he-will-step-away-warriors-statement-amid-health-issues)).
+- **Kris Dunn** and **Derrick Jones Jr.** (LAC): both start. Their L7 reflects the 133–110 blowout at PHX on 10 Nov ([Covers](https://www.covers.com/sport/basketball/nba/matchup/388699)). Brandon Ingram is "nearing return", expected mid-November ([CBS/RotoWire, 6 Nov](https://www.cbssports.com/fantasy/basketball/news/clippers-brandon-ingram-nearing-return/)); *ESPN est.* 13 Nov. That threatens their minutes more than Bradley Beal does: Beal has no timetable reported ([Yahoo, 10 Nov](https://sports.yahoo.com/articles/seven-players-listed-clippers-vs-202639885.html)); *ESPN est.* 29 Nov.
+- **Ryan Kalkbrenner** (CHA): starts only while Moussa Diabaté is out (13–14 min off the bench otherwise). Diabaté is day-to-day and "on the verge" ([LWOS, 11 Nov](https://lastwordonsports.com/basketball/2026/11/11/hornets-vs-suns-preview)); *ESPN est.* 12 Nov.
+  - Knueppel: out at least four more weeks ([AP/NBA.com, 9 Nov](https://www.nba.com/news/hornets-knueppel-to-miss-4-more-weeks-after-reinjuring-hamstring)); *ESPN est.* 12 Dec.
+  - Schröder: re-evaluated in two weeks, about 22 Nov ([Eurohoops, 9 Nov](https://www.eurohoops.net/en/nba-news/2032570/dennis-schroder-will-miss-at-least-two-weeks-kon-knueppel-out-for-at-least-a-month/)); *ESPN est.* 25 Nov.
+- **Christian Braun** (DEN): starter at 34.3 min. His L7 (19.3) is shooting, 2-8 and 2-7, while playing through a calf contusion and an illness ([Yahoo, 9 Nov](https://sports.yahoo.com/articles/nuggets-list-five-starters-injury-183902222.html)). Julian Strawther: re-evaluated about 25 Nov, "it might be December" ([Denver Gazette, 16 Oct](https://www.denvergazette.com/2026/10/16/nuggets-provide-update-on-julian-strawthers-knee-injury-5/)); *ESPN est.* 29 Nov.
+- **Aaron Wiggins** (ATL): bench, 22–32 min ([Fox Sports/RotoWire](https://www.foxsports.com/nba/aaron-wiggins-player)). Mouhamed Gueye (foot surgery 14 Jul) has no newer timetable reported ([NBC Sports, 15 Jul](https://www.nbcsports.com/fantasy/basketball/player-news/2026-07-15/mouhamed-gueye-foot-out-3-4-months-after-surgery)); *ESPN est.* 20 Nov.
+- **Jordan Goodwin** (PHX): bench, 14–20 min. His L7 (38.0) is one game, noise: 6-7 from three in the 10 Nov blowout, back from a calf injury ([Fox Sports/RotoWire](https://www.foxsports.com/nba/jordan-goodwin-player)). His role does not depend on Mark Williams, who is out about five months ([Hoopswire, 11 Sep](https://hoopswire.com/suns-mark-williams-shoulder-nba)); *ESPN est.* 3 Feb.
+- **Jared McCain** and **Aday Mara** (OKC): both roles should last for months.
+  - McCain started 10 Nov (21 pts, 31 min); his L7 is more minutes plus hot shooting ([Fox Sports/RotoWire](https://www.foxsports.com/nba/jared-mccain-player)).
+  - Cason Wallace and Jalen Williams are re-evaluated before the season ends; Chet Holmgren is out 8–10 weeks from 30 Oct ([Hoops Rumors, 30 Oct](https://www.hoopsrumors.com/2026/10/chet-holmgren-has-small-patellar-tendon-tear-out-8-10-weeks.html)). *ESPN est.* 2 Mar, 2 Mar and 2 Jan.
+- **Kevin Huerter** and **Daniss Jenkins** (DET):
+  - Huerter's minutes come from Isaiah Joe's absence (hip, 7th straight game out on 9 Nov; [NBC Sports, 9 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/isaiah-joe-hip-out-monday-vs-wizards); *ESPN est.* 17 Nov), not Duren's. His L7 rides one 35-minute game.
+  - Duren: at least two more weeks ([ESPN, 8 Nov](https://www.espn.com/nba/story/_/id/50426217/duren-miss-least-two-more-weeks-hamstring-injury)); *ESPN est.* 24 Nov.
+- **Quenton Jackson** (IND): bench at about 19 min ([Fox Sports/RotoWire](https://www.foxsports.com/nba/quenton-jackson-player)). Johnny Furphy (ACL, "middle of the year"; [IndyStar/Yahoo, 25 Sep](https://sports.yahoo.com/articles/pacers-johnny-furphy-hit-benchmarks-083112900.html)) and Ben Sheppard (meniscus, out months; [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-ben-sheppard-knee-out-for-months)) are out long-term; *ESPN est.* 2 Jan for both.
 
 ## Injured and available, back soon
 
@@ -523,3 +572,58 @@ All 97 players in ESPN's injury feed, longest expected absence first.
 ## Sources
 
 - ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-11 21:12 UTC.
+- [Yardbarker, 11 Nov](https://www.yardbarker.com/nba/articles/jazzs_lauri_markkanen_out_with_hand_fractures_to_be_reevaluated_in_four_weeks/s1_17038_44548155)
+- [NBC Sports, 9 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/report-suggs-knee-progressing-positively)
+- [CBS/RotoWire, 1 Nov](https://www.cbssports.com/fantasy/basketball/news/warriors-charles-bassey-enters-starting-lineup-sunday/)
+- [Sports Leader, 9 Nov](https://www.thesportsleader.com/2026/11/09/warriors-crush-pelicans-make-nba-history-with-8th-win-after-0-3-start/)
+- [TSN, 10 Nov](https://www.tsn.ca/nba/article/warriors-guard-williams-out-at-least-a-week-with-strained-left-hamstring/)
+- [FantasyPros, 17 Oct](https://www.fantasypros.com/nba/news/614410/moses-moody-knee-could-return-december-or-january.php)
+- [Bleacher Report, 6 Nov](https://bleacherreport.com/articles/25529995-kristaps-porzingis-announces-he-will-step-away-warriors-statement-amid-health-issues)
+- [Covers](https://www.covers.com/sport/basketball/nba/matchup/388699)
+- [CBS/RotoWire, 6 Nov](https://www.cbssports.com/fantasy/basketball/news/clippers-brandon-ingram-nearing-return/)
+- [Yahoo, 10 Nov](https://sports.yahoo.com/articles/seven-players-listed-clippers-vs-202639885.html)
+- [LWOS, 11 Nov](https://lastwordonsports.com/basketball/2026/11/11/hornets-vs-suns-preview)
+- [AP/NBA.com, 9 Nov](https://www.nba.com/news/hornets-knueppel-to-miss-4-more-weeks-after-reinjuring-hamstring)
+- [Eurohoops, 9 Nov](https://www.eurohoops.net/en/nba-news/2032570/dennis-schroder-will-miss-at-least-two-weeks-kon-knueppel-out-for-at-least-a-month/)
+- [Yahoo, 9 Nov](https://sports.yahoo.com/articles/nuggets-list-five-starters-injury-183902222.html)
+- [Denver Gazette, 16 Oct](https://www.denvergazette.com/2026/10/16/nuggets-provide-update-on-julian-strawthers-knee-injury-5/)
+- [Fox Sports/RotoWire](https://www.foxsports.com/nba/aaron-wiggins-player)
+- [NBC Sports, 15 Jul](https://www.nbcsports.com/fantasy/basketball/player-news/2026-07-15/mouhamed-gueye-foot-out-3-4-months-after-surgery)
+- [Fox Sports/RotoWire](https://www.foxsports.com/nba/jordan-goodwin-player)
+- [Hoopswire, 11 Sep](https://hoopswire.com/suns-mark-williams-shoulder-nba)
+- [Fox Sports/RotoWire](https://www.foxsports.com/nba/jared-mccain-player)
+- [Hoops Rumors, 30 Oct](https://www.hoopsrumors.com/2026/10/chet-holmgren-has-small-patellar-tendon-tear-out-8-10-weeks.html)
+- [NBC Sports, 9 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/isaiah-joe-hip-out-monday-vs-wizards)
+- [ESPN, 8 Nov](https://www.espn.com/nba/story/_/id/50426217/duren-miss-least-two-more-weeks-hamstring-injury)
+- [Fox Sports/RotoWire](https://www.foxsports.com/nba/quenton-jackson-player)
+- [IndyStar/Yahoo, 25 Sep](https://sports.yahoo.com/articles/pacers-johnny-furphy-hit-benchmarks-083112900.html)
+- [NBC Sports, 28 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/carlisle-ben-sheppard-knee-out-for-months)
+- [NBA injury report, 11 Nov 4:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_04_15PM.pdf)
+- [CBS/RotoWire](https://www.cbssports.com/nba/players/28951880/dereck-lively-ii/fantasy/)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/tobias-harris-calf-seen-at-shootaround)
+- [KSL, 6 Nov](https://sports.ksl.com/nba/utah-jazz/jusuf-nurkic-utah-jazz/578803)
+- [Hoops Rumors, 7 Nov](https://www.hoopsrumors.com/2026/11/grizzlies-notes-pippen-stewart-losing-streak-jackson.html)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bucks-myles-turner-resting-wednesday/)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/precious-achiuwa-leg-exits-during-third-quarter)
+- [NBC Sports, 10 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/nolan-traore-calf-questionable-wednesday-vs-nor)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/tristan-da-silva-calf-questionable-vs-utah)
+- [CBS/RotoWire, 10 Nov](https://www.cbssports.com/fantasy/basketball/news/cavaliers-jaylon-tyson-questionable-for-wednesday/)
+- [Heavy, 11 Nov](https://heavy.com/sports/nba/new-orleans-pelicans/pelicans-get-concerning-bennedict-mathurin-injury-update/)
+- [Pelicans, 11 Nov](https://www.nba.com/pelicans/news/pelicans-shootaround-update-nets-tip-off-important-five-game-new-orleans-homestand)
+- [RotoWire via CBS, 9 Nov](https://www.cbssports.com/fantasy/basketball/news/kings-maxime-raynaud-still-out-for-tuesday/)
+- [Heavy, 11 Nov](https://heavy.com/sports/nba/chicago-bulls/injury-report-vs-spurs-november-11/)
+- [ClutchPoints, 11 Nov](https://clutchpoints.com/nba/nba-stories/spurs-vs-bulls-injury-report-devin-vassell-norman-powell-among-players-listed)
+- [CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/lakers-quentin-grimes-downgraded-to-out/)
+- [official report](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_00PM.pdf)
+- [NBC Sports, 10 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/t-j-mcconnell-hamstring-questionable-wednesday)
+- [Heavy, 5 Nov](https://heavy.com/sports/nba/golden-state-warriors/jimmy-butler-return-update-steve-kerr/)
+- [CBS, 16 Oct](https://www.cbssports.com/fantasy/basketball/news/warriors-jimmy-butler-targeting-january-to-february-return/)
+- [Blazers, 27 Aug](https://www.nba.com/blazers/news/shaedon-sharpe-injury-update-7)
+- [ClutchPoints, 2 Nov](https://clutchpoints.com/nba/minnesota-timberwolves/timberwolves-news-donte-divincenzo-doctor-optimistic-injury-return-this-season)
+- [CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/celtics-paul-george-out-wednesday/)
+- [CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-caleb-wilson-late-addition-to-injury-report/)
+- [Yardbarker](https://www.yardbarker.com/nba/articles/final_injury_report_for_wizards_pistons_will_anthony_davis_isaiah_joe_play/s1_17615_44539104)
+- [Detroit Sports Nation, 8 Nov](https://detroitsportsnation.com/jb-bickerstaff-jalen-duren-hamstring-update/gkaplan/detroit-pistons/11/08/2026/505901/)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/trey-murphy-knee-now-doubtful-vs-brooklyn)
+- [TSN, 11 Nov](https://www.tsn.ca/nba/article/shorthanded-raptors-look-to-turn-fortunes-around-against-celtics-on-tsn/)
+- [Yardbarker, 10 Nov](https://www.yardbarker.com/nba/articles/raptors_announce_kawhi_leonard_will_miss_more_time_as_he_recovers_from_left_knee_injury/s1_16751_44544586)
