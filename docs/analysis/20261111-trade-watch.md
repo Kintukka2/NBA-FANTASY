@@ -5,6 +5,13 @@
 - **Team he left:** his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). **Team he joined:** long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.
 - **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.
 
+## What it means for us
+
+- **Pickups:** none. Nique Clifford went from about 6 to about 20 minutes as an OKC bench wing. That's a deep-league option only: rate 6.0, one OKC game, a small sample.
+- **Threats to our players:** none. Isaiah Hartenstein's minutes are unchanged (24:25 on 10 Nov), because Clifford took Dalen Terry's spot and the wing minutes, not the bigs'.
+- **Overrides:** none added. No source gives Clifford's minutes, and one game is a small sample.
+- **Other trades (6–11 Nov):** none found, agreed or pending.
+
 ## Summary
 
 | Date | Player | From → To | Role before | Role since | Rate | League |
@@ -62,8 +69,24 @@
 
 ### Research
 
-- _pending_
+- **The trade:** OKC got Clifford for two second-round picks (2028 via UTA, 2030 via MIN), official 8 Nov ([NBA.com](https://www.nba.com/news/kings-trade-nique-clifford-thunder); [Shams, 8 Nov](https://x.com/ShamsCharania/status/2119491476488896864)); OKC waived Dalen Terry ([Yahoo, 9 Nov](https://sports.yahoo.com/articles/thunder-waive-recently-signed-player-002422017.html)). Sacramento had a wing logjam (Christie, [Yahoo, 9 Nov](https://sports.yahoo.com/articles/part-issue-doug-christie-breaks-061955316.html)); OKC is without Jalen Williams and Cason Wallace (ESPN est. 2 Mar) and Chet Holmgren (out 8–10 weeks from 31 Oct; ESPN est. 2 Jan) ([AP, 31 Oct](https://www.news4jax.com/sports/2026/10/31/chet-holmgren-out-at-least-2-months-with-knee-injury-and-cason-wallace-has-shoulder-surgery/)).
+- **His new role:** bench wing. 19:51 off the bench in his 10 Nov debut at POR (4 pts, 4 reb, 1 ast) ([Basketball-Reference](https://www.basketball-reference.com/boxscores/202611100POR.html)), a blowout, one game: a small sample. Daigneault: "If there's an opportunity, get him out there" ([Yahoo, 11 Nov](https://sports.yahoo.com/articles/mark-daigneault-reviews-nique-cliffords-180508681.html)).
+- **The team he left:** he played about 6 minutes a game, so nothing opens up; the script's SAC gains (Cardwell, Achiuwa) have other causes. Leaky Black is getting a look ([SI, 10 Nov](https://www.si.com/nba/kings/onsi/the-silver-lining-of-the-kings-trading-nique-clifford-early)).
+- **The team he joined:** his minutes came from Terry and an inactive Jaylin Williams (back spasms), not from the bigs or the main guards. On 10 Nov: McCain 31:22 (start), Mitchell 27:33, Hartenstein 24:25, Mara 26:18 off the bench (Portland's one-big lineup; [NBC Sports, 10 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/okc-starts-sga-mitchell-mccain-kenrich-ihart)).
+- **Verdict:** opportunity up for Clifford (about 6 to about 20 minutes, a deep-league option only), unchanged for Hartenstein, Mara, McCain and Mitchell; slightly down for OKC's other bench wings.
+- **Other trades, 6–11 Nov:** none found, agreed or pending ([HoopsRumors](https://www.hoopsrumors.com/transactions)). Releases were fringe and two-way players only. Warriors–Bucks talk (Porzingis for Turner) has no agreement ([ClutchPoints](https://clutchpoints.com/nba/golden-state-warriors/nba-rumors-the-problem-with-warriors-kristaps-porzingis-trade-possibilities-involving-bucks-bulls)).
 
 ## Sources
 
 - ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-11 21:10 UTC.
+- [NBA.com](https://www.nba.com/news/kings-trade-nique-clifford-thunder)
+- [Shams, 8 Nov](https://x.com/ShamsCharania/status/2119491476488896864)
+- [Yahoo, 9 Nov](https://sports.yahoo.com/articles/thunder-waive-recently-signed-player-002422017.html)
+- [Yahoo, 9 Nov](https://sports.yahoo.com/articles/part-issue-doug-christie-breaks-061955316.html)
+- [AP, 31 Oct](https://www.news4jax.com/sports/2026/10/31/chet-holmgren-out-at-least-2-months-with-knee-injury-and-cason-wallace-has-shoulder-surgery/)
+- [Basketball-Reference](https://www.basketball-reference.com/boxscores/202611100POR.html)
+- [Yahoo, 11 Nov](https://sports.yahoo.com/articles/mark-daigneault-reviews-nique-cliffords-180508681.html)
+- [SI, 10 Nov](https://www.si.com/nba/kings/onsi/the-silver-lining-of-the-kings-trading-nique-clifford-early)
+- [NBC Sports, 10 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/okc-starts-sga-mitchell-mccain-kenrich-ihart)
+- [HoopsRumors](https://www.hoopsrumors.com/transactions)
+- [ClutchPoints](https://clutchpoints.com/nba/golden-state-warriors/nba-rumors-the-problem-with-warriors-kristaps-porzingis-trade-possibilities-involving-bucks-bulls)
