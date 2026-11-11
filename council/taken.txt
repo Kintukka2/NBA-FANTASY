@@ -45,7 +45,6 @@ LeBron James
 Trae Young
 Brandon Miller
 Stephen Curry
-Lauri Markkanen
 Naz Reid
 Donovan Clingan
 Trey Murphy III
@@ -101,7 +100,6 @@ Duncan Robinson
 Klay Thompson
 Darryn Peterson
 Jarrett Allen
-Precious Achiuwa
 Jaxson Hayes
 Anthony Black
 Jamal Shead
@@ -111,3 +109,6 @@ Jrue Holiday
 Zach LaVine
 Jalen Smith
 Peyton Watson
+Ausar Thompson
+Fred VanVleet
+Payton Pritchard
