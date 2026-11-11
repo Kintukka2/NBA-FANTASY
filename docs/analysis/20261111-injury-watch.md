@@ -65,6 +65,29 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 | **T.J. McConnell** | IND | Hamstring | 11 Nov | 0 | 8.5 | 8.5 (2) | 8.5 (2) | 8.5 (2) | 24.4 | 25.5 | Free agent | 8% | 3 / 3 |
 | **Isaiah Stewart** | MEM | Right Knee Bruise | 11 Nov | 0 | 22.9 | 9.0 (1) | 23.6 (5) | 22.9 (7) | 25.3 | 25.1 | Free agent | 4% | 3 / 4 |
 
+### Notes
+
+- Official report used: [NBA injury report, 11 Nov 4:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_04_15PM.pdf).
+- **Dereck Lively II** (DAL): no timetable reported; week-to-week per RotoWire on 1 Nov ([CBS/RotoWire](https://www.cbssports.com/nba/players/28951880/dereck-lively-ii/fantasy/)). Nothing supports *ESPN est.* 12 Nov.
+- **Tobias Harris** (SA): no timetable reported; out 11 Nov, "very casual" shots at shootaround ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/tobias-harris-calf-seen-at-shootaround)). *ESPN est.* 19 Nov.
+- **Jusuf Nurkic** (UTAH): partial plantar plate tear; on-court work, re-evaluated in two weeks from 6 Nov, about 20 Nov ([KSL, 6 Nov](https://sports.ksl.com/nba/utah-jazz/jusuf-nurkic-utah-jazz/578803)). *ESPN est.* 20 Nov is the re-evaluation, not a return.
+- **Scotty Pippen Jr.** (MEM): now a lumbar disc herniation, out 11 Nov, no timetable reported ([Hoops Rumors, 7 Nov](https://www.hoopsrumors.com/2026/11/grizzlies-notes-pippen-stewart-losing-streak-jackson.html)); *ESPN est.* 21 Nov is at risk.
+- **Myles Turner** (MIL): rest on the second night of a back-to-back; expected back 13 Nov at ORL ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bucks-myles-turner-resting-wednesday/)); *ESPN est.* 13 Nov.
+- **Precious Achiuwa** (SAC, waivers): left the 10 Nov game with a left lower-leg contusion ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/precious-achiuwa-leg-exits-during-third-quarter)); no timetable reported; *ESPN est.* 13 Nov, in doubt.
+- **Nolan Traore** (BKN): questionable 11 Nov with right calf soreness ([NBC Sports, 10 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/nolan-traore-calf-questionable-wednesday-vs-nor)); *ESPN est.* 11 Nov.
+- **Tristan da Silva** (ORL): left calf strain, questionable 11 Nov ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/tristan-da-silva-calf-questionable-vs-utah)); *ESPN est.* 11 Nov.
+- **Jaylon Tyson** (CLE): right ankle sprain, six games missed, questionable 11 Nov ([CBS/RotoWire, 10 Nov](https://www.cbssports.com/fantasy/basketball/news/cavaliers-jaylon-tyson-questionable-for-wednesday/)); *ESPN est.* 11 Nov.
+- **Bennedict Mathurin** (NO): right thumb sprain, out 11 Nov, described as not serious ([Heavy, 11 Nov](https://heavy.com/sports/nba/new-orleans-pelicans/pelicans-get-concerning-bennedict-mathurin-injury-update/)); no timetable reported; *ESPN est.* 13 Nov.
+- **Yves Missi** (NO): out 11 Nov, his 10th straight game, no timetable reported ([Pelicans, 11 Nov](https://www.nba.com/pelicans/news/pelicans-shootaround-update-nets-tip-off-important-five-game-new-orleans-homestand)); our override puts his floor at 18 Nov; *ESPN est.* 16 Nov.
+- **Maxime Raynaud** (SAC): week-to-week pending a re-evaluation ([RotoWire via CBS, 9 Nov](https://www.cbssports.com/fantasy/basketball/news/kings-maxime-raynaud-still-out-for-tuesday/)); override floor 16 Nov; *ESPN est.* 15 Nov.
+- **Jalen Suggs** (ORL): back to court work, week-to-week ([NBC Sports, 9 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/report-suggs-knee-progressing-positively)); *ESPN est.* 16 Nov.
+- **Norman Powell** (CHI): questionable 11 Nov, now low back spasms ([Heavy, 11 Nov](https://heavy.com/sports/nba/chicago-bulls/injury-report-vs-spurs-november-11/)); no timetable reported; *ESPN est.* 11 Nov.
+- **Devin Vassell** (SA): questionable 11 Nov, left adductor tightness, a game-time decision ([ClutchPoints, 11 Nov](https://clutchpoints.com/nba/nba-stories/spurs-vs-bulls-injury-report-devin-vassell-norman-powell-among-players-listed)); no timetable reported; *ESPN est.* 11 Nov.
+- **Quentin Grimes** (LAL): finger sprain, out 11 Nov; LAL next play 15 Nov ([CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/lakers-quentin-grimes-downgraded-to-out/)); *ESPN est.* 15 Nov.
+- **Collin Murray-Boyles** (TOR): questionable (illness) 11 Nov on the [official report](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_02_00PM.pdf); *ESPN est.* 11 Nov.
+- **T.J. McConnell** (IND): questionable 11 Nov, on a minutes limit since his return ([NBC Sports, 10 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/t-j-mcconnell-hamstring-questionable-wednesday)); *ESPN est.* 11 Nov.
+- **Isaiah Stewart** (MEM): no news found; *ESPN est.* 11 Nov.
+
 ## Yet to play this season
 
 Injured players with no game yet this season, worth 25+ FP/g on ESPN's projection or last season, by expected return. None has played this season, so none has an L7, L15 or L30. Their value is last season and the projection. Our five-lowest floor is 32.8.
@@ -83,6 +106,14 @@ Injured players with no game yet this season, worth 25+ FP/g on ESPN's projectio
 | **Shaedon Sharpe** | POR | Right Knee Surgery | 02 Mar | 111 | 24.8 (25.4) | 31.2 (50) | Free agent | 6% | 2 / 4 |
 | **Donte DiVincenzo** | MIN | Right Achilles Surgery | 02 Apr | 142 | 23.0 (24.1) | 29.4 (82) | Free agent | 2% | 2 / 4 |
 
+### Notes
+
+- **Jimmy Butler III** (GS): ACL repair; back around the one-year mark of 19 Jan 2026 ([Heavy, 5 Nov](https://heavy.com/sports/nba/golden-state-warriors/jimmy-butler-return-update-steve-kerr/)); January–February ([CBS, 16 Oct](https://www.cbssports.com/fantasy/basketball/news/warriors-jimmy-butler-targeting-january-to-february-return/)). *ESPN est.* 2 Jan is optimistic.
+- **Kristaps Porzingis** (GS): stepped away from basketball for his health on 6 Nov, "not with team" ([Bleacher Report](https://bleacherreport.com/articles/25529995-kristaps-porzingis-announces-he-will-step-away-warriors-statement-amid-health-issues)); no timetable reported; *ESPN est.* 2 Jan is a placeholder.
+- **Shaedon Sharpe** (POR): meniscus repair 26 Aug, re-evaluated in six months ([Blazers, 27 Aug](https://www.nba.com/blazers/news/shaedon-sharpe-injury-update-7)); *ESPN est.* 2 Mar.
+- **Donte DiVincenzo** (MIN): Achilles surgery in April; "on schedule, if not… ahead" ([ClutchPoints, 2 Nov](https://clutchpoints.com/nba/minnesota-timberwolves/timberwolves-news-donte-divincenzo-doctor-optimistic-injury-return-this-season)); *ESPN est.* 2 Apr.
+- Lively, Raynaud, Harris and Nurkic: see the notes under *Injured and available, back soon*.
+
 ## Our injured players
 
 - **Paul George** (BOS): Out, Illness; ESPN est. back 15 Nov.
@@ -91,6 +122,15 @@ Injured players with no game yet this season, worth 25+ FP/g on ESPN's projectio
 - **Trey Murphy III** (NO): Day-To-Day, Knee Tendinitis; ESPN est. back 11 Nov.
 - **Scottie Barnes** (TOR): Out, Left Groin Soreness; ESPN est. back 12 Nov.
 - **Kawhi Leonard** (TOR): Out, Left Knee Inflammation; ESPN est. back 23 Nov.
+
+### Notes
+
+- **Paul George:** out 11 Nov at TOR (illness); "his next opportunity to play will come Sunday" ([CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/celtics-paul-george-out-wednesday/)). *ESPN est.* 15 Nov.
+- **Caleb Wilson:** questionable 11 Nov, right hip soreness, a late addition ([CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-caleb-wilson-late-addition-to-injury-report/)). *ESPN est.* 11 Nov.
+- **Jalen Duren:** "at least two more weeks" as of 9 Nov ([Yardbarker](https://www.yardbarker.com/nba/articles/final_injury_report_for_wizards_pistons_will_anthony_davis_isaiah_joe_play/s1_17615_44539104)); re-evaluated about 22 Nov ([Detroit Sports Nation, 8 Nov](https://detroitsportsnation.com/jb-bickerstaff-jalen-duren-hamstring-update/gkaplan/detroit-pistons/11/08/2026/505901/)). *ESPN est.* 24 Nov.
+- **Trey Murphy III:** doubtful 11 Nov (bilateral patellar tendinopathy), "at least one more game" ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/trey-murphy-knee-now-doubtful-vs-brooklyn)); no timetable reported. *ESPN est.* 11 Nov is too early.
+- **Scottie Barnes:** out 11 Nov, left groin strain, no timetable reported ([TSN, 11 Nov](https://www.tsn.ca/nba/article/shorthanded-raptors-look-to-turn-fortunes-around-against-celtics-on-tsn/)). *ESPN est.* 12 Nov.
+- **Kawhi Leonard:** reconditioning, an update in a week, about 17 Nov ([Yardbarker, 10 Nov](https://www.yardbarker.com/nba/articles/raptors_announce_kawhi_leonard_will_miss_more_time_as_he_recovers_from_left_knee_injury/s1_16751_44544586)); no return date. *ESPN est.* 23 Nov.
 
 ## Who takes the minutes, team by team
 
