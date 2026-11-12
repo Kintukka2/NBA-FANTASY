@@ -67,7 +67,6 @@ Joel Embiid
 Alex Sarr
 Brandin Podziemski
 Ivica Zubac
-Derik Queen
 Walker Kessler
 Jaden McDaniels
 Kyrie Irving
@@ -112,3 +111,4 @@ Ausar Thompson
 Fred VanVleet
 P.J. Washington
 Daniss Jenkins
+Nic Claxton
