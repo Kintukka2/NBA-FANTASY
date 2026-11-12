@@ -1,0 +1,569 @@
+# Injury Watch: 12 Nov 2026
+
+- Generated 2026-11-12 06:05 UTC by `council/injury_watch.py`. This is **a report, not a council verdict**.
+- **Injuries:** 97 players in ESPN's injury feed. 32 are out more than 7 days (ESPN est.) with a role of 15+ minutes, on 17 teams.
+- **Method:** each team's last 10 finished games, re-scored from ESPN's box scores. Each teammate's minutes and FP are split into games without the absentees against games with them, or against ESPN's projection when they have been out all season.
+  - *Best placed* means 3+ minutes gained, ordered by FP/g in the games without the absentees.
+  - A pickup is a free agent or waiver player getting 18+ minutes in those games.
+- **Checks:** no NBA game was in progress. All 1100 pool players' current, projected, L7, L15, L30 and 2026 averages re-score with `scripts/league_scoring.py` to ESPN's totals (0 mismatches).
+- **L7 / L15 / L30:** FP/g over the last 7, 15 and 30 days, games in brackets, from ESPN's rolling splits, re-scored with `scripts/league_scoring.py`. L30 covers every game so far for every player listed, so they equal the season average for now. **A → B** means `council/gamelog.py` dropped an outlier from that window (a bad game 12+ FP under the next worst, or a short game 10+ minutes under the next fewest); B is the average without it.
+- **Games** is games left this week (09 Nov–15 Nov) / next week (16 Nov–22 Nov).
+- **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
+
+## Shortlist
+
+| Player | Opening (reported / ESPN) | FP/g without | L7 | L15 | L30 | Games (this wk / next) |
+|---|---|---:|---:|---:|---:|---|
+| **Aday Mara** (OKC) | Holmgren 8–10 wks from 30 Oct / 2 Jan; Mitchell ankle, no timetable | 29.9 | 32.4 (5) | 29.6 (8) | 25.3 (12) | 2 / 3 |
+| **Daniss Jenkins** (DET) | Duren re-evaluated ~22 Nov / 24 Nov | 29.9 | 40.0 (3) | 27.9 (7) | 28.1 (10) | 2 / 4 |
+| **Christian Braun** (DEN) | Strawther ~25 Nov / 29 Nov | 29.5 | 23.0 (4) | 31.1 (7) | 29.5 (10) | 1 / 4 |
+| **Jared McCain** (OKC) | as Mara | 24.4 | 29.2 (5) | 23.1 (8) | 21.4 (12) | 2 / 3 |
+
+**Notes on the list:**
+- **Kalkbrenner:** dropped. His opening ends as Diabaté returns.
+- **Braun:** his L7 is 6.5 under his season, from poor shooting while playing through a calf contusion and an illness (yesterday's notes).
+- **Stash candidates:** as yesterday, Markkanen (waivers; re-evaluated about 9 Dec) and Suggs (week-to-week). Our IR slot is taken by Duren.
+
+The add/drop call is yours, or the council's (`/council`).
+
+## Since the last Injury Watch (11 Nov)
+
+- **Pickups joined:** Sidy Cissoko.
+- **Pickups left:** Quenton Jackson.
+- **Back soon, joined:** Ryan Rollins, Collin Sexton.
+- **Back soon, left:** Jaylon Tyson (returned), Collin Murray-Boyles (played 11 Nov), T.J. McConnell, Isaiah Stewart.
+- **Absences:** Lauri Markkanen is now on waivers. Vit Krejci had ankle surgery.
+
+## Pickups for us
+
+Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
+
+Our five lowest current FP/g: Jrue Holiday 29.5 (L7 23.0), Dejounte Murray 30.6 (L7 20.8), Trey Murphy III 31.0 (L7 38.5), Isaiah Hartenstein 31.5 (L7 34.2), Jalen Smith 33.2 (L7 35.7). A pickup at or above **33.2** beats all five.
+
+| Player | NBA | Opening | Games without | Min without | Δ min | FP/g without | Season FP/g | L7 | L15 | L30 | League | Owned | Games |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|---|
+| **Kris Dunn** | LAC | Bradley Beal (29 Nov), Jordan Miller (02 Mar); also out: Brandon Ingram (13 Nov) | 10 | 28.7 | +6.7 | **30.7** | 30.5 | 21.7 (3) | 25.0 (7) | 30.5 (10) | Waivers | 38% | 2 / 3 |
+| **Ryan Kalkbrenner** | CHA | Kon Knueppel (12 Dec), Dennis Schroder (25 Nov); also out: Grant Williams (12 Nov), Moussa Diabate (12 Nov) | 2 | 28.0 | +10.9 | **30.0** | 21.5 | 25.7 (3) | 20.4 (7) | 21.5 (11) | Free agent | 3% | 2 / 2 |
+| **Aday Mara** | OKC | Cason Wallace (02 Mar), Chet Holmgren (02 Jan), Jalen Williams (02 Mar) | 9 | 24.1 | +10.1 | **29.9** | 25.3 | 32.4 (5) | 29.6 (8) | 25.3 (12) | Free agent | 25% | 2 / 3 |
+| **Daniss Jenkins** | DET | Jalen Duren (24 Nov) | 8 | 27.8 | +9.2 | **29.9** | 28.1 | 40.0 (3) | 27.9 (7) | 28.1 (10) | Free agent | 21% | 2 / 4 |
+| **Christian Braun** | DEN | Julian Strawther (29 Nov) | 10 | 34.3 | +6.8 | **29.5** | 29.5 | 23.0 (4) | 31.1 (7) | 29.5 (10) | Free agent | 36% | 1 / 4 |
+| **Aaron Wiggins** | ATL | Mouhamed Gueye (20 Nov) | 10 | 25.8 | +5.5 | **27.6** | 28.2 | 32.0 (4) | 26.5 (8) | 28.2 (12) | Free agent | 39% | 2 / 3 |
+| **Derrick Jones Jr.** | LAC | Bradley Beal (29 Nov), Jordan Miller (02 Mar); also out: Brandon Ingram (13 Nov) | 9 | 29.2 | +3.8 | **27.6** | 27.6 | 27.0 (3) | 27.0 (6) | 27.6 (9) | Free agent | 10% | 2 / 3 |
+| **Charles Bassey** | GS | Brandon Williams (22 Nov), Kristaps Porzingis (02 Jan), Moses Moody (01 Dec), Jimmy Butler III (02 Jan) | 2 | 18.0 | +6.9 | **27.0** | 20.7 | 25.0 (4) | 22.2 (8) | 20.7 (10) | Free agent | 1% | 1 / 4 |
+| **Jordan Goodwin** | PHX | Mark Williams (03 Feb) | 6 | 18.0 | — | **26.7** | 26.7 | 38.0 (1) | 29.3 (3) | 26.7 (6) | Free agent | 2% | 2 / 3 |
+| **Kevin Huerter** | DET | Jalen Duren (24 Nov) | 8 | 24.1 | +5.1 | **25.0** | 22.5 | 37.0 (3) | 26.0 (7) | 22.5 (10) | Free agent | 4% | 2 / 4 |
+| **Ja'Kobe Walter** | TOR | Kawhi Leonard (23 Nov) | 9 | 31.6 | +7.6 | **24.9** | 25.5 | 17.8 (4) | 22.0 (8) | 25.5 (11) | Free agent | 12% | 2 / 3 |
+| **Jared McCain** | OKC | Cason Wallace (02 Mar), Chet Holmgren (02 Jan), Jalen Williams (02 Mar) | 9 | 28.1 | +7.1 | **24.4** | 21.4 | 29.2 (5) | 23.1 (8) | 21.4 (12) | Free agent | 37% | 2 / 3 |
+| **Royce O'Neale** | CHA | Kon Knueppel (12 Dec), Dennis Schroder (25 Nov); also out: Grant Williams (12 Nov), Moussa Diabate (12 Nov) | 2 | 24.5 | +6.4 | **22.5** | 12.9 | 18.0 (3) | 15.3 (7) | 12.9 (11) | Free agent | 1% | 2 / 2 |
+| **Collin Murray-Boyles** | TOR | Kawhi Leonard (23 Nov) | 8 | 22.8 | +4.8 | **22.2** | 23.0 | 27.3 (3) | 23.4 (7) | 23.0 (10) | Free agent | 14% | 2 / 3 |
+| **Dylan Cardwell** | SAC | Ben Simmons (01 Oct); also out: Maxime Raynaud (15 Nov) | 4 | 18.8 | — | **21.8** | 21.8 | 21.8 (4) | 21.8 (4) | 21.8 (4) | Free agent | 1% | 2 / 3 |
+| **Sidy Cissoko** | POR | Vit Krejci (12 Jan), Ja Morant (01 Dec), Shaedon Sharpe (02 Mar) | 4 | 25.0 | +3.8 | **21.0** | 19.2 | 22.4 (5) | 18.1 (9) | 19.2 (11) | Free agent | 1% | 1 / 4 |
+| **De'Andre Hunter** | SAC | Ben Simmons (01 Oct); also out: Maxime Raynaud (15 Nov) | 9 | 32.8 | +5.2 | **20.8** | 19.5 | 18.3 (3) | 23.1 (7) | 19.5 (10) | Free agent | 5% | 2 / 3 |
+| **Kobe Sanders** | LAC | Bradley Beal (29 Nov), Jordan Miller (02 Mar); also out: Brandon Ingram (13 Nov) | 10 | 24.3 | — | **20.4** | 20.4 | 13.0 (3) → 20.0 (2) | 21.4 (7) → 25.2 (6) | 20.4 (10) → 22.8 (9) | Free agent | 1% | 2 / 3 |
+
+### Notes
+
+Yesterday's notes still hold for each team's absentees and the pickups' roles ([20261111-injury-watch.md](20261111-injury-watch.md)). What is new since then:
+
+- **Sidy Cissoko** (POR, new): started both nights against OKC, with 33 min and 17 pts, then 29 min and 19 pts. Nori moved Scoot Henderson to the second unit and wants Cissoko's size on the lead guard ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/sidy-cissoko-scores-season-high-17-points-vs-okc); [BasketUSA, 11 Nov](https://www.basketusa.com/news/956549/pourquoi-sidy-cissoko-sinstalle-dans-le-cinq-des-blazers/)).
+  - Ja Morant (grade 2 hamstring) is re-evaluated about 27 Nov ([NBA.com, 30 Oct](https://www.nba.com/news/ja-morant-hamstring-injury-october-2026)); *ESPN est.* 1 Dec. He takes the start back on his return ([Rip City Project, 11 Nov](https://ripcityproject.com/sidy-cissoko-proving-micah-nori-right-start-over-scoot-henderson)).
+  - Vit Krejci had ankle surgery and is re-evaluated in eight weeks ([Hoops Rumors, 11 Nov](https://www.hoopsrumors.com/2026/11/vit-krejci-undergoes-ankle-surgery-out-minimum-of-eight-weeks.html)); *ESPN est.* 12 Jan.
+- **Ryan Kalkbrenner** and **Royce O'Neale** (CHA): both openings are closing. Moussa Diabaté and Grant Williams are probable for 12 Nov at PHX, and Diabaté's return "would reduce the minutes available to Ryan Kalkbrenner" ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-moussa-diabate-probable-for-thursday/); [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/grant-williams-hamstring-probable-thursday)). The "without" rates rest on 2 games, a small sample.
+- **Aday Mara** and **Jared McCain** (OKC): both started 11 Nov, Mara for 32 min and McCain for 31 ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909975)). Ajay Mitchell sat with a left ankle sprain, no timetable reported ([Oklahoman via Yahoo, 11 Nov](https://sports.yahoo.com/articles/ajay-mitchell-injury-okc-thunder-213000690.html)).
+- **Kevin Huerter** and **Daniss Jenkins** (DET): Isaiah Joe is out again on 12 Nov, and Huerter and Javonte Green take his minutes ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/isaiah-joe-hip-remains-out-thursday-vs-was)). No timetable reported; *ESPN est.* 17 Nov.
+- **Ja'Kobe Walter** and **Collin Murray-Boyles** (TOR): Immanuel Quickley returned and started on 11 Nov ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/raptors-start-quickley-walter-rj-collin-poeltl)). Walter started (35 min, 17 pts); Murray-Boyles started after his illness (20 min) ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909968)).
+- **Dylan Cardwell** (SAC): the Kings signed Mason Plumlee "to add size up front" ([Kings Herald, 11 Nov](https://kingsherald.com/articles/sacramento-kings-sign-mason-plumlee/)).
+- **Charles Bassey** (GS): 13 min off the bench at HOU ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909974)).
+
+## Injured and available, back soon
+
+Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g on their current, projected or last-season average.
+
+- **Our IR slot:** taken by Jalen Duren. A stash costs a bench spot until it frees up.
+
+| Player | NBA | Injury | ESPN est. | Days | Current FP/g | L7 | L15 | L30 | Projected | 2026 | League | Owned | Games |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|---:|---|
+| **Yves Missi** | NO | Left Knee Bruise | 16 Nov | 4 | 41.5 | — | — | 41.5 (2) → 68.0 (1) | 24.7 | 22.5 | Free agent | 14% | 2 / 4 |
+| **Ryan Rollins** | MIL | Head | 13 Nov | 1 | 23.7 | 25.4 (5) | 22.0 (8) | 23.7 (12) | 31.9 | 37.5 | Free agent | 51% | 2 / 3 |
+| **Jusuf Nurkic** | UTAH | Right Foot Strain | 20 Nov | 8 | — | — | — | — | 27.6 | 36.7 | Free agent | 7% | 2 / 4 |
+| **Norman Powell** | CHI | Right Shoulder Inflammation | 13 Nov | 1 | 26.2 | 4.0 (1) → — | 21.8 (4) → 27.7 (3) | 26.2 (8) → 29.4 (7) | 36.0 | 33.0 | Free agent | 75% | 2 / 4 |
+| **Jalen Suggs** | ORL | Right Knee | 16 Nov | 4 | 26.3 | — | — | 26.3 (3) | 29.2 | 34.7 | Free agent | 16% | 1 / 4 |
+| **Scotty Pippen Jr.** | MEM | Back Soreness | 21 Nov | 9 | 14.2 | — | 3.0 (1) | 14.2 (5) | 30.6 | 27.1 | Free agent | 9% | 2 / 4 |
+| **Tobias Harris** | SA | Left Calf Strain | 19 Nov | 7 | — | — | — | — | 30.1 | 28.0 | Free agent | 43% | 2 / 3 |
+| **Collin Sexton** | LAL | Head | 15 Nov | 3 | 17.7 | 17.8 (5) | 18.0 (10) | 17.7 (12) | 28.8 | 26.6 | Free agent | 22% | 1 / 3 |
+| **Myles Turner** | MIL | Rest | 13 Nov | 1 | 25.1 | 21.8 (4) | 25.9 (7) | 25.1 (11) | 28.4 | 28.6 | Free agent | 48% | 2 / 3 |
+| **Devin Vassell** | SA | Left Groin | 13 Nov | 1 | 28.3 | 32.3 (3) | 31.0 (7) | 28.3 (10) | 26.8 | 27.3 | Free agent | 38% | 2 / 3 |
+| **Quentin Grimes** | LAL | Finger | 15 Nov | 3 | 16.6 | 12.7 (3) | 14.5 (8) | 16.6 (11) | 28.1 | 25.8 | Free agent | 27% | 1 / 3 |
+| **Maxime Raynaud** | SAC | Right Knee Dislocated | 15 Nov | 3 | — | — | — | — | — | 28.1 | Free agent | 2% | 2 / 3 |
+| **Precious Achiuwa** | SAC | Left Lower Leg Bruise | 13 Nov | 1 | 28.0 | 20.5 (4) | 24.8 (8) → 27.9 (7) | 28.0 (11) → 30.5 (10) | 24.1 | 27.0 | Waivers | 22% | 2 / 3 |
+| **Bennedict Mathurin** | NO | Right Thumb Sprain | 13 Nov | 1 | 9.8 | 5.5 (4) | 7.8 (8) | 9.8 (11) | 25.1 | 27.6 | Free agent | 7% | 2 / 4 |
+| **Dereck Lively II** | DAL | Right Foot Surgery | 18 Nov | 6 | — | — | — | — | 27.4 | 21.3 | Free agent | 5% | 3 / 3 |
+| **Nolan Traore** | BKN | Right Calf Soreness | 14 Nov | 2 | 26.6 | 35.3 (3) | 32.0 (7) | 26.6 (10) → 29.2 (9) | 21.6 | 17.5 | Free agent | 14% | 1 / 3 |
+| **Tristan da Silva** | ORL | Left Calf Strain | 13 Nov | 1 | 25.9 | 26.5 (2) | 25.8 (6) | 25.9 (9) | 17.2 | 21.2 | Free agent | 11% | 1 / 4 |
+
+### Notes
+
+- **New:**
+  - **Ryan Rollins** (MIL): left 11 Nov after a head collision; no diagnosis and no timetable reported ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bucks-ryan-rollins-exits-to-locker-room-wednesday/)); *ESPN est.* 13 Nov.
+  - **Collin Sexton** (LAL): stitches from the same collision, expected Sunday ([RotoWire, 11 Nov](https://www.rotowire.com/basketball/headlines/collin-sexton-injury-doesnt-return-wednesday-538719)); *ESPN est.* 15 Nov.
+- **Norman Powell** (CHI): back spasms, "70%", expected back 13 Nov ([Yahoo, 11 Nov](https://sports.yahoo.com/articles/tiago-splitter-sets-target-date-012935039.html)); *ESPN est.* 13 Nov.
+- **Devin Vassell** (SA): out 11 Nov, his second straight game; no timetable reported ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/devin-vassell-groin-downgraded-to-out-wednesday)); *ESPN est.* 13 Nov.
+- **Nolan Traore** (BKN): out 11 Nov with a calf injury, no timetable reported ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/nolan-traore-calf-downgraded-to-out-wednesday)); *ESPN est.* 14 Nov.
+- **Tristan da Silva** (ORL): out 11 Nov, his second straight game ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/tristan-da-silva-will-miss-game-against-jazz)); *ESPN est.* 13 Nov.
+- **Quentin Grimes** (LAL): assessed before 15 Nov ([Basketnews, 12 Nov](https://basketnews.com/news-259304-jj-redick-drops-huge-quentin-grimes-injury-update-as-lakers-guard-still-out.html)); *ESPN est.* 15 Nov.
+- **Overrides:**
+  - Yves Missi: no timetable; override floor 18 Nov.
+  - Maxime Raynaud: re-evaluated "next week" ([Sactown Sports, 10 Nov](https://sactownsports.com/nba/sacramento-kings/magic-loss)); override floor 16 Nov.
+  - Jusuf Nurkic: re-evaluated about 20 Nov ([Jazz, 6 Nov](https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-2)); override floor 21 Nov.
+- **Dereck Lively II:** *ESPN est.* moved to 18 Nov, but there is no new report; no timetable reported.
+- **Jaylon Tyson:** returned on 11 Nov and has left the table.
+- **No new reports:** Myles Turner (rest only), Mathurin, Suggs, Tobias Harris, Pippen Jr., Achiuwa. Their timelines are in yesterday's notes.
+
+## Yet to play this season
+
+Injured players with no game yet this season, worth 25+ FP/g on ESPN's projection or last season, by expected return. None has played this season, so none has an L7, L15 or L30. Their value is last season and the projection. Our five-lowest floor is 33.2.
+
+| Player | NBA | Injury | ESPN est. | Days | Projected FP/g (min) | 2026 FP/g (GP) | League | Owned | Games |
+|---|---|---|---|---:|---:|---:|---|---:|---|
+| **Brandon Ingram** | LAC | Right Achilles Surgery | 13 Nov | 1 | 38.5 (35.3) | 36.5 (77) | Melbourne poopoo | 66% | 2 / 3 |
+| **Maxime Raynaud** | SAC | Right Knee Dislocated | 15 Nov | 3 | — (—) | 28.1 (74) | Free agent | 2% | 2 / 3 |
+| **Dereck Lively II** | DAL | Right Foot Surgery | 18 Nov | 6 | 27.4 (23.6) | 21.3 (7) | Free agent | 5% | 3 / 3 |
+| **Tobias Harris** | SA | Left Calf Strain | 19 Nov | 7 | 30.1 (30.5) | 28.0 (63) | Free agent | 43% | 2 / 3 |
+| **Jusuf Nurkic** | UTAH | Right Foot Strain | 20 Nov | 8 | 27.6 (23.1) | 36.7 (41) | Free agent | 7% | 2 / 4 |
+| **Bradley Beal** | LAC | Right Knee Inflammation | 29 Nov | 17 | 25.6 (25.3) | 10.5 (6) | Free agent | 2% | 2 / 3 |
+| **Jimmy Butler III** | GS | Right Knee Surgery | 02 Jan | 51 | 38.8 (32.4) | 41.6 (38) | Free agent | 29% | 1 / 4 |
+| **Kristaps Porzingis** | GS | Illness | 02 Jan | 51 | 36.9 (27.7) | 32.3 (32) | Free agent | 34% | 1 / 4 |
+| **Mark Williams** | PHX | Left Shoulder Surgery | 03 Feb | 83 | 31.0 (24.9) | 31.9 (60) | Free agent | 6% | 2 / 3 |
+| **Shaedon Sharpe** | POR | Right Knee Surgery | 02 Mar | 110 | 24.8 (25.4) | 31.2 (50) | Free agent | 6% | 1 / 4 |
+| **Donte DiVincenzo** | MIN | Right Achilles Surgery | 02 Apr | 141 | 23.0 (24.1) | 29.4 (82) | Free agent | 2% | 2 / 4 |
+
+## Our injured players
+
+- **Paul George** (BOS): Day-To-Day, Illness; ESPN est. back 15 Nov.
+- **Caleb Wilson** (CHI): Day-To-Day, Right Hand; ESPN est. back 13 Nov.
+- **Jalen Duren** (DET): Out, Right Hamstring Strain; ESPN est. back 24 Nov.
+- **Trey Murphy III** (NO): Out, Knee Tendinitis; ESPN est. back 13 Nov.
+- **Kawhi Leonard** (TOR): Out, Left Knee Inflammation; ESPN est. back 23 Nov.
+- **Scottie Barnes** (TOR): Out, Left Groin Soreness; ESPN est. back 12 Nov.
+
+### Notes
+
+- **Paul George:** next game Sunday (illness) ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/celtics-paul-george-out-wednesday/)). *ESPN est.* 15 Nov.
+- **Caleb Wilson:** right hand injury on 11 Nov; no diagnosis, an update expected Thursday ([ESPN, 11 Nov](https://www.espn.com/nba/story/_/id/50458612/bulls-rookie-caleb-wilson-leaves-game-right-hand-injury)). No timetable reported; *ESPN est.* 13 Nov.
+- **Jalen Duren:** re-evaluated about 22 Nov ([Detroit News, 8 Nov](https://www.detroitnews.com/story/sports/nba/pistons/2026/11/08/pistons-all-star-jalen-duren-out-another-two-weeks-with-hamstring-strain/92677147007/)). *ESPN est.* 24 Nov.
+- **Trey Murphy III:** out 11 Nov; next chance 13 Nov ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-out-again-wednesday/)). No timetable reported; *ESPN est.* 13 Nov.
+- **Kawhi Leonard:** update due about 17 Nov ([Yardbarker, 10 Nov](https://www.yardbarker.com/nba/articles/raptors_announce_kawhi_leonard_will_miss_more_time_as_he_recovers_from_left_knee_injury/s1_16751_44544586)). *ESPN est.* 23 Nov.
+- **Scottie Barnes:** "progressing well", still day-to-day (Rajakovic via [HoopsHype, 11 Nov](https://www.hoopshype.com/story/sports/nba/rumors/2026/11/11/rajakovic-says-that-barnes-groin-is-in-the-process/92734026007/)). No timetable reported; *ESPN est.* 12 Nov.
+
+## Who takes the minutes, team by team
+
+### GS
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Jimmy Butler III | Right Knee Surgery | 02 Jan | 32.4 | 41.6 | Free agent |
+| Kristaps Porzingis | Illness | 02 Jan | 27.7 | 32.3 | Free agent |
+| Moses Moody | Left Knee Surgery | 01 Dec | 25.7 | 24.8 | Free agent |
+| Brandon Williams | Left Hamstring | 22 Nov | 22.2 | 18.8 | Free agent |
+
+Last 10 games: 2 game(s) without them, 8 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Charles Bassey | C | 2 | 18.0 | +6.9 | 0 | **27.0** | 19.1 | 25.0 (4) | 22.2 (8) | 20.7 (10) | Free agent | 1% |
+| De'Anthony Melton | PG/SG | 2 | 26.5 | +4.6 | 0 | **19.5** | 28.6 | 20.8 (4) | 25.2 (8) | 24.7 (12) | Free agent | 8% |
+| Will Richard | SG/SF | 2 | 23.5 | +6.4 | 1 | **15.0** | 11.9 | 15.0 (3) | 12.7 (7) | 12.7 (11) | Free agent | 0% |
+| Al Horford | PF/C | 1 | 21.0 | +3.6 | 1 | **6.0** | 19.9 | 21.8 (4) | 18.0 (7) | 17.0 (10) | Free agent | 1% |
+| Gary Payton II (out, ESPN est. back 13 Nov) | SG | 1 | 20.0 | +7.9 | 0 | **5.0** | 11.0 | 12.0 (2) | 10.8 (6) | 9.9 (10) | Free agent | 0% |
+
+### UTAH
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Lauri Markkanen | Right Hand Fracture | 04 Jan | 34.4 | 32.5 | Waivers |
+| Jaren Jackson Jr. | Right Knee | 14 Dec | 31.4 | 27.0 | Matt Wright's Foxies |
+| Jusuf Nurkic | Right Foot Strain | 20 Nov | 26.4 | 36.7 | Free agent |
+
+Last 10 games: 4 game(s) without them, 6 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Ace Bailey | SF/PF | 4 | 34.5 | +3.2 | 4 | **34.5** | 31.7 | 29.8 (5) | 27.5 (8) | 31.2 (12) | Dr White Slong | 61% |
+| Jaxson Hayes | C | 4 | 28.2 | +6.2 | 4 | **26.8** | 22.2 | 23.0 (5) | 24.2 (8) | 27.4 (11) | Snow Time Lakers | 15% |
+| Brice Sensabaugh | SG/SF | 4 | 17.0 | +3.5 | 0 | **20.2** | 12.0 | 14.0 (5) | 15.1 (8) | 14.6 (12) | Free agent | 1% |
+| Isaiah Collier | PG | 4 | 19.0 | +5.3 | 0 | **16.8** | 13.7 | 13.0 (5) | 13.5 (8) | 15.0 (12) | Free agent | 4% |
+| Kyle Filipowski | PF/C | 2 | 15.0 | +9.2 | 0 | **12.5** | 2.5 | 8.3 (3) | 8.2 (5) | 5.0 (8) | Free agent | 3% |
+
+### OKC
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Jalen Williams | Left Leg Fracture | 02 Mar | 32.8 | 26.3 | Free agent |
+| Chet Holmgren | Right Knee | 02 Jan | 30.0 | 40.0 | Free agent |
+| Cason Wallace | Left Shoulder Surgery | 02 Mar | 26.6 | 18.7 | Free agent |
+
+Last 10 games: 9 game(s) without them, 1 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Aday Mara | C | 9 | 24.1 | +10.1 | 3 | **29.9** | 7.0 | 32.4 (5) | 29.6 (8) | 25.3 (12) | Free agent | 25% |
+| Jared McCain | PG/SG | 9 | 28.1 | +7.1 | 6 | **24.4** | 2.0 | 29.2 (5) | 23.1 (8) | 21.4 (12) | Free agent | 37% |
+| Bennett Stirtz | PG | 9 | 23.2 | +12.2 | 0 | **19.8** | 7.0 | 25.0 (5) | 21.6 (8) | 15.2 (12) | Free agent | 2% |
+| Kenrich Williams | SF | 9 | 23.2 | +16.2 | 8 | **16.8** | 6.0 | 15.8 (5) | 16.9 (8) | 14.3 (12) | Free agent | 1% |
+| Jaylin Williams (out, ESPN est. back 15 Nov) | PF/C | 4 | 23.0 | +18.0 | 1 | **10.8** | -1.0 | — | 7.3 (3) | 9.1 (7) | Free agent | 1% |
+
+### POR
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Ja Morant | Left Hamstring | 01 Dec | 29.5 | 33.8 | Free agent |
+| Shaedon Sharpe | Right Knee Surgery | 02 Mar | 29.4 | 31.2 | Free agent |
+| Vit Krejci | Left Ankle | 12 Jan | 25.7 | 7.0 | Free agent |
+
+Last 10 games: 4 game(s) without them, 6 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Sidy Cissoko | SG | 4 | 25.0 | +3.8 | 2 | **21.0** | 18.8 | 22.4 (5) | 18.1 (9) | 19.2 (11) | Free agent | 1% |
+| Chris Youngblood (out, ESPN est. back 13 Nov) | SG | 3 | 18.3 | +9.7 | 0 | **16.7** | 4.3 | 12.5 (4) | 10.5 (6) | 10.5 (6) | Free agent | 0% |
+| 4703889 |  | 1 | 12.0 | — | 0 | **12.0** | — | — | — | — | — | 0% |
+
+### IND
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Tyrese Haliburton | Left Hamstring Strain | 22 Nov | 33.1 | 53.2 | Lauri Birds |
+| Ben Sheppard | Left Knee | 02 Jan | 21.4 | 5.0 | Free agent |
+| Johnny Furphy | Right Knee Surgery | 02 Jan | 18.3 | 14.2 | Free agent |
+
+Last 10 games: 8 game(s) without them, 2 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Andrew Nembhard | PG/SG | 7 | 33.9 | +3.9 | 7 | **37.3** | 25.0 | 36.8 (4) | 37.0 (7) | 35.3 (10) | Matt Wright's Foxies | 72% |
+| Ivica Zubac | C | 4 | 24.2 | +17.2 | 4 | **26.8** | 6.0 | 26.8 (4) | 26.8 (4) | 26.1 (7) → 29.5 (6) | Lauri Birds | 71% |
+| Aaron Nesmith (day to day, ESPN est. back 13 Nov) | SG/SF | 7 | 27.3 | +7.3 | 7 | **18.4** | 20.0 | 17.5 (4) | 18.3 (7) | 17.7 (10) | Free agent | 4% |
+| Jalen Slawson | SF | 7 | 17.0 | +11.5 | 1 | **15.0** | 2.5 | 11.0 (3) | 15.0 (7) | 13.9 (10) | Free agent | 0% |
+| Braden Smith | PG | 7 | 15.1 | +15.1 | 4 | **14.4** | 0.0 | 13.3 (3) | 14.4 (7) | 12.6 (8) | Free agent | 0% |
+
+### MIN
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Anthony Edwards | Right Knee Surgery | 21 Dec | 35.8 | 52.5 | Melbourne poopoo |
+| Donte DiVincenzo | Right Achilles Surgery | 02 Apr | 30.5 | 29.4 | Free agent |
+
+Last 10 games: 7 game(s) without them, 3 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Ayo Dosunmu | PG/SG | 7 | 34.3 | +9.0 | 7 | **43.9** | 25.0 | 39.7 (3) | 43.9 (7) | 37.3 (11) | Cream Abdul-Yammar | 81% |
+| LaMelo Ball | PG | 7 | 29.4 | +5.8 | 7 | **37.4** | 27.0 | 38.7 (3) | 37.4 (7) | 35.0 (11) | Cream Abdul-Yammar | 100% |
+| Bones Hyland | PG | 7 | 14.7 | +5.4 | 0 | **24.1** | 10.3 | 19.3 (3) | 24.1 (7) | 18.6 (11) | Free agent | 2% |
+| Trey Lyles | PF | 7 | 21.0 | +6.3 | 0 | **18.6** | 14.7 | 24.7 (3) | 18.6 (7) | 15.8 (11) | Free agent | 0% |
+| Jaylen Clark | SG | 7 | 18.6 | +14.6 | 0 | **15.1** | 5.5 | 16.0 (3) | 15.1 (7) | 11.8 (10) | Free agent | 0% |
+
+### CHA
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Kon Knueppel | Left Hamstring Strain | 12 Dec | 34.2 | -2.0 | Free agent |
+| Dennis Schroder | Left Hamstring Strain | 25 Nov | 30.0 | 19.1 | Free agent |
+
+Last 10 games: 2 game(s) without them, 8 with them.
+
+Also out in those games, so part of the gain is theirs: Grant Williams (right hamstring; ESPN est. 12 Nov), Moussa Diabate (right quadriceps; ESPN est. 12 Nov).
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Ryan Kalkbrenner | C | 2 | 28.0 | +10.9 | 2 | **30.0** | 18.9 | 25.7 (3) | 20.4 (7) | 21.5 (11) | Free agent | 3% |
+| Royce O'Neale | SF/PF | 2 | 24.5 | +6.4 | 0 | **22.5** | 9.4 | 18.0 (3) | 15.3 (7) | 12.9 (11) | Free agent | 1% |
+| Tidjane Salaun | PF | 2 | 20.5 | +6.6 | 0 | **19.5** | 13.4 | 17.3 (3) | 13.6 (7) | 14.6 (10) | Free agent | 0% |
+| Hannes Steinbach | PF | 2 | 20.0 | +12.3 | 0 | **18.0** | 4.7 | 18.0 (2) | 9.2 (4) | 10.0 (5) | Free agent | 1% |
+| Liam McNeeley | SF | 2 | 17.5 | +9.5 | 0 | **14.5** | 0.7 | 14.5 (2) | 8.0 (4) | 5.2 (6) | Free agent | 0% |
+
+### LAC
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Bradley Beal | Right Knee Inflammation | 29 Nov | 25.3 | 10.5 | Free agent |
+| Jordan Miller | Left Shoulder Surgery | 02 Mar | 22.0 | 20.4 | Free agent |
+
+Last 10 games: 10 game(s) this season, all without them; compared with ESPN's projection.
+
+Also out in those games, so part of the gain is theirs: Brandon Ingram (right achilles surgery; ESPN est. 13 Nov).
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Kris Dunn | PG/SG | 10 | 28.7 | +6.7 | 10 | **30.7** | 20.0 | 21.7 (3) | 25.0 (7) | 30.5 (10) | Waivers | 38% |
+| Derrick Jones Jr. | SF/PF | 9 | 29.2 | +3.8 | 9 | **27.6** | 21.1 | 27.0 (3) | 27.0 (6) | 27.6 (9) | Free agent | 10% |
+| Kobe Sanders | SG | 10 | 24.3 | — | 2 | **20.4** | — | 13.0 (3) → 20.0 (2) | 21.4 (7) → 25.2 (6) | 20.4 (10) → 22.8 (9) | Free agent | 1% |
+
+### WSH
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Jamir Watkins | Left Knee Surgery | 02 Apr | 20.6 | 19.4 | Free agent |
+| Justin Champagnie | Right Foot | 25 Feb | 20.0 | 25.0 | Free agent |
+
+Last 10 games: 8 game(s) without them, 2 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Kyshawn George | SG/SF | 8 | 35.6 | +3.1 | 8 | **38.5** | 39.5 | 39.8 (5) | 38.0 (8) | 35.1 (12) | Snow Time Lakers | 75% |
+
+### ORL
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Paolo Banchero | Right Ankle Sprain | 22 Nov | 35.2 | 47.0 | Dr White Slong |
+
+Last 10 games: 9 game(s) without them, 1 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Franz Wagner | SF/PF | 9 | 38.1 | +5.1 | 9 | **46.8** | 25.0 | 57.0 (4) | 46.5 (8) | 43.7 (11) | Cream Abdul-Yammar | 93% |
+| Desmond Bane | SG/SF | 8 | 35.8 | +8.8 | 8 | **32.2** | -1.0 | 26.7 (3) | 31.6 (7) | 28.4 (10) → 31.7 (9) | Cream Abdul-Yammar | 90% |
+| Wendell Carter Jr. | C | 9 | 33.6 | +4.6 | 9 | **31.6** | 47.0 | 40.8 (4) | 32.1 (8) | 34.3 (11) | Dr White Slong | 62% |
+| Jase Richardson | SG | 9 | 23.3 | +9.3 | 7 | **15.4** | 12.0 | 16.2 (4) | 16.9 (8) | 15.3 (11) | Free agent | 1% |
+| Jamal Cain (out, ESPN est. back 13 Nov) | SF | 8 | 21.2 | +10.2 | 2 | **15.4** | -3.0 | 19.0 (3) | 16.1 (7) | 11.3 (10) | Free agent | 0% |
+
+### TOR
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Kawhi Leonard | Left Knee Inflammation | 23 Nov | 32.8 | 40.0 | **us** |
+
+Last 10 games: 9 game(s) without them, 1 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Immanuel Quickley | PG/SG | 7 | 32.1 | +3.1 | 7 | **32.4** | 17.0 | 25.0 (2) | 33.0 (6) | 33.0 (9) | Cream Abdul-Yammar | 77% |
+| Ja'Kobe Walter | SG | 9 | 31.6 | +7.6 | 9 | **24.9** | 25.0 | 17.8 (4) | 22.0 (8) | 25.5 (11) | Free agent | 12% |
+| Collin Murray-Boyles | PF | 8 | 22.8 | +4.8 | 4 | **22.2** | 22.0 | 27.3 (3) | 23.4 (7) | 23.0 (10) | Free agent | 14% |
+| Alijah Martin | SG | 8 | 13.9 | +12.9 | 0 | **17.0** | 0.0 | 24.5 (4) | 18.6 (7) | 13.5 (10) | Free agent | 0% |
+| Jamison Battle | SF | 9 | 20.4 | +8.4 | 0 | **14.7** | 11.0 | 16.0 (4) | 15.5 (8) | 15.1 (11) | Free agent | 0% |
+
+### DET
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Jalen Duren | Right Hamstring Strain | 24 Nov | 31.0 | 33.5 | **us** |
+
+Last 10 games: 8 game(s) without them, 2 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Duncan Robinson | SG/SF | 8 | 31.6 | +3.6 | 8 | **33.4** | 29.5 | 30.7 (3) | 33.6 (7) | 32.6 (10) | Team Nic Kerr | 61% |
+| Paul Reed | PF/C | 8 | 27.1 | +5.6 | 7 | **31.8** | 33.5 | 24.3 (3) | 32.4 (7) | 31.7 (10) | Lauri Birds | 37% |
+| Daniss Jenkins | PG | 8 | 27.8 | +9.2 | 2 | **29.9** | 21.0 | 40.0 (3) | 27.9 (7) | 28.1 (10) | Free agent | 21% |
+| Kevin Huerter | SG/SF | 8 | 24.1 | +5.1 | 0 | **25.0** | 13.0 | 37.0 (3) | 26.0 (7) | 22.5 (10) | Free agent | 4% |
+| Ronald Holland II | SF/PF | 8 | 16.2 | +3.8 | 0 | **15.5** | 16.0 | 7.7 (3) | 13.9 (7) | 15.6 (10) | Free agent | 1% |
+
+### MEM
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Scotty Pippen Jr. | Back Soreness | 21 Nov | 25.1 | 14.2 | Free agent |
+
+Last 10 games: 6 game(s) without them, 4 with them.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Javon Small | PG | 4 | 20.0 | — | 0 | **16.2** | — | 17.0 (3) | 16.2 (4) | 16.2 (4) | Free agent | 0% |
+| Kris Murray | PF | 5 | 13.8 | +5.8 | 0 | **9.0** | 5.0 | 5.7 (3) | 7.7 (6) | 7.9 (7) | Free agent | 0% |
+
+### PHX
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Mark Williams | Left Shoulder Surgery | 03 Feb | 24.9 | 31.9 | Free agent |
+
+Last 10 games: 10 game(s) this season, all without them; compared with ESPN's projection.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Jordan Goodwin | PG/SG | 6 | 18.0 | — | 0 | **26.7** | — | 38.0 (1) | 29.3 (3) | 26.7 (6) | Free agent | 2% |
+
+### SAC
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Ben Simmons | Right Achilles Surgery | 01 Oct | 21.2 | — | Free agent |
+
+Last 10 games: 10 game(s) this season, all without them; compared with ESPN's projection.
+
+Also out in those games, so part of the gain is theirs: Maxime Raynaud (right knee dislocated; ESPN est. 15 Nov).
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Darius Acuff Jr. | PG | 10 | 37.5 | +6.9 | 10 | **45.0** | 30.4 | 49.2 (4) | 47.0 (8) | 41.4 (11) → 44.6 (10) | Team Nic Kerr | 89% |
+| Dylan Cardwell | C | 4 | 18.8 | — | 1 | **21.8** | — | 21.8 (4) | 21.8 (4) | 21.8 (4) | Free agent | 1% |
+| De'Andre Hunter | SF/PF | 9 | 32.8 | +5.2 | 9 | **20.8** | 23.9 | 18.3 (3) | 23.1 (7) | 19.5 (10) | Free agent | 5% |
+| Leaky Black | SF | 7 | 19.0 | — | 1 | **19.1** | — | 20.8 (4) | 22.3 (6) | 19.1 (7) | Free agent | 1% |
+| Jonathan Mogbo | PF | 4 | 15.8 | +3.2 | 0 | **13.8** | 11.3 | 0.0 (1) | 12.3 (3) | 10.6 (5) | Free agent | 0% |
+
+### DEN
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Julian Strawther | Left Knee Sprain | 29 Nov | 16.0 | 12.9 | Free agent |
+
+Last 10 games: 10 game(s) this season, all without them; compared with ESPN's projection.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Christian Braun | SG/SF | 10 | 34.3 | +6.8 | 10 | **29.5** | 23.1 | 23.0 (4) | 31.1 (7) | 29.5 (10) | Free agent | 36% |
+| Trevon Brazile | SF/PF | 10 | 19.6 | — | 1 | **19.1** | — | 15.0 (4) | 18.6 (7) | 19.1 (10) | Free agent | 2% |
+| Spencer Jones | SF/PF | 3 | 19.0 | — | 0 | **13.3** | — | 13.3 (3) | 13.3 (3) | 13.3 (3) | Free agent | 1% |
+| Bryce Hopkins | SF | 7 | 14.3 | — | 2 | **9.0** | — | 12.3 (3) | 8.5 (4) | 9.0 (7) | Free agent | 0% |
+
+### ATL
+
+| Out | Injury | ESPN est. | Min left | Season FP/g | League |
+|---|---|---|---:|---:|---|
+| Mouhamed Gueye | Left Foot Fracture | 20 Nov | 15.4 | 15.3 | Free agent |
+
+Last 10 games: 10 game(s) this season, all without them; compared with ESPN's projection.
+
+| Replacement | Pos | Games | Min without | Δ min | Starts | FP/g without | Baseline FP/g | L7 | L15 | L30 | League | Owned |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| Aaron Wiggins | SG/SF | 10 | 25.8 | +5.5 | 0 | **27.6** | 19.2 | 32.0 (4) | 26.5 (8) | 28.2 (12) | Free agent | 39% |
+| Jock Landale | C | 6 | 14.0 | — | 0 | **12.8** | — | 17.0 (1) | 13.0 (4) → 17.3 (3) | 16.5 (8) → 18.9 (7) | Free agent | 0% |
+
+## Every injury
+
+All 97 players in ESPN's injury feed, longest expected absence first.
+
+| Player | NBA | Status | Injury | ESPN est. | Days | League |
+|---|---|---|---|---|---:|---|
+| Ben Simmons | SAC | Out | Right Achilles Surgery | 01 Oct | 323 | Free agent |
+| Ariel Hukporti | PHI | Out | Right Achilles Surgery | 01 Oct | 323 | Free agent |
+| Henri Veesaar | ATL | Out | Right Knee | 01 Jul | 231 | Free agent |
+| Jamir Watkins | WSH | Out | Left Knee Surgery | 02 Apr | 141 | Free agent |
+| Donte DiVincenzo | MIN | Out | Right Achilles Surgery | 02 Apr | 141 | Free agent |
+| Shaedon Sharpe | POR | Out | Right Knee Surgery | 02 Mar | 110 | Free agent |
+| Jordan Miller | LAC | Out | Left Shoulder Surgery | 02 Mar | 110 | Free agent |
+| Jalen Williams | OKC | Out | Left Leg Fracture | 02 Mar | 110 | Free agent |
+| Cason Wallace | OKC | Out | Left Shoulder Surgery | 02 Mar | 110 | Free agent |
+| Justin Champagnie | WSH | Out | Right Foot | 25 Feb | 105 | Free agent |
+| Mark Williams | PHX | Out | Left Shoulder Surgery | 03 Feb | 83 | Free agent |
+| Vit Krejci | POR | Out | Left Ankle | 12 Jan | 61 | Free agent |
+| Lauri Markkanen | UTAH | Out | Right Hand Fracture | 04 Jan | 53 | Waivers |
+| Kristaps Porzingis | GS | Out | Illness | 02 Jan | 51 | Free agent |
+| Johnny Furphy | IND | Out | Right Knee Surgery | 02 Jan | 51 | Free agent |
+| Jimmy Butler III | GS | Out | Right Knee Surgery | 02 Jan | 51 | Free agent |
+| Chet Holmgren | OKC | Out | Right Knee | 02 Jan | 51 | Free agent |
+| Ben Sheppard | IND | Out | Left Knee | 02 Jan | 51 | Free agent |
+| Anthony Edwards | MIN | Out | Right Knee Surgery | 21 Dec | 39 | Melbourne poopoo |
+| Jaren Jackson Jr. | UTAH | Out | Right Knee | 14 Dec | 32 | Matt Wright's Foxies |
+| Kon Knueppel | CHA | Out | Left Hamstring Strain | 12 Dec | 30 | Free agent |
+| Reece Beekman | WSH | Out | Shoulder | 03 Dec | 21 | Free agent |
+| Jayden Quaintance | SA | Out | Right Knee Surgery | 03 Dec | 21 | Free agent |
+| Richie Saunders | MEM | Out | Right Knee Surgery | 01 Dec | 19 | Free agent |
+| Moses Moody | GS | Out | Left Knee Surgery | 01 Dec | 19 | Free agent |
+| Ja Morant | POR | Out | Left Hamstring | 01 Dec | 19 | Free agent |
+| Julian Strawther | DEN | Out | Left Knee Sprain | 29 Nov | 17 | Free agent |
+| Bradley Beal | LAC | Out | Right Knee Inflammation | 29 Nov | 17 | Free agent |
+| Dennis Schroder | CHA | Out | Left Hamstring Strain | 25 Nov | 13 | Free agent |
+| Jalen Duren | DET | Out | Right Hamstring Strain | 24 Nov | 12 | **us** |
+| Kawhi Leonard | TOR | Out | Left Knee Inflammation | 23 Nov | 11 | **us** |
+| Tyrese Haliburton | IND | Out | Left Hamstring Strain | 22 Nov | 10 | Lauri Birds |
+| Paolo Banchero | ORL | Out | Right Ankle Sprain | 22 Nov | 10 | Dr White Slong |
+| Brandon Williams | GS | Out | Left Hamstring | 22 Nov | 10 | Free agent |
+| Scotty Pippen Jr. | MEM | Out | Back Soreness | 21 Nov | 9 | Free agent |
+| Mouhamed Gueye | ATL | Out | Left Foot Fracture | 20 Nov | 8 | Free agent |
+| Jusuf Nurkic | UTAH | Out | Right Foot Strain | 20 Nov | 8 | Free agent |
+| Tobias Harris | SA | Out | Left Calf Strain | 19 Nov | 7 | Free agent |
+| Tarik Biberovic | DAL | Out | Right Heel Inflammation | 18 Nov | 6 | Free agent |
+| Sergio de Larrea | DAL | Out | Right Knee Strain | 18 Nov | 6 | Free agent |
+| Noah Penda | ORL | Out | Right Hamstring Strain | 18 Nov | 6 | Free agent |
+| Izaiyah Nelson | ORL | Out | Left Ankle Surgery | 18 Nov | 6 | Free agent |
+| Dominick Barlow | PHI | Out | Back Fracture | 18 Nov | 6 | Free agent |
+| Dereck Lively II | DAL | Out | Right Foot Surgery | 18 Nov | 6 | Free agent |
+| Adem Bona | PHI | Out | Back Sprain | 18 Nov | 6 | Free agent |
+| Yanic Konan Niederhauser | LAC | Out | Right Foot Surgery | 17 Nov | 5 | Free agent |
+| Isaiah Joe | DET | Out | Right Hip Bruise | 17 Nov | 5 | Free agent |
+| Yves Missi | NO | Out | Left Knee Bruise | 16 Nov | 4 | Free agent |
+| Tristan Vukcevic | WSH | Out | Left Hip Pinched Nerve | 16 Nov | 4 | Free agent |
+| Sam Merrill | CLE | Out | Right Elbow | 16 Nov | 4 | Free agent |
+| Jonathan Isaac | ORL | Out | Left Knee | 16 Nov | 4 | Free agent |
+| Jalen Suggs | ORL | Out | Right Knee | 16 Nov | 4 | Free agent |
+| Steven Adams | HOU | Out | Right Calf Strain | 15 Nov | 3 | Free agent |
+| Quentin Grimes | LAL | Out | Finger | 15 Nov | 3 | Free agent |
+| Paul George | BOS | Day-To-Day | Illness | 15 Nov | 3 | **us** |
+| Nate Bittle | TOR | Out | Right Foot Fracture | 15 Nov | 3 | — |
+| Maxime Raynaud | SAC | Out | Right Knee Dislocated | 15 Nov | 3 | Free agent |
+| Luka Doncic | LAL | Day-To-Day | Right Ankle | 15 Nov | 3 | Team Nic Kerr |
+| Jaylin Williams | OKC | Out | Back Spasms | 15 Nov | 3 | Free agent |
+| Collin Sexton | LAL | Day-To-Day | Head | 15 Nov | 3 | Free agent |
+| Clint Capela | HOU | Out | Right Ankle Sprain | 15 Nov | 3 | Free agent |
+| Brandon Miller | CHA | Out | Right Groin Soreness | 15 Nov | 3 | Matt Wright's Foxies |
+| Austin Reaves | LAL | Day-To-Day | Left Heel | 15 Nov | 3 | Cream Abdul-Yammar |
+| Nolan Traore | BKN | Out | Right Calf Soreness | 14 Nov | 2 | Free agent |
+| Mikel Brown Jr. | BKN | Out | Illness | 14 Nov | 2 | Free agent |
+| Ugonna Onyenso | DET | Day-To-Day | Left Foot | 13 Nov | 1 | Free agent |
+| Tristan da Silva | ORL | Out | Left Calf Strain | 13 Nov | 1 | Free agent |
+| Trey Murphy III | NO | Out | Knee Tendinitis | 13 Nov | 1 | **us** |
+| Trendon Watford | NO | Out | Right Ankle Sprain | 13 Nov | 1 | Free agent |
+| Tobe Awaka | CHI | Out | Back | 13 Nov | 1 | Free agent |
+| Thomas Sorber | OKC | Out | Knee | 13 Nov | 1 | Free agent |
+| Stephen Curry | GS | Day-To-Day | Right Abdomen Soreness | 13 Nov | 1 | Lauri Birds |
+| Ryan Rollins | MIL | Day-To-Day | Head | 13 Nov | 1 | Free agent |
+| Quinten Post | MEM | Out | Head | 13 Nov | 1 | Free agent |
+| Precious Achiuwa | SAC | Day-To-Day | Left Lower Leg Bruise | 13 Nov | 1 | Waivers |
+| Norman Powell | CHI | Out | Right Shoulder Inflammation | 13 Nov | 1 | Free agent |
+| Myles Turner | MIL | Out | Rest | 13 Nov | 1 | Free agent |
+| Keshon Gilbert | ATL | Out | Left Knee Inflammation | 13 Nov | 1 | — |
+| Jamal Cain | ORL | Out | Left Shoulder Bruise | 13 Nov | 1 | Free agent |
+| Gary Payton II | GS | Out | Left Knee Inflammation | 13 Nov | 1 | Free agent |
+| Devin Vassell | SA | Out | Left Groin | 13 Nov | 1 | Free agent |
+| Dailyn Swain | CHI | Out | Right Back | 13 Nov | 1 | Free agent |
+| Chris Youngblood | POR | Out | Right Foot Bruise | 13 Nov | 1 | Free agent |
+| Cam Christie | LAC | Day-To-Day | Ankle | 13 Nov | 1 | Free agent |
+| Caleb Wilson | CHI | Day-To-Day | Right Hand | 13 Nov | 1 | **us** |
+| Brandon Ingram | LAC | Out | Right Achilles Surgery | 13 Nov | 1 | Melbourne poopoo |
+| Bennedict Mathurin | NO | Out | Right Thumb Sprain | 13 Nov | 1 | Free agent |
+| Asa Newell | ATL | Out | Left Toe | 13 Nov | 1 | Free agent |
+| Ajay Mitchell | OKC | Out | Left Ankle | 13 Nov | 1 | Lauri Birds |
+| Aaron Nesmith | IND | Day-To-Day | Right Knee Soreness | 13 Nov | 1 | Free agent |
+| Trayce Jackson-Davis | TOR | Day-To-Day | Illness | 12 Nov | 0 | Free agent |
+| Scottie Barnes | TOR | Out | Left Groin Soreness | 12 Nov | 0 | **us** |
+| Moussa Diabate | CHA | Day-To-Day | Right Quadriceps | 12 Nov | 0 | Team Nic Kerr |
+| Morez Johnson Jr. | DAL | Day-To-Day | Left Lower Leg Bruise | 12 Nov | 0 | Free agent |
+| LeBron James | PHI | Day-To-Day | Back | 12 Nov | 0 | Cream Abdul-Yammar |
+| Joel Embiid | PHI | Day-To-Day | Right Foot | 12 Nov | 0 | Dr White Slong |
+| Grant Williams | CHA | Out | Right Hamstring | 12 Nov | 0 | Free agent |
+
+## Sources
+
+- ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-12 06:05 UTC.
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/sidy-cissoko-scores-season-high-17-points-vs-okc)
+- [BasketUSA, 11 Nov](https://www.basketusa.com/news/956549/pourquoi-sidy-cissoko-sinstalle-dans-le-cinq-des-blazers/)
+- [NBA.com, 30 Oct](https://www.nba.com/news/ja-morant-hamstring-injury-october-2026)
+- [Rip City Project, 11 Nov](https://ripcityproject.com/sidy-cissoko-proving-micah-nori-right-start-over-scoot-henderson)
+- [Hoops Rumors, 11 Nov](https://www.hoopsrumors.com/2026/11/vit-krejci-undergoes-ankle-surgery-out-minimum-of-eight-weeks.html)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-moussa-diabate-probable-for-thursday/)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/grant-williams-hamstring-probable-thursday)
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909975)
+- [Oklahoman via Yahoo, 11 Nov](https://sports.yahoo.com/articles/ajay-mitchell-injury-okc-thunder-213000690.html)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/isaiah-joe-hip-remains-out-thursday-vs-was)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/raptors-start-quickley-walter-rj-collin-poeltl)
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909968)
+- [Kings Herald, 11 Nov](https://kingsherald.com/articles/sacramento-kings-sign-mason-plumlee/)
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909974)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bucks-ryan-rollins-exits-to-locker-room-wednesday/)
+- [RotoWire, 11 Nov](https://www.rotowire.com/basketball/headlines/collin-sexton-injury-doesnt-return-wednesday-538719)
+- [Yahoo, 11 Nov](https://sports.yahoo.com/articles/tiago-splitter-sets-target-date-012935039.html)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/devin-vassell-groin-downgraded-to-out-wednesday)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/nolan-traore-calf-downgraded-to-out-wednesday)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/tristan-da-silva-will-miss-game-against-jazz)
+- [Basketnews, 12 Nov](https://basketnews.com/news-259304-jj-redick-drops-huge-quentin-grimes-injury-update-as-lakers-guard-still-out.html)
+- [Sactown Sports, 10 Nov](https://sactownsports.com/nba/sacramento-kings/magic-loss)
+- [Jazz, 6 Nov](https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-2)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/celtics-paul-george-out-wednesday/)
+- [ESPN, 11 Nov](https://www.espn.com/nba/story/_/id/50458612/bulls-rookie-caleb-wilson-leaves-game-right-hand-injury)
+- [Detroit News, 8 Nov](https://www.detroitnews.com/story/sports/nba/pistons/2026/11/08/pistons-all-star-jalen-duren-out-another-two-weeks-with-hamstring-strain/92677147007/)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-out-again-wednesday/)
+- [Yardbarker, 10 Nov](https://www.yardbarker.com/nba/articles/raptors_announce_kawhi_leonard_will_miss_more_time_as_he_recovers_from_left_knee_injury/s1_16751_44544586)
+- [HoopsHype, 11 Nov](https://www.hoopshype.com/story/sports/nba/rumors/2026/11/11/rajakovic-says-that-barnes-groin-is-in-the-process/92734026007/)
