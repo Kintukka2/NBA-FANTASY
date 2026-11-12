@@ -62,7 +62,6 @@ Josh Hart
 VJ Edgecombe
 Zion Williamson
 RJ Barrett
-Caleb Wilson
 Joel Embiid
 Alex Sarr
 Brandin Podziemski
@@ -112,3 +111,4 @@ Fred VanVleet
 P.J. Washington
 Daniss Jenkins
 Nic Claxton
+Daniel Gafford
