@@ -5,6 +5,13 @@
 - **Team he left:** his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). **Team he joined:** long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.
 - **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.
 
+## What it means for us
+
+- **Pickups:** none. Nique Clifford is a deep-league bench wing.
+- **Threats to our players:** none. Hartenstein played 34 min on 11 Nov.
+- **Overrides:** none.
+- **Other trades (11–12 Nov):** none found.
+
 ## Summary
 
 | Date | Player | From → To | Role before | Role since | Rate | League |
@@ -60,8 +67,18 @@
 
 ### Research
 
-- _pending_
+- **11 Nov (OKC 108–118 at POR):** Clifford played 16 min off the bench: 5 pts, 3 reb, 1 ast ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909975); [AP via KRMG, 11 Nov](https://krmg.com/2026/11/11/trail-blazers-sweep-the-thunder-with-a-118-108-win/)). Two OKC games (20 and 16 min): a small sample. Daigneault calls him "a plug-in guy" who defends several positions, with no minutes figure ([Yahoo, 11 Nov](https://sports.yahoo.com/articles/okc-thunder-mark-daigneault-talks-213749018.html)).
+- **The team he joined:** Ajay Mitchell sat 11 Nov with a left ankle sprain, no timetable reported ([Oklahoman via Yahoo, 11 Nov](https://sports.yahoo.com/articles/ajay-mitchell-injury-okc-thunder-213000690.html); [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-ajay-mitchell-dealing-with-left-ankle-sprain/)). OKC started McCain, SGA, Caruso, Mara and Hartenstein; **Hartenstein played 34 min (20 pts on 10-14, 11 reb, 6 ast)** and Mara 32. Clifford's minutes went down; the guard minutes went to Bennett Stirtz and Micah Peavy.
+- **Verdict:** opportunity unchanged for Clifford (a deep-league bench wing); no threat to Hartenstein or Mara.
+- **Other trades:** none found through 12 Nov; only signings and two-way moves ([Hoops Rumors](https://www.hoopsrumors.com/transactions)). Warriors–Bucks (Porzingis–Turner): still no agreement; Milwaukee wants picks ([SB Nation via Yahoo, 10 Nov](https://sports.yahoo.com/articles/warriors-no-urgency-trade-porzingis-023321044.html)).
 
 ## Sources
 
 - ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-12 06:05 UTC.
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909975)
+- [AP via KRMG, 11 Nov](https://krmg.com/2026/11/11/trail-blazers-sweep-the-thunder-with-a-118-108-win/)
+- [Yahoo, 11 Nov](https://sports.yahoo.com/articles/okc-thunder-mark-daigneault-talks-213749018.html)
+- [Oklahoman via Yahoo, 11 Nov](https://sports.yahoo.com/articles/ajay-mitchell-injury-okc-thunder-213000690.html)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-ajay-mitchell-dealing-with-left-ankle-sprain/)
+- [Hoops Rumors](https://www.hoopsrumors.com/transactions)
+- [SB Nation via Yahoo, 10 Nov](https://sports.yahoo.com/articles/warriors-no-urgency-trade-porzingis-023321044.html)

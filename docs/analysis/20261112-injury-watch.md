@@ -10,6 +10,30 @@
 - **Games** is games left this week (09 Nov–15 Nov) / next week (16 Nov–22 Nov).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
+## Shortlist
+
+| Player | Opening (reported / ESPN) | FP/g without | L7 | L15 | L30 | Games (this wk / next) |
+|---|---|---:|---:|---:|---:|---|
+| **Aday Mara** (OKC) | Holmgren 8–10 wks from 30 Oct / 2 Jan; Mitchell ankle, no timetable | 29.9 | 32.4 (5) | 29.6 (8) | 25.3 (12) | 2 / 3 |
+| **Daniss Jenkins** (DET) | Duren re-evaluated ~22 Nov / 24 Nov | 29.9 | 40.0 (3) | 27.9 (7) | 28.1 (10) | 2 / 4 |
+| **Christian Braun** (DEN) | Strawther ~25 Nov / 29 Nov | 29.5 | 23.0 (4) | 31.1 (7) | 29.5 (10) | 1 / 4 |
+| **Jared McCain** (OKC) | as Mara | 24.4 | 29.2 (5) | 23.1 (8) | 21.4 (12) | 2 / 3 |
+
+**Notes on the list:**
+- **Kalkbrenner:** dropped. His opening ends as Diabaté returns.
+- **Braun:** his L7 is 6.5 under his season, from poor shooting while playing through a calf contusion and an illness (yesterday's notes).
+- **Stash candidates:** as yesterday, Markkanen (waivers; re-evaluated about 9 Dec) and Suggs (week-to-week). Our IR slot is taken by Duren.
+
+The add/drop call is yours, or the council's (`/council`).
+
+## Since the last Injury Watch (11 Nov)
+
+- **Pickups joined:** Sidy Cissoko.
+- **Pickups left:** Quenton Jackson.
+- **Back soon, joined:** Ryan Rollins, Collin Sexton.
+- **Back soon, left:** Jaylon Tyson (returned), Collin Murray-Boyles (played 11 Nov), T.J. McConnell, Isaiah Stewart.
+- **Absences:** Lauri Markkanen is now on waivers. Vit Krejci had ankle surgery.
+
 ## Pickups for us
 
 Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
@@ -37,6 +61,20 @@ Our five lowest current FP/g: Jrue Holiday 29.5 (L7 23.0), Dejounte Murray 30.6 
 | **De'Andre Hunter** | SAC | Ben Simmons (01 Oct); also out: Maxime Raynaud (15 Nov) | 9 | 32.8 | +5.2 | **20.8** | 19.5 | 18.3 (3) | 23.1 (7) | 19.5 (10) | Free agent | 5% | 2 / 3 |
 | **Kobe Sanders** | LAC | Bradley Beal (29 Nov), Jordan Miller (02 Mar); also out: Brandon Ingram (13 Nov) | 10 | 24.3 | — | **20.4** | 20.4 | 13.0 (3) → 20.0 (2) | 21.4 (7) → 25.2 (6) | 20.4 (10) → 22.8 (9) | Free agent | 1% | 2 / 3 |
 
+### Notes
+
+Yesterday's notes still hold for each team's absentees and the pickups' roles ([20261111-injury-watch.md](20261111-injury-watch.md)). What is new since then:
+
+- **Sidy Cissoko** (POR, new): started both nights against OKC, with 33 min and 17 pts, then 29 min and 19 pts. Nori moved Scoot Henderson to the second unit and wants Cissoko's size on the lead guard ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/sidy-cissoko-scores-season-high-17-points-vs-okc); [BasketUSA, 11 Nov](https://www.basketusa.com/news/956549/pourquoi-sidy-cissoko-sinstalle-dans-le-cinq-des-blazers/)).
+  - Ja Morant (grade 2 hamstring) is re-evaluated about 27 Nov ([NBA.com, 30 Oct](https://www.nba.com/news/ja-morant-hamstring-injury-october-2026)); *ESPN est.* 1 Dec. He takes the start back on his return ([Rip City Project, 11 Nov](https://ripcityproject.com/sidy-cissoko-proving-micah-nori-right-start-over-scoot-henderson)).
+  - Vit Krejci had ankle surgery and is re-evaluated in eight weeks ([Hoops Rumors, 11 Nov](https://www.hoopsrumors.com/2026/11/vit-krejci-undergoes-ankle-surgery-out-minimum-of-eight-weeks.html)); *ESPN est.* 12 Jan.
+- **Ryan Kalkbrenner** and **Royce O'Neale** (CHA): both openings are closing. Moussa Diabaté and Grant Williams are probable for 12 Nov at PHX, and Diabaté's return "would reduce the minutes available to Ryan Kalkbrenner" ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-moussa-diabate-probable-for-thursday/); [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/grant-williams-hamstring-probable-thursday)). The "without" rates rest on 2 games, a small sample.
+- **Aday Mara** and **Jared McCain** (OKC): both started 11 Nov, Mara for 32 min and McCain for 31 ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909975)). Ajay Mitchell sat with a left ankle sprain, no timetable reported ([Oklahoman via Yahoo, 11 Nov](https://sports.yahoo.com/articles/ajay-mitchell-injury-okc-thunder-213000690.html)).
+- **Kevin Huerter** and **Daniss Jenkins** (DET): Isaiah Joe is out again on 12 Nov, and Huerter and Javonte Green take his minutes ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/isaiah-joe-hip-remains-out-thursday-vs-was)). No timetable reported; *ESPN est.* 17 Nov.
+- **Ja'Kobe Walter** and **Collin Murray-Boyles** (TOR): Immanuel Quickley returned and started on 11 Nov ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/raptors-start-quickley-walter-rj-collin-poeltl)). Walter started (35 min, 17 pts); Murray-Boyles started after his illness (20 min) ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909968)).
+- **Dylan Cardwell** (SAC): the Kings signed Mason Plumlee "to add size up front" ([Kings Herald, 11 Nov](https://kingsherald.com/articles/sacramento-kings-sign-mason-plumlee/)).
+- **Charles Bassey** (GS): 13 min off the bench at HOU ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909974)).
+
 ## Injured and available, back soon
 
 Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g on their current, projected or last-season average.
@@ -62,6 +100,24 @@ Free agents and waiver players ESPN expects back within 14 days, worth 25+ FP/g 
 | **Dereck Lively II** | DAL | Right Foot Surgery | 18 Nov | 6 | — | — | — | — | 27.4 | 21.3 | Free agent | 5% | 3 / 3 |
 | **Nolan Traore** | BKN | Right Calf Soreness | 14 Nov | 2 | 26.6 | 35.3 (3) | 32.0 (7) | 26.6 (10) → 29.2 (9) | 21.6 | 17.5 | Free agent | 14% | 1 / 3 |
 | **Tristan da Silva** | ORL | Left Calf Strain | 13 Nov | 1 | 25.9 | 26.5 (2) | 25.8 (6) | 25.9 (9) | 17.2 | 21.2 | Free agent | 11% | 1 / 4 |
+
+### Notes
+
+- **New:**
+  - **Ryan Rollins** (MIL): left 11 Nov after a head collision; no diagnosis and no timetable reported ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bucks-ryan-rollins-exits-to-locker-room-wednesday/)); *ESPN est.* 13 Nov.
+  - **Collin Sexton** (LAL): stitches from the same collision, expected Sunday ([RotoWire, 11 Nov](https://www.rotowire.com/basketball/headlines/collin-sexton-injury-doesnt-return-wednesday-538719)); *ESPN est.* 15 Nov.
+- **Norman Powell** (CHI): back spasms, "70%", expected back 13 Nov ([Yahoo, 11 Nov](https://sports.yahoo.com/articles/tiago-splitter-sets-target-date-012935039.html)); *ESPN est.* 13 Nov.
+- **Devin Vassell** (SA): out 11 Nov, his second straight game; no timetable reported ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/devin-vassell-groin-downgraded-to-out-wednesday)); *ESPN est.* 13 Nov.
+- **Nolan Traore** (BKN): out 11 Nov with a calf injury, no timetable reported ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/nolan-traore-calf-downgraded-to-out-wednesday)); *ESPN est.* 14 Nov.
+- **Tristan da Silva** (ORL): out 11 Nov, his second straight game ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/tristan-da-silva-will-miss-game-against-jazz)); *ESPN est.* 13 Nov.
+- **Quentin Grimes** (LAL): assessed before 15 Nov ([Basketnews, 12 Nov](https://basketnews.com/news-259304-jj-redick-drops-huge-quentin-grimes-injury-update-as-lakers-guard-still-out.html)); *ESPN est.* 15 Nov.
+- **Overrides:**
+  - Yves Missi: no timetable; override floor 18 Nov.
+  - Maxime Raynaud: re-evaluated "next week" ([Sactown Sports, 10 Nov](https://sactownsports.com/nba/sacramento-kings/magic-loss)); override floor 16 Nov.
+  - Jusuf Nurkic: re-evaluated about 20 Nov ([Jazz, 6 Nov](https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-2)); override floor 21 Nov.
+- **Dereck Lively II:** *ESPN est.* moved to 18 Nov, but there is no new report; no timetable reported.
+- **Jaylon Tyson:** returned on 11 Nov and has left the table.
+- **No new reports:** Myles Turner (rest only), Mathurin, Suggs, Tobias Harris, Pippen Jr., Achiuwa. Their timelines are in yesterday's notes.
 
 ## Yet to play this season
 
@@ -89,6 +145,15 @@ Injured players with no game yet this season, worth 25+ FP/g on ESPN's projectio
 - **Trey Murphy III** (NO): Out, Knee Tendinitis; ESPN est. back 13 Nov.
 - **Kawhi Leonard** (TOR): Out, Left Knee Inflammation; ESPN est. back 23 Nov.
 - **Scottie Barnes** (TOR): Out, Left Groin Soreness; ESPN est. back 12 Nov.
+
+### Notes
+
+- **Paul George:** next game Sunday (illness) ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/celtics-paul-george-out-wednesday/)). *ESPN est.* 15 Nov.
+- **Caleb Wilson:** right hand injury on 11 Nov; no diagnosis, an update expected Thursday ([ESPN, 11 Nov](https://www.espn.com/nba/story/_/id/50458612/bulls-rookie-caleb-wilson-leaves-game-right-hand-injury)). No timetable reported; *ESPN est.* 13 Nov.
+- **Jalen Duren:** re-evaluated about 22 Nov ([Detroit News, 8 Nov](https://www.detroitnews.com/story/sports/nba/pistons/2026/11/08/pistons-all-star-jalen-duren-out-another-two-weeks-with-hamstring-strain/92677147007/)). *ESPN est.* 24 Nov.
+- **Trey Murphy III:** out 11 Nov; next chance 13 Nov ([CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-out-again-wednesday/)). No timetable reported; *ESPN est.* 13 Nov.
+- **Kawhi Leonard:** update due about 17 Nov ([Yardbarker, 10 Nov](https://www.yardbarker.com/nba/articles/raptors_announce_kawhi_leonard_will_miss_more_time_as_he_recovers_from_left_knee_injury/s1_16751_44544586)). *ESPN est.* 23 Nov.
+- **Scottie Barnes:** "progressing well", still day-to-day (Rajakovic via [HoopsHype, 11 Nov](https://www.hoopshype.com/story/sports/nba/rumors/2026/11/11/rajakovic-says-that-barnes-groin-is-in-the-process/92734026007/)). No timetable reported; *ESPN est.* 12 Nov.
 
 ## Who takes the minutes, team by team
 
@@ -473,3 +538,32 @@ All 97 players in ESPN's injury feed, longest expected absence first.
 ## Sources
 
 - ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-12 06:05 UTC.
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/sidy-cissoko-scores-season-high-17-points-vs-okc)
+- [BasketUSA, 11 Nov](https://www.basketusa.com/news/956549/pourquoi-sidy-cissoko-sinstalle-dans-le-cinq-des-blazers/)
+- [NBA.com, 30 Oct](https://www.nba.com/news/ja-morant-hamstring-injury-october-2026)
+- [Rip City Project, 11 Nov](https://ripcityproject.com/sidy-cissoko-proving-micah-nori-right-start-over-scoot-henderson)
+- [Hoops Rumors, 11 Nov](https://www.hoopsrumors.com/2026/11/vit-krejci-undergoes-ankle-surgery-out-minimum-of-eight-weeks.html)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-moussa-diabate-probable-for-thursday/)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/grant-williams-hamstring-probable-thursday)
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909975)
+- [Oklahoman via Yahoo, 11 Nov](https://sports.yahoo.com/articles/ajay-mitchell-injury-okc-thunder-213000690.html)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/isaiah-joe-hip-remains-out-thursday-vs-was)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/raptors-start-quickley-walter-rj-collin-poeltl)
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909968)
+- [Kings Herald, 11 Nov](https://kingsherald.com/articles/sacramento-kings-sign-mason-plumlee/)
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909974)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bucks-ryan-rollins-exits-to-locker-room-wednesday/)
+- [RotoWire, 11 Nov](https://www.rotowire.com/basketball/headlines/collin-sexton-injury-doesnt-return-wednesday-538719)
+- [Yahoo, 11 Nov](https://sports.yahoo.com/articles/tiago-splitter-sets-target-date-012935039.html)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/devin-vassell-groin-downgraded-to-out-wednesday)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/nolan-traore-calf-downgraded-to-out-wednesday)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/tristan-da-silva-will-miss-game-against-jazz)
+- [Basketnews, 12 Nov](https://basketnews.com/news-259304-jj-redick-drops-huge-quentin-grimes-injury-update-as-lakers-guard-still-out.html)
+- [Sactown Sports, 10 Nov](https://sactownsports.com/nba/sacramento-kings/magic-loss)
+- [Jazz, 6 Nov](https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-2)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/celtics-paul-george-out-wednesday/)
+- [ESPN, 11 Nov](https://www.espn.com/nba/story/_/id/50458612/bulls-rookie-caleb-wilson-leaves-game-right-hand-injury)
+- [Detroit News, 8 Nov](https://www.detroitnews.com/story/sports/nba/pistons/2026/11/08/pistons-all-star-jalen-duren-out-another-two-weeks-with-hamstring-strain/92677147007/)
+- [CBS/RotoWire, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-out-again-wednesday/)
+- [Yardbarker, 10 Nov](https://www.yardbarker.com/nba/articles/raptors_announce_kawhi_leonard_will_miss_more_time_as_he_recovers_from_left_knee_injury/s1_16751_44544586)
+- [HoopsHype, 11 Nov](https://www.hoopshype.com/story/sports/nba/rumors/2026/11/11/rajakovic-says-that-barnes-groin-is-in-the-process/92734026007/)
