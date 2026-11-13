@@ -22,6 +22,18 @@
 | Melbourne poopoo | 0 | Anthony Davis 50.3/49.6 · Anthony Edwards 52.5/47.2 · Karl-Anthony Towns 48.4/44.1 |
 | Snow Time Lakers | 0 | Jalen Johnson 42.3/50.0 · Jayson Tatum 46.3/48.1 · Kyrie Irving 38.8/44.2 |
 
+## Research
+
+No NBA games have been played since the morning run, so the tables match [20261113-slump-watch.md](20261113-slump-watch.md) and its research still holds. New since then:
+- **Dejounte Murray** (ours): out 13 Nov (left ankle sprain) and sitting out until traded, per Shams ([HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html)); *ESPN est.* 20 Nov.
+- **Trey Murphy III** (ours): ruled out 13 Nov, aiming for 14 Nov ([CBS/RotoWire, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-friday-538912/)); *ESPN est.* 14 Nov.
+- **Maxime Raynaud:** out 13 Nov ([Yahoo, 13 Nov](https://sports.yahoo.com/articles/kings-injury-report-every-status-150005259.html)); our floor is 16 Nov.
+- **Zach Edey:** resting 13 Nov ([CBS, 12 Nov](https://www.cbssports.com/fantasy/basketball/news/grizzlies-zach-edey-ruled-out-for-friday/)); *ESPN est.* 14 Nov.
+- **Pending trades (new):**
+  - We offered Dr White Slong **Hartenstein + Murphy for RJ Barrett**, expiring 15 Nov 08:21 UTC. Barrett: rate 36.5; season 37.2 (12), L7 37.2 (4), L15 35.5 (8). Hartenstein's rate is 33.2 and Murphy's 35.5.
+  - Snow Time Lakers offered **Kyrie + Jalen Johnson for Lendeborg + Jamal Murray**, expiring 15 Nov 09:27 UTC.
+  - The earlier Herro + Kyrie for Cade offer is gone.
+
 ## By team
 
 **Rank** is the player's rank on their fantasy roster by projection. **Min** is current / projected minutes. **Rate** is current FP/min as a share of projected FP/min. The driver line splits the gap into category shortfalls, in FP/g.
@@ -169,3 +181,7 @@ With **Snow Time Lakers**, proposed to us, expires 15 Nov 09:27 UTC.
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-13 21:43 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
+- [HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html)
+- [CBS/RotoWire, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-friday-538912/)
+- [Yahoo, 13 Nov](https://sports.yahoo.com/articles/kings-injury-report-every-status-150005259.html)
+- [CBS, 12 Nov](https://www.cbssports.com/fantasy/basketball/news/grizzlies-zach-edey-ruled-out-for-friday/)

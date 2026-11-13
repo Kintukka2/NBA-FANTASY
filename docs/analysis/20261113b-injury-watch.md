@@ -10,6 +10,18 @@
 - **Games** is games left this week (09 Nov–15 Nov) / next week (16 Nov–22 Nov).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
+## Research
+
+No NBA games have been played since the morning run, so the tables match [20261113-injury-watch.md](20261113-injury-watch.md) and its research still holds. New since then:
+- **Dejounte Murray** (ours): out 13 Nov (left ankle sprain) and sitting out until traded, per Shams ([HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html)); *ESPN est.* 20 Nov.
+- **Trey Murphy III** (ours): ruled out 13 Nov, aiming for 14 Nov ([CBS/RotoWire, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-friday-538912/)); *ESPN est.* 14 Nov.
+- **Maxime Raynaud:** out 13 Nov ([Yahoo, 13 Nov](https://sports.yahoo.com/articles/kings-injury-report-every-status-150005259.html)); our floor is 16 Nov.
+- **Zach Edey:** resting 13 Nov ([CBS, 12 Nov](https://www.cbssports.com/fantasy/basketball/news/grizzlies-zach-edey-ruled-out-for-friday/)); *ESPN est.* 14 Nov.
+- **Pending trades (new):**
+  - We offered Dr White Slong **Hartenstein + Murphy for RJ Barrett**, expiring 15 Nov 08:21 UTC. Barrett: rate 36.5; season 37.2 (12), L7 37.2 (4), L15 35.5 (8). Hartenstein's rate is 33.2 and Murphy's 35.5.
+  - Snow Time Lakers offered **Kyrie + Jalen Johnson for Lendeborg + Jamal Murray**, expiring 15 Nov 09:27 UTC.
+  - The earlier Herro + Kyrie for Cade offer is gone.
+
 ## Pickups for us
 
 Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
@@ -491,3 +503,7 @@ All 104 players in ESPN's injury feed, longest expected absence first.
 ## Sources
 
 - ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-13 21:42 UTC.
+- [HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html)
+- [CBS/RotoWire, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-friday-538912/)
+- [Yahoo, 13 Nov](https://sports.yahoo.com/articles/kings-injury-report-every-status-150005259.html)
+- [CBS, 12 Nov](https://www.cbssports.com/fantasy/basketball/news/grizzlies-zach-edey-ruled-out-for-friday/)

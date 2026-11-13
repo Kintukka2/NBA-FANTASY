@@ -5,6 +5,13 @@
 - **Team he left:** his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). **Team he joined:** long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.
 - **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.
 
+## What it means for us
+
+- **Pickups:** none.
+- **Threats to our players:** none.
+- **Overrides:** none.
+- **Pending trade request:** Dejounte Murray (ours, being dropped). No deal yet.
+
 ## Summary
 
 | Date | Player | From → To | Role before | Role since | Rate | League |
@@ -60,8 +67,13 @@
 
 ### Research
 
-- _pending_
+- **No trade agreed on 13 Nov.** Dejounte Murray requested a trade (Shams); the Suns have "registered interest"; no talks reported about a Murray-for-Jalen Green deal ([Hoops Rumors, 13 Nov](https://www.hoopsrumors.com/2026/11/pelicans-dejounte-murray-requests-trade-suns-interested.html)). He is out 13 Nov (ankle) and not expected to play for New Orleans again; Jeremiah Fears gains most ([NBC Sports, 13 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/dejounte-murray-requests-trade-out-friday-vs-mem)).
+- The Nets "will listen" on veterans (rumour only; [Bleacher Report, 13 Nov](https://bleacherreport.com/articles/25532869-new-nba-trade-rumors-reveal-nets-will-listen-any-calls-amid-julius-randle-mpj-buzz)).
+- Clifford: no change.
 
 ## Sources
 
 - ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-13 21:42 UTC.
+- [Hoops Rumors, 13 Nov](https://www.hoopsrumors.com/2026/11/pelicans-dejounte-murray-requests-trade-suns-interested.html)
+- [NBC Sports, 13 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/dejounte-murray-requests-trade-out-friday-vs-mem)
+- [Bleacher Report, 13 Nov](https://bleacherreport.com/articles/25532869-new-nba-trade-rumors-reveal-nets-will-listen-any-calls-amid-julius-randle-mpj-buzz)

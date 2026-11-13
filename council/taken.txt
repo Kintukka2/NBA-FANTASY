@@ -39,7 +39,6 @@ Kawhi Leonard
 Stephon Castle
 Anthony Davis
 Derrick White
-Dejounte Murray
 Julius Randle
 LeBron James
 Trae Young
@@ -110,3 +109,4 @@ Nic Claxton
 Daniel Gafford
 Cam Spencer
 Kris Dunn
+Saddiq Bey
