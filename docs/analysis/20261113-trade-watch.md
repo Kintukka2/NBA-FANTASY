@@ -5,6 +5,13 @@
 - **Team he left:** his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). **Team he joined:** long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.
 - **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.
 
+## What it means for us
+
+- **Pickups:** none.
+- **Threats to our players:** none.
+- **Overrides:** none.
+- **New trades since 12 Nov:** none.
+
 ## Summary
 
 | Date | Player | From → To | Role before | Role since | Rate | League |
@@ -60,8 +67,14 @@
 
 ### Research
 
-- _pending_
+- **No trades or releases of rotation players since 12 Nov.** The newest move in ESPN's feed is the Lakers' two-way swap on 11 Nov ([ESPN transactions feed](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions)). Only signings since then ([Hoops Rumors](https://www.hoopsrumors.com/transactions)).
+- **Clifford:** OKC was idle on 12 Nov. He has 18 min a game over two games, a small sample, and Mitchell, McCain and Stirtz are ahead of him ([Yahoo, 11 Nov](https://sports.yahoo.com/articles/okc-thunder-nique-clifford-earn-183058306.html)). Ajay Mitchell (ankle) is questionable 13 Nov, no timetable reported ([Oklahoman via Yahoo, 13 Nov](https://sports.yahoo.com/articles/ajay-mitchell-injury-okc-thunder-021350442.html)); *ESPN est.* 13 Nov.
+- **Verdict:** unchanged. Opportunity is up a little for Clifford, a deep-league option only, and Hartenstein is unaffected.
 
 ## Sources
 
 - ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-13 04:38 UTC.
+- [ESPN transactions feed](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions)
+- [Hoops Rumors](https://www.hoopsrumors.com/transactions)
+- [Yahoo, 11 Nov](https://sports.yahoo.com/articles/okc-thunder-nique-clifford-earn-183058306.html)
+- [Oklahoman via Yahoo, 13 Nov](https://sports.yahoo.com/articles/ajay-mitchell-injury-okc-thunder-021350442.html)

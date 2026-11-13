@@ -22,6 +22,12 @@
 | Melbourne poopoo | 0 | Anthony Davis 50.3/49.6 · Anthony Edwards 52.5/47.2 · Karl-Anthony Towns 48.4/44.1 |
 | Snow Time Lakers | 0 | Jalen Johnson 42.3/50.0 · Jayson Tatum 46.3/48.1 · Kyrie Irving 38.8/44.2 |
 
+## Since the last Slump Watch (12 Nov)
+
+- **Flagged:** the same seven players, no one joined or left.
+- **Gap moved by 3 or more:** none. Ball −11.4 → −10.1, Embiid −10.9 → −11.2.
+- **Pending trades:** the Harden offer is gone (cancelled when we dropped Holiday). Snow Time Lakers' offer of Herro and Kyrie for Cade expires 13 Nov 09:44 UTC.
+
 ## By team
 
 **Rank** is the player's rank on their fantasy roster by projection. **Min** is current / projected minutes. **Rate** is current FP/min as a share of projected FP/min. The driver line splits the gap into category shortfalls, in FP/g.
@@ -37,10 +43,12 @@
   - Current: 27.7 min, 10.2 pts, 3.9-9.3 FG, 1.4-2.0 FT, 4.6 reb, 8.3 ast, 0.5 stl, 0.3 blk, 3.2 TO
   - Last 7 days (2 GP): 29.5 min, 14.0 pts, 5.5-10.5 FG, 2.0-2.5 FT, 4.5 reb, 11.0 ast, 0.5 stl, 0.0 blk, 6.0 TO
   - Projected: 35.5 min, 18.5 pts, 6.6-14.5 FG, 3.4-4.4 FT, 9.2 reb, 9.6 ast, 1.2 stl, 0.6 blk, 3.8 TO
+  - **News:** no game since 11 Nov. Caleb Wilson is out 4–6 weeks after hand surgery ([NBC Sports, 12 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/shams-caleb-wilson-hand-set-to-miss-4-6-weeks)); *ESPN est.* 13 Dec. More of the offence may return to Giddey. The gap comes from Splitter taking the offence away (see the 12 Nov report).
 - **LaMelo Ball** (minutes): scoring −3.6, reb −2.4, ast −4.1, stocks +0.6, TO −1.4; bonus +0.8.
   - Current: 27.6 min, 18.6 pts, 6.5-14.2 FG, 2.0-2.5 FT, 3.2 reb, 6.2 ast, 1.8 stl, 0.1 blk, 4.0 TO
   - Last 7 days (3 GP): 30.0 min, 22.7 pts, 8.3-16.3 FG, 1.7-1.7 FT, 2.7 reb, 7.3 ast, 1.3 stl, 0.0 blk, 4.0 TO
   - Projected: 32.9 min, 23.9 pts, 8.3-20.5 FG, 2.8-3.2 FT, 5.6 reb, 8.3 ast, 1.4 stl, 0.3 blk, 3.3 TO
+  - **News:** 22 pts, 6 threes and a season-high 9 assists in 25 min (51 FP) in the 39-point rout of DAL on 12 Nov; the blowout capped his minutes ([Bleacher Report, 12 Nov](https://bleacherreport.com/articles/25532808-lamelo-helps-wolves-blow-out-mavs-box-score-stats-highlights-flagg-kyrie-top-players)).
 - **Near the line:** Desmond Bane −9.9 (#8, efficiency, L7 26.7), Jakob Poeltl −6.1 (#13, minutes, L7 38.2), LeBron James −5.3 (#6, efficiency, L7 25.7).
 
 ### Matt Wright's Foxies: 2
@@ -53,10 +61,12 @@
 - **Jaren Jackson Jr.** (minutes): scoring −5.4, reb −0.7, ast −0.2, stocks −5.1, TO −1.4; bonus +1.8.
   - Current: 26.0 min, 16.2 pts, 5.5-11.0 FG, 4.0-5.2 FT, 5.0 reb, 2.0 ast, 0.2 stl, 1.2 blk, 3.0 TO
   - Projected: 31.4 min, 21.9 pts, 7.8-16.7 FG, 4.3-5.4 FT, 5.7 reb, 2.1 ast, 1.2 stl, 1.6 blk, 2.3 TO
+  - **News:** torn MCL, no surgery, re-evaluated about 8 Dec ([Hoops Rumors, 27 Oct](https://www.hoopsrumors.com/2026/10/jaren-jackson-jr-to-miss-6-8-weeks-due-to-torn-mcl.html)); *ESPN est.* 14 Dec.
 - **Shai Gilgeous-Alexander** (efficiency): scoring −4.6, reb −0.6, ast −3.8, stocks −2.7, TO +0.3; bonus +0.8.
   - Current: 32.8 min, 29.7 pts, 10.3-22.8 FG, 6.8-7.8 FT, 4.2 reb, 4.5 ast, 0.9 stl, 1.0 blk, 2.2 TO
   - Last 7 days (4 GP): 31.0 min, 28.8 pts, 9.8-21.0 FG, 7.8-8.5 FT, 4.2 reb, 4.5 ast, 0.5 stl, 0.8 blk, 2.5 TO
   - Projected: 33.8 min, 31.2 pts, 10.9-20.3 FG, 7.8-8.8 FT, 4.9 reb, 6.4 ast, 1.7 stl, 0.9 blk, 2.3 TO
+  - **News:** no game since 11 Nov; no injury designation for 13 Nov at LAC ([Field Level Media, 12 Nov](https://www.thesportsleader.com/2026/11/12/thunders-visit-to-clippers-inspires-injury-flashbacks/)). The gap is production (assists, steals), not minutes.
 - **Near the line:** Damian Lillard −7.4 (#6, efficiency, L7 29.0), Brandon Miller −6.9 (#9, minutes, L7 12.0), Naz Reid −5.1 (#10, efficiency, L7 33.0).
 
 ### Dr White Slong: 1
@@ -69,6 +79,7 @@
   - Current: 31.5 min, 17.9 pts, 5.5-14.8 FG, 6.5-7.3 FT, 8.8 reb, 3.7 ast, 0.7 stl, 0.7 blk, 2.9 TO
   - Last 7 days (4 GP): 28.2 min, 15.0 pts, 4.0-13.5 FG, 6.8-7.5 FT, 6.8 reb, 2.5 ast, 0.8 stl, 0.8 blk, 2.0 TO
   - Projected: 31.6 min, 27.4 pts, 9.1-18.5 FG, 7.9-9.2 FT, 8.2 reb, 4.2 ast, 0.7 stl, 1.2 blk, 3.0 TO
+  - **News:** 20 pts in 28 min (31 FP) in the 12 Nov win over TOR, after a first-quarter knee knock ([Yahoo, 13 Nov](https://ca.sports.yahoo.com/news/joel-embiid-scores-20-in-76ers-win-over-raptors-after-knee-injury-scare-lebron-james-sat-out-for-back-management-030112849.html)); listed for right foot plantar fascia management. His L7 26.2 (4) is 8 under, from shooting (4.0–13.5 FG). He sat the second night of both earlier back-to-backs; PHI plays 15–16 Nov.
 - **Near the line:** AJ Dybantsa −7.2 (#10, efficiency, L7 24.6), Derrick White −5.8 (#6, minutes, L7 35.5).
 
 ### Lauri Birds: 1
@@ -81,6 +92,7 @@
   - Current: 32.7 min, 20.4 pts, 7.1-15.2 FG, 3.8-4.6 FT, 1.8 reb, 6.9 ast, 0.6 stl, 0.0 blk, 5.0 TO
   - Last 7 days (2 GP): 28.5 min, 18.5 pts, 5.5-11.5 FG, 5.5-7.0 FT, 2.5 reb, 8.0 ast, 0.5 stl, 0.0 blk, 3.0 TO
   - Projected: 35.2 min, 21.6 pts, 7.8-17.0 FG, 3.0-3.5 FT, 3.0 reb, 7.4 ast, 1.3 stl, 0.2 blk, 3.1 TO
+  - **News:** turnovers (5.0 a game against 3.0 for his career); he expects fewer double-teams once Ingram returns ([Yahoo, 12 Nov](https://sports.yahoo.com/articles/why-darius-garland-could-trade-202807483.html)). Ingram is ruled out 13 Nov; *ESPN est.* 19 Nov. His L7 is 2 games, a small sample.
 - **Near the line:** Ivica Zubac −9.3 (#7, minutes, L7 35.3), Kevin Durant −6.8 (#4, efficiency, L7 36.3).
 
 ### Team Nic Kerr: 1
@@ -93,6 +105,7 @@
   - Current: 32.6 min, 16.7 pts, 4.8-12.2 FG, 4.5-5.3 FT, 4.6 reb, 5.6 ast, 0.8 stl, 0.5 blk, 2.9 TO
   - Last 7 days (4 GP): 30.5 min, 16.8 pts, 4.5-10.8 FG, 5.0-5.8 FT, 3.2 reb, 4.2 ast, 0.8 stl, 0.5 blk, 2.8 TO
   - Projected: 33.6 min, 20.6 pts, 6.1-14.3 FG, 5.6-6.4 FT, 5.0 reb, 8.1 ast, 1.2 stl, 0.6 blk, 3.4 TO
+  - **News:** no game since his 32-point night on 11 Nov ([AP via Yahoo, 12 Nov](https://sports.yahoo.com/articles/james-harden-scores-season-high-024929489.html)). Mobley is out 13 Nov, and the named beneficiaries are Hezonja, Watson, Thomas and Tyson ([NBC Sports, 12 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/evan-mobley-toe-ruled-out-vs-miami)).
 - **Near the line:** Alex Sarr −6.2 (#7, efficiency, L7 34.4), Trae Young −6.0 (#4, efficiency, L7 34.4).
 
 ### Come-in Cider (us): 0
@@ -135,6 +148,17 @@ Players with 2+ games in the last 7 days whose L7 FP/g tells a different story f
 - **Flagged, but within 10 of projection over the last 7 days:** LaMelo Ball (Cream Abdul-Yammar, L7 42.3 in 3 vs projected 46.4, season gap −10.1), Darius Garland (Lauri Birds, L7 34.5 in 2 vs projected 40.4, season gap −10.6).
 - **Not flagged, but 10+ under projection over the last 7 days:** Dejounte Murray (Come-in Cider (us), L7 14.5 in 4 vs projected 39.0, L7 gap −24.5, season gap −8.5), Domantas Sabonis (Team Nic Kerr, L7 24.0 in 2 vs projected 46.7, L7 gap −22.7, season gap −2.2), LeBron James (Cream Abdul-Yammar, L7 25.7 in 3 vs projected 42.5, L7 gap −16.8, season gap −5.3), Evan Mobley (Matt Wright's Foxies, L7 31.8 in 4 vs projected 43.3, L7 gap −11.6, season gap −3.4), Desmond Bane (Cream Abdul-Yammar, L7 26.7 in 3 vs projected 38.2, L7 gap −11.6, season gap −9.9), Kyrie Irving (Snow Time Lakers, L7 33.5 in 4 vs projected 44.2, L7 gap −10.7, season gap −5.4), Ty Jerome (Melbourne poopoo, L7 33.0 in 3 vs projected 43.5, L7 gap −10.5, season gap −2.5), Jalen Johnson (Snow Time Lakers, L7 39.5 in 2 vs projected 50.0, L7 gap −10.5, season gap −7.7).
 
+### Notes
+
+- **Dejounte Murray** (us): blowout minutes and poor shooting; 5 pts and −33 on 11 Nov, then a deleted "the sabotage is real" post ([Yahoo, 12 Nov](https://sports.yahoo.com/articles/pelicans-dejounte-murray-deletes-cryptic-154039697.html)). No role change reported.
+- **Domantas Sabonis:** no game since his 0-point night; he says "I'm 100 percent — I feel amazing" ([ClutchPoints, 12 Nov](https://clutchpoints.com/nba/sacramento-kings/kings-news-domantas-sabonis-says-100-despite-recent-knee-injury-concern)). L7 is 2 games, a small sample.
+- **LeBron James:** sat 12 Nov with back management ([Yahoo, 13 Nov](https://ca.sports.yahoo.com/news/joel-embiid-scores-20-in-76ers-win-over-raptors-after-knee-injury-scare-lebron-james-sat-out-for-back-management-030112849.html)); no timetable reported; *ESPN est.* 15 Nov.
+- **Evan Mobley** (new):
+  - The L7 comes from two games: 24 min in a blowout after Allen's return moved him to power forward ([CBS/RotoWire, 10 Nov](https://www.cbssports.com/fantasy/basketball/news/cavaliers-evan-mobley-efficient-in-limited-minutes/)), then a left big-toe sprain on 11 Nov ([Heavy, 12 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/evan-mobley-injury-update-cavaliers-heat/)).
+  - Out 13 Nov; no timetable reported; *ESPN est.* 14 Nov.
+- **Kyrie Irving** (new; Snow Time Lakers): 27 min in the 39-point loss at MIN on 12 Nov ([Bleacher Report, 12 Nov](https://bleacherreport.com/articles/25532808-lamelo-helps-wolves-blow-out-mavs-box-score-stats-highlights-flagg-kyrie-top-players)); no injury. His back-to-back calls are made on the day.
+- **Bane, Jerome, Jalen Johnson:** unchanged since the 12 Nov report (no games, or nothing new).
+
 ## Under 2026, not under projection
 
 10+ under last season's average, but within 10 of projection.
@@ -160,3 +184,15 @@ With **Snow Time Lakers**, proposed to us, expires 13 Nov 09:44 UTC.
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-13 04:38 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
+- [NBC Sports, 12 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/shams-caleb-wilson-hand-set-to-miss-4-6-weeks)
+- [Bleacher Report, 12 Nov](https://bleacherreport.com/articles/25532808-lamelo-helps-wolves-blow-out-mavs-box-score-stats-highlights-flagg-kyrie-top-players)
+- [Hoops Rumors, 27 Oct](https://www.hoopsrumors.com/2026/10/jaren-jackson-jr-to-miss-6-8-weeks-due-to-torn-mcl.html)
+- [Field Level Media, 12 Nov](https://www.thesportsleader.com/2026/11/12/thunders-visit-to-clippers-inspires-injury-flashbacks/)
+- [Yahoo, 13 Nov](https://ca.sports.yahoo.com/news/joel-embiid-scores-20-in-76ers-win-over-raptors-after-knee-injury-scare-lebron-james-sat-out-for-back-management-030112849.html)
+- [Yahoo, 12 Nov](https://sports.yahoo.com/articles/why-darius-garland-could-trade-202807483.html)
+- [AP via Yahoo, 12 Nov](https://sports.yahoo.com/articles/james-harden-scores-season-high-024929489.html)
+- [NBC Sports, 12 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/evan-mobley-toe-ruled-out-vs-miami)
+- [Yahoo, 12 Nov](https://sports.yahoo.com/articles/pelicans-dejounte-murray-deletes-cryptic-154039697.html)
+- [ClutchPoints, 12 Nov](https://clutchpoints.com/nba/sacramento-kings/kings-news-domantas-sabonis-says-100-despite-recent-knee-injury-concern)
+- [CBS/RotoWire, 10 Nov](https://www.cbssports.com/fantasy/basketball/news/cavaliers-evan-mobley-efficient-in-limited-minutes/)
+- [Heavy, 12 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/evan-mobley-injury-update-cavaliers-heat/)
