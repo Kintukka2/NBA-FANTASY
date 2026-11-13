@@ -39,7 +39,6 @@ Kawhi Leonard
 Stephon Castle
 Anthony Davis
 Derrick White
-Dejounte Murray
 Julius Randle
 LeBron James
 Trae Young
@@ -94,13 +93,10 @@ Onyeka Okongwu
 Isaiah Hartenstein
 Jeremiah Fears
 Paul Reed
-Duncan Robinson
 Klay Thompson
 Darryn Peterson
 Jarrett Allen
-Jaxson Hayes
 Anthony Black
-Jamal Shead
 Desmond Bane
 Jakob Poeltl
 Jalen Smith
@@ -111,3 +107,6 @@ P.J. Washington
 Daniss Jenkins
 Nic Claxton
 Daniel Gafford
+Cam Spencer
+Kris Dunn
+Saddiq Bey
