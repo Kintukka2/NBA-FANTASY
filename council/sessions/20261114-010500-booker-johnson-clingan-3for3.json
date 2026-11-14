@@ -1,0 +1,17 @@
+{
+ "question": "Should we propose this 3-for-3 to Snow Time Lakers (Kyle): we receive Devin Booker (PHX), Jalen Johnson (ATL) and Donovan Clingan (POR); we send Jamal Murray (DEN), Yaxel Lendeborg (GS) and Isaiah Hartenstein (OKC)? Snow Time Lakers are our matchup 5 opponent (Mon 16 - Sun 22 Nov) and the 48-hour trade review means an accepted deal executes before that week's games. Hartenstein is also in our pending offer to Dr White Slong (Hartenstein + Murphy for RJ Barrett, expires 15 Nov 08:21 UTC); proposing this means withdrawing that one. Kyle's own pending offer (Kyrie + Jalen Johnson for Lendeborg + Murray, expires 15 Nov 09:27 UTC) is the version we would decline.",
+ "type": "yes_no",
+ "options": [
+  "Yes",
+  "No"
+ ],
+ "asked_at": "2026-11-14T01:05:00Z",
+ "taken": "council/taken.txt (rebuilt 2026-11-14 01:03 UTC)",
+ "constraints": [
+  "The owner's view: Jamal Murray could keep up his current form; Jalen Johnson should improve and get back to 45+ FP/g soon.",
+  "The owner's considerations: Jimmy Butler will return (reported January-February 2027, ESPN est. 2 Jan) and it is unclear how that affects Lendeborg's role; Clingan would be another solid player, and the roster has several weak players the owner is happy to rotate; the Suns are winning and Booker is playing better.",
+  "The owner's only stated concern is injuries; injury-history research on all six players is in the briefing."
+ ],
+ "research": null,
+ "rounds": []
+}
