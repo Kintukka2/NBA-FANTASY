@@ -1,0 +1,229 @@
+{
+  "question": "Should we propose this 3-for-3 to Snow Time Lakers (Kyle): we receive Devin Booker (PHX), Jalen Johnson (ATL) and Donovan Clingan (POR); we send Jamal Murray (DEN), Yaxel Lendeborg (GS) and Isaiah Hartenstein (OKC)? Snow Time Lakers are our matchup 5 opponent (Mon 16 - Sun 22 Nov) and the 48-hour trade review means an accepted deal executes before that week's games. Hartenstein is also in our pending offer to Dr White Slong (Hartenstein + Murphy for RJ Barrett, expires 15 Nov 08:21 UTC); proposing this means withdrawing that one. Kyle's own pending offer (Kyrie + Jalen Johnson for Lendeborg + Murray, expires 15 Nov 09:27 UTC) is the version we would decline.",
+  "type": "yes_no",
+  "options": [
+    "Yes",
+    "No"
+  ],
+  "asked_at": "2026-11-14T01:05:00Z",
+  "taken": "council/taken.txt (rebuilt 2026-11-14 01:03 UTC)",
+  "constraints": [
+    "The owner's view: Jamal Murray could keep up his current form; Jalen Johnson should improve and get back to 45+ FP/g soon.",
+    "The owner's considerations: Jimmy Butler will return (reported January-February 2027, ESPN est. 2 Jan) and it is unclear how that affects Lendeborg's role; Clingan would be another solid player, and the roster has several weak players the owner is happy to rotate; the Suns are winning and Booker is playing better.",
+    "The owner's only stated concern is injuries; injury-history research on all six players is in the briefing."
+  ],
+  "research": "docs/research/20261114-0105-booker-johnson-clingan-3for3.md",
+  "rounds": [
+    {
+      "name": "opening",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "ballots": [
+        {
+          "member": "coach",
+          "vote": "Yes",
+          "confidence": 0.56,
+          "rationale": "The trio we get scored 134.3 FP/g in 2026 (Johnson 53.1/72 GP, Clingan 41.0/77, Booker 40.2/64) against about 123 for ours. We sell at peak: Murray's L7 55.7 (3) is a shooting spike, Lendeborg's 44.5 rate comes while Curry is out (ESPN est. 12 Dec) and before Butler (ESPN est. 2 Jan) and Moody (ESPN est. 1 Dec) return. We buy Johnson at a trough with a known cause (L15 33.8 (4), ankle sprain, 20.5% 3P). The cost is matchup 5 against Kyle: with Johnson's form-table rate it goes from about +69 to about -74, roughly 0.3 wins. Against that I estimate about +6 FP/g, roughly 21 FP a week, over weeks 6-20, worth about +0.7 wins plus a playoff-week edge.",
+          "evidence": [
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Murray season 49.9 (10) -> 54.7 (9), L7 55.7 (3), L15 54.0 (6), L30 49.9 (10), Rate 54.4; Lendeborg 41.4 (12) -> 45.4 (11), L7 44.0 (3), L15 39.7 (7) -> 46.7 (6), Rate 44.5; Hartenstein 31.5 (12), L7 35.0 (4), L15 32.9 (7), Rate 33.2",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Johnson 42.3 (9), L7 39.5 (2, noise), L15 33.8 (4), L30 42.3 (9), Rate 39.8; Booker 41.5 (11), L7 44.0 (4), L15 41.6 (8), Rate 42.3; Clingan 37.6 (11), L7 33.5 (4), L15 40.5 (8), Rate 37.2",
+            "data/processed/players_scored.csv: FP_ACT_PG Johnson 53.08 (A_GP 72, A_3PM 1.67/A_3PA 4.74), Murray 47.8 (75), Clingan 41.04 (77), Booker 40.24 (64), Hartenstein 34.01 (47), Lendeborg no 2026 sample; PROJ_BLIND_SPOT_PG Clingan 5.95, Johnson 4.53",
+            "council/matchup.py --next --allow-live: 1714 to 1626 as is; --swap (our side) 1621; scratch copy with both rosters swapped 1621 to 1714 (Johnson rate 33.4 includes tonight's live game)",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-injuries.md: Clingan 88 of 93 games since 2025-26; Hartenstein 47/82 in 2025-26 with recurring calf trouble; Johnson 36/82 in 2024-25 (labrum surgery); Murray absent mid-March onward 3 straight seasons",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3.md: Johnson 20.5% 3P, BPM 1.1 vs 4.2 (Yahoo, 11 Nov); no Warriors statement on Lendeborg's role after Curry/Butler/Moody return (unresolved)"
+          ],
+          "concerns": [
+            "If Murray holds about 54 and Johnson settles near 42 rather than 48, the rest-of-season edge falls below the roughly +3 FP/g needed to repay the matchup-5 flip against the trade partner, and re-proposing after that week would have been the better play."
+          ]
+        },
+        {
+          "member": "archivist",
+          "vote": "Yes",
+          "confidence": 0.6,
+          "rationale": "On non-thin samples the three we get total 134.4 FP/g on 2026 lines over 64, 72 and 77 games, against 123.2 to 127.2 for what we send (Murray 47.8 over 75, Hartenstein 34.01 over 47, Lendeborg 41.4/45.4 on 12 games, NO_SAMPLE in the CSV), so +7 to +11. Two pairs hold on every measure: Booker 41.5 (11) vs Lendeborg 41.4 (12), and Clingan +4.0 to +7.0 over Hartenstein with 77 vs 47 games played last season. The No case is Johnson vs Murray on 9-10 games: Murray's 54.7 (9) is 6.9 above his 75-game line, and Johnson's 42.3 (9) is 10.8 below his 72-game 53.08 on 20.5% from three. The Rate's -12.8 is built almost entirely on those THIN windows.",
+          "evidence": [
+            "data/processed/players_scored.csv: Jalen Johnson FP_ACT_PG 53.075, A_GP 72, A_DD 49, A_TD 13, PROJ_BLIND_SPOT_PG 4.525",
+            "data/processed/players_scored.csv: Jamal Murray FP_ACT_PG 47.8, A_GP 75; Devin Booker 40.2413, A_GP 64",
+            "data/processed/players_scored.csv: Donovan Clingan FP_ACT_PG 41.0416, A_GP 77, PROJ_BLIND_SPOT_PG 5.9516; Isaiah Hartenstein 34.0098, A_GP 47",
+            "data/processed/players_scored.csv: Yaxel Lendeborg SAMPLE_FLAG NO_SAMPLE, P_FPTS_AVG 23.49, P_MIN 24.6 (stale vs 32.1 min actual)",
+            "form table 01:03 UTC: Murray 49.9 (10) -> 54.7 (9), L7 55.7 (3), L15 54.0 (6), Rate 54.4; Johnson 42.3 (9), L7 39.5 (2, noise), L15 33.8 (4), Rate 39.8",
+            "form table: Booker 41.5 (11), L7 44.0 (4), L15 41.6 (8), Rate 42.3; Lendeborg 41.4 (12) -> 45.4 (11), L7 44.0 (3), L15 39.7 (7) -> 46.7 (6), Rate 44.5",
+            "form table: Clingan 37.6 (11), L7 33.5 (4), L15 40.5 (8), Rate 37.2; Hartenstein 31.5 (12), L7 35.0 (4), L15 32.9 (7), Rate 33.2",
+            "data/processed/verification.csv: all five with samples status ok, |delta| <= 0.01",
+            "matchup 5 games: send 11 (DEN 4, GS 4, OKC 3) vs receive 10; Rate x games 495 vs 395 = about -100 FP for us, the same to Kyle"
+          ],
+          "concerns": "If Johnson's 20.5% three-point shooting and BPM drop from 4.2 to 1.1 are real decline rather than a 9-game slump, the deal is -7 to -15 FP/g, and it also gives Kyle an 11-to-10 game edge and about 100 FP (at Rate) in the matchup 5 week we play him."
+        },
+        {
+          "member": "cipher",
+          "vote": "Yes",
+          "confidence": 0.56,
+          "rationale": "On FP_ACT_PG, the measure my brief leads with, the package we receive is +11.2 FP/g (Johnson 53.08 in 72 GP, Clingan 41.04 in 77 GP, Booker 40.24 against Murray 47.80, Hartenstein 34.01 and Lendeborg's 41.4 in 12 games). Projection core plus blind spot gives +17.6. Shrinking toward 2026 with about 0.6 weight on this season's ~10-game samples gives a rest-of-season net of +6.5 FP/g (80% band −3 to +16), or +5 per team-game after availability and a 28 FP/g replacement. Against that, the recency-heavy Rate says −12.8 and matchup.py projects about a −150 FP swing in matchup 5, so the edge is real but thin and comes later in the season.",
+          "evidence": [
+            "data/processed/players_scored.csv: Jalen Johnson FP_ACT_PG 53.08, A_GP 72, FP_PROJ_PG_CORE 50.01 + PROJ_BLIND_SPOT_PG 4.53; Donovan Clingan FP_ACT_PG 41.04, A_GP 77, blind spot 5.95; Devin Booker FP_ACT_PG 40.24, A_GP 64, proj core 43.23",
+            "data/processed/players_scored.csv: Jamal Murray FP_ACT_PG 47.80, A_GP 75; Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47; Yaxel Lendeborg no 2026 sample, P_FPTS_AVG 23.49 at P_MIN 24.6 (stale)",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Murray 49.9 (10) -> 54.7 (9), L7 55.7 (3), L15 54.0 (6), Rate 54.4; Lendeborg 41.4 (12), L7 44.0 (3), L15 39.7 (7), Rate 44.5; Hartenstein 31.5 (12), L7 35.0 (4), L15 32.9 (7), Rate 33.2",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Johnson 42.3 (9), L7 39.5 (2, noise), L15 33.8 (4), min 33.7/37.0, Rate 39.8; Booker 41.5 (11), L7 44.0 (4), L15 41.6 (8), Rate 42.3; Clingan 37.6 (11), L7 33.5 (4), L15 40.5 (8), Rate 37.2",
+            "council/matchup.py --next --allow-live: matchup 5 projected 1714-1626 without the trade, 1621-1626 with our side swapped; scratch mirrored swap 1621-1714 (Johnson's live-contaminated rate 33.4 vs 39.8 pre-tip, so the corrected swing is about -150)",
+            "scripts/league_scoring.per_game: converting a missed 3PA to a make is worth +6, so Johnson's 3P% going from 20.5% back to 35.2% on 3.5-4.7 3PA = +3.1 to +4.2 FP/g",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-injuries.md: Clingan 88 of 93 games since 2025-26; Hartenstein 47/82 and 57/82; Johnson 62-72 games expected; Murray mid-March absences three straight seasons"
+          ],
+          "concerns": "If this season's 9-12 game samples are real (Murray's 54.7, Johnson's 42.3), the net is −5 to −13 FP/g and, with the roughly −150 FP matchup 5 swing against Kyle, the trade loses on both counts."
+        },
+        {
+          "member": "ledger",
+          "vote": "Yes",
+          "confidence": 0.6,
+          "rationale": "On the samples the README says lead (2026: Johnson 53.1 over 72 GP, Clingan 41.0 over 77, Booker 40.2 over 64, Murray 47.8 over 75, Hartenstein 34.0 over 47), blended with this season's 9-12 game lines, we receive 130.2 FP/g and send 118.2-120.9, a gain of +9.4 to +12.1 FP/g. If Murray drifts to 50 and Lendeborg to 40, Johnson only needs 41.8 to break even, which is his slump level today (42.3 on 20.5% 3P). We sell two hot small samples ahead of known role threats (Curry, Butler and Moody for Lendeborg; Holmgren for Hartenstein) and swap fragile Hartenstein for durable Clingan. The price is matchup 5 against Kyle: matchup.py projects us at 1621 instead of 1714, which likely flips a +88 projected win into a 55-93 point loss.",
+          "evidence": [
+            "data/processed/players_scored.csv: Jalen Johnson FP_ACT_PG 53.08, A_GP 72, FP_ACT_BONUS_PG 3.13, ADP 8.7",
+            "data/processed/players_scored.csv: Donovan Clingan FP_ACT_PG 41.04, A_GP 77, A_OREB 4.51, ADP 81.8; Devin Booker FP_ACT_PG 40.24, A_GP 64, A_TO 3.16, ADP 21.2",
+            "data/processed/players_scored.csv: Jamal Murray FP_ACT_PG 47.80, A_GP 75; Isaiah Hartenstein FP_ACT_PG 34.01, A_GP 47",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Rate receive 42.3+39.8+37.2=119.3 vs send 54.4+44.5+33.2=132.1 (-12.8); Murray L7 55.7 (3), L15 54.0 (6), L30 49.9 (10)->54.7 (9); Johnson L7 39.5 (2, noise), L15 33.8 (4), L30 42.3 (9)",
+            "council/matchup.py --next --allow-live: baseline 1714 to 1626; with the 3-for-3 swap our side 1621 (Johnson's live-skewed Rate 33.4 vs the form table's 39.8)",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3.md: Johnson 20.5% 3P, BPM 1.1 vs 4.2 (Roundtable, 11 Nov); Lendeborg's role after Curry, Butler and Moody return has no team statement (unresolved)",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-injuries.md: Clingan 88 of 93 games since 2025-26; Hartenstein 47/82 in 2025-26 with recurring calf; Murray absent from mid-March three straight seasons"
+          ],
+          "concerns": "The recency-weighted Rate, which the matchup plans use, says we lose 12.8 FP/g, and if Johnson's decline is real (ankle, L15 33.8 over 4 games, BPM down from 4.2 to 1.1) we also hand Kyle matchup 5 for nothing."
+        },
+        {
+          "member": "medic",
+          "vote": "No",
+          "confidence": 0.62,
+          "rationale": "Availability is a wash: at my estimates the six project to about 165 games for the side we send and 166 for the side we get over the about 66 remaining team games, so the owner's injury worry is not what this deal buys. It swaps Hartenstein's recurring calf (47/82 last season) for Clingan's durability (88 of 93 since 2025-26), but takes on Jalen Johnson's record (36/82 in 2024-25 with a season-ending labrum tear, 9/12 now) and Booker's December groin pattern. Multiplying FP/g by chance of playing, we send 111.2 per team game and get 100.0 on the Rate (−5.0 using ESPN's P_GP), and Johnson needs about 54 FP/g, above his 53.1 in 2026, to break even. It also hands Kyle about 100 FP in matchup 5 against us (495 vs 395 at the Rate, 11 player-games vs 10), a swing of about 200 FP in that head-to-head.",
+          "evidence": [
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Rate Murray 54.4, Lendeborg 44.5, Hartenstein 33.2 vs Johnson 39.8, Booker 42.3, Clingan 37.2 (sum 132.1 vs 119.3)",
+            "form table: Murray L7 55.7 (3) / L15 54.0 (6) / L30 49.9 (10) -> 54.7 (9); Johnson L7 39.5 (2, noise) / L15 33.8 (4) / L30 42.3 (9); Booker 44.0 (4) / 41.6 (8) / 41.5 (11)",
+            "form table: Clingan L7 33.5 (4) / L15 40.5 (8) / L30 37.6 (11); Lendeborg 44.0 (3) / 39.7 (7) -> 46.7 (6) / 41.4 (12) -> 45.4 (11); Hartenstein 35.0 (4) / 32.9 (7) / 31.5 (12)",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-injuries.md: GP Hartenstein 57/82, 47/82; Johnson 56/82, 36/82 (labrum, last 38 games), 72/82, 9/12 now; Clingan 67/82, 77/82, 88 of 93 since 2025-26",
+            "injuries file: Booker groin strains in December of 2017, 2022, 2024, 2025; Murray absences from mid-March three straight seasons",
+            "data/processed/players_scored.csv: P_GP Murray 69, Lendeborg 71, Hartenstein 64 vs Johnson 72, Booker 72, Clingan 73; FP_ACT_PG Johnson 53.075 on A_GP 72, Booker 40.24 on 64, Clingan 41.04 on 77, Murray 47.8 on 75, Hartenstein 34.01 on 47",
+            "council/gamelog.py: Hartenstein 29.6 FP/g over 20-28 Oct vs 32.9 over the seven games since 31 Oct (Holmgren out, ESPN est. 2 Jan)",
+            "council/injuries.py 14 Nov ~01:40 UTC: none of the six listed; Curry ESPN est. 12 Dec, Moody 1 Dec, Butler 2 Jan, Holmgren 2 Jan, Porzingis 2 Jan"
+          ],
+          "concerns": [
+            "If Johnson's ankle and shooting slump clear and he gets back near his 53.1 FP/g from 2026 while Butler and Curry cut Lendeborg's minutes in January, the deal wins the rest of the season despite the matchup 5 cost."
+          ]
+        },
+        {
+          "member": "scout",
+          "vote": "Yes",
+          "confidence": 0.6,
+          "rationale": "On role, we sell Lendeborg at his largest role: 31.0 min and 37.1 FP/g in the 9 full games Curry played, against 35.3 min and 54.3 FP/g in the 3 without him. Curry (ESPN est. 12 Dec), Moody (ESPN est. 1 Dec) and Butler (ESPN est. 2 Jan) are all due back, and no team statement covers his role after that. Johnson (37.0 L7 min against 35.21 last season) and Clingan are back in their 2026 roles and producing 10.8 and 3.4 FP/g below their 2026 numbers, so the gap is shooting, not opportunity. Murray's role is the same as last season and his number holds, so losing him is the real cost and only partly offset. The deal is -12.8 FP/g by Rate but +18.8 on 2026 numbers, and I expect it to come out positive over the rest of the season.",
+          "evidence": [
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Murray 49.9 (10) -> 54.7 (9), L7 55.7 (3), L15 54.0 (6), proj 43.9, Rate 54.4; L7 +5.8 is shooting (14-23 and 12-19 FG), minutes 35.0 L7 vs 36.3 season",
+            "form.md: Lendeborg 41.4 (12) -> 45.4 (11), L7 44.0 (3), L15 39.7 (7) -> 46.7 (6), proj 33.7, Rate 44.5, 32.1 min; council/gamelog.py split: with Curry 37.1 FP/g, 31.0 min (9 G), without 54.3, 35.3 min (3 G)",
+            "form.md: Jalen Johnson 42.3 (9), L7 39.5 (2, noise), L15 33.8 (4, includes 31 Oct ankle exit), min 33.7/37.0; players_scored.csv A_MIN 35.21, FP_ACT_PG 53.075, A_3P% 0.35 vs 20.5% now (briefing, Yahoo 11 Nov)",
+            "form.md: Clingan 37.6 (11), L7 33.5 (4), L15 40.5 (8), min 25.4; players_scored.csv FP_ACT_PG 41.04, A_GP 77, A_MIN 27.18, PROJ_BLIND_SPOT_PG 5.95",
+            "form.md: Booker 41.5 (11), L7 44.0 (4), L15 41.6 (8), proj 43.2, Rate 42.3; players_scored.csv FP_ACT_PG 40.24, A_MIN 33.56",
+            "form.md: Hartenstein 31.5 (12), L7 35.0 (4), L15 32.9 (7), Rate 33.2; players_scored.csv FP_ACT_PG 34.01 in 24.30 min, A_GP 47 (with Holmgren A_GP 69)",
+            "Matchup 5 (games x form-table Rate): out 495.2 vs in 395.1, -100 for us and about 200 head to head; by season averages -57.9",
+            "docs/offseason-impact.md §2 Lendeborg projected 24.6 min / 23.5 FP; §7 #1 Porzingis diagnosis still unresolved; briefing: no Kerr statement on Lendeborg's role after Curry, Butler or Moody return"
+          ],
+          "concerns": "Matchup 5 is against Kyle: by Rate the deal hands him about 100 FP that week (a 200 swing), and if Johnson's 20.5% three-point slump outlasts the ankle, or Lendeborg keeps his 32 minutes after Butler returns, the rest-of-season gain may not cover it."
+        },
+        {
+          "member": "tempo",
+          "vote": "No",
+          "confidence": 0.62,
+          "rationale": "The deal is legal and roster-neutral: the centre count (ESPN positionLimits {'5': 4}) stays at 3, the bench stays 3 deep, and playoff-week games are 44 vs 43. But it flips matchup 5 against the trade partner from a projected 1714-1626 win to a 1621-1714 loss while we are 0-3, because Murray and Lendeborg (4 games each) would play against us. By Rate it is -12.8 FP/g (132.1 sent vs 119.3 received). The one upgrade, Clingan +4.0 over Hartenstein, is at centre, where free agents give 26-32 FP/g, while the loss, Murray +12.1 over Booker, is at a level no free agent reaches.",
+          "evidence": [
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Murray season 49.9 (10) -> 54.7 (9), L7 55.7 (3), L15 54.0 (6), L30 49.9 (10) -> 54.7 (9), Rate 54.4; Booker 41.5 (11), L7 44.0 (4), L15 41.6 (8), L30 41.5 (11), Rate 42.3",
+            "same form table: Jalen Johnson 42.3 (9), L7 39.5 (2) (noise), L15 33.8 (4), L30 42.3 (9), proj 50.0, 2026 53.1, Rate 39.8; Lendeborg 41.4 (12) -> 45.4 (11), L7 44.0 (3), L15 39.7 (7) -> 46.7 (6), Rate 44.5",
+            "same form table: Clingan 37.6 (11), L7 33.5 (4), L15 40.5 (8), L30 37.6 (11), Rate 37.2; Hartenstein 31.5 (12), L7 35.0 (4), L15 32.9 (7), L30 31.5 (12), Rate 33.2",
+            "council/matchup.py --next --allow-live (01:20 UTC): baseline projection 1714 to 1626; --swap of all three on our side 1621 to 1626; scratch copy swapping both rosters 1621 to 1714; Adds line '0 used this matchup of 7, so 7 left'",
+            "matchup.py 'Adds this week': Murray 190.7, Lendeborg 151.2, Hartenstein 72.8 vs Booker 103.2, Johnson 76.6 (rate includes a half-played game), Clingan 149.0",
+            "ESPN mSettings (live): positionLimits {'5': 4} = defaultPositionId C; no league roster has more than 4 default centres while Team Nic Kerr has 6 default PGs; playoffTeamCount 4, playoffMatchupPeriodLength 2, matchupPeriods 21=[21,22], 22=[23,24], finalScoringPeriod 174 = 11 Apr",
+            "proTeamSchedules_wl: playoff weeks (about 15 Mar-11 Apr, derived) DEN 15 + GS 15 + OKC 14 = 44 vs PHX 15 + ATL 14 + POR 14 = 43; 16 Nov-11 Apr 202 vs 202",
+            "matchup.py free agents: Sharpe 31.5 (11), Holiday 29.5 (11), Vassell 28.3 (10), Gobert 27.3 (11), Robert Williams III 26.0 (9)",
+            "docs/league-rules.md §5 ends mid-row at line 130, so the playoff weeks there are not readable"
+          ],
+          "concerns": "If Johnson returns to his 2026 level (53.1 FP/g, proj 50.0) and Lendeborg and Hartenstein lose minutes once Curry (ESPN est. 12 Dec), Butler (ESPN est. 2 Jan 2027) and Holmgren (ESPN est. 2 Jan 2027) return, which is unresolved, the incoming three are the better group for the playoffs (about 15 Mar-11 Apr), and saying No gives that up."
+        },
+        {
+          "member": "vex",
+          "vote": "No",
+          "confidence": 0.62,
+          "rationale": "The Booker-for-Murray leg loses on every lens (Rate 42.3 vs 54.4, 2026 40.2 vs 47.8, projection about level). The whole package is -12.8 FP/g on Rate, and it turns a projected 1714-1626 matchup-5 lead over Kyle himself into 1621-1714 (about 150+ FP after correcting Johnson's live-game contamination). The upside rests on Jalen Johnson rebounding from 42.3 (9 GP), L15 33.8 (4), with 20.5% 3P after a 31 Oct ankle sprain, and no source says when. Clingan for Hartenstein (+4.0 Rate, +7.0 on 2026) is the only clean win and does not pay for the rest.",
+          "evidence": [
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md: Rate send Murray 54.4 + Lendeborg 44.5 + Hartenstein 33.2 = 132.1 vs receive Booker 42.3 + Johnson 39.8 + Clingan 37.2 = 119.3",
+            "form table: Murray season 49.9 (10) -> 54.7 (9), L7 55.7 (3), L15 54.0 (6); Booker 41.5 (11), L7 44.0 (4), L15 41.6 (8)",
+            "form table: Jalen Johnson 42.3 (9), L7 39.5 (2, noise), L15 33.8 (4), proj 50.0, 2026 53.1; Clingan 37.6 (11), L7 33.5 (4), L15 40.5 (8)",
+            "data/processed/players_scored.csv: Murray FP_ACT_PG 47.8, A_GP 75; Booker 40.24, A_GP 64; Jalen Johnson 53.08, A_GP 72, PROJ_BLIND_SPOT_PG 4.53; Clingan 41.04, A_GP 77; Hartenstein 34.01, A_GP 47",
+            "council/matchup.py --next --allow-live (01:19 UTC): baseline 1714 to 1626; --swap ours only 1621; scratch what-if with both sides swapped 1621 to 1714",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3.md: Johnson 20.5% 3P, BPM 1.1 vs 4.2, ankle sprain 31 Oct (missed 3); Curry ESPN est. 12 Dec, Butler ESPN est. 2 Jan with no team timeline",
+            "docs/research/20261114-0105-booker-johnson-clingan-3for3-injuries.md: Booker has not played 76+ since 2016-17, groin strains in four Decembers; Johnson 36/82 in 2024-25; Hartenstein 47/82 and 57/82"
+          ],
+          "concerns": [
+            "If Jalen Johnson returns to his 2026 level (53.1 over 72 GP) and Lendeborg's role shrinks when Butler returns (ESPN est. 2 Jan, unresolved), a prior-weighted blend makes the trade about +5 FP/g for the rest of the season, and No forgoes that."
+          ]
+        },
+        {
+          "member": "quill",
+          "vote": "Yes",
+          "confidence": 0.6,
+          "rationale": "The trade carries out two standing council targets: Jalen Johnson (unanimous pick-6 choice, 8 Oct) and Clingan (20 Oct Snow Time verdict). It contradicts no earlier verdict, because Clingan beats Hartenstein on every lens (2026 41.1 vs 34.0, season 37.6 vs 31.5, Rate 37.2 vs 33.2) and the 2 Nov Edey vote valued Hartenstein only until Holmgren returns. Summed over the three players it is +11.2 FP/g on 2026 actuals and +25.4 on projection plus blind spot, and on the owner's own season lens it is -1.4, against Kyle's -10.2 version. It fails my 30 Oct and 2 Nov every-lens test on current form (Rate -12.8).",
+          "evidence": [
+            "council/sessions/20261008-0830-pick-6.json: verdict Jalen Johnson, share 1.0",
+            "council/sessions/20261020-051619-snow-time-trade.json: verdict Send Wilson + George, get Donovan Clingan (0.526); never executed (George still on council/roster.csv)",
+            "council/sessions/20261102-070001-edey-for-hartenstein.json: No 9-0, Hartenstein valued 'for about 28 games' until Holmgren (ESPN est. 2 Jan)",
+            "data/processed/players_scored.csv: FP_ACT_PG Johnson 53.08 (A_GP 72), Clingan 41.04 (77), Booker 40.24 (64), Murray 47.80 (75), Hartenstein 34.01 (47), Lendeborg NO_SAMPLE",
+            "form table: Murray 49.9 (10) -> 54.7 (9), L7 55.7 (3), L15 54.0 (6), Rate 54.4; Johnson 42.3 (9), L7 39.5 (2) noise, L15 33.8 (4), Rate 39.8, proj 50.0",
+            "form table: Lendeborg 41.4 (12) -> 45.4 (11), L7 44.0 (3), Rate 44.5; Booker 41.5 (11), L7 44.0 (4), L15 41.6 (8), Rate 42.3",
+            "form table: Clingan 37.6 (11), L7 33.5 (4), L15 40.5 (8), Rate 37.2; Hartenstein 31.5 (12), L7 35.0 (4), L15 32.9 (7), Rate 33.2",
+            "matchup.py --next (01:21 UTC): baseline 1713-1626; our-side swap 1622-1625 (Johnson Rate 33.4 there includes the live ATL@CHI game)",
+            "injuries file: Hartenstein 47/82 and 57/82 'real durability risk'; Clingan 88 of 93 since 2025-26 'durable'; Murray late-season absences in three straight seasons"
+          ],
+          "concerns": [
+            "If Murray's 54.7 and Lendeborg's 45.4 are real, the council's own weekly Rate (-12.8 FP/g) is right, and making the trade before matchup 5 likely turns a projected +87 win over Kyle into a loss of about 65-100."
+          ]
+        }
+      ],
+      "result": {
+        "winner": "Yes",
+        "weight_cast": 19,
+        "majority": true,
+        "share": 0.684,
+        "tiebreak": null,
+        "needs_runoff": false,
+        "runoff_options": null,
+        "standings": [
+          {
+            "option": "Yes",
+            "weight": 13,
+            "confidence_weight": 7.6,
+            "voters": [
+              "coach",
+              "archivist",
+              "cipher",
+              "ledger",
+              "scout",
+              "quill"
+            ]
+          },
+          {
+            "option": "No",
+            "weight": 6,
+            "confidence_weight": 3.72,
+            "voters": [
+              "medic",
+              "tempo",
+              "vex"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "form": "docs/research/20261114-0105-booker-johnson-clingan-3for3-form.md",
+  "injury_history": "docs/research/20261114-0105-booker-johnson-clingan-3for3-injuries.md",
+  "verdict": {
+    "answer": "Yes",
+    "round": "opening",
+    "share": 0.684,
+    "majority": true,
+    "tiebreak": null
+  }
+}
