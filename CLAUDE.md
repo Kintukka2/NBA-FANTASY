@@ -112,3 +112,7 @@ changes and name the moves it recorded in the reply. No confirmation from the
 user is needed. When the user mentions a move, run the sync rather than
 editing the file by hand. A planned move is not on ESPN, so it is not
 recorded.
+
+**Pending trades never block a drop.** Never cite a pending trade offer as a
+reason to keep a player or to avoid dropping one, in a reply, a report, a plan
+or a ballot. Streaming plans treat players in pending offers like any other.
