@@ -89,7 +89,6 @@ Wendell Carter Jr.
 Ayo Dosunmu
 AJ Dybantsa
 Onyeka Okongwu
-Isaiah Hartenstein
 Jeremiah Fears
 Paul Reed
 Klay Thompson
@@ -111,3 +110,4 @@ Payton Pritchard
 Yves Missi
 Jrue Holiday
 Norman Powell
+Rudy Gobert
