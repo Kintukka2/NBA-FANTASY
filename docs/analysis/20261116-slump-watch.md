@@ -22,6 +22,19 @@
 | Snow Time Lakers | 0 | Jalen Johnson 42.4/50.0 · Jayson Tatum 47.0/48.1 · Kyrie Irving 41.5/44.2 |
 | Team Nic Kerr | 0 | Luka Doncic 67.1/60.6 · Domantas Sabonis 43.9/46.7 · Tyrese Maxey 46.8/45.1 |
 
+## Research
+
+The flagged list is unchanged since 13 Nov (Giddey, Embiid and Jackson Jr. among them; see [20261113-slump-watch.md](20261113-slump-watch.md)). New to the "Last 7 days" lists:
+
+- **Josh Giddey** (CHI): L7 41.0 (4), 9.2 over his season, on more minutes with Caleb Wilson out; a 15/10/14 triple-double in overtime on 13 Nov ([CBS, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-josh-giddey-records-triple-double-friday/)).
+- **Stephen Curry** (GS): oblique tear on 11 Nov, re-evaluated in two weeks ([Warriors, 12 Nov](https://warriors.com/news/stephen-curry-injury-update-11-12-26)); ESPN est. 12 Dec. His L7 is a small sample.
+- **Josh Hart** (NY): scoreless on 13 and 15 Nov, "not in a good headspace" ([AP via Yahoo, 16 Nov](https://sports.yahoo.com/articles/knicks-erase-13-point-fourth-021800788.html)). He lost time to an ankle and an illness, and Brown hinted at shifting his minutes ([Bleacher Report, 14 Nov](https://bleacherreport.com/articles/25533250-knicks-josh-hart-not-good-head-space-after-benching-loss-pacers-amid-struggles)).
+- **Tyler Herro** (MIL; Snow Time Lakers): 2-of-13 and a benched fourth quarter on 15 Nov, amid lineup experiments ([Bucks On SI](https://si.com/nba/bucks/onsi/lineup-shifting-bucks-start-fast-then-fall-to-atlanta-hawks-01m7gygb3e20)). No injury.
+- **Miles Bridges** (PHX): minutes, 23.2 against 29.3 ([SI, 15 Nov](https://www.si.com/nba/suns/onsi/phoenix-suns-reveal-starting-lineup-afternoon-matchup-los-angeles-lakers)).
+- **AJ Dybantsa** (WSH): shooting, despite 36 min a game ([ESPN game log](https://www.espn.com/nba/player/gamelog/_/id/5142718/aj-dybantsa)).
+- **Shai Gilgeous-Alexander** (OKC): an 0-for-11 slump from three, then 40 and 37 ([AP via Yahoo, 15 Nov](https://sports.yahoo.com/articles/gilgeous-alexander-scores-37-thunder-044212577.html)).
+- **Donovan Mitchell** (CLE): sat 14 Nov with a knee contusion after a travel delay ([Dallas Sports Journal, 14 Nov](https://dallassportsjournal.com/cavaliers-mitchell-harden-mobley-allen-watson-out-mavericks/)); off the 16 Nov report.
+
 ## By team
 
 **Rank** is the player's rank on their fantasy roster by projection. **Min** is current / projected minutes. **Rate** is current FP/min as a share of projected FP/min. The driver line splits the gap into category shortfalls, in FP/g.
@@ -162,3 +175,12 @@ With **Snow Time Lakers**, proposed to us, expires 16 Nov 09:52 UTC.
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-16 04:42 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
+- [CBS, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-josh-giddey-records-triple-double-friday/)
+- [Warriors, 12 Nov](https://warriors.com/news/stephen-curry-injury-update-11-12-26)
+- [AP via Yahoo, 16 Nov](https://sports.yahoo.com/articles/knicks-erase-13-point-fourth-021800788.html)
+- [Bleacher Report, 14 Nov](https://bleacherreport.com/articles/25533250-knicks-josh-hart-not-good-head-space-after-benching-loss-pacers-amid-struggles)
+- [Bucks On SI](https://si.com/nba/bucks/onsi/lineup-shifting-bucks-start-fast-then-fall-to-atlanta-hawks-01m7gygb3e20)
+- [SI, 15 Nov](https://www.si.com/nba/suns/onsi/phoenix-suns-reveal-starting-lineup-afternoon-matchup-los-angeles-lakers)
+- [ESPN game log](https://www.espn.com/nba/player/gamelog/_/id/5142718/aj-dybantsa)
+- [AP via Yahoo, 15 Nov](https://sports.yahoo.com/articles/gilgeous-alexander-scores-37-thunder-044212577.html)
+- [Dallas Sports Journal, 14 Nov](https://dallassportsjournal.com/cavaliers-mitchell-harden-mobley-allen-watson-out-mavericks/)

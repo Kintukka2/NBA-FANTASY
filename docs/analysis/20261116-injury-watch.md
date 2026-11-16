@@ -10,6 +10,34 @@
 - **Games** is games left this week (09 Nov–15 Nov) / next week (16 Nov–22 Nov).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
+## Research
+
+Earlier notes still hold ([20261113-injury-watch.md](20261113-injury-watch.md)). New since then:
+
+**Pickups:**
+- **MIL** (Gary Trent Jr., Kasparas Jakucionis, Brayden Burries): minutes opened by Ryan Rollins's absence (out 15 Nov; [RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/ryan-rollins-injury-out-sunday-539322)) and Ousmane Dieng's (finger surgery 16 Nov, no timetable reported; [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/ousmane-dieng-finger-to-undergo-surgery-monday); ESPN est. 14 Dec). Both gains fade when Rollins returns. Trent's figure is one game, a small sample.
+- **Isaac Okoro and Buddy Hield** (CHI): Okoro started both games without Caleb Wilson ([NBC Sports, 13 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/bulls-start-giddey-powell-okoro-buzelis-smith)). Wilson is re-evaluated about 3 Dec ([Bulls, 12 Nov](https://www.nba.com/bulls/news/caleb-wilson-medical-update)). Hield's L7 is 2 games, a small sample.
+- **Mo Bamba** (UTAH): started for Jaxson Hayes (knee strain, "doesn't appear" long-term, no timetable reported; [Jazz On SI via Yahoo, 15 Nov](https://sports.yahoo.com/articles/utah-jazz-more-clarity-jaxson-005317080.html); ESPN est. 17 Nov), 26 pts ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/mo-bamba-knocks-down-six-triples-scores-26-points)).
+- **Quenton Jackson** (IND): started for Andrew Nembhard (hip, no timetable reported; [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/andrew-nembhard-hip-downgraded-to-out-sunday); ESPN est. 18 Nov).
+- **Leaky Black** (SAC): 29 min with De'Andre Hunter out (hip, no timetable reported; [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/deandre-hunter-hip-downgraded-to-out-sunday); ESPN est. 18 Nov).
+- **Charles Bassey** (GS): 20 min in a 38-point loss ([RotoWire, 14 Nov](https://www.rotowire.com/basketball/headlines/charles-bassey-news-stands-out-in-loss-539024)). Brandon Williams is expected to miss the rest of GS's road trip ([Yahoo, 15 Nov](https://sports.yahoo.com/articles/stacked-warriors-pelicans-injury-report-231503815.html)); ESPN est. 22 Nov.
+- **Duncan Robinson** (DET): left 14 Nov with a quad issue, no timetable reported ([Heavy, 15 Nov](https://heavy.com/sports/nba/detroit-pistons/duncan-robinson-injury-addressed-miami-heat-loss/)); ESPN est. 17 Nov. Huerter would start.
+
+**Back soon:**
+- **Santi Aldama** (DAL): ankle sprain ([Dallas Sports Journal, 15 Nov](https://dallassportsjournal.com/daniel-gafford-available-santi-aldama-out-mavericks-celtics/)); ESPN est. 18 Nov.
+- **Jock Landale** (ATL): hip inflammation ([RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/jock-landale-injury-wont-go-sunday-539323)); ESPN est. 18 Nov.
+- **Bradley Beal** (LAC): return "remains undecided" ([USA Today via Yahoo, 13 Nov](https://sports.yahoo.com/articles/clippers-bradley-beal-still-sidelined-071547162.html)); ESPN est. 29 Nov.
+- **Isaiah Stewart** (MEM): illness, questionable 16 Nov ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/isaiah-stewart-illness-questionable-monday)); ESPN est. 16 Nov.
+- **Peyton Watson and Jaylon Tyson** (CLE): both questionable 16 Nov ([Heavy, 15 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/cavaliers-hit-with-brutal-injury-news-ahead-of-bulls-game/)); ESPN est. 16 Nov.
+
+**Our injured:**
+- **Trey Murphy III:** out 16 Nov, next chance 18 Nov ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-monday/)); ESPN est. 18 Nov.
+- **Jalen Smith:** questionable 16 Nov, finger sprain ([NBC Sports, 15 Nov](https://nbcsports.com/fantasy/basketball/player-news/2026-11-15/jalen-smith-finger-questionable-vs-cleveland)); ESPN est. 16 Nov.
+- **Kawhi Leonard:** update about 17 Nov ([Yahoo, 11 Nov](https://sports.yahoo.com/articles/kawhi-leonards-knee-keeps-raptors-200300316.html)); ESPN est. 23 Nov.
+- **Jalen Duren** (IR): re-evaluated about 22 Nov ([Detroit Sports Nation, 8 Nov](https://detroitsportsnation.com/jb-bickerstaff-jalen-duren-hamstring-update/gkaplan/detroit-pistons/11/08/2026/505901/)); ESPN est. 24 Nov.
+
+**Shortlist for this week:** see the matchup report. The best adds are Norman Powell, Rudy Gobert, Brook Lopez, Kevin Huerter and Neemias Queta.
+
 ## Pickups for us
 
 Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
@@ -477,3 +505,23 @@ All 102 players in ESPN's injury feed, longest expected absence first.
 ## Sources
 
 - ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-16 04:42 UTC.
+- [RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/ryan-rollins-injury-out-sunday-539322)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/ousmane-dieng-finger-to-undergo-surgery-monday)
+- [NBC Sports, 13 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/bulls-start-giddey-powell-okoro-buzelis-smith)
+- [Bulls, 12 Nov](https://www.nba.com/bulls/news/caleb-wilson-medical-update)
+- [Jazz On SI via Yahoo, 15 Nov](https://sports.yahoo.com/articles/utah-jazz-more-clarity-jaxson-005317080.html)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/mo-bamba-knocks-down-six-triples-scores-26-points)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/andrew-nembhard-hip-downgraded-to-out-sunday)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/deandre-hunter-hip-downgraded-to-out-sunday)
+- [RotoWire, 14 Nov](https://www.rotowire.com/basketball/headlines/charles-bassey-news-stands-out-in-loss-539024)
+- [Yahoo, 15 Nov](https://sports.yahoo.com/articles/stacked-warriors-pelicans-injury-report-231503815.html)
+- [Heavy, 15 Nov](https://heavy.com/sports/nba/detroit-pistons/duncan-robinson-injury-addressed-miami-heat-loss/)
+- [Dallas Sports Journal, 15 Nov](https://dallassportsjournal.com/daniel-gafford-available-santi-aldama-out-mavericks-celtics/)
+- [RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/jock-landale-injury-wont-go-sunday-539323)
+- [USA Today via Yahoo, 13 Nov](https://sports.yahoo.com/articles/clippers-bradley-beal-still-sidelined-071547162.html)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/isaiah-stewart-illness-questionable-monday)
+- [Heavy, 15 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/cavaliers-hit-with-brutal-injury-news-ahead-of-bulls-game/)
+- [CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-monday/)
+- [NBC Sports, 15 Nov](https://nbcsports.com/fantasy/basketball/player-news/2026-11-15/jalen-smith-finger-questionable-vs-cleveland)
+- [Yahoo, 11 Nov](https://sports.yahoo.com/articles/kawhi-leonards-knee-keeps-raptors-200300316.html)
+- [Detroit Sports Nation, 8 Nov](https://detroitsportsnation.com/jb-bickerstaff-jalen-duren-hamstring-update/gkaplan/detroit-pistons/11/08/2026/505901/)

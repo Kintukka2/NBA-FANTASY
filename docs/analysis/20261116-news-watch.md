@@ -5,6 +5,30 @@
 - **Flags:** 39 players. *injury*: ESPN's label or date disagrees with the news; *role*: into or out of the starting lineup; *minutes*: last 3 games 5+ min off the season, or a minutes limit; *rest*: a back-to-back in the next 7 days with a rest signal; *gap*: out with no date, or no news in 5 days.
 - **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). **Role rate** is FP per minute this season (outliers out) times his minutes in the new role. The plans use it only once the research confirms the role and records it in `council/news_overrides.csv`.
 
+## What changed for us
+
+**Our players:**
+- Missi was added for Gafford.
+- Bey keeps the start while Murphy is out ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-monday/)).
+- Jenkins keeps starting, picked game by game, until Duren returns.
+- Paul George is a rest risk on 16 and 22 Nov.
+- **Trey Murphy III:** out 16 Nov vs GS, his fifth straight game (bilateral patellar tendinopathy); next chance 18 Nov vs DET ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-monday/)). No timetable reported; *ESPN est.* 18 Nov.
+- **Jalen Smith:** questionable 16 Nov vs CLE with a left finger sprain after missing 14 Nov ([NBC Sports, 15 Nov](https://nbcsports.com/fantasy/basketball/player-news/2026-11-15/jalen-smith-finger-questionable-vs-cleveland)). No timetable reported; *ESPN est.* 16 Nov.
+- **Scottie Barnes:** back on 15 Nov with 30 pts in an overtime loss to NY ([NBC Sports, 15 Nov](https://nbcsports.com/fantasy/basketball/player-news/2026-11-15/scottie-barnes-scores-game-high-30-in-ot-defeat)). Healthy.
+- **Kawhi Leonard:** out at least another week from 10 Nov, not yet on court; update about 17 Nov ([Yahoo, 11 Nov](https://sports.yahoo.com/articles/kawhi-leonards-knee-keeps-raptors-200300316.html)). *ESPN est.* 23 Nov.
+- **Fred VanVleet (Snow Time Lakers):** sat 15 Nov (the first night, right knee management), next chance 16 Nov at MIA ([RotoWire, 14 Nov](https://www.rotowire.com/basketball/headlines/fred-vanvleet-injury-ruled-out-for-sunday-539130)); no other HOU back-to-back this week. **Override removed:** the "sits 16 Nov" row was wrong.
+
+**Snow Time Lakers:**
+- Kyrie is back 18 Nov; 22 Nov (the second night) is at risk.
+- Herro's L7 dip is one 2-of-13 game.
+- Avdija is carrying Portland's offence.
+- VanVleet sat 15 Nov, not 16.
+
+**Overrides:**
+- Added: Duren return 23 Nov, Pippen Jr. return 22 Nov, Dejounte Murray return 23 Nov (all floors).
+- Removed: Murphy sit 13 Nov (expired), VanVleet sit 16 Nov (wrong night).
+- Raynaud's floor (16 Nov) and Claxton's role (to 16 Nov) end today.
+
 ## Overrides (`council/news_overrides.csv`)
 
 | Player | Kind | Value | Until | Source | State |
@@ -72,7 +96,9 @@
 - **Minutes:** 37.7 min over his last 3 games against 28.0 for the season (+9.7)
 - News (12 Nov): Jenkins had 21 points (6-11 FG, 3-5 3Pt, 6-6 FT), six rebounds and two steals in 42 minutes before fouling out of Thursday's 144-140 double-overtime victory over Washington.
 - News (10 Nov): Jenkins notched 22 points (7-16 FG, 2-6 3Pt, 6-6 FT), six rebounds, eight assists and four steals over 36 minutes during Monday's 122-111 win over Washington.
-- **Research:** _pending_
+- **Research:**
+  - Started again 14 Nov at MIA ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909982)); the fifth starter is picked game by game until Duren returns ([Hoops Rumors, 10 Nov](https://www.hoopsrumors.com/2026/11/pistons-notes-jenkins-lineup-collins-duren-okorie.html)). About 35 min a game. Duncan Robinson (left thigh soreness; no timetable reported; ESPN est. 17 Nov) is "not a lock" for 17 Nov ([Detroit Sports Nation, 14 Nov](https://detroitsportsnation.com/duncan-robinson-injury-update-pistons-heat/ddrysdale/detroit-pistons/11/14/2026/507834)); Isaiah Joe is still out.
+  - Verdict: *ESPN confirmed*. No row: the start is game by game.
 
 ### Saddiq Bey (NO, SF/PF, us)
 
@@ -83,7 +109,9 @@
 - **Minutes:** 35.0 min over his last 3 games against 28.4 for the season (+6.6)
 - News (13 Nov): Bey notched 30 points (11-20 FG, 6-9 3Pt, 2-3 FT), 10 rebounds and one block across 35 minutes in Friday's 142-111 loss to the Grizzlies.
 - News (13 Nov): Bey will start Friday's game against the Grizzlies, Rod Walker of The Times-Picayune reports.
-- **Research:** _pending_
+- **Research:**
+  - "Expected to keep his starting role for as long as Murphy is sidelined" ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-monday/)); started 13 and 14 Nov with Zion playing ([NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/nor-starting-fears-herb-bey-zion-missi)). Mathurin is out 16 Nov too ([CBS, 15 Nov](https://cbssports.com/fantasy/basketball/news/pelicans-bennedict-mathurin-out-again-vs-warriors)).
+  - Verdict: *ESPN confirmed*. No row: no source states his minutes.
 
 ### Yves Missi (NO, C, us)
 
@@ -92,7 +120,9 @@
 - **Minutes:** news on 15 Nov: "He was placed on a minutes restriction, limiting him to just 22 minutes of playing time."
 - News (15 Nov): Missi notched three points (1-4 FG, 1-4 FT), eight rebounds, one assist and four blocks over 22 minutes during Saturday's 116-108 loss to the Nuggets.
 - News (14 Nov): Missi (knee) will be available for Saturday's game against Denver, Jim Eichenhofer of the Pelicans' official site reports.
-- **Research:** _pending_
+- **Research:**
+  - Returned 14 Nov, started, 22 min on a restriction ([NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/yves-missi-logs-22-minutes-in-return-to-lineup)); playing time expected to rise "over the next few games" ([RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/yves-missi-news-blocks-four-shots-in-return-539214)). Small sample (2 games).
+  - Verdict: *nothing new found*. No row.
 
 ### Paul George (BOS, SF/PF, us)
 
@@ -101,7 +131,9 @@
 - **Rest:** back-to-back Sun 15–Mon 16 Nov, Sat 21–Sun 22 Nov; news on 11 Nov: "George will sit out the second leg of this back-to-back set due to an illness, and his next opportunity to play will come Sunday against the Mavericks."; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (14 Nov): George (illness) isn't listed on the injury report for Sunday's game against Dallas, Jack Simone of BostonSportsJournal.com reports.
 - News (11 Nov): George (illness) has been ruled out for Wednesday's game against Toronto, Taylor Snow of the Celtics' official site reports.
-- **Research:** _pending_
+- **Research:**
+  - Played 25 min in the 131–94 rout of DAL on 15 Nov ([CelticsBlog, 15 Nov](https://celticsblog.com/celtics-highlights/150272/celtics-mavericks)); nothing said about 16 Nov (the second night); he sat the second night on 2 Nov ([RotoBaller, 2 Nov](https://www.rotoballer.com/?p=1982197)).
+  - Verdict: *nothing new found*; a rest risk, not announced.
 
 ### Jalen Duren (DET, C, us)
 
@@ -110,7 +142,9 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 24 Nov)
 - News (08 Nov): Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports.
 - News (25 Oct): Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.
-- **Research:** _pending_
+- **Research:**
+  - Nothing new since the 8 Nov update: on-court work, re-evaluated in two weeks ([Detroit Sports Nation, 8 Nov](https://detroitsportsnation.com/jb-bickerstaff-jalen-duren-hamstring-update/gkaplan/detroit-pistons/11/08/2026/505901/)).
+  - Verdict: *ESPN corrected* by a day (est. 24 Nov). Override: return 23 Nov (a floor).
 
 ## Free agents and waivers
 
@@ -123,7 +157,9 @@
 - **Rest:** back-to-back Sun 22–Mon 23 Nov; news on 14 Nov: "Powell was questionable to play Saturday due to lower-back injury management, but he'll fight through it and suit up for the second leg of Chicago's back-to-back set."
 - News (14 Nov): Powell finished with 23 points (10-19 FG, 3-5 3Pt), five rebounds, three assists, a steal and two blocks across 30 minutes in Saturday's 117-106 victory over the Timberwolves.
 - News (14 Nov): Powell (back) is available for Saturday's game against the Timberwolves, K.C. Johnson of Chicago Sports Network reports.
-- **Research:** _pending_
+- **Research:**
+  - Back from back spasms on 13 Nov with no minutes limit ([CBS/RotoWire, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-norman-powell-will-play-saturday/)); questionable for back management on 14 Nov but played ([NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/norman-powell-back-available-vs-minnesota)); 31 and 30 min. With Caleb Wilson out, Chicago's scoring "falls entirely on Norman Powell" ([Yahoo](https://sports.yahoo.com/articles/bulls-injury-report-first-game-181313737.html)). No rest statement; CHI's back-to-back is 22–23 Nov.
+  - Verdict: *ESPN confirmed* (active).
 
 ### Jusuf Nurkic (UTAH, C, free agent)
 
@@ -133,7 +169,9 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 20 Nov)
 - News (06 Nov): Nurkic (toe) has begun participating in on-court activities as he continues recovering from a right foot injury sustained during an Oct. 4 preseason game against Denver. He will be re-evaluated in two weeks, the Jazz announced Friday.
 - News (03 Nov): Nurkic (foot) is out for Wednesday's game against the Pelicans.
-- **Research:** _pending_
+- **Research:**
+  - Still out 15 Nov, no timeline ([SI, 15 Nov](https://www.si.com/nba/jazz/onsi/jazz-vs-spurs-injury-report-reveals-major-problem-for-utah-rotation)); re-evaluation about 20 Nov ([Hoops Rumors, 6 Nov](https://www.hoopsrumors.com/2026/11/jazz-center-jusuf-nurkic-out-at-least-two-more-weeks.html)). Jaxson Hayes is also out (left knee strain).
+  - Verdict: *ESPN corrected* by a day; the 21 Nov floor stands.
 
 ### Jalen Suggs (ORL, PG/SG, free agent)
 
@@ -142,7 +180,9 @@
 - **Injury:** not in ESPN's injury feed, but the news said on 13 Nov: "Suggs (knee) participated in the Magic's morning shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports."
 - News (13 Nov): Suggs notched three points (1-8 FG, 1-6 3Pt), two rebounds and three assists across 21 minutes during Friday's 107-99 win over the Bucks.
 - News (13 Nov): Suggs (knee) will come off the bench Friday against the Bucks.
-- **Research:** _pending_
+- **Research:**
+  - Returned 13 Nov, 21 min off the bench ([RotoWire, 14 Nov](https://www.rotowire.com/basketball/headlines/jalen-suggs-news-logs-21-minutes-in-return-538990)); Sweeney is managing his minutes and wants him to "keep ramping up" ([ClutchPoints, 14 Nov](https://clutchpoints.com/nba/orlando-magic/magic-news-sean-sweeney-jalen-suggs-return-injury-bucks)).
+  - Verdict: *ESPN confirmed* (active). No row: no minutes target reported.
 
 ### Jerami Grant (MEM, PF, free agent)
 
@@ -152,7 +192,9 @@
 - **Rest:** back-to-back Wed 18–Thu 19 Nov; news on 14 Nov: "Grant will miss the second leg of Memphis' back-to-back set due to a head injury."
 - News (15 Nov): Grant (head) is off the injury report ahead of Monday's game against the Wizards.
 - News (14 Nov): Grant (head) is out for Saturday's game against the Nets.
-- **Research:** _pending_
+- **Research:**
+  - Head injury kept him out 14 Nov; off the report for 16 Nov at WSH ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/jerami-grant-head-removed-from-injury-report)); 22.8 min off the bench over his last five.
+  - Verdict: *ESPN confirmed*.
 
 ### Dejounte Murray (NO, PG/SG, free agent)
 
@@ -162,7 +204,9 @@
 - **Minutes:** 24.7 min over his last 3 games against 31.4 for the season (−6.8)
 - News (13 Nov): Murray (ankle) is out for Friday's game against Memphis.
 - News (13 Nov): Murray (ankle) requested a trade from the Pelicans on Friday, per Shams Charania of ESPN.
-- **Research:** _pending_
+- **Research:**
+  - No trade yet ([Hoops Rumors](https://www.hoopsrumors.com/transactions)); sitting until traded ([HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html); [NBA.com, 14 Nov](https://www.nba.com/news/dejounte-murray-requests-trade-pelicans-confirm)); out again 16 Nov.
+  - Verdict: *ESPN corrected* (est. 20 Nov assumes only the ankle). Override: return 23 Nov (a floor; remove if traded).
 
 ### Scotty Pippen Jr. (MEM, PG/SG, free agent)
 
@@ -171,7 +215,9 @@
 - **Injury:** ESPN est. 21 Nov (Out, Back Soreness, updated 10 Nov), but the news said on 10 Nov: "He has now been sidelined for six straight contests due to the back issue and can be considered week-to-week until Memphis offers an update on his recovery."
 - News (10 Nov): Pippen (back) remains out for Wednesday's game against Denver, Michael Wallace of the Grizzlies' official site reports.
 - News (08 Nov): Pippen (back) won't play in Monday's game versus the Raptors.
-- **Research:** _pending_
+- **Research:**
+  - Lumbar disc herniation (3 Nov), "day-to-day or week-to-week" (Iisalo, [NBC Sports, 4 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/iisalo-pippen-back-day-to-day-or-week-to-week)); still out 16 Nov on the Grizzlies' 15 Nov report ([Yahoo, 15 Nov](https://sports.yahoo.com/articles/grizzlies-list-zach-edey-quinten-221551360.html)).
+  - Verdict: *ESPN corrected* (est. 21 Nov). Override: return 22 Nov (a floor).
 
 ### Grayson Allen (CHA, PG/SG, free agent)
 
@@ -181,7 +227,9 @@
 - **Role:** news on 15 Nov: "Allen is not listed in the starting lineup for Sunday's game against the Clippers, Tomer Azarly of ClutchPoints.com reports."
 - News (15 Nov): Allen is not listed in the starting lineup for Sunday's game against the Clippers, Tomer Azarly of ClutchPoints.com reports.
 - News (13 Nov): Allen logged 14 points (5-11 FG, 4-8 3Pt), four rebounds, six assists and one steal over 34 minutes during Thursday's 101-96 loss to Phoenix.
-- **Research:** _pending_
+- **Research:**
+  - Back to the bench on 15 Nov when Brandon Miller was cleared; still 25 min ([RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/grayson-allen-news-not-starting-sunday-539277); [Heavy, 15 Nov](https://heavy.com/sports/hornets-brandon-miller-cleared-return-clippers/)). Knueppel re-evaluated in four weeks (ESPN est. 12 Dec); Schröder no timetable reported (ESPN est. 25 Nov). Only 2 games this week (17, 20 Nov).
+  - Verdict: *ESPN confirmed*; his starts were injury cover.
 
 ### Aday Mara (OKC, C, free agent)
 
@@ -191,7 +239,9 @@
 - **Role:** news on 11 Nov: "Mara is in the starting lineup for Wednesday's matchup with the Trail Blazers, Clemente Almanza of USA Today reports."
 - News (15 Nov): Mara will come off the bench during Sunday's game against the Kings, Sean Cunningham of Fox 40 Sacramento reports.
 - News (14 Nov): Mara amassed 10 points (5-6 FG), three rebounds and three blocks across 21 minutes during Friday's 113-112 loss to the Clippers.
-- **Research:** _pending_
+- **Research:**
+  - Back on the bench since Ajay Mitchell returned, still 26 min, 16 pts, 13 reb on 15 Nov ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-aday-mara-back-to-bench/); [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/okc-starts-sga-mccain-mitchell-kenrich-ihart)). Holmgren out 8–10 weeks (ESPN est. 2 Jan); Jaylin Williams missed a seventh straight, no timetable reported (ESPN est. 18 Nov).
+  - Verdict: *ESPN confirmed*; 21–32 min off the bench.
 
 ### Mo Bamba (UTAH, C, free agent)
 
@@ -201,7 +251,9 @@
 - **Role:** news on 15 Nov: "Bamba will start in Sunday's game against San Antonio."
 - News (15 Nov): Bamba recorded 26 points (10-13 FG, 6-6 3Pt, 0-3 FT), five rebounds, four assists, two steals and a block in 35 minutes during Sunday's 110-102 loss to the Spurs.
 - News (15 Nov): Bamba will start in Sunday's game against San Antonio.
-- **Research:** _pending_
+- **Research:**
+  - Started 15 Nov (35 min, 61 FP, one game) with Jaxson Hayes out (left knee strain; no timetable reported; ESPN est. 17 Nov) ([CBS/RotoWire, 14 Nov](https://www.cbssports.com/fantasy/basketball/news/jazzs-jaxson-hayes-ruled-out-for-sunday/); [SI, 15 Nov](https://www.si.com/nba/jazz/onsi/utah-jazz-provide-more-clarity-on-jaxson-hayes-latest-injury)). His role rate rests on one game, a small sample.
+  - Verdict: *ESPN confirmed*; the role lasts only while Hayes is out.
 
 ### Tyrese Proctor (CLE, SG, free agent)
 
@@ -212,7 +264,9 @@
 - **Minutes:** 28.0 min over his last 3 games against 19.2 for the season (+8.8)
 - News (14 Nov): Proctor posted 24 points (10-19 FG, 4-13 3Pt), 11 rebounds and 10 assists across 34 minutes during Saturday's 127-117 win over Dallas.
 - News (14 Nov): Proctor will start in Saturday's game versus the Mavericks.
-- **Research:** _pending_
+- **Research:**
+  - His 14 Nov start was a one-off: Cleveland rested its starters after a delayed flight ([107.5 The Game, 14 Nov](https://www.1075thegame.com/2026/11/14/tyrese-proctor-has-first-triple-double-as-cavs-rest-starters-top-mavs/)); the starters are off Monday's report ([Heavy, 15 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/cavaliers-hit-with-brutal-injury-news-ahead-of-bulls-game/)). Mobley, Merrill and Watson are out or questionable, so 20–27 min off the bench.
+  - Verdict: *ESPN confirmed*.
 
 ### Meleek Thomas (CLE, SG, free agent)
 
@@ -222,7 +276,9 @@
 - **Role:** news on 14 Nov: "Thomas will start in Saturday's game against Dallas."
 - News (14 Nov): Thomas will start in Saturday's game against Dallas.
 - News (09 Nov): Thomas tallied 18 points (7-12 FG, 4-6 3Pt), three rebounds, three assists, two steals and two blocks across 27 minutes in Monday's 124-112 loss to the Hornets.
-- **Research:** _pending_
+- **Research:**
+  - Same one-off rest-night start on 14 Nov ([107.5 The Game, 14 Nov](https://www.1075thegame.com/2026/11/14/tyrese-proctor-has-first-triple-double-as-cavs-rest-starters-top-mavs/)); more minutes while Mobley is out ([Heavy, 15 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/cavaliers-hit-with-brutal-injury-news-ahead-of-bulls-game/)).
+  - Verdict: *ESPN confirmed*.
 
 ### Isaiah Stewart (MEM, PF/C, free agent)
 
@@ -232,7 +288,9 @@
 - **Role:** news on 13 Nov: "Stewart will start Friday's game against the Pelicans."
 - News (15 Nov): Stewart is questionable for Monday's game against the Wizards due to an illness.
 - News (14 Nov): Stewart chipped in 12 points (5-7 FG, 0-2 3Pt, 2-2 FT), five rebounds and four blocks across 20 minutes during Friday's 142-111 win over the Pelicans.
-- **Research:** _pending_
+- **Research:**
+  - Started 13 and 14 Nov for Zach Edey; Edey is questionable 16 Nov ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/zach-edey-ankle-questionable-monday-vs-wizards)); Stewart is questionable too, with an illness ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/isaiah-stewart-illness-questionable-monday)).
+  - Verdict: *ESPN confirmed*; day-to-day cover.
 
 ### Jaylon Tyson (CLE, SG/SF, free agent)
 
@@ -243,7 +301,9 @@
 - **Minutes:** 29.0 min over his last 3 games against 23.9 for the season (+5.1)
 - News (15 Nov): Tyson (ankle) is questionable for Monday's game against the Bulls.
 - News (14 Nov): Tyson closed with 16 points (6-11 FG, 4-7 3Pt), three rebounds, one assist and one steal over 30 minutes during Friday's 133-121 loss to Miami.
-- **Research:** _pending_
+- **Research:**
+  - Started 13 and 14 Nov for Mobley, who is out again 16 Nov ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/cavaliers-evan-mobley-ruled-out-for-monday/)); Tyson is questionable 16 Nov with right ankle management ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/cavaliers-jaylon-tyson-questionable-for-monday/)).
+  - Verdict: *ESPN confirmed*.
 
 ### Kevin Huerter (DET, SG/SF, free agent)
 
@@ -252,7 +312,9 @@
 - **Minutes:** 31.7 min over his last 3 games against 24.4 for the season (+7.2)
 - News (14 Nov): Huerter posted 20 points (9-15 FG, 2-6 3Pt), four rebounds, seven assists, a steal and three blocks across 38 minutes in Saturday's 137-117 loss to Miami.
 - News (09 Nov): Huerter recorded 24 points (9-14 FG, 4-8 3Pt, 2-3 FT), five rebounds, five assists, five blocks and two steals in 35 minutes during Sunday's 121-116 loss to the Lakers.
-- **Research:** _pending_
+- **Research:**
+  - 38 min, 20 pts on 14 Nov after Duncan Robinson left; he "would start" if Robinson misses time ([NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/kevin-huerter-puts-up-20-4-7-1-3-line-off-bench)). Robinson: "It was a quad", no timetable reported ([Heavy, 15 Nov](https://heavy.com/sports/nba/detroit-pistons/duncan-robinson-injury-addressed-miami-heat-loss/)); ESPN est. 17 Nov. His L7 is 16.0 over on 32.5 min against 24.4.
+  - Verdict: *ESPN confirmed*; the minutes last while Joe and Robinson are out.
 
 ### Caleb Wilson (CHI, SF, free agent)
 
@@ -261,7 +323,9 @@
 - **Minutes:** 23.0 min over his last 3 games against 30.7 for the season (−7.7)
 - News (12 Nov): Wilson is undergoing surgery for a fractured right hand and will miss at least four to six weeks, Shams Charania of ESPN reports.
 - News (11 Nov): Wilson won't return to Wednesday's game against the Spurs due to a right hand injury. He'll finish with 15 points (5-7 FG, 2-2 3Pt, 3-3 FT), five rebounds and one steal in 15 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Surgery 12 Nov, re-evaluated in three weeks, about 3 Dec ([Bulls, 12 Nov](https://www.nba.com/bulls/news/caleb-wilson-medical-update)); 4–6 weeks per Charania.
+  - Verdict: *ESPN confirmed* (est. 13 Dec).
 
 ### Toumani Camara (POR, SF/PF, free agent)
 
@@ -270,7 +334,9 @@
 - **Minutes:** 34.7 min over his last 3 games against 29.1 for the season (+5.6)
 - News (14 Nov): Camara contributed 14 points (5-7 FG, 2-4 3Pt, 2-2 FT), two rebounds, one assist, one block and two steals across 36 minutes during Friday's 120-107 victory over Sacramento.
 - News (07 Nov): Camara accumulated 18 points (7-12 FG, 4-8 3Pt), six rebounds and one assist in 30 minutes during Friday's 124-118 loss to the Lakers.
-- **Research:** _pending_
+- **Research:**
+  - 30, 38 and 36 min in his last three; "with Portland down two key guards, his minutes should stay high" ([CBS/RotoWire, 14 Nov](https://www.cbssports.com/fantasy/basketball/news/trail-blazers-toumani-camara-posts-14-points-in-decisive-win/)). Morant re-evaluated about 27 Nov ([NBA.com, 30 Oct](https://www.nba.com/news/ja-morant-hamstring-injury-october-2026)); Nori may manage players across 16–17 Nov ([SI](https://www.si.com/nba/trailblazers/onsi/4-blazers-ruled-out-vs-wolves-means-depth-chart-will-be-tested)).
+  - Verdict: *ESPN confirmed*.
 
 ### Collin Murray-Boyles (TOR, PF, free agent)
 
@@ -279,7 +345,9 @@
 - **Minutes:** 30.7 min over his last 3 games against 24.3 for the season (+6.3)
 - News (12 Nov): Murray-Boyles ended with 14 points (5-9 FG, 1-1 3Pt, 3-4 FT), four assists, five blocks and one steal over 32 minutes during Thursday's 123-112 loss to the 76ers.
 - News (11 Nov): Murray-Boyles posted five points (1-9 FG, 1-5 3Pt, 2-4 FT), four rebounds, three assists and one block over 20 minutes during the Raptors' 98-93 loss to the Celtics on Wednesday.
-- **Research:** _pending_
+- **Research:**
+  - Started again on 15 Nov with Barnes back, Poeltl to the bench ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/tor-starts-quickley-walter-barrett-barnes-cmb)); 40 min in overtime ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909990)).
+  - Verdict: *nothing new found*; one game with Barnes, no reason given.
 
 ### Bones Hyland (MIN, PG, free agent)
 
@@ -288,7 +356,9 @@
 - **Minutes:** 19.0 min over his last 3 games against 13.8 for the season (+5.2)
 - News (13 Nov): Hyland produced 24 points (7-10 FG, 5-6 3Pt, 5-6 FT), three rebounds, eight assists and two steals across 23 minutes during Thursday's 133-94 victory over Dallas.
 - News (09 Nov): Hyland notched 14 points (4-8 FG, 1-5 3Pt, 5-6 FT), two rebounds, two assists and one block across 13 minutes in Sunday's 115-100 win over the Jazz.
-- **Research:** _pending_
+- **Research:**
+  - 13, 23 and 21 min in his last three against 13.8 for the season: Jaylen Clark (hamstring) is out at least two to three weeks, re-evaluated 29 Nov ([Yahoo, 15 Nov](https://sports.yahoo.com/articles/timberwolves-lose-jaylen-clark-least-235639664.html); [CBS/RotoWire, 14 Nov](https://www.cbssports.com/fantasy/basketball/news/timberwolves-jaylen-clark-wont-return-saturday/)). Edwards out until late December.
+  - Verdict: *ESPN confirmed*; the bump should last the week.
 
 ### Rudy Gobert (MIN, C, free agent)
 
@@ -297,7 +367,9 @@
 - **Rest:** back-to-back Mon 16–Tue 17 Nov; sat the second night of the 30–31 Oct back-to-back, playing the games either side
 - News (09 Nov): Gobert ended Sunday's 115-100 victory over Utah with 10 points (4-4 FG, 2-4 FT), 15 rebounds and two assists over 31 minutes.
 - News (05 Nov): Gobert ended Wednesday's 117-107 victory over the Rockets with eight points (3-7 FG, 2-6 FT), 11 rebounds, two assists, four blocks and one steal over 33 minutes.
-- **Research:** _pending_
+- **Research:**
+  - His 31 Oct absence was back spasms ([NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/rudy-gobert-back-downgraded-to-out-saturday)); he played both nights of 25–26 Oct; not on the 16 Nov report.
+  - Verdict: *nothing new found*; expect him 16 and 17 Nov.
 
 ### Myles Turner (MIL, C, free agent)
 
@@ -306,7 +378,9 @@
 - **Rest:** back-to-back Wed 18–Thu 19 Nov; news on 12 Nov: "Turner (rest) isn't listed on the injury report ahead of Friday's game against Orlando."; sat the second night of the 10–11 Nov back-to-back, playing the games either side
 - News (14 Nov): Turner recorded 14 points (5-9 FG, 4-7 3Pt), 11 rebounds, three assists and two steals across 31 minutes during Friday's 107-99 loss to the Magic.
 - News (12 Nov): Turner (rest) isn't listed on the injury report ahead of Friday's game against Orlando.
-- **Research:** _pending_
+- **Research:**
+  - His only rest was the second night of 10–11 Nov ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/myles-turner-rest-ruled-out-vs-los-angeles)); he played both nights of 23–24 Oct. MIL's back-to-back this week is 18–19 Nov.
+  - Verdict: *nothing new found*; 19 Nov is a risk, not announced.
 
 ### Zach Edey (MEM, C, free agent)
 
@@ -315,7 +389,9 @@
 - **Rest:** back-to-back Wed 18–Thu 19 Nov; news on 14 Nov: "Edey sat out Memphis' game Friday due to an ankle injury, and he is now at risk of missing both legs of this back-to-back set."; sat the first night of the 25–26 Oct back-to-back, playing the games either side
 - News (15 Nov): Edey (ankle) is questionable for Monday's game against Washington.
 - News (14 Nov): Edey (ankle) is listed as out for Saturday's game against the Nets.
-- **Research:** _pending_
+- **Research:**
+  - Questionable 16 Nov at WSH, "left ankle return from injury management" ([Yahoo, 15 Nov](https://sports.yahoo.com/articles/grizzlies-list-zach-edey-quinten-221551360.html)); "Zach Edey doesn't play back to backs at this point" (Rotoworld via [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/zach-edey-ankle-questionable-monday-vs-wizards)). MEM's back-to-back is 18–19 Nov. L7 14.0 (2) is a small sample.
+  - Verdict: *ESPN confirmed* (est. 16 Nov); expect him to sit one of 18–19 Nov, night not named.
 
 ## Opponents: this week and next
 
@@ -326,7 +402,9 @@
 - **Injury:** ESPN est. 18 Nov (Out, Left Knee, updated 15 Nov), but the news said on 14 Nov: "The 34-year-old veteran had a slow start to the 2026-27 campaign after missing last season while recovering from knee surgery."
 - News (15 Nov): Irving (knee) has been ruled out for Sunday's game against the Celtics.
 - News (15 Nov): Irving (knee) is questionable to play in Sunday's game against the Celtics.
-- **Research:** _pending_
+- **Research:**
+  - Out 15 Nov (second night) with left knee injury management after 37 min on 14 Nov ([Dallas Sports Journal, 15 Nov](https://dallassportsjournal.com/kyrie-irving-max-christie-out-mavericks-celtics/); [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kyrie-irving-knee-downgraded-to-out-sunday)); DAL next plays 18 Nov. He sat the second night of 2 of 3 back-to-backs; this week's is 21–22 Nov, so 22 Nov is at risk (May: "let's not make any decisions in advance", [Yardbarker, 24 Oct](https://www.yardbarker.com/nba/articles/dusty_may_addresses_kyrie_irving_playing_both_nights_of_mavericks_back_to_backs/s1_17810_44470036)).
+  - Verdict: *ESPN confirmed* (est. 18 Nov).
 
 ### Cam Spencer (MEM, PG/SG, Lauri Birds)
 
@@ -337,7 +415,9 @@
 - **Minutes:** 26.0 min over his last 3 games against 20.9 for the season (+5.1)
 - News (14 Nov): Spencer finished with 17 points (6-10 FG, 3-3 3Pt, 2-2 FT), one rebound, eight assists and two steals across 34 minutes in Saturday's 129-110 win over the Nets.
 - News (14 Nov): Spencer will start in Saturday's game against the Nets.
-- **Research:** _pending_
+- **Research:**
+  - Started for Ty Jerome (hip; out 16 Nov, next chance 18 Nov; [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/ty-jerome-hip-remains-out-monday-vs-washington)), 34 min ([NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/cam-spencer-starting-in-place-of-ty-jerome)).
+  - Verdict: *nothing new found*.
 
 ### Jaime Jaquez Jr. (MIL, SG/SF, Lauri Birds)
 
@@ -346,7 +426,9 @@
 - **Role:** came off the bench in his last 2 games after starting 11 of 12; 29.0 min in those 2, against 27.9 for the season
 - News (13 Nov): Jaquez chipped in 22 points (8-15 FG, 5-7 3Pt, 1-3 FT), six rebounds and four assists in 28 minutes during Friday's 107-99 loss to the Magic.
 - News (12 Nov): Jaquez registered 25 points (7-16 FG, 2-7 3Pt, 9-9 FT), five rebounds, three assists and two steals across 30 minutes during Wednesday's 123-112 loss to the Lakers.
-- **Research:** _pending_
+- **Research:**
+  - Off the bench amid the Bucks' lineup changes; minutes held at 28–30 ([NBC Sports, 13 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/mil-starts-burries-herro-dieng-kuzma-turner)).
+  - Verdict: *nothing new found*.
 
 ### Deni Avdija (POR, SF/PF, Snow Time Lakers)
 
@@ -355,7 +437,9 @@
 - **Rest:** back-to-back Mon 16–Tue 17 Nov; news on 14 Nov: "They'll need more of the same in back-to-back games at Minnesota on Monday and Tuesday."
 - News (14 Nov): Avdija finished Friday's 120-107 win over the Kings with 34 points (11-13 FG, 3-5 3Pt, 9-9 FT), six rebounds, four assists and one block across 35 minutes.
 - News (12 Nov): Avdija tallied 28 points (9-20 FG, 4-13 3Pt, 6-6 FT), three rebounds, six assists, four steals and two blocks across 35 minutes in Wednesday's 118-108 win over the Thunder.
-- **Research:** _pending_
+- **Research:**
+  - Played both nights of all three POR back-to-backs; not on the 16 Nov report. His L7 54.0 (3) is about 9 over: he carries the offence with Morant and Sharpe out ([Sports Mole, 15 Nov](https://www.sportsmole.co.uk/basketball/portland-trail-blazers/preview/trail-blazers-vs-timberwolves-player-props-injury-report-and-prediction--nba_609140.html)).
+  - Verdict: *nothing new found*.
 
 ### Jaylen Brown (PHI, SG/SF, Snow Time Lakers)
 
@@ -364,7 +448,9 @@
 - **Rest:** back-to-back Sun 15–Mon 16 Nov; sat the first night of the 30–31 Oct back-to-back, playing the games either side
 - News (15 Nov): Brown tallied 31 points (12-18 FG, 3-6 3Pt, 4-6 FT), two rebounds, two assists and one steal across 32 minutes during Sunday's 131-124 win over Indiana.
 - News (11 Nov): Brown ended Tuesday's 123-101 loss to the Celtics with 13 points (4-9 FG, 1-4 3Pt, 4-6 FT), five rebounds, two assists, one block and two steals in 26 minutes.
-- **Research:** _pending_
+- **Research:**
+  - His 30 Oct absence was patellar tendinopathy, not rest; he played both nights of 24–25 Oct and 32 min on 15 Nov ([NBC Sports](https://www.nbcsports.com/nba/jaylen-brown/10472/news)). PHI's report for 16 Nov was not yet filed.
+  - Verdict: *nothing new found*.
 
 ### Tyler Herro (MIL, PG/SG, Snow Time Lakers)
 
@@ -373,7 +459,9 @@
 - **Rest:** back-to-back Wed 18–Thu 19 Nov; sat the first night of the 10–11 Nov back-to-back, playing the games either side
 - News (13 Nov): Herro had 18 points (5-17 FG, 2-7 3Pt, 6-7 FT), two assists, two steals, one rebound and one block across 34 minutes in Friday's 107-99 loss to the Magic.
 - News (11 Nov): Herro had 27 points (8-16 FG, 2-7 3Pt, 9-10 FT), seven assists, two rebounds and one block across 35 minutes in Wednesday's 123-112 loss to the Lakers.
-- **Research:** _pending_
+- **Research:**
+  - No rest pattern: the 10 Nov absence was a knee contusion; he played both nights of 23–24 Oct. His L7 21.8 (4) → 28.0 (3) is more than 5 under: 2-of-13 in 20 min on 15 Nov during Taylor Jenkins' lineup experiments ([Journal Sentinel via Yahoo, 16 Nov](https://sports.yahoo.com/articles/bucks-coach-taylor-jenkins-tinkers-035758071.html)); no injury reported.
+  - Verdict: *nothing new found*.
 
 ### Ajay Mitchell (OKC, PG/SG, Lauri Birds)
 
@@ -382,7 +470,9 @@
 - **Rest:** back-to-back Sun 22–Mon 23 Nov; news on 11 Nov: "Mitchell won't play in the second leg of the Thunder's back-to-back set after apparently injuring his ankle Tuesday."
 - News (15 Nov): Mitchell (ankle) is available for Sunday's game against the Kings, Clemente Almanza of USA Today reports.
 - News (14 Nov): Mitchell (ankle) is questionable to suit up for Sunday's game against the Kings.
-- **Research:** _pending_
+- **Research:**
+  - Returned 15 Nov from the ankle sprain, 27 min ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/ajay-mitchell-ankle-scores-14-points-in-return)).
+  - Verdict: *nothing new found*.
 
 ### Ivica Zubac (IND, C, Lauri Birds)
 
@@ -391,7 +481,9 @@
 - **Rest:** back-to-back Sun 22–Mon 23 Nov; news on 13 Nov: "That's now back-to-back double-doubles for Zubac, who appears to be just about all the way back from a recent extended absence due to an ankle sprain."
 - News (13 Nov): Zubac supplied 12 points (6-12 FG), 13 rebounds, one assist and one block in 26 minutes during Friday's 106-104 win over the Knicks.
 - News (10 Nov): Zubac posted 16 points (5-7 FG, 6-8 FT) and three rebounds across 28 minutes in Monday's 125-122 loss to the Mavericks.
-- **Research:** _pending_
+- **Research:**
+  - 22 min on 15 Nov, no injury listed (search snippet of a Pacers recap only).
+  - Verdict: *nothing new found*.
 
 ## Other rosters: injury flags only
 
@@ -403,7 +495,9 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 22 Nov)
 - News (24 Oct): Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.
 - News (23 Oct): Banchero didn't check back in during the fourth quarter of Friday's 115-93 loss to the Timberwolves after being deemed doubtful to return. He finished with 14 points (5-11 FG, 0-2 3Pt, 2-4 FT), six rebounds, five assists and one steal across 26 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Out 16 Nov; still only 4–6 weeks from 24 Oct ([Magic, 24 Oct](https://www.nba.com/magic/news/paolo-banchero-injury-update-low-grade-high-ankle-sprain-20261024)); no update since ([FantasyAlarm, 9 Nov](https://www.fantasyalarm.com/articles/nba/fantasy-basketball-injury-report/nba-injury-report-week-4-2026-fantasy-basketball/198451)).
+  - Verdict: *nothing new found*; ESPN est. 22 Nov is the early edge.
 
 ### Donovan Mitchell (CLE, PG/SG, Dr White Slong)
 
@@ -412,7 +506,9 @@
 - **Injury:** not in ESPN's injury feed, but the news said on 14 Nov: "Mitchell (knee) has been ruled out for Saturday's game against the Mavericks."
 - News (15 Nov): Mitchell (knee) is not listed on the injury report for Monday's game against the Bulls.
 - News (14 Nov): Mitchell (knee) has been ruled out for Saturday's game against the Mavericks.
-- **Research:** _pending_
+- **Research:**
+  - Off the 16 Nov report; the 14 Nov absence was a rest night ([Heavy, 15 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/cavaliers-hit-with-brutal-injury-news-ahead-of-bulls-game/)).
+  - Verdict: *ESPN confirmed*.
 
 ### James Harden (CLE, PG/SG, Team Nic Kerr)
 
@@ -421,7 +517,9 @@
 - **Injury:** not in ESPN's injury feed, but the news said on 14 Nov: "Harden (calf) has been ruled out for Saturday's game against Dallas."
 - News (15 Nov): Harden (calf) is not listed on the injury report for Monday's tilt against the Bulls.
 - News (14 Nov): Harden (calf) has been ruled out for Saturday's game against Dallas.
-- **Research:** _pending_
+- **Research:**
+  - Off the 16 Nov report; rested 14 Nov ([Heavy, 15 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/cavaliers-hit-with-brutal-injury-news-ahead-of-bulls-game/)).
+  - Verdict: *ESPN confirmed*.
 
 ### Jarrett Allen (CLE, C, Dr White Slong)
 
@@ -430,7 +528,9 @@
 - **Injury:** not in ESPN's injury feed, but the news said on 14 Nov: "Allen (knee) has been ruled out for Saturday's game against the Mavericks."
 - News (15 Nov): Allen (knee) is not listed on the injury report for Monday's game against the Bulls.
 - News (14 Nov): Allen (knee) has been ruled out for Saturday's game against the Mavericks.
-- **Research:** _pending_
+- **Research:**
+  - Removed from the injury report for 16 Nov ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/jarrett-allen-knee-removed-from-injury-report)).
+  - Verdict: *ESPN confirmed*.
 
 ### Michael Porter Jr. (BKN, SF/PF, Team Nic Kerr)
 
@@ -439,8 +539,76 @@
 - **Injury:** not in ESPN's injury feed, but the news said on 14 Nov: "Porter (personal) is out for Saturday's game against the Grizzlies, Brian Lewis of the New York Post reports."
 - News (15 Nov): Porter (personal) is off the injury report ahead of Monday's game against the 76ers.
 - News (14 Nov): Porter (personal) is out for Saturday's game against the Grizzlies, Brian Lewis of the New York Post reports.
-- **Research:** _pending_
+- **Research:**
+  - The 14 Nov absence was personal; available 16 Nov vs PHI ([Nets Wire via Yahoo, 15 Nov](https://sports.yahoo.com/articles/nets-michael-porter-jr-personal-025125034.html)).
+  - Verdict: *ESPN confirmed*.
 
 ## Sources
 
 - ESPN fantasy player news (`site.api.espn.com/apis/fantasy/v2/games/fba/news/players`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-16 04:42 UTC.
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909982)
+- [Hoops Rumors, 10 Nov](https://www.hoopsrumors.com/2026/11/pistons-notes-jenkins-lineup-collins-duren-okorie.html)
+- [Detroit Sports Nation, 14 Nov](https://detroitsportsnation.com/duncan-robinson-injury-update-pistons-heat/ddrysdale/detroit-pistons/11/14/2026/507834)
+- [CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-monday/)
+- [NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/nor-starting-fears-herb-bey-zion-missi)
+- [CBS, 15 Nov](https://cbssports.com/fantasy/basketball/news/pelicans-bennedict-mathurin-out-again-vs-warriors)
+- [NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/yves-missi-logs-22-minutes-in-return-to-lineup)
+- [RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/yves-missi-news-blocks-four-shots-in-return-539214)
+- [CelticsBlog, 15 Nov](https://celticsblog.com/celtics-highlights/150272/celtics-mavericks)
+- [RotoBaller, 2 Nov](https://www.rotoballer.com/?p=1982197)
+- [Detroit Sports Nation, 8 Nov](https://detroitsportsnation.com/jb-bickerstaff-jalen-duren-hamstring-update/gkaplan/detroit-pistons/11/08/2026/505901/)
+- [CBS/RotoWire, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-norman-powell-will-play-saturday/)
+- [NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/norman-powell-back-available-vs-minnesota)
+- [Yahoo](https://sports.yahoo.com/articles/bulls-injury-report-first-game-181313737.html)
+- [SI, 15 Nov](https://www.si.com/nba/jazz/onsi/jazz-vs-spurs-injury-report-reveals-major-problem-for-utah-rotation)
+- [Hoops Rumors, 6 Nov](https://www.hoopsrumors.com/2026/11/jazz-center-jusuf-nurkic-out-at-least-two-more-weeks.html)
+- [RotoWire, 14 Nov](https://www.rotowire.com/basketball/headlines/jalen-suggs-news-logs-21-minutes-in-return-538990)
+- [ClutchPoints, 14 Nov](https://clutchpoints.com/nba/orlando-magic/magic-news-sean-sweeney-jalen-suggs-return-injury-bucks)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/jerami-grant-head-removed-from-injury-report)
+- [NBC Sports, 4 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/iisalo-pippen-back-day-to-day-or-week-to-week)
+- [Yahoo, 15 Nov](https://sports.yahoo.com/articles/grizzlies-list-zach-edey-quinten-221551360.html)
+- [RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/grayson-allen-news-not-starting-sunday-539277)
+- [Heavy, 15 Nov](https://heavy.com/sports/hornets-brandon-miller-cleared-return-clippers/)
+- [CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-aday-mara-back-to-bench/)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/okc-starts-sga-mccain-mitchell-kenrich-ihart)
+- [CBS/RotoWire, 14 Nov](https://www.cbssports.com/fantasy/basketball/news/jazzs-jaxson-hayes-ruled-out-for-sunday/)
+- [SI, 15 Nov](https://www.si.com/nba/jazz/onsi/utah-jazz-provide-more-clarity-on-jaxson-hayes-latest-injury)
+- [107.5 The Game, 14 Nov](https://www.1075thegame.com/2026/11/14/tyrese-proctor-has-first-triple-double-as-cavs-rest-starters-top-mavs/)
+- [Heavy, 15 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/cavaliers-hit-with-brutal-injury-news-ahead-of-bulls-game/)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/zach-edey-ankle-questionable-monday-vs-wizards)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/isaiah-stewart-illness-questionable-monday)
+- [CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/cavaliers-evan-mobley-ruled-out-for-monday/)
+- [CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/cavaliers-jaylon-tyson-questionable-for-monday/)
+- [CBS/RotoWire, 14 Nov](https://www.cbssports.com/fantasy/basketball/news/trail-blazers-toumani-camara-posts-14-points-in-decisive-win/)
+- [NBA.com, 30 Oct](https://www.nba.com/news/ja-morant-hamstring-injury-october-2026)
+- [SI](https://www.si.com/nba/trailblazers/onsi/4-blazers-ruled-out-vs-wolves-means-depth-chart-will-be-tested)
+- [Yahoo, 15 Nov](https://sports.yahoo.com/articles/timberwolves-lose-jaylen-clark-least-235639664.html)
+- [CBS/RotoWire, 14 Nov](https://www.cbssports.com/fantasy/basketball/news/timberwolves-jaylen-clark-wont-return-saturday/)
+- [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/myles-turner-rest-ruled-out-vs-los-angeles)
+- [Dallas Sports Journal, 15 Nov](https://dallassportsjournal.com/kyrie-irving-max-christie-out-mavericks-celtics/)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/kyrie-irving-knee-downgraded-to-out-sunday)
+- [Yardbarker, 24 Oct](https://www.yardbarker.com/nba/articles/dusty_may_addresses_kyrie_irving_playing_both_nights_of_mavericks_back_to_backs/s1_17810_44470036)
+- [Journal Sentinel via Yahoo, 16 Nov](https://sports.yahoo.com/articles/bucks-coach-taylor-jenkins-tinkers-035758071.html)
+- [Sports Mole, 15 Nov](https://www.sportsmole.co.uk/basketball/portland-trail-blazers/preview/trail-blazers-vs-timberwolves-player-props-injury-report-and-prediction--nba_609140.html)
+- [NBC Sports](https://www.nbcsports.com/nba/jaylen-brown/10472/news)
+- [NBC Sports, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/rudy-gobert-back-downgraded-to-out-saturday)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/ty-jerome-hip-remains-out-monday-vs-washington)
+- [NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/cam-spencer-starting-in-place-of-ty-jerome)
+- [NBC Sports, 13 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/mil-starts-burries-herro-dieng-kuzma-turner)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/ajay-mitchell-ankle-scores-14-points-in-return)
+- [Magic, 24 Oct](https://www.nba.com/magic/news/paolo-banchero-injury-update-low-grade-high-ankle-sprain-20261024)
+- [FantasyAlarm, 9 Nov](https://www.fantasyalarm.com/articles/nba/fantasy-basketball-injury-report/nba-injury-report-week-4-2026-fantasy-basketball/198451)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/jarrett-allen-knee-removed-from-injury-report)
+- [Nets Wire via Yahoo, 15 Nov](https://sports.yahoo.com/articles/nets-michael-porter-jr-personal-025125034.html)
+- [NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/kevin-huerter-puts-up-20-4-7-1-3-line-off-bench)
+- [Heavy, 15 Nov](https://heavy.com/sports/nba/detroit-pistons/duncan-robinson-injury-addressed-miami-heat-loss/)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/tor-starts-quickley-walter-barrett-barnes-cmb)
+- [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401909990)
+- [Hoops Rumors](https://www.hoopsrumors.com/transactions)
+- [HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html)
+- [NBA.com, 14 Nov](https://www.nba.com/news/dejounte-murray-requests-trade-pelicans-confirm)
+- [Bulls, 12 Nov](https://www.nba.com/bulls/news/caleb-wilson-medical-update)
+- [NBC Sports, 15 Nov](https://nbcsports.com/fantasy/basketball/player-news/2026-11-15/jalen-smith-finger-questionable-vs-cleveland)
+- [NBC Sports, 15 Nov](https://nbcsports.com/fantasy/basketball/player-news/2026-11-15/scottie-barnes-scores-game-high-30-in-ot-defeat)
+- [Yahoo, 11 Nov](https://sports.yahoo.com/articles/kawhi-leonards-knee-keeps-raptors-200300316.html)
+- [RotoWire, 14 Nov](https://www.rotowire.com/basketball/headlines/fred-vanvleet-injury-ruled-out-for-sunday-539130)

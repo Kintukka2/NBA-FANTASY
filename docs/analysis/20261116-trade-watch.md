@@ -5,6 +5,13 @@
 - **Team he left:** his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). **Team he joined:** long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.
 - **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.
 
+## What it means for us
+
+- **Pickups:** none.
+- **Threats to our players:** none.
+- **Overrides:** Dejounte Murray's floor (23 Nov) is recorded in the news watch.
+- **New trades:** none.
+
 ## Summary
 
 | Date | Player | From → To | Role before | Role since | Rate | League |
@@ -63,8 +70,14 @@
 
 ### Research
 
-- _pending_
+- **No trades completed since 13 Nov.** The [Hoops Rumors transactions log](https://www.hoopsrumors.com/transactions) still ends at Clifford (8 Nov).
+- **Dejounte Murray** (NOP) requested a trade and is sitting out. Phoenix denies talks ([Suns On SI via Yahoo, 14 Nov](https://sports.yahoo.com/articles/insider-downplays-suns-trade-rumors-140009986.html)); Jalen Green is available but no negotiation is reported ([Heavy, 14 Nov](https://heavy.com/sports/nba/new-orleans-pelicans/pelicans-dejounte-murray-jalen-green-trade/)).
+- **No rotation releases**, only two-way moves ([Hoops Rumors, 15 Nov](https://www.hoopsrumors.com/2026/11/hawks-to-waive-gilbert-sign-castro-to-two-way-deal.html)).
 
 ## Sources
 
 - ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-16 04:42 UTC.
+- [Hoops Rumors transactions log](https://www.hoopsrumors.com/transactions)
+- [Suns On SI via Yahoo, 14 Nov](https://sports.yahoo.com/articles/insider-downplays-suns-trade-rumors-140009986.html)
+- [Heavy, 14 Nov](https://heavy.com/sports/nba/new-orleans-pelicans/pelicans-dejounte-murray-jalen-green-trade/)
+- [Hoops Rumors, 15 Nov](https://www.hoopsrumors.com/2026/11/hawks-to-waive-gilbert-sign-castro-to-two-way-deal.html)
