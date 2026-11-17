@@ -63,8 +63,14 @@
 
 ### Research
 
-- _pending_
+- **Role:** bench only since the trade, at 20, 16, 12 and 24 min ([NBA.com game log](https://www.nba.com/player/1642363/nique-clifford)). Daigneault calls him a "plug-in guy" and promised him no minutes ([Last Word on Sports, 11 Nov](https://lastwordonsports.com/basketball/2026/11/11/daigneault-talks-nique/)). The 24 min on 15 Nov came in a 125-103 blowout ([SI, 16 Nov](https://www.si.com/nba/thunder/onsi/is-nique-clifford-settling-into-okc-thunder-rotation-after-trade-01m7jz67gft2)).
+- **Opportunity:** not soon. Ajay Mitchell, Jared McCain, Alex Caruso, Kenrich Williams and Micah Peavy are ahead of him on the wing. Jalen Williams and Cason Wallace are out long-term ([Yahoo, 8 Nov](https://sports.yahoo.com/nba/breaking-news/article/thunder-reportedly-trade-for-kings-nique-clifford-in-wake-of-injuries-185731868.html)); *ESPN est.* 2 Mar 2027 for both.
+- **Verdict:** opportunity unchanged. About 15–20 min off the bench and a rate of 7.4, so he is not a stream candidate. No row.
 
 ## Sources
 
 - ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-17 21:18 UTC.
+- [NBA.com game log](https://www.nba.com/player/1642363/nique-clifford)
+- [Last Word on Sports, 11 Nov](https://lastwordonsports.com/basketball/2026/11/11/daigneault-talks-nique/)
+- [SI, 16 Nov](https://www.si.com/nba/thunder/onsi/is-nique-clifford-settling-into-okc-thunder-rotation-after-trade-01m7jz67gft2)
+- [Yahoo, 8 Nov](https://sports.yahoo.com/nba/breaking-news/article/thunder-reportedly-trade-for-kings-nique-clifford-in-wake-of-injuries-185731868.html)
