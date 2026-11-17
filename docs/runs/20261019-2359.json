@@ -1,0 +1,90 @@
+{
+ "key": "20261019-2359",
+ "date": "20261019",
+ "when_utc": "2026-10-19T23:59:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "slot": "roster"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "slot": "roster"
+  },
+  {
+   "player": "Jimmy Butler III",
+   "team": "GS",
+   "slot": "IR"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [],
+ "reports": [
+  {
+   "kind": "preseason-fast-starts",
+   "file": "20261019-preseason-fast-starts.md",
+   "title": "Preseason review: 10 players set to start 2026-27 fast",
+   "generated": null,
+   "versions": []
+  }
+ ],
+ "files": [
+  "20261019-preseason-fast-starts.md"
+ ]
+}

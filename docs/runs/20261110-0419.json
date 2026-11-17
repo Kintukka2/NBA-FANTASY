@@ -1,0 +1,124 @@
+{
+ "key": "20261110-0419",
+ "date": "20261110",
+ "when_utc": "2026-11-10T04:19:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "IR"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "slot": "roster"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Jrue Holiday",
+   "team": "POR",
+   "slot": "roster"
+  },
+  {
+   "player": "Dillon Brooks",
+   "team": "PHX",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [
+  {
+   "player": "Yves Missi",
+   "kind": "return",
+   "value": "2026-11-12",
+   "until": "",
+   "source": "https://www.rotowire.com/basketball/headlines/yves-missi-injury-remains-on-shelf-537773",
+   "note": "Floor: week-to-week with no timetable as of 5 Nov (left knee bone bruise); out 8 Nov at LAC on the Pelicans' report"
+  },
+  {
+   "player": "Fred VanVleet",
+   "kind": "sit",
+   "value": "2026-11-16",
+   "until": "",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/rockets-fred-vanvleet-to-miss-back-to-backs/",
+   "note": "Sits one game of back-to-backs (Will Guillory, The Athletic; Udoka confirmed, 20 Oct); the second night, as on 24 and 31 Oct"
+  },
+  {
+   "player": "CJ McCollum",
+   "kind": "role",
+   "value": "23",
+   "until": "2026-11-22",
+   "source": "https://cbssports.com/fantasy/basketball/news/hawks-cj-mccollum-continues-in-bench-role",
+   "note": "Bench 3 straight games (25, 23, 21 min) after giving his start to Kingston Flemings; stayed on the bench when Jalen Johnson returned 7 Nov"
+  }
+ ],
+ "reports": [
+  {
+   "kind": "trade-watch",
+   "file": "20261110-trade-watch.md",
+   "title": "Trade watch: 09 Nov 2026",
+   "generated": "2026-11-10T04:19:00+00:00",
+   "versions": []
+  }
+ ],
+ "trade-watch": {
+  "trades": [
+   {
+    "date": "08 Nov",
+    "player": "Nique Clifford",
+    "move": "SAC \u2192 OKC"
+   }
+  ]
+ },
+ "files": [
+  "20261110-trade-watch.md"
+ ]
+}

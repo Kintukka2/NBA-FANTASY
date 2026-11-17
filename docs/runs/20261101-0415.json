@@ -1,0 +1,249 @@
+{
+ "key": "20261101-0415",
+ "date": "20261101",
+ "when_utc": "2026-11-01T04:15:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "IR"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  },
+  {
+   "player": "Fred VanVleet",
+   "team": "HOU",
+   "slot": "roster"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "slot": "roster"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [],
+ "reports": [
+  {
+   "kind": "matchup",
+   "file": "20261101-matchup3.md",
+   "title": "Matchup 3: Come-in Cider vs Melbourne poopoo",
+   "generated": "2026-11-01T04:15:00+00:00",
+   "versions": [
+    "20261101-matchup2.md"
+   ]
+  },
+  {
+   "kind": "injury-watch",
+   "file": "20261101-injury-watch.md",
+   "title": "Injury Watch: 01 Nov 2026",
+   "generated": "2026-11-01T03:40:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "slump-watch",
+   "file": "20261101-slump-watch.md",
+   "title": "Slump Watch: 01 Nov 2026",
+   "generated": "2026-11-01T03:40:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "rookies",
+   "file": "20261101-rookies.md",
+   "title": "Rookies against projection",
+   "generated": "2026-11-01T03:40:00+00:00",
+   "versions": []
+  }
+ ],
+ "matchup": {
+  "title": "Matchup 3: Come-in Cider vs Melbourne poopoo",
+  "score": null,
+  "adds": {
+   "used": 0,
+   "limit": 6,
+   "left": 6
+  },
+  "projection": [
+   1447,
+   1487
+  ],
+  "moves": [
+   {
+    "day": "Wed 04 Nov",
+    "drop": "Anthony Black",
+    "add": "Collin Gillespie",
+    "team": "PHX",
+    "by_et": "09:00PM ET",
+    "by_mel": "Thu 05 01:00PM"
+   },
+   {
+    "day": "Thu 05 Nov",
+    "drop": "Fred VanVleet",
+    "add": "Dillon Brooks",
+    "team": "PHX",
+    "by_et": "09:00PM ET",
+    "by_mel": "Fri 06 01:00PM"
+   },
+   {
+    "day": "Fri 06 Nov",
+    "drop": "Dillon Brooks",
+    "add": "Peyton Watson",
+    "team": "CLE",
+    "by_et": "07:30PM ET",
+    "by_mel": "Sat 07 11:30AM"
+   },
+   {
+    "day": "Fri 06 Nov",
+    "drop": "Collin Gillespie",
+    "add": "Alex Caruso",
+    "team": "OKC",
+    "by_et": "08:00PM ET",
+    "by_mel": "Sat 07 12:00PM"
+   },
+   {
+    "day": "Sun 08 Nov",
+    "drop": "Peyton Watson",
+    "add": "Daniel Gafford",
+    "team": "DAL",
+    "by_et": "07:30PM ET",
+    "by_mel": "Mon 09 11:30AM"
+   },
+   {
+    "day": "Sun 08 Nov",
+    "drop": "Alex Caruso",
+    "add": "Yves Missi",
+    "team": "NO",
+    "by_et": "09:00PM ET",
+    "by_mel": "Mon 09 01:00PM"
+   }
+  ],
+  "best": {
+   "adds": 6,
+   "gain": "+161.1"
+  },
+  "holding": "Daniel Gafford (DAL, 4 games next week), Yves Missi (NO, 4 games next week).",
+  "plan_title": "Plan (the council's, superseded by the owner's decision above)",
+  "plan_md": "\n**Council verdict** (`council/sessions/20261101-040000-second-stream-slot.json`): stream VanVleet's slot and **Anthony Black's** slot. The vote was unanimous, 19 of 19, in the opening round.\n\nAs rostered we project **1,447 to 1,487**. The six-add plan adds +161.1, so we finish on 1,608 in our lineup against their 1,487 as rostered. Melbourne poopoo made four adds in the first matchup, so expect their total to rise.\n\n**The moves** (*Best plan* below; each is due by the earlier tip-off of the two players that day):\n\n| # | US day | Deadline, Melbourne (ET) | Move |\n|---|---|---|---|\n| 1 | Wed 4 | **1:00 pm Thu 5** (9:00 pm Wed) | Drop Anthony Black, add **Collin Gillespie** (PHX) |\n| 2 | Thu 5 | **1:00 pm Fri 6** (9:00 pm Thu) | Drop Fred VanVleet, add **Dillon Brooks** (PHX) |\n| 3 | Fri 6 | **11:30 am Sat 7** (7:30 pm Fri) | Drop Brooks, add **Peyton Watson** (CLE) |\n| 4 | Fri 6 | **12:00 pm Sat 7** (8:00 pm Fri) | Drop Gillespie, add **Alex Caruso** (OKC) |\n| 5 | Sun 8 | **11:30 am Mon 9** (7:30 pm Sun) | Drop Watson, add **Daniel Gafford** (DAL) |\n| 6 | Sun 8 | **1:00 pm Mon 9** (9:00 pm Sun) | Drop Caruso, add **Yves Missi** (NO) |\n\n**Form of everyone in the plan:**\n\n| Player | Season (GP) | L7 | L15 | L30 |\n|---|---|---|---|---|\n| Black | 36.0 (3) | 36.0 (3) | 36.0 (3) | 36.0 (3) |\n| VanVleet | 35.4 (5) | 31.3 (3) | 35.4 (5) | 35.4 (5) |\n| Gillespie | 31.5 (4) | 40.3 (3) | 31.5 (4) | 31.5 (4) |\n| Brooks | 29.2 (4) | 36.3 (3) | 29.2 (4) | 29.2 (4) |\n| Watson | 27.0 (6) | 30.0 (5) | 27.0 (6) | 27.0 (6) |\n| Caruso | 30.8 (4) | 34.5 (2) | 30.8 (4) | 30.8 (4) |\n| Gafford | 32.8 (6) | 39.0 (4) | 32.8 (6) | 32.8 (6) |\n| Missi | 41.5 (2) | \u2014 | 41.5 (2) | 41.5 (2) |\n\nAll of these are small samples.\n\n**Reasons behind the L7 swings:**\n- **Gillespie** (+8.8): 16 points, 10 assists and 4 steals in 33 minutes on 30 Oct.\n- **Brooks** (+7.1): 22 points in 21 minutes before his ejection.\n- **Gafford** (+6.2): 18 points on 6-of-7 on 30 Oct.\n- **Caruso**'s L7 and **Missi**'s season are 2 games each, so they are noise.\n\n**Fallbacks:**\n- **If Caruso is not cleared by Friday, or Brooks is suspended, use the 4-add plan (+115.6).** It uses neither of them:\n  - Thu: VanVleet \u2192 Gillespie.\n  - Fri: Gillespie \u2192 Watson.\n  - Sun: Watson \u2192 Gafford, and Black \u2192 Missi.\n- **Missi** has no timetable reported (*ESPN est.* 8 Nov). If he isn't cleared by Sunday, take Sunday's best streamer from the matchup report instead.\n\n**Today, Sun 1 Nov US:** matchup 2 is lost (1,230\u20131,550 with one day left). Its 2 spare adds can make move 1 now, Black \u2192 Gillespie, without touching matchup 3's 6.\n- A `--swap` run puts that version at 1,614 against the plan's 1,608, a wash. It does lock in Gillespie early.\n- It gives up Black's Sunday game, which only counts in the matchup we have already lost.\n\n**Lineups:** Monday is overfull with 12 of ours for 10 slots, so sit Trey Murphy III and Desmond Bane. After Monday, start everyone with a game.\n\n**Watch for:**\n- **Dejounte Murray** (ours): personal leave, no timetable reported; *ESPN est.* 2 Nov. If he misses Monday, Murphy or Bane plays in his place.\n- **Kawhi Leonard** (ours): re-evaluated about 3 Nov, \"3-4 weeks\" (Haynes); *ESPN est.* 23 Nov.\n- **Jalen Duren** (ours, IR): possible return about 9 Nov; *ESPN est.* 9 Nov.\n- **Ty Jerome** (theirs): upper-back soreness, no timetable reported; *ESPN est.* 2 Nov.\n- **Anthony Edwards** (theirs): out after knee surgery; *ESPN est.* 21 Dec.\n\n### Notes\n\n- **VanVleet is not injured.** He rested Saturday on the second night of a back-to-back [Field Level Media, 31 Oct](https://fieldlevelmedia.com/nba/jabari-smith-jr-rockets-overwhelm-undermanned-thunder/). Houston has no back-to-back this week, so he plays Mon, Wed and Sat.\n- **Black's role** is tied to Suggs (re-evaluated about 9 Nov; *ESPN est.* 10 Nov) and Banchero (4\u20136 weeks; *ESPN est.* 22 Nov). Rotoworld says to hold him \"until Suggs returns\" (`docs/research/20261101-0400-second-stream-slot.md`).\n- **Brooks** was ejected on 30 Oct with a Flagrant 2, which is under league review. **Caruso** is \"likely to be out for several games\" [Yahoo Sports, 31 Oct](https://sports.yahoo.com/nba/article/thunders-chet-holmgren-will-miss-8-10-weeks-after-undergoing-treatment-on-patellar-tendon-tear-010736245.html). **Missi** is week-to-week (briefing).\n- **Gafford** starts while Lively is a game-time decision (*ESPN est.* 2 Nov). **Gillespie** is a bench guard who played 33 minutes on 30 Oct (briefing).\n"
+ },
+ "slump-watch": {
+  "flagged": [
+   {
+    "player": "Lauri Markkanen",
+    "fantasy": "Lauri Birds",
+    "gap": "-13.1"
+   },
+   {
+    "player": "Darius Garland",
+    "fantasy": "Lauri Birds",
+    "gap": "-10.8"
+   },
+   {
+    "player": "Ivica Zubac",
+    "fantasy": "Lauri Birds",
+    "gap": "-10.1"
+   },
+   {
+    "player": "Josh Giddey",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-19.8"
+   },
+   {
+    "player": "LaMelo Ball",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-15.7"
+   },
+   {
+    "player": "Shai Gilgeous-Alexander",
+    "fantasy": "Matt Wright's Foxies",
+    "gap": "-13.3"
+   },
+   {
+    "player": "Jaren Jackson Jr.",
+    "fantasy": "Matt Wright's Foxies",
+    "gap": "-11.1"
+   },
+   {
+    "player": "Desmond Bane",
+    "fantasy": "Come-in Cider (us)",
+    "gap": "-10.6"
+   },
+   {
+    "player": "James Harden",
+    "fantasy": "Team Nic Kerr",
+    "gap": "-11.2"
+   }
+  ],
+  "headline": "9 rostered players are 10+"
+ },
+ "injury-watch": {
+  "shortlist": [
+   "Christian Braun",
+   "Ja'Kobe Walter",
+   "Paul Reed",
+   "Braun",
+   "Walter",
+   "Reed",
+   "Mara",
+   "Back-soon stash:"
+  ],
+  "injuries": 90
+ },
+ "files": [
+  "20261101-matchup3.md",
+  "20261101-injury-watch.md",
+  "20261101-slump-watch.md",
+  "20261101-rookies.md"
+ ]
+}

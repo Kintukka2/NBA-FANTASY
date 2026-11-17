@@ -1,0 +1,241 @@
+{
+ "key": "20261030-0558",
+ "date": "20261030",
+ "when_utc": "2026-10-30T05:58:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "IR"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  },
+  {
+   "player": "Fred VanVleet",
+   "team": "HOU",
+   "slot": "roster"
+  },
+  {
+   "player": "Paul Reed",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "CJ McCollum",
+   "team": "ATL",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [],
+ "reports": [
+  {
+   "kind": "matchup",
+   "file": "20261030-matchup2.md",
+   "title": "Matchup 2: Come-in Cider vs Team Nic Kerr",
+   "generated": "2026-10-30T05:58:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "injury-watch",
+   "file": "20261030-injury-watch.md",
+   "title": "Injury Watch: 30 Oct 2026",
+   "generated": "2026-10-30T05:58:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "slump-watch",
+   "file": "20261030-slump-watch.md",
+   "title": "Slump Watch: 30 Oct 2026",
+   "generated": "2026-10-30T05:58:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "rookies",
+   "file": "20261030-rookies.md",
+   "title": "Rookies against projection",
+   "generated": "2026-10-30T05:58:00+00:00",
+   "versions": []
+  }
+ ],
+ "matchup": {
+  "title": "Matchup 2: Come-in Cider vs Team Nic Kerr",
+  "score": [
+   806,
+   927
+  ],
+  "adds": {
+   "used": 2,
+   "limit": 7,
+   "left": 5
+  },
+  "projection": [
+   1437,
+   1674
+  ],
+  "moves": [
+   {
+    "day": "Fri 30 Oct",
+    "drop": "CJ McCollum",
+    "add": "Norman Powell",
+    "team": "CHI",
+    "by_et": "07:30PM ET",
+    "by_mel": "Sat 31 10:30AM"
+   },
+   {
+    "day": "Sat 31 Oct",
+    "drop": "Norman Powell",
+    "add": "Precious Achiuwa",
+    "team": "SAC",
+    "by_et": "08:00PM ET",
+    "by_mel": "Sun 01 11:00AM"
+   },
+   {
+    "day": "Sun 01 Nov",
+    "drop": "Precious Achiuwa",
+    "add": "Ja'Kobe Walter",
+    "team": "TOR",
+    "by_et": "09:00PM ET",
+    "by_mel": "Mon 02 01:00PM"
+   }
+  ],
+  "best": {
+   "adds": 3,
+   "gain": "+66.3"
+  },
+  "holding": "Ja'Kobe Walter (TOR, 3 games next week).",
+  "plan_title": "Plan",
+  "plan_md": "\nWe trail **806 to 927** after Thursday. Our Thursday produced 51 against a projected 99 (their 193 against 190), because Dejounte Murray was a late scratch for the birth of his son. As rostered we project **1,437 to 1,674**. If VanVleet sits Saturday, as he did on the second night of Houston's last back-to-back, that drops to 1,403 (a `--sit` run).\n\n**Even the best plan (+66.3) leaves us about 170 behind**, so the move to make is the one that also helps next week:\n\n| # | US day | Deadline, Melbourne (ET) | Move |\n|---|---|---|---|\n| 1 | Fri 30 | **10:30 am Sat 31** (7:30 pm Fri) | Drop CJ McCollum, add **Ja'Kobe Walter** (TOR). +30.8 this week |\n\n- **Walter:** 34.0 FP/g over 4 games; L7 35.0 (3), L15 34.0 (4), L30 34.0 (4); 26.5 minutes.\n  - He has started 2 of 4, both since Kawhi Leonard went out, and plays Friday and Sunday, then 3 games next week.\n  - The role lasts while Leonard is out: the Raptors re-evaluate him about 3 Nov, and Chris Haynes reports \"at least 3-4 weeks\" (*ESPN est.* 23 Nov).\n- **McCollum:** 25.2 over 6 games; L7 24.2 (5), L15 25.2 (6), L30 25.2 (6). He plays only Saturday this week, then 4 games next week.\n- **To chase instead** (*Rotating* section): 3 adds, +66.3. Each move is due by the earlier tip-off of the two players that day:\n  - **Fri** (by 10:30 am Sat Melbourne): McCollum \u2192 **Norman Powell** (CHI; 32.2; L7 34.5 (4), L15 32.2 (5), L30 32.2 (5); started 5 of 5).\n  - **Sat** (by 11:00 am Sun): Powell \u2192 **Precious Achiuwa** (SAC; 34.4; L7 34.2 (4), L15 34.4 (5), L30 34.4 (5); started 3 of 5).\n  - **Sun** (by 1:00 pm Mon): Achiuwa \u2192 Walter.\n\n  It ends holding Walter too, but leaves him on the wire until Sunday at 18% owned.\n- **Hold VanVleet, Murphy and Kawhi** while our three trade offers are pending. Every offer includes VanVleet and Murphy, so dropping either voids them.\n- **Lineups:**\n  - Friday: 9 of ours play for 10 slots, 10 with Walter.\n  - Saturday and Sunday: 6\u20137 open slots.\n  - Start everyone with a game.\n- **Swing factors:**\n  - **Fred VanVleet** (ours): sits one game of Friday\u2013Saturday. Houston hasn't said which; Saturday is likelier.\n  - **Dejounte Murray** (ours): a game-time decision for Saturday against Atlanta. Personal reasons, no timetable reported; *ESPN est.* 31 Oct.\n  - **Ja Morant** (theirs): a left hamstring \"twinge\"; questionable for Saturday at Utah. No timetable reported; *ESPN est.* 31 Oct.\n  - **Chet Holmgren** (theirs): patellar tendinitis; Saturday at Houston is undecided. No timetable reported; *ESPN est.* 31 Oct.\n  - **Kawhi Leonard** (ours): out. Re-evaluated about 3 Nov; *ESPN est.* 23 Nov.\n\n### Notes\n\n- **Ja Morant** left Thursday's loss to Memphis in the fourth quarter. Micah Nori called it a twinge and expects more information Friday [TSN, 30 Oct](https://www.tsn.ca/nba/article/trail-blazers-morant-exits-first-game-vs-grizzlies-with-hamstring-injury-n1-50325662/) [CBS Sports, 30 Oct](https://www.cbssports.com/fantasy/basketball/news/trail-blazers-ja-morant-departs-with-hamstring-issue/).\n- **Chet Holmgren** has missed two games. OKC is idle until Saturday at Houston and had not filed its report [CBS Sports, 27 Oct](https://www.cbssports.com/fantasy/basketball/news/thunders-chet-holmgren-wont-play-wednesday-536384/) [NBA injury report, 30 Oct 01:00 ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-30_01_00AM.pdf).\n- **Luka Doncic** is off the injury report for Friday at Golden State [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/luka-doncic-back-off-injury-report-vs-gsw).\n- **Rest risk:** Tyrese Maxey, Jabari Smith Jr. and Moussa Diabate each played both nights of their team's last back-to-back, and none is on Friday's report [NBA injury report, 30 Oct 01:00 ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-30_01_00AM.pdf).\n- **Fred VanVleet** is not on Friday's report. Udoka sits him one game of each back-to-back early in the season [CBS Sports, 20 Oct](https://www.cbssports.com/fantasy/basketball/news/rockets-fred-vanvleet-to-miss-back-to-backs/). Last time he played the first night (23 Oct) and sat the second [Basketball-Reference](https://www.basketball-reference.com/players/v/vanvlfr01/gamelog/2027).\n- **Dejounte Murray:** Mosley said \"we look forward to having him back soon\" [CBS Sports, 29 Oct](https://www.cbssports.com/fantasy/basketball/news/pelicans-dejounte-murray-late-scratch-thursday/) [SSBCrack, 29 Oct](https://news.ssbcrack.com/dejounte-murray-misses-game-for-birth-of-son-as-pelicans-face-kings/).\n- **Norman Powell** has started all five games, with 37 minutes and 30 points on Wednesday. No returning player threatens his spot [Basketball-Reference](https://www.basketball-reference.com/players/p/powelno01/gamelog/2027).\n- **Grayson Allen** comes off the bench for 28\u201334 minutes and starts if Dennis Schroder (questionable, foot) sits [NBC Sports, 29 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/dennis-schroder-foot-questionable-vs-washington).\n- **Payton Pritchard, Brook Lopez and Obi Toppin** all come off the bench with flat minutes [Basketball-Reference](https://www.basketball-reference.com/teams/BOS/2027_start.html).\n- **Precious Achiuwa** and **Ja'Kobe Walter:** see the Injury Watch shortlist (`docs/analysis/20261030-injury-watch.md`).\n"
+ },
+ "slump-watch": {
+  "flagged": [
+   {
+    "player": "Josh Giddey",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-18.8"
+   },
+   {
+    "player": "LaMelo Ball",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-18.4"
+   },
+   {
+    "player": "Rudy Gobert",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-13.5"
+   },
+   {
+    "player": "Lauri Markkanen",
+    "fantasy": "Lauri Birds",
+    "gap": "-13.2"
+   },
+   {
+    "player": "Darius Garland",
+    "fantasy": "Lauri Birds",
+    "gap": "-11.6"
+   },
+   {
+    "player": "Ivica Zubac",
+    "fantasy": "Lauri Birds",
+    "gap": "-10.1"
+   },
+   {
+    "player": "Shai Gilgeous-Alexander",
+    "fantasy": "Matt Wright's Foxies",
+    "gap": "-12.4"
+   },
+   {
+    "player": "Jaren Jackson Jr.",
+    "fantasy": "Matt Wright's Foxies",
+    "gap": "-11.1"
+   },
+   {
+    "player": "Damian Lillard",
+    "fantasy": "Matt Wright's Foxies",
+    "gap": "-10.1"
+   },
+   {
+    "player": "Desmond Bane",
+    "fantasy": "Come-in Cider (us)",
+    "gap": "-14.2"
+   },
+   {
+    "player": "Trey Murphy III",
+    "fantasy": "Come-in Cider (us)",
+    "gap": "-10.1"
+   },
+   {
+    "player": "James Harden",
+    "fantasy": "Team Nic Kerr",
+    "gap": "-12.3"
+   }
+  ],
+  "headline": "12 rostered players are 10+"
+ },
+ "injury-watch": {
+  "shortlist": [
+   "Ja'Kobe Walter",
+   "Precious Achiuwa",
+   "Aaron Wiggins",
+   "Isaiah Hartenstein",
+   "Jaxson Hayes",
+   "Walter",
+   "Achiuwa",
+   "Back-soon stash:"
+  ],
+  "injuries": 96
+ },
+ "files": [
+  "20261030-matchup2.md",
+  "20261030-injury-watch.md",
+  "20261030-slump-watch.md",
+  "20261030-rookies.md"
+ ]
+}

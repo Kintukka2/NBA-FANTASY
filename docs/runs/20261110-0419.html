@@ -1,0 +1,143 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Run Tue 10 Nov</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"><style>
+/* Layout: a sticky run bar, a scoreboard strip, the change ledger and moves, then each report as an expandable panel. */
+:root {
+  --bg: #F4F6F8; --surface: #FFFFFF; --sunken: #ECEFF3; --ink: #16202A; --muted: #556170; --line: #D8DDE4;
+  --accent: #B04E19; --accent-ink: #FFFFFF; --accent-soft: #FAEADF;
+  --good: #1C6E46; --good-soft: #E2F2E9; --bad: #AD2A20; --bad-soft: #FAE6E3; --info: #24539F; --info-soft: #E5EDF9;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
+  --font-body: "Fira Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0E1318; --surface: #151C23; --sunken: #1B232C; --ink: #E4E9EF; --muted: #9BA7B3; --line: #2A3440;
+  --accent: #F08A4C; --accent-ink: #1B0F07; --accent-soft: #3A2416;
+  --good: #5CC995; --good-soft: #13301F; --bad: #F2867B; --bad-soft: #3B1A17; --info: #8EB2F2; --info-soft: #18263D;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0E1318; --surface: #151C23; --sunken: #1B232C; --ink: #E4E9EF; --muted: #9BA7B3; --line: #2A3440;
+  --accent: #F08A4C; --accent-ink: #1B0F07; --accent-soft: #3A2416;
+  --good: #5CC995; --good-soft: #13301F; --bad: #F2867B; --bad-soft: #3B1A17; --info: #8EB2F2; --info-soft: #18263D;
+  color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 15px/1.55 var(--font-body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+a { color: var(--info); text-underline-offset: 2px; }
+a:hover { color: var(--accent); }
+a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.runbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.runbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-block: 10px; }
+.brand { font: 700 18px/1 var(--font-display); letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.runbar .when { color: var(--muted); font-size: 13px; }
+.runbar nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 6px; }
+.btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 18px; color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 500; background: var(--surface); transition: border-color .15s, color .15s; }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn[aria-disabled="true"] { color: var(--muted); opacity: .55; pointer-events: none; }
+main { padding-block: 20px 56px; display: grid; gap: 28px; }
+main > * { min-width: 0; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: .01em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 4.4vw, 40px); line-height: 1.05; }
+h2 { font-size: 24px; line-height: 1.15; }
+.eyebrow { font: 500 11px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.sub { color: var(--muted); margin: 6px 0 0; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.tile .label { font: 500 11px/1.2 var(--font-mono); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.tile .value { font: 700 36px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.tile .value small { font-size: 18px; color: var(--muted); font-weight: 600; }
+.tile .note { font-size: 13px; color: var(--muted); }
+.tile.next .value { font-size: 22px; line-height: 1.15; }
+.lead-up { color: var(--good); } .lead-down { color: var(--bad); }
+.pips { display: flex; gap: 5px; margin-top: 4px; }
+.pip { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--accent); }
+.pip.on { background: var(--accent); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; min-width: 0; }
+.panel > h2 { margin-bottom: 12px; }
+.ledger { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px 24px; }
+.ledger h3 { font: 600 13px/1.3 var(--font-body); margin: 0 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.ledger ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ledger li { display: flex; gap: 8px; align-items: baseline; }
+.ledger details.more { margin-top: 8px; }
+.ledger details.more > summary { cursor: pointer; color: var(--info); font-size: 13px; font-weight: 500; min-height: 32px; display: flex; align-items: center; }
+.ledger details.more ul { margin-top: 6px; }
+.chip { flex: none; font: 500 10.5px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 4px; }
+.chip.added { background: var(--good-soft); color: var(--good); }
+.chip.removed { background: var(--bad-soft); color: var(--bad); }
+.chip.changed { background: var(--info-soft); color: var(--info); }
+.chip.new { background: var(--accent-soft); color: var(--accent); }
+.quiet { color: var(--muted); font-size: 14px; margin: 0; }
+.compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.compare h3 { font: 600 15px/1.3 var(--font-body); margin: 0 0 8px; }
+.compare ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
+.compare .when2 { color: var(--muted); font-size: 13px; }
+.move b { font-weight: 600; }
+.move .by { display: block; color: var(--muted); font-size: 13px; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px; }
+details.report { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+details.report + details.report { margin-top: 10px; }
+details.report > summary { list-style: none; cursor: pointer; padding: 14px 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+details.report > summary::-webkit-details-marker { display: none; }
+details.report > summary::before { content: "+"; font: 700 18px/1 var(--font-mono); color: var(--accent); width: 14px; }
+details.report[open] > summary::before { content: "\2212"; }
+details.report > summary .t { font: 700 20px/1.15 var(--font-display); }
+details.report > summary .d { color: var(--muted); font-size: 13px; }
+.md { padding: 0 20px 20px; border-top: 1px solid var(--line); min-width: 0; }
+.md h2, .md h3 { font-family: var(--font-display); font-weight: 700; font-size: 20px; margin: 22px 0 8px; }
+.md h4 { font-size: 16px; margin: 18px 0 6px; }
+.md h5, .md h6 { font-size: 14px; margin: 14px 0 4px; }
+.md p, .md li { max-width: 78ch; }
+.md ul, .md ol { padding-left: 22px; }
+.md li + li { margin-top: 3px; }
+.md code { font: 500 12.5px/1.4 var(--font-mono); background: var(--sunken); padding: 1px 5px; border-radius: 4px; }
+.md pre { margin: 0; padding: 12px; background: var(--sunken); border-radius: 8px; }
+.md pre code { background: none; padding: 0; }
+.md blockquote { margin: 10px 0; padding: 4px 14px; border-left: 3px solid var(--line); color: var(--muted); }
+.md hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+.scroll { overflow-x: auto; margin: 10px 0; max-width: 100%; }
+table { border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; min-width: 100%; }
+th, td { text-align: left; vertical-align: top; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); background: var(--sunken); white-space: nowrap; }
+td.num, th.num { text-align: right; }
+tbody tr:hover td { background: var(--sunken); }
+.call .md { border-top: 0; padding: 0; }
+.runs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.run { display: grid; grid-template-columns: minmax(150px, 1.1fr) minmax(170px, 1.6fr) minmax(120px, 1fr) minmax(130px, 1fr); gap: 6px 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; text-decoration: none; color: var(--ink); transition: border-color .15s; }
+.run:hover { border-color: var(--accent); color: var(--ink); }
+.run .d1 { font: 700 18px/1.1 var(--font-display); }
+.run .d2, .run .meta { color: var(--muted); font-size: 13px; }
+.run .mt { font-weight: 500; }
+.run .nums { font-variant-numeric: tabular-nums; font-size: 14px; }
+.bar { position: relative; height: 10px; background: var(--sunken); border-radius: 5px; margin-top: 6px; }
+.bar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); }
+.bar span { position: absolute; top: 0; bottom: 0; border-radius: 5px; }
+.bar .pos { left: 50%; background: var(--good); }
+.bar .neg { right: 50%; background: var(--bad); }
+.latest { display: grid; gap: 4px; }
+footer { color: var(--muted); font-size: 13px; padding-block: 0 40px; }
+@media (max-width: 720px) {
+  .run { grid-template-columns: 1fr 1fr; }
+  .tile .value { font-size: 30px; }
+  .md { padding: 0 14px 16px; }
+  details.report > summary { padding: 12px 14px; }
+  .panel { padding: 16px 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style></head><body><header class="runbar"><div class="wrap"><span class="brand">Draft Council</span><span class="when">Run of Tue 10 Nov 2026, 3:19 PM Melbourne</span><nav aria-label="Runs"><a class="btn" href="20261109-0706.html" data-run="20261109-0706">← Mon 9 Nov</a><a class="btn" href="index.html" data-run="">All runs</a><a class="btn" href="20261111-2115.html" data-run="20261111-2115">Thu 12 Nov →</a></nav></div></header><main id="run" class="wrap"><div><p class="eyebrow">Skill run · 20261110-0419 UTC</p><h1>Skill run</h1><p class="sub">Run of Tue 10 Nov 2026, 3:19 PM Melbourne. Reports: Trade watch.</p></div><section class="panel"><h2>What changed since Mon 9 Nov</h2><p class="sub" style="margin:-6px 0 14px">Against the previous run, Mon 9 Nov 2026, 6:06 PM Melbourne.</p><div class="ledger"><div><h3>Our roster</h3><ul><li><span class="chip added">added</span><span>Jrue Holiday (POR)</span></li><li><span class="chip added">added</span><span>Dillon Brooks (PHX)</span></li><li><span class="chip removed">removed</span><span>Daniel Gafford (DAL)</span></li><li><span class="chip removed">removed</span><span>P.J. Washington (DAL)</span></li></ul></div><div><h3>Suggested pickups</h3><ul><li><span class="chip removed">removed</span><span>No longer suggested: Desmond Bane</span></li><li><span class="chip changed">changed</span><span>Picked up: Dillon Brooks</span></li><li><span class="chip removed">removed</span><span>No longer suggested: Jalen Smith</span></li><li><span class="chip removed">removed</span><span>No longer suggested: Peyton Watson</span></li><li><span class="chip removed">removed</span><span>No longer suggested: Rudy Gobert</span></li><li><span class="chip removed">removed</span><span>No longer suggested: Rui Hachimura</span></li><li><span class="chip removed">removed</span><span>No longer suggested: Zach LaVine</span></li></ul></div><div><h3>Trades</h3><ul><li><span class="chip added">added</span><span>Nique Clifford: SAC → OKC (08 Nov)</span></li></ul></div></div></section><section class="panel"><h2>Moves: now and last run</h2><div class="compare"><div><h3>Suggested now</h3><p class="when2"></p><p class="quiet">No move list in this run's matchup report.</p></div><div><h3>Suggested at the last run · Mon 9 Nov</h3><p class="when2">Matchup 4: Come-in Cider vs Lauri Birds · best plan +157.8 with 7 adds</p><ol><li class="move"><b>Mon 09 Nov:</b> drop Isaiah Hartenstein, add <b>Dillon Brooks</b> (PHX)<span class="by">before Tue 10 01:00PM Melbourne (09:00PM ET ET)</span></li><li class="move"><b>Tue 10 Nov:</b> drop Daniel Gafford, add <b>Desmond Bane</b> (ORL)<span class="by">before Wed 11 02:00PM Melbourne (10:00PM ET ET)</span></li><li class="move"><b>Wed 11 Nov:</b> drop Dillon Brooks, add <b>Jalen Smith</b> (CHI)<span class="by">before Thu 12 12:00PM Melbourne (08:00PM ET ET)</span></li><li class="move"><b>Thu 12 Nov:</b> drop Desmond Bane, add <b>Rudy Gobert</b> (MIN)<span class="by">before Fri 13 12:00PM Melbourne (08:00PM ET ET)</span></li><li class="move"><b>Fri 13 Nov:</b> drop Rudy Gobert, add <b>Peyton Watson</b> (CLE)<span class="by">before Sat 14 12:00PM Melbourne (08:00PM ET ET)</span></li><li class="move"><b>Sun 15 Nov:</b> drop Peyton Watson, add <b>Zach LaVine</b> (SAC)<span class="by">before Mon 16 01:00PM Melbourne (09:00PM ET ET)</span></li><li class="move"><b>Sun 15 Nov:</b> drop Jalen Smith, add <b>Rui Hachimura</b> (LAC)<span class="by">before Mon 16 08:30AM Melbourne (04:30PM ET ET)</span></li></ol></div></div></section><section><h2 style="margin-bottom:10px">Reports</h2><nav class="toc" aria-label="Reports"><a class="btn" href="#rep-trade-watch">Trade watch</a></nav><div style="margin-top:12px"><details class="report" id="rep-trade-watch"><summary><span class="t">Trade watch: 09 Nov 2026</span><span class="d">1 traded players</span></summary><div class="md"><p class="quiet">Generated 3:19 PM Tue 10 Nov Melbourne · source <a href="https://github.com/Kintukka2/NBA-FANTASY/blob/main/docs/analysis/20261110-trade-watch.md" target="_blank" rel="noopener noreferrer">20261110-trade-watch.md</a></p><ul><li>Generated 2026-11-10 04:19 UTC by <code>council/trade_watch.py</code>. This is <strong>data, not a verdict</strong>: each trade is a question for the research step.</li><li><strong>Trades read:</strong> ESPN's NBA transactions feed, 10 Oct to 09 Nov (30 days). 1 traded player is in the league pool (rostered, free agent or waivers).</li><li><strong>Team he left:</strong> his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). <strong>Team he joined:</strong> long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.</li><li><strong>Checks:</strong> run with <code>--allow-live</code> while the SA–PHX and NO–GS games were finishing. Neither team is part of this trade.</li><li><strong>Rate</strong> is the weighted, outlier-adjusted rate (<code>council/gamelog.py</code>). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.</li></ul>
+<h3>What it means for us</h3>
+<ul><li><strong>One trade in the window: Nique Clifford, SAC → OKC (8 Nov), for two second-round picks.</strong> No pickup or threat for us yet, so watch it rather than add anyone.</li><li><strong>Sacramento:</strong> no opportunity opens. He played 6.2 minutes a game there and had fallen out of Doug Christie's rotation.</li><li><strong>Oklahoma City:</strong> the opening is real but shared.<ul><li>Out long-term at his positions: Jalen Williams (fractured fibula and dislocated ankle, surgery; timeline due after the procedure; <em>ESPN est.</em> 2 Mar) and Cason Wallace (shoulder surgery; <em>ESPN est.</em> 2 Mar).</li><li>That frees about 48 minutes a game, which Mitchell, McCain, Caruso, Kenrich Williams and Micah Peavy already share.</li><li>Reports cast Clifford as depth competing for minutes, not Williams's replacement.</li></ul></li><li><strong>Clifford himself:</strong> free agent, rate 4.8; season 3.9 (8), L7 4.0 (3), L15 3.3 (6), L30 3.9 (8) (all small minutes); projected 20.8.<ul><li>He played 25 minutes a game as a rookie last season (19.2 FP/g).</li><li>Add him only if OKC gives him 20+ minutes. The first OKC box scores will show it.</li></ul></li><li><strong>Our players:</strong> Isaiah Hartenstein (OKC, C) doesn't share his positions. Ajay Mitchell (Lauri Birds, our opponent this week) is the OKC guard most likely to lose a few minutes.</li><li><strong>No override row:</strong> no source gives him a set role or minutes yet.</li></ul>
+<h3>Summary</h3>
+<div class="scroll"><table><thead><tr><th>Date</th><th>Player</th><th>From → To</th><th>Role before</th><th>Role since</th><th class="num">Rate</th><th>League</th></tr></thead><tbody><tr><td>08 Nov</td><td><strong>Nique Clifford</strong></td><td>SAC → OKC</td><td>8 GP, 6.2 min, 3.9 FP/g, started 0</td><td>no games</td><td class="num">4.8</td><td>Free agent</td></tr></tbody></table></div>
+<h3>Nique Clifford: SAC → OKC (08 Nov)</h3>
+<ul><li>ESPN: "Traded G Nique Clifford to the Oklahoma City Thunder."</li><li>SG/SF · Free agent · rate <strong>4.8</strong> · season 3.9 (8) · L7 4.0 (3) · L15 3.3 (6) · L30 3.9 (8) · projected 20.8 · active</li><li>With SAC: 8 GP, 6.2 min, 3.9 FP/g, started 0. With OKC: no games.</li></ul>
+<h4>The team he left: SAC</h4>
+<ul><li><strong>Role vacated:</strong> 8 GP, 6.2 min, 3.9 FP/g, started 0. A small role: little opportunity opens.</li><li>No game yet since the trade. His teammates at SF/SG, last 10 games:</li></ul>
+<div class="scroll"><table><thead><tr><th>Teammate</th><th>Pos</th><th>League</th><th>Role</th><th class="num">Rate</th></tr></thead><tbody><tr><td>Zach LaVine</td><td>SG/SF</td><td>Free agent</td><td>10 GP, 32.7 min, 31.0 FP/g, started 10</td><td class="num">30.9</td></tr><tr><td>De'Andre Hunter</td><td>SF/PF</td><td>Free agent</td><td>9 GP, 31.2 min, 19.2 FP/g, started 9</td><td class="num">17.9</td></tr><tr><td>Keegan Murray</td><td>SF/PF</td><td>Free agent</td><td>3 GP, 25.7 min, 15.7 FP/g, started 2</td><td class="num">22.7</td></tr><tr><td>Leaky Black</td><td>SF</td><td>Free agent</td><td>6 GP, 19.2 min, 21.2 FP/g, started 1</td><td class="num">26.2</td></tr><tr><td>Emanuel Sharp</td><td>SG</td><td>Free agent</td><td>10 GP, 18.0 min, 10.4 FP/g, started 0</td><td class="num">12.8</td></tr><tr><td>Malik Monk</td><td>PG/SG</td><td>Free agent</td><td>9 GP, 16.9 min, 15.0 FP/g, started 0</td><td class="num">19.3</td></tr><tr><td>Daeqwon Plowden</td><td>SG</td><td>Free agent</td><td>7 GP, 12.1 min, 6.9 FP/g, started 0</td><td class="num">6.2</td></tr><tr><td>Alex Karaban</td><td>SF/PF</td><td>Free agent</td><td>5 GP, 9.8 min, 2.2 FP/g, started 0</td><td class="num">2.1</td></tr></tbody></table></div>
+<h4>The team he joined: OKC</h4>
+<ul><li><strong>Long absences at his positions</strong> (SF/SG):</li></ul>
+<div class="scroll"><table><thead><tr><th>Player</th><th>Pos</th><th>Injury</th><th>ESPN est.</th><th class="num">Min/g this season</th><th class="num">FP/g</th></tr></thead><tbody><tr><td>Jalen Williams</td><td>SF/PF</td><td>Left Leg Fracture</td><td>02 Mar</td><td class="num">31.7</td><td class="num">26.3</td></tr><tr><td>Cason Wallace</td><td>PG/SG</td><td>Left Shoulder Surgery</td><td>02 Mar</td><td class="num">16.3</td><td class="num">18.7</td></tr></tbody></table></div>
+<ul><li>About <strong>48 minutes a game</strong> at his positions are out long-term (their season or last-season minutes).</li><li><strong>Depth at his positions</strong>, last 10 games:</li></ul>
+<div class="scroll"><table><thead><tr><th>Player</th><th>Pos</th><th>League</th><th>Role</th><th class="num">Rate</th></tr></thead><tbody><tr><td>Ajay Mitchell</td><td>PG/SG</td><td>Lauri Birds</td><td>10 GP, 27.2 min, 34.5 FP/g, started 7</td><td class="num">34.8</td></tr><tr><td>Jared McCain</td><td>PG/SG</td><td>Free agent</td><td>10 GP, 25.2 min, 20.9 FP/g, started 4</td><td class="num">23.1</td></tr><tr><td>Alex Caruso</td><td>PG/SG</td><td>Free agent</td><td>7 GP, 18.4 min, 24.7 FP/g, started 0</td><td class="num">21.3</td></tr><tr><td>Kenrich Williams</td><td>SF</td><td>Free agent</td><td>10 GP, 18.4 min, 14.9 FP/g, started 7</td><td class="num">16.9</td></tr><tr><td>Micah Peavy</td><td>SF</td><td>Free agent</td><td>6 GP, 17.0 min, 12.2 FP/g, started 0</td><td class="num">13.9</td></tr><tr><td>Brooks Barnhizer</td><td>SF</td><td>Free agent</td><td>7 GP, 5.6 min, 4.3 FP/g, started 0</td><td class="num">5.5</td></tr></tbody></table></div>
+<h4>Research</h4>
+<ul><li><strong>The trade:</strong> Sacramento sent Clifford to Oklahoma City on 8 Nov for two unprotected second-round picks (2028 via Utah, 2030 via Minnesota). OKC used a traded-player exception and waived Dalen Terry for the roster spot (<a href="https://www.nba.com/news/kings-trade-nique-clifford-thunder" target="_blank" rel="noopener noreferrer">NBA.com</a>; <a href="https://www.hoopsrumors.com/2026/11/kings-trading-nique-clifford-to-thunder-for-two-second-round-picks.html" target="_blank" rel="noopener noreferrer">Hoops Rumors</a>; <a href="https://www.espn.com/nba/story/_/id/50422647/thunder-get-nique-clifford-trade-kings-sources-say" target="_blank" rel="noopener noreferrer">ESPN</a>).</li><li><strong>Why he left Sacramento:</strong> he had been buried in Doug Christie's rotation, at 6.3 minutes a game with the Kings 1-8. Christie cited the competition for minutes (<a href="https://www.yardbarker.com/nba/articles/part_of_the_issue_doug_christie_breaks_silence_on_why_kings_traded_nique_clifford_to_thunder/s1_17664_44535445" target="_blank" rel="noopener noreferrer">Yardbarker</a>).</li><li><strong>His new role:</strong> OKC was thin at wing before the injuries. Jalen Williams, Cason Wallace and Chet Holmgren are all out, which opens the door for minutes (<a href="https://www.si.com/nba/thunder/onsi/okc-thunder-trade-for-kings-wing-nique-clifford" target="_blank" rel="noopener noreferrer">SI</a>; <a href="https://sports.yahoo.com/articles/lakers-lose-15-7-million-203429111.html" target="_blank" rel="noopener noreferrer">Yahoo</a>). He is cast as depth who competes for minutes and rebounds, not as Williams's replacement (<a href="https://lwosports.com/3-ways-nique-clifford-helps-the-thunder/" target="_blank" rel="noopener noreferrer">LWOSports</a>). His OKC debut and minutes have not been reported.</li><li><strong>OKC's injuries:</strong><ul><li>Jalen Williams: fractured left fibula and dislocated ankle, needs surgery; Sam Presti said a timeline would follow the procedure (<a href="https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery" target="_blank" rel="noopener noreferrer">NBA.com, 26 Oct</a>); <em>ESPN est.</em> 2 Mar.</li><li>Cason Wallace: shoulder surgery (<a href="https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/31/chet-holmgren-out-at-least-2-months-with-knee-injury-and-cason-wallace-has-shoulder-surgery" target="_blank" rel="noopener noreferrer">AP via NY1, 31 Oct</a>); <em>ESPN est.</em> 2 Mar.</li></ul></li><li><strong>Verdict:</strong> opportunity up for Clifford, but shared, and unproven after 1,932 NBA minutes (ESPN graded OKC's side a B (<a href="https://www.espn.com/nba/story/_/id/50423627/2026-27-nba-trade-grades-contracts-new-deals-rosters-teams" target="_blank" rel="noopener noreferrer">ESPN</a>)). Unchanged for Sacramento. Watch his first two OKC games.</li><li><strong>Trades not yet in ESPN's feed:</strong> none found. Golden State is exploring a Kristaps Porzingis trade, with no deal reported (<a href="https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals" target="_blank" rel="noopener noreferrer">ESPN buzz</a>).</li></ul>
+<h3>Sources</h3>
+<ul><li>ESPN's NBA transactions feed (<code>site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions</code>), ESPN's NBA injury feed, ESPN box scores (cached in <code>council/.cache/box</code>), and league 423671879 (<code>kona_player_info</code>, <code>mTeam</code>, <code>proTeamSchedules_wl</code>), read 2026-11-10 04:19 UTC.</li><li><a href="https://www.nba.com/news/kings-trade-nique-clifford-thunder" target="_blank" rel="noopener noreferrer">NBA.com</a></li><li><a href="https://www.hoopsrumors.com/2026/11/kings-trading-nique-clifford-to-thunder-for-two-second-round-picks.html" target="_blank" rel="noopener noreferrer">Hoops Rumors</a></li><li><a href="https://www.espn.com/nba/story/_/id/50422647/thunder-get-nique-clifford-trade-kings-sources-say" target="_blank" rel="noopener noreferrer">ESPN</a></li><li><a href="https://www.yardbarker.com/nba/articles/part_of_the_issue_doug_christie_breaks_silence_on_why_kings_traded_nique_clifford_to_thunder/s1_17664_44535445" target="_blank" rel="noopener noreferrer">Yardbarker</a></li><li><a href="https://www.si.com/nba/thunder/onsi/okc-thunder-trade-for-kings-wing-nique-clifford" target="_blank" rel="noopener noreferrer">SI</a></li><li><a href="https://sports.yahoo.com/articles/lakers-lose-15-7-million-203429111.html" target="_blank" rel="noopener noreferrer">Yahoo</a></li><li><a href="https://lwosports.com/3-ways-nique-clifford-helps-the-thunder/" target="_blank" rel="noopener noreferrer">LWOSports</a></li><li><a href="https://www.nba.com/news/thunders-jalen-williams-has-fractured-leg-dislocated-ankle-and-will-need-surgery" target="_blank" rel="noopener noreferrer">NBA.com, 26 Oct</a></li><li><a href="https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/31/chet-holmgren-out-at-least-2-months-with-knee-injury-and-cason-wallace-has-shoulder-surgery" target="_blank" rel="noopener noreferrer">AP via NY1, 31 Oct</a></li><li><a href="https://www.espn.com/nba/story/_/id/50423627/2026-27-nba-trade-grades-contracts-new-deals-rosters-teams" target="_blank" rel="noopener noreferrer">ESPN</a></li><li><a href="https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals" target="_blank" rel="noopener noreferrer">ESPN buzz</a></li></ul></div></details></div></section><section class="panel"><h2>Our roster at this run</h2><p style="margin:0">Cade Cunningham (DET), Scottie Barnes (TOR), Jalen Duren (DET, IR), Jamal Murray (DEN), Kawhi Leonard (TOR), Dejounte Murray (NO), Trey Murphy III (NO), Caleb Wilson (CHI), Paul George (BOS), Yaxel Lendeborg (GS), Isaiah Hartenstein (OKC), Anthony Black (ORL), Jrue Holiday (POR), Dillon Brooks (PHX)</p></section></main><footer class="wrap">Built by <code>council/run_report.py</code> from the run's reports, <code>council/roster.csv</code> and <code>council/news_overrides.csv</code>. Figures are the scripts'; nothing here is recomputed.</footer></body></html>

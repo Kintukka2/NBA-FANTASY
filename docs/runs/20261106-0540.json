@@ -1,0 +1,199 @@
+{
+ "key": "20261106-0540",
+ "date": "20261106",
+ "when_utc": "2026-11-06T05:40:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "IR"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "slot": "roster"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Daniel Gafford",
+   "team": "DAL",
+   "slot": "roster"
+  },
+  {
+   "player": "Dillon Brooks",
+   "team": "PHX",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [],
+ "reports": [
+  {
+   "kind": "matchup",
+   "file": "20261106-matchup3.md",
+   "title": "Matchup 3: Come-in Cider vs Melbourne poopoo",
+   "generated": "2026-11-06T05:40:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "injury-watch",
+   "file": "20261106-injury-watch.md",
+   "title": "Injury Watch: 06 Nov 2026",
+   "generated": "2026-11-06T05:40:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "slump-watch",
+   "file": "20261106-slump-watch.md",
+   "title": "Slump Watch: 06 Nov 2026",
+   "generated": "2026-11-06T05:40:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "rookies",
+   "file": "20261106-rookies.md",
+   "title": "Rookies against projection",
+   "generated": "2026-11-06T05:40:00+00:00",
+   "versions": []
+  }
+ ],
+ "matchup": {
+  "title": "Matchup 3: Come-in Cider vs Melbourne poopoo",
+  "score": [
+   812,
+   800
+  ],
+  "adds": {
+   "used": 2,
+   "limit": 6,
+   "left": 4
+  },
+  "projection": null,
+  "moves": [
+   {
+    "day": "Fri 06 Nov",
+    "drop": "Dillon Brooks",
+    "add": "Santi Aldama",
+    "team": "DAL",
+    "by_et": "08:00PM ET",
+    "by_mel": "Sat 07 12:00PM"
+   },
+   {
+    "day": "Sat 07 Nov",
+    "drop": "Santi Aldama",
+    "add": "Christian Braun",
+    "team": "DEN",
+    "by_et": "05:00PM ET",
+    "by_mel": "Sun 08 09:00AM"
+   },
+   {
+    "day": "Sun 08 Nov",
+    "drop": "Christian Braun",
+    "add": "Nic Claxton",
+    "team": "CHI",
+    "by_et": "03:30PM ET",
+    "by_mel": "Mon 09 07:30AM"
+   }
+  ],
+  "best": {
+   "adds": 3,
+   "gain": "+66.8"
+  },
+  "holding": "Nic Claxton (CHI, 3 games next week).",
+  "plan_title": "Plan update: Black and Brooks both droppable (06:00 UTC Fri 6)",
+  "plan_md": "\nThe owner is also happy to drop Anthony Black. Brooks and Black each have one game left this week, both on Sat 7. With the Allen claim taking the third add, **3 adds are left**.\n\n**The moves: 3 adds, +86.5**, from the robust run with Watson and Claxton sitting (*What-if: Brooks and Black, robust* below):\n\n| # | US day | Deadline, Melbourne (ET) | Move |\n|---|---|---|---|\n| \u2014 | Fri 6 | 7:00 pm Fri 6 (claim processes) | Gafford \u2192 **Jarrett Allen** (waiver claim) |\n| 1 | Fri 6 | **2:00 pm Sat 7** (10:00 pm Fri) | Drop Dillon Brooks, add **Toumani Camara** (POR), for Fri and Sat |\n| 2 | Sun 8 | **11:30 am Mon 9** (7:30 pm Sun) | Drop Camara, add **Santi Aldama** (DAL) |\n| 3 | Sun 8 | **11:30 am Mon 9** (7:30 pm Sun) | Drop Anthony Black (after his Sat game), add **Naji Marshall** (DAL) |\n\n- **The script's top 3-add row is +91.7:** Watson on Fri\u2013Sat, then Aldama and Claxton on Sunday. It depends on Watson (questionable) and Claxton (an unconfirmed debut). Take it only if both are confirmed.\n- **The 2-add version is +65.8:** Aldama from Friday, then Marshall for Black on Sunday. It keeps one add spare.\n- **If Aldama does not debut Friday,** use Rudy Gobert (MIN, +30 on Sunday) in his place.\n- **What the drops cost next week:** Brooks's 4 games and Black's 3.\n- **If the Allen claim fails** (a team higher in the waiver order claims him), Gafford stays and 4 adds remain. Re-run the plan then.\n"
+ },
+ "slump-watch": {
+  "flagged": [
+   {
+    "player": "Ivica Zubac",
+    "fantasy": "Lauri Birds",
+    "gap": "-16.2"
+   },
+   {
+    "player": "Darius Garland",
+    "fantasy": "Lauri Birds",
+    "gap": "-11.8"
+   },
+   {
+    "player": "Desmond Bane",
+    "fantasy": "Lauri Birds",
+    "gap": "-10.5"
+   },
+   {
+    "player": "Josh Giddey",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-18.9"
+   },
+   {
+    "player": "LaMelo Ball",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-12.1"
+   },
+   {
+    "player": "Jaren Jackson Jr.",
+    "fantasy": "Matt Wright's Foxies",
+    "gap": "-11.1"
+   }
+  ],
+  "headline": "6 rostered players are 10+"
+ },
+ "injury-watch": {
+  "shortlist": [],
+  "injuries": 94
+ },
+ "files": [
+  "20261106-matchup3.md",
+  "20261106-injury-watch.md",
+  "20261106-slump-watch.md",
+  "20261106-rookies.md"
+ ]
+}

@@ -1,0 +1,134 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Run Tue 20 Oct</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"><style>
+/* Layout: a sticky run bar, a scoreboard strip, the change ledger and moves, then each report as an expandable panel. */
+:root {
+  --bg: #F4F6F8; --surface: #FFFFFF; --sunken: #ECEFF3; --ink: #16202A; --muted: #556170; --line: #D8DDE4;
+  --accent: #B04E19; --accent-ink: #FFFFFF; --accent-soft: #FAEADF;
+  --good: #1C6E46; --good-soft: #E2F2E9; --bad: #AD2A20; --bad-soft: #FAE6E3; --info: #24539F; --info-soft: #E5EDF9;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
+  --font-body: "Fira Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0E1318; --surface: #151C23; --sunken: #1B232C; --ink: #E4E9EF; --muted: #9BA7B3; --line: #2A3440;
+  --accent: #F08A4C; --accent-ink: #1B0F07; --accent-soft: #3A2416;
+  --good: #5CC995; --good-soft: #13301F; --bad: #F2867B; --bad-soft: #3B1A17; --info: #8EB2F2; --info-soft: #18263D;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0E1318; --surface: #151C23; --sunken: #1B232C; --ink: #E4E9EF; --muted: #9BA7B3; --line: #2A3440;
+  --accent: #F08A4C; --accent-ink: #1B0F07; --accent-soft: #3A2416;
+  --good: #5CC995; --good-soft: #13301F; --bad: #F2867B; --bad-soft: #3B1A17; --info: #8EB2F2; --info-soft: #18263D;
+  color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 15px/1.55 var(--font-body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+a { color: var(--info); text-underline-offset: 2px; }
+a:hover { color: var(--accent); }
+a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.runbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.runbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-block: 10px; }
+.brand { font: 700 18px/1 var(--font-display); letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.runbar .when { color: var(--muted); font-size: 13px; }
+.runbar nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 6px; }
+.btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 18px; color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 500; background: var(--surface); transition: border-color .15s, color .15s; }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn[aria-disabled="true"] { color: var(--muted); opacity: .55; pointer-events: none; }
+main { padding-block: 20px 56px; display: grid; gap: 28px; }
+main > * { min-width: 0; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: .01em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 4.4vw, 40px); line-height: 1.05; }
+h2 { font-size: 24px; line-height: 1.15; }
+.eyebrow { font: 500 11px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.sub { color: var(--muted); margin: 6px 0 0; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.tile .label { font: 500 11px/1.2 var(--font-mono); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.tile .value { font: 700 36px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.tile .value small { font-size: 18px; color: var(--muted); font-weight: 600; }
+.tile .note { font-size: 13px; color: var(--muted); }
+.tile.next .value { font-size: 22px; line-height: 1.15; }
+.lead-up { color: var(--good); } .lead-down { color: var(--bad); }
+.pips { display: flex; gap: 5px; margin-top: 4px; }
+.pip { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--accent); }
+.pip.on { background: var(--accent); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; min-width: 0; }
+.panel > h2 { margin-bottom: 12px; }
+.ledger { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px 24px; }
+.ledger h3 { font: 600 13px/1.3 var(--font-body); margin: 0 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.ledger ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ledger li { display: flex; gap: 8px; align-items: baseline; }
+.ledger details.more { margin-top: 8px; }
+.ledger details.more > summary { cursor: pointer; color: var(--info); font-size: 13px; font-weight: 500; min-height: 32px; display: flex; align-items: center; }
+.ledger details.more ul { margin-top: 6px; }
+.chip { flex: none; font: 500 10.5px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 4px; }
+.chip.added { background: var(--good-soft); color: var(--good); }
+.chip.removed { background: var(--bad-soft); color: var(--bad); }
+.chip.changed { background: var(--info-soft); color: var(--info); }
+.chip.new { background: var(--accent-soft); color: var(--accent); }
+.quiet { color: var(--muted); font-size: 14px; margin: 0; }
+.compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.compare h3 { font: 600 15px/1.3 var(--font-body); margin: 0 0 8px; }
+.compare ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
+.compare .when2 { color: var(--muted); font-size: 13px; }
+.move b { font-weight: 600; }
+.move .by { display: block; color: var(--muted); font-size: 13px; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px; }
+details.report { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+details.report + details.report { margin-top: 10px; }
+details.report > summary { list-style: none; cursor: pointer; padding: 14px 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+details.report > summary::-webkit-details-marker { display: none; }
+details.report > summary::before { content: "+"; font: 700 18px/1 var(--font-mono); color: var(--accent); width: 14px; }
+details.report[open] > summary::before { content: "\2212"; }
+details.report > summary .t { font: 700 20px/1.15 var(--font-display); }
+details.report > summary .d { color: var(--muted); font-size: 13px; }
+.md { padding: 0 20px 20px; border-top: 1px solid var(--line); min-width: 0; }
+.md h2, .md h3 { font-family: var(--font-display); font-weight: 700; font-size: 20px; margin: 22px 0 8px; }
+.md h4 { font-size: 16px; margin: 18px 0 6px; }
+.md h5, .md h6 { font-size: 14px; margin: 14px 0 4px; }
+.md p, .md li { max-width: 78ch; }
+.md ul, .md ol { padding-left: 22px; }
+.md li + li { margin-top: 3px; }
+.md code { font: 500 12.5px/1.4 var(--font-mono); background: var(--sunken); padding: 1px 5px; border-radius: 4px; }
+.md pre { margin: 0; padding: 12px; background: var(--sunken); border-radius: 8px; }
+.md pre code { background: none; padding: 0; }
+.md blockquote { margin: 10px 0; padding: 4px 14px; border-left: 3px solid var(--line); color: var(--muted); }
+.md hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+.scroll { overflow-x: auto; margin: 10px 0; max-width: 100%; }
+table { border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; min-width: 100%; }
+th, td { text-align: left; vertical-align: top; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); background: var(--sunken); white-space: nowrap; }
+td.num, th.num { text-align: right; }
+tbody tr:hover td { background: var(--sunken); }
+.call .md { border-top: 0; padding: 0; }
+.runs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.run { display: grid; grid-template-columns: minmax(150px, 1.1fr) minmax(170px, 1.6fr) minmax(120px, 1fr) minmax(130px, 1fr); gap: 6px 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; text-decoration: none; color: var(--ink); transition: border-color .15s; }
+.run:hover { border-color: var(--accent); color: var(--ink); }
+.run .d1 { font: 700 18px/1.1 var(--font-display); }
+.run .d2, .run .meta { color: var(--muted); font-size: 13px; }
+.run .mt { font-weight: 500; }
+.run .nums { font-variant-numeric: tabular-nums; font-size: 14px; }
+.bar { position: relative; height: 10px; background: var(--sunken); border-radius: 5px; margin-top: 6px; }
+.bar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); }
+.bar span { position: absolute; top: 0; bottom: 0; border-radius: 5px; }
+.bar .pos { left: 50%; background: var(--good); }
+.bar .neg { right: 50%; background: var(--bad); }
+.latest { display: grid; gap: 4px; }
+footer { color: var(--muted); font-size: 13px; padding-block: 0 40px; }
+@media (max-width: 720px) {
+  .run { grid-template-columns: 1fr 1fr; }
+  .tile .value { font-size: 30px; }
+  .md { padding: 0 14px 16px; }
+  details.report > summary { padding: 12px 14px; }
+  .panel { padding: 16px 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style></head><body><header class="runbar"><div class="wrap"><span class="brand">Draft Council</span><span class="when">Run of Tue 20 Oct 2026, 10:59 AM Melbourne</span><nav aria-label="Runs"><a class="btn" aria-disabled="true">← Older</a><a class="btn" href="index.html" data-run="">All runs</a><a class="btn" href="20261020-2359.html" data-run="20261020-2359">Wed 21 Oct →</a></nav></div></header><main id="run" class="wrap"><div><p class="eyebrow">Skill run · 20261019-2359 UTC</p><h1>Skill run</h1><p class="sub">Run of Tue 20 Oct 2026, 10:59 AM Melbourne. Reports: preseason-fast-starts.</p></div><section class="panel"><h2>What changed</h2><p class="quiet">This is the first run in the archive, so there is nothing to compare with.</p></section><section><h2 style="margin-bottom:10px">Reports</h2><nav class="toc" aria-label="Reports"><a class="btn" href="#rep-preseason-fast-starts">preseason-fast-starts</a></nav><div style="margin-top:12px"><details class="report" id="rep-preseason-fast-starts"><summary><span class="t">Preseason review: 10 players set to start 2026-27 fast</span><span class="d"></span></summary><div class="md"><p class="quiet">Generated  · source <a href="https://github.com/Kintukka2/NBA-FANTASY/blob/main/docs/analysis/20261019-preseason-fast-starts.md" target="_blank" rel="noopener noreferrer">20261019-preseason-fast-starts.md</a></p><ul><li>Prepared 19 Oct 2026, the day before the opener, by Claude. This is <strong>analysis, not a council verdict</strong>: the council has not voted on it.</li><li>Built from Wire's two preseason briefings, <a href="https://github.com/Kintukka2/NBA-FANTASY/blob/main/docs/research/20261019-0750-preseason-east.md" target="_blank" rel="noopener noreferrer"><code>docs/research/20261019-0750-preseason-east.md</code></a> and <a href="https://github.com/Kintukka2/NBA-FANTASY/blob/main/docs/research/20261019-0745-preseason-west.md" target="_blank" rel="noopener noreferrer"><code>docs/research/20261019-0745-preseason-west.md</code></a>, plus <code>data/processed/players_scored.csv</code>, <code>council/taken.txt</code> and <code>council/roster.csv</code>.</li></ul>
+<h3>Method</h3>
+<ol><li><strong>Preseason points in our scoring.</strong> Every Eastern stat table (148 players, CBS preseason totals) was scored with <code>scripts/league_scoring.py</code> and turned into fantasy points per 36 minutes (<strong>preFP36</strong>).<ul><li>The West has no full tables. Its standouts' best single-game lines were scored the same way.</li><li>Both feeds lack offensive rebounds and double-double bonuses, so big men read slightly low.</li></ul></li><li><strong>Compared with last season.</strong> preFP36 is set against each player's 2026 league-scored rate per 36 minutes (<strong>FP36 '26</strong> = <code>FP_ACT_PG / A_MIN × 36</code>). The gap is the <strong>lift</strong>.</li><li><strong>Kept only players with a fast-start setup.</strong> Each one had to meet all three conditions:<ul><li>a starting or locked rotation role, per the briefings</li><li>no injury going into the opener</li><li>production that holds up across more than one game</li></ul></li><li><strong>Left out the obvious first-rounders.</strong> Jokic, Giannis, Wembanyama and the like will start fast and are all rostered. The list targets players likely to beat their draft price in the first two to three weeks.</li><li><strong>Availability.</strong> "Undrafted" means not in <code>council/taken.txt</code>. Other teams may have claimed players since 8 Oct, so check ESPN before acting.</li></ol>
+<p><strong>Sample warning:</strong> preseason minutes were about 15-25 a game, often for a half, over 2-5 games. Treat the numbers as role and form signals, not projections.</p>
+<h3>The top 10</h3>
+<div class="scroll"><table><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Ours?</th><th>Role going in</th><th>Preseason</th><th>Lift vs '26</th><th>Why a fast start</th></tr></thead><tbody><tr><td>1</td><td><strong>Jalen Duren</strong></td><td>DET</td><td><strong>Ours</strong></td><td>Starting C</td><td>2 GP, 17.5 min, 19.0 pts, 14-18 FG, 4 stl, 2 blk. <strong>preFP36 67.9</strong></td><td>+11.5 (56.4 '26)</td><td>Efficient (78% FG) and active on defence, coming off a planned ramp-up. Detroit has no injuries and opens Tue 20 Oct vs BOS.</td></tr><tr><td>2</td><td><strong>Scottie Barnes</strong></td><td>TOR</td><td><strong>Ours</strong></td><td>Starter, all 4 GP</td><td>21.3 min, 16.3 pts, 26-46 FG, 5 stl, <strong>5 blk</strong>. <strong>preFP36 60.9</strong></td><td>+10.1 (50.8)</td><td>Steals and blocks at 4 points each, on a full 80-game base. Toronto lists no rotation injuries.</td></tr><tr><td>3</td><td><strong>Ryan Rollins</strong></td><td>MIL</td><td><strong>Ours</strong></td><td>Starter, 4 of 4</td><td>18.5 min, 11.8 pts, 15 ast, 5 stl, 4 blk, <strong>2 TO</strong>. <strong>preFP36 59.9</strong></td><td>+17.8 (42.1)</td><td>Starting next to Herro, with very few turnovers. <strong>He is the player the waiver plan drops.</strong> See below.</td></tr><tr><td>4</td><td><strong>Jeremiah Fears</strong></td><td>NO</td><td>Undrafted</td><td>Starting in the preseason</td><td>13.3 pts as a starter. <strong>3 stl in each of his last two games</strong> (scored 38 and 44). Single-game FP36 62-79</td><td>'26: 26.4 FP in 82 GP</td><td>Dejounte Murray (toe) is questionable for 21 Oct, and Fears ran the offence in his absence. <em>(Murray is also ours.)</em></td></tr><tr><td>5</td><td><strong>Kyshawn George</strong></td><td>WSH</td><td>Undrafted</td><td>Starter, 4 of 4, 24 min</td><td>15.3 pts, <strong>19-29 FG</strong>, 5 stl, <strong>6 blk</strong>, 10 ast. <strong>preFP36 51.4</strong></td><td>+11.2 (40.2)</td><td>Highest-minute starter on his team, with defensive stats in a league that pays 4 for each. Dybantsa's ankle could add touches.</td></tr><tr><td>6</td><td><strong>Andrew Wiggins</strong></td><td>MIA</td><td>Undrafted</td><td>Starter, 4 of 4</td><td>16.3 min, 14.3 pts, <strong>20-33 FG</strong>, 5 stl, 2 TO. <strong>preFP36 57.0</strong></td><td>+16.9 (40.1)</td><td>Efficient scoring next to Giannis. The CSV's DAY_TO_DAY tag has no source, so he is healthy.</td></tr><tr><td>7</td><td><strong>Day'Ron Sharpe</strong></td><td>BKN</td><td>Undrafted</td><td>Starting C, 3 of 3</td><td>18.7 min, 15 reb, <strong>10 ast, 5 stl, 4 blk</strong> in 3 GP. <strong>preFP36 57.2</strong></td><td>+6.8 (50.4)</td><td>Last season he produced 50 per 36 as a backup. Starting minutes are what he was missing.</td></tr><tr><td>8</td><td><strong>Yaxel Lendeborg</strong></td><td>GS</td><td>Undrafted</td><td>Rookie starter (Kerr "leaning toward" him)</td><td>Finale: 26 min, 17 pts, 6-9 FG, 4 reb, 5 ast, 2 stl, 1 blk = <strong>46 FP</strong></td><td>rookie</td><td>Starting forward on a team missing Butler, Moody and Porziņģis. Curry's ankle sprain adds usage if he sits.</td></tr><tr><td>9</td><td><strong>Draymond Green</strong></td><td>GS</td><td>Undrafted</td><td>Starter, expected 25-30 min</td><td>Finale: 24 min, 7 pts, 8 reb, <strong>10 ast, 3 stl</strong> = <strong>49 FP</strong></td><td>'26: 26.5 FP in 68 GP</td><td>His assists and steals score heavily here, and Golden State needs him to create. Low '26 baseline, so this is a short-term pick.</td></tr><tr><td>10</td><td><strong>Devin Vassell</strong></td><td>SA</td><td>Undrafted</td><td><strong>Announced</strong> opening-night starter</td><td>14 Oct: 25 min, 12 pts, 6 reb, 2 ast, <strong>3 stl</strong>, 1 blk = 39 FP</td><td>'26: 27.3 FP in 67 GP</td><td>One of the few players whose start Tuesday was officially confirmed (Mitch Johnson, 17 Oct).</td></tr></tbody></table></div>
+<h4>Next in line</h4>
+<ul><li><strong>Mitchell Robinson</strong> (BOS, undrafted): started 2 of 2, 8-10 FG, 3 blk, preFP36 56.9. Neemias Queta could take the job instead.</li><li><strong>Nikola Jović</strong> (MIA, undrafted): preFP36 52.6 with 28 reb and 5 blk. He starts at C only if Adebayo (groin, questionable) sits.</li><li><strong>Tristan da Silva</strong> (ORL, undrafted): preFP36 50.2. He is the favourite to start if Franz Wagner (shoulder) misses time.</li><li><strong>Jock Landale</strong> (ATL) and <strong>Leonard Miller</strong> (CHI): preFP36 64.6 and 61.3, but both are bench players under 20 minutes.</li></ul>
+<h3>What it means for our roster</h3>
+<ul><li><strong>Rollins vs Ware.</strong> The 8 Oct waiver plan drops Rollins. The preseason now points the other way.<ul><li><strong>Rollins</strong> started all four games at 59.9 per 36 (+17.8 on '26).</li><li><strong>Kel'el Ware</strong> started 1 of 5 at <strong>36.0 per 36 (−16.7 on '26)</strong>, while Myles Turner started all four with <strong>11 blocks</strong>. Rotowire calls Ware's role "unclear".</li><li><strong>Worth a council re-vote before Sunday's waivers.</strong></li></ul></li><li><strong>Paul George</strong> (the planned add) read 41.9 per 36, level with last season's 42.3. He had <strong>7 steals in 2 games</strong> but shot <strong>5-20</strong>. The case for him is unchanged.</li><li><strong>Watch these early:</strong><ul><li><strong>Kawhi</strong> played under a minutes restriction and left the 15 Oct game with no reason given.</li><li><strong>Dejounte Murray</strong> is questionable with his toe.</li><li><strong>Caleb Wilson</strong> started 5 of 5 but committed 17 turnovers on 30-69 FG, for 30.3 per 36.</li><li><strong>Cade</strong> (43.9) is no concern on 3 games.</li></ul></li></ul></div></details></div></section><section class="panel"><h2>Our roster at this run</h2><p style="margin:0">Cade Cunningham (DET), Scottie Barnes (TOR), Jalen Duren (DET), Jamal Murray (DEN), Kawhi Leonard (TOR), Dejounte Murray (NO), Trey Murphy III (NO), Desmond Bane (ORL), Onyeka Okongwu (ATL), Caleb Wilson (CHI), Ryan Rollins (MIL), Jimmy Butler III (GS, IR), Paul George (BOS), Yaxel Lendeborg (GS)</p></section></main><footer class="wrap">Built by <code>council/run_report.py</code> from the run's reports, <code>council/roster.csv</code> and <code>council/news_overrides.csv</code>. Figures are the scripts'; nothing here is recomputed.</footer></body></html>

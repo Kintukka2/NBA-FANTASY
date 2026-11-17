@@ -116,3 +116,15 @@ recorded.
 **Pending trades never block a drop.** Never cite a pending trade offer as a
 reason to keep a player or to avoid dropping one, in a reply, a report, a plan
 or a ballot. Streaming plans treat players in pending offers like any other.
+
+**Run report, always.** After any skill run, and once at the end of "run all
+skills", run `python council/run_report.py`. It writes one HTML page for the run
+in `docs/runs/`. The page shows the scoreboard, what changed since the last run
+(roster, overrides, flags, suggested moves), the moves suggested then and now,
+and every report of the run in full. It also rebuilds the archive. Then:
+
+- commit `docs/runs/` with the reports;
+- republish the archive page (link and steps in `docs/runs/README.md`):
+  `docs/runs/viewer.html`, plus `runs/<run>.html` for the new run and the run
+  before it;
+- link the archive in the reply.

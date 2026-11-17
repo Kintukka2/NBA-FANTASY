@@ -1,0 +1,446 @@
+{
+ "key": "20261109-0706",
+ "date": "20261109",
+ "when_utc": "2026-11-09T07:06:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "IR"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "slot": "roster"
+  },
+  {
+   "player": "Daniel Gafford",
+   "team": "DAL",
+   "slot": "roster"
+  },
+  {
+   "player": "P.J. Washington",
+   "team": "DAL",
+   "slot": "roster"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [
+  {
+   "player": "Yves Missi",
+   "kind": "return",
+   "value": "2026-11-12",
+   "until": "",
+   "source": "https://www.rotowire.com/basketball/headlines/yves-missi-injury-remains-on-shelf-537773",
+   "note": "Floor: week-to-week with no timetable as of 5 Nov (left knee bone bruise); out 8 Nov at LAC on the Pelicans' report"
+  },
+  {
+   "player": "Fred VanVleet",
+   "kind": "sit",
+   "value": "2026-11-16",
+   "until": "",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/rockets-fred-vanvleet-to-miss-back-to-backs/",
+   "note": "Sits one game of back-to-backs (Will Guillory, The Athletic; Udoka confirmed, 20 Oct); the second night, as on 24 and 31 Oct"
+  },
+  {
+   "player": "CJ McCollum",
+   "kind": "role",
+   "value": "23",
+   "until": "2026-11-22",
+   "source": "https://cbssports.com/fantasy/basketball/news/hawks-cj-mccollum-continues-in-bench-role",
+   "note": "Bench 3 straight games (25, 23, 21 min) after giving his start to Kingston Flemings; stayed on the bench when Jalen Johnson returned 7 Nov"
+  }
+ ],
+ "reports": [
+  {
+   "kind": "matchup",
+   "file": "20261109-matchup4.md",
+   "title": "Matchup 4: Come-in Cider vs Lauri Birds",
+   "generated": "2026-11-09T07:06:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "news-watch",
+   "file": "20261109-news-watch.md",
+   "title": "News watch: 09 Nov 2026",
+   "generated": "2026-11-09T06:47:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "injury-watch",
+   "file": "20261109-injury-watch.md",
+   "title": "Injury Watch: 09 Nov 2026",
+   "generated": "2026-11-09T06:46:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "slump-watch",
+   "file": "20261109-slump-watch.md",
+   "title": "Slump Watch: 09 Nov 2026",
+   "generated": "2026-11-09T06:47:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "rookies",
+   "file": "20261109-rookies.md",
+   "title": "Rookies against projection",
+   "generated": "2026-11-09T06:48:00+00:00",
+   "versions": []
+  }
+ ],
+ "matchup": {
+  "title": "Matchup 4: Come-in Cider vs Lauri Birds",
+  "score": [
+   0,
+   0
+  ],
+  "adds": {
+   "used": 0,
+   "limit": 7,
+   "left": 7
+  },
+  "projection": [
+   1610,
+   1669
+  ],
+  "moves": [
+   {
+    "day": "Mon 09 Nov",
+    "drop": "Isaiah Hartenstein",
+    "add": "Dillon Brooks",
+    "team": "PHX",
+    "by_et": "09:00PM ET",
+    "by_mel": "Tue 10 01:00PM"
+   },
+   {
+    "day": "Tue 10 Nov",
+    "drop": "Daniel Gafford",
+    "add": "Desmond Bane",
+    "team": "ORL",
+    "by_et": "10:00PM ET",
+    "by_mel": "Wed 11 02:00PM"
+   },
+   {
+    "day": "Wed 11 Nov",
+    "drop": "Dillon Brooks",
+    "add": "Jalen Smith",
+    "team": "CHI",
+    "by_et": "08:00PM ET",
+    "by_mel": "Thu 12 12:00PM"
+   },
+   {
+    "day": "Thu 12 Nov",
+    "drop": "Desmond Bane",
+    "add": "Rudy Gobert",
+    "team": "MIN",
+    "by_et": "08:00PM ET",
+    "by_mel": "Fri 13 12:00PM"
+   },
+   {
+    "day": "Fri 13 Nov",
+    "drop": "Rudy Gobert",
+    "add": "Peyton Watson",
+    "team": "CLE",
+    "by_et": "08:00PM ET",
+    "by_mel": "Sat 14 12:00PM"
+   },
+   {
+    "day": "Sun 15 Nov",
+    "drop": "Peyton Watson",
+    "add": "Zach LaVine",
+    "team": "SAC",
+    "by_et": "09:00PM ET",
+    "by_mel": "Mon 16 01:00PM"
+   },
+   {
+    "day": "Sun 15 Nov",
+    "drop": "Jalen Smith",
+    "add": "Rui Hachimura",
+    "team": "LAC",
+    "by_et": "04:30PM ET",
+    "by_mel": "Mon 16 08:30AM"
+   }
+  ],
+  "best": {
+   "adds": 7,
+   "gain": "+157.8"
+  },
+  "holding": "Zach LaVine (SAC, 3 games next week), Rui Hachimura (LAC, 3 games next week).",
+  "plan_title": "Plan",
+  "plan_md": "\nRefreshed 9 Nov 07:20 UTC after the news watch updated the overrides (Knueppel's and Harris's rows removed; the plan is unchanged). Re-run after Sunday's games with **Yves Missi treated as out on Fri 13 and Sat 14**. He has missed 8 straight with a left knee bone bruise and is [week-to-week with no timetable](https://www.rotowire.com/basketball/headlines/yves-missi-injury-remains-on-shelf-537773); *ESPN est.* 9 Nov; recorded floor 12 Nov; small sample.\n- **Projection before any move:** 1,610 to 1,669, down 59. Sunday's games moved the rates.\n- **Best plan:** stream both Gafford's and Hartenstein's slots with 7 adds, **+157.8**, for **1,768 to 1,669**.\n- **Break-even:** keeping either one only pays above a 51.3 rate (Gafford, 31.3) or 61.9 (Hartenstein, 31.2). Each drop costs 3 games next week.\n\n1. **Mon 09 Nov** (today), by 9:00 PM ET / 1:00 PM Tue Melbourne: drop **Isaiah Hartenstein**, add **Dillon Brooks** (PHX).\n   - Brooks: season 28.5 (8), L7 27.8 (4), L15 31.4 (7), L30 28.5 (8); started 8 of 8; 37 min on 7 Nov ([CBS, 8 Nov](https://www.cbssports.com/fantasy/basketball/news/suns-dillon-brooks-puts-up-11-points-saturday/)).\n   - Hartenstein has no game Monday.\n2. **Tue 10 Nov**, by 10:00 PM ET / 2:00 PM Wed: drop **Daniel Gafford**, add **Desmond Bane** (ORL), **only if Orlando lists him available**.\n   - He missed 7 Nov with an illness ([RotoWire, 7 Nov](https://www.rotowire.com/basketball/headlines/desmond-bane-injury-ruled-out-saturday-538008)), and there is no Tuesday update yet; *ESPN est.* 10 Nov.\n   - Bane: season 27.8 (8) \u2192 31.9 (7), L7 28.0 (3), L15 32.7 (6), L30 27.8 (8) \u2192 31.9 (7); started 8 of 8.\n   - **If he is out:** add **Myles Turner** (MIL; plays Tue, Wed, Fri, Sun). Season 26.9 (10), L7 31.2 (4), L15 26.5 (8), L30 26.9 (10).\n3. **Wed 11 Nov**, by 8:00 PM ET / 12:00 PM Thu: Brooks \u2192 **Jalen Smith** (CHI).\n   - Season 31.6 (9) \u2192 34.2 (8), L7 30.0 (3) \u2192 40.0 (2), L15 28.7 (7) \u2192 31.8 (6), L30 31.6 (9) \u2192 34.2 (8); started 9 of 9.\n   - He kept the start Sunday, with Nic Claxton off the bench for [18 minutes](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/nic-claxton-hamstring-plays-18-minutes-sunday). The risk is Claxton taking the job once his minutes limit lifts.\n4. **Thu 12 Nov**, by 8:00 PM ET / 12:00 PM Fri: Bane \u2192 **Rudy Gobert** (MIN). Season 26.9 (10), L7 31.5 (4), L15 28.6 (8), L30 26.9 (10); started 10 of 10.\n5. **Fri 13 Nov**, by 8:00 PM ET / 12:00 PM Sat: Gobert \u2192 **Peyton Watson** (CLE). Season 28.2 (8), L7 32.0 (2, noise), L15 30.6 (7), L30 28.2 (8); started 8 of 8.\n6. **Sun 15 Nov**, by 9:00 PM ET / 1:00 PM Mon 16: Watson \u2192 **Zach LaVine** (SAC).\n   - Season 31.2 (10) \u2192 33.8 (9), L7 26.5 (4), L15 30.4 (8) \u2192 33.6 (7), L30 31.2 (10) \u2192 33.8 (9).\n   - His L7 is 7.3 under the adjusted season average: fewer minutes after [elbow soreness on 1 Nov](https://www.cbssports.com/fantasy/basketball/news/kings-zach-lavine-dealing-with-elbow-soreness/).\n7. **Sun 15 Nov**, by 4:30 PM ET / 8:30 AM Mon 16: Smith \u2192 **Rui Hachimura** (LAC).\n   - Season 23.7 (7) \u2192 28.2 (6), L7 34.7 (3), L15 24.2 (5) \u2192 31.0 (4), L30 23.7 (7) \u2192 28.2 (6); started 7 of 7.\n   - His L7 is 6.5 over the adjusted season average: more minutes with Ingram and Beal out ([Roundtable, 8 Nov](https://roundtable.io/sports/nba/clippers/news/clippers-injury-report-rules-out-five-players-vs-pelicans)).\n\n- **Fewer adds:** 4 adds is worth +98.7 and keeps Hartenstein: Tue Bane, Thu Gobert, Fri Jalen Smith, Sun LaVine.\n- **If New Orleans lists Missi questionable or better on Friday:** re-run, because he is worth more than any other Friday streamer.\n- **Lineups:** no day is overfull. Wednesday is the tightest, with 9 playing and 1 open slot.\n\n**Our injuries:**\n- **Jamal Murray:** [questionable Mon at HOU](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/jamal-murray-contusion-questionable-vs-rockets) with a left shin contusion, on the official report. Plane trouble kept Denver in Mexico City until Sunday afternoon, and all five starters are listed questionable, including Lauri Birds' Nikola Jokic. No timetable reported; *ESPN est.* 9 Nov. See today's news watch for sources.\n- **Scottie Barnes:** [questionable Mon vs MEM](https://bvmsports.com/2026/11/08/raptors-scottie-barnes-immanuel-quickley-questionable-vs-grizzlies/) (now listed as a left groin strain; limited in Sunday's practice); no timetable reported; *ESPN est.* 9 Nov.\n- **Jalen Duren** (now in IR): [re-evaluated in two weeks](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/jalen-duren-hamstring-cleared-for-on-court-work), about 22 Nov; *ESPN est.* 24 Nov.\n- **Kawhi Leonard** (now on the bench): [update about 10 Nov](https://www.espn.com/nba/story/_/id/50373620/kawhi-leonard-finishes-knee-treatment-begins-return-process); no timetable reported; *ESPN est.* 23 Nov.\n\n**Their injuries:** Lauri Markkanen is out with a right wrist sprain; no timetable reported; *ESPN est.* 10 Nov.\n\n**Rest risks** (none announced; Gobert's flag was back spasms on 31 Oct, not rest): Bane on Wed 11, Watson and Smith on Sat 14 (second nights of back-to-backs), and Black and George on Wed 11.\n"
+ },
+ "news-watch": {
+  "flags": [
+   {
+    "player": "Anthony Black",
+    "team": "ORL",
+    "league": "us",
+    "flags": "rest",
+    "rate": "42.1",
+    "status": "active"
+   },
+   {
+    "player": "Paul George",
+    "team": "BOS",
+    "league": "us",
+    "flags": "rest",
+    "rate": "39.4",
+    "status": "active"
+   },
+   {
+    "player": "Kawhi Leonard",
+    "team": "TOR",
+    "league": "us",
+    "flags": "gap",
+    "rate": "41.7 \u2020",
+    "status": "out, ESPN est. 23 Nov"
+   },
+   {
+    "player": "Yves Missi",
+    "team": "NO",
+    "league": "free agent",
+    "flags": "injury",
+    "rate": "60.4 \u2020",
+    "status": "out, ESPN est. 09 Nov"
+   },
+   {
+    "player": "Maxime Raynaud",
+    "team": "SAC",
+    "league": "free agent",
+    "flags": "injury, gap",
+    "rate": "28.1",
+    "status": "out, ESPN est. 10 Nov"
+   },
+   {
+    "player": "Jalen Suggs",
+    "team": "ORL",
+    "league": "free agent",
+    "flags": "injury, gap",
+    "rate": "25.8",
+    "status": "out, ESPN est. 10 Nov"
+   },
+   {
+    "player": "CJ McCollum",
+    "team": "ATL",
+    "league": "waivers",
+    "flags": "role",
+    "rate": "31.0",
+    "status": "active"
+   },
+   {
+    "player": "Aday Mara",
+    "team": "OKC",
+    "league": "waivers",
+    "flags": "role",
+    "rate": "27.8",
+    "status": "active"
+   },
+   {
+    "player": "Brook Lopez",
+    "team": "LAC",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "27.5",
+    "status": "active"
+   },
+   {
+    "player": "Quentin Grimes",
+    "team": "LAL",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "15.1",
+    "status": "day-to-day, ESPN est. 09 Nov"
+   },
+   {
+    "player": "Spencer Jones",
+    "team": "DEN",
+    "league": "free agent",
+    "flags": "minutes",
+    "rate": "29.1 \u2020",
+    "status": "active"
+   },
+   {
+    "player": "T.J. McConnell",
+    "team": "IND",
+    "league": "free agent",
+    "flags": "minutes",
+    "rate": "13.8 \u2020",
+    "status": "day-to-day, ESPN est. 09 Nov"
+   },
+   {
+    "player": "Rudy Gobert",
+    "team": "MIN",
+    "league": "free agent",
+    "flags": "rest",
+    "rate": "29.6",
+    "status": "active"
+   },
+   {
+    "player": "Robert Williams III",
+    "team": "POR",
+    "league": "free agent",
+    "flags": "rest",
+    "rate": "29.3",
+    "status": "day-to-day, ESPN est. 10 Nov"
+   },
+   {
+    "player": "Tobias Harris",
+    "team": "SA",
+    "league": "free agent",
+    "flags": "gap",
+    "rate": "28.0",
+    "status": "out, ESPN est. 11 Nov"
+   },
+   {
+    "player": "Jamal Shead",
+    "team": "TOR",
+    "league": "Lauri Birds",
+    "flags": "role",
+    "rate": "26.8",
+    "status": "active"
+   },
+   {
+    "player": "Klay Thompson",
+    "team": "MIA",
+    "league": "Melbourne poopoo",
+    "flags": "minutes",
+    "rate": "28.4",
+    "status": "active"
+   },
+   {
+    "player": "Anthony Davis",
+    "team": "WSH",
+    "league": "Melbourne poopoo",
+    "flags": "rest",
+    "rate": "50.7",
+    "status": "day-to-day, ESPN est. 09 Nov"
+   },
+   {
+    "player": "VJ Edgecombe",
+    "team": "PHI",
+    "league": "Melbourne poopoo",
+    "flags": "rest",
+    "rate": "36.2",
+    "status": "active"
+   },
+   {
+    "player": "Paolo Banchero",
+    "team": "ORL",
+    "league": "Dr White Slong",
+    "flags": "gap",
+    "rate": "60.9 \u2020",
+    "status": "out, ESPN est. 22 Nov"
+   }
+  ],
+  "changed_md": "\n- **Jamal Murray (ours): questionable Mon 9 Nov at HOU** with a left shin/tibia contusion ([NBA injury report, 9 Nov 1:45 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_45AM.pdf)). When or how he was hurt has not been reported ([NBC, 8 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/jamal-murray-contusion-questionable-vs-rockets); [Gazette, 8 Nov](https://gazette.com/2026/11/08/nuggets-starters-questionable-for-mondays-game-against-rockets/)). No timetable reported; *ESPN est.* 9 Nov.\n  - Plane trouble kept Denver in Mexico City until about 4 p.m. Sunday, after Saturday's win over Indiana. The team cancelled Monday's shootaround and listed all five starters questionable ([Anthony Slater, ESPN via TSN, 8 Nov](https://www.tsn.ca/nba/article/nuggets-starters-all-questionable-vs-rockets-after-delays-leaving-mexico-n1-50426497/); [Roundtable, 9 Nov](https://roundtable.io/sports/nba/rockets/game-day/november-9th-injury-report-for-houston-rockets-vs-denver-nuggets)). Denver has not said the tags are precautionary.\n  - Rate **48.8** \u00b7 season 46.1 (8) \u2192 51.7 (7) \u00b7 L7 43.7 (3) \u00b7 L15 51.7 (7) \u00b7 L30 46.1 (8) \u2192 51.7 (7) \u00b7 projected 43.9 (`council/form.py`). L30 covers every game so far, so it equals the season average.\n  - **L7** 43.7 (3) is 8.0 under his outlier-adjusted season 51.7 (7), and 2.5 under the raw 46.1. The cause is two quieter games: 31 FP in 28 minutes on 4 Nov and 37 in 34 on 7 Nov, against 36.5 min for the season (box scores). No reason has been reported for the 28-minute night.\n  - He has 3 games this week (Mon, Wed, Sat), worth 146.3 FP to our lineups in this morning's run ([matchup 4, 9 Nov](20261109-matchup4.md)). Tip-off Monday is 8:30 PM ET (12:30 PM Tue Melbourne). No row: ESPN's date is his next game.\n- **Scottie Barnes (ours): questionable Mon 9 Nov vs MEM**, now listed with a **left groin strain** ([NBA injury report, 9 Nov 1:45 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_45AM.pdf)). He missed Friday with left adductor/groin soreness and was limited in Sunday's practice (Michael Grange of Sportsnet via [NBC, 8 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/barnes-quickley-limited-at-sunday-practice) and [BVM Sports, 8 Nov](https://bvmsports.com/2026/11/08/raptors-scottie-barnes-immanuel-quickley-questionable-vs-grizzlies/)). No timetable reported; *ESPN est.* 9 Nov.\n  - He was seen protecting his hip in the third quarter on 4 Nov vs DEN ([BVM Sports, 8 Nov](https://bvmsports.com/2026/11/08/raptors-scottie-barnes-immanuel-quickley-questionable-vs-grizzlies/)). BasketNews says he and Quickley \"might remain\" inactive ([BasketNews, 8 Nov](https://basketnews.com/news-259069-scottie-barnes-raptors-guard-get-status-updates-before-grizzlies-game.html)).\n  - Rate **48.6** \u00b7 season 45.9 (8) \u2192 50.7 (7) \u00b7 L7 44.3 (3) \u00b7 L15 45.2 (6) \u2192 51.8 (5) \u00b7 L30 45.9 (8) \u2192 50.7 (7) \u00b7 projected 43.7 (`council/form.py`).\n  - **L7** 44.3 (3) is 6.4 under his outlier-adjusted season 50.7 (7), and 1.6 under the raw 45.9. The cause is his 36 FP in 32 minutes on 4 Nov, the night he was favouring the hip (box scores), followed by the missed game.\n  - He has 4 games this week (Mon, Wed, Thu, Sun), worth 194.6 FP to our lineups ([matchup 4, 9 Nov](20261109-matchup4.md)). Tip-off Monday is 7:30 PM ET (11:30 AM Tue Melbourne). No row.\n- **Desmond Bane (Tue pickup target): no update since his illness scratch on Saturday.** He was ruled out on 7 Nov at GSW, and RotoWire gave Tue 10 Nov at SAC as his next chance to play ([CBS/RotoWire, 7 Nov](https://www.cbssports.com/fantasy/basketball/news/magics-desmond-bane-ruled-out-saturday/); [RotoWire, 7 Nov](https://www.rotowire.com/basketball/headlines/desmond-bane-injury-ruled-out-saturday-538008)). Jason Beede of the Orlando Sentinel (8 Nov): the Magic are \"hoping\" he gets over it soon, with no return given ([Yahoo, 8 Nov](https://sports.yahoo.com/articles/no-magic-margin-error-loss-214900681.html)). Orlando's report for Tuesday had not been submitted at 1:45 AM ET ([NBA injury report, 9 Nov 1:45 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_45AM.pdf)). No timetable reported; *ESPN est.* 10 Nov.\n  - Rate **31.1** \u00b7 season 27.8 (8) \u2192 31.9 (7) \u00b7 L7 28.0 (3) \u00b7 L15 32.7 (6) \u00b7 L30 27.8 (8) \u2192 31.9 (7) \u00b7 projected 38.2 (`council/form.py`).\n  - The plan's condition stands: add him Tuesday (by 10:00 PM ET / 2:00 PM Wed Melbourne) only if Orlando lists him available, otherwise Myles Turner ([matchup 4, 9 Nov](20261109-matchup4.md)). Wed 11 Nov at UTAH, the second night of a back-to-back, is still a rest risk; nothing has been announced.\n- **Jalen Duren (ours, IR):** nothing new since 8 Nov. He was cleared for on-court work and will be re-evaluated in two weeks, about **Sun 22 Nov** ([NBC, 8 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/jalen-duren-hamstring-cleared-for-on-court-work); [CBS, citing Hunter Patterson of The Athletic, 8 Nov](https://www.cbssports.com/fantasy/basketball/news/pistons-jalen-duren-to-miss-at-least-two-more-weeks/)). His first possible game is Tue 24 Nov at ORL; *ESPN est.* 24 Nov.\n  - Rate **44.1** \u00b7 season 33.5 (2) \u2192 44.0 (1) \u00b7 L7 \u2014 \u00b7 L15 \u2014 \u00b7 L30 33.5 (2) \u2192 44.0 (1) \u00b7 projected 42.2: small sample.\n  - Today's ESPN sync moved him into our IR slot and Kawhi Leonard to the bench ([matchup 4, 9 Nov](20261109-matchup4.md)). No row.\n- **Kawhi Leonard (ours, bench):** out Mon vs MEM, listed as \"left knee injury management\" ([NBA injury report, 9 Nov 1:45 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_45AM.pdf)). The Raptors' one-week update is due about 10\u201311 Nov. NBA.com put his earliest game at Wed 11 Nov vs BOS ([NBA.com, 4 Nov](https://www.nba.com/news/kawhi-leonards-knee-swelling-has-been-treated-and-hell-start-return-to-play-process-raptors-say)); RotoWire thinks he is unlikely back before the end of November ([CBS/RotoWire, 3 Nov](https://www.cbssports.com/fantasy/basketball/news/raptors-kawhi-leonard-to-be-re-evaluated-in-one-week/)). No timetable reported; *ESPN est.* 23 Nov.\n  - Rate **41.7** \u00b7 season 40.0 (2) \u00b7 L7 \u2014 \u00b7 L15 \u2014 \u00b7 L30 40.0 (2) \u00b7 projected 45.8: small sample. No row.\n- **Anthony Black and Paul George (ours):** nothing new. Wed 11 Nov is the second night of a back-to-back for both, and a rest risk for both; nothing has been announced. George played Sunday at MIL (46 FP in 28 minutes, box score).\n- **This week's opponent, Lauri Birds:**\n  - **Nikola Jokic** is questionable Mon at HOU with a right elbow sprain, his first injury listing of the season, after the travel delay ([NBA injury report, 9 Nov 1:45 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_45AM.pdf); [Heavy, 8 Nov](https://heavy.com/sports/nba/denver-nuggets/nikola-jokic-elbow-injury-news-rockets/)). No timetable reported; *ESPN est.* 9 Nov.\n  - **Jamal Shead** starts again only if Immanuel Quickley sits. Quickley is questionable Mon with right hamstring tightness ([NBA injury report, 9 Nov 1:45 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-09_01_45AM.pdf)); no timetable reported; *ESPN est.* 9 Nov.\n- **Pickup targets:**\n  - **Rudy Gobert (Thu 12 Nov stream): the rest flag is a false alarm.** His 31 Oct absence was low back spasms, not rest ([NBC, 31 Oct](https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-31/rudy-gobert-back-downgraded-to-out-saturday)). Thursday is not a back-to-back night. Minnesota's 16\u201317 Nov back-to-back falls in matchup 5, and nothing has been announced for it.\n  - **Brook Lopez:** has started 3 straight, and Rotoworld thinks the job may be his \"for the foreseeable future\" ([NBC, 8 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/brook-lopez-finishes-victory-with-20-points)). No coach has said so, and Isaiah Jackson is due back soon (left groin soreness; \"not expected to cause an extended absence\" ([NBC, 8 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/isaiah-jackson-groin-to-travel-with-lac-monday)); *ESPN est.* 10 Nov). No row: his rate stays 27.5, with a role rate of 33.3.\n  - **Tobias Harris:** RotoWire says he is \"almost cleared to suit up\", with his first chance on Wed 11 Nov at CHI ([CBS/RotoWire, 8 Nov](https://www.cbssports.com/fantasy/basketball/news/spurs-tobias-harris-unavailable-against-phoenix/)). He is out Monday; *ESPN est.* 11 Nov. Only RotoWire reports this, not the team.\n  - Quentin Grimes's start and T.J. McConnell's minutes do not move their value: the start was a one-off for Luka Doncic (lower-back tightness; no timetable reported; *ESPN est.* 9 Nov), and McConnell is questionable again with the same hamstring.\n- **Overrides: 2 removed, none added.**\n  - **Kon Knueppel** (row: back 13 Nov) is **removed**. The Hornets diagnosed a left hamstring strain on 8 Nov; he is out Monday and will be re-evaluated in four weeks, about Sun 6 Dec ([Hornets PR on X, 8 Nov](https://x.com/HornetsPR/status/2119552085154828648); [ESPN via TSN, 8 Nov](https://www.tsn.ca/nba/article/hornets-knueppel-out-at-least-four-weeks-with-latest-hamstring-strain-n1-50425681/)).\n    - ESPN now estimates 12 Dec, which is Charlotte's first game after 6 Dec on the current schedule (ESPN schedule). A row at the day after the re-evaluation (7 Dec) would give that same first game, so ESPN's date stands.\n    - matchup.py no longer treats him as playable from 13 Nov.\n  - **Tobias Harris** (row: back 14 Nov, a floor) is **removed**. The floor rested on \"no timetable\", and RotoWire's 8 Nov note now replaces that. ESPN's 11 Nov matches it. If he is out on Wednesday, the next run should flag him again.\n  - **Kept:** Yves Missi back 12 Nov (no news since 5 Nov, out 8 Nov), Fred VanVleet sits 16 Nov, and CJ McCollum at 23 min until 22 Nov.\n  - **Effect on matchup 4:** neither removed player is on a matchup-4 roster, so no rostered projection moves. Harris (SA plays 11, 13, 15 Nov) becomes a streaming candidate from Wednesday. Re-run `/matchup` once Monday's final reports (Murray, Barnes) and Orlando's Tuesday report (Bane) are out.\n- **Melbourne poopoo** were our matchup 3 opponent, and that matchup ended Sunday. The script still lists them as an opponent because ESPN had not rolled over to matchup 4 when it ran: the header puts them ahead of Lauri Birds, this week's opponent ([matchup 4, 9 Nov](20261109-matchup4.md)). Their flags (Thompson, Davis, Edgecombe) do not affect matchup 4.\n"
+ },
+ "slump-watch": {
+  "flagged": [
+   {
+    "player": "Josh Giddey",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-15.5"
+   },
+   {
+    "player": "LaMelo Ball",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-11.4"
+   },
+   {
+    "player": "Ivica Zubac",
+    "fantasy": "Lauri Birds",
+    "gap": "-12.5"
+   },
+   {
+    "player": "Jaren Jackson Jr.",
+    "fantasy": "Matt Wright's Foxies",
+    "gap": "-11.1"
+   },
+   {
+    "player": "James Harden",
+    "fantasy": "Team Nic Kerr",
+    "gap": "-11.7"
+   }
+  ],
+  "headline": "5 rostered players are 10+"
+ },
+ "injury-watch": {
+  "shortlist": [
+   "Our five lowest",
+   "What a stash costs:",
+   "Rate",
+   "Desmond Bane",
+   "Christian Braun",
+   "Aday Mara",
+   "Aaron Wiggins",
+   "Back-soon stash candidates:",
+   "Yves Missi",
+   "Norman Powell",
+   "Off the list:",
+   "Verdict: no pickup in this report beats the plan's player on any day.",
+   "Plan risks the research found:",
+   "Bane (Tue 10):",
+   "Hachimura (Sun 15):",
+   "Jalen Smith (Wed 11\u2013Sat 14):",
+   "Peyton Watson (Fri 13\u2013Sat 14):",
+   "A stale override:"
+  ],
+  "injuries": 95
+ },
+ "files": [
+  "20261109-matchup4.md",
+  "20261109-news-watch.md",
+  "20261109-injury-watch.md",
+  "20261109-slump-watch.md",
+  "20261109-rookies.md"
+ ]
+}
