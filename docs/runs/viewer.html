@@ -1,0 +1,173 @@
+<title>Draft Council Runs</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"><style>
+/* Layout: a sticky run bar, a scoreboard strip, the change ledger and moves, then each report as an expandable panel. */
+:root {
+  --bg: #F4F6F8; --surface: #FFFFFF; --sunken: #ECEFF3; --ink: #16202A; --muted: #556170; --line: #D8DDE4;
+  --accent: #B04E19; --accent-ink: #FFFFFF; --accent-soft: #FAEADF;
+  --good: #1C6E46; --good-soft: #E2F2E9; --bad: #AD2A20; --bad-soft: #FAE6E3; --info: #24539F; --info-soft: #E5EDF9;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
+  --font-body: "Fira Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0E1318; --surface: #151C23; --sunken: #1B232C; --ink: #E4E9EF; --muted: #9BA7B3; --line: #2A3440;
+  --accent: #F08A4C; --accent-ink: #1B0F07; --accent-soft: #3A2416;
+  --good: #5CC995; --good-soft: #13301F; --bad: #F2867B; --bad-soft: #3B1A17; --info: #8EB2F2; --info-soft: #18263D;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0E1318; --surface: #151C23; --sunken: #1B232C; --ink: #E4E9EF; --muted: #9BA7B3; --line: #2A3440;
+  --accent: #F08A4C; --accent-ink: #1B0F07; --accent-soft: #3A2416;
+  --good: #5CC995; --good-soft: #13301F; --bad: #F2867B; --bad-soft: #3B1A17; --info: #8EB2F2; --info-soft: #18263D;
+  color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 15px/1.55 var(--font-body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+a { color: var(--info); text-underline-offset: 2px; }
+a:hover { color: var(--accent); }
+a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.runbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.runbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-block: 10px; }
+.brand { font: 700 18px/1 var(--font-display); letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.runbar .when { color: var(--muted); font-size: 13px; }
+.runbar nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 6px; }
+.btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 18px; color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 500; background: var(--surface); transition: border-color .15s, color .15s; }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn[aria-disabled="true"] { color: var(--muted); opacity: .55; pointer-events: none; }
+main { padding-block: 20px 56px; display: grid; gap: 28px; }
+main > * { min-width: 0; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: .01em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 4.4vw, 40px); line-height: 1.05; }
+h2 { font-size: 24px; line-height: 1.15; }
+.eyebrow { font: 500 11px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.sub { color: var(--muted); margin: 6px 0 0; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.tile .label { font: 500 11px/1.2 var(--font-mono); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.tile .value { font: 700 36px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.tile .value small { font-size: 18px; color: var(--muted); font-weight: 600; }
+.tile .note { font-size: 13px; color: var(--muted); }
+.tile.next .value { font-size: 22px; line-height: 1.15; }
+.lead-up { color: var(--good); } .lead-down { color: var(--bad); }
+.pips { display: flex; gap: 5px; margin-top: 4px; }
+.pip { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--accent); }
+.pip.on { background: var(--accent); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; min-width: 0; }
+.panel > h2 { margin-bottom: 12px; }
+.ledger { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px 24px; }
+.ledger h3 { font: 600 13px/1.3 var(--font-body); margin: 0 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.ledger ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ledger li { display: flex; gap: 8px; align-items: baseline; }
+.ledger details.more { margin-top: 8px; }
+.ledger details.more > summary { cursor: pointer; color: var(--info); font-size: 13px; font-weight: 500; min-height: 32px; display: flex; align-items: center; }
+.ledger details.more ul { margin-top: 6px; }
+.chip { flex: none; font: 500 10.5px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 4px; }
+.chip.added { background: var(--good-soft); color: var(--good); }
+.chip.removed { background: var(--bad-soft); color: var(--bad); }
+.chip.changed { background: var(--info-soft); color: var(--info); }
+.chip.new { background: var(--accent-soft); color: var(--accent); }
+.quiet { color: var(--muted); font-size: 14px; margin: 0; }
+.compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.compare h3 { font: 600 15px/1.3 var(--font-body); margin: 0 0 8px; }
+.compare ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
+.compare .when2 { color: var(--muted); font-size: 13px; }
+.move b { font-weight: 600; }
+.move .by { display: block; color: var(--muted); font-size: 13px; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px; }
+details.report { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+details.report + details.report { margin-top: 10px; }
+details.report > summary { list-style: none; cursor: pointer; padding: 14px 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+details.report > summary::-webkit-details-marker { display: none; }
+details.report > summary::before { content: "+"; font: 700 18px/1 var(--font-mono); color: var(--accent); width: 14px; }
+details.report[open] > summary::before { content: "\2212"; }
+details.report > summary .t { font: 700 20px/1.15 var(--font-display); }
+details.report > summary .d { color: var(--muted); font-size: 13px; }
+.md { padding: 0 20px 20px; border-top: 1px solid var(--line); min-width: 0; }
+.md h2, .md h3 { font-family: var(--font-display); font-weight: 700; font-size: 20px; margin: 22px 0 8px; }
+.md h4 { font-size: 16px; margin: 18px 0 6px; }
+.md h5, .md h6 { font-size: 14px; margin: 14px 0 4px; }
+.md p, .md li { max-width: 78ch; }
+.md ul, .md ol { padding-left: 22px; }
+.md li + li { margin-top: 3px; }
+.md code { font: 500 12.5px/1.4 var(--font-mono); background: var(--sunken); padding: 1px 5px; border-radius: 4px; }
+.md pre { margin: 0; padding: 12px; background: var(--sunken); border-radius: 8px; }
+.md pre code { background: none; padding: 0; }
+.md blockquote { margin: 10px 0; padding: 4px 14px; border-left: 3px solid var(--line); color: var(--muted); }
+.md hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+.scroll { overflow-x: auto; margin: 10px 0; max-width: 100%; }
+table { border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; min-width: 100%; }
+th, td { text-align: left; vertical-align: top; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); background: var(--sunken); white-space: nowrap; }
+td.num, th.num { text-align: right; }
+tbody tr:hover td { background: var(--sunken); }
+.call .md { border-top: 0; padding: 0; }
+.runs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.run { display: grid; grid-template-columns: minmax(150px, 1.1fr) minmax(170px, 1.6fr) minmax(120px, 1fr) minmax(130px, 1fr); gap: 6px 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; text-decoration: none; color: var(--ink); transition: border-color .15s; }
+.run:hover { border-color: var(--accent); color: var(--ink); }
+.run .d1 { font: 700 18px/1.1 var(--font-display); }
+.run .d2, .run .meta { color: var(--muted); font-size: 13px; }
+.run .mt { font-weight: 500; }
+.run .nums { font-variant-numeric: tabular-nums; font-size: 14px; }
+.bar { position: relative; height: 10px; background: var(--sunken); border-radius: 5px; margin-top: 6px; }
+.bar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); }
+.bar span { position: absolute; top: 0; bottom: 0; border-radius: 5px; }
+.bar .pos { left: 50%; background: var(--good); }
+.bar .neg { right: 50%; background: var(--bad); }
+.latest { display: grid; gap: 4px; }
+footer { color: var(--muted); font-size: 13px; padding-block: 0 40px; }
+@media (max-width: 720px) {
+  .run { grid-template-columns: 1fr 1fr; }
+  .tile .value { font-size: 30px; }
+  .md { padding: 0 14px 16px; }
+  details.report > summary { padding: 12px 14px; }
+  .panel { padding: 16px 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style><div id="indexview"><header class="runbar"><div class="wrap"><span class="brand">Draft Council</span><span class="when">21 runs, newest first</span></div></header><main class="wrap"><div class="latest"><p class="eyebrow">Latest run</p><h1>Matchup 5: Come-in Cider vs Snow Time Lakers</h1><p class="sub">Wed 18 Nov 2026, 8:37 AM Melbourne. <a href="#r-20261117-2137" data-run="20261117-2137">Open the latest run</a>.</p></div><section class="board" aria-label="Scoreboard"><div class="tile"><span class="label">Score</span><span class="value">374<small> to </small>367</span><span class="note lead-up">up 7</span></div><div class="tile"><span class="label">Projected final, no more moves</span><span class="value">1,958<small> to </small>1,687</span><span class="note lead-up">margin +271</span><span class="note">best plan adds +110.1 (5 adds)</span></div><div class="tile"><span class="label">Adds left</span><span class="value">5<small> of 7</small></span><span class="pips" role="img" aria-label="5 of 7 adds left"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span><span class="pip"></span><span class="pip"></span></span></div><div class="tile next"><span class="label">Next suggested move · Thu 19 Nov</span><span class="value">Mo Bamba → Derrick Jones Jr.</span><span class="note">Derrick Jones Jr. (LAC) · before Fri 20 12:00PM Melbourne</span></div></section><section><h2 style="margin-bottom:12px">Every run</h2><ul class="runs"><li><a class="run" href="#r-20261117-2137" data-run="20261117-2137"><span><span class="d1">Wed 18 Nov</span><br><span class="d2">8:37 AM Melbourne</span></span><span><span class="mt">Matchup 5: Come-in Cider vs Snow Time Lakers</span><br><span class="meta">Matchup, News watch, Injury watch, Slump watch, Trade watch, Rookies</span></span><span class="nums">score 374 to 367<br><span class="meta">projected 1,958 to 1,687 (+271)</span><div class="bar" aria-hidden="true"><span class="pos" style="width:48.4%"></span></div></span><span class="meta">62 changes since the run before</span></a></li><li><a class="run" href="#r-20261116-2042" data-run="20261116-2042"><span><span class="d1">Tue 17 Nov</span><br><span class="d2">7:42 AM Melbourne</span></span><span><span class="mt">Matchup 5: Come-in Cider vs Snow Time Lakers</span><br><span class="meta">Matchup, News watch, Injury watch, Slump watch, Trade watch, Rookies</span></span><span class="nums">score 0 to 0<br><span class="meta">projected 1,792 to 1,720 (+72)</span><div class="bar" aria-hidden="true"><span class="pos" style="width:12.9%"></span></div></span><span class="meta">62 changes since the run before</span></a></li><li><a class="run" href="#r-20261113-2152" data-run="20261113-2152"><span><span class="d1">Sat 14 Nov</span><br><span class="d2">8:52 AM Melbourne</span></span><span><span class="mt">Matchup 4: Come-in Cider vs Lauri Birds</span><br><span class="meta">Matchup, News watch, Injury watch, Slump watch, Trade watch, Rookies</span></span><span class="nums">score 874 to 814<br><span class="meta">projected 1,491 to 1,533 (-42)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:7.5%"></span></div></span><span class="meta">37 changes since the run before</span></a></li><li><a class="run" href="#r-20261112-0611" data-run="20261112-0611"><span><span class="d1">Thu 12 Nov</span><br><span class="d2">5:11 PM Melbourne</span></span><span><span class="mt">Matchup 4: Come-in Cider vs Lauri Birds</span><br><span class="meta">Matchup, News watch, Injury watch, Slump watch, Trade watch, Rookies</span></span><span class="nums">score 720 to 687<br><span class="meta">projected 1,437 to 1,513 (-76)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:13.6%"></span></div></span><span class="meta">31 changes since the run before</span></a></li><li><a class="run" href="#r-20261111-2115" data-run="20261111-2115"><span><span class="d1">Thu 12 Nov</span><br><span class="d2">8:15 AM Melbourne</span></span><span><span class="mt">Matchup 4: Come-in Cider vs Lauri Birds</span><br><span class="meta">Matchup, News watch, Injury watch, Trade watch, Rookies</span></span><span class="nums">score 395 to 414<br><span class="meta">projected 1,394 to 1,560 (-166)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:29.6%"></span></div></span><span class="meta">10 changes since the run before</span></a></li><li><a class="run" href="#r-20261110-0419" data-run="20261110-0419"><span><span class="d1">Tue 10 Nov</span><br><span class="d2">3:19 PM Melbourne</span></span><span><span class="mt">No matchup report</span><br><span class="meta">Trade watch</span></span><span class="nums">no score yet<br><span class="meta"></span></span><span class="meta">12 changes since the run before</span></a></li><li><a class="run" href="#r-20261109-0706" data-run="20261109-0706"><span><span class="d1">Mon 9 Nov</span><br><span class="d2">6:06 PM Melbourne</span></span><span><span class="mt">Matchup 4: Come-in Cider vs Lauri Birds</span><br><span class="meta">Matchup, News watch, Injury watch, Slump watch, Rookies</span></span><span class="nums">score 0 to 0<br><span class="meta">projected 1,610 to 1,669 (-59)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:10.5%"></span></div></span><span class="meta">41 changes since the run before</span></a></li><li><a class="run" href="#r-20261108-2015" data-run="20261108-2015"><span><span class="d1">Mon 9 Nov</span><br><span class="d2">7:15 AM Melbourne</span></span><span><span class="mt">Matchup 4: Come-in Cider vs Lauri Birds</span><br><span class="meta">Matchup, News watch, Injury watch, Slump watch, Rookies, opponent-audit</span></span><span class="nums">no score yet<br><span class="meta">projected 1,639 to 1,637 (+2)</span><div class="bar" aria-hidden="true"><span class="pos" style="width:0.4%"></span></div></span><span class="meta">19 changes since the run before</span></a></li><li><a class="run" href="#r-20261106-2010" data-run="20261106-2010"><span><span class="d1">Sat 7 Nov</span><br><span class="d2">7:10 AM Melbourne</span></span><span><span class="mt">Matchup 3: Come-in Cider vs Melbourne poopoo</span><br><span class="meta">Matchup</span></span><span class="nums">score 812 to 800<br><span class="meta">projected 1,449 to 1,482 (-33)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:5.9%"></span></div></span><span class="meta">3 changes since the run before</span></a></li><li><a class="run" href="#r-20261106-0540" data-run="20261106-0540"><span><span class="d1">Fri 6 Nov</span><br><span class="d2">4:40 PM Melbourne</span></span><span><span class="mt">Matchup 3: Come-in Cider vs Melbourne poopoo</span><br><span class="meta">Matchup, Injury watch, Slump watch, Rookies</span></span><span class="nums">score 812 to 800<br><span class="meta"></span></span><span class="meta">15 changes since the run before</span></a></li><li><a class="run" href="#r-20261105-0734" data-run="20261105-0734"><span><span class="d1">Thu 5 Nov</span><br><span class="d2">6:34 PM Melbourne</span></span><span><span class="mt">Matchup 3: Come-in Cider vs Melbourne poopoo</span><br><span class="meta">Matchup, Injury watch, Slump watch, Rookies</span></span><span class="nums">score 697 to 745<br><span class="meta">projected 1,410 to 1,485 (-75)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:13.4%"></span></div></span><span class="meta">7 changes since the run before</span></a></li><li><a class="run" href="#r-20261103-2257" data-run="20261103-2257"><span><span class="d1">Wed 4 Nov</span><br><span class="d2">9:57 AM Melbourne</span></span><span><span class="mt">Matchup 3: Come-in Cider vs Melbourne poopoo</span><br><span class="meta">Matchup</span></span><span class="nums">score 413 to 400<br><span class="meta">projected 1,535 to 1,513 (+22)</span><div class="bar" aria-hidden="true"><span class="pos" style="width:3.9%"></span></div></span><span class="meta">5 changes since the run before</span></a></li><li><a class="run" href="#r-20261102-2302" data-run="20261102-2302"><span><span class="d1">Tue 3 Nov</span><br><span class="d2">10:02 AM Melbourne</span></span><span><span class="mt">Matchup 3: Come-in Cider vs Melbourne poopoo</span><br><span class="meta">Matchup, Injury watch, Slump watch, Rookies</span></span><span class="nums">score 0 to 0<br><span class="meta">projected 1,416 to 1,487 (-71)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:12.7%"></span></div></span><span class="meta">11 changes since the run before</span></a></li><li><a class="run" href="#r-20261102-0656" data-run="20261102-0656"><span><span class="d1">Mon 2 Nov</span><br><span class="d2">5:56 PM Melbourne</span></span><span><span class="mt">Matchup 3: Come-in Cider vs Melbourne poopoo</span><br><span class="meta">Matchup, Injury watch, Slump watch, Rookies</span></span><span class="nums">score 0 to 0<br><span class="meta">projected 1,461 to 1,487 (-26)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:4.6%"></span></div></span><span class="meta">26 changes since the run before</span></a></li><li><a class="run" href="#r-20261101-0415" data-run="20261101-0415"><span><span class="d1">Sun 1 Nov</span><br><span class="d2">3:15 PM Melbourne</span></span><span><span class="mt">Matchup 3: Come-in Cider vs Melbourne poopoo</span><br><span class="meta">Matchup, Injury watch, Slump watch, Rookies</span></span><span class="nums">no score yet<br><span class="meta">projected 1,447 to 1,487 (-40)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:7.1%"></span></div></span><span class="meta">27 changes since the run before</span></a></li><li><a class="run" href="#r-20261030-0558" data-run="20261030-0558"><span><span class="d1">Fri 30 Oct</span><br><span class="d2">4:58 PM Melbourne</span></span><span><span class="mt">Matchup 2: Come-in Cider vs Team Nic Kerr</span><br><span class="meta">Matchup, Injury watch, Slump watch, Rookies</span></span><span class="nums">score 806 to 927<br><span class="meta">projected 1,437 to 1,674 (-237)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:42.3%"></span></div></span><span class="meta">19 changes since the run before</span></a></li><li><a class="run" href="#r-20261029-2104" data-run="20261029-2104"><span><span class="d1">Fri 30 Oct</span><br><span class="d2">8:04 AM Melbourne</span></span><span><span class="mt">Matchup 2: Come-in Cider vs Team Nic Kerr</span><br><span class="meta">Matchup, Injury watch, Slump watch, Rookies</span></span><span class="nums">score 755 to 734<br><span class="meta">projected 1,486 to 1,672 (-186)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:33.2%"></span></div></span><span class="meta">13 changes since the run before</span></a></li><li><a class="run" href="#r-20261028-0159" data-run="20261028-0159"><span><span class="d1">Wed 28 Oct</span><br><span class="d2">12:59 PM Melbourne</span></span><span><span class="mt">Matchup 2: Come-in Cider vs Team Nic Kerr</span><br><span class="meta">Matchup, rookies-dybantsa</span></span><span class="nums">score 229 to 270<br><span class="meta">projected 1,451 to 1,731 (-280)</span><div class="bar" aria-hidden="true"><span class="neg" style="width:50.0%"></span></div></span><span class="meta">9 changes since the run before</span></a></li><li><a class="run" href="#r-20261027-0538" data-run="20261027-0538"><span><span class="d1">Tue 27 Oct</span><br><span class="d2">4:38 PM Melbourne</span></span><span><span class="mt">No matchup report</span><br><span class="meta">Matchup, Injury watch, injury-opportunities, underperformers</span></span><span class="nums">no score yet<br><span class="meta"></span></span><span class="meta">7 changes since the run before</span></a></li><li><a class="run" href="#r-20261020-2359" data-run="20261020-2359"><span><span class="d1">Wed 21 Oct</span><br><span class="d2">10:59 AM Melbourne</span></span><span><span class="mt">No matchup report</span><br><span class="meta">opening-night</span></span><span class="nums">no score yet<br><span class="meta"></span></span><span class="meta">0 changes since the run before</span></a></li><li><a class="run" href="#r-20261019-2359" data-run="20261019-2359"><span><span class="d1">Tue 20 Oct</span><br><span class="d2">10:59 AM Melbourne</span></span><span><span class="mt">No matchup report</span><br><span class="meta">preseason-fast-starts</span></span><span class="nums">no score yet<br><span class="meta"></span></span><span class="meta">0 changes since the run before</span></a></li></ul></section></main><footer class="wrap">Each run page shows what changed since the run before it, the moves suggested then and now, and every report in full. The bar is the projected final margin with no more moves, to one scale across runs.</footer></div>
+<div id="reader" hidden></div>
+<script>
+(function () {
+  var index = document.getElementById('indexview'), reader = document.getElementById('reader');
+  function wire(root) {
+    root.querySelectorAll('a[data-run]').forEach(function (a) {
+      var k = a.getAttribute('data-run');
+      a.setAttribute('href', k ? '#r-' + k : '#all');
+      a.removeAttribute('target');
+    });
+  }
+  function show(key) {
+    if (!key) {
+      reader.hidden = true; index.hidden = false;
+      window.scrollTo(0, 0); return;
+    }
+    reader.innerHTML = '<main class="wrap"><p class="quiet">Loading the run…</p></main>';
+    reader.hidden = false; index.hidden = true;
+    fetch('runs/' + key + '.html').then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.text();
+    }).then(function (t) {
+      var doc = new DOMParser().parseFromString(t, 'text/html');
+      var bar = doc.querySelector('.runbar'), main = doc.querySelector('main'), foot = doc.querySelector('footer');
+      reader.innerHTML = (bar ? bar.outerHTML : '') + '<main class="wrap">' + (main ? main.innerHTML : '') + '</main>' +
+        (foot ? foot.outerHTML : '');
+      wire(reader);
+      window.scrollTo(0, 0);
+    }).catch(function () {
+      reader.innerHTML = '<main class="wrap"><p>This run could not be loaded. <a href="#all">Go back to every run</a>.</p></main>';
+    });
+  }
+  function route() {
+    var h = location.hash.replace(/^#/, '');
+    show(/^r-\d{8}-\d{4}$/.test(h) ? h.slice(2) : '');
+  }
+  reader.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href^="#rep-"]');
+    if (!a) return;
+    e.preventDefault();
+    var el = document.getElementById(a.getAttribute('href').slice(1));
+    if (el) { el.open = true; el.scrollIntoView({ block: 'start' }); }
+  });
+  wire(index);
+  window.addEventListener('hashchange', route);
+  route();
+})();
+</script>

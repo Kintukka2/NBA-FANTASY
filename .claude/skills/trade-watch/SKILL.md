@@ -89,6 +89,8 @@ In the report file:
 
 ## 5. Deliver
 
+- Build the run page: `python council/run_report.py`, commit `docs/runs/`, republish the archive
+  (CLAUDE.md, *Run report*) and link it in the reply. When running all skills, build it once, after the last report.
 - Commit the report and any `council/news_overrides.csv` change, push, and follow the session's PR rules.
 - In the reply:
   - lead with what changes for us: pickups, threats, and overrides added;

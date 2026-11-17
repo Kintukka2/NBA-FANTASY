@@ -123,6 +123,8 @@ Use the two reports' tables for this. Do not re-derive the numbers.
 
 ## 5. Deliver
 
+- Build the run page: `python council/run_report.py`, commit `docs/runs/`, republish the archive
+  (CLAUDE.md, *Run report*) and link it in the reply. When running all skills, build it once, after the last report.
 - Commit the report on the session branch, push, and open a PR, following
   the repository's usual flow.
 - In the reply, give:

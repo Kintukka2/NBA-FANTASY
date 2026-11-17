@@ -1,0 +1,149 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Run Wed 21 Oct</title><meta name="claude:viewport-fit-sides" content="cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"><style>
+/* Layout: a sticky run bar, a scoreboard strip, the change ledger and moves, then each report as an expandable panel. */
+:root {
+  --bg: #F4F6F8; --surface: #FFFFFF; --sunken: #ECEFF3; --ink: #16202A; --muted: #556170; --line: #D8DDE4;
+  --accent: #B04E19; --accent-ink: #FFFFFF; --accent-soft: #FAEADF;
+  --good: #1C6E46; --good-soft: #E2F2E9; --bad: #AD2A20; --bad-soft: #FAE6E3; --info: #24539F; --info-soft: #E5EDF9;
+  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
+  --font-body: "Fira Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0E1318; --surface: #151C23; --sunken: #1B232C; --ink: #E4E9EF; --muted: #9BA7B3; --line: #2A3440;
+  --accent: #F08A4C; --accent-ink: #1B0F07; --accent-soft: #3A2416;
+  --good: #5CC995; --good-soft: #13301F; --bad: #F2867B; --bad-soft: #3B1A17; --info: #8EB2F2; --info-soft: #18263D;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0E1318; --surface: #151C23; --sunken: #1B232C; --ink: #E4E9EF; --muted: #9BA7B3; --line: #2A3440;
+  --accent: #F08A4C; --accent-ink: #1B0F07; --accent-soft: #3A2416;
+  --good: #5CC995; --good-soft: #13301F; --bad: #F2867B; --bad-soft: #3B1A17; --info: #8EB2F2; --info-soft: #18263D;
+  color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 15px/1.55 var(--font-body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+a { color: var(--info); text-underline-offset: 2px; }
+a:hover { color: var(--accent); }
+a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.runbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+.runbar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-block: 10px; }
+.brand { font: 700 18px/1 var(--font-display); letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.runbar .when { color: var(--muted); font-size: 13px; }
+.runbar nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 6px; }
+.btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border: 1px solid var(--line); border-radius: 18px; color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 500; background: var(--surface); transition: border-color .15s, color .15s; }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn[aria-disabled="true"] { color: var(--muted); opacity: .55; pointer-events: none; }
+main { padding-block: 20px 56px; display: grid; gap: 28px; }
+main > * { min-width: 0; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: .01em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 4.4vw, 40px); line-height: 1.05; }
+h2 { font-size: 24px; line-height: 1.15; }
+.eyebrow { font: 500 11px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.sub { color: var(--muted); margin: 6px 0 0; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.tile .label { font: 500 11px/1.2 var(--font-mono); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.tile .value { font: 700 36px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.tile .value small { font-size: 18px; color: var(--muted); font-weight: 600; }
+.tile .note { font-size: 13px; color: var(--muted); }
+.tile.next .value { font-size: 22px; line-height: 1.15; }
+.lead-up { color: var(--good); } .lead-down { color: var(--bad); }
+.pips { display: flex; gap: 5px; margin-top: 4px; }
+.pip { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--accent); }
+.pip.on { background: var(--accent); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; min-width: 0; }
+.panel > h2 { margin-bottom: 12px; }
+.ledger { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px 24px; }
+.ledger h3 { font: 600 13px/1.3 var(--font-body); margin: 0 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.ledger ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ledger li { display: flex; gap: 8px; align-items: baseline; }
+.ledger details.more { margin-top: 8px; }
+.ledger details.more > summary { cursor: pointer; color: var(--info); font-size: 13px; font-weight: 500; min-height: 32px; display: flex; align-items: center; }
+.ledger details.more ul { margin-top: 6px; }
+.chip { flex: none; font: 500 10.5px/1 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 4px; }
+.chip.added { background: var(--good-soft); color: var(--good); }
+.chip.removed { background: var(--bad-soft); color: var(--bad); }
+.chip.changed { background: var(--info-soft); color: var(--info); }
+.chip.new { background: var(--accent-soft); color: var(--accent); }
+.quiet { color: var(--muted); font-size: 14px; margin: 0; }
+.compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.compare h3 { font: 600 15px/1.3 var(--font-body); margin: 0 0 8px; }
+.compare ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; }
+.compare .when2 { color: var(--muted); font-size: 13px; }
+.move b { font-weight: 600; }
+.move .by { display: block; color: var(--muted); font-size: 13px; }
+.toc { display: flex; flex-wrap: wrap; gap: 6px; }
+details.report { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
+details.report + details.report { margin-top: 10px; }
+details.report > summary { list-style: none; cursor: pointer; padding: 14px 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+details.report > summary::-webkit-details-marker { display: none; }
+details.report > summary::before { content: "+"; font: 700 18px/1 var(--font-mono); color: var(--accent); width: 14px; }
+details.report[open] > summary::before { content: "\2212"; }
+details.report > summary .t { font: 700 20px/1.15 var(--font-display); }
+details.report > summary .d { color: var(--muted); font-size: 13px; }
+.md { padding: 0 20px 20px; border-top: 1px solid var(--line); min-width: 0; }
+.md h2, .md h3 { font-family: var(--font-display); font-weight: 700; font-size: 20px; margin: 22px 0 8px; }
+.md h4 { font-size: 16px; margin: 18px 0 6px; }
+.md h5, .md h6 { font-size: 14px; margin: 14px 0 4px; }
+.md p, .md li { max-width: 78ch; }
+.md ul, .md ol { padding-left: 22px; }
+.md li + li { margin-top: 3px; }
+.md code { font: 500 12.5px/1.4 var(--font-mono); background: var(--sunken); padding: 1px 5px; border-radius: 4px; }
+.md pre { margin: 0; padding: 12px; background: var(--sunken); border-radius: 8px; }
+.md pre code { background: none; padding: 0; }
+.md blockquote { margin: 10px 0; padding: 4px 14px; border-left: 3px solid var(--line); color: var(--muted); }
+.md hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+.scroll { overflow-x: auto; margin: 10px 0; max-width: 100%; }
+table { border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; min-width: 100%; }
+th, td { text-align: left; vertical-align: top; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--muted); background: var(--sunken); white-space: nowrap; }
+td.num, th.num { text-align: right; }
+tbody tr:hover td { background: var(--sunken); }
+.call .md { border-top: 0; padding: 0; }
+.runs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.run { display: grid; grid-template-columns: minmax(150px, 1.1fr) minmax(170px, 1.6fr) minmax(120px, 1fr) minmax(130px, 1fr); gap: 6px 16px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; text-decoration: none; color: var(--ink); transition: border-color .15s; }
+.run:hover { border-color: var(--accent); color: var(--ink); }
+.run .d1 { font: 700 18px/1.1 var(--font-display); }
+.run .d2, .run .meta { color: var(--muted); font-size: 13px; }
+.run .mt { font-weight: 500; }
+.run .nums { font-variant-numeric: tabular-nums; font-size: 14px; }
+.bar { position: relative; height: 10px; background: var(--sunken); border-radius: 5px; margin-top: 6px; }
+.bar::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); }
+.bar span { position: absolute; top: 0; bottom: 0; border-radius: 5px; }
+.bar .pos { left: 50%; background: var(--good); }
+.bar .neg { right: 50%; background: var(--bad); }
+.latest { display: grid; gap: 4px; }
+footer { color: var(--muted); font-size: 13px; padding-block: 0 40px; }
+@media (max-width: 720px) {
+  .run { grid-template-columns: 1fr 1fr; }
+  .tile .value { font-size: 30px; }
+  .md { padding: 0 14px 16px; }
+  details.report > summary { padding: 12px 14px; }
+  .panel { padding: 16px 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style></head><body><header class="runbar"><div class="wrap"><span class="brand">Draft Council</span><span class="when">Run of Wed 21 Oct 2026, 10:59 AM Melbourne</span><nav aria-label="Runs"><a class="btn" href="20261019-2359.html" data-run="20261019-2359">← Tue 20 Oct</a><a class="btn" href="index.html" data-run="">All runs</a><a class="btn" href="20261027-0538.html" data-run="20261027-0538">Tue 27 Oct →</a></nav></div></header><main id="run" class="wrap"><div><p class="eyebrow">Skill run · 20261020-2359 UTC</p><h1>Skill run</h1><p class="sub">Run of Wed 21 Oct 2026, 10:59 AM Melbourne. Reports: opening-night.</p></div><section class="panel"><h2>What changed since Tue 20 Oct</h2><p class="sub" style="margin:-6px 0 14px">Against the previous run, Tue 20 Oct 2026, 10:59 AM Melbourne.</p><div class="ledger"><p class="quiet">Nothing in the tracked lists changed.</p></div></section><section><h2 style="margin-bottom:10px">Reports</h2><nav class="toc" aria-label="Reports"><a class="btn" href="#rep-opening-night">opening-night</a></nav><div style="margin-top:12px"><details class="report" id="rep-opening-night"><summary><span class="t">Opening night report: Tue 20 Oct 2026 (Wed 21 Oct in Australia)</span><span class="d"></span></summary><div class="md"><p class="quiet">Generated  · source <a href="https://github.com/Kintukka2/NBA-FANTASY/blob/main/docs/analysis/20261020-opening-night.md" target="_blank" rel="noopener noreferrer">20261020-opening-night.md</a></p><ul><li>Prepared 21 Oct 2026, 07:30 UTC, by Claude. This is <strong>a report, not a council verdict</strong>.</li><li><strong>Sources:</strong><ul><li>League 423671879 read live through <code>council/espn_sync.py</code> and the ESPN fantasy API for scoring period 1.</li><li>ESPN NBA box scores for the three games.</li></ul></li><li><strong>Scoring check:</strong> every player line below was re-scored with <code>scripts/league_scoring.py</code>, including the DD/TD bonuses, and <strong>matches ESPN's fantasy points exactly</strong>.</li></ul>
+<h3>Matchup 1 after day 1</h3>
+<div class="scroll"><table><thead><tr><th>Matchup</th><th>Score</th></tr></thead><tbody><tr><td><strong>Come-in Cider (us) vs Cream Abdul-Yammar</strong></td><td><strong>155 – 132</strong></td></tr><tr><td>Team Nic Kerr vs Melbourne poopoo</td><td>104 – 168</td></tr><tr><td>Matt Wright's Foxies vs Snow Time Lakers</td><td>106 – 120</td></tr><tr><td>Lauri Birds vs Dr White Slong</td><td>51 – 85</td></tr></tbody></table></div>
+<p>We lead by 23. Our 155 was the second-highest score in the league after Melbourne's 168. Only three of our players had a game, and all three started.</p>
+<h3>Our players</h3>
+<div class="scroll"><table><thead><tr><th>Slot</th><th>Player</th><th>Line</th><th class="num">FP</th></tr></thead><tbody><tr><td>SF</td><td><strong>Paul George</strong> (BOS)</td><td>31 min, 38 pts, 12-21 FG, <strong>7-12 3P</strong>, 7-8 FT, 5 reb, 3 ast, <strong>5 stl</strong>, 0 blk, 3 TO</td><td class="num"><strong>72</strong></td></tr><tr><td>C</td><td>Jalen Duren (DET)</td><td>28 min, 22 pts, 8-13 FG, 6-7 FT, 9 reb (3 off), 1 ast, 1 stl, 1 blk, 1 TO</td><td class="num">44</td></tr><tr><td>PG</td><td>Cade Cunningham (DET)</td><td>35 min, 22 pts, 8-18 FG, 1-6 3P, 5-5 FT, 4 reb, 8 ast, 1 stl, 1 blk, <strong>5 TO</strong></td><td class="num">39</td></tr></tbody></table></div>
+<ul><li><strong>Paul George had the best fantasy line of the night across the whole league (72).</strong> That beat Shai Gilgeous-Alexander's 69 and Tyrese Maxey's 63. His 5 steals alone were worth 20 points.<ul><li>He is the same player the council voted on 20 Oct to package to the Snow Time Lakers for Clingan. That trade was not made, and George stays.</li></ul></li><li><strong>Duren</strong> was efficient: 8-13 from the field, 3 offensive rebounds, and only 1 turnover.</li><li><strong>Cade's</strong> 5 turnovers cost 10 points. Detroit beat Boston 121-113.</li></ul>
+<h3>Cream Abdul-Yammar's players (our opponent)</h3>
+<div class="scroll"><table><thead><tr><th>Slot</th><th>Player</th><th>Line</th><th class="num">FP</th></tr></thead><tbody><tr><td>C</td><td>Victor Wembanyama (SA)</td><td>34 min, 12 pts, <strong>1-13 FG</strong>, 10-12 FT, 13 reb, 3 ast, 1 stl, <strong>6 blk</strong>, 4 TO</td><td class="num">43</td></tr><tr><td>SF</td><td>LeBron James (PHI)</td><td>34 min, 14 pts, 5-13 FG, 4-6 FT, 9 reb, 7 ast, 1 stl, 1 blk, 1 TO</td><td class="num">39</td></tr><tr><td>PG</td><td>Payton Pritchard (BOS)</td><td>28 min, 17 pts, 4-9 FG, 2-5 3P, 7-8 FT, 4 reb, 1 ast</td><td class="num">25</td></tr><tr><td>PF</td><td>OG Anunoby (NY)</td><td>32 min, 10 pts, 3-12 FG, 1-9 3P, 5 reb, 1 stl, 1 blk, 2 TO</td><td class="num">15</td></tr><tr><td>SG</td><td>Mikal Bridges (NY)</td><td>33 min, 4 pts, 2-8 FG, 3 reb, 1 ast, 1 blk</td><td class="num">10</td></tr></tbody></table></div>
+<ul><li>Wembanyama shot 1 for 13 and still scored 43. Six blocks at 4 points each carried him.</li><li>After the game, Cream <strong>dropped Pritchard and added Zach LaVine</strong>.</li></ul>
+<h3>The NBA games</h3>
+<div class="scroll"><table><thead><tr><th>Final</th><th>Fantasy notes</th></tr></thead><tbody><tr><td><strong>DET 121, BOS 113</strong></td><td>George 72 (BOS), Duren 44, Cade 39. Free agents Javonte Green (19 pts, 5-8 3P) and Duncan Robinson (21 pts) came off Detroit's bench.</td></tr><tr><td><strong>PHI 106, NY 100</strong></td><td>Maxey 63 (Team Nic Kerr), Embiid 47 and Brown 45 (Snow Time), Towns 46 (Melbourne). LeBron 39 in his Philadelphia debut. Free agent Andre Drummond had <strong>14 reb (7 off)</strong>.</td></tr><tr><td><strong>OKC 116, SA 104</strong></td><td>Gilgeous-Alexander 69 (Foxies), Holmgren 41 (Team Nic Kerr), Wembanyama 43. Free agent Jared McCain shot 6-8 from three for 20 points.</td></tr></tbody></table></div>
+<p>No rostered fantasy player missed a game. All 16 DNPs were coach's decisions on undrafted players.</p>
+<h4>Top fantasy lines of the night</h4>
+<ol><li>Paul George (us): 72</li><li>Shai Gilgeous-Alexander (Foxies): 69</li><li>Tyrese Maxey (Team Nic Kerr): 63</li><li>Andre Drummond (<strong>free agent</strong>): 51</li><li>Joel Embiid (Snow Time): 47</li><li>Karl-Anthony Towns (Melbourne): 46</li><li>Jaylen Brown (Snow Time): 45</li><li>Jalen Duren (us): 44</li></ol>
+<h3>Waiver watch: free agents who played</h3>
+<div class="scroll"><table><thead><tr><th>Player</th><th>Team</th><th class="num">FP</th><th>Line</th></tr></thead><tbody><tr><td>Andre Drummond</td><td>NY</td><td class="num"><strong>51</strong></td><td>24 min, 12 pts, <strong>14 reb (7 off)</strong>, 4 ast, 1 stl, 2 blk, 0 TO</td></tr><tr><td>Jared McCain</td><td>OKC</td><td class="num">37</td><td>22 min, 20 pts, 7-9 FG, 6-8 3P, 1 stl</td></tr><tr><td>Julian Champagnie</td><td>SA</td><td class="num">34</td><td>30 min, 8 pts, 2 stl, <strong>3 blk</strong>, 0 TO</td></tr><tr><td>Javonte Green</td><td>DET</td><td class="num">29</td><td>18 min, 19 pts, 5-8 3P</td></tr><tr><td>Duncan Robinson</td><td>DET</td><td class="num">28</td><td>28 min, 21 pts, 5-9 3P</td></tr></tbody></table></div>
+<ul><li>These are single-game lines, not evidence of a role. Drummond's line came in 24 minutes behind Towns.</li><li>Andrew Wiggins (MIA) and Kyshawn George (WSH) have not played yet. Andrew Nembhard has since been picked up by Matt Wright's Foxies.</li></ul>
+<h3>Roster sync</h3>
+<ul><li><strong><code>council/roster.csv</code> matches ESPN.</strong> No trades or adds were made, and Butler is still on IR.</li><li><strong>Moves across the league, now reflected in <code>council/taken.txt</code>:</strong> | Team | Added | Dropped | |---|---|---| | Cream Abdul-Yammar | Zach LaVine | Payton Pritchard | | Matt Wright's Foxies | Andrew Nembhard | | | Melbourne poopoo | CJ McCollum | | | Team Nic Kerr | Jalen Green | | | Snow Time Lakers | Peyton Watson | |</li></ul>
+<h3>Rest of the week</h3>
+<p>This assumes ESPN's standard Monday-to-Sunday week, so matchup 1 ends Sun 25 Oct (scoring periods 1-6).</p>
+<ul><li><strong>Today's lineup is set correctly.</strong> All 9 of our players with a game on Wed 21 Oct are in starting slots. Cade, Duren, Jamal Murray and George have no game today.</li><li><strong>Games per day:</strong></li></ul>
+<div class="scroll"><table><thead><tr><th>Day</th><th class="num">Our players with a game</th><th class="num">Cream's players with a game</th></tr></thead><tbody><tr><td>Wed 21</td><td class="num">9</td><td class="num">9</td></tr><tr><td>Thu 22</td><td class="num">1</td><td class="num">1</td></tr><tr><td>Fri 23</td><td class="num">12 (10 can start)</td><td class="num">12 (10 can start)</td></tr><tr><td>Sat 24</td><td class="num"><strong>7</strong></td><td class="num">4</td></tr><tr><td>Sun 25</td><td class="num"><strong>5</strong></td><td class="num"><strong>10</strong></td></tr></tbody></table></div>
+<ul><li><strong>Projection:</strong><ul><li>Method: each player's 2026 FP/g, or projection plus blind spot for players with under 20 games, times the starts available each day, ignoring position eligibility.</li><li>Result: <strong>about 1,470 for us against about 1,525 for Cream</strong>. That would be a roughly 55-point deficit despite today's lead.</li></ul></li><li><strong>Sunday decides the week.</strong><ul><li>Cream has 10 players with games on Sun 25: LaMelo Ball, Reaves, LeBron, Bridges, Franz Wagner, Keyonte George, Gobert, Anunoby, Quickley and LaVine.</li><li>We have 5: Cade, Barnes, Duren, Kawhi and Bane, which leaves <strong>five starting slots empty</strong>.</li><li>We are ahead on Saturday, 7 to 4.</li><li>Our Sunday gap is the main lever for any streaming adds this week. Whether to use an add, and who to drop, is a decision for you or the council.</li></ul></li></ul></div></details></div></section><section class="panel"><h2>Our roster at this run</h2><p style="margin:0">Cade Cunningham (DET), Scottie Barnes (TOR), Jalen Duren (DET), Jamal Murray (DEN), Kawhi Leonard (TOR), Dejounte Murray (NO), Trey Murphy III (NO), Desmond Bane (ORL), Onyeka Okongwu (ATL), Caleb Wilson (CHI), Ryan Rollins (MIL), Jimmy Butler III (GS, IR), Paul George (BOS), Yaxel Lendeborg (GS)</p></section></main><footer class="wrap">Built by <code>council/run_report.py</code> from the run's reports, <code>council/roster.csv</code> and <code>council/news_overrides.csv</code>. Figures are the scripts'; nothing here is recomputed.</footer></body></html>

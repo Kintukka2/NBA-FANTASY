@@ -1,0 +1,90 @@
+{
+ "key": "20261020-2359",
+ "date": "20261020",
+ "when_utc": "2026-10-20T23:59:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "slot": "roster"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "slot": "roster"
+  },
+  {
+   "player": "Jimmy Butler III",
+   "team": "GS",
+   "slot": "IR"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [],
+ "reports": [
+  {
+   "kind": "opening-night",
+   "file": "20261020-opening-night.md",
+   "title": "Opening night report: Tue 20 Oct 2026 (Wed 21 Oct in Australia)",
+   "generated": null,
+   "versions": []
+  }
+ ],
+ "files": [
+  "20261020-opening-night.md"
+ ]
+}

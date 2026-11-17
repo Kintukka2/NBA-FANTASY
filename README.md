@@ -41,6 +41,8 @@ docs/         scoring.md            the formula and what it implies
               methodology.md        how the pool was extracted and verified
               research/             web briefings, one per council meeting
               analysis/             Claude's analyses (not council verdicts)
+              runs/                 one HTML page per skill run (what changed, moves then and now,
+                                    every report) and index.html, the archive; see runs/README.md
 ```
 
 ## Ask the council
@@ -74,6 +76,7 @@ council/      members.json          personas, skills, sources, vote weights
               news_overrides.csv    researched return dates, rest days and roles that matchup.py applies
               trade_watch.py        NBA trades: the role a traded player vacated and who takes it, the gap
                                     he can fill on his new team (injuries, depth), waived rotation players
+              run_report.py         the HTML run page for a skill run and the archive of runs (docs/runs/)
               tally.py              weighted vote count, runoff, tiebreaks
               build_agents.py       members.json -> .claude/agents/council-*.md
                                     (nine members + council-researcher)

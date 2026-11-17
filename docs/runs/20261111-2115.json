@@ -1,0 +1,462 @@
+{
+ "key": "20261111-2115",
+ "date": "20261111",
+ "when_utc": "2026-11-11T21:15:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "IR"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Dejounte Murray",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Caleb Wilson",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  },
+  {
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "slot": "roster"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Jrue Holiday",
+   "team": "POR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [
+  {
+   "player": "Yves Missi",
+   "kind": "return",
+   "value": "2026-11-18",
+   "until": "",
+   "source": "https://www.nba.com/pelicans/news/pelicans-shootaround-update-nets-tip-off-important-five-game-new-orleans-homestand",
+   "note": "Floor: out 11 Nov vs BKN (Pelicans, 11 Nov), 10th straight game with a left knee bone bruise, no timetable; 7 days after the latest out report"
+  },
+  {
+   "player": "Fred VanVleet",
+   "kind": "sit",
+   "value": "2026-11-16",
+   "until": "",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/rockets-fred-vanvleet-to-miss-back-to-backs/",
+   "note": "Sits one game of back-to-backs (Will Guillory, The Athletic; Udoka confirmed, 20 Oct); the second night, as on 24 and 31 Oct"
+  },
+  {
+   "player": "CJ McCollum",
+   "kind": "role",
+   "value": "23",
+   "until": "2026-11-22",
+   "source": "https://www.rotowire.com/basketball/headlines/cj-mccollum-news-leads-hawks-bench-with-21-points-538466",
+   "note": "Bench 4 straight (25, 23, 21, 24 min) behind Kingston Flemings, including after Jalen Johnson returned 7 Nov; \"a bench role could cap his minutes\" (RotoWire, 10 Nov)"
+  },
+  {
+   "player": "Trey Murphy III",
+   "kind": "sit",
+   "value": "2026-11-11",
+   "until": "",
+   "source": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/trey-murphy-knee-now-doubtful-vs-brooklyn",
+   "note": "Doubtful vs BKN on the official NBA injury report (11 Nov, 11:15 AM ET), bilateral patellar tendinopathy; expected to miss at least one more game"
+  },
+  {
+   "player": "Maxime Raynaud",
+   "kind": "return",
+   "value": "2026-11-16",
+   "until": "",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/kings-maxime-raynaud-still-out-for-tuesday/",
+   "note": "Floor: week-to-week pending a re-evaluation (RotoWire via CBS, 9 Nov), right knee; out 10 Nov vs ORL"
+  }
+ ],
+ "reports": [
+  {
+   "kind": "matchup",
+   "file": "20261111-matchup4.md",
+   "title": "Matchup 4: Come-in Cider vs Lauri Birds",
+   "generated": "2026-11-11T21:15:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "news-watch",
+   "file": "20261111-news-watch.md",
+   "title": "News watch: 11 Nov 2026",
+   "generated": "2026-11-11T21:10:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "injury-watch",
+   "file": "20261111-injury-watch.md",
+   "title": "Injury Watch: 11 Nov 2026",
+   "generated": "2026-11-11T21:12:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "trade-watch",
+   "file": "20261111-trade-watch.md",
+   "title": "Trade watch: 11 Nov 2026",
+   "generated": "2026-11-11T21:10:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "rookies",
+   "file": "20261111-rookies.md",
+   "title": "Rookies against projection",
+   "generated": "2026-11-11T21:12:00+00:00",
+   "versions": []
+  }
+ ],
+ "matchup": {
+  "title": "Matchup 4: Come-in Cider vs Lauri Birds",
+  "score": [
+   395,
+   414
+  ],
+  "adds": {
+   "used": 3,
+   "limit": 7,
+   "left": 4
+  },
+  "projection": [
+   1394,
+   1560
+  ],
+  "moves": [
+   {
+    "day": "Thu 12 Nov",
+    "drop": "Jrue Holiday",
+    "add": "P.J. Washington",
+    "team": "DAL",
+    "by_et": "08:00PM ET",
+    "by_mel": "Fri 13 12:00PM"
+   },
+   {
+    "day": "Sat 14 Nov",
+    "drop": "Isaiah Hartenstein",
+    "add": "Day'Ron Sharpe",
+    "team": "BKN",
+    "by_et": "08:00PM ET",
+    "by_mel": "Sun 15 12:00PM"
+   },
+   {
+    "day": "Sun 15 Nov",
+    "drop": "Day'Ron Sharpe",
+    "add": "Jordan Goodwin",
+    "team": "PHX",
+    "by_et": "04:00PM ET",
+    "by_mel": "Mon 16 08:00AM"
+   },
+   {
+    "day": "Sun 15 Nov",
+    "drop": "Jalen Smith",
+    "add": "Devin Vassell",
+    "team": "SA",
+    "by_et": "05:00PM ET",
+    "by_mel": "Mon 16 09:00AM"
+   }
+  ],
+  "best": {
+   "adds": 4,
+   "gain": "+134.1"
+  },
+  "holding": "P.J. Washington (DAL, 3 games next week), Jordan Goodwin (PHX, 3 games next week), Devin Vassell (SA, 3 games next week).",
+  "plan_title": "Check-in after the Nov 11 games (06:05 UTC 12 Nov)",
+  "plan_md": "\n- **ESPN sync:** no new moves; Kawhi kept (Plan A).\n- **Score:** **720 to 687, up 33.**\n- **Adds:** 3 of 7 used, **4 left**.\n- **Projection** (`--rotate \"Jrue Holiday@2026-11-12\" \"Isaiah Hartenstein@2026-11-12\" \"Jalen Smith@2026-11-15\"`):\n  - with no more moves: 1,437 to 1,513;\n  - with the 4-add plan (+130.6): **1,568 to 1,513**.\n\n| Adds | vs keeping | Moves |\n|---:|---:|---|\n| 1 | +65.4 | Nov 12 Holiday \u2192 P.J. Washington |\n| 2 | +96.4 | + Nov 15 Smith \u2192 Jordan Goodwin |\n| 3 | +119.2 | Nov 12 Holiday \u2192 Washington; Nov 14 Hartenstein \u2192 Daniel Gafford; Nov 15 Smith \u2192 Goodwin |\n| 4 | **+130.6** | Nov 12 Holiday \u2192 Washington; Nov 14 Hartenstein \u2192 Day'Ron Sharpe; Nov 15 Sharpe \u2192 Goodwin and Smith \u2192 Devin Vassell |\n\n**The plan is confirmed.**\n\n1. **P.J. Washington** is a free agent: rate 31.0; season 29.5 (11), L7 34.8 (4), L15 28.4 (7), L30 29.5 (11). His L7 is 5.3 over on the same minutes: output, not role.\n2. **Jalen Smith** kept the start on 11 Nov, with Claxton off the bench ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/jalen-smith-scores-team-high-23-points-vs-spurs)).\n   - Smith: 48 FP in 30 min. Rate 41.0; season 33.2 (10) \u2192 35.8 (9); L7 35.7 (3) \u2192 48.5 (2), a small sample; L15 36.8 (6) \u2192 42.2 (5).\n   - Claxton: 34 FP in 16 min. Season 29.0 (2), a small sample.\n3. **Devin Vassell** missed 11 Nov too, his second straight game with the adductor ([RotoWire, 11 Nov](https://www.rotowire.com/basketball/headlines/devin-vassell-injury-wont-play-wednesday-538652)). No timetable reported; *ESPN est.* 13 Nov.\n   - He stays the Nov 15 pick for now, but check his status before 9:00 AM Mon 16.\n   - Fallback: **Aday Mara** (OKC @SAC, 1:00 PM Mon 16). Rate 29.1; season 25.3 (12), L7 32.4 (5), L15 29.6 (8), L30 25.3 (12). His L7 is 7.1 over, on more minutes with Holmgren and Jalen Williams out.\n4. **Norman Powell** missed 11 Nov; *ESPN est.* 13 Nov. He is not in Plan A.\n\n**Our injuries:**\n- **Caleb Wilson** left 11 Nov in the third quarter with a right hand injury, after 15 points in 15 minutes. Splitter had no update, and more is expected Thursday ([ESPN, 11 Nov](https://www.espn.com/nba/story/_/id/50458612/bulls-rookie-caleb-wilson-leaves-game-right-hand-injury); [CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-caleb-wilson-wont-return-wednesday/)). No timetable reported; *ESPN est.* 13 Nov.\n  - Rate 28.8; season 34.9 (10), L7 17.7 (3), L15 33.5 (6), L30 34.9 (10).\n  - His L7 is 17.2 under: the 15-minute exit on 11 Nov, and 3 FP in 22 min on 4 Nov.\n- **Scottie Barnes:** still listed out (left groin). No report on Nov 12 at PHI yet, and no timetable reported; *ESPN est.* 12 Nov. The plan counts him back Nov 12, but only 2 of ours play that day, so his absence changes no move.\n- **Trey Murphy III:** now listed out (knees); no timetable reported; *ESPN est.* 13 Nov. He missed 11 Nov.\n- **Paul George:** day-to-day (illness); his next game is 15 Nov; *ESPN est.* 15 Nov.\n- **Holiday:** rate 27.7; season 29.5 (11), L7 23.0 (5), L15 29.4 (9). His L7 is 6.5 under, on unchanged minutes: output, with no report found.\n- **Hartenstein:** rate 33.0; season 31.5 (12), L7 34.2 (5), L15 33.1 (8).\n"
+ },
+ "news-watch": {
+  "flags": [
+   {
+    "player": "Trey Murphy III",
+    "team": "NO",
+    "league": "us",
+    "flags": "rest",
+    "rate": "34.6",
+    "status": "day-to-day, ESPN est. 11 Nov"
+   },
+   {
+    "player": "Yves Missi",
+    "team": "NO",
+    "league": "free agent",
+    "flags": "injury, gap",
+    "rate": "60.4 \u2020",
+    "status": "out, ESPN est. 16 Nov"
+   },
+   {
+    "player": "Maxime Raynaud",
+    "team": "SAC",
+    "league": "free agent",
+    "flags": "injury",
+    "rate": "28.1",
+    "status": "out, ESPN est. 15 Nov"
+   },
+   {
+    "player": "Jalen Suggs",
+    "team": "ORL",
+    "league": "free agent",
+    "flags": "injury",
+    "rate": "27.7",
+    "status": "out, ESPN est. 16 Nov"
+   },
+   {
+    "player": "Daniss Jenkins",
+    "team": "DET",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "31.5",
+    "status": "active"
+   },
+   {
+    "player": "Aday Mara",
+    "team": "OKC",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "30.0",
+    "status": "active"
+   },
+   {
+    "player": "CJ McCollum",
+    "team": "ATL",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "29.7",
+    "status": "active"
+   },
+   {
+    "player": "Grayson Allen",
+    "team": "CHA",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "29.4",
+    "status": "active"
+   },
+   {
+    "player": "Collin Murray-Boyles",
+    "team": "TOR",
+    "league": "free agent",
+    "flags": "role, minutes",
+    "rate": "28.7",
+    "status": "day-to-day, ESPN est. 11 Nov"
+   },
+   {
+    "player": "Saddiq Bey",
+    "team": "NO",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "28.4",
+    "status": "active"
+   },
+   {
+    "player": "Quentin Grimes",
+    "team": "LAL",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "15.4",
+    "status": "out, ESPN est. 15 Nov"
+   },
+   {
+    "player": "Kevin Huerter",
+    "team": "DET",
+    "league": "free agent",
+    "flags": "minutes",
+    "rate": "28.3",
+    "status": "active"
+   },
+   {
+    "player": "T.J. McConnell",
+    "team": "IND",
+    "league": "free agent",
+    "flags": "minutes",
+    "rate": "9.6 \u2020",
+    "status": "day-to-day, ESPN est. 11 Nov"
+   },
+   {
+    "player": "Rudy Gobert",
+    "team": "MIN",
+    "league": "free agent",
+    "flags": "rest",
+    "rate": "30.4",
+    "status": "active"
+   },
+   {
+    "player": "Robert Williams III",
+    "team": "POR",
+    "league": "free agent",
+    "flags": "rest",
+    "rate": "28.1",
+    "status": "active"
+   },
+   {
+    "player": "Jamal Shead",
+    "team": "TOR",
+    "league": "Lauri Birds",
+    "flags": "role, minutes",
+    "rate": "31.7",
+    "status": "active"
+   },
+   {
+    "player": "Stephen Curry",
+    "team": "GS",
+    "league": "Lauri Birds",
+    "flags": "rest",
+    "rate": "50.4",
+    "status": "active"
+   },
+   {
+    "player": "Walker Kessler",
+    "team": "LAL",
+    "league": "Snow Time Lakers",
+    "flags": "rest",
+    "rate": "49.2",
+    "status": "active"
+   },
+   {
+    "player": "Jaylen Brown",
+    "team": "PHI",
+    "league": "Snow Time Lakers",
+    "flags": "rest",
+    "rate": "41.0",
+    "status": "active"
+   },
+   {
+    "player": "Kyrie Irving",
+    "team": "DAL",
+    "league": "Snow Time Lakers",
+    "flags": "rest",
+    "rate": "40.7",
+    "status": "active"
+   },
+   {
+    "player": "Tyler Herro",
+    "team": "MIL",
+    "league": "Snow Time Lakers",
+    "flags": "rest",
+    "rate": "35.0",
+    "status": "day-to-day, ESPN est. 11 Nov"
+   },
+   {
+    "player": "Fred VanVleet",
+    "team": "HOU",
+    "league": "Snow Time Lakers",
+    "flags": "rest",
+    "rate": "28.2",
+    "status": "active"
+   },
+   {
+    "player": "Jaxson Hayes",
+    "team": "UTAH",
+    "league": "Snow Time Lakers",
+    "flags": "rest",
+    "rate": "24.3",
+    "status": "active"
+   },
+   {
+    "player": "Giannis Antetokounmpo",
+    "team": "MIA",
+    "league": "Dr White Slong",
+    "flags": "injury",
+    "rate": "59.2",
+    "status": "active"
+   },
+   {
+    "player": "Austin Reaves",
+    "team": "LAL",
+    "league": "Cream Abdul-Yammar",
+    "flags": "injury",
+    "rate": "41.7",
+    "status": "active"
+   },
+   {
+    "player": "Zion Williamson",
+    "team": "NO",
+    "league": "Melbourne poopoo",
+    "flags": "injury",
+    "rate": "40.7",
+    "status": "active"
+   },
+   {
+    "player": "Paolo Banchero",
+    "team": "ORL",
+    "league": "Dr White Slong",
+    "flags": "gap",
+    "rate": "60.9 \u2020",
+    "status": "out, ESPN est. 22 Nov"
+   }
+  ],
+  "changed_md": "\n**Our players:**\n- **Trey Murphy III:** doubtful tonight (11 Nov vs BKN) on the official injury report, with bilateral patellar tendinopathy and \"at least one more game\" out ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/trey-murphy-knee-now-doubtful-vs-brooklyn)). No timetable reported; *ESPN est.* 11 Nov is too early. **Override added:** sit 11 Nov. He sat the second night of the last back-to-back, so NOP's 13\u201314 Nov back-to-back is a risk, but nothing is announced.\n- **Paul George:** out tonight with an illness. \"His next opportunity to play will come Sunday\" (Celtics' Taylor Snow, via [CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/celtics-paul-george-out-wednesday/)). *ESPN est.* 15 Nov matches.\n- **Caleb Wilson:** questionable tonight with right hip soreness, a late addition to the report ([CBS, 11 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-caleb-wilson-late-addition-to-injury-report/)); *ESPN est.* 11 Nov. He has not missed a game this season.\n- **Scottie Barnes:** out tonight with a left groin strain, his third straight game. No timetable reported ([TSN, 11 Nov](https://www.tsn.ca/nba/article/shorthanded-raptors-look-to-turn-fortunes-around-against-celtics-on-tsn/)); *ESPN est.* 12 Nov, which looks optimistic for the second night of a back-to-back.\n- **Jalen Smith:** still the Bulls' starting center while Claxton's 16\u201320-minute limit lasts. It has no end date ([NBC Sports, 8 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/nic-claxton-hamstring-plays-18-minutes-sunday)).\n- **Kawhi Leonard:** the Raptors give an update in a week, about 17 Nov ([Yardbarker, 10 Nov](https://www.yardbarker.com/nba/articles/raptors_announce_kawhi_leonard_will_miss_more_time_as_he_recovers_from_left_knee_injury/s1_16751_44544586)); *ESPN est.* 23 Nov.\n- **Jalen Duren:** \"at least two more weeks\" as of 9 Nov, re-evaluated about 22 Nov; *ESPN est.* 24 Nov.\n\n**Lauri Birds:**\n- They dropped **Lauri Markkanen**: two nondisplaced right-hand fractures, re-evaluated in four weeks, about 9 Dec ([Yardbarker, 11 Nov](https://www.yardbarker.com/nba/articles/jazzs_lauri_markkanen_out_with_hand_fractures_to_be_reevaluated_in_four_weeks/s1_17038_44548155)); *ESPN est.* 4 Jan.\n- **Jamal Shead's** starts end when Immanuel Quickley returns. Quickley is questionable tonight; no timetable reported; *ESPN est.* 11 Nov.\n- **Stephen Curry** has no back-to-back this week.\n\n**Targets:**\n- **Yves Missi:** out through at least 17 Nov. **Override changed** from return 12 Nov to 18 Nov, a floor.\n- **Maxime Raynaud:** week-to-week. **Override added:** return 16 Nov, a floor.\n- **Daniss Jenkins:** his start is game by game until Duren returns.\n- **Aday Mara:** a steady backup-center role behind Hartenstein, 18\u201327 minutes.\n- **Devin Vassell** and **Norman Powell:** game-time decisions tonight.\n- **P.J. Washington** and **Day'Ron Sharpe:** clear.\n\n**Overrides:**\n- Added: Murphy sit 11 Nov, Raynaud return 16 Nov.\n- Changed: Missi return 12 \u2192 18 Nov; McCollum's source moved to the 10 Nov RotoWire note, with the value unchanged.\n- None expired.\n- The matchup was re-run with them (see `20261109-matchup4.md`).\n"
+ },
+ "injury-watch": {
+  "shortlist": [
+   "Aday Mara",
+   "Daniss Jenkins",
+   "Christian Braun",
+   "Jared McCain",
+   "Quenton Jackson",
+   "Lauri Markkanen",
+   "Jalen Suggs"
+  ],
+  "injuries": 97
+ },
+ "trade-watch": {
+  "trades": [
+   {
+    "date": "08 Nov",
+    "player": "Nique Clifford",
+    "move": "SAC \u2192 OKC"
+   }
+  ]
+ },
+ "files": [
+  "20261111-matchup4.md",
+  "20261111-news-watch.md",
+  "20261111-injury-watch.md",
+  "20261111-trade-watch.md",
+  "20261111-rookies.md"
+ ]
+}
