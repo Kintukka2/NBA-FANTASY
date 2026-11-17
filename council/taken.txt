@@ -46,7 +46,6 @@ Brandon Miller
 Stephen Curry
 Naz Reid
 Donovan Clingan
-Trey Murphy III
 Nickeil Alexander-Walker
 Dylan Harper
 Brandon Ingram
@@ -112,3 +111,4 @@ Norman Powell
 Rudy Gobert
 Brook Lopez
 Keldon Johnson
+Mo Bamba

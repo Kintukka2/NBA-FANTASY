@@ -1,0 +1,76 @@
+# Trade watch: 17 Nov 2026
+
+- Generated 2026-11-17 21:18 UTC by `council/trade_watch.py`. This is **data, not a verdict**: each trade is a question for the research step.
+- **Trades read:** ESPN's NBA transactions feed, 18 Oct to 17 Nov (30 days). 1 traded player is in the league pool (rostered, free agent or waivers).
+- **Team he left:** his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). **Team he joined:** long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.
+- **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.
+
+## Summary
+
+| Date | Player | From → To | Role before | Role since | Rate | League |
+|---|---|---|---|---|---:|---|
+| 08 Nov | **Nique Clifford** | SAC → OKC | 8 GP, 6.2 min, 3.9 FP/g, started 0 | 4 GP, 18.0 min, 8.0 FP/g, started 0 | 7.4 | Free agent |
+
+## Nique Clifford: SAC → OKC (08 Nov)
+
+- ESPN: "Traded G Nique Clifford to the Oklahoma City Thunder."
+- SG/SF · Free agent · rate **7.4** · season 5.2 (12) · L7 8.0 (4) · L15 6.3 (7) · L30 5.2 (12) · projected 20.8 · active
+- With SAC: 8 GP, 6.2 min, 3.9 FP/g, started 0. With OKC: 4 GP, 18.0 min, 8.0 FP/g, started 0.
+
+### The team he left: SAC
+
+- **Role vacated:** 8 GP, 6.2 min, 3.9 FP/g, started 0. A small role: little opportunity opens.
+- **Since the trade** (4 games without him, against 6 with him):
+
+| Teammate | Pos | League | Min without / with | FP/g without / with | Starts without | Rate |
+|---|---|---|---|---|---:|---:|
+| Alex Karaban | SF/PF | Free agent | 29.0 / 11.0 | 10.0 / 2.2 | 0 of 1 | 6.5 |
+| Dylan Cardwell | C | Free agent | 19.8 / 14.0 | 20.5 / 21.5 | 2 of 4 | 20.8 |
+| Daeqwon Plowden | SG | Free agent | 10.0 / 8.0 | 6.8 / 3.0 | 0 of 4 | 7.1 |
+| Precious Achiuwa | PF/C | Free agent | 25.0 / 24.3 | 20.0 / 26.3 | 2 of 2 | 24.4 |
+| De'Andre Hunter | SF/PF | Free agent | 35.7 / 35.2 | 27.7 / 24.4 | 3 of 3 | 25.3 |
+| Malik Monk | PG/SG | Free agent | 17.8 / 17.8 | 17.0 / 19.2 | 1 of 4 | 18.7 |
+| Zach LaVine | SG/SF | Team Nic Kerr | 31.3 / 31.5 | 34.0 / 27.3 | 3 of 3 | 35.1 |
+| Darius Acuff Jr. | PG | Team Nic Kerr | 36.8 / 37.2 | 38.0 / 45.8 | 4 of 4 | 36.0 |
+
+### The team he joined: OKC
+
+- **Long absences at his positions** (SF/SG):
+
+| Player | Pos | Injury | ESPN est. | Min/g this season | FP/g |
+|---|---|---|---|---:|---:|
+| Jalen Williams | SF/PF | Left Leg Fracture | 02 Mar | 31.7 | 26.3 |
+| Cason Wallace | PG/SG | Left Shoulder Surgery | 02 Mar | 16.3 | 18.7 |
+
+- About **48 minutes a game** at his positions are out long-term (their season or last-season minutes).
+- **Depth at his positions**, last 10 games:
+
+| Player | Pos | League | Role | Rate |
+|---|---|---|---|---:|
+| Ajay Mitchell | PG/SG | Lauri Birds | 8 GP, 28.5 min, 33.1 FP/g, started 8 | 31.2 |
+| Jared McCain | PG/SG | Free agent | 10 GP, 28.4 min, 23.3 FP/g, started 7 | 23.2 |
+| Kenrich Williams | SF | Free agent | 10 GP, 23.9 min, 19.8 FP/g, started 9 | 19.2 |
+| Alex Caruso | PG/SG | Free agent | 7 GP, 20.9 min, 20.1 FP/g, started 1 | 22.2 |
+| Micah Peavy | SF | Free agent | 9 GP, 16.4 min, 10.1 FP/g, started 0 | 9.5 |
+| Brooks Barnhizer | SF | Free agent | 6 GP, 7.0 min, 6.5 FP/g, started 0 | 5.8 |
+
+- **Whose minutes he takes** (4 games with him, 6 before him): minutes before / with him.
+
+  - Bennett Stirtz (Free agent): 23.5 → 18.0 min
+  - Brooks Barnhizer (Free agent): 8.2 → 4.5 min
+  - Micah Peavy (Free agent): 17.0 → 15.3 min
+  - Ajay Mitchell (Lauri Birds): 28.8 → 27.5 min
+
+### Research
+
+- **Role:** bench only since the trade, at 20, 16, 12 and 24 min ([NBA.com game log](https://www.nba.com/player/1642363/nique-clifford)). Daigneault calls him a "plug-in guy" and promised him no minutes ([Last Word on Sports, 11 Nov](https://lastwordonsports.com/basketball/2026/11/11/daigneault-talks-nique/)). The 24 min on 15 Nov came in a 125-103 blowout ([SI, 16 Nov](https://www.si.com/nba/thunder/onsi/is-nique-clifford-settling-into-okc-thunder-rotation-after-trade-01m7jz67gft2)).
+- **Opportunity:** not soon. Ajay Mitchell, Jared McCain, Alex Caruso, Kenrich Williams and Micah Peavy are ahead of him on the wing. Jalen Williams and Cason Wallace are out long-term ([Yahoo, 8 Nov](https://sports.yahoo.com/nba/breaking-news/article/thunder-reportedly-trade-for-kings-nique-clifford-in-wake-of-injuries-185731868.html)); *ESPN est.* 2 Mar 2027 for both.
+- **Verdict:** opportunity unchanged. About 15–20 min off the bench and a rate of 7.4, so he is not a stream candidate. No row.
+
+## Sources
+
+- ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-17 21:18 UTC.
+- [NBA.com game log](https://www.nba.com/player/1642363/nique-clifford)
+- [Last Word on Sports, 11 Nov](https://lastwordonsports.com/basketball/2026/11/11/daigneault-talks-nique/)
+- [SI, 16 Nov](https://www.si.com/nba/thunder/onsi/is-nique-clifford-settling-into-okc-thunder-rotation-after-trade-01m7jz67gft2)
+- [Yahoo, 8 Nov](https://sports.yahoo.com/nba/breaking-news/article/thunder-reportedly-trade-for-kings-nique-clifford-in-wake-of-injuries-185731868.html)
