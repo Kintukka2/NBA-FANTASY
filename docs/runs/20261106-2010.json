@@ -106,7 +106,9 @@
     "add": "Peyton Watson",
     "team": "CLE",
     "by_et": "07:30PM ET",
-    "by_mel": "Sat 07 11:30AM"
+    "by_mel": "Sat 07 11:30AM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Fri 06 Nov",
@@ -114,7 +116,9 @@
     "add": "Toumani Camara",
     "team": "POR",
     "by_et": "10:00PM ET",
-    "by_mel": "Sat 07 02:00PM"
+    "by_mel": "Sat 07 02:00PM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Sun 08 Nov",
@@ -122,7 +126,9 @@
     "add": "Santi Aldama",
     "team": "DAL",
     "by_et": "07:30PM ET",
-    "by_mel": "Mon 09 11:30AM"
+    "by_mel": "Mon 09 11:30AM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Sun 08 Nov",
@@ -130,7 +136,9 @@
     "add": "Nic Claxton",
     "team": "CHI",
     "by_et": "03:30PM ET",
-    "by_mel": "Mon 09 07:30AM"
+    "by_mel": "Mon 09 07:30AM",
+    "drop_after": null,
+    "add_before": null
    }
   ],
   "best": {

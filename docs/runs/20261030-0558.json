@@ -127,7 +127,9 @@
     "add": "Norman Powell",
     "team": "CHI",
     "by_et": "07:30PM ET",
-    "by_mel": "Sat 31 10:30AM"
+    "by_mel": "Sat 31 10:30AM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Sat 31 Oct",
@@ -135,7 +137,9 @@
     "add": "Precious Achiuwa",
     "team": "SAC",
     "by_et": "08:00PM ET",
-    "by_mel": "Sun 01 11:00AM"
+    "by_mel": "Sun 01 11:00AM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Sun 01 Nov",
@@ -143,7 +147,9 @@
     "add": "Ja'Kobe Walter",
     "team": "TOR",
     "by_et": "09:00PM ET",
-    "by_mel": "Mon 02 01:00PM"
+    "by_mel": "Mon 02 01:00PM",
+    "drop_after": null,
+    "add_before": null
    }
   ],
   "best": {

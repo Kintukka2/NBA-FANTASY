@@ -175,7 +175,13 @@
     "add": "P.J. Washington",
     "team": "DAL",
     "by_et": "08:00PM ET",
-    "by_mel": "Fri 13 12:00PM"
+    "by_mel": "Fri 13 12:00PM",
+    "drop_after": null,
+    "add_before": {
+     "day": "Thu 12 Nov",
+     "opp": "@MIN",
+     "tip_mel": "Fri 13 12:00PM"
+    }
    },
    {
     "day": "Sat 14 Nov",
@@ -183,7 +189,17 @@
     "add": "Day'Ron Sharpe",
     "team": "BKN",
     "by_et": "08:00PM ET",
-    "by_mel": "Sun 15 12:00PM"
+    "by_mel": "Sun 15 12:00PM",
+    "drop_after": {
+     "day": "Fri 13 Nov",
+     "opp": "@LAC",
+     "tip_mel": "Sat 14 02:30PM"
+    },
+    "add_before": {
+     "day": "Sat 14 Nov",
+     "opp": "@MEM",
+     "tip_mel": "Sun 15 12:00PM"
+    }
    },
    {
     "day": "Sun 15 Nov",
@@ -191,7 +207,17 @@
     "add": "Jordan Goodwin",
     "team": "PHX",
     "by_et": "04:00PM ET",
-    "by_mel": "Mon 16 08:00AM"
+    "by_mel": "Mon 16 08:00AM",
+    "drop_after": {
+     "day": "Sat 14 Nov",
+     "opp": "@MEM",
+     "tip_mel": "Sun 15 12:00PM"
+    },
+    "add_before": {
+     "day": "Sun 15 Nov",
+     "opp": "LAL",
+     "tip_mel": "Mon 16 08:00AM"
+    }
    },
    {
     "day": "Sun 15 Nov",
@@ -199,7 +225,17 @@
     "add": "Devin Vassell",
     "team": "SA",
     "by_et": "05:00PM ET",
-    "by_mel": "Mon 16 09:00AM"
+    "by_mel": "Mon 16 09:00AM",
+    "drop_after": {
+     "day": "Sat 14 Nov",
+     "opp": "@MIN",
+     "tip_mel": "Sun 15 12:00PM"
+    },
+    "add_before": {
+     "day": "Sun 15 Nov",
+     "opp": "@UTAH",
+     "tip_mel": "Mon 16 09:00AM"
+    }
    }
   ],
   "best": {

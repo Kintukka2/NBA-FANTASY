@@ -12,7 +12,11 @@ links to the run before and after it.
 ## What a run page holds
 
 1. **The scoreboard:** the score, the projected final with no more moves, the
-   adds left, and the next suggested move with its Melbourne deadline.
+   adds left, and the next suggested move as two steps:
+   - drop the player after his last game ends, naming the opponent and the tip-off;
+   - add the new player before his game, with the tip-off in Melbourne time.
+
+   Every move in the move lists uses the same wording.
 2. **What changed since the previous run:**
    - our roster;
    - the matchup (score, projection, adds);

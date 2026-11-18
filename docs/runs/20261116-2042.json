@@ -201,7 +201,17 @@
     "add": "Brook Lopez",
     "team": "LAC",
     "by_et": "10:30PM ET",
-    "by_mel": "Wed 18 02:30PM"
+    "by_mel": "Wed 18 02:30PM",
+    "drop_after": {
+     "day": "Mon 16 Nov",
+     "opp": "GS",
+     "tip_mel": ""
+    },
+    "add_before": {
+     "day": "Tue 17 Nov",
+     "opp": "UTAH",
+     "tip_mel": "Wed 18 02:30PM"
+    }
    },
    {
     "day": "Fri 20 Nov",
@@ -209,7 +219,17 @@
     "add": "Grayson Allen",
     "team": "CHA",
     "by_et": "07:00PM ET",
-    "by_mel": "Sat 21 11:00AM"
+    "by_mel": "Sat 21 11:00AM",
+    "drop_after": {
+     "day": "Thu 19 Nov",
+     "opp": "@SA",
+     "tip_mel": "Fri 20 12:00PM"
+    },
+    "add_before": {
+     "day": "Fri 20 Nov",
+     "opp": "@ATL",
+     "tip_mel": "Sat 21 11:00AM"
+    }
    },
    {
     "day": "Fri 20 Nov",
@@ -217,7 +237,17 @@
     "add": "Aday Mara",
     "team": "OKC",
     "by_et": "08:00PM ET",
-    "by_mel": "Sat 21 12:00PM"
+    "by_mel": "Sat 21 12:00PM",
+    "drop_after": {
+     "day": "Thu 19 Nov",
+     "opp": "NY",
+     "tip_mel": "Fri 20 12:00PM"
+    },
+    "add_before": {
+     "day": "Fri 20 Nov",
+     "opp": "NO",
+     "tip_mel": "Sat 21 12:00PM"
+    }
    },
    {
     "day": "Sat 21 Nov",
@@ -225,7 +255,17 @@
     "add": "Derrick Jones Jr.",
     "team": "LAC",
     "by_et": "08:00PM ET",
-    "by_mel": "Sun 22 12:00PM"
+    "by_mel": "Sun 22 12:00PM",
+    "drop_after": {
+     "day": "Fri 20 Nov",
+     "opp": "@ATL",
+     "tip_mel": "Sat 21 11:00AM"
+    },
+    "add_before": {
+     "day": "Sat 21 Nov",
+     "opp": "@DAL",
+     "tip_mel": "Sun 22 12:00PM"
+    }
    },
    {
     "day": "Sat 21 Nov",
@@ -233,7 +273,17 @@
     "add": "Neemias Queta",
     "team": "BOS",
     "by_et": "10:00PM ET",
-    "by_mel": "Sun 22 02:00PM"
+    "by_mel": "Sun 22 02:00PM",
+    "drop_after": {
+     "day": "Fri 20 Nov",
+     "opp": "NO",
+     "tip_mel": "Sat 21 12:00PM"
+    },
+    "add_before": {
+     "day": "Sat 21 Nov",
+     "opp": "@SAC",
+     "tip_mel": "Sun 22 02:00PM"
+    }
    },
    {
     "day": "Sun 22 Nov",
@@ -241,7 +291,17 @@
     "add": "Mo Bamba",
     "team": "UTAH",
     "by_et": "07:00PM ET",
-    "by_mel": "Mon 23 11:00AM"
+    "by_mel": "Mon 23 11:00AM",
+    "drop_after": {
+     "day": "Sat 21 Nov",
+     "opp": "@DAL",
+     "tip_mel": "Sun 22 12:00PM"
+    },
+    "add_before": {
+     "day": "Sun 22 Nov",
+     "opp": "DAL",
+     "tip_mel": "Mon 23 11:00AM"
+    }
    }
   ],
   "best": {

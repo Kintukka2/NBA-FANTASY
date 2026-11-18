@@ -171,10 +171,107 @@ def parse_matchup(md):
                                "by_mel": by.group(2).strip() if by else ""})
     m = re.search(r"^Left holding at the end of the week: (.+)$", md, re.M)
     d["holding"] = m.group(1).strip() if m else None
+    attach_games(d["moves"], plan_days(md), tip_times(md))
     plans = [(t, b) for t, b in sections(md) if re.match(r"(Plan|Update|Check-in)\b", t)]
     if plans:
         d["plan_title"], d["plan_md"] = plans[-1]
     return d
+
+
+def plan_days(md):
+    """The best plan's day table: [{day: 'Wed 18 Nov', occ: [{name, team, opp}]}]; opp is None when idle."""
+    i = md.find("### Best plan")
+    if i < 0:
+        return []
+    j = md.find("Moves, each made before", i)
+    lines = [l for l in md[i:j if j > 0 else None].split("\n") if l.strip().startswith("|")]
+    if len(lines) < 3:
+        return []
+    head = [c.strip() for c in lines[0].strip().strip("|").split("|")]
+    slots = [k for k, h in enumerate(head) if h.startswith("Slot")]
+    days = []
+    for line in lines[2:]:
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        occ = []
+        for k in slots:
+            m = re.match(r"^(.+?) \(([A-Z]+)\)(?:,? plays (@?[A-Z]+))?", cells[k]) if k < len(cells) else None
+            if m:
+                occ.append({"name": m.group(1).strip(), "team": m.group(2), "opp": m.group(3)})
+        days.append({"day": cells[0], "occ": occ})
+    return days
+
+
+def tip_times(md):
+    """{(team, 'Wed 18'): (ET time, Melbourne day and time)} from the Tip-off times section."""
+    out = {}
+    for t, b in sections(md):
+        if t != "Tip-off times":
+            continue
+        for line in b.split("\n"):
+            m = re.match(r"^- \*\*([A-Z]+):\*\* (.+)$", line.strip())
+            if not m:
+                continue
+            for part in m.group(2).split(";"):
+                g = re.match(r"\s*(\w{3} \d{1,2}) (\d{1,2}:\d{2}[AP]M) / (\w{3} \d{1,2} \d{1,2}:\d{2}[AP]M)", part)
+                if g:
+                    out[(m.group(1), g.group(1))] = (g.group(2), g.group(3))
+    return out
+
+
+def clock(s):
+    """'Thu 19 02:00PM' -> 'Thu 19, 2:00 PM'."""
+    return re.sub(r"(\w{3} \d{1,2} )?0?(\d{1,2}):(\d{2})([AP]M)",
+                  lambda m: f"{(m.group(1) or '').strip()}{', ' if m.group(1) else ''}{int(m.group(2))}:{m.group(3)} {m.group(4)}", s)
+
+
+def game_tip(tips, occ, day):
+    """A game's tip-off from either team's line (the list names only some teams)."""
+    d = " ".join(day.split()[:2])
+    return tips.get((occ["team"], d)) or tips.get((occ["opp"].lstrip("@"), d))
+
+
+def attach_games(moves, days, tips):
+    """Give each move the dropped player's last game before it and the added player's first game."""
+    order = [d["day"] for d in days]
+    for mv in moves:
+        at = order.index(mv["day"]) if mv["day"] in order else None
+        mv["drop_after"] = mv["add_before"] = None
+        if at is None:
+            continue
+        for d in reversed(days[:at]):
+            o = next((x for x in d["occ"] if x["name"] == mv["drop"]), None)
+            if o and o["opp"]:
+                tip = game_tip(tips, o, d["day"])
+                mv["drop_after"] = {"day": d["day"], "opp": o["opp"], "tip_mel": tip[1] if tip else ""}
+                break
+        for d in days[at:]:
+            o = next((x for x in d["occ"] if x["name"] == mv["add"]), None)
+            if o and o["opp"]:
+                tip = game_tip(tips, o, d["day"])
+                mv["add_before"] = {"day": d["day"], "opp": o["opp"], "tip_mel": tip[1] if tip else ""}
+                break
+
+
+def versus(opp):
+    return f"at {opp[1:]}" if opp.startswith("@") else f"vs {opp}"
+
+
+def drop_text(mv):
+    a = mv.get("drop_after")
+    if a:
+        return (f"Drop {mv['drop']} after his game {versus(a['opp'])} ends ({a['day']}"
+                + (f", tip-off {clock(a['tip_mel'])} Melbourne" if a["tip_mel"] else "") + ").")
+    if "drop_after" in mv:
+        return f"Drop {mv['drop']} any time: he has no game left before the move."
+    return f"Drop {mv['drop']}."
+
+
+def add_text(mv):
+    a = mv.get("add_before")
+    if a:
+        return (f"Add {mv['add']} before his game {versus(a['opp'])} ({a['day']}"
+                + (f", tip-off {clock(a['tip_mel'])} Melbourne" if a["tip_mel"] else "") + ").")
+    return f"Add {mv['add']} before {clock(mv['by_mel'])} Melbourne."
 
 
 def parse_news(md):
@@ -617,6 +714,8 @@ h2 { font-size: 24px; line-height: 1.15; }
 .tile .value small { font-size: 18px; color: var(--muted); font-weight: 600; }
 .tile .note { font-size: 13px; color: var(--muted); }
 .tile.next .value { font-size: 22px; line-height: 1.15; }
+.tile .step { display: grid; grid-template-columns: 20px 1fr; gap: 6px; font-size: 13px; line-height: 1.45; }
+.tile .step b { font: 600 11px/20px var(--font-mono); text-align: center; height: 20px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); }
 .lead-up { color: var(--good); } .lead-down { color: var(--bad); }
 .pips { display: flex; gap: 5px; margin-top: 4px; }
 .pip { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--accent); }
@@ -753,7 +852,8 @@ def tiles(snap):
         mv = m["moves"][0]
         out.append(f'<div class="tile next"><span class="label">Next suggested move · {esc(mv["day"])}</span>'
                    f'<span class="value">{esc(mv["drop"])} → {esc(mv["add"])}</span>'
-                   f'<span class="note">{esc(mv["add"])} ({esc(mv["team"])}) · before {esc(mv["by_mel"])} Melbourne</span></div>')
+                   f'<span class="step"><b>1</b>{esc(drop_text(mv))}</span>'
+                   f'<span class="step"><b>2</b>{esc(add_text(mv))}</span></div>')
     return f'<section class="board" aria-label="Scoreboard">{"".join(out)}</section>' if out else ""
 
 
@@ -782,7 +882,7 @@ def moves_list(moves, other_adds):
     for mv in moves:
         new = (' <span class="chip new">new</span>' if other_adds is not None and mv["add"] not in other_adds else "")
         lis.append(f'<li class="move"><b>{esc(mv["day"])}:</b> drop {esc(mv["drop"])}, add <b>{esc(mv["add"])}</b> ({esc(mv["team"])}){new}'
-                   f'<span class="by">before {esc(mv["by_mel"])} Melbourne ({esc(mv["by_et"])} ET)</span></li>')
+                   f'<span class="by">{esc(drop_text(mv))} {esc(add_text(mv))}</span></li>')
     return f"<ol>{''.join(lis)}</ol>"
 
 
