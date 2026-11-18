@@ -120,7 +120,7 @@ def table_rows(body):
         s = line.strip()
         if s.startswith("|"):
             cells = [c.strip() for c in s.strip("|").split("|")]
-            if all(re.fullmatch(r":?-{2,}:?", c) for c in cells if c):
+            if all(re.fullmatch(r":?-+:?", c) for c in cells if c):
                 started = True
                 continue
             if started:
@@ -180,7 +180,61 @@ def parse_matchup(md):
     plans = [(t, b) for t, b in sections(md) if re.match(r"(Plan|Update|Check-in)\b", t)]
     if plans:
         d["plan_title"], d["plan_md"] = plans[-1]
+        m = re.search(r"\*\*Plan line:\*\* (\d+) adds?", d["plan_md"])
+        if m:  # the plan chose a shorter line of the rotation table than the script's best plan
+            picked = rotation_line(md, int(m.group(1)))
+            if picked:
+                d["best"] = {"adds": int(m.group(1)), "gain": picked[0]}
+                d["moves"] = line_moves(picked[1], md)
+                d["holding"] = None
     return d
+
+
+def rotation_line(md, n):
+    """(gain, moves text) of the n-add row of the rotation table."""
+    for line in md.split("\n"):
+        m = re.match(r"^\| (\d+) \| \*\*([+\-−][\d.]+)\*\* \| (.+) \|$", line.strip())
+        if m and int(m.group(1)) == n:
+            return m.group(2).replace("−", "-"), m.group(3)
+    return None
+
+
+def line_moves(text, md):
+    """Moves from a rotation-table row, with game timing from the tip-off list."""
+    days = [d["day"] for d in plan_days(md)]
+    full_day = lambda short: next((d for d in days if d.startswith(short + " ")), short)
+    teams = {}
+    for t, b in sections(md):
+        if t == "Our roster":
+            for r in table_rows(b):
+                teams[plain(r[0])] = r[1]
+    tips = tip_times(md)
+    tip_days = lambda team: [d for d in days if (team, " ".join(d.split()[:2])) in tips]
+    moves, joined = [], {}
+    for seg in text.split("; "):
+        m = re.match(r"^(\w{3} \d{1,2}): (.+?) → (.+?) \(([A-Z]+)\)$", seg.strip())
+        if not m:
+            continue
+        day, short, add, team = full_day(m.group(1)), m.group(2), m.group(3), m.group(4)
+        drop = next((p for p in list(joined) + list(teams) if p == short or p.endswith(" " + short)), short)
+        mv = {"day": day, "drop": drop, "add": add, "team": team, "by_et": "", "by_mel": ""}
+        at = days.index(day) if day in days else len(days)
+        dteam = joined.get(drop, (teams.get(drop), 0))
+        if dteam[0] and tip_days(dteam[0]):
+            before = [d for d in tip_days(dteam[0]) if dteam[1] <= days.index(d) < at]
+            mv["drop_after"] = None
+            if before:
+                tip = tips[(dteam[0], " ".join(before[-1].split()[:2]))]
+                mv["drop_after"] = {"day": before[-1], "opp": None, "tip_mel": tip[1]}
+        after = [d for d in tip_days(team) if days.index(d) >= at]
+        mv["add_before"] = None
+        if after:
+            tip = tips[(team, " ".join(after[0].split()[:2]))]
+            mv["add_before"] = {"day": after[0], "opp": None, "tip_mel": tip[1]}
+            mv["by_mel"] = tip[1]
+        joined[add] = (team, at)
+        moves.append(mv)
+    return moves
 
 
 def plan_days(md):
@@ -258,13 +312,19 @@ def attach_games(moves, days, tips):
 
 
 def versus(opp):
+    if not opp:
+        return ""
     return f"at {opp[1:]}" if opp.startswith("@") else f"vs {opp}"
+
+
+def game(opp):
+    return f"his game {versus(opp)}" if opp else "his game"
 
 
 def drop_text(mv):
     a = mv.get("drop_after")
     if a:
-        return (f"Drop {mv['drop']} after his game {versus(a['opp'])} ends ({a['day']}"
+        return (f"Drop {mv['drop']} after {game(a['opp'])} ends ({a['day']}"
                 + (f", tip-off {clock(a['tip_mel'])} Melbourne" if a["tip_mel"] else "") + ").")
     if "drop_after" in mv:
         return f"Drop {mv['drop']} any time: he has no game left before the move."
@@ -274,7 +334,7 @@ def drop_text(mv):
 def add_text(mv):
     a = mv.get("add_before")
     if a:
-        return (f"Add {mv['add']} before his game {versus(a['opp'])} ({a['day']}"
+        return (f"Add {mv['add']} before {game(a['opp'])} ({a['day']}"
                 + (f", tip-off {clock(a['tip_mel'])} Melbourne" if a["tip_mel"] else "") + ").")
     return f"Add {mv['add']} before {clock(mv['by_mel'])} Melbourne."
 

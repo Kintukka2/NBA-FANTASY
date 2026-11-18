@@ -57,6 +57,11 @@ python council/run_report.py --backfill       # every date in docs/analysis
   and `council/news_overrides.csv` stood at the end of that day.
 - **Roster and overrides, today:** the working copies.
 
+**A shorter plan line.** A matchup plan may choose a shorter row of the rotation
+table than the script's best plan, for example to skip a risky streamer. Write
+`**Plan line:** N adds.` in its Plan section, and the run page shows that row's
+moves instead.
+
 **Earlier runs stay as built.** Only their previous and next links are updated.
 
 **After building, republish the archive** with the Artifact tool:
