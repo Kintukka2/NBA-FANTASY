@@ -328,6 +328,9 @@ def main():
             f"{end:%a %d %b} (US dates), with {len(days)} days left."),
            f"- **Adds:** {used} used this matchup"
            + (f" of {limit:g}, so **{limit - used:g} left**." if limit is not None else ", no limit.")
+           + (f" The what-if swap{'s' if len(args.swap) > 1 else ''} use{'' if len(args.swap) > 1 else 's'} "
+              f"{len(args.swap)} of them, leaving **{limit - used - len(args.swap):g}** for the plan below."
+              if args.swap and limit is not None else "")
            + " Free agents arrive at once; waiver players take 24 hours.",
            f"- **Method:** an exact optimiser fills the 10 starting slots each day. **Rate** per game "
            "(`council/gamelog.py`): last season ×1 (or ESPN's projection), this season ×2, last 30 days ×3, "
@@ -488,7 +491,7 @@ def main():
             origs.append(r)
             frees.append(free)
         n = len(origs)
-        budget = int(limit - used) if limit is not None else len(days) * n
+        budget = int(limit - used - len(args.swap)) if limit is not None else len(days) * n  # a swap is a planned add
         rdays = [p for p in days if p >= min(frees)]
         empty = [r for r in ours if all(r is not o for o in origs)]
         counts = lambda r, p: plays(r, p) and not started(r, p)

@@ -149,6 +149,11 @@ def parse_matchup(md):
     m = re.search(r"\*\*Adds:\*\* (\d+) used this matchup of (\d+), so \*\*(\d+) left", md)
     if m:
         d["adds"] = {"used": int(m.group(1)), "limit": int(m.group(2)), "left": int(m.group(3))}
+    m = re.search(r"leaving \*\*(\d+)\*\* for the plan below", md)
+    if m and d["adds"]:
+        d["adds"]["plan"] = int(m.group(1))
+    m = re.search(r"^- \*\*What-if:\*\* roster swaps (.+?)\.$", md, re.M)
+    d["swaps"] = [x.strip() for x in m.group(1).split(",")] if m else []
     m = re.search(r"for a final of \*\*([\d,]+) to ([\d,]+)\*\*", md)
     if m:
         d["projection"] = [num(m.group(1)), num(m.group(2))]
@@ -846,8 +851,15 @@ def tiles(snap):
     if m.get("adds"):
         a = m["adds"]
         pips = "".join(f'<span class="pip{" on" if k < a["left"] else ""}"></span>' for k in range(a["limit"]))
+        plan_note = (f'<span class="note">{a["left"] - a["plan"]} planned for {", ".join(esc(x) for x in m.get("swaps", []))}, '
+                     f'{a["plan"]} for the moves</span>' if a.get("plan") is not None else "")
         out.append(f'<div class="tile"><span class="label">Adds left</span><span class="value">{a["left"]}<small> of {a["limit"]}</small></span>'
-                   f'<span class="pips" role="img" aria-label="{a["left"]} of {a["limit"]} adds left">{pips}</span></div>')
+                   f'<span class="pips" role="img" aria-label="{a["left"]} of {a["limit"]} adds left">{pips}</span>{plan_note}</div>')
+    for sw in m.get("swaps", []):
+        out_p, _, in_p = sw.partition(" → ")
+        out.append(f'<div class="tile next"><span class="label">Planned first · claim or swap</span>'
+                   f'<span class="value">{esc(out_p)} → {esc(in_p)}</span>'
+                   f'<span class="note">The plan below assumes {esc(in_p)} replaces {esc(out_p)}. See the matchup plan for when it lands.</span></div>')
     if m.get("moves"):
         mv = m["moves"][0]
         out.append(f'<div class="tile next"><span class="label">Next suggested move · {esc(mv["day"])}</span>'
