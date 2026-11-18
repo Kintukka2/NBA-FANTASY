@@ -50,7 +50,7 @@ Options:
 | `--rotate NAME[@YYYY-MM-DD] ...` | — | our flexible slots: the best sequence of streamers through them for the rest of the week, at every add count. A date is the first US day that slot may change, e.g. to keep a player for one more game |
 | `--pool` | 14 | free agents `--rotate` considers, plus each day's top three |
 | `--sit NAME@YYYY-MM-DD ...` | — | treat a player as not playing that US date, e.g. a planned rest on a back-to-back |
-| `--swap OUT=IN ...` | — | what-if: our roster with OUT replaced by IN (a free agent, a waiver claim, anyone in the pool) |
+| `--swap OUT=IN ...` | — | what-if: our roster with OUT replaced by IN (a free agent, a waiver claim, anyone in the pool). Each swap counts as one of the adds left, so the rotation plans with what remains |
 | `--returning` | — | also consider injured free agents who haven't played this season, from ESPN's estimated return, rated on last season (or the projection). ESPN's date is often early, so check the reported timeline before relying on one |
 | `--next` | — | prepare for next week's matchup instead: its opponent, Monday to Sunday, the rosters ESPN will field on its first day, and its own add limit |
 | `--opp` | — | what-if: value each game at the rate × the opponent factor. It is off by default until `python council/opponents.py --audit` certifies the factor. Label its figures as a what-if |

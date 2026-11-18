@@ -88,7 +88,6 @@ Wendell Carter Jr.
 Ayo Dosunmu
 AJ Dybantsa
 Onyeka Okongwu
-Jeremiah Fears
 Paul Reed
 Klay Thompson
 Darryn Peterson
@@ -112,3 +111,4 @@ Rudy Gobert
 Brook Lopez
 Mo Bamba
 Jared McCain
+Isaiah Hartenstein
