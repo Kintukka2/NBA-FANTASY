@@ -224,7 +224,17 @@
     "add": "Derrick Jones Jr.",
     "team": "LAC",
     "by_et": "08:00PM ET",
-    "by_mel": "Fri 20 12:00PM"
+    "by_mel": "Fri 20 12:00PM",
+    "drop_after": {
+     "day": "Wed 18 Nov",
+     "opp": "@LAL",
+     "tip_mel": "Thu 19 02:00PM"
+    },
+    "add_before": {
+     "day": "Thu 19 Nov",
+     "opp": "@SA",
+     "tip_mel": "Fri 20 12:00PM"
+    }
    },
    {
     "day": "Fri 20 Nov",
@@ -232,7 +242,17 @@
     "add": "Derik Queen",
     "team": "NO",
     "by_et": "08:00PM ET",
-    "by_mel": "Sat 21 12:00PM"
+    "by_mel": "Sat 21 12:00PM",
+    "drop_after": {
+     "day": "Thu 19 Nov",
+     "opp": "NY",
+     "tip_mel": "Fri 20 12:00PM"
+    },
+    "add_before": {
+     "day": "Fri 20 Nov",
+     "opp": "@OKC",
+     "tip_mel": "Sat 21 12:00PM"
+    }
    },
    {
     "day": "Fri 20 Nov",
@@ -240,7 +260,17 @@
     "add": "Tyrese Proctor",
     "team": "CLE",
     "by_et": "07:30PM ET",
-    "by_mel": "Sat 21 11:30AM"
+    "by_mel": "Sat 21 11:30AM",
+    "drop_after": {
+     "day": "Thu 19 Nov",
+     "opp": "@SA",
+     "tip_mel": "Fri 20 12:00PM"
+    },
+    "add_before": {
+     "day": "Fri 20 Nov",
+     "opp": "IND",
+     "tip_mel": "Sat 21 11:30AM"
+    }
    },
    {
     "day": "Sat 21 Nov",
@@ -248,7 +278,17 @@
     "add": "Neemias Queta",
     "team": "BOS",
     "by_et": "10:00PM ET",
-    "by_mel": "Sun 22 02:00PM"
+    "by_mel": "Sun 22 02:00PM",
+    "drop_after": {
+     "day": "Fri 20 Nov",
+     "opp": "IND",
+     "tip_mel": "Sat 21 11:30AM"
+    },
+    "add_before": {
+     "day": "Sat 21 Nov",
+     "opp": "@SAC",
+     "tip_mel": "Sun 22 02:00PM"
+    }
    },
    {
     "day": "Sun 22 Nov",
@@ -256,7 +296,17 @@
     "add": "Aday Mara",
     "team": "OKC",
     "by_et": "06:00PM ET",
-    "by_mel": "Mon 23 10:00AM"
+    "by_mel": "Mon 23 10:00AM",
+    "drop_after": {
+     "day": "Sat 21 Nov",
+     "opp": "@SA",
+     "tip_mel": "Sun 22 12:00PM"
+    },
+    "add_before": {
+     "day": "Sun 22 Nov",
+     "opp": "@MIA",
+     "tip_mel": "Mon 23 10:00AM"
+    }
    }
   ],
   "best": {

@@ -126,7 +126,9 @@
     "add": "Collin Gillespie",
     "team": "PHX",
     "by_et": "09:00PM ET",
-    "by_mel": "Thu 05 01:00PM"
+    "by_mel": "Thu 05 01:00PM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Thu 05 Nov",
@@ -134,7 +136,9 @@
     "add": "Dillon Brooks",
     "team": "PHX",
     "by_et": "09:00PM ET",
-    "by_mel": "Fri 06 01:00PM"
+    "by_mel": "Fri 06 01:00PM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Fri 06 Nov",
@@ -142,7 +146,9 @@
     "add": "Peyton Watson",
     "team": "CLE",
     "by_et": "07:30PM ET",
-    "by_mel": "Sat 07 11:30AM"
+    "by_mel": "Sat 07 11:30AM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Fri 06 Nov",
@@ -150,7 +156,9 @@
     "add": "Alex Caruso",
     "team": "OKC",
     "by_et": "08:00PM ET",
-    "by_mel": "Sat 07 12:00PM"
+    "by_mel": "Sat 07 12:00PM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Sun 08 Nov",
@@ -158,7 +166,9 @@
     "add": "Daniel Gafford",
     "team": "DAL",
     "by_et": "07:30PM ET",
-    "by_mel": "Mon 09 11:30AM"
+    "by_mel": "Mon 09 11:30AM",
+    "drop_after": null,
+    "add_before": null
    },
    {
     "day": "Sun 08 Nov",
@@ -166,7 +176,9 @@
     "add": "Yves Missi",
     "team": "NO",
     "by_et": "09:00PM ET",
-    "by_mel": "Mon 09 01:00PM"
+    "by_mel": "Mon 09 01:00PM",
+    "drop_after": null,
+    "add_before": null
    }
   ],
   "best": {

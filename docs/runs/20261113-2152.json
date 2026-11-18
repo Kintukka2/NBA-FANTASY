@@ -208,7 +208,13 @@
     "add": "Devin Vassell",
     "team": "SA",
     "by_et": "05:00PM ET",
-    "by_mel": "Mon 16 09:00AM"
+    "by_mel": "Mon 16 09:00AM",
+    "drop_after": null,
+    "add_before": {
+     "day": "Sun 15 Nov",
+     "opp": "@UTAH",
+     "tip_mel": "Mon 16 09:00AM"
+    }
    }
   ],
   "best": {

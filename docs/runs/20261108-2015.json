@@ -181,7 +181,17 @@
     "add": "Desmond Bane",
     "team": "ORL",
     "by_et": "10:00PM ET",
-    "by_mel": "Wed 11 02:00PM"
+    "by_mel": "Wed 11 02:00PM",
+    "drop_after": {
+     "day": "Mon 09 Nov",
+     "opp": "IND",
+     "tip_mel": "Tue 10 12:00PM"
+    },
+    "add_before": {
+     "day": "Tue 10 Nov",
+     "opp": "@SAC",
+     "tip_mel": "Wed 11 02:00PM"
+    }
    },
    {
     "day": "Thu 12 Nov",
@@ -189,7 +199,17 @@
     "add": "Dillon Brooks",
     "team": "PHX",
     "by_et": "09:00PM ET",
-    "by_mel": "Fri 13 01:00PM"
+    "by_mel": "Fri 13 01:00PM",
+    "drop_after": {
+     "day": "Wed 11 Nov",
+     "opp": "@UTAH",
+     "tip_mel": "Thu 12 01:00PM"
+    },
+    "add_before": {
+     "day": "Thu 12 Nov",
+     "opp": "CHA",
+     "tip_mel": "Fri 13 01:00PM"
+    }
    },
    {
     "day": "Thu 12 Nov",
@@ -197,7 +217,17 @@
     "add": "Rudy Gobert",
     "team": "MIN",
     "by_et": "08:00PM ET",
-    "by_mel": "Fri 13 12:00PM"
+    "by_mel": "Fri 13 12:00PM",
+    "drop_after": {
+     "day": "Wed 11 Nov",
+     "opp": "@POR",
+     "tip_mel": ""
+    },
+    "add_before": {
+     "day": "Thu 12 Nov",
+     "opp": "DAL",
+     "tip_mel": "Fri 13 12:00PM"
+    }
    },
    {
     "day": "Fri 13 Nov",
@@ -205,7 +235,17 @@
     "add": "Yves Missi",
     "team": "NO",
     "by_et": "08:00PM ET",
-    "by_mel": "Sat 14 12:00PM"
+    "by_mel": "Sat 14 12:00PM",
+    "drop_after": {
+     "day": "Thu 12 Nov",
+     "opp": "CHA",
+     "tip_mel": "Fri 13 01:00PM"
+    },
+    "add_before": {
+     "day": "Fri 13 Nov",
+     "opp": "MEM",
+     "tip_mel": "Sat 14 12:00PM"
+    }
    },
    {
     "day": "Fri 13 Nov",
@@ -213,7 +253,17 @@
     "add": "Jalen Smith",
     "team": "CHI",
     "by_et": "08:00PM ET",
-    "by_mel": "Sat 14 12:00PM"
+    "by_mel": "Sat 14 12:00PM",
+    "drop_after": {
+     "day": "Thu 12 Nov",
+     "opp": "DAL",
+     "tip_mel": "Fri 13 12:00PM"
+    },
+    "add_before": {
+     "day": "Fri 13 Nov",
+     "opp": "ATL",
+     "tip_mel": "Sat 14 12:00PM"
+    }
    },
    {
     "day": "Sun 15 Nov",
@@ -221,7 +271,17 @@
     "add": "Rui Hachimura",
     "team": "LAC",
     "by_et": "04:30PM ET",
-    "by_mel": "Mon 16 08:30AM"
+    "by_mel": "Mon 16 08:30AM",
+    "drop_after": {
+     "day": "Sat 14 Nov",
+     "opp": "DEN",
+     "tip_mel": "Sun 15 11:00AM"
+    },
+    "add_before": {
+     "day": "Sun 15 Nov",
+     "opp": "CHA",
+     "tip_mel": "Mon 16 08:30AM"
+    }
    },
    {
     "day": "Sun 15 Nov",
@@ -229,7 +289,17 @@
     "add": "Zach LaVine",
     "team": "SAC",
     "by_et": "09:00PM ET",
-    "by_mel": "Mon 16 01:00PM"
+    "by_mel": "Mon 16 01:00PM",
+    "drop_after": {
+     "day": "Sat 14 Nov",
+     "opp": "@MIN",
+     "tip_mel": "Sun 15 12:00PM"
+    },
+    "add_before": {
+     "day": "Sun 15 Nov",
+     "opp": "OKC",
+     "tip_mel": "Mon 16 01:00PM"
+    }
    }
   ],
   "best": {
