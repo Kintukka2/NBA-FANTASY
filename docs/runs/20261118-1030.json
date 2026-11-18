@@ -1,0 +1,236 @@
+{
+ "key": "20261118-1030",
+ "date": "20261118",
+ "when_utc": "2026-11-18T10:30:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "IR"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Saddiq Bey",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Yves Missi",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Rudy Gobert",
+   "team": "MIN",
+   "slot": "roster"
+  },
+  {
+   "player": "Mo Bamba",
+   "team": "UTAH",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [
+  {
+   "player": "CJ McCollum",
+   "kind": "role",
+   "value": "23",
+   "until": "2026-11-22",
+   "source": "https://www.rotowire.com/basketball/headlines/cj-mccollum-news-leads-hawks-bench-with-21-points-538466",
+   "note": "Bench 4 straight (25, 23, 21, 24 min) behind Kingston Flemings, including after Jalen Johnson returned 7 Nov; \"a bench role could cap his minutes\" (RotoWire, 10 Nov)"
+  },
+  {
+   "player": "Jusuf Nurkic",
+   "kind": "return",
+   "value": "2026-11-21",
+   "until": "",
+   "source": "https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-2",
+   "note": "Floor: Jazz 6 Nov, on-court work, re-evaluated in two weeks (about 20 Nov); right second-toe plantar plate tear Laddha (Salt Lake Tribune, 15 Nov): re-evaluation Fri 20 Nov, on-court drills."
+  },
+  {
+   "player": "Jalen Duren",
+   "kind": "return",
+   "value": "2026-11-23",
+   "until": "",
+   "source": "https://detroitsportsnation.com/jb-bickerstaff-jalen-duren-hamstring-update/gkaplan/detroit-pistons/11/08/2026/505901/",
+   "note": "Floor: re-evaluated two weeks from 8 Nov (about 22 Nov), cleared for on-court work; right hamstring strain; Bickerstaff will not rush him"
+  },
+  {
+   "player": "Scotty Pippen Jr.",
+   "kind": "return",
+   "value": "2026-11-22",
+   "until": "",
+   "source": "https://sports.yahoo.com/articles/grizzlies-list-zach-edey-quinten-221551360.html",
+   "note": "Floor: out (lumbar disc herniation) for 16 Nov at WSH on the Grizzlies' 15 Nov report; week-to-week floor passed with no timetable; 7 days after the latest out report"
+  },
+  {
+   "player": "Dejounte Murray",
+   "kind": "return",
+   "value": "2026-11-23",
+   "until": "",
+   "source": "https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html",
+   "note": "Floor: sitting out until traded (\"will NOT play another minute\" for NOP, Charania via HoopsHype, 13 Nov); out again 16 Nov; no trade as of 16 Nov; 7 days after the latest out report. Remove if traded Spears (ESPN, 16-17 Nov): not with the team; ankle will \"take some time\"."
+  },
+  {
+   "player": "Trey Murphy III",
+   "kind": "sit",
+   "value": "2026-11-18",
+   "until": "",
+   "source": "https://www.rotowire.com/basketball/headlines/trey-murphy-injury-another-absence-coming-539612",
+   "note": "Ruled out for 18 Nov vs DET, his sixth straight (bilateral knee tendinopathy); no timetable (RotoWire, 17 Nov)."
+  },
+  {
+   "player": "Saddiq Bey",
+   "kind": "role",
+   "value": "34",
+   "until": "2026-11-24",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-monday/",
+   "note": "Starting while Murphy sits (\"will likely remain in the starting unit for as long as Murphy is sidelined\", CBS/RotoWire 15 Nov); 35, 41, 33 min in last 3 starts. Remove as soon as Murphy is cleared."
+  },
+  {
+   "player": "Daniss Jenkins",
+   "kind": "role",
+   "value": "35",
+   "until": "2026-11-22",
+   "source": "https://sports.yahoo.com/articles/pistons-vs-spurs-preview-no-165600772.html",
+   "note": "Projected starter 17 Nov at SA (\"No Robinson, so he'll surely start\", DBB via Yahoo 17 Nov); 36 and 35 min in regulation starts; ends at Duren's re-evaluation (~22 Nov)."
+  },
+  {
+   "player": "Jalen Suggs",
+   "kind": "role",
+   "value": "25",
+   "until": "2026-11-22",
+   "source": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/jalen-suggs-tallies-12-7-4-line-as-starter",
+   "note": "Back in the starting five 16 Nov, just under 25 min; \"will likely remain on a minutes restriction for some time\" (NBC Sports, 16 Nov). 25 is likely a floor."
+  },
+  {
+   "player": "Quentin Grimes",
+   "kind": "role",
+   "value": "35",
+   "until": "2026-11-17",
+   "source": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/austin-reaves-heel-remains-out-vs-charlotte",
+   "note": "Starting while Austin Reaves (heel bruise) is out: \"Until he's back, Quentin Grimes will continue to start\" (NBC Sports, 16 Nov); Reaves out 17 Nov; 37 and 32 min in last two starts."
+  }
+ ],
+ "reports": [
+  {
+   "kind": "matchup",
+   "file": "20261118c-matchup5.md",
+   "title": "Matchup 5: Come-in Cider vs Snow Time Lakers",
+   "generated": "2026-11-18T10:30:00+00:00",
+   "versions": [
+    "20261118b-matchup5.md",
+    "20261118-matchup5.md"
+   ]
+  }
+ ],
+ "matchup": {
+  "title": "Matchup 5: Come-in Cider vs Snow Time Lakers",
+  "score": [
+   543,
+   404
+  ],
+  "adds": {
+   "used": 2,
+   "limit": 7,
+   "left": 5,
+   "plan": 4
+  },
+  "projection": null,
+  "moves": [
+   {
+    "day": "Fri 20 Nov",
+    "drop": "Rudy Gobert",
+    "add": "Quentin Grimes",
+    "team": "LAL",
+    "by_et": "",
+    "by_mel": "Sat 21 02:00PM",
+    "drop_after": {
+     "day": "Thu 19 Nov",
+     "opp": null,
+     "tip_mel": "Fri 20 12:00PM"
+    },
+    "add_before": {
+     "day": "Fri 20 Nov",
+     "opp": null,
+     "tip_mel": "Sat 21 02:00PM"
+    }
+   },
+   {
+    "day": "Sat 21 Nov",
+    "drop": "Quentin Grimes",
+    "add": "Neemias Queta",
+    "team": "BOS",
+    "by_et": "",
+    "by_mel": "Sun 22 02:00PM",
+    "drop_after": {
+     "day": "Fri 20 Nov",
+     "opp": null,
+     "tip_mel": "Sat 21 02:00PM"
+    },
+    "add_before": {
+     "day": "Sat 21 Nov",
+     "opp": null,
+     "tip_mel": "Sun 22 02:00PM"
+    }
+   }
+  ],
+  "best": {
+   "adds": 2,
+   "gain": "+70.3"
+  },
+  "holding": null,
+  "plan_title": "Plan (10:35 UTC 18 Nov): claim Jeremiah Fears, drop Mo Bamba",
+  "plan_md": "\n**Plan line:** 2 adds.\n\n**Why Bamba, not Jenkins** (the user's call, and the numbers allow it):\n- **The script's comparison.** Lineup over 19\u201322 Nov, each run at 10:30 UTC:\n\n| Option | Adds for the plan | Lineup 19\u201322 Nov |\n|---|---:|---:|\n| No claim | 5 | 1,032 (909 + 122.9) |\n| Claim Fears, drop Jenkins | 4 | 1,002 (905 + 97.1) |\n| **Claim Fears, drop Bamba** | 4 | 987 (913 + 74.1); **983 with the 2-add line** (913 + 70.3) |\n\n- **The 15-point gap is smaller than it looks.** It values Bamba at his starter's rate: 32.7, with L7 38.2 (4), 35\u201336 min in his start.\n  - Jaxson Hayes's return ends that start. Hayes's next chance is 18 Nov at LAL ([RotoWire, 17 Nov](https://www.rotowire.com/basketball/headlines/jaxson-hayes-injury-remaining-out-tuesday-539488)); no timetable reported; *ESPN est.* 18 Nov.\n  - The drop-Jenkins plan keeps Bamba through 20 Nov, so it loses most of its edge if Hayes plays.\n- **Jenkins keeps his start while Robinson and Duren are out.** The rate already counts this through the role row (35 min, role rate 36.7 \u2021).\n  - Duncan Robinson is re-evaluated in a week ([Hoops Rumors, 17 Nov](https://www.hoopsrumors.com/2026/11/pistons-duncan-robinson-quad-out-at-least-one-week.html)); *ESPN est.* 27 Nov.\n  - Jalen Duren is re-evaluated about 22 Nov; *ESPN est.* 24 Nov.\n- **Not Gobert.** The claim processes at 3:00 AM ET 19 Nov, before Gobert's 19 Nov game, the thinnest day of the week (2 of ours play).\n\n**The claim:**\n- File it now: **add Jeremiah Fears, drop Mo Bamba**.\n- It processes **Thu 19 Nov at 3:00 AM ET, 7:00 PM Thu 19 Melbourne**, after Bamba's 18 Nov game.\n- Bench Bamba on 18 Nov anyway: 11 of ours play for 10 slots.\n- **Waiver priority:** 6th of 8. Cream Abdul-Yammar, Matt Wright's Foxies, Snow Time Lakers, Lauri Birds and Dr White Slong are ahead of us.\n\n**Then 2 adds, +70.3** (ESPN dates, Melbourne times):\n1. **20 Nov:** drop Gobert after his game vs NY ends (tip-off Fri 20, 12:00 PM). Add **Quentin Grimes** (LAL) before his game vs SAC (Sat 21, 2:00 PM).\n   - Only if Austin Reaves is still out ([NBC Sports, 17 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/redick-reaves-to-test-injured-heel-wednesday)); *ESPN est.* 18 Nov.\n2. **21 Nov:** drop Grimes after his game. Add **Neemias Queta** (BOS) before BOS @SAC (Sun 22, 2:00 PM).\n\n**Why 2 adds and not 4:**\n- The 4-add line (+74.1) gains only 3.8 more.\n- It swaps Gobert for Myles Turner on 19 Nov, the second night of Milwaukee's back-to-back. Turner rested the second night on 11 Nov, so Gobert's 19 Nov game would be at risk for nothing.\n- It also adds De'Andre Hunter (SAC). He is day-to-day with hip soreness (no timetable reported; *ESPN est.* 18 Nov), and his L7 rests on one game.\n\n**If Reaves is back:** 1 add, +34.0. On 20 Nov, drop Gobert after his game, and add **Aday Mara** (OKC) before OKC vs NO (Sat 21, 12:00 PM). He also plays 22 Nov.\n\n**If the claim fails** (a team ahead of us takes Fears), keep Bamba and follow the no-claim plan:\n- **20 Nov:** Gobert \u2192 Grimes (if Reaves is out).\n- **21 Nov:** Grimes \u2192 Queta, and Bamba \u2192 Pritchard.\n\nThat is 3 adds for +91.7.\n\n**Form:**\n\n| Player | Rate | Season | L7 | L15 | L30 |\n|---|---:|---:|---:|---:|---:|\n| Jeremiah Fears | 34.4 | 32.5 (15) | 37.2 (4) | 35.1 (9) | 32.5 (15) |\n| Mo Bamba | 32.7 | 30.8 (11) | 38.2 (4) | 33.0 (7) | 30.8 (11) |\n| Daniss Jenkins | 34.0 (role rate 36.7 \u2021) | 30.2 (13) | 37.0 (3) | 38.5 (6) | 30.2 (13) |\n| Rudy Gobert | 25.9 | 25.6 (14) | 22.5 (4) | 27.3 (7) | 25.6 (14) |\n| Quentin Grimes | 36.9 | 23.2 (13) | 59.0 (2), small sample | 29.3 (6) | 23.2 (13) |\n| Neemias Queta | \u2014 | 25.6 (13) | 34.0 (2), small sample | 27.3 (6) | 25.6 (13) |\n\n**Why the L7s are high:**\n- **Bamba, +7.4:** his start for Hayes.\n- **Jenkins, +6.8:** his start while Duren and Robinson are out.\n- **Grimes, +35.8:** two starts for Reaves.\n- **Queta, +8.4:** two games, a small sample.\n",
+  "swaps": [
+   "Mo Bamba \u2192 Jeremiah Fears"
+  ]
+ },
+ "files": [
+  "20261118c-matchup5.md"
+ ]
+}
