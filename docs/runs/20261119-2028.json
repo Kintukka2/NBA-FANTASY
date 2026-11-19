@@ -69,8 +69,8 @@
    "slot": "roster"
   },
   {
-   "player": "Mo Bamba",
-   "team": "UTAH",
+   "player": "Kel'el Ware",
+   "team": "MIL",
    "slot": "roster"
   }
  ],
@@ -276,8 +276,8 @@
    "gain": "+133.1"
   },
   "holding": "Neemias Queta (BOS, 3 games next week), Matas Buzelis (CHI, 3 games next week).",
-  "plan_title": "Update (20:35 UTC 19 Nov): Kel'el Ware instead of Jones Jr. on 19 Nov",
-  "plan_md": "\n**Turner is out 19 Nov vs POR** with a left shoulder contusion. Ware's and Jericho Sims's minutes should rise ([NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/myles-turner-shoulder-out-thursday-vs-portland)); *ESPN est.* 21 Nov.\n\n**Why Ware wins step 1:**\n- When Turner rested on 11 Nov, Ware started: 31 FP in 23 min.\n- His last three were 30, 33 and 26 FP in 17\u201325 min.\n- His rate (25.0) is built on bench minutes and sits under Jones Jr.'s 26.0, but extra minutes should put him in the 30s.\n- Jones Jr.'s last six were 39, 16, 26, 43, 25 and 8 FP.\n\n**Step 1 becomes:** drop Bamba, add **Kel'el Ware** (MIL vs POR) before 12:00 PM Fri 20 Melbourne. Steps 2\u20135 are unchanged, starting with dropping Ware after the game.\n\n| Player | Rate | Season | L7 | L15 | L30 |\n|---|---:|---:|---:|---:|---:|\n| Kel'el Ware | 25.0 | 23.3 (15) | 29.7 (3) | 19.5 (8) | 23.3 (15) |\n| Derrick Jones Jr. | 26.0 | 27.0 (12) | 25.3 (3) | 26.2 (6) | 27.0 (12) |\n\nWare's L7 is +6.4, on 19.7 min against 18.1.\n",
+  "plan_title": "Update (22:30 UTC 19 Nov): the user's plan, keeping Murphy",
+  "plan_md": "\n**ESPN sync:** Mo Bamba dropped, Kel'el Ware added (19 Nov).\n\n**Both plans scored by `matchup.py`.** Each day was run on that day's roster with `--swap ... --from --end`. The table shows our lineup by day; 19 Nov is the same in both (84).\n\n| Day | User's plan | Earlier plan |\n|---|---:|---:|\n| 20 Nov | 394 (Murphy, Queen) | 401 (Murphy, Grimes) |\n| 21 Nov | 162 (Murphy, Queen) | 166 (Murphy, Queta) |\n| 22 Nov | 353 (Murphy, Buzelis, Mara) | 354 (Buzelis, Queta) |\n| 19\u201322 Nov | **993** | 1,005 |\n\n**What it means:**\n- They score 864 over the same days, so the user's plan projects about **1,814 to 1,641**.\n- It uses all 7 adds.\n- It keeps Murphy past this week, and it doesn't depend on Reaves.\n\n**Drop Bey, not Missi, on 22 Nov.**\n- Both give 353 that day, since neither plays.\n- Bey starts only while Murphy is out ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-wont-play-monday/)).\n\n**Murphy:** still out; no timetable reported; *ESPN est.* 20 Nov.\n- NO's report is due by about 10:00 AM Fri 20 Melbourne.\n- If he sits 20\u201321 Nov, holding him costs about 60 against a streamer. The margin absorbs that.\n\n**The moves** (Melbourne times):\n1. **20 Nov:** drop Ware after his 19 Nov game. Add **Trey Murphy III** before NO @OKC (12:00 PM Sat 21).\n2. **20 Nov:** drop Gobert after his 19 Nov game. Add **Derik Queen** before the same game.\n3. **22 Nov:** drop Queen after NO @SA (tip-off 12:00 PM Sun 22). Add **Matas Buzelis** before CHI vs DEN (11:00 AM Mon 23).\n4. **22 Nov:** drop Bey after NO @SA. Add **Aday Mara** before OKC @MIA (10:00 AM Mon 23).\n",
   "swaps": []
  },
  "files": [
