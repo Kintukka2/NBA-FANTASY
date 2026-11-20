@@ -699,7 +699,7 @@ def main():
     if day_lock:
         out.append("- **First game of the day (adds lock):** " + "; ".join(
             f'{first[p].astimezone(ET):%a %d %I:%M%p} / {first[p].astimezone(local):%a %d %I:%M%p}' for p in days))
-    for tid in sorted(shown | {d["pro"] for d in drops}, key=lambda t: abbrev.get(t, "")):
+    for tid in sorted(shown | {d["pro"] for d in drops} | {r["pro"] for r in ours}, key=lambda t: abbrev.get(t, "")):
         out.append(f"- **{abbrev.get(tid)}:** " + "; ".join(
             f'{tips[(tid, p)].astimezone(ET):%a %d %I:%M%p} / {tips[(tid, p)].astimezone(local):%a %d %I:%M%p}'
             for p in days if (tid, p) in tips))
