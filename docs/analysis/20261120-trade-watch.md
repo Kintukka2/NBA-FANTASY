@@ -63,7 +63,8 @@
 
 ### Research
 
-- _pending_
+- **No new trades.** Nique Clifford (SAC → OKC, 8 Nov) still comes off the bench: 17.0 min and 8.0 FP/g in 5 OKC games. Last run's research still holds ([20261117-trade-watch.md](20261117-trade-watch.md)).
+- **Verdict:** opportunity unchanged. No row.
 
 ## Sources
 
