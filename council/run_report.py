@@ -177,6 +177,7 @@ def parse_matchup(md):
     m = re.search(r"^Left holding at the end of the week: (.+)$", md, re.M)
     d["holding"] = m.group(1).strip() if m else None
     attach_games(d["moves"], plan_days(md), tip_times(md))
+    set_locks(d["moves"], md)
     plans = [(t, b) for t, b in sections(md) if re.match(r"(Plan|Update|Check-in)\b", t)]
     if plans:
         d["plan_title"], d["plan_md"] = plans[-1]
@@ -186,6 +187,7 @@ def parse_matchup(md):
             if picked:
                 d["best"] = {"adds": int(m.group(1)), "gain": picked[0]}
                 d["moves"] = line_moves(picked[1], md)
+                set_locks(d["moves"], md)
                 d["holding"] = None
     return d
 
@@ -288,6 +290,24 @@ def tip_times(md):
     return out
 
 
+def lock_times(md):
+    """{'Fri 20': Melbourne day and time} of each day's first tip-off, when ESPN locks this league's adds."""
+    m = re.search(r"^- \*\*First game of the day \(adds lock\):\*\* (.+)$", md, re.M)
+    out = {}
+    for part in (m.group(1).split(";") if m else []):
+        g = re.match(r"\s*(\w{3} \d{1,2}) \d{1,2}:\d{2}[AP]M / (\w{3} \d{1,2} \d{1,2}:\d{2}[AP]M)", part)
+        if g:
+            out[g.group(1)] = g.group(2)
+    return out
+
+
+def set_locks(moves, md):
+    """Give each move the add deadline: the first tip-off of the day it lands."""
+    locks = lock_times(md)
+    for mv in moves:
+        mv["lock_mel"] = locks.get(" ".join(mv["day"].split()[:2]), "")
+
+
 def clock(s):
     """'Thu 19 02:00PM' -> 'Thu 19, 2:00 PM'."""
     return re.sub(r"(\w{3} \d{1,2} )?0?(\d{1,2}):(\d{2})([AP]M)",
@@ -344,6 +364,10 @@ def drop_text(mv):
 
 def add_text(mv):
     a = mv.get("add_before")
+    if mv.get("lock_mel"):
+        return (f"Add {mv['add']} before {clock(mv['lock_mel'])} Melbourne, that day's first NBA tip-off: "
+                "ESPN locks adds then, and a later add counts only from the next day"
+                + (f" ({game(a['opp'])} tips off at {clock(a['tip_mel'])})" if a and a.get("tip_mel") else "") + ".")
     if a:
         return (f"Add {mv['add']} before {game(a['opp'])} ({a['day']}"
                 + (f", tip-off {clock(a['tip_mel'])} Melbourne" if a["tip_mel"] else "") + ").")

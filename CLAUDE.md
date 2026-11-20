@@ -99,6 +99,11 @@ days that the news watch research confirms go into `council/news_overrides.csv`
 - quote the role rate beside the rate;
 - never add a row without a linked source, and remove expired rows.
 
+**Add deadlines: the day's first tip-off.** ESPN locks this league's rosters
+at the first NBA tip-off of each US day. A player added after that counts only
+from the next day, even if his own game is later. Every plan and reply gives
+that deadline (the *By* line in `matchup.py`), never the player's own tip-off.
+
 **Adds left: only from `matchup.py`.** The weekly limit follows that week's
 NBA game days, so a week with an empty day has 6. Quote the limit and the
 adds used from the script's **Adds** line (`--next` for next week). Live
