@@ -99,6 +99,23 @@ days that the news watch research confirms go into `council/news_overrides.csv`
 - quote the role rate beside the rate;
 - never add a row without a linked source, and remove expired rows.
 
+**Plans and scenarios: a calendar, left to right.** Whenever a reply, report or
+plan lays out moves or compares scenarios, use a table with one column per
+remaining US game day, in date order:
+
+- Each move goes in the column of the US day its added player first counts,
+  written `Drop → Add`. Separate two moves on one day with `;`. Use `—` for a
+  day with no move.
+- Each day's header gives the US date and the add deadline in Melbourne time
+  (that day's first tip-off).
+- The last columns are the lineup projection and the final score.
+- Below the table, list the steps for the chosen plan: drop after which
+  game, add before which deadline.
+
+| Plan | Fri 20 · adds by Sat 11:00 AM | Sat 21 · by Sun 5:00 AM | Sun 22 · by Mon 7:30 AM | Lineup | Final |
+|---|---|---|---|---:|---|
+| Murphy plays | Gobert → Murphy | — | Bey → Queta; Missi → Mara | 909.6 | about 1,810–1,575 |
+
 **Add deadlines: the day's first tip-off.** ESPN locks this league's rosters
 at the first NBA tip-off of each US day. A player added after that counts only
 from the next day, even if his own game is later. Every plan and reply gives
