@@ -201,7 +201,7 @@ def rotation_line(md, n):
 
 def line_moves(text, md):
     """Moves from a rotation-table row, with game timing from the tip-off list."""
-    days = [d["day"] for d in plan_days(md)]
+    days = week_days(md) or [d["day"] for d in plan_days(md)]
     full_day = lambda short: next((d for d in days if d.startswith(short + " ")), short)
     teams = {}
     for t, b in sections(md):
@@ -235,6 +235,17 @@ def line_moves(text, md):
         joined[add] = (team, at)
         moves.append(mv)
     return moves
+
+
+def week_days(md):
+    """Every remaining day of the matchup ('Fri 20 Nov'), from The rest of the week table.
+
+    The rotation table can start later than the week (a slot freed on Sunday), and a dropped
+    player's last game may fall before it."""
+    for t, b in sections(md):
+        if t == "The rest of the week":
+            return [r[0] for r in table_rows(b) if re.match(r"^\w{3} \d{1,2} \w{3}$", r[0])]
+    return []
 
 
 def plan_days(md):
