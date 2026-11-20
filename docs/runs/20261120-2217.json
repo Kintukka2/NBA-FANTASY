@@ -1,7 +1,7 @@
 {
- "key": "20261120-2216",
+ "key": "20261120-2217",
  "date": "20261120",
- "when_utc": "2026-11-20T22:16:00+00:00",
+ "when_utc": "2026-11-20T22:17:00+00:00",
  "roster": [
   {
    "player": "Cade Cunningham",
@@ -161,7 +161,7 @@
    "kind": "matchup",
    "file": "20261120d-matchup5.md",
    "title": "Matchup 5: Come-in Cider vs Snow Time Lakers",
-   "generated": "2026-11-20T22:16:00+00:00",
+   "generated": "2026-11-20T22:17:00+00:00",
    "versions": [
     "20261120c-matchup5.md",
     "20261120b-matchup5.md",
@@ -228,6 +228,11 @@
     "team": "BOS",
     "by_et": "",
     "by_mel": "Sun 22 02:00PM",
+    "drop_after": {
+     "day": "Fri 20 Nov",
+     "opp": null,
+     "tip_mel": "Sat 21 02:00PM"
+    },
     "add_before": {
      "day": "Sat 21 Nov",
      "opp": null,
