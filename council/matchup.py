@@ -261,6 +261,16 @@ def main():
     # ESPN won't drop a player once his game has started, so while the drop
     # candidate is locked, no streamer can arrive that day either.
     started = lambda r, p: (r["pro"], p) in tips and tips[(r["pro"], p)] <= now
+    # This league's rosters also lock at the first tip-off of each US day
+    # (mSettings rosterLocktimeType FIRSTGAME_SCORINGPERIOD): a player added
+    # after it counts only from the next day, and a player dropped after it
+    # keeps that day. Checked against the transaction log: an add at 4:51 PM ET
+    # on 31 Oct, after the 3 PM first tip and before the player's 7 PM game,
+    # was not on that team's roster that day. Roster moves use `locked`;
+    # projecting games not yet tipped still uses `started`.
+    day_lock = league["settings"]["rosterSettings"].get("rosterLocktimeType") == "FIRSTGAME_SCORINGPERIOD"
+    locked = lambda r, p: started(r, p) or (day_lock and p in first and first[p] <= now)
+    deadline = lambda p, rs: first[p] if day_lock else min(tips[(r["pro"], p)] for r in rs if (r["pro"], p) in tips)
     # ESPN moves a day's points into totalPoints only when the scoring period
     # rolls over, hours after its last game; totalPointsLive has them at once.
     # Games that have tipped are in that score, so only the rest is projected.
@@ -409,13 +419,13 @@ def main():
     shown = set()
     for d in drops:
         base = [r for r in ours if r is not d]
-        stays = lambda p: ours if started(d, p) else base
+        stays = lambda p: ours if locked(d, p) else base
         base_by = {p: total(stays(p), p) for p in days}
         keep = {p: ours_by[p] - base_by[p] for p in days}
         gain = {}
         for x in fa:
             m = {p: (total(stays(p) + [x], p) - base_by[p])
-                 if plays(x, p) and not started(x, p) and not started(d, p) else 0.0 for p in days}
+                 if plays(x, p) and not locked(x, p) and not locked(d, p) else 0.0 for p in days}
             if sum(m.values()) > 0:
                 gain[x["id"]] = (x, m)
         ranked = sorted(gain.values(), key=lambda g: -sum(g[1].values()))
@@ -428,7 +438,7 @@ def main():
         for x, m in ranked[:args.top]:
             shown.add(x["pro"])
             gd = ", ".join(f"{label(p)[0][:3]} {vs(x, p)}" for p in days
-                           if plays(x, p) and not started(x, p) and not started(d, p))
+                           if plays(x, p) and not locked(x, p) and not locked(d, p))
             out.append(f'| **{x["player"]}**{" (" + est(x) + ")" if est(x) else ""}{" † small sample" if x.get("small") else ""} | {abbrev.get(x["pro"])} | {gd} | '
                        f'{line(x)} | ' + " | ".join(window_cells(x)) + f' | {starts(x)} | '
                        f'{fmt(x["last"] and x["last"]["fpg"])} | {x["owned"]:.0f}% | '
@@ -469,7 +479,7 @@ def main():
             plan = base + [x]
             out += ["", f"### Lineup with {x['player']} in the slot", "", "| Day | Lineup | Playing | Sits |", "|---|---:|---:|---|"]
             for p in days:
-                day_roster = ours if started(d, p) else plan
+                day_roster = ours if locked(d, p) else plan
                 live_ = [r for r in day_roster if plays(r, p)]
                 v = total(day_roster, p)
                 sits = [r["player"] for r in live_ if len(live_) > len(SLOTS)
@@ -485,7 +495,7 @@ def main():
             if r is None:
                 sys.exit(f"Not on our active roster: {name}")
             on = dt.date.fromisoformat(when) if when else None
-            free = next((p for p in days if (first[p].astimezone(ET).date() >= on if on else not started(r, p))), None)
+            free = next((p for p in days if (first[p].astimezone(ET).date() >= on if on else not locked(r, p))), None)
             if free is None:
                 sys.exit(f"No day left in this matchup when {name}'s slot can change.")
             origs.append(r)
@@ -494,7 +504,7 @@ def main():
         budget = int(limit - used - len(args.swap)) if limit is not None else len(days) * n  # a swap is a planned add
         rdays = [p for p in days if p >= min(frees)]
         empty = [r for r in ours if all(r is not o for o in origs)]
-        counts = lambda r, p: plays(r, p) and not started(r, p)
+        counts = lambda r, p: plays(r, p) and not locked(r, p)
         solo = {x["id"]: {p: total(empty + [x], p) - total(empty, p) if counts(x, p) else 0.0 for p in rdays}
                 for x in fa}
         cands = sorted(fa, key=lambda x: -sum(solo[x["id"]].values()))[:args.pool]
@@ -529,7 +539,7 @@ def main():
                 nxt = {}
                 for (occ, adds), entries in states.items():
                     choices = [[occ[s]] + (movers if frees[s] is not None and p >= frees[s]
-                                           and not started(people[occ[s]], p) else []) for s in range(n)]
+                                           and not locked(people[occ[s]], p) else []) for s in range(n)]
                     for new in itertools.product(*choices):
                         changed = [s for s in range(n) if new[s] != occ[s]]
                         k = len(changed)
@@ -672,9 +682,11 @@ def main():
                                     else ", idle"))
             out.append(f"| {label(p)[0]} | {label(p)[1]} | " + " | ".join(cell(o, t) for t, o in enumerate(occupants))
                        + f" | {v:.0f} | {signed(v - k, True)} | {', '.join(sits) or '—'} |")
-        out += ["", "Moves, each made before the earlier tip-off of the two players that day:", ""]
+        out += ["", ("Moves, each made before that day's first NBA tip-off: ESPN locks this league's rosters then, "
+                     "and a player added later counts only from the next day:") if day_lock else
+                "Moves, each made before the earlier tip-off of the two players that day:", ""]
         for i, (p, s, a, x) in enumerate(top_moves, 1):
-            by = min(tips[(r["pro"], p)] for r in (a, x) if (r["pro"], p) in tips)
+            by = deadline(p, (a, x))
             out.append(f'{i}. **{label(p)[0]}:** drop {a["player"]}, add **{x["player"]}** ({abbrev.get(x["pro"])}; '
                        f'GP, min, FP/g {line(x)}; {form(x)}; started {starts(x)}{"; " + est(x) if est(x) else ""}{"; small sample: rate rests on 2 games or fewer" if x.get("small") else ""}). By {by.astimezone(ET):%I:%M%p} ET / '
                        f'{by.astimezone(local):%a %d %I:%M%p}.'
@@ -684,6 +696,9 @@ def main():
             for o in occupants) + ".", ""]
 
     out += ["## Tip-off times", "", f"For the teams named above. Times are ET / {args.tz.split('/')[-1].replace('_', ' ')}.", ""]
+    if day_lock:
+        out.append("- **First game of the day (adds lock):** " + "; ".join(
+            f'{first[p].astimezone(ET):%a %d %I:%M%p} / {first[p].astimezone(local):%a %d %I:%M%p}' for p in days))
     for tid in sorted(shown | {d["pro"] for d in drops}, key=lambda t: abbrev.get(t, "")):
         out.append(f"- **{abbrev.get(tid)}:** " + "; ".join(
             f'{tips[(tid, p)].astimezone(ET):%a %d %I:%M%p} / {tips[(tid, p)].astimezone(local):%a %d %I:%M%p}'

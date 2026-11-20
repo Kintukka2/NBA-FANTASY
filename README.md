@@ -181,6 +181,10 @@ For each remaining day, an exact optimiser fills the 10 starting slots
 Whether a player is starting comes from ESPN's box scores (the *Started*
 column).
 
+Each move's deadline is the first NBA tip-off of the day it lands. ESPN locks
+this league's rosters then, so a player added later counts only from the next
+day, and a player dropped later keeps that day.
+
 A streamer is worth the change in our optimised total, so a game on a day
 we're already full counts for nothing. Each game is valued at the player's
 rate. Beside it, the report shows the opponent factor from
