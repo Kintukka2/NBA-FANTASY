@@ -10,6 +10,34 @@
 - **Games** is games left this week (16 Nov–22 Nov) / next week (23 Nov–29 Nov).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
+## Shortlist
+
+Pickups whose gain should last through this week (20–22 Nov):
+- **Aday Mara** (OKC): about 26 min with Chet Holmgren out (*ESPN est.* 2 Jan).
+- **Matas Buzelis** (CHI): starting with Caleb Wilson out. Wilson is re-evaluated about 3 Dec after hand surgery; *ESPN est.* 13 Dec.
+- **Quentin Grimes** (LAL): starting Fri with Austin Reaves out (*ESPN est.* 23 Nov).
+- **Tyrese Proctor** (CLE): more minutes with Jaylon Tyson out (*ESPN est.* 23 Nov).
+- **Ja'Kobe Walter** (TOR): starting at about 36 min with RJ Barrett out.
+
+The plan that uses them is in the 20 Nov matchup report.
+
+## Research
+
+Earlier notes still hold ([20261117-injury-watch.md](20261117-injury-watch.md)). New since then:
+
+- **RJ Barrett:** The Raptors announced it Thu 19 Nov, after first calling it hamstring tightness ([Yahoo Sports, 19 Nov](https://sports.yahoo.com/nba/article/raptors-rj-barrett-out-with-strained-right-hamstring-collin-murray-boyles-placed-in-concussion-protocol-213115733.html); [NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/rj-barrett-hamstring-out-at-least-two-weeks)).
+  - He played 39 minutes on 17 Nov and sat out on 18 Nov ([NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/rj-barrett-hamstring-out-at-least-two-weeks)).
+- **Dylan Harper:** Shams Charania reports a **1–3 week** timetable that depends on rehab ([Yahoo Sports, 19 Nov](https://sports.yahoo.com/nba/article/spurs-guard-dylan-harper-reportedly-expected-to-miss-up-to-3-weeks-with-left-rotator-hip-strain-201347589.html); [ESPN](https://www.espn.com/nba/story/_/id/50533303/sources-spurs-dylan-harper-1-3-weeks-hip-strain)).
+  - Local reports say **2–3 weeks** ([NBC Sports, 19 Nov](https://www.nbcsports.com/nba/news/spurs-dylan-harper-avoids-major-injury-likely-out-2-3-weeks-with-hip-strain)). There is no official return date or re-evaluation date.
+- **Ja'Kobe Walter:** He has started for the injured Kawhi Leonard. On 17 Nov vs NY he scored 25 with 7 threes ([NBC Sports, 17 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/jakobe-walter-hits-seven-triples-scores-25)).
+  - With Barrett also out on 18 Nov he played 38 minutes for 18/7/6 with 3 stl ([ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910012)). His minutes average 35.6 over his last 3 games ([NBC Sports minutes report, 19 Nov](https://nbcsports.com/nba/news/2026-27-nba-minutes-report-how-injuries-to-austin-reaves-alperen-sengun-shake-up-two-contenders)).
+- **Jakob Poeltl:** He came off the bench in the two games before (17 and 18 minutes) while Collin Murray-Boyles started ([ESPN box, 15 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909990); [17 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910002)).
+  - He rejoined the lineup on 18 Nov because Barrett and Scottie Barnes were both out ([RotoWire via CBS Sports, 18 Nov](https://www.cbssports.com/fantasy/basketball/news/raptors-jakob-poeltl-back-in-starting-lineup/)). He played 29 minutes for 8/9/5 with 3 stl and 1 blk ([ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910012)).
+- **Jamison Battle:** His first start of the season came on 18 Nov with Barrett and Barnes out ([NBC Sports, 18 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/raptors-start-iq-walter-battle-collin-poeltl)). He played 33 minutes for 19 pts with 5-10 3PT, but 0 ast ([ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910012)).
+  - In the two games before, he played 8 and 7 minutes off the bench ([ESPN box, 17 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910002)).
+- **Devin Vassell:** He returned from a two-game groin absence on 13 Nov ([RotoWire via CBS Sports, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/spurs-devin-vassell-available-to-play/)). He then started on 13, 15 and 17 Nov alongside Harper.
+  - Julian Champagnie, not Vassell, took Harper's spot on 19 Nov ([NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/julian-champagnie-moves-into-starting-lineup-vs-lac)).
+
 ## Pickups for us
 
 Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
@@ -602,3 +630,17 @@ All 108 players in ESPN's injury feed, longest expected absence first.
 ## Sources
 
 - ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-20 03:47 UTC.
+- [Yahoo Sports, 19 Nov](https://sports.yahoo.com/nba/article/raptors-rj-barrett-out-with-strained-right-hamstring-collin-murray-boyles-placed-in-concussion-protocol-213115733.html)
+- [NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/rj-barrett-hamstring-out-at-least-two-weeks)
+- [Yahoo Sports, 19 Nov](https://sports.yahoo.com/nba/article/spurs-guard-dylan-harper-reportedly-expected-to-miss-up-to-3-weeks-with-left-rotator-hip-strain-201347589.html)
+- [ESPN](https://www.espn.com/nba/story/_/id/50533303/sources-spurs-dylan-harper-1-3-weeks-hip-strain)
+- [NBC Sports, 19 Nov](https://www.nbcsports.com/nba/news/spurs-dylan-harper-avoids-major-injury-likely-out-2-3-weeks-with-hip-strain)
+- [NBC Sports, 17 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/jakobe-walter-hits-seven-triples-scores-25)
+- [ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910012)
+- [NBC Sports minutes report, 19 Nov](https://nbcsports.com/nba/news/2026-27-nba-minutes-report-how-injuries-to-austin-reaves-alperen-sengun-shake-up-two-contenders)
+- [ESPN box, 15 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909990)
+- [17 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910002)
+- [RotoWire via CBS Sports, 18 Nov](https://www.cbssports.com/fantasy/basketball/news/raptors-jakob-poeltl-back-in-starting-lineup/)
+- [NBC Sports, 18 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/raptors-start-iq-walter-battle-collin-poeltl)
+- [RotoWire via CBS Sports, 13 Nov](https://www.cbssports.com/fantasy/basketball/news/spurs-devin-vassell-available-to-play/)
+- [NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/julian-champagnie-moves-into-starting-lineup-vs-lac)

@@ -22,6 +22,27 @@
 | Snow Time Lakers | 0 | Jalen Johnson 43.4/50.0 · Jayson Tatum 45.9/48.1 · Kyrie Irving 41.8/44.2 |
 | Team Nic Kerr | 0 | Luka Doncic 63.4/60.6 · Domantas Sabonis 43.6/46.7 · Tyrese Maxey 46.8/45.1 |
 
+## Research
+
+**Flagged:**
+- Josh Giddey and LaMelo Ball (Cream Abdul-Yammar): unchanged since 17 Nov ([20261117-slump-watch.md](20261117-slump-watch.md)).
+- **Kel'el Ware (ours):** new.
+
+**New to the Last 7 days lists:**
+
+- **Kel'el Ware:** "Kel'el Ware can't get consistent run" and played 17 minutes on 18 Nov at MIA "while Jericho Sims started at center". His minutes average 19.7 over his last 3 games and 17.8 over his last 10 ([NBC Sports minutes report, 19 Nov](https://nbcsports.com/nba/news/2026-27-nba-minutes-report-how-injuries-to-austin-reaves-alperen-sengun-shake-up-two-contenders)).
+  - Sims started next to Turner on 15 Nov and again on 18 Nov. Ware came off the bench and played 25 and 17 minutes ([ESPN box, 15 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909992); [ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910009)).
+- **Rudy Gobert:** He is shooting 46.4% against a career 65.6%, and he had no made field goal in 4 of his first 12 games ([Heavy via Yahoo Sports, 16 Nov](https://sports.yahoo.com/articles/timberwolves-coach-slams-rudy-gobert-124914768.html)).
+  - After his 1-point, 0-for-7 game in 27 minutes vs CHI on 14 Nov, Chris Finch said: "He hasn't been able to finish. He's getting stripped. He's missing layups" ([Heavy via Yahoo Sports, 16 Nov](https://sports.yahoo.com/articles/timberwolves-coach-slams-rudy-gobert-124914768.html)).
+- **De'Aaron Fox:** He was questionable on 13 Nov with left hip soreness and played 17 minutes in a 38-point win over GS. He then missed 15 Nov at UTA with left hip tightness, his first missed game of the season ([RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/deaaron-fox-injury-sitting-out-sunday-539273)). He was off the report for 17 Nov ([RotoWire, 16 Nov](https://www.rotowire.com/basketball/headlines/deaaron-fox-news-off-injury-report-for-tuesday-539450)).
+  - Before that, his 28.6 min/g was his lowest since his rookie year, at 13.6 ppg. Castle and Harper share the ball-handling ([RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/deaaron-fox-injury-sitting-out-sunday-539273)).
+- **Michael Porter Jr.:** He missed 14 Nov at MEM for personal reasons as a late scratch ([NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/michael-porter-jr-personal-ruled-out-vs-mem)). He came off the report for 16 Nov ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/michael-porter-jr-personal-off-injury-report)).
+  - The two games were 25 pts (8-15) in 40 minutes vs PHI on 16 Nov ([ESPN box, 16 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909997)), then 5 pts (1-7 FG, 1-5 3PT) in 27 minutes in a 137-107 loss to CHI on 18 Nov ([RotoWire via CBS Sports, 19 Nov](https://www.cbssports.com/fantasy/basketball/news/nets-michael-porter-struggles-in-blowout-loss/)).
+- **Luka Doncic:** Over 3 games he shot 36-90 FG and 12-41 3PT in 36–42 minutes, with 14 turnovers in the last two ([ESPN box, 15 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909986); [17 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910005); [18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910017)).
+  - On 18 Nov vs UTA he had 29 pts on 10-28 with a season-high 9 TO. That came the night after a 42-minute overtime win over CHA. Doncic said "This is unacceptable for my part" and blamed "the shots, the turnovers" ([Basketball Network via Yahoo Sports, 19 Nov](https://sports.yahoo.com/articles/unacceptable-part-luka-doncic-addresses-101725895.html)).
+- **Ivica Zubac:** He hurt the ankle in the first quarter on 25 Oct vs BKN. That is the 7-minute game the script drops ([RotoWire via CBS Sports, 18 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-quiet-against-houston/)).
+  - He missed five games and returned 4 Nov at MEM, which sent Jay Huff back to the bench ([NBC Sports, 4 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/ivica-zubac-ankle-active-wednesday-vs-memphis)).
+
 ## By team
 
 **Rank** is the player's rank on their fantasy roster by projection. **Min** is current / projected minutes. **Rate** is current FP/min as a share of projected FP/min. The driver line splits the gap into category shortfalls, in FP/g.
@@ -137,3 +158,19 @@ With **Melbourne poopoo**, proposed by us, expires 22 Nov 03:13 UTC.
 
 - ESPN fantasy API, league 423671879: `mRoster`, `mTeam`, `mSettings`, `mStatus` and `mPendingTransactions` views, read 2026-11-20 03:47 UTC.
 - ESPN NBA scoreboard and box scores (`site.api.espn.com`) for the live-game guard and the box-score check.
+- [NBC Sports minutes report, 19 Nov](https://nbcsports.com/nba/news/2026-27-nba-minutes-report-how-injuries-to-austin-reaves-alperen-sengun-shake-up-two-contenders)
+- [ESPN box, 15 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909992)
+- [ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910009)
+- [Heavy via Yahoo Sports, 16 Nov](https://sports.yahoo.com/articles/timberwolves-coach-slams-rudy-gobert-124914768.html)
+- [RotoWire, 15 Nov](https://www.rotowire.com/basketball/headlines/deaaron-fox-injury-sitting-out-sunday-539273)
+- [RotoWire, 16 Nov](https://www.rotowire.com/basketball/headlines/deaaron-fox-news-off-injury-report-for-tuesday-539450)
+- [NBC Sports, 14 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-14/michael-porter-jr-personal-ruled-out-vs-mem)
+- [NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/michael-porter-jr-personal-off-injury-report)
+- [ESPN box, 16 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909997)
+- [RotoWire via CBS Sports, 19 Nov](https://www.cbssports.com/fantasy/basketball/news/nets-michael-porter-struggles-in-blowout-loss/)
+- [ESPN box, 15 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909986)
+- [17 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910005)
+- [18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910017)
+- [Basketball Network via Yahoo Sports, 19 Nov](https://sports.yahoo.com/articles/unacceptable-part-luka-doncic-addresses-101725895.html)
+- [RotoWire via CBS Sports, 18 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-ivica-zubac-quiet-against-houston/)
+- [NBC Sports, 4 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/ivica-zubac-ankle-active-wednesday-vs-memphis)
