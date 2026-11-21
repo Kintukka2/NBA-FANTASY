@@ -533,7 +533,11 @@ Summary:
 - **Rest:** back-to-back Sun 22–Mon 23 Nov, Fri 27–Sat 28 Nov; sat the second night of the 25–26 Oct back-to-back, playing the games either side; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (20 Nov): Nembhard (hip) is available for Friday's game against the Cavaliers, Tony East of Forbes.com reports.
 - News (19 Nov): Nembhard (hip) is questionable for Friday's game in Cleveland.
-- **Research:** _pending_
+- **Research:**
+  - Back from a two-game left hip sprain absence: available Fri 20 Nov at CLE ([CBS/RotoWire, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-andrew-nembhard-available-versus-cleveland/)), where he played 26 min (12 pts, 8 ast). The recap mentions no minutes limit ([IndyStar via Yahoo, 21 Nov](https://sports.yahoo.com/articles/james-harden-turns-back-clock-031319605.html)).
+  - Rest: no rest announced for either back-to-back (Sun 22 @NYK–Mon 23 vs OKC; Fri 27 vs PHI–Sat 28 @CHI, per ESPN's schedule). The Pacers had not yet filed Sunday's report as of the 21 Nov 2:15 AM ET official report.
+  - Both earlier second-night absences were filed as injuries, not rest: 26 Oct at MIL, "a back issue" per Carlisle after he hurt his neck the night before ([CBS/RotoWire, 26 Oct](https://www.cbssports.com/fantasy/basketball/news/pacers-andrew-nembhard-out-vs-bucks/)); 2 Nov vs ATL, "cervical injury management", with the Pacers sitting several starters on the second leg ([CBS/RotoWire, 2 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-andrew-nembhard-taking-night-off/); [official report, 2 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_06_00PM.pdf)). Carlisle has said the Pacers won't publicize game-by-game plans ([IndyStar via Yahoo, 13 Mar](https://sports.yahoo.com/articles/rick-carlisle-pacers-rest-players-234624005.html)).
+  - **Verdict:** nothing new found. No sit is announced, but he sat both earlier second nights under neck/back labels and is fresh off a hip sprain, so Mon 23 vs OKC and Sat 28 @CHI are real risks.
 
 ## Other rosters: injury flags only
 
@@ -544,7 +548,10 @@ Summary:
 - **Injury:** not in ESPN's injury feed, but the news said on 19 Nov: "Brunson exited to the locker room in the first quarter of Thursday's game against Minnesota due to an apparent facial injury, Jared Schwartz of the New York Post reports."
 - News (20 Nov): Brunson amassed 21 points (8-20 FG, 4-5 3Pt, 1-1 FT), two rebounds, seven assists and two steals in 35 minutes during Thursday's 102-99 win over the Timberwolves.
 - News (19 Nov): Brunson (face) returned to Thursday's game against the Timberwolves with 2:47 remaining in the first quarter, per the broadcast.
-- **Research:** _pending_
+- **Research:**
+  - He was hit in the face on a LaMelo Ball drive early in the first quarter on 19 Nov and returned with 2:47 left in that quarter. He finished with 35 min, 21 pts and 7 ast in the 102-99 win. No diagnosis was announced ([SportPreferred, 20 Nov](https://www.sportpreferred.com/nba/jalen-brunson-injury-update-knicks-timberwolves-2026/17719); [Bleacher Report](https://bleacherreport.com/articles/25535537-brunson-kat-carry-knicks-win-over-wolves-box-score-stats-highlights-lamelo-top-players)).
+  - He is not on the Knicks' official injury report for Sat 21 Nov vs POR. The Knicks list only Anunoby (questionable) and Clarkson (out) ([official report, 21 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_15AM.pdf)).
+  - **Verdict:** ESPN confirmed. He missed no time, and his absence from ESPN's injury feed is correct.
 
 ### Brandon Ingram (LAC, SF/PF, Melbourne poopoo)
 
@@ -553,7 +560,12 @@ Summary:
 - **Injury:** ESPN est. 23 Nov (Out, Right Achilles Surgery, updated 20 Nov), but the news said on 20 Nov: "The star forward is set to make his long-awaited return after undergoing surgery for a partially torn Achilles tendon in May. Ingram, who'll miss Saturday's game in Dallas, is likely to carry a minutes restriction following a lengthy layoff, though his presence is certain to cut into the playing time of the likes of Kris Dunn, Max Strus and Gradey Dick on the wing for the Clippers."
 - News (20 Nov): Ingram (Achilles) is expected to make his season and team debut Monday against the Rockets, per Shams Charania of ESPN.
 - News (18 Nov): Ingram (heel/Achilles) will remain on the inactive list for Thursday's game in San Antonio.
-- **Research:** _pending_
+- **Research:**
+  - He is expected to make his season and Clippers debut Mon 23 Nov vs HOU, per Shams Charania ([ESPN, 20 Nov](https://www.espn.com/nba/story/_/id/50542985/sources-clippers-brandon-ingram-make-season-team-debut); same story [via ABC30](https://abc30.com/post/sources-brandon-ingram-achilles-expected-clippers-debut-rockets/20060407/); [NBC Sports, 20 Nov](https://www.nbcsports.com/nba/news/brandon-ingram-reportedly-set-to-return-to-clippers-monday-against-rockets)). He is listed out for Sat 21 Nov at DAL (right heel surgery) ([official report, 21 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_15AM.pdf)).
+  - A minutes restriction is expected ([CBS/RotoWire, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/clippers-brandon-ingram-set-for-season-debut-monday/)), but no source gives a number.
+  - **Expected return:** Mon 23 Nov vs HOU, as reported (likely on a minutes limit); *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed. The reported debut date matches ESPN's estimate.
+  - Override proposed: return 2026-11-23
 
 ### Kyle Kuzma (MIL, SF/PF, Team Nic Kerr)
 
@@ -562,7 +574,10 @@ Summary:
 - **Injury:** not in ESPN's injury feed, but the news said on 19 Nov: "Kuzma (shoulder) has been ruled out for Thursday's game against Portland due to a right shoulder contusion."
 - News (20 Nov): Kuzma (shoulder) is off the injury report for Saturday's game against the 76ers.
 - News (19 Nov): Kuzma (shoulder) has been ruled out for Thursday's game against Portland due to a right shoulder contusion.
-- **Research:** _pending_
+- **Research:**
+  - He missed Thu 19 Nov vs POR with a right shoulder contusion ([official report, 19 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_05_30PM.pdf)). He is off the injury report for Sat 21 Nov at PHI ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/kyle-kuzma-shoulder-off-injury-report-vs-76ers)). The 21 Nov 2:15 AM ET official report lists only Dieng, Jones and Markovic for the Bucks ([official report](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_15AM.pdf)).
+  - **Expected return:** Sat 21 Nov at PHI (cleared); ESPN lists him active, so it gives no estimate.
+  - **Verdict:** ESPN confirmed. The miss was one game, and he is cleared for Saturday.
 
 ### Paolo Banchero (ORL, SF/PF, Dr White Slong)
 
@@ -571,7 +586,16 @@ Summary:
 - **Gap:** listed out, and no news in 5 days (ESPN est. 29 Nov)
 - News (24 Oct): Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.
 - News (23 Oct): Banchero didn't check back in during the fourth quarter of Friday's 115-93 loss to the Timberwolves after being deemed doubtful to return. He finished with 14 points (5-11 FG, 0-2 3Pt, 2-4 FT), six rebounds, five assists and one steal across 26 minutes.
-- **Research:** _pending_
+- **Research:**
+  - He was still out Fri 20 Nov at BKN with a right high ankle sprain ([official report, 20 Nov 8:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_08_00PM.pdf)). Banchero said he hopes to return "within the next couple of weeks." Coach Sweeney said on 18 Nov: "He's progressing… No timeline right now" ([Orlando Sentinel via Yahoo, 19 Nov](https://sports.yahoo.com/articles/magic-star-paolo-banchero-shares-110000466.html)).
+  - His work is behind the scenes, including pool sessions and some shooting, and it is unclear whether he is running. The report says he likely needs several more weeks ([Orlando Magic Daily, 19 Nov](https://orlandomagicdaily.com/paolo-banchero-taking-different-approach-orlando-magic-return-01m7ta5knyg4)).
+  - **Expected return:** no timetable reported by the team; his own target is about 2 Dec ("next couple of weeks" from 18–19 Nov); *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN confirmed. 29 Nov falls inside his own two-week hope, but with no team timeline it is optimistic rather than wrong.
+
+Summary:
+- Ingram's debut is reported for Mon 23 Nov vs HOU, matching ESPN, probably on a minutes limit (one return row). Brunson (face) and Kuzma (shoulder) are both cleared for Saturday.
+- Nembhard is back from his hip sprain (26 min Fri). No rest is announced for Mon 23 or Sat 28, but he sat both earlier second nights under neck/back labels, so treat those nights as at risk.
+- Banchero has no team timeline. His own "couple of weeks" target (about 2 Dec) is slightly later than ESPN's 29 Nov estimate, and no row was added.
 
 ## Sources
 
