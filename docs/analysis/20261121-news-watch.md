@@ -459,7 +459,10 @@ Summary:
 - **Minutes:** news on 19 Nov: "His consistent offensive involvement provides fantasy appeal, though poor shooting and fluctuating minutes limit his reliability."
 - News (20 Nov): Podziemski closed with 15 points (5-12 FG, 0-5 3Pt, 5-6 FT), three rebounds, two assists and one steal in 32 minutes during Thursday's 126-98 loss to the Grizzlies.
 - News (19 Nov): Podziemski accumulated 10 points (5-13 FG, 0-5 3Pt, 0-2 FT), three rebounds and four assists over 29 minutes during Wednesday's 116-94 loss to the Mavericks.
-- **Research:** _pending_
+- **Research:**
+  - His one low-minutes game (22 min, 13 Nov) came in a 123-85 blowout loss at San Antonio, [StatMuse box, 13 Nov](https://www.statmuse.com/nba/game/11-13-2026-gsw-at-sas-78603). In every other game since 1 Nov he has started and played 26–39 min, including 29 and 32 in his last two. "He's maintained roughly 30 minutes per game recently," [CBS Sports, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/warriors-brandin-podziemski-three-point-drought-extends-in-loss/). The weaker output comes from his shooting (0-10 from three in his last two games), not his minutes.
+  - Stephen Curry (oblique abdominal tear) will "be re-evaluated in two weeks," which falls about 26 Nov, [NBA.com, 13 Nov](https://www.nba.com/news/stephen-curry-out-abdominal-soreness); *ESPN est.* 12 Dec. Podziemski's extra usage lasts until Curry returns.
+  - **Verdict:** nothing new found. His minutes are steady at about 30–33 and the dip was a blowout, so there is no role row.
 
 ### Cooper Flagg (DAL, SF/PF, Matt Wright's Foxies)
 
@@ -468,7 +471,10 @@ Summary:
 - **Rest:** back-to-back Sat 21–Sun 22 Nov; sat the second night of the 23–24 Oct back-to-back, playing the games either side
 - News (19 Nov): Flagg chipped in 33 points (11-15 FG, 3-5 3Pt, 8-8 FT), five rebounds, nine assists and four steals across 34 minutes during Wednesday's 116-94 victory over the Warriors.
 - News (16 Nov): Flagg contributed 17 points (5-15 FG, 2-6 3Pt, 5-5 FT), three rebounds, four assists, one block and one steal in 27 minutes during Sunday's 131-94 loss to the Celtics.
-- **Research:** _pending_
+- **Research:**
+  - The flag's premise is wrong. On 24 Oct he sat with a mild left shoulder sprain (MRI), not for rest, [Yardbarker, 24 Oct](https://www.yardbarker.com/nba/articles/mavericks_make_2_starting_lineup_changes_with_kyrie_irving_cooper_flagg_out_vs_spurs/s1_17810_44470013). He played both nights of 8–9 Nov (28, 39 min) and 14–15 Nov (38, 27 min) (box scores).
+  - He was ill on the road trip, but May said on 17 Nov it was "the first day he's woke up and felt good," [FanSided, 18 Nov](https://thesmokingcuban.com/dusty-may-cooper-flagg-update-gives-mavericks-hope-after-recent-struggles). He is not on the official report for Sat 21 Nov LAC@DAL, [NBA injury report, 21 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_00AM.pdf). No rest has been announced for Sun 22 at UTA.
+  - **Verdict:** ESPN confirmed. He is active with no rest pattern, and should play both nights.
 
 ### Jayson Tatum (BOS, SF/PF, Snow Time Lakers)
 
@@ -490,7 +496,11 @@ Summary:
 - **Rest:** back-to-back Sat 21–Sun 22 Nov; news on 19 Nov: "After sitting out the second game of a weekend back-to-back set, Irving returned to action and delivered decent numbers."; sat the second night of the 23–24 Oct back-to-back, playing the games either side; sat the second night of the 14–15 Nov back-to-back, playing the games either side
 - News (19 Nov): Irving supplied 17 points (7-15 FG, 1-6 3Pt, 2-2 FT), six rebounds, five assists and two steals over 29 minutes during Wednesday's 116-94 win over Golden State.
 - News (17 Nov): Irving (knee) is not listed on the injury report ahead of Wednesday's game against the Warriors.
-- **Research:** _pending_
+- **Research:**
+  - Irving is not on the official report for Sat 21 Nov LAC@DAL. The Sun 22 Nov DAL@UTA report was "NOT YET SUBMITTED" at 2:00 AM ET 21 Nov, [NBA injury report, 21 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_00AM.pdf). Utah is the first stop of a three-game road trip, [Mavs.com, 20 Nov](https://www.nba.com/mavs/news/mavericks-clippers-preview-mavs-developing-their-identity-every-day-in-practice).
+  - Dallas decides on the second night each morning. Dusty May: "play this game, and then let's see where we are tomorrow ... much more fluid on the second day of a back-to-back," [Dallas Sports Journal, 8 Nov](https://dallassportsjournal.com/kyrie-irving-mavericks-nets-pacers-back-to-back-status/).
+  - Pattern: he has sat the second night of 2 of 3 back-to-backs, both listed as left knee injury management: 24 Oct ([Yardbarker, 24 Oct](https://www.yardbarker.com/nba/articles/mavericks_make_2_starting_lineup_changes_with_kyrie_irving_cooper_flagg_out_vs_spurs/s1_17810_44470013)) and 15 Nov, after 37 min the night before ([BasketNews, 15 Nov](https://basketnews.com/news-259537-why-kyrie-irving-will-not-play-vs-celtics-mavs-announce-huge-injury-update.html)). He played both nights of 8–9 Nov ([Yardbarker, 10 Nov](https://www.yardbarker.com/nba/articles/kyrie_irving_explains_decision_to_play_mavericks_back_to_back_after_acl_tear/s1_17810_44540702)). He also rested 2 Nov after five games in seven days ([HoopsHype, 2 Nov](https://www.hoopshype.com/story/sports/nba/rumors/2026/11/02/mavericks-coach-dusty-may-said-kyrie-irving-is-resting/92576098007/)).
+  - **Verdict:** nothing new found. He is expected to play Sat 21. Sun 22 at UTA is a real sit risk (2 of 3 second nights), but the team has made no statement, so there is no sit row.
 
 ### Pascal Siakam (IND, PF, Matt Wright's Foxies)
 
@@ -499,7 +509,10 @@ Summary:
 - **Rest:** back-to-back Sun 22–Mon 23 Nov, Fri 27–Sat 28 Nov; news on 18 Nov: "He's been locked in over the past two games, totaling 55 points, five assists and four steals on 61.1 percent shooting from the field and 90.0 percent at the line, but despite his efforts, Indiana has suffered back-to-back losses."; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (18 Nov): Siakam chipped in 24 points (10-17 FG, 2-2 3Pt, 2-2 FT), four rebounds, three assists, one block and three steals across 33 minutes during Wednesday's 119-104 loss to the Rockets.
 - News (15 Nov): Siakam recorded 31 points (12-19 FG, 0-3 3Pt, 7-8 FT), two rebounds, two assists and one steal across 34 minutes during Sunday's 131-124 loss to Philadelphia.
-- **Research:** _pending_
+- **Research:**
+  - He sat for rest on 2 Nov, the second night of a back-to-back vs ATL, per the official report, [Yahoo Sports, 2 Nov](https://sports.yahoo.com/articles/pacers-resting-pascal-siakam-could-183414500.html). He played both nights of 25–26 Oct (26, 37 min, box scores). That makes 1 rest in 2 back-to-backs.
+  - No team statement has been found for 22–23 Nov or 27–28 Nov. The IND@NYK Sun 22 report was "NOT YET SUBMITTED" at 2:00 AM ET 21 Nov, [NBA injury report, 21 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_00AM.pdf). If he sits, Mon 23 is the likelier night, but nothing has been announced.
+  - **Verdict:** nothing new found. He is active, with a partial rest pattern and no announced sit.
 
 ### Tyler Herro (MIL, PG/SG, Snow Time Lakers)
 
@@ -508,7 +521,10 @@ Summary:
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; sat the first night of the 10–11 Nov back-to-back, playing the games either side
 - News (20 Nov): Herro totaled 19 points (7-13 FG, 4-7 3Pt, 1-3 FT), four rebounds, three assists and one steal over 31 minutes during Thursday's 124-114 loss to Portland.
 - News (19 Nov): Herro ended Wednesday's 137-130 loss to Miami with eight points (4-11 FG, 0-5 3Pt, 0-1 FT), two rebounds, four assists and one steal over 24 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Herro now plays for Milwaukee (MIL), not Miami. He is not on the official report for Sat 21 Nov MIL@PHI, 1:00 PM ET, [NBA injury report, 21 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_00AM.pdf). He is a projected starter and "not on the Bucks injury report," [Sports Mole, 20 Nov](https://www.sportsmole.co.uk/basketball/philadelphia-76ers/preview/milwaukee-bucks-vs-philadelphia-76ers-player-props-injury-report-and-prediction--nba_609484.html). MIL has no game Sun 22 (none on the 22 Nov report), so Saturday is his only game this weekend.
+  - The flag's "rest" absence on 10 Nov was a right knee contusion, not rest, [SI, 9 Nov](https://www.si.com/nba/bucks/onsi/the-latest-on-tyler-herro-before-bucks-face-new-york-knicks-01m7151s3wta). He played both nights of the 23–24 Oct back-to-back (box scores). Nothing has been said about 27–28 Nov.
+  - **Verdict:** ESPN confirmed. He is active and has no rest pattern.
 
 ### Andrew Nembhard (IND, PG/SG, Matt Wright's Foxies)
 
