@@ -228,7 +228,11 @@
 - **Injury:** ESPN est. 27 Nov (Out, Left Foot Plantar Fasciitis, updated 19 Nov), but the news said on 19 Nov: "Jordan Poole should remain in the backcourt rotation for the undermanned Pelicans moving forward, while Mathurin can be deemed week-to-week."
 - News (19 Nov): Mathurin (foot) has been ruled out for Friday's game against the Thunder.
 - News (17 Nov): Mathurin (foot) has been ruled out for Wednesday's game against Detroit.
-- **Research:** _pending_
+- **Research:**
+  - Injury: out Fri 20 Nov at OKC, his 4th straight game, with left plantar fasciitis ([NBA injury report, 20 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_11_45PM.pdf)). "Week-to-week" is RotoWire's own assessment, not a team statement ([RotoWire via CBS, 19 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-bennedict-mathurin-another-absence-coming/)). I found no team or beat-writer timeline and no re-evaluation date. The Pelicans had not submitted their report for Sat 21 Nov at SAS as of 2:15 AM ET.
+  - Week-to-week from 19 Nov gives a floor of 26 Nov. There are no NBA games that day (Thanksgiving), so NOP's first game after the floor is Fri 27 Nov at LAC, the same date as ESPN's. A row would change nothing, so I added none.
+  - **Expected return:** no timetable reported (week-to-week per RotoWire, 19 Nov; earliest NOP game after the floor is 27 Nov); *ESPN est.* 27 Nov.
+  - **Verdict:** ESPN confirmed. 27 Nov matches the week-to-week floor, and nothing newer was found.
 
 ### Aday Mara (OKC, C, free agent)
 
@@ -392,7 +396,11 @@ Summary:
 - **Minutes:** 33.7 min over his last 3 games against 26.7 for the season (+7.0)
 - News (20 Nov): Wade (hamstring) won't play Saturday against the Bucks.
 - News (20 Nov): Wade (hamstring) participated in Friday morning's practice without restrictions, an encouraging sign for his availability for Saturday's game against the Bucks, per Tony Jones of The Athletic.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: the 34, 35 and 32 min (12–16 Nov) came mostly from spot starts while LeBron James sat: back injury on 12 Nov ([TSN/AP, 12 Nov](https://www.tsn.ca/nba/article/maxey-embiid-lead-76ers-to-win-over-raptors-without-lebron/)) and the second night of a back-to-back on 16 Nov. Rotoworld says Wade "has mostly been a starter when healthy, filling in for LeBron James and Joel Embiid" and advises streaming him mainly when he starts ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/dean-wade-hamstring-remains-out-vs-milwaukee)). No source calls the bigger role ongoing, so no role row. L7 39.5 rests on 2 games (small sample).
+  - Injury: out Sat 21 Nov vs MIL with left hamstring tightness/soreness ([NBA injury report, 21 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_15AM.pdf)). He practised fully on Friday, but the medical staff is "not quite ready to clear him". His next chance is Mon 23 Nov vs POR ([RotoWire, 20 Nov](https://www.rotowire.com/basketball/headlines/dean-wade-injury-ruled-out-for-saturday-540198)).
+  - **Expected return:** next chance Mon 23 Nov vs POR (RotoWire, 20 Nov), no firm timetable; *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed. Out Saturday, aiming for Monday. The minutes spike came from spot starts, not a new role.
 
 ### Precious Achiuwa (SAC, PF/C, free agent)
 
@@ -401,7 +409,11 @@ Summary:
 - **Minutes:** 19.3 min over his last 3 games against 24.8 for the season (−5.5)
 - News (20 Nov): Achiuwa (lower leg) has been ruled out for Friday's game against the Lakers.
 - News (19 Nov): Achiuwa is doubtful for Friday's game against the Lakers due to a left lower leg bruise.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: the drop is down to injuries, not a role cut. He left the 10 Nov loss to Orlando in the 3rd quarter with a leg contusion (14 min) ([NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/precious-achiuwa-leg-exits-during-third-quarter)). He returned 18 Nov vs PHX and "appeared to tweak his leg" after 8 minutes ([Inside the Kings/SI, 20 Nov](https://www.si.com/nba/kings/onsi/kings-and-lakers-both-list-starters-on-injury-report-for-nba-cup-matchup)). He averages 24.8 min this season when healthy.
+  - Injury: out Fri 20 Nov at LAL with a left lower leg contusion ([NBA injury report, 20 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_11_45PM.pdf)). His "next chance to play will come against Boston on Saturday" ([RotoWire via CBS, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/kings-precious-achiuwa-ruled-out-friday/)). As of 2:15 AM ET 21 Nov, the Kings had not submitted their report for Saturday. Friday is his third absence in four games.
+  - **Expected return:** no timetable reported beyond "next chance Sat 21 Nov vs BOS" (RotoWire, 20 Nov); *ESPN est.* 21 Nov.
+  - **Verdict:** ESPN confirmed. ESPN's date is his next chance to play; he has not been cleared yet, and he has had repeated setbacks.
 
 ### Neemias Queta (BOS, C, free agent)
 
@@ -434,7 +446,11 @@ Summary:
 - **Injury:** ESPN est. 23 Nov (Out, Left Hamstring, updated 20 Nov), but the news said on 20 Nov: "Brown is set to be re-evaluated this weekend due to a left hamstring strain, meaning his next chance to play will come Monday against Portland."
 - News (20 Nov): Brown (hamstring) went through individual work during Friday's practice, Tony Jones of The Athletic reports.
 - News (18 Nov): Brown (hamstring) will be re-evaluated at some point this weekend, per Kris Rihm of ESPN.com.
-- **Research:** _pending_
+- **Research:**
+  - Schedule: Brown plays for PHI, not BOS. PHI hosts MIL on Sat 21 Nov (1:00 PM ET) and has no game on Sun 22 Nov; SAC and GS are Boston's opponents. PHI's next game is Mon 23 Nov vs POR.
+  - Injury: out Sat 21 Nov vs MIL with a left hamstring strain ([NBA injury report, 21 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_15AM.pdf)). He did only individual work at Friday's practice; Saturday will be his second straight missed game ([Sixers Wire via Yahoo, 20 Nov](https://sports.yahoo.com/articles/full-injury-report-jaylen-brown-220359363.html)). The re-evaluation "this weekend" will set his timeline ([Kris Rhim, ESPN, via Heavy/Yahoo, 18 Nov](https://sports.yahoo.com/articles/espn-insider-drops-latest-jaylen-013927700.html)).
+  - **Expected return:** no timetable reported; he will be re-evaluated this weekend (Rhim, ESPN), so his earliest game is Mon 23 Nov vs POR; *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed. 23 Nov is the day after the weekend re-evaluation; treat it as a floor, not a confirmed return. He has no games left for Snow Time Lakers this week.
 
 ### Brandin Podziemski (GS, PG/SG, Matt Wright's Foxies)
 
@@ -461,7 +477,11 @@ Summary:
 - **Rest:** back-to-back Sat 21–Sun 22 Nov; news on 20 Nov: "Tatum (rest) is listed as questionable for Saturday's game against Sacramento."
 - News (20 Nov): Tatum (rest) is listed as questionable for Saturday's game against Sacramento.
 - News (19 Nov): Tatum had 24 points (10-22 FG, 3-8 3Pt, 1-2 FT), eight rebounds, three assists and one steal over 37 minutes during Wednesday's 105-101 loss to the Nuggets.
-- **Research:** _pending_
+- **Research:**
+  - Rest: listed questionable ("Rest") for Sat 21 Nov at SAC, 10:00 PM ET ([NBA injury report, 21 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_02_15AM.pdf)). Boston had not yet filed for Sun 22 Nov at GS (8:30 PM ET). Rotoworld says Boston "may be looking to give Tatum a night off against Sacramento" ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/jayson-tatum-rest-questionable-vs-sacramento)). I found no quote from Mazzulla or Stevens.
+  - Pattern: he played both ends of all four back-to-backs this season (26–27 Oct, 1–2 Nov, 10–11 Nov, 15–16 Nov; our game log agrees). He said he is "not yet 100 percent" after the Dallas win ([Heavy, 20 Nov](https://heavy.com/sports/nba/boston-celtics/celtics-jayson-tatum-decision-kings-game/)). His only rest game was Wed 4 Nov vs MIL, not on a back-to-back. He was listed questionable (rest) the day before ([NESN, 3 Nov](https://nesn.com/boston-celtics/news/celtics-face-unexpected-jayson-tatum-decision-bucks-game/c93117bec7a0859c91179818)) and then ruled out ([Heavy, 4 Nov](https://heavy.com/sports/nba/boston-celtics/celtics-make-jayson-tatum-decision-ahead-of-bucks-game/)), the same sequence as now. That points to him sitting at SAC and playing at GS, but the team has not said he will sit, so I added no sit row.
+  - **Expected return:** not injured, rest only. If he sits Saturday, he is expected back Sun 22 Nov at GS (no team statement); *ESPN est.* 21 Nov.
+  - **Verdict:** ESPN confirmed. Questionable for rest on Saturday, the first night; the second night is not flagged.
 
 ### Kyrie Irving (DAL, PG, Snow Time Lakers)
 
