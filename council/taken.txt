@@ -89,7 +89,6 @@ AJ Dybantsa
 Onyeka Okongwu
 Paul Reed
 Klay Thompson
-Darryn Peterson
 Jarrett Allen
 Anthony Black
 Desmond Bane
@@ -99,7 +98,6 @@ Fred VanVleet
 Daniss Jenkins
 Cam Spencer
 Saddiq Bey
-Christian Braun
 Day'Ron Sharpe
 Zach LaVine
 Yves Missi
@@ -110,4 +108,6 @@ Kyle Kuzma
 Jeremiah Fears
 Matas Buzelis
 Jalen Suggs
-Quentin Grimes
+Brook Lopez
+Devin Vassell
+Trey Murphy III
