@@ -549,7 +549,10 @@ Summary:
 - **Rest:** back-to-back Sun 22–Mon 23 Nov, Fri 27–Sat 28 Nov; sat the second night of the 25–26 Oct back-to-back, playing the games either side; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (20 Nov): Nembhard (hip) is available for Friday's game against the Cavaliers, Tony East of Forbes.com reports.
 - News (19 Nov): Nembhard (hip) is questionable for Friday's game in Cleveland.
-- **Research:** _pending_
+- **Research:**
+  - He is cleared for Sun 22 Nov at NYK. The Pacers' list for that game (Furphy, Haliburton and McConnell out, Siakam questionable) leaves him off ([official report, 22 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf)). With McConnell out, the Pacers are down to Nembhard, Quenton Jackson and Braden Smith at point guard ([Yahoo Sports, 21 Nov](https://sports.yahoo.com/articles/pacers-more-bad-news-injury-223350334.html)). He played 26 min on 20 Nov in his first game back from a two-game hip absence ([CBS/RotoWire, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-andrew-nembhard-available-versus-cleveland/)).
+  - Rest: no sit is announced for Mon 23 Nov vs OKC or Sat 28 Nov at CHI, and Monday's Pacers report was "not yet submitted" at 2:15 AM ET. Unchanged since 21 Nov: both earlier second-night absences were filed as injuries, a back issue on 26 Oct ([CBS/RotoWire, 26 Oct](https://www.cbssports.com/fantasy/basketball/news/pacers-andrew-nembhard-out-vs-bucks/)) and "cervical injury management" on 2 Nov ([CBS/RotoWire, 2 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-andrew-nembhard-taking-night-off/)). Carlisle doesn't publicize game-by-game plans ([IndyStar via Yahoo, 13 Mar](https://sports.yahoo.com/articles/rick-carlisle-pacers-rest-players-234624005.html)).
+  - **Verdict:** nothing new found. He plays Sunday. He sat both earlier second nights and is a week off a hip sprain, so Mon 23 Nov and Sat 28 Nov remain real risks, though neither is announced.
 
 ### De'Aaron Fox (SA, PG/SG, Matt Wright's Foxies)
 
@@ -558,7 +561,11 @@ Summary:
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 18 Nov: "Fox has been held in check in back-to-back appearances, and he never found a rhythm against Detroit's physical perimeter defense."
 - News (20 Nov): Fox ended Thursday's 124-112 win over the Clippers with 10 points (2-5 FG, 0-1 3Pt, 6-6 FT), five assists, two rebounds and one steal across 32 minutes.
 - News (18 Nov): Fox contributed six points (3-10 FG, 0-5 3Pt), two rebounds, two assists and two steals in 34 minutes during Tuesday's 105-93 loss to the Pistons.
-- **Research:** _pending_
+- **Research:**
+  - On Sat 21 Nov vs NOP he played 26 min (5 pts on 1-4 FG, 10 ast) in a 114-91 blowout ([SI, 21 Nov](https://www.si.com/nba/pelicans/onsi/4-things-we-learned-from-pelicans-blowout-loss-to-spurs)). He slipped on a wet spot in the first half and limped off but returned, and Mitch Johnson said after the game that he was fine ([Pounding The Rock, 21 Nov](https://www.poundingtherock.com/game-recaps/110547/wembanyama-scores-50-as-spurs-crush-pelicans-to-close-homestand)).
+  - Rest: nothing has been announced for the Sun 29 Nov vs BOS / Mon 30 Nov at MIL back-to-back. The 18 Nov line about "back-to-back appearances" refers to two poor games in a row, not to a back-to-back. He played both nights of all three Spurs back-to-backs so far (23–24 Oct, 27–28 Oct, 6–7 Nov, per the box-score log). His only absence, on 15 Nov, was for left hip tightness ([CBS/RotoWire, 15 Nov](https://www.cbssports.com/fantasy/basketball/news/spurs-deaaron-fox-sitting-out-sunday/)).
+  - Form: L7 15.7 (3 games) against a 29.5 season average, 13.8 under. His minutes held (30.7 over L7), so the drop is low shot volume and poor shooting (2-5 FG Thu, 1-4 Sat). No new injury was found.
+  - **Verdict:** nothing new found. No rest signal, and he has no pattern of resting on back-to-backs.
 
 ## Other rosters: injury flags only
 
@@ -570,7 +577,11 @@ Summary:
 - **Gap:** listed out, and no news in 5 days (ESPN est. 29 Nov)
 - News (24 Oct): Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.
 - News (23 Oct): Banchero didn't check back in during the fourth quarter of Friday's 115-93 loss to the Timberwolves after being deemed doubtful to return. He finished with 14 points (5-11 FG, 0-2 3Pt, 2-4 FT), six rebounds, five assists and one steal across 26 minutes.
-- **Research:** _pending_
+- **Research:**
+  - He is out for Sun 22 Nov at WAS with a right high ankle sprain ([official report, 22 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf)). There has been no team update since Sweeney's "progressing… No timeline right now" on 18 Nov. Banchero said he hopes to return "within the next couple of weeks" ([Orlando Sentinel via Yahoo, 19 Nov](https://sports.yahoo.com/articles/magic-star-paolo-banchero-shares-110000466.html)).
+  - Gap: still out, and nothing new was found after 18–19 Nov. That rehab includes pool work and shooting, and it is unclear whether he is running yet ([Orlando Magic Daily, 19 Nov](https://orlandomagicdaily.com/paolo-banchero-taking-different-approach-orlando-magic-return-01m7ta5knyg4)).
+  - **Expected return:** the team has reported no timetable. His own target is about 2 Dec ("next couple of weeks" from 18–19 Nov), and the initial estimate on 24 Oct was 4–6 weeks. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN confirmed. Unchanged since 21 Nov: 29 Nov falls inside both the 4–6 week window and his own hope, but it is optimistic with no team date.
 
 ### Tyrese Maxey (PHI, PG/SG, Team Nic Kerr)
 
@@ -579,7 +590,11 @@ Summary:
 - **Injury:** not in ESPN's injury feed, but the news said on 21 Nov: "Maxey (foot) will be a true game-time decision for Saturday's game against the Bucks, head coach Nick Nurse told Ky Carlin of USA Today."
 - News (21 Nov): Maxey produced 17 points (4-11 FG, 0-3 3Pt, 9-10 FT), four rebounds, four assists and one block in 36 minutes during Saturday's 132-129 victory over the Bucks.
 - News (21 Nov): Maxey (foot) is available for Saturday's game against the Bucks, Austin Krell of OnPattison.com reports.
-- **Research:** _pending_
+- **Research:**
+  - He was listed questionable with a right foot sprain, then upgraded to available before Sat 21 Nov vs MIL ([official report, 21 Nov 12:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf); [NBC Sports, 21 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/tyrese-maxey-foot-available-saturday-vs-bucks)). He started and played 36 min (17 pts, 4-11 FG), and no restriction was reported ([NBC Sports Philadelphia, 21 Nov](https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-vs-bucks-analysis-tyrese-maxey-joel-embiid-lebron-james/768402/)).
+  - Rotoworld's recap guesses the foot "could lead to the 76ers giving him a night off" on a back-to-back ([NBC Sports/Rotoworld, 21 Nov](https://www.nbcsports.com/nba/tyrese-maxey/11002/news)), but the team has said nothing. Next up is Mon 23 Nov vs POR (the Sixers' report was not yet submitted at 22 Nov 2:15 AM ET), then a back-to-back Fri 27 Nov at IND / Sat 28 Nov at HOU. He played both nights of all three earlier back-to-backs (24–25 Oct, 30–31 Oct, 15–16 Nov), though the foot soreness that scratched him on 18 Nov came right after the last of them.
+  - **Expected return:** already back (played 21 Nov). He is not in ESPN's injury feed, so there is no *ESPN est.*
+  - **Verdict:** ESPN confirmed. He is active, played a normal 36 minutes, and has no announced sit.
 
 ### Brandon Ingram (LAC, SF/PF, Melbourne poopoo)
 
@@ -588,7 +603,17 @@ Summary:
 - **Injury:** ESPN est. 23 Nov (Out, Right Achilles Surgery, updated 20 Nov), but the news said on 20 Nov: "The star forward is set to make his long-awaited return after undergoing surgery for a partially torn Achilles tendon in May. Ingram, who'll miss Saturday's game in Dallas, is likely to carry a minutes restriction following a lengthy layoff, though his presence is certain to cut into the playing time of the likes of Kris Dunn, Max Strus and Gradey Dick on the wing for the Clippers."
 - News (20 Nov): Ingram (Achilles) is expected to make his season and team debut Monday against the Rockets, per Shams Charania of ESPN.
 - News (18 Nov): Ingram (heel/Achilles) will remain on the inactive list for Thursday's game in San Antonio.
-- **Research:** _pending_
+- **Research:**
+  - He is still expected to make his season and Clippers debut Mon 23 Nov at HOU, per Shams Charania ([ESPN, 20 Nov](https://www.espn.com/nba/story/_/id/50542985/sources-clippers-brandon-ingram-make-season-team-debut); [Hoops Rumors, 20 Nov](https://www.hoopsrumors.com/2026/11/brandon-ingram-expected-to-make-clippers-debut-on-monday.html)). He sat Sat 21 Nov at DAL as planned. The Clippers' Monday report was "not yet submitted" ([official report, 22 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf)).
+  - A minutes restriction is expected, but no source gives a number ([CBS/RotoWire, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/clippers-brandon-ingram-set-for-season-debut-monday/)). He came back from a partially torn Achilles repaired in May.
+  - **Expected return:** Mon 23 Nov at HOU, as reported, likely on a minutes limit. *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed. Unchanged since 21 Nov: the reported debut matches ESPN's date.
+
+Summary:
+- Maxey's foot sprain cost him only the 18 Nov game: he played a full 36 min on 21 Nov, no sit is announced, and the rest talk around the Fri 27 / Sat 28 Nov back-to-back is Rotoworld's guess, not the team's.
+- Ingram is still on track to debut Mon 23 Nov at HOU on a minutes limit (one return row). Banchero is out again Sunday with no team timeline, so ESPN's 29 Nov holds but is optimistic.
+- Nembhard is cleared for Sunday at NYK (McConnell out, Siakam questionable), but the second night, Mon 23 Nov vs OKC, is a real risk with no sit announced. Fox has played every second night so far, so his rest risk is low.
+  - Override proposed: return 2026-11-23
 
 ## Sources
 
