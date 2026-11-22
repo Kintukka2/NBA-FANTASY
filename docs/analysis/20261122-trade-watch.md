@@ -5,6 +5,13 @@
 - **Team he left:** his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). **Team he joined:** long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.
 - **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.
 
+## What it means for us
+
+- **Pickups:** none from the trade. Nique Clifford is still a bench wing at about 17 minutes for OKC, far below a stream.
+- **Threats to our players' minutes:** none.
+- **No other trades, agreed deals or rotation releases** were reported from 20 to 22 Nov.
+- **Overrides:** none added.
+
 ## Summary
 
 | Date | Player | From → To | Role before | Role since | Rate | League |
@@ -63,8 +70,24 @@
 
 ### Research
 
-- _pending_
+Yesterday's full research: [20261121-trade-watch.md](20261121-trade-watch.md).
+
+- **Since 21 Nov:** nothing new on Clifford's role. He has not played since 20 Nov (15 min vs NOP, in yesterday's research): OKC had no game on 21 Nov, and the script's OKC line is unchanged at 6 GP, 16.7 min, 9.5 FP/g. Next game: Sun 22 Nov at MIA, 6 pm ET ([ESPN game page, 22 Nov](https://www.espn.com/nba/game/_/gameId/401910030/thunder-heat)), then Mon 23 Nov at IND (back-to-back).
+  - **Form** (`form.py`, 22 Nov): season 6.3 (14) · L7 14.0 (3) · L15 9.9 (7) · L30 5.9 (13) · projected 20.8 · Rate **10.6** (9.3 yesterday). L7 is 7.7 above his season because of minutes: 17.3 in L7 against 10.7 for the season, which is the trade role (6.2 min at SAC). L7 rests on 3 games. It and the Rate rose today with no new game, because an older game left the 7-day window.
+  - **No coach comment since 11 Nov.** The only new mention is Heavy's line that Stirtz, Clifford and Kenrich Williams "have also stepped up when needed", with no minutes figure ([Heavy, updated 21 Nov](https://heavy.com/sports/nba/oklahoma-city-thunder/injury-report-vs-heat-november-22/)).
+  - **Thunder injuries for 22 Nov at MIA:**
+    - **Shai Gilgeous-Alexander** (Matt Wright's Foxies) is questionable with a low back contusion and neck strain from a hard fall on 20 Nov, to be re-evaluated before tip-off. NBC says OKC may rest him with Monday's game to come ([NBC Sports, 21 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/shai-gilgeous-alexander-back-questionable-sunday); *ESPN est.* 22 Nov). If he sits, "Mitchell will be the team's primary scoring option" (Heavy, 21 Nov).
+    - **Alex Caruso** is out with right hip soreness, his second straight missed game. No timetable reported (Heavy, 21 Nov; *ESPN est.* 23 Nov).
+    - **Jaylin Williams** is out with low back spasms. No timetable reported. RotoWire names Aday Mara, Kenrich Williams and Micah Peavy, not Clifford, as the players who could gain minutes ([RotoWire, 21 Nov](https://www.rotowire.com/basketball/headlines/jaylin-williams-injury-wont-play-sunday-540381); *ESPN est.* 23 Nov).
+- **Trades not yet in ESPN's feed:** none. Extended searches on 22 Nov 2026 turned up no trade, agreed deal or pending physical reported 20–22 Nov.
+  - **Trackers:** Hoops Rumors' in-season trade tracker still lists only Clifford SAC → OKC on 8 Nov ([Hoops Rumors, 17 Nov](https://www.hoopsrumors.com/2026/11/2026-27-in-season-nba-trades.html)). Its front page through 10:59 pm ET on 21 Nov reports no trade, waiver or buyout ([Hoops Rumors, read 22 Nov](https://www.hoopsrumors.com/)). The newest entries in the transaction logs are from 18 Nov (Minix waived, Austin signed, Smart reinstated), all covered yesterday ([Hoops Rumors transactions](https://www.hoopsrumors.com/transactions), [B-Ref](https://www.basketball-reference.com/leagues/NBA_2027_transactions.html), [CBS](https://www.cbssports.com/nba/transactions/), read 22 Nov).
+  - **Rumors cooled; none is agreed.** The Suns and Pelicans had "a brief conversation" about Jalen Green for Dejounte Murray, with "zero traction" (Sam Amick via [Hoops Rumors, 21 Nov](https://www.hoopsrumors.com/2026/11/suns-notes-green-murray-bridges-booker-timme.html)). Golden State wants to move Kristaps Porzingis's contract, but an executive said "You're not going to see trades for another month or so" ([Heavy via Yahoo, 21 Nov](https://sports.yahoo.com/articles/nba-trade-rumors-lakers-celtics-235900828.html)).
+  - **Releases and buyouts (20–22 Nov):** none found. Taurean Prince (DET), the release candidate named yesterday, is still on the roster after knee surgery, with no timeline from J.B. Bickerstaff ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/bickerstaff-no-timeline-for-prince-okorie); *ESPN est.* 13 Dec).
+  - **Caveat:** US news for 22 Nov had barely started when I searched. The RealGM (403), Spotrac (402) and ESPN transaction pages would not load.
+- **Verdict:** no trade or release adds a new player. No override row: no source gives Clifford an ongoing role with stated minutes.
+  - **Clifford: unchanged.** He is a bench wing at about 17 min, and Rate 10.6 is still far below a stream. If SGA sits on 22 Nov with Caruso out, he may get a few extra minutes for one night, but that is a possibility, not a role change, and no source projects it.
 
 ## Sources
 
 - ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-22 07:27 UTC.
+- **Research, 22 Nov:** [ESPN game page, 22 Nov](https://www.espn.com/nba/game/_/gameId/401910030/thunder-heat) · [Heavy, updated 21 Nov](https://heavy.com/sports/nba/oklahoma-city-thunder/injury-report-vs-heat-november-22/) · [NBC Sports, 21 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/shai-gilgeous-alexander-back-questionable-sunday) · [RotoWire, 21 Nov](https://www.rotowire.com/basketball/headlines/jaylin-williams-injury-wont-play-sunday-540381) · [Hoops Rumors, 17 Nov](https://www.hoopsrumors.com/2026/11/2026-27-in-season-nba-trades.html) · [Hoops Rumors, read 22 Nov](https://www.hoopsrumors.com/) · [Hoops Rumors transactions](https://www.hoopsrumors.com/transactions) · [B-Ref](https://www.basketball-reference.com/leagues/NBA_2027_transactions.html) · [CBS](https://www.cbssports.com/nba/transactions/) · [Hoops Rumors, 21 Nov](https://www.hoopsrumors.com/2026/11/suns-notes-green-murray-bridges-booker-timme.html) · [Heavy via Yahoo, 21 Nov](https://sports.yahoo.com/articles/nba-trade-rumors-lakers-celtics-235900828.html) · [NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/bickerstaff-no-timeline-for-prince-okorie)
