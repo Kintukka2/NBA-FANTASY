@@ -1,0 +1,643 @@
+{
+ "key": "20261122-0734",
+ "date": "20261122",
+ "when_utc": "2026-11-22T07:34:00+00:00",
+ "roster": [
+  {
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Scottie Barnes",
+   "team": "TOR",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Duren",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "slot": "roster"
+  },
+  {
+   "player": "Kawhi Leonard",
+   "team": "TOR",
+   "slot": "IR"
+  },
+  {
+   "player": "Paul George",
+   "team": "BOS",
+   "slot": "roster"
+  },
+  {
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "slot": "roster"
+  },
+  {
+   "player": "Anthony Black",
+   "team": "ORL",
+   "slot": "roster"
+  },
+  {
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "slot": "roster"
+  },
+  {
+   "player": "Saddiq Bey",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Yves Missi",
+   "team": "NO",
+   "slot": "roster"
+  },
+  {
+   "player": "Matas Buzelis",
+   "team": "CHI",
+   "slot": "roster"
+  },
+  {
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "slot": "roster"
+  }
+ ],
+ "overrides": [
+  {
+   "player": "CJ McCollum",
+   "kind": "role",
+   "value": "23",
+   "until": "2026-11-22",
+   "source": "https://www.rotowire.com/basketball/headlines/cj-mccollum-news-leads-hawks-bench-with-21-points-538466",
+   "note": "Bench 4 straight (25, 23, 21, 24 min) behind Kingston Flemings, including after Jalen Johnson returned 7 Nov; \"a bench role could cap his minutes\" (RotoWire, 10 Nov)"
+  },
+  {
+   "player": "Jalen Suggs",
+   "kind": "role",
+   "value": "30",
+   "until": "2026-11-22",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/magics-jalen-suggs-hot-shooting-not-enough-in-loss/",
+   "note": "Starter; over 31 min on 18 Nov with no limit mentioned (CBS/RotoWire, 19 Nov), after 21 and 25; replaces the 25-min row."
+  },
+  {
+   "player": "Tyrese Proctor",
+   "kind": "role",
+   "value": "27",
+   "until": "2026-11-22",
+   "source": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/jaylon-tyson-ankle-out-wednesday-vs-grizzlies",
+   "note": "\"Should continue to log additional minutes while Tyson is out\" (NBC Sports, 18 Nov); 29 and 26 min in starts 16 and 18 Nov; Tyson out Fri 20 Nov."
+  },
+  {
+   "player": "Jalen Duren",
+   "kind": "return",
+   "value": "2026-11-24",
+   "until": "",
+   "source": "https://sports.yahoo.com/articles/detroit-pistons-release-injury-report-082256509.html",
+   "note": "Floor: still out 20 Nov, 'set to be re-evaluated next week' (Heavy via Yahoo 20 Nov); two-week re-eval from 8 Nov ~22 Nov; first DET game after it is Tue 24 Nov at ORL; replaces the 23 Nov row"
+  },
+  {
+   "player": "Daniss Jenkins",
+   "kind": "role",
+   "value": "37",
+   "until": "2026-11-23",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/pistons-daniss-jenkins-pours-in-25-points/",
+   "note": "Starting role (RotoWire 18 Nov); started again 20 Nov with Cunningham back and Joe on the bench (39 min, ESPN box); 35/38/36/39 min in regulation starts; ends at Duren's return (first possible game 24 Nov); replaces the 35-min row ending 22 Nov"
+  },
+  {
+   "player": "Aday Mara",
+   "kind": "role",
+   "value": "27",
+   "until": "2026-12-05",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/thunders-aday-mara-records-2216-double-double/",
+   "note": "\"Fixture in the starting lineup with Chet Holmgren (knee) sidelined\" (CBS/RotoWire 20 Nov); 26, 27, 29 min in last 3 (bench or start), 26.4 min L5 (Yahoo 19 Nov); Holmgren out 8-10 weeks from 30 Oct. Remove when Holmgren returns."
+  },
+  {
+   "player": "Maxime Raynaud",
+   "kind": "return",
+   "value": "2026-11-25",
+   "until": "",
+   "source": "https://www.cbssports.com/fantasy/basketball/news/kings-maxime-raynaud-still-out-wednesday/",
+   "note": "Floor: \"week-to-week\" (RotoWire/CBS 18 Nov), no timeline (James Ham via NBC 12 Nov); out again Fri 20 Nov at LAL (official report); 7 days after the note."
+  },
+  {
+   "player": "Dejounte Murray",
+   "kind": "return",
+   "value": "2026-11-26",
+   "until": "",
+   "source": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_07_30PM.pdf",
+   "note": "Floor kept from the 19 Nov out report (not yet passed; next NOP game is 27 Nov @LAC); out again Fri 20 Nov at OKC (left ankle); sitting until traded (Charania via HoopsHype/Yahoo 13 Nov); \"no traction\" on a trade (Yahoo 20 Nov). Remove if traded."
+  },
+  {
+   "player": "Scotty Pippen Jr.",
+   "kind": "return",
+   "value": "2026-11-23",
+   "until": "",
+   "source": "https://sports.yahoo.com/articles/grizzlies-gg-jackson-ii-needs-172020038.html",
+   "note": "Floor: Grizzlies 16 Nov, \"considered week-to-week\", no re-evaluation date; out again Sat 21 Nov at MIN (official report 21 Nov 1:30 AM). Floor not yet passed; unchanged."
+  },
+  {
+   "player": "Mo Bamba",
+   "kind": "role",
+   "value": "20",
+   "until": "2026-11-27",
+   "source": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/jusuf-nurkic-toe-to-be-re-evaluated-in-one-week",
+   "note": "Back to the bench 20 Nov (20 min) after Hayes reclaimed the start (NBC 20 Nov); Bamba and Hayes split center until Nurkic's re-evaluation 27 Nov; 17-23 min with Hayes active. Remove if Hayes is ruled out."
+  },
+  {
+   "player": "Jaxson Hayes",
+   "kind": "role",
+   "value": "26",
+   "until": "2026-11-27",
+   "source": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/jazz-start-keyonte-darryn-green-ace-hayes",
+   "note": "Back in the starting five 20 Nov (28 min) after a 25-min bench return 18 Nov; splits center with Bamba until Nurkic's re-evaluation 27 Nov (NBC 20 Nov). Hip knock 20 Nov: remove if he is listed out."
+  },
+  {
+   "player": "Kevin Huerter",
+   "kind": "role",
+   "value": "35",
+   "until": "2026-11-24",
+   "source": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/kevin-huerter-scores-20-points-as-starter",
+   "note": "Starting while Robinson (left quad) is out (NBC 20 Nov); 36, 36, 36 min in 3 starts, incl. with Cunningham back 20 Nov; Robinson re-evaluated ~24 Nov (CBS 17 Nov). Remove when Robinson is cleared."
+  },
+  {
+   "player": "Jusuf Nurkic",
+   "kind": "return",
+   "value": "2026-11-28",
+   "until": "",
+   "source": "https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-3",
+   "note": "Jazz 20 Nov: \"will be re-evaluated in one week\" (about 27 Nov); first possible game the day after. Bamba and Hayes cover center for at least four more games (NBC 20 Nov). Replaces the 26 Nov floor."
+  },
+  {
+   "player": "Ja Morant",
+   "kind": "return",
+   "value": "2026-11-28",
+   "until": "",
+   "source": "https://www.kptv.com/2026/10/30/blazers-guard-ja-morant-out-least-4-weeks-due-hamstring-injury/",
+   "note": "Blazers 30 Oct: grade 2 left hamstring strain, \"will be re-evaluated in four weeks\" (~27 Nov); first possible game the day after (Sun 29 Nov vs NOP). Out again Sat 21 Nov at NYK (official report 21 Nov 1:30 AM); Nori 7 Nov \"may not be out for as long as we thought\", no new timetable. Floor, not a confirmed return."
+  }
+ ],
+ "reports": [
+  {
+   "kind": "matchup",
+   "file": "20261122-matchup5.md",
+   "title": "Matchup 5: Come-in Cider vs Snow Time Lakers",
+   "generated": "2026-11-22T07:34:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "news-watch",
+   "file": "20261122-news-watch.md",
+   "title": "News watch: 22 Nov 2026",
+   "generated": "2026-11-22T07:27:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "injury-watch",
+   "file": "20261122-injury-watch.md",
+   "title": "Injury Watch: 22 Nov 2026",
+   "generated": "2026-11-22T07:27:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "slump-watch",
+   "file": "20261122-slump-watch.md",
+   "title": "Slump Watch: 22 Nov 2026",
+   "generated": "2026-11-22T07:27:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "trade-watch",
+   "file": "20261122-trade-watch.md",
+   "title": "Trade watch: 22 Nov 2026",
+   "generated": "2026-11-22T07:27:00+00:00",
+   "versions": []
+  },
+  {
+   "kind": "rookies",
+   "file": "20261122-rookies.md",
+   "title": "Rookies against projection",
+   "generated": "2026-11-22T07:27:00+00:00",
+   "versions": []
+  }
+ ],
+ "matchup": {
+  "title": "Matchup 5: Come-in Cider vs Snow Time Lakers",
+  "score": [
+   1248,
+   1411
+  ],
+  "adds": {
+   "used": 6,
+   "limit": 7,
+   "left": 1
+  },
+  "projection": [
+   1568,
+   1661
+  ],
+  "moves": [
+   {
+    "day": "Sun 22 Nov",
+    "drop": "Yves Missi",
+    "add": "Kevin Huerter",
+    "team": "DET",
+    "by_et": "",
+    "by_mel": "Mon 23 07:30AM",
+    "drop_after": null,
+    "add_before": {
+     "day": "Sun 22 Nov",
+     "opp": null,
+     "tip_mel": "Mon 23 07:30AM"
+    },
+    "lock_mel": "Mon 23 07:30AM"
+   }
+  ],
+  "best": {
+   "adds": 1,
+   "gain": "+31.3"
+  },
+  "holding": null,
+  "plan_title": "Plan (07:40 UTC 22 Nov, after the news watch): one day, one add, 93 behind on projection",
+  "plan_md": "\n**Where things stand:**\n- **Score after Sat 21 Nov:** **1,248 to 1,411**, down 163.\n- **Saturday:** we scored 81, they scored 282.\n  - Ours: Paul George 45, Yves Missi 35, Saddiq Bey 1, Trey Murphy III 0.\n  - Theirs: Tyler Herro 95, Donovan Clingan 66, Deni Avdija 44, Cedric Coward 41, Kyrie Irving 36.\n- **Roster moves recorded (ESPN sync):** none for us. Snow Time Lakers picked up **Aday Mara** (21 Nov).\n- **Adds:** 6 used this matchup of 7, so **1 left**.\n- **With no more moves:** 8 of ours play Sunday (320) against 6 of theirs (250). The final is **1,568 to 1,661**.\n\n**Research that matters for Sunday** (news watch, 22 Nov):\n- **Murphy's 0** was planned knee maintenance on the back-to-back. He is back Mon 23 Nov (*ESPN est.* 23 Nov).\n- **Bey's 1** came from 1-of-12 shooting in 32 minutes, not an injury.\n- **Jalen Smith** is questionable with a gastrointestinal illness: a game-time call. No timetable reported; *ESPN est.* 22 Nov. If he sits, the final drops to about **1,525 to 1,661**.\n- **Cade Cunningham** is probable. **Paul George**'s Sunday is the second night of Boston's back-to-back, and nothing has been announced.\n- **Their side:**\n  - **Kyrie Irving** is a Sunday rest risk: he sat the second night of 2 of 3 back-to-backs. If he sits, they lose about 44.\n  - **Herro, Kessler and Brown** have no Sunday game.\n\n**The plans scored** (`council/matchup.py`; theirs 250):\n\n| Plan | **Sun 22** \u00b7 adds by **Mon 7:30 AM** | Lineup | Final |\n|---|---|---:|---|\n| **Huerter (the plan)** | Missi \u2192 Kevin Huerter | **351.3** (320 + 31.3) | **about 1,599 to 1,661** |\n| Queta | Missi \u2192 Neemias Queta | 350.9 | about 1,599 to 1,661 |\n| Hayes | Missi \u2192 Jaxson Hayes | 350.2 | about 1,598 to 1,661 |\n| Pritchard | Missi \u2192 Payton Pritchard | 347.3 | about 1,595 to 1,661 |\n| No moves | \u2014 | 320 | 1,568 to 1,661 |\n\n**Verdict:**\n- **Missi \u2192 Kevin Huerter.** He is a confirmed starter at 36 min, with no back-to-back. Queta is level on projection but could rest on the second night.\n- **Winning now needs about 62 points over projection on Sunday.** An Irving rest would cover about 44 of that, so big nights from our side are needed too.\n- **Plan line:** 1 add.\n\n**Steps, Melbourne time:**\n1. **Drop Yves Missi** any time: he has no game Sunday.\n2. **Add Kevin Huerter before 7:30 AM Mon 23.** DET @ ATL, his game, is Sunday's first tip-off (3:30 PM ET), so his tip-off is also the deadline.\n3. **Lineup:** start every Sunday player. With Huerter, 9 play for 10 slots.\n   - Jalen Smith is a game-time call (CHI vs DEN, 11:00 AM Mon).\n   - We have no bench player with a Sunday game to swap in, so leave him in.\n\n**Form:**\n\n| Player | Rate | Season | L7 | L15 | L30 | ESPN proj. |\n|---|---:|---:|---:|---:|---:|---:|\n| Kevin Huerter | 31.3 \u2021 (rate 28.4) | 23.9 (15) | 30.0 (4) | 32.6 (7) | 24.9 (14) | 22.9 |\n| Neemias Queta | 30.9 | 27.4 (15) | 35.0 (3) | 29.3 (7) | 27.9 (14) | 27.2 |\n| Jaxson Hayes | 30.2 \u2021 (rate 29.7) | 28.3 (14) | 34.5 (2), small sample | 28.7 (7) | 27.0 (13) | 16.5 |\n| Jalen Smith | 43.0 | 36.1 (13) \u2192 38.3 (12) | 48.0 (2), small sample | 46.8 (5) | 36.4 (12) \u2192 38.8 (11) | 22.4 |\n| Saddiq Bey | 33.8 | 29.4 (18) \u2192 31.1 (17) | 29.6 (5) \u2192 36.8 (4) | 29.9 (10) \u2192 33.1 (9) | 30.2 (17) \u2192 32.1 (16) | 25.9 |\n| Trey Murphy III | 36.6 | 31.7 (10) | 38.0 (1), small sample | 38.3 (3) | 33.4 (9) | 36.8 |\n\n**Why the L7s are 5+ off the season:**\n- **Huerter, +6.1:** starting at 36.5 min, against 26.7 for the season.\n- **Queta, +7.6:** more minutes (24.0 against 22.8) and a 29-FP start on Saturday.\n- **Hayes, +6.2:** back in the starting five; two games, a small sample.\n- **Smith, +11.9:** two games, a small sample.\n- **Murphy, +6.3:** one game, a small sample.\n- **Bey:** his 1-FP game is dropped as an outlier (29.6 \u2192 36.8).\n",
+  "swaps": []
+ },
+ "news-watch": {
+  "flags": [
+   {
+    "player": "Jalen Duren",
+    "team": "DET",
+    "league": "us",
+    "flags": "injury, gap",
+    "rate": "44.1 \u2020",
+    "status": "out, ESPN est. 24 Nov"
+   },
+   {
+    "player": "Jalen Smith",
+    "team": "CHI",
+    "league": "us",
+    "flags": "minutes, rest",
+    "rate": "43.0",
+    "status": "day-to-day, ESPN est. 22 Nov"
+   },
+   {
+    "player": "Saddiq Bey",
+    "team": "NO",
+    "league": "us",
+    "flags": "minutes",
+    "rate": "33.8",
+    "status": "active"
+   },
+   {
+    "player": "Daniss Jenkins",
+    "team": "DET",
+    "league": "us",
+    "flags": "minutes",
+    "rate": "33.3",
+    "status": "active"
+   },
+   {
+    "player": "Cade Cunningham",
+    "team": "DET",
+    "league": "us",
+    "flags": "rest",
+    "rate": "50.1",
+    "status": "day-to-day, ESPN est. 22 Nov"
+   },
+   {
+    "player": "Anthony Black",
+    "team": "ORL",
+    "league": "us",
+    "flags": "rest",
+    "rate": "38.6",
+    "status": "active"
+   },
+   {
+    "player": "Paul George",
+    "team": "BOS",
+    "league": "us",
+    "flags": "rest",
+    "rate": "37.1",
+    "status": "active"
+   },
+   {
+    "player": "Jusuf Nurkic",
+    "team": "UTAH",
+    "league": "free agent",
+    "flags": "injury",
+    "rate": "36.7",
+    "status": "out, ESPN est. 29 Nov"
+   },
+   {
+    "player": "Maxime Raynaud",
+    "team": "SAC",
+    "league": "free agent",
+    "flags": "injury",
+    "rate": "28.1",
+    "status": "out, ESPN est. 25 Nov"
+   },
+   {
+    "player": "Dejounte Murray",
+    "team": "NO",
+    "league": "free agent",
+    "flags": "injury, minutes, gap",
+    "rate": "23.8",
+    "status": "out, ESPN est. 27 Nov"
+   },
+   {
+    "player": "Scotty Pippen Jr.",
+    "team": "MEM",
+    "league": "free agent",
+    "flags": "injury, gap",
+    "rate": "14.8",
+    "status": "out, ESPN est. 25 Nov"
+   },
+   {
+    "player": "Bennedict Mathurin",
+    "team": "NO",
+    "league": "free agent",
+    "flags": "injury",
+    "rate": "8.1",
+    "status": "out, ESPN est. 27 Nov"
+   },
+   {
+    "player": "Brayden Burries",
+    "team": "MIL",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "30.1",
+    "status": "active"
+   },
+   {
+    "player": "Jaxson Hayes",
+    "team": "UTAH",
+    "league": "free agent",
+    "flags": "role, rest",
+    "rate": "29.7",
+    "status": "active"
+   },
+   {
+    "player": "Jakob Poeltl",
+    "team": "TOR",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "29.4",
+    "status": "active"
+   },
+   {
+    "player": "Kevin Huerter",
+    "team": "DET",
+    "league": "free agent",
+    "flags": "role, minutes",
+    "rate": "28.4",
+    "status": "active"
+   },
+   {
+    "player": "Derik Queen",
+    "team": "NO",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "28.2",
+    "status": "active"
+   },
+   {
+    "player": "Grayson Allen",
+    "team": "CHA",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "27.3",
+    "status": "day-to-day, ESPN est. 23 Nov"
+   },
+   {
+    "player": "Payton Pritchard",
+    "team": "BOS",
+    "league": "free agent",
+    "flags": "role",
+    "rate": "27.3",
+    "status": "active"
+   },
+   {
+    "player": "Jaylon Tyson",
+    "team": "CLE",
+    "league": "free agent",
+    "flags": "role, minutes",
+    "rate": "22.4",
+    "status": "out, ESPN est. 23 Nov"
+   },
+   {
+    "player": "Quentin Grimes",
+    "team": "LAL",
+    "league": "free agent",
+    "flags": "minutes",
+    "rate": "33.8",
+    "status": "active"
+   },
+   {
+    "player": "Caleb Wilson",
+    "team": "CHI",
+    "league": "free agent",
+    "flags": "minutes",
+    "rate": "31.6",
+    "status": "out, ESPN est. 13 Dec"
+   },
+   {
+    "player": "P.J. Washington",
+    "team": "DAL",
+    "league": "free agent",
+    "flags": "minutes",
+    "rate": "29.0",
+    "status": "out, ESPN est. 22 Nov"
+   },
+   {
+    "player": "Dean Wade",
+    "team": "PHI",
+    "league": "free agent",
+    "flags": "minutes",
+    "rate": "27.1",
+    "status": "out, ESPN est. 23 Nov"
+   },
+   {
+    "player": "Neemias Queta",
+    "team": "BOS",
+    "league": "free agent",
+    "flags": "rest",
+    "rate": "30.9",
+    "status": "active"
+   },
+   {
+    "player": "Myles Turner",
+    "team": "MIL",
+    "league": "free agent",
+    "flags": "rest",
+    "rate": "27.2",
+    "status": "active"
+   },
+   {
+    "player": "Ja Morant",
+    "team": "POR",
+    "league": "free agent",
+    "flags": "gap",
+    "rate": "31.1",
+    "status": "out, ESPN est. 01 Dec"
+   },
+   {
+    "player": "Tobias Harris",
+    "team": "SA",
+    "league": "free agent",
+    "flags": "gap",
+    "rate": "28.0",
+    "status": "out, ESPN est. 03 Dec"
+   },
+   {
+    "player": "Jaylen Brown",
+    "team": "PHI",
+    "league": "Snow Time Lakers",
+    "flags": "injury",
+    "rate": "44.1",
+    "status": "out, ESPN est. 23 Nov"
+   },
+   {
+    "player": "Evan Mobley",
+    "team": "CLE",
+    "league": "Matt Wright's Foxies",
+    "flags": "injury, gap",
+    "rate": "37.1",
+    "status": "out, ESPN est. 29 Nov"
+   },
+   {
+    "player": "Aday Mara",
+    "team": "OKC",
+    "league": "Snow Time Lakers",
+    "flags": "role",
+    "rate": "38.4",
+    "status": "active"
+   },
+   {
+    "player": "Brandin Podziemski",
+    "team": "GS",
+    "league": "Matt Wright's Foxies",
+    "flags": "minutes",
+    "rate": "28.1",
+    "status": "active"
+   },
+   {
+    "player": "Walker Kessler",
+    "team": "LAL",
+    "league": "Snow Time Lakers",
+    "flags": "rest",
+    "rate": "42.2",
+    "status": "active"
+   },
+   {
+    "player": "Tyler Herro",
+    "team": "MIL",
+    "league": "Snow Time Lakers",
+    "flags": "rest",
+    "rate": "41.5",
+    "status": "active"
+   },
+   {
+    "player": "Pascal Siakam",
+    "team": "IND",
+    "league": "Matt Wright's Foxies",
+    "flags": "rest",
+    "rate": "40.5",
+    "status": "day-to-day, ESPN est. 22 Nov"
+   },
+   {
+    "player": "Andrew Nembhard",
+    "team": "IND",
+    "league": "Matt Wright's Foxies",
+    "flags": "rest",
+    "rate": "30.8",
+    "status": "active"
+   },
+   {
+    "player": "De'Aaron Fox",
+    "team": "SA",
+    "league": "Matt Wright's Foxies",
+    "flags": "rest",
+    "rate": "23.9",
+    "status": "active"
+   },
+   {
+    "player": "Paolo Banchero",
+    "team": "ORL",
+    "league": "Dr White Slong",
+    "flags": "injury, gap",
+    "rate": "56.8 \u2020",
+    "status": "out, ESPN est. 29 Nov"
+   },
+   {
+    "player": "Tyrese Maxey",
+    "team": "PHI",
+    "league": "Team Nic Kerr",
+    "flags": "injury",
+    "rate": "43.0",
+    "status": "active"
+   },
+   {
+    "player": "Brandon Ingram",
+    "team": "LAC",
+    "league": "Melbourne poopoo",
+    "flags": "injury",
+    "rate": "36.5",
+    "status": "out, ESPN est. 23 Nov"
+   }
+  ],
+  "changed_md": "\n- **Our players:**\n  - **Trey Murphy III** sat Saturday at SA, the second night of a back-to-back, listed as \"bilateral patellar tendinopathy injury maintenance\". It was planned, not a setback. He is due back Mon 23 Nov vs PHX (*ESPN est.* 23 Nov). New Orleans does not play Sunday.\n  - **Saddiq Bey's 1 FP** on Saturday was not an injury. He played 32 min and shot 1-of-12 in a 114-91 loss. `gamelog.py` drops it as an outlier.\n  - **Jalen Smith** is questionable for Sun vs DEN with a gastrointestinal illness: a game-time call. No timetable reported; *ESPN est.* 22 Nov. His rest flag was a misread: his 14 Nov absence was a finger sprain.\n  - **Cade Cunningham** is probable for Sun at ATL (minor right knee soreness). Detroit is not on a back-to-back, so neither he nor **Daniss Jenkins** (still starting) is a Sunday rest risk.\n  - **Jalen Duren** is out Sunday. He could be back \"possibly later this week\"; earliest game Tue 24 Nov; *ESPN est.* 24 Nov.\n  - **Paul George:** Boston's Sunday report was not filed at 2:30 AM ET. Sunday at GS is the second night of a back-to-back, and nothing has been announced.\n  - **Anthony Black:** plays Sun at WAS; Orlando is not on a back-to-back.\n- **Sunday streams:**\n  - **Kevin Huerter** starts again with Duncan Robinson out (re-evaluation about 24 Nov; *ESPN est.* 27 Nov).\n  - **Jaxson Hayes** is off Utah's Sunday report and keeps the start.\n  - **Neemias Queta** carries the same back-to-back risk as George.\n  - **Payton Pritchard** started Saturday, and starts Sunday only if Derrick White sits (*ESPN est.* 22 Nov).\n  - **P.J. Washington** missed Saturday with an illness and is a game-day call.\n- **Our opponent (Snow Time Lakers):**\n  - **Aday Mara** (picked up 21 Nov) is healthy and should start Sun at MIA.\n  - **Tyler Herro** (95 FP Saturday) and **Walker Kessler** have no game Sunday, and **Jaylen Brown** has no games left this week.\n  - **Kyrie Irving** is a Sunday rest risk at UTA (he sat the second night of 2 of 3 back-to-backs).\n  - **Jayson Tatum** sat Saturday and is expected back Sunday.\n- **Overrides:** no changes. Every row was confirmed or restated with the same value, and none has expired. Brandon Ingram is still not added: his debut is reported for 23 Nov, the same as ESPN's estimate, and the source could not be opened.\n- **Re-run the matchup:** yes, for Sunday's add.\n"
+ },
+ "slump-watch": {
+  "flagged": [
+   {
+    "player": "Josh Giddey",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-14.9"
+   },
+   {
+    "player": "LaMelo Ball",
+    "fantasy": "Cream Abdul-Yammar",
+    "gap": "-12.2"
+   }
+  ],
+  "headline": "2 rostered players are 10+"
+ },
+ "injury-watch": {
+  "shortlist": [
+   "Kevin Huerter",
+   "Jaxson Hayes",
+   "Neemias Queta",
+   "Christian Braun",
+   "Brayden Burries"
+  ],
+  "injuries": 110
+ },
+ "trade-watch": {
+  "trades": [
+   {
+    "date": "08 Nov",
+    "player": "Nique Clifford",
+    "move": "SAC \u2192 OKC"
+   }
+  ]
+ },
+ "files": [
+  "20261122-matchup5.md",
+  "20261122-news-watch.md",
+  "20261122-injury-watch.md",
+  "20261122-slump-watch.md",
+  "20261122-trade-watch.md",
+  "20261122-rookies.md"
+ ]
+}

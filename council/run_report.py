@@ -222,7 +222,7 @@ def line_moves(text, md):
         mv = {"day": day, "drop": drop, "add": add, "team": team, "by_et": "", "by_mel": ""}
         at = days.index(day) if day in days else len(days)
         dteam = joined.get(drop, (teams.get(drop), 0))
-        if dteam[0] and tip_days(dteam[0]):
+        if dteam[0]:  # no game left before the move reads as "drop any time"
             before = [d for d in tip_days(dteam[0]) if dteam[1] <= days.index(d) < at]
             mv["drop_after"] = None
             if before:
