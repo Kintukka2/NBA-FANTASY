@@ -325,7 +325,11 @@ Summary:
 - **Role:** started 1 of his last 2 games after 2 of 11 before; 30.0 min in his starts, against 27.2 for the season
 - News (19 Nov): Allen (concussion) has been ruled out for Friday's game against Atlanta.
 - News (17 Nov): Allen (concussion-like symptoms) has been ruled out for Tuesday's game against the Lakers.
-- **Research:** _pending_
+- **Research:**
+  - Injury: unchanged since 21 Nov. He is in the NBA's concussion protocol after missing 17 and 20 Nov. He "will have to pass a series of checkpoints and show he's symptom-free" before he is cleared, and no timeline has been given ([Hoops Rumors, 20 Nov](https://www.hoopsrumors.com/2026/11/hornets-notes-white-james-allen-steinbach.html); [NBA injury report, 20 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_08_30PM.pdf)). ESPN changed his tag from Out to Day-To-Day on 21 Nov, but I found no report that he has cleared a step. Charlotte has no game on 21 or 22 Nov, and its report for Mon 23 Nov vs MEM was not yet submitted ([NBA injury report, 22 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf)).
+  - Role: his starts came while Miller (groin) was out, and he went back to the bench on 15 Nov. On 17 Nov Charlotte started big with Grant Williams, who NBC expects to "move back to the bench when Allen returns" ([NBC Sports, 19 Nov](https://www.nbcsports.com/nba/news/2026-27-nba-minutes-report-how-injuries-to-austin-reaves-alperen-sengun-shake-up-two-contenders)). Knueppel (hamstring) is out at least four weeks from 8 Nov, so a re-evaluation about 6 Dec (*ESPN est.* 12 Dec) ([CBS/RotoWire, 8 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-kon-knueppel-out-at-least-four-weeks/)). Once he is cleared, expect about 25–27 min, mostly off the bench.
+  - **Expected return:** no timetable reported (concussion protocol). *ESPN est.* 23 Nov, which is Charlotte's next game (vs MEM), not a reported date.
+  - **Verdict:** nothing new found. No report supports the Day-To-Day tag or 23 Nov, and he still has to clear the protocol.
 
 ### Payton Pritchard (BOS, PG/SG, free agent)
 
@@ -348,7 +352,11 @@ Summary:
 - **Minutes:** 29.0 min over his last 3 games against 23.9 for the season (+5.1)
 - News (19 Nov): Tyson (ankle) has been ruled out for Friday's game against Indiana.
 - News (18 Nov): Tyson (ankle) has been ruled out for Wednesday's game against Memphis.
-- **Research:** _pending_
+- **Research:**
+  - Injury: unchanged since 21 Nov. He missed 16, 18 and 20 Nov with "Right Ankle Injury Management" ([NBA injury report, 20 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-20_08_30PM.pdf)), and the Cavs have given no timetable ([Heavy, 20 Nov](https://heavy.com/sports/nba/cleveland-cavaliers/injury-report-pacers-game-november-20)). Cleveland had the weekend off, and its next game is Mon 23 Nov at CHI ([Cavaliers, 20 Nov](https://www.nba.com/cavaliers/news/preview-indcle-261120)). Its report for that game was not yet submitted ([NBA injury report, 22 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf)). I found no practice news from 21–22 Nov.
+  - Role and minutes: his two starts (30 and 34 min) came "sans Mobley" ([NBC Sports, 13 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/cle-starts-harden-mitchell-tyson-watson-allen)). Evan Mobley (left great toe) is re-evaluated after 7–10 days of rehab from 16 Nov ([Cavaliers, 16 Nov](https://www.nba.com/cavaliers/news/releases-evan-mobley-261116); *ESPN est.* 29 Nov). The start ends when Mobley returns. No source gives Tyson's minutes when he comes back.
+  - **Expected return:** no timetable reported. His next chance is Mon 23 Nov at CHI. *ESPN est.* 23 Nov.
+  - **Verdict:** nothing new found. 23 Nov is only his next chance, and no source confirms or contradicts it.
 
 ### Quentin Grimes (LAL, SG/SF, free agent)
 
@@ -357,7 +365,11 @@ Summary:
 - **Minutes:** 37.3 min over his last 3 games against 29.1 for the season (+8.3)
 - News (21 Nov): Grimes logged 13 points (2-7 FG, 1-5 3Pt, 8-9 FT), five rebounds and seven assists in 35 minutes during Friday's 106-104 victory over the Kings.
 - News (19 Nov): Grimes ended with 20 points (8-20 FG, 4-10 3Pt), seven rebounds and four assists over 35 minutes during Wednesday's 109-97 loss to Utah.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: these still come from the starting role he took while Reaves is out. Austin Reaves (left heel contusion/bone bruise) missed his fourth straight game on 20 Nov. Redick: "Hopefully he'll be back in one of the next two games", meaning Mon 23 Nov vs UTA or Fri 27 Nov at SAS ([ClutchPoints, 20 Nov](https://clutchpoints.com/nba/los-angeles-lakers/lakers-news-jj-redick-optimistic-update-austin-reaves-injury-return-timetable); [CBS/RotoWire, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/lakers-austin-reaves-expected-to-return-monday-or-friday/)). A 21 Nov LA Sports Report piece repeats this but calls the Spurs game Wednesday. ESPN's schedule has LAL at SAS on Fri 27 Nov ([Yahoo/LA Sports Report, 21 Nov](https://sports.yahoo.com/articles/austin-reaves-given-return-timeline-220000816.html)). The Lakers' report for 23 Nov was not yet submitted ([NBA injury report, 22 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf)).
+  - Role once Reaves returns: NBC expects Reaves's return to "push Matisse Thybulle to the bench and limit usage for Quentin Grimes" ([NBC Sports, 19 Nov](https://www.nbcsports.com/nba/news/2026-27-nba-minutes-report-how-injuries-to-austin-reaves-alperen-sengun-shake-up-two-contenders)). Lakers Nation sees him as a key piece "coming off the bench" ([Lakers Nation, 16 Nov](https://lakersnation.com/quentin-grimes-embraced-bigger-offensive-role-with-austin-reaves-out/)). Sources disagree on whether he keeps the start, but they agree his usage falls. LAL has no game on 21 or 22 Nov.
+  - **Expected return (Reaves):** hoped for 23 Nov or 27 Nov (Redick, 20 Nov). *ESPN est.* 23 Nov.
+  - **Verdict:** nothing new found. The big role lasts only until Reaves returns, possibly Mon 23 Nov, so no row.
 
 ### Caleb Wilson (CHI, SF, free agent)
 
@@ -366,7 +378,11 @@ Summary:
 - **Minutes:** 23.0 min over his last 3 games against 30.7 for the season (−7.7)
 - News (12 Nov): Wilson is undergoing surgery for a fractured right hand and will miss at least four to six weeks, Shams Charania of ESPN reports.
 - News (11 Nov): Wilson won't return to Wednesday's game against the Spurs due to a right hand injury. He'll finish with 15 points (5-7 FG, 2-2 3Pt, 3-3 FT), five rebounds and one steal in 15 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Injury: the Bulls say his 12 Nov hand surgery was successful and that he "will be re-evaluated in three weeks", which is about 3 Dec ([Bulls, 12 Nov](https://www.nba.com/bulls/news/caleb-wilson-medical-update)). New: an AP story on 21 Nov says he is still expected to miss four to six weeks. He is running and working on his left hand, and he said "I'll play again in a couple weeks" ([AP via Yahoo, 21 Nov](https://sports.yahoo.com/articles/bulls-rookie-caleb-wilson-looking-012217305.html)). SI expects the next real update at the re-evaluation on 3 Dec ([SI, 20 Nov](https://www.si.com/nba/bulls/onsi/bulls-injury-report-not-the-game-to-be-without-a-big-man-a-peek-at-caleb-wilson-20)). He is Out for Sun 22 Nov vs DEN with a right metacarpal fracture ([NBA injury report, 22 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf)).
+  - Minutes flag: the 23.0-min L3 figure reflects his 15-min injury exit on 11 Nov. It does not matter while he is out.
+  - **Expected return:** at least four to six weeks from 12 Nov, so 10–24 Dec, with a re-evaluation about 3 Dec. Chicago plays 3 Dec vs CLE and then not again until 13 Dec vs HOU. *ESPN est.* 13 Dec.
+  - **Verdict:** ESPN confirmed. "A couple weeks" is the player's own view, and the team's timeline has not changed.
 
 ### P.J. Washington (DAL, SF/PF, free agent)
 
@@ -389,7 +405,17 @@ Summary:
 - **Minutes:** 33.7 min over his last 3 games against 26.7 for the season (+7.0)
 - News (20 Nov): Wade (hamstring) won't play Saturday against the Bucks.
 - News (20 Nov): Wade (hamstring) participated in Friday morning's practice without restrictions, an encouraging sign for his availability for Saturday's game against the Bucks, per Tony Jones of The Athletic.
-- **Research:** _pending_
+- **Research:**
+  - Injury: he was Out Sat 21 Nov vs MIL with left hamstring tightness/soreness, his second straight miss ([NBA injury report, 21 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_11_45PM.pdf); [Yahoo, 21 Nov](https://sports.yahoo.com/articles/bucks-vs-76ers-injury-report-155845075.html)). He practised fully on 20 Nov, but the medical staff was "not quite ready to clear him". His next chance is Mon 23 Nov vs POR ([RotoWire, 20 Nov](https://www.rotowire.com/basketball/headlines/dean-wade-injury-ruled-out-for-saturday-540198)). I found no update after Saturday's game. Philadelphia's report for 23 Nov was not yet submitted ([NBA injury report, 22 Nov 2:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_15AM.pdf)). PHI has no game on Sun 22 Nov.
+  - Minutes: unchanged since 21 Nov. His 32–35 min games were spot starts for LeBron James, and Rotoworld advises streaming him mainly when he starts ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/dean-wade-hamstring-remains-out-vs-milwaukee)). No source calls the bigger role ongoing. L7 39.5 rests on 2 games (small sample).
+  - **Expected return:** his next chance is Mon 23 Nov vs POR (RotoWire, 20 Nov), with no firm timetable. *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed. A full practice and "next chance Monday" fit 23 Nov, but he has not been cleared yet.
+
+---
+**Summary**
+- No availability or role change since 21 Nov. None of the five can play Sun 22 Nov: CHA, CLE, LAL and PHI are idle, and Wilson is Out for CHI vs DEN. The 23 Nov reports for CHA, CLE, LAL and PHI were not yet submitted.
+- Allen's ESPN tag moved from Out to Day-To-Day on 21 Nov with no reported news, and he still has to clear the concussion protocol. Tyson and Wade both aim for Mon 23 Nov with no confirmation. If Tyson is out again on 23 Nov, the Tyrese Proctor role row, which ends 22 Nov, would need extending.
+- Grimes keeps the starting role only until Reaves returns. Redick hopes for 23 Nov or 27 Nov (*ESPN est.* 23 Nov), and NBC expects Grimes' usage to drop afterwards. Wilson's timeline is unchanged: re-evaluation about 3 Dec, first realistic game 13 Dec (*ESPN est.* 13 Dec). No override rows.
 
 ### Neemias Queta (BOS, C, free agent)
 
@@ -459,7 +485,11 @@ Summary:
 - **Role:** news on 20 Nov: "Mara is now listed in the starting lineup for Friday's matchup with the Pelicans, Brandon Rahbar of DailyThunder.com reports."
 - News (20 Nov): Mara posted 22 points (11-15 FG), 16 rebounds, two assists and two blocks across 29 minutes during Friday's 126-120 win over the Pelicans.
 - News (20 Nov): Mara is now listed in the starting lineup for Friday's matchup with the Pelicans, Brandon Rahbar of DailyThunder.com reports.
-- **Research:** _pending_
+- **Research:**
+  - Healthy. He is not on OKC's official report for Sun 22 Nov at MIA (6:00 PM ET). Jaylin Williams (low back spasms; no timetable reported, *ESPN est.* 23 Nov) is out again, as are Caruso and Holmgren ([NBA injury report, 22 Nov 2:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_30AM.pdf); [Heavy, 21 Nov](https://heavy.com/sports/nba/oklahoma-city-thunder/injury-report-vs-heat-november-22/)). SGA is questionable (back contusion and neck strain, *ESPN est.* 22 Nov). Mara's spot does not depend on SGA.
+  - Role: unchanged since 21 Nov. He is a "fixture in the starting lineup with Chet Holmgren (knee) sidelined," and he started on 18 and 20 Nov (22 pts, 16 reb, 29 min on 20 Nov) ([CBS/RotoWire, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-aday-mara-records-2216-double-double/); [NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/thunder-start-shai-ajay-mccain-peavy-i-hart)). He played 26, 27 and 29 min in his last three games, starting or off the bench. Holmgren is out 8–10 weeks from 30 Oct ([AP/NBA.com, 31 Oct](https://www.nba.com/news/chet-holmgren-out-8-10-weeks-with-patellar-tendon-tear); *ESPN est.* 2 Jan). His return ends the role. OKC also plays Mon 23 at IND, the second night of a back-to-back.
+  - **Verdict:** ESPN confirmed. He is active and expected to start Sunday. The existing role row of 27 min stands unchanged.
+  - Override proposed: role 27
 
 ### Brandin Podziemski (GS, PG/SG, Matt Wright's Foxies)
 
@@ -468,7 +498,11 @@ Summary:
 - **Minutes:** news on 19 Nov: "His consistent offensive involvement provides fantasy appeal, though poor shooting and fluctuating minutes limit his reliability."
 - News (20 Nov): Podziemski closed with 15 points (5-12 FG, 0-5 3Pt, 5-6 FT), three rebounds, two assists and one steal in 32 minutes during Thursday's 126-98 loss to the Grizzlies.
 - News (19 Nov): Podziemski accumulated 10 points (5-13 FG, 0-5 3Pt, 0-2 FT), three rebounds and four assists over 29 minutes during Wednesday's 116-94 loss to the Mavericks.
-- **Research:** _pending_
+- **Research:**
+  - He is not on Golden State's official report for Sun 22 Nov vs BOS (8:30 PM ET) ([NBA injury report, 22 Nov 2:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_30AM.pdf)). GS has not played since 19 Nov.
+  - Minutes: unchanged since 21 Nov. His one short game (22 min, 13 Nov) came in a 123-85 blowout at SA ([StatMuse box, 13 Nov](https://www.statmuse.com/nba/game/11-13-2026-gsw-at-sas-78603)). He has played "roughly 30 minutes per game recently" ([CBS Sports, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/warriors-brandin-podziemski-three-point-drought-extends-in-loss/)), and he played both nights of the 18–19 Nov back-to-back (29, 32 min). The dip in output comes from his shooting (0-10 from three in his last two games), not his minutes.
+  - Curry (oblique tear) is to be re-evaluated two weeks after his 12–13 Nov MRI, so about 26 Nov ([NBA.com, 13 Nov](https://www.nba.com/news/stephen-curry-out-abdominal-soreness); *ESPN est.* 12 Dec). Podziemski's extra usage lasts until Curry is back.
+  - **Verdict:** nothing new found. He is active, with steady minutes of about 30 and no role row.
 
 ### Walker Kessler (LAL, C, Snow Time Lakers)
 
@@ -477,7 +511,10 @@ Summary:
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 18 Nov: "Kessler will return to action after being held out of the front end of this back-to-back set."; sat the first night of the 17–18 Nov back-to-back, playing the games either side
 - News (21 Nov): Kessler notched 15 points (7-11 FG, 1-1 3Pt, 0-2 FT), seven rebounds, two assists, three blocks and one steal in 30 minutes during Friday's 106-104 win over Sacramento.
 - News (19 Nov): Kessler notched 10 points (3-7 FG, 4-10 FT), 11 rebounds and one assist in 31 minutes during Wednesday's 109-97 loss to the Jazz.
-- **Research:** _pending_
+- **Research:**
+  - He plays for the Lakers. LAL had no game Sat 21 and has none Sun 22. Their next game is Mon 23 Nov vs UTA (10:00 PM ET), which is on the 23 Nov slate of the [NBA injury report, 22 Nov 2:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_30AM.pdf). So he has no game left in this matchup week. His latest game was 15 pts, 7 reb and 3 blk in 30 min on 20 Nov, with no injury mentioned ([NBC Sports, 21 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/walker-kessler-with-15-and-three-blocks-in-win)).
+  - Rest flag: the 17 Nov absence was an injury (right lower-leg soreness), not rest. It was his first absence after playing all of his first 14 games ([NBA.com, 17 Nov](https://www.nba.com/news/lakers-rule-out-reaves-kessler-vs-hornets)), and he was off the report on 18 Nov ([NBC Sports, 18 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/walker-kessler-leg-off-injury-report-wednesday)). That means he played both nights of LAL's back-to-backs on 27–28 Oct, 1–2 Nov and 8–9 Nov. Nothing has been said about Sun 29–Mon 30 Nov.
+  - **Verdict:** ESPN confirmed. He is active with no rest pattern, and he does not play Sunday because LAL has no game.
 
 ### Tyler Herro (MIL, PG/SG, Snow Time Lakers)
 
@@ -486,7 +523,11 @@ Summary:
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; sat the first night of the 10–11 Nov back-to-back, playing the games either side
 - News (21 Nov): Herro recorded 50 points (15-23 FG, 7-12 3Pt, 13-13 FT), 11 rebounds, seven assists and one steal over 40 minutes during the Bucks' 132-129 loss to the 76ers on Saturday.
 - News (20 Nov): Herro totaled 19 points (7-13 FG, 4-7 3Pt, 1-3 FT), four rebounds, three assists and one steal over 31 minutes during Thursday's 124-114 loss to Portland.
-- **Research:** _pending_
+- **Research:**
+  - On 21 Nov at PHI he had a career-high 50 pts (15-23 FG, 7-12 3Pt, 13-13 FT), 11 reb and 7 ast in 40 min, a 132-129 loss. No injury or physical issue was reported ([Yahoo/AP, 21 Nov](https://sports.yahoo.com/articles/tyler-herro-career-high-50-210608557.html)). The L7 jump rests on this one game.
+  - Milwaukee is not on the Sunday 22 Nov slate. Their next game is Mon 23 at TOR, 7:30 PM ET ([NBA injury report, 22 Nov 2:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_30AM.pdf)). Saturday was his last game of this matchup week.
+  - Rest flag: unchanged since 21 Nov. The 10 Nov absence was a right knee contusion ([SI, 9 Nov](https://www.si.com/nba/bucks/onsi/the-latest-on-tyler-herro-before-bucks-face-new-york-knicks-01m7151s3wta)). He played both nights of the 23–24 Oct and 18–19 Nov back-to-backs (24 and 31 min on the second). Nothing has been said about 27–28 Nov.
+  - **Verdict:** ESPN confirmed. He is healthy, has no rest pattern, and has no game Sunday.
 
 ### Pascal Siakam (IND, PF, Matt Wright's Foxies)
 
@@ -495,7 +536,11 @@ Summary:
 - **Rest:** back-to-back Sun 22–Mon 23 Nov, Fri 27–Sat 28 Nov; news on 18 Nov: "He's been locked in over the past two games, totaling 55 points, five assists and four steals on 61.1 percent shooting from the field and 90.0 percent at the line, but despite his efforts, Indiana has suffered back-to-back losses."; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (21 Nov): Siakam (hip) is listed as questionable for Sunday's game against New York.
 - News (18 Nov): Siakam chipped in 24 points (10-17 FG, 2-2 3Pt, 2-2 FT), four rebounds, three assists, one block and three steals across 33 minutes during Wednesday's 119-104 loss to the Rockets.
-- **Research:** _pending_
+- **Research:**
+  - He is questionable for Sun 22 Nov at NYK (8:00 PM ET) with left hip soreness/tightness. The listing first appeared on Saturday's report and was unchanged at 2:30 AM ET Sunday ([NBA injury report, 22 Nov 2:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_02_30AM.pdf); [IndyStar via Yahoo, 21 Nov](https://sports.yahoo.com/articles/pacers-more-bad-news-injury-223350334.html)). No coach or team update and no cause have been given. He played 30 min on 20 Nov. If he sits, Obi Toppin may start ([CBS/RotoWire, 21 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-pascal-siakam-questionable-versus-knicks/)).
+  - Rest flag: IND plays Sun 22 at NYK and Mon 23 vs OKC. He sat for rest on 2 Nov, the second night of a back-to-back ([Yahoo Sports, 2 Nov](https://sports.yahoo.com/articles/pacers-resting-pascal-siakam-could-183414500.html)), and he played both nights of 25–26 Oct. No sit has been announced for 23 Nov or 27–28 Nov. The hip adds risk on Monday, but no source says so.
+  - **Expected return:** no timetable reported. Sunday at NYK is a game-day call. *ESPN est.* 22 Nov.
+  - **Verdict:** ESPN confirmed. Day-to-day matches the official questionable listing, and nothing has been announced for Monday.
 
 ### Andrew Nembhard (IND, PG/SG, Matt Wright's Foxies)
 
