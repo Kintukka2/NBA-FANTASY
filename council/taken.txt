@@ -95,7 +95,6 @@ Desmond Bane
 Jalen Smith
 Ausar Thompson
 Fred VanVleet
-Daniss Jenkins
 Cam Spencer
 Day'Ron Sharpe
 Yves Missi
@@ -111,3 +110,4 @@ Darryn Peterson
 Brayden Burries
 Derik Queen
 Myles Turner
+Brook Lopez
