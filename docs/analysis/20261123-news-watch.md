@@ -86,7 +86,12 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 24 Nov)
 - News (08 Nov): Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports.
 - News (25 Oct): Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.
-- **Research:** _pending_
+- **Research:**
+  - He was out again Sun 22 Nov at ATL with the right hamstring strain [NBA injury report, 22 Nov 11:15 PM](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf). That was his 14th straight missed game. The two-week re-evaluation set on 8 Nov has now passed with no update from the team [Detroit Jock City, 22 Nov](https://detroitjockcity.com/pistons-injury-report-hawks-cade-cunningham-jalen-duren-playing-01m823m27vfp); [NBA.com, 9 Nov](https://www.nba.com/news/detroit-pistons-jalen-duren-two-weeks-hamstring). Detroit lost 107-97 at ATL, and SB Nation's recap ends "Please, Jalen Duren, come back soon" [Yahoo/SB Nation, 22 Nov](https://sports.yahoo.com/articles/pistons-hawks-final-score-detroit-231826185.html).
+  - Gap: no result of the re-evaluation has been reported, and Detroit's report for Tue 24 at ORL is not out yet (it comes Monday afternoon ET). Detroit plays only three games this week: Tue 24 at ORL, Fri 27 vs MIL and Sun 29 vs ORL.
+  - **Expected return:** no game date reported. Tue 24 Nov at ORL is the earliest he could play, and only if the re-evaluation clears him. *ESPN est.* 24 Nov.
+  - **Verdict:** ESPN confirmed, but only as a floor: 24 Nov is the first game after the check, not a reported return. If Monday's report lists him out for Tue 24, move the row to 2026-12-01 (7 days after that out report).
+  - Override proposed: return 2026-11-24
 
 ### Kevin Huerter (DET, SG/SF, us)
 
@@ -96,7 +101,12 @@
 - **Minutes:** 34.0 min over his last 3 games against 26.9 for the season (+7.1)
 - News (21 Nov): Huerter chipped in 20 points (7-15 FG, 4-8 3Pt, 2-3 FT), three rebounds, three assists and one steal across 36 minutes during Friday's 105-102 loss to Toronto.
 - News (19 Nov): Huerter had 11 points (2-9 FG, 1-4 3Pt, 6-7 FT), one rebound, seven assists, one block and one steal across 36 minutes during Wednesday's 122-109 victory over New Orleans.
-- **Research:** _pending_
+- **Research:**
+  - Role: he started Sun 22 at ATL, his fourth straight start in Duncan Robinson's spot (17, 18, 20, 22 Nov), and played 30 min. He went 1-of-8 for 2 points and finished −28 (−1 FP) [ESPN box score, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910029); [Yahoo/SB Nation, 22 Nov](https://sports.yahoo.com/articles/pistons-hawks-final-score-detroit-231826185.html). Before Robinson's injury, Robinson started beside Jenkins and Huerter came off the bench (24–38 min) [ESPN box score, 14 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909982). So Robinson's return should end the start.
+  - Robinson (left quad strain) is still out. He was to be re-evaluated in one week from 17 Nov, so about 24 Nov, and his earliest possible game is Tue 24 at ORL [Detroit Jock City, 22 Nov](https://detroitjockcity.com/pistons-injury-report-hawks-cade-cunningham-jalen-duren-playing-01m823m27vfp); [CBS/RotoWire, 17 Nov](https://www.cbssports.com/fantasy/basketball/news/pistons-duncan-robinson-to-be-re-evaluated-in-one-week/). No timetable reported; *ESPN est.* 27 Nov.
+  - Minutes: 36, 36, 36, then 30 min in his starts. Isaiah Joe has climbed to 16, 18 and 26 min off the bench since he returned on 18 Nov, and scored 19 on Sunday. That is cutting into Huerter's minutes. L7 16.5 (4) is 5.8 under his 22.3 average because of his shooting (11 FP on 17 Nov, −1 on 22 Nov), not his minutes.
+  - **Verdict:** ESPN confirmed: active. He should start Tue 24 at ORL at about 34 min. The start ends when Robinson returns: the first game after his re-evaluation is Fri 27, and Tue 24 is possible.
+  - Override proposed: role 34
 
 ### Jalen Smith (CHI, PF/C, us)
 
@@ -106,7 +116,11 @@
 - **Rest:** back-to-back Sun 22–Mon 23 Nov; sat the second night of the 13–14 Nov back-to-back, playing the games either side
 - News (22 Nov): Smith (illness) is available for Sunday's game against the Nuggets.
 - News (22 Nov): Smith (illness) has been upgraded to probable for Sunday's game against the Nuggets.
-- **Research:** _pending_
+- **Research:**
+  - He played Sun 22 vs DEN after the illness, which had made him questionable. He started at center because Nic Claxton was out (illness; no timetable reported; *ESPN est.* 23 Nov). He scored a career-high 26 on 10-of-14 FG and 6-of-7 3PT, with 4 rebounds, 2 steals and 2 blocks, in 34 min before fouling out in overtime of a 151-145 loss [ESPN box score, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910032); [NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/jalen-smith-hits-six-three-pointers-scores-26).
+  - Minutes and role vs Claxton: Rotoworld says the Bulls "have kept Smith in the starting center role even when Claxton plays," with Zach Collins the primary backup [NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/jalen-smith-hits-six-three-pointers-scores-26). Claxton only started on Fri 20, when Smith was out. His minutes run 30, 32, 28, 21 (a blowout) and 34 (OT). L7 52.3 (3) is about 14 over his season average, from the starting role and hot shooting.
+  - Rest: Chicago's report for Mon 23 vs CLE was "not yet submitted" at 11:15 PM ET [NBA injury report, 22 Nov 11:15 PM](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf). His 14 Nov absence was a finger sprain, not rest (unchanged since 22 Nov), and the team has said nothing about resting him.
+  - **Verdict:** ESPN confirmed: active. He is the starting center whether or not Claxton plays. The rest flag is a false alarm.
 
 ### Trey Murphy III (NO, SG/SF, us)
 
@@ -116,7 +130,11 @@
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 21 Nov: "He'll sit for the second leg of a back-to-back set, which means more minutes will be available for Jordan Poole, Herbert Jones and Derik Queen."
 - News (22 Nov): Murphy (knees) is listed as probable for Monday's game against the Suns.
 - News (21 Nov): Murphy (knee) has been ruled out for Saturday's game against the Spurs.
-- **Research:** _pending_
+- **Research:**
+  - He is **probable** for Mon 23 vs PHX (bilateral patellar tendinopathy) [NBA injury report, 22 Nov 11:15 PM](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf); [NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/trey-murphy-knee-probable-vs-phoenix-on-monday). He played 29 min off the bench on a minutes limit Fri 20 at OKC. No limit has been reported for Monday; RotoWire says only that he "could remain restricted." If he starts, Saddiq Bey or Herbert Jones goes to the bench (NBC, 22 Nov). L7 38.0 (1) is a small sample.
+  - Rest: he sat Sat 21 at SA, the second night of the 20–21 Nov back-to-back, listed as "injury maintenance" [Yahoo/HoopsHype, 21 Nov](https://sports.yahoo.com/articles/pelicans-rest-trey-murphy-against-182359369.html). New Orleans plays only three games this week: Mon 23 vs PHX, Fri 27 at LAC and Sun 29 at POR. Sun 29 is the first night of the back-to-back, so it is not a rest-risk night. He is likely to sit Mon 30 at SAC, which falls next week. The team has not announced that, so there is no sit row.
+  - **Expected return:** probable for Mon 23 vs PHX. *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed: day-to-day and due back Monday. His minutes may still be managed, and the Mon 30 rest risk is a pattern, not an announcement.
 
 ### Daniss Jenkins (DET, PG, us)
 
@@ -125,7 +143,10 @@
 - **Minutes:** 37.7 min over his last 3 games against 30.4 for the season (+7.2)
 - News (21 Nov): Jenkins closed Friday's 105-102 loss to Toronto with 14 points (5-14 FG, 2-4 3Pt, 2-2 FT), four rebounds, one assist and two steals across 39 minutes.
 - News (19 Nov): Jenkins amassed 17 points (7-16 FG, 3-5 3Pt), four rebounds and nine assists over 36 minutes during Wednesday's 122-109 win over New Orleans.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: he started Sun 22 at ATL and played 38 min (11 pts, 4-of-12 FG, 24 FP), so his last four starts ran 38, 36, 39 and 38 min [ESPN box score, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910029). He moved into the first unit on 9 Nov, with Paul Reed going to the bench and Duren out, and he started beside Robinson [ESPN box score, 9 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909954). So Duren's return, not Robinson's, is the likely end of his start. Robinson's return should cost Huerter, not Jenkins. No source has said how Bickerstaff will set the lineup.
+  - Duren (right hamstring; no timetable reported; *ESPN est.* 24 Nov) has no update after his re-evaluation [Detroit Jock City, 22 Nov](https://detroitjockcity.com/pistons-injury-report-hawks-cade-cunningham-jalen-duren-playing-01m823m27vfp). The 37-min row ends 23 Nov, which matches Duren's floor of 24 Nov, so no new row is added. If Monday's report rules Duren out for Tue 24 at ORL, extend Jenkins' role to 37 min through 24 Nov.
+  - **Verdict:** ESPN confirmed: active. He keeps the starting role and about 37 min until Duren returns, Tue 24 at the earliest.
 
 ### Cade Cunningham (DET, PG, us)
 
@@ -134,7 +155,10 @@
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 18 Nov: "Cunningham's status is uncertain for the second half of Detroit's back-to-back set after he played 37 minutes in Tuesday's win over San Antonio."; sat the second night of the 17–18 Nov back-to-back, playing the games either side
 - News (22 Nov): Cunningham (knee) is available for Sunday's game against the Hawks.
 - News (21 Nov): Cunningham (knee) is probable to play Sunday in Atlanta.
-- **Research:** _pending_
+- **Research:**
+  - Knee: he played Sun 22 at ATL through the right knee soreness. He was probable, then listed available ([NBA injury report, 22 Nov 11:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00PM.pdf)). He started and played 33 min. Foul trouble (three fouls by early in the 2nd quarter) held him to 14 first-half minutes, and he scored a season-low 5 pts on 2-of-9 shooting with a season-high 15 ast, for 31 FP. Before the game Bickerstaff said the team must protect him "at all costs" ([FOX 2 Detroit/AP, 22 Nov](https://www.fox2detroit.com/sports/alexander-walker-has-27-points-hawks-roll-107-97-win-over-pistons-off-game-cunningham); [ESPN box, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910029)). His L7 of 39.0 (3) is 9.8 under his 48.8 season average. The cause is shooting and Sunday's foul trouble, not minutes (36 and 33 in his last two games).
+  - Rest: Detroit plays Tue 24 at ORL, Fri 27 vs MIL and Sun 29 vs ORL, so there is no back-to-back before Sun 29. Mon 30 vs DEN, the second night, falls in next week. He played both nights of 27–28 Oct and 8–9 Nov, and sat only the second night on 18 Nov, listed with knee soreness. No source has said he will sit 29 or 30 Nov. Detroit's report for Tue 24 has not been filed. Unchanged since 22 Nov.
+  - **Verdict:** ESPN confirmed. He is active. His rest risk this week is low and sits mainly on Mon 30, which is next week.
 
 ### Anthony Black (ORL, PG/SG, us)
 
@@ -143,7 +167,10 @@
 - **Rest:** back-to-back Sat 28–Sun 29 Nov; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (21 Nov): Black finished with 13 points (4-11 FG, 2-6 3Pt, 3-8 FT), seven rebounds, six assists, two blocks and three steals across 37 minutes during Friday's 113-111 win over the Nets.
 - News (19 Nov): Black totaled 15 points (6-16 FG, 2-5 3Pt, 1-3 FT), two rebounds, six assists, one block and one steal in 37 minutes during Wednesday's 121-116 loss to the 76ers.
-- **Research:** _pending_
+- **Research:**
+  - He started Sun 22 at WAS and played 35 min: 14 pts, 5 reb, 2 ast, 2 stl, 31 FP in a 116-96 loss ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/anthony-black-records-14-5-2-2-line-vs-wizards); [ESPN box, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910031)). Paolo Banchero is still out with a right high ankle sprain, so Black's starting role holds this week. For Banchero, no timetable has been reported (Sweeney, 18 Nov, [Orlando Sentinel via Yahoo](https://sports.yahoo.com/articles/no-timeline-set-magic-paolo-204500820.html)); *ESPN est.* 29 Nov.
+  - Rest: Orlando plays Tue 24 vs DET, Sat 28 at WSH and Sun 29 at DET. He sat the second night on 2 Nov, listed as left ankle injury management ([CBS/RotoWire, 2 Nov](https://www.cbssports.com/fantasy/basketball/news/magics-anthony-black-will-rest-monday/)), but played both nights of 10–11 Nov. Nobody has said he will sit 28 or 29 Nov. Unchanged since 22 Nov.
+  - **Verdict:** nothing new found. He is healthy and starting, and his rest risk is Sun 29 only, with no announced plan.
 
 ## Free agents and waivers
 
@@ -154,7 +181,10 @@
 - **Injury:** ESPN est. 29 Nov (Out, Right Foot Strain, updated 20 Nov), but the news said on 20 Nov: "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week."
 - News (20 Nov): Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week.
 - News (19 Nov): Nurkic (toe) is listed as out for Friday's game against Phoenix.
-- **Research:** _pending_
+- **Research:**
+  - Unchanged since 22 Nov. On 20 Nov the Jazz said he had been cleared for on-court work and would be re-evaluated in one week, which puts the re-evaluation around 27 Nov ([Jazz, 20 Nov](https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-3); [Hoops Rumors, 20 Nov](https://www.hoopsrumors.com/2026/11/jazzs-jusuf-nurkic-toe-out-at-least-one-more-week.html)). He was Out for Sun 22 Nov vs DAL with the right 2nd plantar plate tear ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf); [SI/Jazz On SI, 22 Nov](https://www.si.com/nba/jazz/onsi/jazz-vs-mavericks-injury-report-latest-updates-on-both-teams)). Utah's report for Mon 23 Nov @LAL was still "not yet submitted". I found no report that he has done contact or 5-on-5 work.
+  - **Expected return:** the re-evaluation is due about 27 Nov, so his first possible game is Sun 29 Nov vs PHX. Utah plays 23 Nov @LAL and 27 Nov vs DEN before that. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN confirmed. ESPN's date fits the team's one-week re-evaluation. The 28 Nov row stays, since Utah has no game on 28 Nov and it counts the same as 29 Nov.
 
 ### Norman Powell (CHI, SG/SF, waivers)
 
@@ -163,7 +193,11 @@
 - **Injury:** ESPN est. 28 Nov (Out, Right Hamstring Strain, updated 22 Nov), but the news said on 22 Nov: "Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week."
 - News (22 Nov): Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week.
 - News (21 Nov): Powell is questionable for Sunday's game against the Nuggets due to a right hamstring strain.
-- **Research:** _pending_
+- **Research:**
+  - He did not play Sun 22. He was ruled out against DEN (NBA report: Out, right hamstring strain), and Hield started in his place ([NBA injury report, 22 Nov 11:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00PM.pdf); [ESPN box, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910032)). An MRI showed a mild strain, and he "will be re-evaluated later this week" ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-norman-powell-to-be-re-evaluated-later-this-week/); [Chicago Sun-Times, 22 Nov](https://chicago.suntimes.com/bulls/2026/11/22/bulls-veteran-norman-powell-sidelined-tweaked-hamstring)). K.C. Johnson: "Hamstrings are tricky. Team hopes to have more definitive timeline later in week" ([K.C. Johnson on X, 22 Nov](https://x.com/KCJHoop/status/2124522701285187925)).
+  - This week: NBC says he "will likely miss" Mon 23 vs CLE and Wed 25 at CHA ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/powell-hamstring-to-be-re-evaluated-this-week)). Bulls On SI says the re-evaluation could also cost him Sat 28 vs IND, the fourth game ([SI, 22 Nov](https://www.si.com/nba/bulls/onsi/bulls-injury-update-bad-news-on-norman-powell-jalen-smith-still-questionable-22)). Chicago's report for Mon 23 had not been filed by 11 PM ET.
+  - **Expected return:** re-evaluation later this week. He is not expected Mon 23 or Wed 25, and Sat 28 vs IND is the earliest he could play. *ESPN est.* 28 Nov.
+  - **Verdict:** ESPN confirmed. 28 Nov matches the earliest game the sources leave open, but it is a floor, not a target.
 
 ### Maxime Raynaud (SAC, C, free agent)
 
@@ -172,7 +206,10 @@
 - **Injury:** ESPN est. 25 Nov (Out, Right Knee Dislocated, updated 18 Nov), but the news said on 18 Nov: "He should be considered week-to-week moving forward."
 - News (18 Nov): Raynaud (knee) will remain on the inactive list for Wednesday's game against the Suns.
 - News (14 Nov): Raynaud (knee) has been ruled out for Sunday's game against the Thunder.
-- **Research:** _pending_
+- **Research:**
+  - He is Out for Mon 23 Nov vs SAS with a right patella subluxation ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). Otherwise unchanged since 22 Nov. RotoWire has called him "week-to-week" since 18 Nov ([CBS/RotoWire, 18 Nov](https://www.cbssports.com/fantasy/basketball/news/kings-maxime-raynaud-still-out-wednesday/)), and James Ham reported that he is progressing with no timeline ([NBC, 12 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-12/maxime-raynaud-knee-progressing-no-timeline)). I found no practice report.
+  - **Expected return:** no timetable reported. The week-to-week floor is 25 Nov (SAC @GS), and Sacramento's next game after that is 29 Nov vs MIN. *ESPN est.* 25 Nov.
+  - **Verdict:** ESPN confirmed, but only as a floor. The floor has not passed and SAC plays on 25 Nov, which will bring a fresh report, so the 25 Nov row stays.
 
 ### Dejounte Murray (NO, PG/SG, free agent)
 
@@ -183,7 +220,12 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 27 Nov)
 - News (13 Nov): Murray (ankle) is out for Friday's game against Memphis.
 - News (13 Nov): Murray (ankle) requested a trade from the Pelicans on Friday, per Shams Charania of ESPN.
-- **Research:** _pending_
+- **Research:**
+  - He is Out for Mon 23 Nov vs PHX with a left ankle sprain ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf); [Pelicans, 22 Nov](https://www.nba.com/pelicans/news/pelicans-vs-suns-injury-report-game-preview-11-23-2026)). He is sitting until he is traded ([HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html)).
+  - New on 22 Nov: per Rod Walker, he has not "set foot in the Smoothie King Center" since his trade request. Phoenix is the only team in real talks, and the Pelicans "aren't going to be in a hurry to make a trade" ([Bleacher Report, 22 Nov](https://bleacherreport.com/articles/25536410-dejounte-murray-hasnt-been-pelicans-arena-trade-request-latest-nba-rumors-suns-talks)). Gap: no news beyond this standoff. Minutes: they do not matter while he is not playing.
+  - **Expected return:** no timetable reported. He is out until he is traded. *ESPN est.* 27 Nov.
+  - **Verdict:** ESPN corrected. 27 Nov is only a placeholder. NOP is off 24–26 Nov, so the 26 Nov floor passes before the Pelicans' next game (27 Nov @LAC). I propose rolling the floor now to 7 days after the 23 Nov out listing. This takes him out of the 27 and 29 Nov games, and the next NOP game is 30 Nov @SAC.
+  - Override proposed: return 2026-11-30
 
 ### Scotty Pippen Jr. (MEM, PG/SG, free agent)
 
@@ -193,7 +235,12 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 25 Nov)
 - News (16 Nov): Pippen (back) is progressing in his recovery but is still considered week-to-week.
 - News (10 Nov): Pippen (back) remains out for Wednesday's game against Denver, Michael Wallace of the Grizzlies' official site reports.
-- **Research:** _pending_
+- **Research:**
+  - He is Out for Mon 23 Nov @CHA with a lumbar disc herniation, his 13th straight miss ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). He has been "week-to-week" since 16 Nov with no re-evaluation date ([Grizzlies via Yahoo, 16 Nov](https://sports.yahoo.com/articles/grizzlies-gg-jackson-ii-needs-172020038.html)). I found no report that he has practiced.
+  - Gap: he is Out, and there is no news beyond the injury report.
+  - **Expected return:** no timetable reported. The 23 Nov floor has passed with him listed Out, so the new floor is 30 Nov, 7 days after the latest out listing. Memphis's first game after that is Tue 1 Dec @PHI, so he misses MEM's 25, 27 and 29 Nov games. *ESPN est.* 25 Nov.
+  - **Verdict:** ESPN corrected. Nothing supports 25 Nov, and he is still out with no timetable, so the row moves from 23 Nov to 30 Nov.
+  - Override proposed: return 2026-11-30
 
 ### Bennedict Mathurin (NO, SG/SF, free agent)
 
@@ -202,7 +249,16 @@
 - **Injury:** ESPN est. 27 Nov (Out, Left Foot Plantar Fasciitis, updated 19 Nov), but the news said on 19 Nov: "Jordan Poole should remain in the backcourt rotation for the undermanned Pelicans moving forward, while Mathurin can be deemed week-to-week."
 - News (19 Nov): Mathurin (foot) has been ruled out for Friday's game against the Thunder.
 - News (17 Nov): Mathurin (foot) has been ruled out for Wednesday's game against Detroit.
-- **Research:** _pending_
+- **Research:**
+  - He is Out for Mon 23 Nov vs PHX with left plantar fasciitis ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf); [NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/bennedict-mathurin-foot-remains-out-monday)). No timeline has been given. "Week-to-week" is RotoWire's own assessment, not the team's ([CBS/RotoWire, 19 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-bennedict-mathurin-another-absence-coming/)). Otherwise unchanged since 22 Nov.
+  - **Expected return:** no timetable reported. The week-to-week floor is 26 Nov, and NOP's first game after it is 27 Nov @LAC. *ESPN est.* 27 Nov.
+  - **Verdict:** ESPN confirmed. ESPN's date matches the floor. No source puts him out longer, so a row would change nothing and I added none.
+
+---
+**Summary**
+- Pippen was listed Out for Mon 23 Nov, so his floor moves from 23 Nov to 30 Nov. That rules him out of all of Memphis's games this week (25, 27, 29 Nov).
+- I propose moving Murray from 26 Nov to 30 Nov. He is sitting until he is traded, the Pelicans are "in no hurry" (22 Nov), and NOP plays no games between his 23 Nov out listing and the old floor. This rules him out of NOP's 27 and 29 Nov games.
+- Nurkic (28 Nov row, re-evaluation ~27 Nov) and Raynaud (25 Nov floor) are unchanged. Mathurin (*ESPN est.* 27 Nov) still has no row. All five were listed Out on the 22 Nov 11:15 PM ET report.
 
 ### Grayson Allen (CHA, PG/SG, free agent)
 
@@ -211,7 +267,11 @@
 - **Role:** started 1 of his last 2 games after 2 of 11 before; 30.0 min in his starts, against 27.2 for the season
 - News (22 Nov): Allen (concussion) has been ruled out for Monday's game against the Grizzlies.
 - News (19 Nov): Allen (concussion) has been ruled out for Friday's game against Atlanta.
-- **Research:** _pending_
+- **Research:**
+  - Injury: still in the concussion protocol and ruled out for Mon 23 Nov vs MEM, which will be his third straight miss. The reports give no progress or timeline ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-grayson-allen-missing-third-straight-game-monday/); [NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). He has to pass the protocol's checkpoints symptom-free before he plays ([Hoops Rumors, 20 Nov](https://www.hoopsrumors.com/2026/11/hornets-notes-white-james-allen-steinbach.html)).
+  - Role: the change is not ongoing. He started only while Brandon Miller was out. Miller started 20 Nov at ATL (33 min) and is listed probable for Monday, and Sion James keeps the other starting spot ([ESPN box, 20 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909305); [CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-grayson-allen-missing-third-straight-game-monday/)). Kon Knueppel's hamstring injury keeps Allen's minutes up (re-evaluation about 6 Dec, *ESPN est.* 12 Dec). Once he is cleared, expect about 25 min off the bench. This week he can play at most Wed 25 vs CHI and Sat 28 vs BKN.
+  - **Expected return:** no timetable reported (concussion protocol). *ESPN est.* 25 Nov, which is just Charlotte's next game after Monday, not a reported date.
+  - **Verdict:** nothing new found. He is out Monday, as ESPN says, and no source backs 25 Nov.
 
 ### Jakob Poeltl (TOR, C, free agent)
 
@@ -220,7 +280,11 @@
 - **Role:** news on 18 Nov: "Poeltl will start Wednesday's game against the Wizards."
 - News (21 Nov): Poeltl chipped in 10 points (5-7 FG), nine rebounds, three assists and two blocks across 32 minutes during Friday's 105-102 victory over Detroit.
 - News (18 Nov): Poeltl will start Wednesday's game against the Wizards.
-- **Research:** _pending_
+- **Research:**
+  - Role: he started 18 Nov (29 min), when RJ Barrett and Scottie Barnes were out, beside Collin Murray-Boyles. He started again 20 Nov (32 min) beside rookie Allen Graves, with Murray-Boyles out. On 15 and 17 Nov all three were active and Poeltl came off the bench (17 and 18 min) ([ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910012); [20 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909308); [17 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910002)).
+  - Murray-Boyles (concussion protocol, *ESPN est.* 23 Nov) is probable for Mon vs MIL, and Rajakovic is "very confident" he plays ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf); [BVM Sports, 22 Nov](https://bvmsports.com/2026/11/22/raptors-rajakovic-very-confident-murray-boyles-will-return-vs-bucks/)). NBC expects Graves, not Poeltl, to go to the bench when Murray-Boyles returns ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/raptors-start-iq-walter-barnes-graves-poeltl)). That would leave Poeltl starting beside Murray-Boyles, as on 18 Nov. CBS says it is unclear who keeps the spot ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/raptors-collin-murray-boyles-expected-to-play-monday/)).
+  - Barrett's return would end the start. He has a mild hamstring strain and is to be re-evaluated in two weeks from 19 Nov, about 3 Dec (*ESPN est.* 13 Dec) ([NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/rj-barrett-hamstring-out-at-least-two-weeks)). Expect about 27–30 min if Poeltl starts and about 18 if he doesn't. Toronto plays Mon 23, Fri 27 and Sun 29.
+  - **Verdict:** ESPN confirmed (active). The start likely lasts while Barrett is out, but no source says Poeltl keeps it, so I added no row. Monday's lineup (7:30 PM ET) will settle it.
 
 ### Ryan Rollins (MIL, PG/SG, free agent)
 
@@ -230,7 +294,10 @@
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; news on 19 Nov: "Rollins is off the injury report after missing back-to-back contests with an illness."
 - News (21 Nov): Rollins provided eight points (4-9 FG, 0-1 3Pt), six rebounds, one assist and one block in 28 minutes during Saturday's 132-129 loss to Philadelphia.
 - News (21 Nov): Rollins is in the starting lineup for Saturday's game against the 76ers.
-- **Research:** _pending_
+- **Research:**
+  - Role: he started Sat 21 Nov at PHI (28 min, 19 FP) in place of Brayden Burries, who had started 10 straight games. It was a coach's decision with no injury behind it, and Jaquez also rejoined the starting five ([CBS/RotoWire, 21 Nov](https://www.cbssports.com/fantasy/basketball/news/bucks-brayden-burries-coming-off-bench-saturday/); [NBC Sports, 21 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/mil-starts-rollins-herro-jaquez-kuzma-turner); [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401910023)). Burries scored 26 off the bench, and RotoWire wrote that Rollins's spot "likely won't be very secure" ([ESPN/RotoWire news, 22 Nov](https://www.espn.com/nba/player/_/id/4591725/ryan-rollins)). The lineup is an experiment by a losing team, not a lasting role. He is not on Monday's report ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). Expect 21–28 min, about 25, whether he starts or not.
+  - Rest: the team has said nothing about the Fri 27 / Sat 28 back-to-back. He played both nights of the 10–11 Nov back-to-back (24 and 24 min), and his 15 and 18 Nov absences were for illness, not rest. Nothing shows a rest pattern.
+  - **Verdict:** ESPN confirmed (active). The start is a coach's choice that may not last, and no rest signal was found.
 
 ### Pelle Larsson (MIA, SG/SF, free agent)
 
@@ -239,7 +306,10 @@
 - **Role:** started 2 of his last 2 games after 2 of 11 before; 24.5 min in his starts, against 28.5 for the season
 - News (19 Nov): Larsson ended with four points (1-2 FG, 1-2 3Pt, 1-2 FT), two rebounds, two assists and one steal across 15 minutes during Wednesday's 137-130 victory over the Bucks.
 - News (17 Nov): Larsson (illness) is available for Wednesday's game against Milwaukee, Ira Winderman of the South Florida Sun Sentinel reports.
-- **Research:** _pending_
+- **Research:**
+  - Role: the change is ongoing. He has started every game he has played since 8 Nov, when Spoelstra moved him into Andrew Wiggins's spot ([Hoops Rumors, 9 Nov](https://www.hoopsrumors.com/2026/11/heat-notes-larsson-wiggins-conwell-hardaway-giannis.html)). Myron Gardner started only during Larsson's illness (13–16 Nov), and NBC expected him back on the bench once Larsson was healthy ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/pelle-larsson-scores-season-high-21-in-victory)). Larsson started again Sun 22 vs OKC and had 21 pts, 5 ast and 3 stl in 30 min ([ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401910030)). His 15-min start on 18 Nov was his first game back from the illness.
+  - Giannis's absence does not drive the start: Portis took Giannis's spot on 22 Nov ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/mia-starts-mitchell-klay-larsson-portis-bam)). Giannis has right groin tendinitis. Spoelstra puts the concern at "not super high" and is "optimistic" for Wed 25 at PHI (*ESPN est.* 25 Nov) ([Basketnews, 23 Nov](https://basketnews.com/news-260047-erik-spoelstra-offers-concern-level-on-giannis-new-alarming-injury-for-heat.html)). No player's return from injury ends Larsson's start. Only a coaching move back to Wiggins would, and Hot Hot Hoops (17 Nov) wrote that the spot "may change again". Expect about 28–30 min (22, 31 and 30 in his full starts; 28.5 for the season). Miami plays Wed 25, Fri 27 and Sun 29.
+  - **Verdict:** ESPN confirmed (active). The starting role is ongoing, but his minutes as a starter match his season average (a 29-min role rate, about 26, is close to his 26.7 rate), so I added no row.
 
 ### Nic Claxton (CHI, C, free agent)
 
@@ -249,7 +319,11 @@
 - **Role:** news on 20 Nov: "Claxton will start Friday's game against Washington, K.C."
 - News (22 Nov): Claxton (illness) won't play in Sunday's game against the Nuggets.
 - News (22 Nov): Claxton (illness) is questionable to play in Sunday's game against the Nuggets.
-- **Research:** _pending_
+- **Research:**
+  - Sun 22: he did not start. He was ruled out with an illness shortly before tip-off, and Jalen Smith, back from his own illness, started at center and played 34 min of the 151–145 overtime loss to Denver ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-nic-claxton-not-playing-sunday/); [ESPN box](https://www.espn.com/nba/boxscore/_/gameId/401910032)).
+  - Role: the change is not ongoing. His only start (20 Nov, 29 min) came because Smith was ill ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-nic-claxton-not-playing-sunday/); [NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/nic-claxton-with-11-and-7-rebounds-in-start)). With Smith healthy, Claxton goes back to the bench at about 17–22 min, his range as a reserve. Chicago had not filed its report for Mon 23 vs CLE, the second night of a back-to-back ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). He sat the second night of the 13–14 Nov back-to-back for hamstring management ([NBC Sports, 15 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/nic-claxton-hamstring-absent-from-injury-report)). Chicago also plays Wed 25 at CHA and Sat 28 vs IND.
+  - **Expected return:** no timetable reported (illness, day-to-day; Monday not yet filed). *ESPN est.* 23 Nov.
+  - **Verdict:** nothing new found on his return. ESPN's 23 Nov estimate fits a one-day illness, but Monday is uncertain. His start ended when Smith returned.
 
 ### Jaylon Tyson (CLE, SG/SF, free agent)
 
@@ -268,7 +342,15 @@
 - **Minutes:** 37.3 min over his last 3 games against 29.1 for the season (+8.3)
 - News (21 Nov): Grimes logged 13 points (2-7 FG, 1-5 3Pt, 8-9 FT), five rebounds and seven assists in 35 minutes during Friday's 106-104 victory over the Kings.
 - News (19 Nov): Grimes ended with 20 points (8-20 FG, 4-10 3Pt), seven rebounds and four assists over 35 minutes during Wednesday's 109-97 loss to Utah.
-- **Research:** _pending_
+- **Research:**
+  - Austin Reaves (left heel bruise) is **out Mon 23 vs UTA**, his fifth straight missed game, per Jovan Buha. His next chance is Fri 27 at SAS. Grimes "should remain in the starting lineup versus Utah" ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/lakers-austin-reaves-remains-out-monday/); [NBA injury report, 22 Nov 11:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00PM.pdf)). Reaves practised fully on Sunday, with no live play. Expected return for Reaves: Fri 27 at the earliest (CBS, 22 Nov); *ESPN est.* 27 Nov.
+  - Role once Reaves returns: Redick has not said whether Grimes keeps the start. "We're going to be able to be flexible with the starting lineup" ([Lakers Nation, 22 Nov](https://lakersnation.com/jj-redick-discusses-plan-to-keep-quentin-grimes-involved-when-austin-reaves-returns/)). NBC expects lower usage for Grimes ([NBC Sports, 19 Nov](https://www.nbcsports.com/nba/news/2026-27-nba-minutes-report-how-injuries-to-austin-reaves-alperen-sengun-shake-up-two-contenders)). Lakers games this week: Mon 23 vs UTA, Fri 27 at SAS, Sun 29 at MEM.
+  - **Verdict:** ESPN confirmed: active. The starting role is confirmed for Mon 23 only. I added no role row because it would cover one game. Its role rate (about 30 at 36 min, from his season FP/min, which includes bench games) would also replace a rate of 35.3 that already reflects his four starts.
+
+Summary:
+- Powell did not play Sun 22. He is expected out Mon 23 and Wed 25, and Sat 28 vs IND is the earliest he could return (*ESPN est.* 28 Nov is confirmed as a floor), so he is worth one game this week at most.
+- Reaves is out Mon 23, so Grimes starts against UTA. Reaves's next chance is Fri 27 (*ESPN est.* 27 Nov), after which Grimes's role is undecided. With Murphy and Zion both probable Mon 23, Bey may lose his start and drop from about 37 to about 25 min.
+- Cunningham played through his knee soreness (33 min, foul trouble). Detroit has no back-to-back until Sun 29–Mon 30, and Black's only rest risk is Sun 29. No rest has been announced for either, so there are no override rows.
 
 ### Saddiq Bey (NO, SF/PF, waivers)
 
@@ -277,7 +359,10 @@
 - **Minutes:** 37.3 min over his last 3 games against 30.0 for the season (+7.3)
 - News (21 Nov): Bey finished with 21 points (8-17 FG, 4-9 3Pt, 1-1 FT), six rebounds, three assists and one block across 37 minutes during Friday's 126-120 loss to the Thunder.
 - News (19 Nov): Bey logged 10 points (3-13 FG, 2-7 3Pt, 2-2 FT), eight rebounds, six assists and one steal across 42 minutes during Wednesday's 122-109 loss to the Pistons.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: his recent 37-min games came as a starter. On 20 Nov Murphy came off the bench on a minutes restriction (29 min), and Bey started beside Zion Williamson (37 min each) ([ESPN box, 20 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909310); [SI, 21 Nov](https://www.si.com/nba/pelicans/onsi/5-things-we-learned-pelicans-wasted-opportunity-vs-thunder-01m7y37xfj8q)). He started again 21 Nov with Murphy resting and Zion out. Before this run of starts, he played 22–26 min off the bench.
+  - Mon 23 vs PHX: Trey Murphy III (bilateral patellar tendinopathy) and Zion (left thigh contusion) are both probable (*ESPN est.* 23 Nov for each) ([NBA injury report, 22 Nov 11:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00PM.pdf); [Pelicans.com, 22 Nov](https://www.nba.com/pelicans/news/pelicans-vs-suns-injury-report-game-preview-11-23-2026)). NBC: "if [Murphy] returns to the starting unit, Saddiq Bey or Herbert Jones will return to the bench" ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/trey-murphy-knee-probable-vs-phoenix-on-monday)). No starting lineup has been announced. Murray and Mathurin remain out (*ESPN est.* 27 Nov each; their timelines were not checked in this batch), which leaves wing minutes open.
+  - **Verdict:** ESPN confirmed: active. His 37-min role depends on Murphy staying on the bench or restricted. If Murphy starts, Bey is likely back to about 25 min, so no row.
 
 ### Caleb Wilson (CHI, SF, free agent)
 
