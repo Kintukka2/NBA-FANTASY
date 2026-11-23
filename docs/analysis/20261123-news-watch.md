@@ -333,7 +333,11 @@
 - **Minutes:** 29.0 min over his last 3 games against 23.9 for the season (+5.1)
 - News (22 Nov): Tyson (ankle) is probable for Monday's game against the Bulls.
 - News (19 Nov): Tyson (ankle) has been ruled out for Friday's game against Indiana.
-- **Research:** _pending_
+- **Research:**
+  - Injury: new since 22 Nov. He is **probable** for Mon 23 Nov at CHI with "Right Ankle Injury Management" ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). He missed 16, 18 and 20 Nov, and Cleveland still has to confirm him before tip-off. No minutes limit has been reported ([RotoWire, 22 Nov](https://www.rotowire.com/basketball/headlines/jaylon-tyson-injury-upgraded-to-probable-monday-540529)).
+  - Role and minutes: his two starts (30 and 34 min) came "sans Mobley" ([NBC Sports, 13 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/cle-starts-harden-mitchell-tyson-watson-allen)). Evan Mobley (left great toe sprain; re-evaluated after 7–10 days of rehab from 16 Nov, [Cavaliers, 16 Nov](https://www.nba.com/cavaliers/news/releases-evan-mobley-261116); *ESPN est.* 29 Nov) is still out Monday ([NBA injury report, 22 Nov](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). Proctor held Tyson's old spot beside a returning Watson on 20 Nov ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/cavs-start-harden-donovan-proctor-watson-allen)). No source says whether Tyson starts or what minutes he plays on his return. Any start ends when Mobley returns.
+  - **Expected return:** probable for Mon 23 Nov at CHI (8:00 PM ET). *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed. Probable for 23 Nov matches ESPN's estimate, but his role after the return is unreported.
 
 ### Quentin Grimes (LAL, SG/SF, free agent)
 
@@ -371,7 +375,11 @@ Summary:
 - **Minutes:** 23.0 min over his last 3 games against 30.7 for the season (−7.7)
 - News (12 Nov): Wilson is undergoing surgery for a fractured right hand and will miss at least four to six weeks, Shams Charania of ESPN reports.
 - News (11 Nov): Wilson won't return to Wednesday's game against the Spurs due to a right hand injury. He'll finish with 15 points (5-7 FG, 2-2 3Pt, 3-3 FT), five rebounds and one steal in 15 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Injury: unchanged since 22 Nov. The Bulls say his 12 Nov surgery went well and he "will be re-evaluated in three weeks", so about 3 Dec ([Bulls, 12 Nov](https://www.nba.com/bulls/news/caleb-wilson-medical-update)). AP still has him missing four to six weeks ([AP via Yahoo, 21 Nov](https://sports.yahoo.com/articles/bulls-rookie-caleb-wilson-looking-012217305.html)). He ran sprints in a hand brace at practice on 20 Nov ([ClutchPoints, 20 Nov](https://clutchpoints.com/nba/chicago-bulls/bulls-news-caleb-wilson-returns-to-practice-hand-surgery)). He was out Sun 22 Nov vs DEN with a right metacarpal fracture ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)).
+  - Minutes flag: the low L3 figure comes from his 15-min injury exit on 11 Nov. It does not matter while he is out.
+  - **Expected return:** four to six weeks from 12 Nov (10–24 Dec), re-evaluated about 3 Dec. He will not play this week. *ESPN est.* 13 Dec.
+  - **Verdict:** ESPN confirmed. The team's timeline has not changed.
 
 ### Neemias Queta (BOS, C, free agent)
 
@@ -381,7 +389,10 @@ Summary:
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 19 Nov: "Back in action after getting a breather Monday in the second half of a back-to-back, Queta delivered his second double-double of the season while setting a new season-high scoring mark."; sat the second night of the 15–16 Nov back-to-back, playing the games either side
 - News (22 Nov): Queta notched 15 points (5-9 FG, 1-1 3Pt, 4-10 FT), seven rebounds, one assist and two blocks over 30 minutes during Saturday's 97-96 loss to the Kings.
 - News (19 Nov): Queta notched 17 points (8-14 FG, 0-1 3Pt, 1-1 FT), 10 rebounds, three assists and two steals in 27 minutes during Wednesday's 105-101 loss to the Nuggets.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: he started and played 30 min on both nights of the 21–22 Nov back-to-back with Mitchell Robinson out (illness; no timetable reported; *ESPN est.* 24 Nov). On Sunday at GSW he had 6 pts, 10 reb and 4 ast (25 FP), and Garza played 17 min off the bench ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/mitchell-robinson-illness-remains-out-vs-gsw)). Boston lost 88-87 ([Yardbarker, 22 Nov](https://www.yardbarker.com/nba/articles/warriors_beat_celtics_88_87_as_podziemski_scores_18/s1_17668_44604420)). The jump to 30 min follows Robinson's absence. Before that he started at 23–27 min, so expect the 30-min games to end when Robinson returns.
+  - Rest: he played both nights on 21–22 Nov, and it was George who rested on Sunday. His only rest this season was the second night of 15–16 Nov, as Boston "manages his workload" ([NESN, 16 Nov](https://nesn.com/boston-celtics/news/why-neemias-queta-isnt-playing-tonight-vs-magic/4d25961bd26a8a5079076ef0)). Sun 29 is the first night of the 29–30 Nov back-to-back, and Mon 30 falls in next week. No word on either.
+  - **Verdict:** nothing new found. No rest has been announced, and the minutes rise rests on Robinson's illness.
 
 ### P.J. Washington (DAL, SF/PF, free agent)
 
@@ -390,7 +401,11 @@ Summary:
 - **Minutes:** 25.3 min over his last 3 games against 30.9 for the season (−5.6)
 - News (22 Nov): Washington (illness) has been ruled out for Sunday's game against the Jazz.
 - News (22 Nov): Washington (illness) is doubtful to play Sunday's game against the Jazz.
-- **Research:** _pending_
+- **Research:**
+  - Injury: he was out Sun 22 Nov at UTA with an illness, his second straight absence. "His next chance to play will come Tuesday at Denver" ([RotoWire, 22 Nov](https://www.rotowire.com/basketball/headlines/pj-washington-injury-ruled-out-sunday-540546); [NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). Friday's left shoulder impingement came before the illness ([CBS/RotoWire, 21 Nov](https://www.cbssports.com/fantasy/basketball/news/mavericks-p-j-washington-downgraded-to-out-540388/)). Risacher started again and had 15 pts and 8 reb in Dallas's 116-114 win ([AP via WRAL, 22 Nov](https://www.wral.com/news/ap/e609b-cooper-flagg-saves-mavericks-with-late-free-throws-to-hold-off-jazz-comeback-in-116-114-win/)).
+  - Minutes flag: unchanged since 21 Nov. The dip came from blowouts and foul trouble, not from a role change ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/p-j-washington-shoulder-questionable-vs-lac)).
+  - **Expected return:** no timetable reported. Tue 24 Nov at DEN is his next chance, and Dallas has not filed its report for that game. *ESPN est.* 24 Nov.
+  - **Verdict:** nothing new found. ESPN's 24 Nov is only his next game, not a confirmed return.
 
 ### Daniel Gafford (DAL, C, free agent)
 
@@ -399,7 +414,10 @@ Summary:
 - **Minutes:** 27.7 min over his last 3 games against 22.2 for the season (+5.4)
 - News (15 Nov): Gafford (shoulder) is available for Sunday's game against Boston.
 - News (15 Nov): Gafford (shoulder) is probable to play in Sunday's game against the Celtics.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: on Sat 21 Nov vs LAC he played 30:49 as the starting center, including the final 8:19. Dusty May said "there's no way we win the game without his ability to impact down low" ([Dallas Sports Journal, 22 Nov](https://dallassportsjournal.com/dusty-may-daniel-gafford-no-way-we-win/)). On Sun 22 Nov at UTA he played 28 min: 10 pts, 4 reb, 4 ast and 2 stl (33 FP) ([ESPN box score, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910033)). P.J. Washington (illness) was out in both games, with Risacher starting ([NBC Sports, 21 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/dal-start-irving-flagg-martin-risacher-gafford)). No source names a rotation change behind the extra minutes.
+  - Role: the starting job looks secure. Dereck Lively (right foot surgery; no timetable reported; *ESPN est.* 27 Nov) has no five-on-five timeline, and May said "I really don't know, to be honest with you" ([Dallas Sports Journal, 20 Nov](https://dallassportsjournal.com/dereck-lively-ii-five-on-five-timeline-dusty-may/)). No source says whether 28–31 min will last once Washington is back, against 22.2 for the season.
+  - **Verdict:** nothing new found. He is active and starting, and the minutes rise has no stated cause.
 
 ### Dean Wade (PHI, PF, free agent)
 
