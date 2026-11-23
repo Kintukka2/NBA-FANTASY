@@ -51,10 +51,6 @@ Not shortlisted:
 
 New since 22 Nov. Notes in [20261122-injury-watch.md](20261122-injury-watch.md) and [20261121-injury-watch.md](20261121-injury-watch.md) still hold where this says "unchanged". All Sunday 22 Nov games are final.
 
-## Research
-
-Earlier notes still hold ([20261122-injury-watch.md](20261122-injury-watch.md)). New since then:
-
 **Absentees**
 
 - **Jalen Duren (us, DET):** Unchanged since 22 Nov. He was out again Sun at ATL ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)), and his re-evaluation is "later this week", with no date ([Heavy, 21 Nov](https://heavy.com/sports/nba/detroit-pistons/injury-report-vs-hawks-november-22)). No timetable reported. *ESPN est.* 24 Nov. DET's first chance is Tue 24 at ORL, then Fri vs MIL and Sun vs ORL.
