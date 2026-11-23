@@ -456,7 +456,11 @@ Summary:
 - **Role:** news on 20 Nov: "Mara is now listed in the starting lineup for Friday's matchup with the Pelicans, Brandon Rahbar of DailyThunder.com reports."
 - News (22 Nov): Mara (shin) is listed as out for Sunday's game versus Miami.
 - News (20 Nov): Mara posted 22 points (11-15 FG), 16 rebounds, two assists and two blocks across 29 minutes during Friday's 126-120 win over the Pelicans.
-- **Research:** _pending_
+- **Research:**
+  - New since 22 Nov: he was a late scratch Sun 22 Nov at MIA with a right shin contusion (the NBC note says left; the official report says right). OKC's report for Mon 23 Nov at IND, the second night of the back-to-back, was "not yet submitted" ([NBA injury report, 22 Nov 11:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00PM.pdf); [NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/aday-mara-shin-ruled-out-sunday-vs-miami)). No coach comment on him. OKC had only nine players available Sunday, and SGA is "up in the air" for Monday ([Yahoo Sports, 22 Nov](https://sports.yahoo.com/articles/thunder-falls-heat-injury-report-012807030.html)).
+  - Role: unchanged since 22 Nov. He has started with Holmgren out (8–10 weeks from 30 Oct, *ESPN est.* 2 Jan), playing 26, 27 and 29 min in his last three games ([CBS/RotoWire, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-aday-mara-records-2216-double-double/)). Kenrich Williams started in his place Sunday. His L7 of 47.7 (3 games) runs 18 over his 29.5 season average because of the starting role.
+  - **Expected return:** no timetable reported. He is day-to-day with a bruise, and Mon 23 at IND is the first possible game. *ESPN est.* 23 Nov.
+  - **Verdict:** nothing new found on timing. ESPN's 23 Nov estimate is unconfirmed until OKC files Monday's report. The existing role row (27 min to 5 Dec) stays as it is.
 
 ### Dyson Daniels (ATL, PG/SG, Snow Time Lakers)
 
@@ -465,7 +469,11 @@ Summary:
 - **Minutes:** 37.0 min over his last 3 games against 31.6 for the season (+5.4)
 - News (22 Nov): Daniels finished Sunday's 107-97 win over the Pistons with five points (2-9 FG, 0-3 3Pt, 1-2 FT), 14 rebounds, eight assists, five steals and two blocks in 39 minutes.
 - News (20 Nov): Daniels posted 11 points (5-10 FG, 1-3 3Pt), 10 assists, eight rebounds and four steals over 35 minutes during the Hawks' 111-97 win over the Hornets on Friday.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: since CJ McCollum went out he has played 37, 35 and 39 min, against 31.6 for the season. McCollum has a left calf strain from 15 Nov and will be re-evaluated in about four weeks, around mid-December ([NBA.com, 18 Nov](https://www.nba.com/news/hawks-cj-mccollum-to-miss-at-least-four-weeks-with-left-calf-strain)). Kingston Flemings (lumbar strain) also missed 15–20 Nov, then returned and started at point guard on 22 Nov ([Yahoo Sports, 22 Nov](https://sports.yahoo.com/articles/kingston-flemings-returns-hawks-starting-214942398.html)).
+  - Even with Flemings back, Daniels played 39 min in the 107-97 comeback win over DET on 22 Nov (5 pts, 14 reb, 8 ast, 5 stl, 2 blk) ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/hawks-dyson-daniels-stuffs-stat-sheet-in-win-540552/)). His L7 of 48.2 (4 games) is 5.3 above his 42.9 season average, and the reason is the extra minutes. Flemings' return may trim a little, but McCollum's minutes stay open until mid-December. No source gives a minutes figure for Daniels.
+  - **Verdict:** ESPN corrected (rate understates him). The extra minutes are tied to McCollum's absence, which runs past 7 Dec. I set 35 min, below the 37-min average of the last three games, to allow for Flemings.
+  - Override proposed: role 35
 
 ### Darryn Peterson (UTAH, PG/SG, Matt Wright's Foxies)
 
@@ -492,7 +500,10 @@ Summary:
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 22 Nov: "Tatum (rest) is not listed on the injury report for Sunday's game against the Warriors, Justin Turpin of WEEI.com reports."
 - News (22 Nov): Tatum (rest) is not listed on the injury report for Sunday's game against the Warriors, Justin Turpin of WEEI.com reports.
 - News (21 Nov): Tatum (rest) has been ruled out for Saturday's game against the Kings.
-- **Research:** _pending_
+- **Research:**
+  - He returned on 22 Nov at GS after resting the first night of the 21–22 Nov back-to-back, and played 38 min (48 FP) ([CBS Sports, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/celtics-jayson-tatum-off-injury-report-sunday/)). Boston also rested Paul George on 22 Nov ([NBA injury report, 22 Nov 11:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00PM.pdf)).
+  - Rest risk for Sun 29–Mon 30 Nov: Boston has now rested him twice, on 4 Nov (not a back-to-back) and on 21 Nov, the first night of a back-to-back. He played both nights of the four earlier back-to-backs. Nothing has been said about 29–30 Nov ([Heavy, 22 Nov](https://heavy.com/sports/nba/boston-celtics/celtics-good-news-after-nightmare-loss/)). If Boston repeats what it did on 21 Nov, he would sit Sun 29 Nov, which is in our week. That is a risk, not a report, so there is no sit row.
+  - **Verdict:** ESPN confirmed. He is active, and Boston has said nothing about 29–30 Nov.
 
 ### Jaylen Brown (PHI, SG/SF, Snow Time Lakers)
 
@@ -501,7 +512,11 @@ Summary:
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; sat the first night of the 30–31 Oct back-to-back, playing the games either side
 - News (22 Nov): Brown (hamstring) is listed as probable for Monday's game versus Portland.
 - News (20 Nov): Brown (hamstring) went through individual work during Friday's practice, Tony Jones of The Athletic reports.
-- **Research:** _pending_
+- **Research:**
+  - Re-evaluation: he was upgraded to probable for Mon 23 Nov vs POR (left hamstring strain) ([NBA injury report, 22 Nov 11:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00PM.pdf); [NBC Sports Philadelphia, 22 Nov](https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-injury-update-jaylen-brown-dean-wade-adem-bona/768823/)). The MRI ruled out a tear or severe strain. He returned to full practice Saturday, but the staff held him back from a heavy workload. No minutes limit has been reported for Monday ([Heavy, 22 Nov](https://heavy.com/sports/nba/philadelphia-76ers/76ers-jaylen-brown-injury/)). He is expected to start, and ESPN's note says Kentavious Caldwell-Pope goes back to the bench.
+  - Rest flag (Fri 27–Sat 28 Nov): his 30 Oct absence was an injury, not rest. He was ruled out with left knee patellar tendinopathy after missing shootaround ([NBC Philadelphia, 30 Oct](https://www.nbcphiladelphia.com/nba/philadelphia-76ers/jaylen-brown-injury-update-sixers-vs-knicks-nba-cup/4488823/)). So he has no rest pattern, and nothing has been said about 27–28 Nov. His first back-to-back after the hamstring strain is a mild risk. His L7 of 50.5 rests on 2 games (small sample).
+  - **Expected return:** probable for Mon 23 Nov vs POR (official report, 22 Nov). *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed. He is due back Monday, with no reported minutes limit and no rest pattern.
 
 ### Walker Kessler (LAL, C, Snow Time Lakers)
 
@@ -510,7 +525,15 @@ Summary:
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 18 Nov: "Kessler will return to action after being held out of the front end of this back-to-back set."; sat the first night of the 17–18 Nov back-to-back, playing the games either side
 - News (21 Nov): Kessler notched 15 points (7-11 FG, 1-1 3Pt, 0-2 FT), seven rebounds, two assists, three blocks and one steal in 30 minutes during Friday's 106-104 win over Sacramento.
 - News (19 Nov): Kessler notched 10 points (3-7 FG, 4-10 FT), 11 rebounds and one assist in 31 minutes during Wednesday's 109-97 loss to the Jazz.
-- **Research:** _pending_
+- **Research:**
+  - Unchanged since 22 Nov. LAL had no game 21–22 Nov. He is not on the Lakers' report for Mon 23 Nov vs UTA, which lists only Grimes (available) and Reaves (out) ([NBA injury report, 22 Nov 11:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00PM.pdf)).
+  - Rest flag (Sun 29–Mon 30 Nov): his 17 Nov absence was right lower-leg soreness, not rest ([NBA.com, 17 Nov](https://www.nba.com/news/lakers-rule-out-reaves-kessler-vs-hornets); [NBC Sports, 18 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/walker-kessler-leg-off-injury-report-wednesday)). He played both nights of LAL's 27–28 Oct, 1–2 Nov and 8–9 Nov back-to-backs. Nothing has been said about 29–30 Nov.
+  - **Verdict:** ESPN confirmed. He is active with no rest pattern.
+
+Summary:
+- Brown was upgraded to probable for Mon 23 Nov vs POR (MRI clean, full practice; no minutes limit reported), and his 30 Oct absence was a knee injury, not rest.
+- Mara (right shin bruise, no timetable, *ESPN est.* 23 Nov) missed Sunday, and OKC has not filed Monday's report. Daniels' minutes (37/35/39) follow McCollum's calf injury, out to about mid-December, so I added a 35-min role row to 7 Dec.
+- Tatum played Sunday after a first-night rest, and Boston has said nothing yet about Sun 29 Nov. Kessler is clean, with no rest pattern.
 
 ### Tyler Herro (MIL, PG/SG, Snow Time Lakers)
 
