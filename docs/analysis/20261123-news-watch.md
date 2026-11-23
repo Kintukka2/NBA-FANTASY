@@ -408,7 +408,12 @@ Summary:
 - **Minutes:** 33.7 min over his last 3 games against 26.7 for the season (+7.0)
 - News (22 Nov): Wade (hamstring) is listed as probable for Monday's game against Portland.
 - News (20 Nov): Wade (hamstring) won't play Saturday against the Bucks.
-- **Research:** _pending_
+- **Research:**
+  - Injury: the official report for Mon 23 Nov vs POR lists him Probable (left hamstring injury management) ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). He missed 18 and 21 Nov and is "on track to return on Monday" ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/dean-wade-hamstring-probable-monday-vs-portland); [NBC Sports Philadelphia, 22 Nov](https://nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-injury-update-jaylen-brown-dean-wade-adem-bona/768823)).
+  - Minutes: the +7.0 min came from three fill-in games. He started for LeBron James on 12 and 16 Nov ([Inquirer, 16 Nov](https://www.inquirer.com/sixers/lebron-james-out-nets-injury-report-joel-embiid-20261116.html)), and on 15 Nov he played 35 min at center with Embiid, Bona and Barlow all out ([NBC Sports Philadelphia, 15 Nov](https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-vs-pacers-analysis-lebron-james-tyrese-maxey/767006/)). Those players are now back: LeBron played 21 Nov (21 pts) ([ESPN, 21 Nov](https://www.espn.com/nba/recap?gameId=401910023)), Barlow returned 21 Nov and Bona is probable for 23 Nov. NBC calls 23 Nov possibly the healthiest PHI's frontcourt has been all season. Expect his bench role (18–23 min on 8–10 Nov), not 34 min. L7 39.5 rests on 2 games (small sample), both spot starts.
+  - One open chance: PHI play Fri 27–Sat 28 Nov. LeBron sat the second night of the 15–16 Nov back-to-back "as expected… to manage his sciatica" ([NBC Sports, 16 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-16/lebron-james-back-out-monday-vs-nets)). If he sits 28 Nov, Wade or Caldwell-Pope could start. No team word yet.
+  - **Expected return:** Probable for Mon 23 Nov vs POR (official report, 22 Nov). *ESPN est.* 23 Nov.
+  - **Verdict:** ESPN confirmed. The minutes flag is not ongoing: it came from spot starts, and LeBron, Embiid and the backup bigs are back.
 
 ### Myles Turner (MIL, C, free agent)
 
@@ -417,7 +422,10 @@ Summary:
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; sat the second night of the 10–11 Nov back-to-back, playing the games either side; sat the second night of the 18–19 Nov back-to-back, playing the games either side
 - News (21 Nov): Turner ended with five points (1-8 FG, 1-6 3Pt, 2-2 FT), six rebounds, five assists, four blocks and one steal over 26 minutes before fouling out of Saturday's 132-129 loss to the 76ers.
 - News (20 Nov): Turner (shoulder) is off the injury report for Saturday's game against the 76ers.
-- **Research:** _pending_
+- **Research:**
+  - Unchanged since 22 Nov. He is not on Milwaukee's report for Mon 23 Nov at TOR ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). He started at center on 21 Nov, with Ware and Nance on the bench ([NBC Sports, 21 Nov](https://nbcsports.com/fantasy/basketball/player-news/2026-11-21/mil-starts-rollins-herro-jaquez-kuzma-turner)).
+  - Rest: MIL's only back-to-back this week is Fri 27 @DET / Sat 28 Nov vs OKC. Over three back-to-backs he played both nights of 23–24 Oct and sat 11 Nov for "Rest" ([NBA injury report, 11 Nov 5:30 PM](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-11_05_30PM.pdf); [NBC Sports, 11 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/myles-turner-rest-ruled-out-vs-los-angeles)). He missed 19 Nov with a left shoulder contusion, not rest ([NBA injury report, 19 Nov 5:30 PM](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_05_30PM.pdf)). So that is one rest sit in three, and 28 Nov is a risk. The Bucks have not said he will sit.
+  - **Verdict:** nothing new found. The flag's "sat 18–19 Nov" was an injury, not rest, and with no team word there is no sit row.
 
 ### Ja Morant (POR, PG, free agent)
 
@@ -426,7 +434,11 @@ Summary:
 - **Gap:** listed out, and no news in 5 days (ESPN est. 01 Dec)
 - News (07 Nov): Head coach Micah Nori said Morant met with a doctor in Los Angeles, who gave him a positive outlook on his recovery from the hamstring injury. While Nori declined to update Morant's timetable, he added Morant "may not be out for as long as we thought," Trail Blazers Insider Sean Highkin reports.
 - News (30 Oct): Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday.
-- **Research:** _pending_
+- **Research:**
+  - Gap: he is still out. Portland lists him Out (left hamstring strain) for Mon 23 Nov at PHI ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). He is "projected to return later this month or in early December" ([Heavy, 21 Nov](https://heavy.com/sports/nba/portland-trail-blazers/injury-report-vs-knicks-november-21/)). The 30 Oct plan to re-evaluate him "in four weeks" (about 27 Nov) still stands ([KPTV, 30 Oct](https://www.kptv.com/2026/10/30/blazers-guard-ja-morant-out-least-4-weeks-due-hamstring-injury/)). I found nothing from Nori since 7 Nov and no reports of practice (unchanged since 22 Nov).
+  - **Expected return:** re-evaluation about 27 Nov. His first possible game is Sun 29 Nov vs NOP, or Tue 1 Dec vs MIN if he is not cleared. *ESPN est.* 1 Dec.
+  - **Verdict:** ESPN corrected (unchanged since 22 Nov). The re-evaluation rule puts him one game earlier, but that is a floor, not a confirmed return. The existing row stands.
+  - Override proposed: return 2026-11-28
 
 ### Tobias Harris (SA, SF/PF, free agent)
 
@@ -435,7 +447,11 @@ Summary:
 - **Gap:** listed out, and no news in 5 days (ESPN est. 03 Dec)
 - News (16 Nov): Harris (calf) is likely to be sidelined until early December, per Jeff Garcia of KENS 5 San Antonio.
 - News (10 Nov): Harris (calf) is out for Wednesday's game against Chicago, Jared Weiss of The Athletic reports.
-- **Research:** _pending_
+- **Research:**
+  - Gap: he is still out. San Antonio lists him Out (left calf strain) for Mon 23 Nov at SAC ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). His debut is "projected for next month… unclear if it will be before or after Christmas" ([Heavy, 21 Nov](https://heavy.com/sports/nba/san-antonio-spurs/injury-report-vs-pelicans-november-21)).
+  - The only dated target is still Chris Haynes's "as early as early December" ([Roundtable, 17 Nov](https://roundtable.io/sports/nba/spurs/news/return-date-expectations-laid-out-for-spurs-tobias-harris)). Mitch Johnson said "it'll be later than he wanted" and reported no setbacks ([Express-News via Yahoo, 17 Nov](https://sports.yahoo.com/articles/mitch-johnson-reiterates-spurs-taking-030657990.html)). I found no practice report (unchanged since 22 Nov).
+  - **Expected return:** early December (Haynes), with no date from the team. *ESPN est.* 3 Dec.
+  - **Verdict:** ESPN confirmed as the earliest reported target. It could slip, and no source gives a date for a row.
 
 ## Opponents: this week and next
 
@@ -447,7 +463,11 @@ Summary:
 - **Gap:** listed out, and no news in 5 days (ESPN est. 29 Nov)
 - News (16 Nov): Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a left great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.
 - News (15 Nov): Mobley (toe) has been ruled out for Monday's game against the Bulls.
-- **Research:** _pending_
+- **Research:**
+  - Injury/gap: he is Out (left great toe sprain) for Mon 23 Nov @CHI ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)). The team's plan from 16 Nov is 7–10 days of treatment, then a re-evaluation, about 23–26 Nov ([Cavaliers, 16 Nov](https://www.nba.com/cavaliers/news/releases-evan-mobley-261116); [Hoops Wire, 16 Nov](https://hoopswire.com/cavs-evan-mobley-out-at-least-another-week-with-toe-injury/)). Atkinson: "It's a sprain, it's not anything long-term." I found no re-evaluation result or practice report since (unchanged since 22 Nov). ESPN's note says the right toe, but the team and the official report say left.
+  - This week CLE plays Mon 23 @CHI (out), Wed 25 @NYK and Sun 29 vs MIA. NBC expected him back about 27–29 Nov ([NBC Sports via Yahoo, 19 Nov](https://sports.yahoo.com/articles/2026-27-nba-minutes-report-161955518.html)).
+  - **Expected return:** re-evaluation about 23–26 Nov. Wed 25 @NYK only if he is cleared early. Otherwise his first game this week is Sun 29 vs MIA. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN confirmed. The day after the latest re-evaluation date (27 Nov) falls on CLE's next game, 29 Nov, and no source points earlier, so there is no row.
 
 ### Aday Mara (OKC, C, Snow Time Lakers)
 
