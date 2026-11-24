@@ -438,7 +438,10 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 03 Dec)
 - News (16 Nov): Harris (calf) is likely to be sidelined until early December, per Jeff Garcia of KENS 5 San Antonio.
 - News (10 Nov): Harris (calf) is out for Wednesday's game against Chicago, Jared Weiss of The Athletic reports.
-- **Research:** _pending_
+- **Research:**
+  - Gap: he is still out. He was listed Out (left calf strain) for Mon 23 Nov at SAC ([NBA injury report, 23 Nov 11:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_30PM.pdf)). The Spurs had not yet filed a report for Wed 25 at POR. I found no practice report and no team date since Haynes's "as early as early December" ([Roundtable, 17 Nov](https://roundtable.io/sports/nba/spurs/news/return-date-expectations-laid-out-for-spurs-tobias-harris)). Heavy says his debut is due next month, "unclear if it will be before or after Christmas" ([Heavy, 21 Nov](https://heavy.com/sports/nba/san-antonio-spurs/injury-report-vs-pelicans-november-21)). Unchanged since 23 Nov.
+  - **Expected return:** early December (Haynes). The team has given no date. *ESPN est.* 3 Dec, which falls on SA's Thu 3 Dec game.
+  - **Verdict:** ESPN confirmed. 3 Dec is still the earliest reported target. The 7-day rule would give 30 Nov, earlier than any reporting supports, so there is no row.
 
 ## Opponents: this week and next
 
@@ -450,7 +453,12 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 29 Nov)
 - News (24 Oct): Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.
 - News (23 Oct): Banchero didn't check back in during the fourth quarter of Friday's 115-93 loss to the Timberwolves after being deemed doubtful to return. He finished with 14 points (5-11 FG, 0-2 3Pt, 2-4 FT), six rebounds, five assists and one steal across 26 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Injury/gap: he is Out (right high ankle sprain) for Tue 24 Nov vs DET ([NBA injury report, 24 Nov 1:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_30AM.pdf)). The latest team word is still Sweeney's "no timeline right now" ([HoopsHype via Yahoo, 18 Nov](https://sports.yahoo.com/articles/still-no-timeline-paolo-banchero-192859712.html)). Banchero said "hopefully within the next couple of weeks" and that he won't rush it ([Hoops Rumors, 19 Nov](https://www.hoopsrumors.com/2026/11/injury-notes-banchero-kawhi-pacers-edwards-grizzlies.html)). Nothing newer turned up. Previews giving "Nov 29" are repeating ESPN's estimate ([Yahoo, 24 Nov](https://sports.yahoo.com/articles/watch-magic-vs-pistons-injury-030723428.html)).
+  - The 4-week end of the 24 Oct "4–6 weeks" estimate (about 20 Nov) has passed, and he is still out with no timetable. Under the brief's rule that gives 7 days after the latest out listing, 1 Dec. ORL plays Sat 28 at WAS and Sun 29 at DET, then next on Wed 2 Dec.
+  - **Expected return:** no timetable reported. His own target is about early December (around 3 Dec), and the 6-week end of the estimate is 4 Dec. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN corrected. 29 Nov is now optimistic: it would need him to play the second night of a back-to-back with no team date. The 1 Dec row is a floor, so his first game is Wed 2 Dec. That is next week, and it leaves Dr White Slong's next-week outlook unchanged.
+  - Override proposed: return 2026-12-01
 
 ### Pascal Siakam (IND, PF, Matt Wright's Foxies)
 
@@ -488,7 +496,11 @@
 - **Rest:** back-to-back Fri 27–Sat 28 Nov, Tue 01–Wed 02 Dec; sat the second night of the 24–25 Oct back-to-back, playing the games either side; sat the second night of the 30–31 Oct back-to-back, playing the games either side; sat the first night of the 15–16 Nov back-to-back, playing the games either side
 - News (23 Nov): Embiid (illness) is out for Monday's game against Portland, Austin Krell of OnPattison.com reports.
 - News (23 Nov): Embiid (knee) has been downgraded to questionable for Monday's game against Portland.
-- **Research:** _pending_
+- **Research:**
+  - New since 23 Nov: he was a late scratch Mon 23 Nov vs POR with an illness after missing shootaround ([Inquirer, 23 Nov](https://www.inquirer.com/sixers/joel-embiid-game-status-trail-blazers-20261123.html)). He is day-to-day, and no details of the illness were given. The PHI report for Wed 25 vs MIA had not been filed as of 1:30 AM ET 24 Nov ([NBA injury report](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_30AM.pdf)).
+  - Rest: the team has said nothing about Fri 27 at IND / Sat 28 at HOU or Tue 1 / Wed 2 Dec. He has sat one leg of all three back-to-backs this season (24–25 Oct, 30–31 Oct, 15–16 Nov). Before the first, he said "I'm not playing both games. I'm playing in 1 of them" ([Yahoo/NBC Sports Philadelphia, 24 Oct](https://sports.yahoo.com/articles/76ers-joel-embiid-makes-major-152111769.html)).
+  - **Expected return:** day-to-day (illness), no timetable reported. *ESPN est.* 25 Nov.
+  - **Verdict:** nothing new on the back-to-backs. Expect him to sit one night of each, but there is no team statement, so there is no sit row. The illness adds risk for Wed 25.
 
 ### Amen Thompson (HOU, SG/SF, Matt Wright's Foxies)
 
@@ -515,7 +527,10 @@
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 21 Nov: "The veteran guard will be in street clothes for the first leg of the Celtics' back-to-back set, but he could make his return Sunday against the Warriors."; sat the first night of the 21–22 Nov back-to-back, playing the games either side
 - News (23 Nov): White amassed 14 points (6-21 FG, 2-12 3Pt), three rebounds, five assists and one steal over 32 minutes during Sunday's 88-87 loss to the Warriors.
 - News (22 Nov): White (shoulder) is not listed on the injury report for Sunday's game against Golden State, Justin Turpin of WEEI.com reports.
-- **Research:** _pending_
+- **Research:**
+  - He is not on Boston's report for Tue 24 Nov at WAS ([NBA injury report, 24 Nov 1:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_30AM.pdf)). He has played since returning on 22 Nov from the one-game left AC joint sprain ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/derrick-white-shoulder-off-injury-report-vs-gsw)).
+  - Rest: the 21 Nov absence was the shoulder, not rest. He played both nights of BOS's other four back-to-backs (26–27 Oct, 1–2 Nov, 10–11 Nov, 15–16 Nov, from box scores). No sit has been reported for Sun 29 / Mon 30 Nov.
+  - **Verdict:** nothing new found. His rest risk for 29–30 Nov is low.
 
 ### Jonathan Kuminga (MIN, SF/PF, Dr White Slong)
 
@@ -524,7 +539,15 @@
 - **Rest:** back-to-back Tue 01–Wed 02 Dec; sat the second night of the 16–17 Nov back-to-back, playing the games either side
 - News (19 Nov): Kuminga totaled 23 points (7-13 FG, 2-4 3Pt, 7-7 FT), three rebounds, three assists and three blocks in 35 minutes during Thursday's 102-99 loss to the Knicks.
 - News (19 Nov): Kuminga (shoulder) is available for Thursday's game against New York.
-- **Research:** _pending_
+- **Research:**
+  - He played Mon 23 Nov: 15 pts in 26 min of a 142-116 rout of BKN, so the blowout explains the low minutes ([Star Tribune, 23 Nov](https://www.startribune.com/minnesota-timberwolves-brooklyn-nets-score-today-lamelo-ball-julius-randle-anthony-edwards-injury/601916745)).
+  - Rest: his 17 Nov miss was a right shoulder contusion, not rest ([Roundtable, 17 Nov](https://roundtable.io/sports/nba/timberwolves/news/key-starter-ruled-out-for-timberwolves-against-blazers)). He played both nights of MIN's 25–26 Oct and 30–31 Oct back-to-backs (box scores). Nothing has been said about Tue 1 / Wed 2 Dec.
+  - **Verdict:** nothing new found. His rest risk for 1–2 Dec is low.
+
+**Summary**
+- Banchero: still out Tue 24 Nov with no team timeline. ESPN's 29 Nov is corrected to a 1 Dec floor, so his first game is Wed 2 Dec.
+- Embiid: out Mon 23 Nov with an illness and day-to-day for Wed 25. He has sat one leg of all 3 back-to-backs, so expect one sit on 27–28 Nov and 1–2 Dec. There is no team statement, so there is no row.
+- White and Kuminga: low rest risk (their only back-to-back misses were injuries). Harris: unchanged, earliest target early December (*ESPN est.* 3 Dec).
 
 ## Other rosters: injury flags only
 
