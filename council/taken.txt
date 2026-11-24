@@ -83,7 +83,6 @@ Jabari Smith Jr.
 Jonathan Kuminga
 Kyshawn George
 Moussa Diabate
-Wendell Carter Jr.
 Ayo Dosunmu
 AJ Dybantsa
 Onyeka Okongwu
@@ -97,7 +96,6 @@ Ausar Thompson
 Fred VanVleet
 Cam Spencer
 Day'Ron Sharpe
-Yves Missi
 Jrue Holiday
 Isaiah Hartenstein
 Jeremiah Fears
@@ -111,3 +109,5 @@ Brayden Burries
 Derik Queen
 Myles Turner
 Brook Lopez
+Neemias Queta
+Zach LaVine
