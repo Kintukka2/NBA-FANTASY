@@ -348,7 +348,11 @@
 - **Minutes:** 37.7 min over his last 3 games against 30.4 for the season (+7.2)
 - News (23 Nov): Jenkins logged 11 points (4-12 FG, 1-6 3Pt, 2-2 FT), four rebounds, three assists and one steal over 38 minutes during Sunday's 107-97 loss to the Hawks.
 - News (21 Nov): Jenkins closed Friday's 105-102 loss to Toronto with 14 points (5-14 FG, 2-4 3Pt, 2-2 FT), four rebounds, one assist and two steals across 39 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: DET had no game Mon 23, so nothing has changed since 23 Nov. His last four starts ran 38, 36, 39 and 38 min ([ESPN box score, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910029)). Duren's return, not Robinson's, would end his start (see 23 Nov research).
+  - New: Duren (right hamstring; no timetable reported; *ESPN est.* 30 Nov) is **out Tue 24 at ORL** after a re-evaluation set for Sunday that produced no update ([NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/jalen-duren-hamstring-remains-out-vs-orlando); [NBA injury report, 24 Nov 1:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_30AM.pdf)). Robinson (left quad; *ESPN est.* 27 Nov) is also out, and Isaiah Joe is not on the report. Jenkins is a projected starter at ORL ([Roundtable via Yahoo, 24 Nov](https://sports.yahoo.com/articles/watch-magic-vs-pistons-injury-030723428.html)).
+  - **Verdict:** ESPN confirmed: active. He keeps the start and about 37 min on Tue 24. DET's next games are Fri 27 and Sun 29, and he keeps the role on either day if Duren is still out.
+  - Override proposed: role 37
 
 ### Caleb Wilson (CHI, SF, free agent)
 
@@ -357,7 +361,11 @@
 - **Minutes:** 23.0 min over his last 3 games against 30.7 for the season (−7.7)
 - News (12 Nov): Wilson is undergoing surgery for a fractured right hand and will miss at least four to six weeks, Shams Charania of ESPN reports.
 - News (11 Nov): Wilson won't return to Wednesday's game against the Spurs due to a right hand injury. He'll finish with 15 points (5-7 FG, 2-2 3Pt, 3-3 FT), five rebounds and one steal in 15 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Injury: unchanged since 23 Nov. He was out Mon 23 vs CLE (right metacarpal fracture) ([NBA injury report, 23 Nov 9:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_09_00PM.pdf)). The Bulls set a re-evaluation three weeks after his 12 Nov surgery, about 3 Dec ([Bulls, 12 Nov](https://www.nba.com/bulls/news/caleb-wilson-medical-update)). He is running and doing strength work but still needs clearance, and he says he has no timeline in mind ([Bulls On SI via Yahoo, 22 Nov](https://sports.yahoo.com/articles/bulls-caleb-wilson-sounds-optimistic-003142636.html)).
+  - Minutes flag: the low L3 comes from his 15-min injury exit on 11 Nov. It does not matter while he is out.
+  - **Expected return:** four to six weeks from 12 Nov (10 to 24 Dec), re-evaluated about 3 Dec. He will not play this week. *ESPN est.* 13 Dec.
+  - **Verdict:** ESPN confirmed. The team's timeline has not changed.
 
 ### Jakob Poeltl (TOR, C, free agent)
 
@@ -366,7 +374,10 @@
 - **Minutes:** 29.7 min over his last 3 games against 24.2 for the season (+5.5)
 - News (21 Nov): Poeltl chipped in 10 points (5-7 FG), nine rebounds, three assists and two blocks across 32 minutes during Friday's 105-102 victory over Detroit.
 - News (18 Nov): Poeltl will start Wednesday's game against the Wizards.
-- **Research:** _pending_
+- **Research:**
+  - Role: he **started Mon 23 vs MIL** at center beside Scottie Barnes and Allen Graves. Murray-Boyles, back from the concussion protocol, came off the bench (24 min) ([CBS/RotoWire, 23 Nov](https://www.cbssports.com/fantasy/basketball/news/raptors-collin-murray-boyles-manning-bench-role-in-return/)). Poeltl played 28 min: 15 pts, 10 reb, 3 ast, 1 stl and 1 blk, 41 FP ([ESPN box score, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910039); [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/jakob-poeltl-posts-double-double-fouls-out-monday)). That makes three straight starts at 29, 32 and 28 min.
+  - The report covers Monday only and does not say the bench role continues. Barrett (right hamstring) is re-evaluated about 3 Dec (*ESPN est.* 13 Dec), and the start likely lasts until he returns. TOR plays Fri 27 vs BKN and Sun 29 vs DEN.
+  - **Verdict:** ESPN confirmed: active. He is the starting center for now at about 28 to 32 min. I added no row because no source calls the role ongoing.
 
 ### Daniel Gafford (DAL, C, free agent)
 
@@ -375,7 +386,10 @@
 - **Minutes:** 27.7 min over his last 3 games against 22.2 for the season (+5.4)
 - News (23 Nov): Gafford notched 10 points (5-8 FG), four rebounds, four assists and two steals over 28 minutes during Sunday's 116-114 win over the Jazz.
 - News (15 Nov): Gafford (shoulder) is available for Sunday's game against Boston.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: the rise matches P.J. Washington's illness. Washington was out for both of the long games, when Gafford played 31 and 28 min (21 and 22 Nov). In earlier games with Washington playing, Gafford logged 16, 19 and 24 min (12, 15 and 18 Nov; his 17 min on 14 Nov ended in a face-injury exit) ([ESPN box, 21 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910025); [22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910033); [18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910016)). DAL had no game Mon 23.
+  - New: Washington is **questionable Tue 24 at DEN** ([NBA injury report, 24 Nov 1:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_01_30AM.pdf); [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/p-j-washington-illness-questionable-tuesday)). Lively (right foot surgery; no timetable reported; *ESPN est.* 27 Nov) is out Tue 24, so Gafford keeps the start.
+  - **Verdict:** ESPN confirmed: active and starting. Expect about 22 to 24 min once Washington returns, not 28 to 31. That is inferred from the box scores, not stated by any source.
 
 ### Kelly Oubre Jr. (IND, SG/SF, free agent)
 
@@ -384,7 +398,10 @@
 - **Minutes:** news on 24 Nov: "Oubre scored at least 15 points for the sixth straight game, continuing to ramp up after a slow start to the season."
 - News (24 Nov): Oubre racked up 20 points (8-13 FG, 4-7 3Pt), four rebounds, two assists and two blocks over 28 minutes during Monday's 125-120 win over Oklahoma City.
 - News (23 Nov): Oubre recorded 15 points (4-10 FG, 0-4 3Pt, 7-9 FT) and five rebounds in 27 minutes during Sunday's 113-106 loss to the Knicks.
-- **Research:** _pending_
+- **Research:**
+  - Mon 23 vs OKC: he started and scored a season-high 20 (8-of-13 FG, 4-of-7 3PT) in 28 min, 41 FP ([ESPN box score, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910038); [IndyStar via Yahoo, 24 Nov](https://sports.yahoo.com/articles/3-observations-much-needed-pacers-031212215.html)). Aaron Nesmith (right foot soreness, "banged up" per Carlisle) and T.J. McConnell (left hamstring) were out.
+  - The flag is a scoring streak, not a minutes change. He has started every game since 11 Nov, mostly beside Nesmith, and played 23 to 34 min, 23 to 28 in his last four ([ESPN box, 11 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909966); [22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910034)). His start does not depend on Nesmith's absence. IND plays Fri 27 vs PHI and Sat 28 at CHI (a back-to-back), and no rest has been reported.
+  - **Verdict:** ESPN confirmed: active. He is a steady starter at about 25 to 28 min. Nothing new on his role.
 
 ### Rui Hachimura (LAC, SF/PF, free agent)
 
