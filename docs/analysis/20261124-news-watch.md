@@ -75,7 +75,12 @@
 - **Injury:** ESPN est. 30 Nov (Out, Right Hamstring Strain, updated 23 Nov), but the news said on 23 Nov: "Duren hasn't played since Oct. 23 due to a right hamstring strain, though he's expected to be re-evaluated soon."
 - News (23 Nov): Duren (hamstring) has been ruled out for Tuesday's game against the Magic.
 - News (08 Nov): Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports.
-- **Research:** _pending_
+- **Research:**
+  - He is **out** for Tue 24 at ORL (right hamstring strain) on the official report [NBA injury report, 24 Nov 2:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_02_00AM.pdf). He was due a re-evaluation around Sun 22 (two weeks after the 8 Nov update), but "there hasn't been another update to his status" [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/jalen-duren-hamstring-remains-out-vs-orlando). RotoWire calls him week-to-week until the Pistons give an update. The 8 Nov update had cleared him for on-court work, and Bickerstaff said "we're not going to rush him" ([NBA.com, 9 Nov](https://www.nba.com/news/detroit-pistons-jalen-duren-two-weeks-hamstring)). No re-evaluation result had been reported by 24 Nov.
+  - Detroit's other games this week are Fri 27 vs MIL and Sun 29 vs ORL. No source puts him in line for either game.
+  - **Expected return:** no timetable reported (the re-evaluation result is still pending). The floor is 1 Dec, 7 days after the 24 Nov out report. *ESPN est.* 30 Nov.
+  - **Verdict:** ESPN confirmed as a floor: he is out at least through Sun 29, so all of this matchup week. The old 24 Nov row has expired. The new row sits one day after ESPN's date, and the two differ only on DET's Mon 30 game, which falls next week.
+  - Override proposed: return 2026-12-01
 
 ### Paul George (BOS, SF/PF, us)
 
@@ -85,7 +90,10 @@
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 23 Nov: "George (rest) isn't listed on the injury report for Tuesday's game against the Wizards, Taylor Snow of the Celtics' official site reports."; sat the second night of the 01–02 Nov back-to-back, playing the games either side; sat the second night of the 10–11 Nov back-to-back, playing the games either side
 - News (23 Nov): George (rest) isn't listed on the injury report for Tuesday's game against the Wizards, Taylor Snow of the Celtics' official site reports.
 - News (22 Nov): George (rest) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports.
-- **Research:** _pending_
+- **Research:**
+  - The "injury" flag is the old rest night, not a new injury. He sat Sun 22 at GSW on the second night of a back-to-back, listed "Rest - OUT" ([Celtics on X, 22 Nov](https://x.com/celtics/status/2124605900090654930)). He is **not on the report** for Tue 24 at WSH ([NBA injury report, 24 Nov 2:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_02_00AM.pdf); [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/paul-george-rest-off-injury-report-vs-wizards)). Sam Hauser goes back to the bench.
+  - Rest: Boston plays Tue 24, Fri 27 and Sun 29 this week, with no back-to-back, so he should play all three. Sun 29 is the first night of the 29–30 Nov back-to-back. He has sat the second night of 3 of his 5 back-to-backs (2 Nov rest, 11 Nov illness, 22 Nov rest), so Mon 30 (next week) is a real pattern risk. Nothing has been announced. Form: L7 38.0 (3), season 40.6 (14), not 5+ off.
+  - **Verdict:** ESPN confirmed: active, plays Tue 24. The flag repeats the 22 Nov rest night.
 
 ### Jalen Smith (CHI, PF/C, us)
 
@@ -94,7 +102,10 @@
 - **Minutes:** news on 20 Nov: "His absence would leave additional playing time available for Zach Collins and Nic Claxton, though Claxton still appears to be on a minutes restriction."
 - News (23 Nov): Smith (illness) will play Monday against the Cavaliers, K.C. Johnson of Chicago Sports Network reports.
 - News (23 Nov): Smith (illness) is probable for Monday's game against Cleveland.
-- **Research:** _pending_
+- **Research:**
+  - He played Mon 23 vs CLE while ill. He was cleared, but Splitter said he would be "cautious" with his minutes after his 34 on Sunday ([CBS/RotoWire, 23 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-jalen-smith-good-to-go-monday/)). He **started at center** and played 25 min, scoring 11 pts on 4-7 FG (31 FP) in a 122-108 win. Nic Claxton (back from illness) came off the bench for 23 min ([ClutchPoints, 24 Nov](https://clutchpoints.com/nba/chicago-bulls/bulls-waive-center-after-beating-the-cavs)).
+  - Minutes: Monday's 25 came from the illness and a deliberate cut after Sunday's 34-min overtime game, not from a role change. He keeps the starting job with Claxton playing, as Rotoworld reported on 22 Nov (unchanged since 23 Nov). Expect his usual 28–32 when healthy. L7 47.0 (4) is 9.6 over his 37.4 season average, from the starting role and hot 3PT shooting. Chicago's report for Wed 25 at CHA was not yet submitted at 2:00 AM ET 24 Nov.
+  - **Verdict:** ESPN confirmed: active and starting. The 25 min on Monday was a one-off.
 
 ### Trey Murphy III (NO, SG/SF, us)
 
@@ -104,7 +115,10 @@
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 23 Nov: "Murphy was deployed off the bench Friday against the Thunder in his first action since Nov. 8 but was then held out Saturday in San Antonio for the second half of a back-to-back in an effort to ease him back into action following a six-game absence due to bilateral patellar tendinopathy."; sat the second night of the 20–21 Nov back-to-back, playing the games either side
 - News (24 Nov): Murphy totaled nine points (4-14 FG, 1-6 3Pt), nine rebounds, two assists and two steals across 35 minutes during Monday's 123-119 overtime loss to the Suns.
 - News (23 Nov): Murphy is starting Monday's game against Phoenix.
-- **Research:** _pending_
+- **Research:**
+  - He **started** Mon 23 vs PHX, which sent Saddiq Bey back to the bench ([CBS/RotoWire, 23 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-returning-to-starting-five/)). After shootaround he said he felt "pretty good, ready to go" ([Pelicans.com, 23 Nov](https://nba.com/pelicans/news/pelicans-shootaround-update-three-players-are-probable-for-phoenix-game-who-were-dnps-saturday)). He played 35 min (overtime) with 9 pts (4-14 FG), 9 reb, 2 ast and 2 stl, 25 FP, in a 123-119 OT loss. No minutes limit is mentioned ([CBS/RotoWire, 24 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-trey-murphy-low-usage-continues-monday/)). The minutes ramp is done (29 off the bench, then 35 as a starter). His low usage is the problem, not his minutes. L7 31.5 (2) is a small sample.
+  - Rest: New Orleans plays Fri 27 at LAC and Sun 29 at POR this week, with no back-to-back, so he should play both. Sun 29 is the first night of 29–30 Nov. He sat Sat 21 at SA, the second night of the last back-to-back, as "injury maintenance" for bilateral patellar tendinopathy ([Yahoo/HoopsHype, 21 Nov](https://sports.yahoo.com/articles/pelicans-rest-trey-murphy-against-182359369.html)). That makes Mon 30 at SAC (next week) a likely sit, but nothing has been announced, so there is no sit row.
+  - **Verdict:** ESPN confirmed: active and back in the starting five. Nothing is announced for this week. Mon 30 is the rest risk.
 
 ### Neemias Queta (BOS, C, us)
 
@@ -114,7 +128,16 @@
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; sat the second night of the 15–16 Nov back-to-back, playing the games either side
 - News (22 Nov): Queta notched 15 points (5-9 FG, 1-1 3Pt, 4-10 FT), seven rebounds, one assist and two blocks over 30 minutes during Saturday's 97-96 loss to the Kings.
 - News (19 Nov): Queta notched 17 points (8-14 FG, 0-1 3Pt, 1-1 FT), 10 rebounds, three assists and two steals in 27 minutes during Wednesday's 105-101 loss to the Nuggets.
-- **Research:** _pending_
+- **Research:**
+  - Mitchell Robinson (illness) is **out** again for Tue 24 at WSH, his third straight absence ([NBA injury report, 24 Nov 2:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_02_00AM.pdf)). Rotoworld says "Queta should continue to take on a few extra minutes at center," with Luka Garza backing up ([NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/mitchell-robinson-illness-out-again-vs-wizards)). Queta started and played 30 min in both games without Robinson (21–22 Nov), so expect about 30 on Tuesday. Robinson's expected return: no timetable reported, *ESPN est.* 27 Nov. When Robinson is back, Queta's starts drop back to 23–27 min.
+  - Form: L7 34.3 (3) is 7.1 over his 27.2 season average, from the 30-min games while Robinson is out. Rest: Boston has no back-to-back this week. He has rested only once this season (16 Nov), and nothing is announced for Mon 30 (next week).
+  - **Verdict:** ESPN confirmed: active and starting. The 30-min role holds for Tue 24 while Robinson is out.
+
+**Summary**
+- Duren is out Tue 24 and the re-evaluation result is still unreported, so he is out at least through Sun 29 (row: return 1 Dec, a floor; *ESPN est.* 30 Nov). The expired 24 Nov row should be removed.
+- George is not on the Tue 24 report and plays all three BOS games (Tue, Fri, Sun). His "injury" flag is the Sun 22 rest night. Murphy started Mon (35 min, no limit) and has no back-to-back this week. For both of them, Mon 30 is next week's rest risk.
+- Mitchell Robinson is out again Tue 24, so Queta starts at about 30 min (role row 30 until 24 Nov). Jalen Smith's 25 min on Monday was illness caution, and he keeps the starting center job.
+  - Override proposed: role 30
 
 ### Cade Cunningham (DET, PG, us)
 
