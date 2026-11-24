@@ -393,7 +393,10 @@
 - **Rest:** back-to-back Tue 01–Wed 02 Dec; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (20 Nov): Hachimura contributed 17 points (7-13 FG, 2-4 3Pt, 1-1 FT), seven rebounds, two assists and one steal in 32 minutes during Thursday's 124-112 loss to the Spurs.
 - News (18 Nov): Hachimura finished Tuesday's 132-107 loss to the Jazz with 20 points (7-10 FG, 4-4 3Pt, 2-4 FT), five rebounds, one assist, one block and one steal over 27 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Rest: the Clippers have no back-to-back this week (Mon 23 @HOU, Wed 25 @MEM, Fri 27 vs NOP, Sun 29 @GSW). The flagged back-to-back is next week, Tue 1 Dec @PHX and Wed 2 Dec vs MIN, and no sit has been announced. His one back-to-back absence, Mon 2 Nov, was an injury, not rest: he was listed Out with left quadriceps soreness ([NBA injury report, 2 Nov 8:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_08_00PM.pdf)). No rest pattern.
+  - Role: he still started on Mon 23 Nov in Brandon Ingram's season debut. Max Strus went to the bench ([NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/lac-starts-garland-ingram-jones-rui-lopez)). He played 29 min for 36 FP. His L7 of 35.0 (4 games) is about 10 over his season 25.1. The reason is steady minutes (27 to 32 in each of the last four) and better shooting (7-10 FG on 17 Nov, 7-13 on 19 Nov).
+  - **Verdict:** nothing new found. He has no back-to-back this week, and his only back-to-back absence was the quad injury.
 
 ### Rudy Gobert (MIN, C, free agent)
 
@@ -402,7 +405,10 @@
 - **Rest:** back-to-back Tue 01–Wed 02 Dec; sat the second night of the 30–31 Oct back-to-back, playing the games either side
 - News (21 Nov): Gobert accumulated seven points (2-2 FG, 3-4 FT), 11 rebounds, two assists, three blocks and one steal over 32 minutes during Saturday's 104-95 victory over the Grizzlies.
 - News (20 Nov): Gobert posted nine points (4-6 FG, 1-2 FT), seven rebounds and two steals over 35 minutes during Thursday's 102-99 loss to the Knicks.
-- **Research:** _pending_
+- **Research:**
+  - Rest: Minnesota has no back-to-back this week (Mon 23 vs BKN, Wed 25 @OKC, Fri 27 vs MEM, Sun 29 @SAC). The flagged back-to-back is Tue 1 Dec @POR and Wed 2 Dec @LAC, and no sit has been announced. His 31 Oct absence was an injury: he was listed Questionable with low back spasms, then sat ([NBA injury report, 31 Oct 6:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-31_06_00PM.pdf)). He played both nights of 16–17 Nov (32 and 22 min). No rest pattern.
+  - Mon 23 Nov: he started and played 27 min (33 FP) in a 142-116 blowout of Brooklyn, and he was not on the injury report ([Canis Hoopus, 23 Nov](https://www.canishoopus.com/timberwolves-game-previews/72358/game-recap-minnesota-timberwolves-brooklyn-nets-julius-randle); [NBA injury report, 23 Nov 11:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_30PM.pdf)).
+  - **Verdict:** nothing new found. The flag's 31 Oct absence was back spasms, not rest, and he played the 16–17 Nov back-to-back.
 
 ### Zach Edey (MEM, C, free agent)
 
@@ -411,7 +417,11 @@
 - **Rest:** back-to-back Tue 01–Wed 02 Dec; sat the first night of the 25–26 Oct back-to-back, playing the games either side; sat the second night of the 18–19 Nov back-to-back, playing the games either side
 - News (20 Nov): Edey (hip) is not listed on the injury report ahead of Saturday's game versus Minnesota.
 - News (19 Nov): Edey (hip) has been ruled out for Thursday's game against the Warriors.
-- **Research:** _pending_
+- **Research:**
+  - Rest: Memphis has no back-to-back this week (Mon 23 @CHA, Wed 25 vs LAC, Fri 27 @MIN, Sun 29 vs LAL). He played Mon 23 Nov, 23 min for 27 FP. The flagged back-to-back is Tue 1 Dec @PHI and Wed 2 Dec @DET.
+  - The pattern is real, and it is ankle management. He was listed Out for "left ankle injury management" on 25 Oct, the first night of that back-to-back ([NBA injury report, 25 Oct 6:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-10-25_06_00PM.pdf)), and again on 19 Nov, the second night ([NBA injury report, 19 Nov 5:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-19_05_30PM.pdf)). He missed both nights of 13–14 Nov with the ankle. Rotoworld called the 19 Nov absence "the second leg of a back-to-back" ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/zach-edey-ankle-off-injury-report-vs-minnesota)). Expect him to miss one night of 1–2 Dec, but no sit has been announced, so there is no row.
+  - Minutes are steady at 20–23. His L7 of 30.0 (4 games) is 5.1 over his season 24.9, mostly from the 48-FP game on 16 Nov (23 pts, 10 reb in 21 min). The minutes did not change.
+  - **Verdict:** nothing new found for this week. He has sat one night of every back-to-back he was healthy for (ankle management), which matters for 1–2 Dec.
 
 ### T.J. McConnell (IND, PG, free agent)
 
@@ -420,7 +430,12 @@
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; news on 23 Nov: "The veteran floor general is missing both ends of this back-to-back set, but he'll have some extra time to heal up ahead of Friday's tilt against the 76ers."
 - News (23 Nov): McConnell is out for Monday's game against the Thunder due to left hamstring soreness.
 - News (21 Nov): McConnell (hamstring) is listed as out for Sunday's game in New York.
-- **Research:** _pending_
+- **Research:**
+  - Injury: left hamstring soreness, from leaving the game early on 20 Nov at CLE. He was Out on both nights of the 22–23 Nov back-to-back ([NBA injury report, 23 Nov 11:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_30PM.pdf); [Hoops Rumors, 23 Nov](https://hoopsrumors.com/2026/11/pacers-notes-nesmith-mcconnell-smith-shooting-more.html)). RotoWire says he will "have some extra time to heal up ahead of Friday's tilt against the 76ers" ([CBS/RotoWire, 23 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-t-j-mcconnell-wont-play-monday-540663/)). Carlisle has given no timeline. Indiana next plays Fri 27 vs PHI.
+  - Unconfirmed: a HotTakes piece quotes an Underdog NBA post saying Carlisle put him out "at least a month" ([HotTakes, 23 Nov](https://hottakes.com/articles/tj-mcconnells-hamstring-injury-leaves-the-pacers-backcourt-in-shambles-9d54ede8-d757-4b9a-808c-c5b4844b7d1b)). I found no team, beat or RotoWire source for it. The piece names the wrong opponent (Mavericks, not Thunder), and its wording matches the Pacers' October 2025 post about his earlier hamstring. Treat it as a risk only.
+  - Rest: no sit has been announced for Fri 27–Sat 28 (@CHI). This would be his first back-to-back since returning on 7 Nov. On 21 Nov RotoWire linked his expected absence to that weekend's back-to-back ([CBS/RotoWire, 21 Nov](https://www.cbssports.com/fantasy/basketball/news/pacers-t-j-mcconnell-exits-game-with-hamstring-issue/)), so if he returns Friday, Saturday is a real risk. He is not ruled out for that night.
+  - **Expected return:** no timetable reported (RotoWire points to Fri 27 Nov vs PHI). *ESPN est.* 27 Nov.
+  - **Verdict:** ESPN confirmed. Its estimate (Day-to-Day, 27 Nov) matches RotoWire's Friday target. The one-month report is unverified.
 
 ### Ja Morant (POR, PG, free agent)
 
@@ -429,7 +444,16 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 01 Dec)
 - News (07 Nov): Head coach Micah Nori said Morant met with a doctor in Los Angeles, who gave him a positive outlook on his recovery from the hamstring injury. While Nori declined to update Morant's timetable, he added Morant "may not be out for as long as we thought," Trail Blazers Insider Sean Highkin reports.
 - News (30 Oct): Morant has been diagnosed with a Grade 2 left hamstring strain and is expected to miss four weeks, Portland announced Friday.
-- **Research:** _pending_
+- **Research:**
+  - Gap: still out. Portland listed him Out (left hamstring strain) for Mon 23 Nov at PHI ([NBA injury report, 23 Nov 11:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_30PM.pdf)). Portland's report for Wed 25 vs SAS was not yet submitted at 2:00 AM ET Tue ([NBA injury report, 24 Nov 2:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_02_00AM.pdf)). The 30 Oct plan to re-evaluate him "in four weeks" (about 27 Nov) still stands ([KPTV, 30 Oct](https://www.kptv.com/2026/10/30/blazers-guard-ja-morant-out-least-4-weeks-due-hamstring-injury/)). He is "projected to return later this month or in early December" ([Heavy, 21 Nov](https://heavy.com/sports/nba/portland-trail-blazers/injury-report-vs-knicks-november-21/)). There is nothing from Nori since 7 Nov and no practice report (unchanged since 23 Nov).
+  - **Expected return:** re-evaluation about 27 Nov. His first possible game is Sun 29 Nov vs NOP, or Tue 1 Dec vs MIN if he is not cleared. *ESPN est.* 1 Dec. His L30 of 28.0 rests on 2 games (small sample).
+  - **Verdict:** ESPN corrected (unchanged since 23 Nov). The re-evaluation rule puts him one game earlier. This row is the same as the one already in the file and should be kept, not added twice.
+
+**Summary**
+- No sit is announced for anyone this week. LAC, MIN and MEM play Mon/Wed/Fri/Sun with no back-to-back. The flagged back-to-back is Tue 1–Wed 2 Dec, and of the three only Edey has a real pattern (ankle management, one night of every healthy back-to-back). Hachimura's and Gobert's back-to-back absences were injuries (quad, back spasms).
+- McConnell (left hamstring): no timetable reported. RotoWire points to Fri 27 Nov vs PHI (*ESPN est.* 27 Nov). Sat 28 @CHI is a rest risk on a back-to-back, and an unverified "at least a month" report circulated on 23 Nov.
+- Morant is still out (re-evaluation about 27 Nov, first possible game Sun 29 Nov; *ESPN est.* 1 Dec). The existing return row (2026-11-28) stands unchanged.
+  - Override proposed: return 2026-11-28
 
 ### Tobias Harris (SA, SF/PF, free agent)
 
