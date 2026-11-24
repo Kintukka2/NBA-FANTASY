@@ -277,7 +277,11 @@
 - **Minutes:** 39.7 min over his last 3 games against 30.6 for the season (+9.1)
 - News (23 Nov): Bey is not listed in the starting lineup for Monday's game against the Suns.
 - News (21 Nov): Bey finished with 21 points (8-17 FG, 4-9 3Pt, 1-1 FT), six rebounds, three assists and one block across 37 minutes during Friday's 126-120 loss to the Thunder.
-- **Research:** _pending_
+- **Research:**
+  - Role: the move to the bench is ongoing. On Mon 23 vs PHX, Trey Murphy III rejoined the starting five with Jones, Zion, Missi and Fears, and Bey came off the bench: 21 pts (8-18 FG), 4 reb, 3 ast, 2 stl. NBC: "Bey was pushed to the bench with Trey Murphy returning to the starting lineup… his upside is significantly lower as a reserve" ([NBC Sports, 24 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/saddiq-bey-scores-21-points-off-bench-in-loss); [ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910042)). Only a Murphy absence (bilateral patellar tendinopathy, which the team manages) would put Bey back in the lineup.
+  - Minutes: his 40 min Monday include 5 min of overtime (123-119 OT loss), so about 35 in regulation. Murphy played 35 and Jordan Poole 27 off the bench ([Crescent City Sports, 23 Nov](https://crescentcitysports.com/pelicans-fall-short-to-suns-in-overtime/)). The wing minutes stay open while Bennedict Mathurin (left plantar fasciitis; no timetable reported; *ESPN est.* 27 Nov; [NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)) and Dejounte Murray (sitting until he is traded; override floor 30 Nov; *ESPN est.* 27 Nov) are out. Mathurin's return would cut Bey back toward the 22–29 min he played off the bench earlier this season.
+  - This week NOP plays Fri 27 @LAC and Sun 29 @POR (no back-to-back). Expect about 30 min off the bench (28–34). His rate is built partly on starts.
+  - **Verdict:** ESPN confirmed (active). The bench role is ongoing, but the 30-min estimate rests on one overtime game, so I added no row.
 
 ### Grayson Allen (CHA, PG/SG, free agent)
 
@@ -286,7 +290,11 @@
 - **Role:** started 1 of his last 2 games after 2 of 11 before; 30.0 min in his starts, against 27.2 for the season
 - News (22 Nov): Allen (concussion) has been ruled out for Monday's game against the Grizzlies.
 - News (19 Nov): Allen (concussion) has been ruled out for Friday's game against Atlanta.
-- **Research:** _pending_
+- **Research:**
+  - Injury: unchanged since 23 Nov. He was out Mon 23 vs MEM (Concussion Protocol), his third straight miss, and no progress or timeline has been reported ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf); [RotoWire, 22 Nov](https://www.rotowire.com/basketball/headlines/grayson-allen-injury-missing-third-straight-game-monday-540534)). He has to pass the protocol's checkpoints symptom-free before he plays ([Hoops Rumors, 20 Nov](https://www.hoopsrumors.com/2026/11/hornets-notes-white-james-allen-steinbach.html)). Charlotte had not filed its report for Wed 25 vs CHI as of 2:00 AM ET Tuesday ([NBA injury report, 24 Nov 2:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_02_00AM.pdf)).
+  - Role: unchanged since 23 Nov, and the change is not ongoing. He started only while Brandon Miller was out. Miller is back (probable 23 Nov), and Sion James holds the other spot ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-grayson-allen-missing-third-straight-game-monday/)). Kon Knueppel's absence keeps Allen's bench minutes up (re-evaluation about 6 Dec; *ESPN est.* 12 Dec). If he is cleared, expect about 25 min off the bench, and 0 if he is not. CHA plays Wed 25 vs CHI and Sat 28 vs BKN.
+  - **Expected return:** no timetable reported (concussion protocol). *ESPN est.* 25 Nov, which is just Charlotte's next game.
+  - **Verdict:** nothing new found. No source backs ESPN's 25 Nov.
 
 ### Pelle Larsson (MIA, SG/SF, free agent)
 
@@ -295,7 +303,10 @@
 - **Role:** started 2 of his last 2 games after 2 of 11 before; 24.5 min in his starts, against 28.5 for the season
 - News (23 Nov): Larsson finished Sunday's 123-113 win over Oklahoma City with 21 points (9-14 FG, 3-7 3Pt), three rebounds, five assists and three steals across 30 minutes.
 - News (19 Nov): Larsson ended with four points (1-2 FG, 1-2 3Pt, 1-2 FT), two rebounds, two assists and one steal across 15 minutes during Wednesday's 137-130 victory over the Bucks.
-- **Research:** _pending_
+- **Research:**
+  - Role: unchanged since 23 Nov, and the change is ongoing. He has started every game he has played since Spoelstra moved him into Wiggins's spot on 8 Nov ([Hoops Rumors, 9 Nov](https://www.hoopsrumors.com/2026/11/heat-notes-larsson-wiggins-conwell-hardaway-giannis.html)). On Sun 22 vs OKC he had 21 pts, 5 ast and 3 stl in 30 min ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/pelle-larsson-scores-season-high-21-in-victory)). Miami has not played since, and I found no news of a lineup change.
+  - No player's return ends it. Giannis's absence does not drive the start, since Portis took his spot on 22 Nov ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/mia-starts-mitchell-klay-larsson-portis-bam)). Giannis has right groin tendinitis, and Spoelstra is "optimistic" for Wed 25 ([Basketnews, 23 Nov](https://basketnews.com/news-260047-erik-spoelstra-offers-concern-level-on-giannis-new-alarming-injury-for-heat.html)); *ESPN est.* 25 Nov. Only a coaching move back to Wiggins would end Larsson's start. Expect about 28–30 min in Wed 25 @PHI, Fri 27 @NYK and Sun 29 @CLE.
+  - **Verdict:** ESPN confirmed (active). His minutes as a starter match his season average, so no row.
 
 ### Charles Bassey (GS, C, free agent)
 
@@ -305,7 +316,11 @@
 - **Minutes:** 24.3 min over his last 3 games against 15.6 for the season (+8.7)
 - News (23 Nov): Bassey recorded 13 points (6-7 FG, 1-2 FT), nine rebounds, three assists and three steals across 26 minutes during Sunday's 88-87 victory over the Celtics.
 - News (20 Nov): Bassey ended with 16 points (6-7 FG, 4-5 FT), 13 rebounds, one assist, two blocks and one steal across 25 minutes during Thursday's 126-98 loss to the Grizzlies.
-- **Research:** _pending_
+- **Research:**
+  - Role: the change is ongoing. His 18 and 19 Nov starts came with Al Horford (back) out. On Sun 22 vs BOS, Kerr started him at center with Horford healthy, and Horford played 18 min off the bench ([ESPN box, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910035)). Kerr wants "to give this lineup a look" going forward, with Draymond Green moving to power forward (Anthony Slater, [X, 22 Nov](https://x.com/anthonyVslater/status/2124653675373375495)). "If all goes well, Bassey will remain the Warriors' starting center the rest of the regular season, barring roster changes," though Kerr would not commit long term ([NBC Sports Bay Area, 22 Nov](https://www.nbcsportsbayarea.com/nba/golden-state-warriors/brandin-podziemski-observations-takeaways-celtics/1982338/)). Another writer calls him "the player for the moment" ([Blue Man Hoop, 23 Nov](https://bluemanhoop.com/charles-bassey-starting-role-makes-warriors-trade-plans-even-clearer)).
+  - Minutes: he played 22, 25 and 26 in those three starts, against 15.6 for the season. Only a coaching change or a big-man addition would end the role. Kristaps Porzingis (no timetable reported; *ESPN est.* 2 Jan) is the only center whose return would; Moses Moody (*ESPN est.* 1 Dec) and Stephen Curry (update due 26 Nov; *ESPN est.* 12 Dec) play other positions. GS did not play Mon or Tue. Expect about 24 min in Wed 25 vs SAC, Fri 27 @POR and Sun 29 vs LAC.
+  - **Verdict:** ESPN confirmed (active). The start is a coach's choice reported as ongoing.
+  - Override proposed: role 24
 
 ### P.J. Washington (DAL, SF/PF, free agent)
 
@@ -314,7 +329,17 @@
 - **Minutes:** 25.3 min over his last 3 games against 30.9 for the season (−5.6)
 - News (23 Nov): Washington (illness) is questionable for Tuesday's game against the Nuggets.
 - News (22 Nov): Washington (illness) has been ruled out for Sunday's game against the Jazz.
-- **Research:** _pending_
+- **Research:**
+  - Injury: new since 23 Nov. He is **questionable** for Tue 24 @DEN (10:00 PM ET) with an illness ([NBA injury report, 24 Nov 2:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_02_00AM.pdf); [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/p-j-washington-illness-questionable-tuesday)). He missed 21 and 22 Nov, and the Mavericks say he "could be" nearing a return ([Mavs.com, 23 Nov](https://nba.com/mavs/news/mavericks-nuggets-preview-as-nba-cup-play-continues-supporting-cast-is-learning-how-to-mesh)). No practice report was found. Zaccharie Risacher starts again if he sits.
+  - Minutes flag: unchanged since 21 Nov. The dip to 25 min came from blowouts and foul trouble, not a role change ([NBC Sports, 20 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-20/p-j-washington-shoulder-questionable-vs-lac)). He started all 15 games he played, so expect about 28–31 min once he is back. His L7 58.0 rests on 1 game (small sample). DAL plays only Tue 24 @DEN and Fri 27 @PHX this week.
+  - **Expected return:** questionable for Tue 24 @DEN; no timetable reported beyond that. *ESPN est.* 24 Nov.
+  - **Verdict:** ESPN confirmed. Questionable for 24 Nov matches ESPN's estimate, but he is not cleared yet.
+
+---
+**Summary**
+- Bassey: Kerr kept him at center over a healthy Horford on 22 Nov, and the start is reported as ongoing. I propose a role row at 24 min through 8 Dec, for Wed 25, Fri 27 and Sun 29.
+- Bey: back on the bench behind Murphy, but he played 40 min in an overtime game. Expect about 30 min in NOP's two games (27, 29 Nov) while Mathurin (*ESPN est.* 27 Nov) and Murray are out. No row.
+- Washington is questionable for Tue 24 @DEN (*ESPN est.* 24 Nov), and DAL plays only twice this week. Allen is still in concussion protocol with no timetable reported (*ESPN est.* 25 Nov). Larsson's start is unchanged.
 
 ### Daniss Jenkins (DET, PG, waivers)
 
