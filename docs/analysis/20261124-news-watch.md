@@ -492,7 +492,11 @@
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; news on 23 Nov: "After carrying a questionable tag ahead of both parts of this back-to-back, Siakam is suiting up Monday despite dealing with a left hip injury."; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (23 Nov): Siakam (hip) will play in Monday's game against the Thunder, Justin Martinez of The Oklahoman reports.
 - News (23 Nov): Siakam is questionable for Monday's game against Oklahoma City due to left hip injury management.
-- **Research:** _pending_
+- **Research:**
+  - Injury: he was questionable Mon 23 Nov vs OKC (left hip injury management), was upgraded to available, and played 35 min (20 pts, 8 reb, 5 ast, 40 FP), hitting the late jumper and three in the 125-120 win ([NBA injury report, 23 Nov 5:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_05_00PM.pdf); [NBA injury report, 23 Nov 11:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_30PM.pdf); [Heavy, 23 Nov](https://heavy.com/sports/nba/indiana-pacers/pascal-siakam-injury-thunder/); [ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910038)). The postgame write-ups report no setback, and IND has "a few days off" to practice before Fri 27 ([Circle City Spin, 23 Nov](https://www.circlecityspin.com/pacers-get-huge-clutch-win-vs-okc-thunder-six-things-learned/); [IndyStar via Yahoo, 24 Nov](https://sports.yahoo.com/articles/3-observations-much-needed-pacers-031212946.html)).
+  - Rest (Fri 27 vs PHI–Sat 28 at CHI, his only games this week): no sit announced. He played both nights of 22–23 Nov with the hip tag, and both nights of 25–26 Oct. His one rest was 2 Nov (unchanged since 23 Nov). The hip "management" label makes Sat 28 a risk, but no source says he will sit.
+  - **Expected return:** active (played 22 and 23 Nov). The left hip is day to day; no timetable needed.
+  - **Verdict:** ESPN confirmed. Active and playing full minutes, with no announced sit.
 
 ### Evan Mobley (CLE, PF/C, Matt Wright's Foxies)
 
@@ -502,7 +506,11 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 29 Nov)
 - News (16 Nov): Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a left great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.
 - News (15 Nov): Mobley (toe) has been ruled out for Monday's game against the Bulls.
-- **Research:** _pending_
+- **Research:**
+  - Injury/gap: still Out (left great toe sprain) for Mon 23 Nov at CHI, a 122-108 loss ([NBA injury report, 23 Nov 5:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_05_00PM.pdf); [Hoops Wire, 23 Nov](https://hoopswire.com/cavs-at-bulls-how-to-watch-injury-report-and-a-chance-to-build-momentum)). The team's 16 Nov plan of 7–10 days of rehab and then a re-evaluation (about 23–26 Nov) still holds. No re-evaluation result, practice report or Atkinson update has appeared since ([Cavaliers, 16 Nov](https://www.nba.com/cavaliers/news/releases-evan-mobley-261116)). CLE's report for Wed 25 at NYK was "not yet submitted" ([NBA injury report, 24 Nov 2:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_02_00AM.pdf)).
+  - The Akron Beacon Journal expects the Cavs to stay conservative: "it's probably more likely Mobley will be out until after Thanksgiving," i.e. Sun 29 vs MIA ([Akron Beacon Journal via Yahoo, 16 Nov](https://sports.yahoo.com/articles/cleveland-cavaliers-announce-evan-mobley-230948119.html)). CLE plays only Wed 25 at NYK and Sun 29 vs MIA this week.
+  - **Expected return:** re-evaluation about 23–26 Nov, with no result reported. Sun 29 vs MIA is the likely first game, and Wed 25 at NYK only if he is cleared early. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN confirmed. Nothing new since 23 Nov. The day after the latest re-evaluation date (27 Nov) lands on CLE's next game, 29 Nov, so no row is needed.
 
 ### Naz Reid (CHA, PF/C, Matt Wright's Foxies)
 
@@ -511,7 +519,10 @@
 - **Minutes:** 39.7 min over his last 3 games against 32.8 for the season (+6.9)
 - News (20 Nov): Reid logged 12 points (4-19 FG, 2-10 3Pt, 2-4 FT), 10 rebounds, three assists and one block over 39 minutes during the Hornets' 111-97 loss to the Hawks on Friday.
 - News (18 Nov): Reid ended Tuesday's 118-114 overtime loss to the Lakers with 23 points (8-18 FG, 4-10 3Pt, 3-4 FT), 11 rebounds, four assists, two blocks and two steals across 41 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: 42 (17 Nov, an overtime game), 39 (20 Nov) and 38 (23 Nov vs MEM: 24 pts on 8-25 FG, 6 reb, 36 FP) ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910036); [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/naz-reid-scores-24-hornets-lose-fifth-straight)). The rise lines up with forward/wing absences: Grayson Allen (concussion, out since a late scratch 17 Nov; no timetable reported, *ESPN est.* 25 Nov) and Grant Williams (right hamstring management, out 20 and 23 Nov; no timetable reported, *ESPN est.* 25 Nov) ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-grayson-allen-missing-third-straight-game-monday/); [CBS/RotoWire, 19 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-grant-williams-wont-play-against-atlanta/); [Roundtable via Yahoo, 23 Nov](https://sports.yahoo.com/articles/hornets-host-grizzlies-without-grayson-141629315.html)).
+  - L7 38.3 (3) is 6.8 above his 31.5 season average, and the reason is the extra minutes. His shooting is poor (below 40% in six of seven games). No source gives him an expected minutes figure, and both absent teammates are day to day (ESPN est. 25 Nov), so the extra minutes may end Wed 25. CHA plays Wed 25 vs CHI and Sat 28 vs BKN; their Wed report was not yet submitted.
+  - **Verdict:** nothing new found to support a row. The minutes are real but tied to short absences that may end this week, and no source reports the role as ongoing.
 
 ### Joel Embiid (PHI, C, Dr White Slong)
 
@@ -533,7 +544,10 @@
 - **Rest:** back-to-back Mon 30–Tue 01 Dec; sat the second night of the 15–16 Nov back-to-back, playing the games either side
 - News (21 Nov): Thompson chipped in 22 points (10-12 FG, 0-1 3Pt, 2-6 FT), six rebounds and one steal in 26 minutes during Friday's 133-124 loss to the Nuggets.
 - News (18 Nov): Thompson recorded 15 points (6-11 FG, 0-1 3Pt, 3-4 FT), nine rebounds, three assists, one steal and one block over 31 minutes during the Rockets' 119-104 win over the Pacers on Wednesday.
-- **Research:** _pending_
+- **Research:**
+  - He played 28 min Mon 23 Nov vs LAC (20 pts, 4 reb, 5 ast, 46 FP) with no injury listing ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910043)). HOU plays Wed 25 vs PHX and Sat 28 vs PHI this week, with no back-to-back. The flagged Mon 30–Tue 1 Dec back-to-back is next week.
+  - Rest: his 16 Nov absence (second night) was left knee soreness, not rest ([ClutchPoints, 16 Nov](https://clutchpoints.com/nba/houston-rockets/rockets-news-amen-thompson-out-heat-game-concerning-injury-update)), and he returned with no minutes limit on 18 Nov. He played both nights of HOU's 23–24 Oct and 30–31 Oct back-to-backs (box scores). No pattern, and nothing has been said about 30 Nov–1 Dec.
+  - **Verdict:** ESPN confirmed. Healthy, with no rest pattern and no rest risk in this matchup week.
 
 ### Andrew Nembhard (IND, PG/SG, Matt Wright's Foxies)
 
@@ -542,7 +556,15 @@
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; sat the second night of the 25–26 Oct back-to-back, playing the games either side; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (23 Nov): Nembhard produced 16 points (5-13 FG, 2-3 3Pt, 4-7 FT), two rebounds and eight assists in 32 minutes during Sunday's 113-106 loss to the Knicks.
 - News (20 Nov): Nembhard (hip) is available for Friday's game against the Cavaliers, Tony East of Forbes.com reports.
-- **Research:** _pending_
+- **Research:**
+  - He played both nights of the 22–23 Nov back-to-back: 32 min at NYK, then 38 min vs OKC (15 pts, 6 ast, 33 FP), and he set up Siakam's late three and Zubac's sealing dunk ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910038); [Yardbarker, 23 Nov](https://yardbarker.com/nba/articles/pacers_beat_thunder_125_120_as_siakam_scores_20/s1_17668_44609493)). He was not on Monday's injury report. McConnell (left hamstring soreness; no timetable reported, *ESPN est.* 27 Nov) and Haliburton (left hamstring strain; "at least the next couple of weeks" per Charania, *ESPN est.* 13 Dec) stayed out, so he remains the lead guard ([NBA injury report, 23 Nov 5:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_05_00PM.pdf); [Heavy via Yahoo, 20 Nov](https://sports.yahoo.com/articles/pacers-receive-another-disappointing-injury-021425801.html)).
+  - Rest (Fri 27–Sat 28): no sit announced. Unchanged since 23 Nov: both earlier second-night absences (26 Oct back, 2 Nov cervical) were filed as injuries. Playing 38 min on Monday's second night argues against a set rest pattern. L7 26.7 (3) is 5.1 under his season average because of his short 26-min return from the hip on 20 Nov and 6 turnovers on 22 Nov.
+  - **Verdict:** nothing new found. He is healthy, and neither night of Fri 27–Sat 28 has an announced sit.
+
+Summary:
+- No availability changes this week: Siakam (hip) and Nembhard played both nights of 22–23 Nov, and neither has a sit announced for Fri 27–Sat 28. Thompson has no back-to-back until 30 Nov–1 Dec, which is next week.
+- Mobley (left toe sprain): still no re-evaluation result. Sun 29 vs MIA is the likely first game (re-evaluation about 23–26 Nov; *ESPN est.* 29 Nov). Wed 25 at NYK only if he is cleared early.
+- Reid's extra minutes (39–42) follow the absences of Grayson Allen and Grant Williams, both ESPN est. 25 Nov, so no role row.
 
 ### Derrick White (BOS, PG/SG, Dr White Slong)
 
