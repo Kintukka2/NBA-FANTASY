@@ -52,7 +52,6 @@ Brandon Ingram
 Tyler Herro
 Franz Wagner
 Michael Porter Jr.
-Cameron Boozer
 De'Aaron Fox
 Keyonte George
 Josh Hart
@@ -102,7 +101,6 @@ Jeremiah Fears
 Matas Buzelis
 Trey Murphy III
 Aday Mara
-Mo Bamba
 Christian Braun
 Darryn Peterson
 Brayden Burries
@@ -111,3 +109,5 @@ Brook Lopez
 Neemias Queta
 Zach LaVine
 Wendell Carter Jr.
+Devin Vassell
+Peyton Watson
