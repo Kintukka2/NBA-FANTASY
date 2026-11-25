@@ -116,7 +116,12 @@
 - **Rest:** back-to-back Sat 28–Sun 29 Nov; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (23 Nov): Black chipped in 14 points (5-12 FG, 2-4 3Pt, 2-2 FT), five rebounds, two assists and two steals in 35 minutes during Sunday's 116-96 loss to the Wizards.
 - News (21 Nov): Black finished with 13 points (4-11 FG, 2-6 3Pt, 3-8 FT), seven rebounds, six assists, two blocks and three steals across 37 minutes during Friday's 113-111 win over the Nets.
-- **Research:** _pending_
+- **Research:**
+  - Rest: unchanged since 24 Nov. ORL plays Sat 28 @WSH (5:00 PM ET) and Sun 29 @DET (6:00 PM ET). He sat 2 Nov, a second night, listed as left ankle injury management ([CBS/RotoWire, 2 Nov](https://www.cbssports.com/fantasy/basketball/news/magics-anthony-black-will-rest-monday/)), and he played both nights of 10–11 Nov. No source says he will sit 28 or 29 Nov.
+  - New since 24 Nov: on Tue 24 vs DET he started but played only 28 min: 5 pts (2-8 FG, 1-3 FT), 4 reb, 2 ast, 5 turnovers, −22, in a 104-86 loss with 20 Orlando turnovers. Bane and Wagner played 38 and da Silva 33 off the bench ([ESPN box, 24 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909314)). "Both Anthony Black and Jalen Suggs looked overmatched by the Pistons' pressure defense" ([Orlando Magic Daily, 24 Nov](https://orlandomagicdaily.com/orlando-magic-let-another-chance-advance-past-detroit-pistons-slip-away-01m8823dzz3j)). That looks like a one-game benching for poor play. No injury or rotation change was reported.
+  - Form: L7 25.5 (4) is 9.8 under his 35.3 season average. The causes are poor shooting and Tuesday's 3-FP game, not lost minutes (33–37 in his previous four games).
+  - Role: he keeps his start while Paolo Banchero is out (right high ankle sprain; "targeting a return within the next couple of weeks" on 19 Nov, about 3 Dec, per Beede via [RotoBaller](https://www.rotoballer.com/player-news/paolo-banchero-ankle-targeting-return-within-a-couple-of-weeks/1997928); out again Tue 24, [NBA.com recap](https://www.nba.com/magic/news/turnovers-poor-shooting-trouble-orlando-magic-in-nba-cup-loss-to-detroit-pistons-20261124); override floor 1 Dec; *ESPN est.* 29 Nov).
+  - **Verdict:** nothing new found. He is healthy and starting. His rest risk is still Sun 29 @DET, with no plan announced.
 
 ## Free agents and waivers
 
@@ -203,7 +208,10 @@
 - **Minutes:** 39.7 min over his last 3 games against 30.6 for the season (+9.1)
 - News (23 Nov): Bey is not listed in the starting lineup for Monday's game against the Suns.
 - News (21 Nov): Bey finished with 21 points (8-17 FG, 4-9 3Pt, 1-1 FT), six rebounds, three assists and one block across 37 minutes during Friday's 126-120 loss to the Thunder.
-- **Research:** _pending_
+- **Research:**
+  - Role: unchanged since 24 Nov. NOP has not played since Mon 23. That night Trey Murphy III rejoined the starting five, and Bey came off the bench for 21 pts in 40 min of a 123-119 overtime loss ([NBC Sports, 24 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/saddiq-bey-scores-21-points-off-bench-in-loss); [ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910042)). The bench role lasts while Murphy plays. Murphy has bilateral patellar tendinopathy, which the team manages, and he sat the second night of the 20–21 Nov back-to-back ([NBC Sports, 21 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/trey-murphy-knee-out-saturday-vs-san-antonio)). NOP has no back-to-back this week: Fri 27 @LAC and Sun 29 @POR.
+  - Minutes: the 39.7-min average includes starts and 5 min of overtime. Wing minutes stay open while Bennedict Mathurin (left plantar fasciitis; no timetable reported; *ESPN est.* 27 Nov) and Dejounte Murray (left ankle, sitting until a trade; override floor 30 Nov; *ESPN est.* 27 Nov) are out. No new update on either was found ([NBC Sports, 21 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/bennedict-mathurin-foot-remains-out-saturday)). Expect about 30 min off the bench (28–34). NOP's report for Fri 27 is not out yet.
+  - **Verdict:** nothing new found (unchanged since 24 Nov). The bench role is ongoing, but the 30-min estimate rests on one overtime game, so no row.
 
 ### Grayson Allen (CHA, PG/SG, free agent)
 
@@ -222,7 +230,12 @@
 - **Minutes:** 24.3 min over his last 3 games against 15.6 for the season (+8.7)
 - News (23 Nov): Bassey recorded 13 points (6-7 FG, 1-2 FT), nine rebounds, three assists and three steals across 26 minutes during Sunday's 88-87 victory over the Celtics.
 - News (20 Nov): Bassey ended with 16 points (6-7 FG, 4-5 FT), 13 rebounds, one assist, two blocks and one steal across 25 minutes during Thursday's 126-98 loss to the Grizzlies.
-- **Research:** _pending_
+- **Research:**
+  - Role: still ongoing, with stronger backing since 24 Nov. Asked about keeping Bassey with the starters, Kerr said: "We're definitely going to give it a look, and can't predict how long, but hopefully for the season." Horford has come off the bench in both games since the change (17 and 18 min) ([Yahoo Sports, 24 Nov](https://sports.yahoo.com/nba/articles/steve-kerr-addresses-warriors-look-221429191.html)). A Wed 25 preview projects Bassey at center alongside Green and Santos ([Yahoo Sports, 24 Nov](https://sports.yahoo.com/nba/articles/yaxel-lendeborg-gets-surprising-injury-233246217.html)).
+  - Availability: neither Bassey nor Horford is on Golden State's report for Wed 25 vs SAC (10:00 PM ET). Curry, Porzingis, Moody and Butler are Out. Lendeborg (illness; *ESPN est.* 25 Nov) and Brandon Williams are Questionable ([NBA injury report, 25 Nov 3:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_03_30AM.pdf)). Lendeborg is on our roster.
+  - Minutes: 22, 25 and 26 in his three starts. Expect about 24 in Wed 25 vs SAC, Fri 27 @POR and Sun 29 vs LAC. The only center whose return would end the role is Porzingis (not with team, no timetable reported; *ESPN est.* 2 Jan).
+  - **Verdict:** ESPN confirmed (active). The start is expected to continue on Wed 25. The lineup is not yet announced, so recheck it near tip-off. The existing role row (24, until 8 Dec) holds, and this row refreshes its source.
+  - Override proposed: role 24
 
 ### Buddy Hield (CHI, SG/SF, free agent)
 
@@ -233,7 +246,12 @@
 - **Minutes:** 30.0 min over his last 3 games against 18.5 for the season (+11.5)
 - News (23 Nov): Hield finished Sunday's 151-145 overtime loss to Denver with 33 points (13-19 FG, 7-13 3Pt), seven rebounds, six assists and one steal in 40 minutes.
 - News (22 Nov): Hield will start Sunday's game against Denver.
-- **Research:** _pending_
+- **Research:**
+  - Role: ongoing while Norman Powell is out. Hield started Sun 22 vs DEN (40 min including overtime, 33 pts, 7 threes) and Mon 23 vs CLE (27 min, 17 pts) ([CBS/RotoWire, 22 Nov](https://www.cbssports.com/fantasy/basketball/news/bulls-buddy-hield-starting-versus-nuggets/); [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/buddy-hield-scores-12-fourth-quarter-points-monday); [ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910041)). Rotoworld: "worth streaming until Powell is cleared."
+  - Powell: mild right hamstring strain on 20 Nov; "Powell will be re-evaluated later this week" ([Bulls, 22 Nov](https://www.nba.com/bulls/news/norman-powell-medical-update)). He is **Out** for Wed 25 @CHA ([NBA injury report, 25 Nov 3:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_03_30AM.pdf)). Powell's expected return: re-evaluation later this week, no date reported; *ESPN est.* 28 Nov, which is CHI's next game (Sat 28 vs IND). His return ends Hield's start. Expect about 30 min on Wed 25. Sat 28 is uncertain.
+  - Form: L7 35.2 (4) is 14.2 over his 21.0 season average because he is starting.
+  - **Verdict:** ESPN confirmed (active). The start holds for Wed 25. The row covers only that night, because Powell could be back Sat 28.
+  - Override proposed: role 30
 
 ### P.J. Washington (DAL, SF/PF, free agent)
 
@@ -242,7 +260,11 @@
 - **Minutes:** 25.0 min over his last 3 games against 30.6 for the season (−5.6)
 - News (24 Nov): Washington (illness) is available for Tuesday's game in Denver.
 - News (23 Nov): Washington (illness) is questionable for Tuesday's game against the Nuggets.
-- **Research:** _pending_
+- **Research:**
+  - Status: he returned Tue 24 @DEN after missing two games with an illness. He was cleared only after warmups and came **off the bench**: 14 pts, 6 reb, 2 stl, 1 blk on 6-of-11 shooting, +32, in 24:37 of a 120-101 win ([Dallas Sports Journal, 25 Nov](https://dallassportsjournal.com/pj-washington-bench-return-dusty-may-mavericks-nuggets/); [ESPN box, 24 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909316)). Zaccharie Risacher kept the start.
+  - Role: Dusty May did not commit. He said Dallas "didn't want to rock the boat" and may or may not reshuffle, adding "that'll probably work itself out." He also said Washington looked good with the second unit ([Dallas Sports Journal, 25 Nov](https://dallassportsjournal.com/pj-washington-bench-return-dusty-may-mavericks-nuggets/)).
+  - Minutes: the 25-min trend came from blowouts and foul trouble before the illness, and now from the bench role. Expect about 25 min in Fri 27 @PHX, DAL's only other game this week, unless May restores the start. His L7 46.0 rests on 2 games (small sample).
+  - **Verdict:** ESPN confirmed (active, illness over). The bench role is not reported as ongoing, so no row. His rate (34.3) leans on games he started. His role rate at 25 min is 23.6.
 
 ### Daniss Jenkins (DET, PG, free agent)
 
