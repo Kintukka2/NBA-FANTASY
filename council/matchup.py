@@ -166,7 +166,10 @@ def main():
     unknown = [n for n in news if n not in by_name]
     for n, o in news.items():
         if "role" in o and n in by_name:
-            by_name[n]["role_rate"] = role_rate(by_name[n], o["role"])
+            r = by_name[n]
+            r["plain_rate"] = rate(r)  # his rate once the role row ends
+            r["role_until"] = max(dt.date.fromisoformat(x["until"]) for x in o["rows"] if x["kind"] == "role")
+            r["role_rate"] = role_rate(r, o["role"])
     monday = today - dt.timedelta(days=today.weekday()) + dt.timedelta(days=7 if args.next else 0)
     end = dt.date.fromisoformat(args.end) if args.end else monday + dt.timedelta(days=6)
     in_matchup = [p for p, w in first.items() if monday <= w.astimezone(ET).date() <= end]
@@ -223,8 +226,12 @@ def main():
         return game_factor(fac, vs_team.get((r["pro"], p), (None, True))[0], r["pos"])
 
     def value(r, p):
-        """A player's expected FP in his game on day p: his rate (times the opponent factor with --opp)."""
-        return rate(r) * factor(r, p) if args.opp else rate(r)
+        """A player's expected FP in his game on day p: his rate (times the opponent factor with --opp).
+        A role rate counts only for games on or before its row's 'until' date; later games use the rate."""
+        v = rate(r)
+        if "rate" not in r and r.get("role_rate") is not None and first[p].astimezone(ET).date() > r["role_until"]:
+            v = r["plain_rate"]
+        return v * factor(r, p) if args.opp else v
 
     def second_night(tid, p):
         return (tid, p) in tips and tips[(tid, p)].astimezone(ET).date() - dt.timedelta(days=1) in played_on.get(tid, ())
@@ -304,7 +311,8 @@ def main():
         bits = ([f'news: back {o["return"]:%d %b}'] if "return" in o else []) + \
                (["news: sits " + ", ".join(f"{d:%d %b}" for d in sorted(o["sit"]))] if o["sit"] else [])
         if "role" in o and r.get("role_rate") is not None:
-            bits.append(f'news: {o["role"]:g} min, role rate {r["role_rate"]:.1f} ‡ (rate {r.get("wrate") or 0:.1f})')
+            bits.append(f'news: {o["role"]:g} min through {r["role_until"]:%d %b}, role rate {r["role_rate"]:.1f} ‡ '
+                        f'(rate {r.get("wrate") or 0:.1f})')
         return "; ".join(bits)
 
     espn_est = lambda r: (f'{feed[r["id"]]["status"].lower()}, ESPN est. {feed[r["id"]]["return"]:%d %b}'

@@ -177,6 +177,7 @@ def parse_matchup(md):
     m = re.search(r"^Left holding at the end of the week: (.+)$", md, re.M)
     d["holding"] = m.group(1).strip() if m else None
     attach_games(d["moves"], plan_days(md), tip_times(md))
+    fill_drop_after(d["moves"], md)
     set_locks(d["moves"], md)
     plans = [(t, b) for t, b in sections(md) if re.match(r"(Plan|Update|Check-in)\b", t)]
     if plans:
@@ -340,6 +341,21 @@ def attach_games(moves, days, tips):
                 tip = game_tip(tips, o, d["day"])
                 mv["add_before"] = {"day": d["day"], "opp": o["opp"], "tip_mel": tip[1] if tip else ""}
                 break
+
+
+def fill_drop_after(moves, md):
+    """The dropped player's last game before the move, from the whole week, when the best plan's
+    day table starts later (a slot freed on Saturday) and so cannot show his earlier games."""
+    days, tips = week_days(md), tip_times(md)
+    teams = {plain(r[0]): r[1] for t, b in sections(md) if t == "Our roster" for r in table_rows(b)}
+    for mv in moves:
+        team = teams.get(mv["drop"])
+        if mv.get("drop_after") or not team or mv["day"] not in days:
+            continue
+        before = [d for d in days[:days.index(mv["day"])] if (team, " ".join(d.split()[:2])) in tips]
+        if before:
+            tip = tips[(team, " ".join(before[-1].split()[:2]))]
+            mv["drop_after"] = {"day": before[-1], "opp": None, "tip_mel": tip[1]}
 
 
 def versus(opp):
@@ -939,7 +955,8 @@ def tiles(snap):
         lead = us - them
         cls = "lead-up" if lead > 0 else "lead-down"
         best = m.get("best")
-        out.append(f'<div class="tile"><span class="label">Projected final, no more moves</span><span class="value">{us:,}<small> to </small>{them:,}</span>'
+        label = ("Projected final, after " + ", ".join(esc(x) for x in m["swaps"])) if m.get("swaps") else "Projected final, no more moves"
+        out.append(f'<div class="tile"><span class="label">{label}</span><span class="value">{us:,}<small> to </small>{them:,}</span>'
                    f'<span class="note {cls}">margin {lead:+,}</span>'
                    + (f'<span class="note">best plan adds {best["gain"]} ({best["adds"]} adds)</span>' if best else "")
                    + "</div>")
