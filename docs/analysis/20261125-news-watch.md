@@ -127,7 +127,11 @@
 - **Injury:** ESPN est. 29 Nov (Out, Right Foot Strain, updated 20 Nov), but the news said on 20 Nov: "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week."
 - News (20 Nov): Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week.
 - News (19 Nov): Nurkic (toe) is listed as out for Friday's game against Phoenix.
-- **Research:** _pending_
+- **Research:**
+  - Unchanged since 24 Nov. The Jazz said on 20 Nov that he was cleared for on-court work and "will be re-evaluated in one week" ([Jazz, 20 Nov](https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-3)). His last listing was Out at LAL on Mon 23 Nov with the right 2nd plantar plate tear ([NBA injury report, 23 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf)). UTA played no games on 24 or 25 Nov, and I found no Jazz update and no report of contact or 5-on-5 work through 25 Nov.
+  - **Expected return:** the re-evaluation is due about 27 Nov, so he should miss Fri 27 vs DEN. His first possible game is Sun 29 vs PHX. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN confirmed. 29 Nov fits the one-week re-evaluation, and the 28 Nov row has the same effect because UTA has no game on 28 Nov.
+  - Override proposed: return 2026-11-28
 
 ### Norman Powell (CHI, SG/SF, free agent)
 
@@ -136,7 +140,11 @@
 - **Injury:** ESPN est. 28 Nov (Out, Right Hamstring Strain, updated 22 Nov), but the news said on 22 Nov: "Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week."
 - News (22 Nov): Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week.
 - News (21 Nov): Powell is questionable for Sunday's game against the Nuggets due to a right hamstring strain.
-- **Research:** _pending_
+- **Research:**
+  - Out Wed 25 Nov at CHA with a right hamstring strain, his third straight miss ([NBA injury report, 25 Nov 4:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_04_00AM.pdf); [Yardbarker, 24 Nov](https://www.yardbarker.com/nba/articles/bulls_take_big_step_ahead_of_game_vs_sinking_hornets/s1_17045_44613849)). The Bulls' only official word is still the 22 Nov "mild" strain, to be "re-evaluated later this week" ([Bulls/NBA.com, 22 Nov](https://www.nba.com/bulls/news/norman-powell-medical-update)), and K.C. Johnson said the team hopes for a "more definitive timeline later in week" ([K.C. Johnson on X, 22 Nov](https://x.com/KCJHoop/status/2124522701285187925)).
+  - Sat 28 vs IND: no source says he is expected to play. Coverage still frames it as an open question ([Yahoo/Roundtable, 22 Nov](https://sports.yahoo.com/articles/bulls-unfortunate-norman-powell-injury-202437747.html)). No re-evaluation result had been reported by 25 Nov 4:00 AM ET.
+  - **Expected return:** re-evaluation "later this week", no date given. Sat 28 vs IND is the earliest possible game, not a reported target. *ESPN est.* 28 Nov.
+  - **Verdict:** ESPN confirmed as a floor. Sat 28 is possible but unconfirmed until the re-evaluation is reported, so I added no row.
 
 ### Maxime Raynaud (SAC, C, free agent)
 
@@ -145,7 +153,11 @@
 - **Injury:** ESPN est. 02 Dec (Out, Right Knee Dislocated, updated 25 Nov), but the news said on 24 Nov: "Raynaud should be considered week-to-week."
 - News (24 Nov): Raynaud (knee) is out for Wednesday's game against the Warriors.
 - News (18 Nov): Raynaud (knee) will remain on the inactive list for Wednesday's game against the Suns.
-- **Research:** _pending_
+- **Research:**
+  - Sacramento listed him Out for Wed 25 Nov at GS with a right patella subluxation ([NBA injury report, 25 Nov 4:00 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_04_00AM.pdf)). RotoWire says the Kings have given no update and keep ruling him out 24 hours ahead, so he is "still not close" and "week-to-week" ([CBS/RotoWire, 24 Nov](https://www.cbssports.com/fantasy/basketball/news/kings-maxime-raynaud-ruled-out-for-wednesday/)). On 23 Nov he was reported to have done on-court workouts, with no timeline ([Roundtable, 23 Nov](https://roundtable.io/sports/nba/kings/players/when-will-kings-raynaud-return-from-right-knee-injury)).
+  - **Expected return:** no timetable reported. The 25 Nov floor passed with him out, so the new floor is 2 Dec @PHX, which rules out 29 Nov vs MIN and 30 Nov vs NOP. *ESPN est.* 2 Dec.
+  - **Verdict:** ESPN confirmed. ESPN moved its estimate to 2 Dec, which matches the 7-days-after rule, and the row moves from 25 Nov to 2 Dec.
+  - Override proposed: return 2026-12-02
 
 ### Dejounte Murray (NO, PG/SG, free agent)
 
@@ -156,7 +168,12 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 27 Nov)
 - News (13 Nov): Murray (ankle) is out for Friday's game against Memphis.
 - News (13 Nov): Murray (ankle) requested a trade from the Pelicans on Friday, per Shams Charania of ESPN.
-- **Research:** _pending_
+- **Research:**
+  - He was Out Mon 23 Nov vs PHX with a left ankle sprain ([NBA injury report, 23 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf); [Pelicans.com, 23 Nov](https://nba.com/pelicans/news/pelicans-shootaround-update-three-players-are-probable-for-phoenix-game-who-were-dnps-saturday)). He is sitting until he is traded ([HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html)).
+  - New on 24 Nov: he is "currently away from the team". The Warriors have no interest, and his fully guaranteed $32.7M contract limits the market unless NOP adds picks, which it seems unwilling to do ([Siegel via ClutchPoints, 24 Nov](https://clutchpoints.com/nba/new-orleans-pelicans/nba-rumors-warriors-told-rich-paul-came-asking-dejounte-murray-trade)). That answers the gap flag: still a standoff, no deal near. The minutes flag (8–11 Nov games) is moot while he does not play.
+  - **Expected return:** no timetable reported. He is out until he is traded. *ESPN est.* 27 Nov.
+  - **Verdict:** ESPN corrected. 27 Nov is a placeholder. The 30 Nov row stays: it is 7 days after the 23 Nov out listing and rules him out of 27 Nov @LAC and 29 Nov @POR.
+  - Override proposed: return 2026-11-30
 
 ### Bennedict Mathurin (NO, SG/SF, free agent)
 
@@ -166,7 +183,17 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 27 Nov)
 - News (19 Nov): Mathurin (foot) has been ruled out for Friday's game against the Thunder.
 - News (17 Nov): Mathurin (foot) has been ruled out for Wednesday's game against Detroit.
-- **Research:** _pending_
+- **Research:**
+  - Unchanged since 24 Nov. He was Out Mon 23 Nov vs PHX with left plantar fasciitis ([NBA injury report, 23 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_45PM.pdf)), and the team's shootaround notes gave no timeline ([Pelicans.com, 23 Nov](https://nba.com/pelicans/news/pelicans-shootaround-update-three-players-are-probable-for-phoenix-game-who-were-dnps-saturday)). "Week-to-week" is RotoWire's own view ([CBS/RotoWire, 19 Nov](https://www.cbssports.com/fantasy/basketball/news/pelicans-bennedict-mathurin-another-absence-coming/)).
+  - Gap: NOP has played no games since 23 Nov, so there has been no new listing. Its report for Fri 27 @LAC is due 26 Nov.
+  - **Expected return:** no timetable reported. The week-to-week floor is 26 Nov, and NOP's first game after it is 27 Nov @LAC. *ESPN est.* 27 Nov.
+  - **Verdict:** ESPN confirmed as a floor. No source puts him out longer, so I added no row. If NOP lists him out for 27 Nov, the floor becomes 4 Dec.
+
+---
+**Summary**
+- Raynaud: Sacramento listed him out for Wed 25 at GS (official report, 25 Nov 4:00 AM ET), so his row moves from 25 Nov to **2 Dec** and he misses SAC's 29 and 30 Nov games. ESPN's estimate already shows 2 Dec.
+- Powell: out Wed 25 at CHA. No source says he is expected Sat 28 vs IND. The Bulls' re-evaluation "later this week" has not been reported, so 28 Nov is a floor only and I added no row.
+- Nurkic (28 Nov) and Murray (30 Nov) rows stay. Murray is still away from the team with a thin trade market (Siegel, 24 Nov). Mathurin has nothing new, and NOP files for 27 Nov on 26 Nov.
 
 ### Saddiq Bey (NO, SF/PF, free agent)
 
