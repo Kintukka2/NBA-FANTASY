@@ -5,6 +5,15 @@
 - **Team he left:** his role there, and who has taken his minutes since (games without him against games with him, from ESPN's box scores). **Team he joined:** long absences at his positions (ESPN expects them out more than 7 days), the depth there, and whose minutes he takes.
 - **Rate** is the weighted, outlier-adjusted rate (`council/gamelog.py`). L7 / L15 / L30 are FP/g over the last 7, 15 and 30 days, games in brackets.
 
+## What it means for us
+
+- **Pickups:** none. Nique Clifford has not played since his 6-minute night on 23 Nov, and Alex Caruso is available Wednesday, so Clifford's minutes shrink further (Rate 9.7).
+- **Threats to our players' minutes:** none from a trade. Two rumors, nothing agreed:
+  - Free agent Kevin Porter Jr. met with Orlando on 23 Nov. If he signs, Anthony Black faces more competition at point guard.
+  - The Clippers are said to be shopping veterans, Brook Lopez among them. The plan drops Lopez on Saturday anyway.
+- **No trades or rotation releases** were reported 24–25 Nov beyond the Bulls waiving Orlando Robinson (24 Nov), who had not played for them.
+- **Overrides:** none added.
+
 ## Summary
 
 | Date | Player | From → To | Role before | Role since | Rate | League |
@@ -61,8 +70,22 @@
 
 ### Research
 
-- _pending_
+- **Since 24 Nov:** Clifford has played no new game. OKC did not play on Tue 24 Nov; the only games were DET–ORL, BOS–WSH and DAL–DEN ([ESPN scoreboard, 24 Nov](https://www.espn.com/nba/scoreboard/_/date/20261124)). OKC hosts MIN on Wed 25 Nov ([ESPN scoreboard, 25 Nov](https://www.espn.com/nba/scoreboard/_/date/20261125)).
+  - NBC's player feed has no Clifford item dated 24–25 Nov. Its latest mention is still the 23 Nov note naming him, Stirtz and Dix as candidates for Caruso's minutes ([NBC Sports, read 25 Nov](https://www.nbcsports.com/nba/nique-clifford/203024/news)).
+  - His form is unchanged (`form.py`, 25 Nov 09:08 UTC): season 6.7 (16) · L7 11.0 (4) · L15 9.5 (8) · L30 6.9 (14) · projected 20.8 · Rate **9.7**.
+- **Depth is coming back, starting with Caruso:** The Thunder list Alex Caruso as available for Wednesday vs MIN, after he missed three games with a right hip impingement.
+  - Nikola Topić (left hip strain), Jaylin Williams (low back spasms) and Aday Mara (right shin contusion) are ruled out ([The Oklahoman via Yahoo Sports, 24 Nov](https://sports.yahoo.com/nba/articles/alex-caruso-injury-okc-thunder-233820218.html); [Hoops Rumors, 24 Nov](https://www.hoopsrumors.com/2026/11/injury-notes-cunningham-antetokounmpo-embiid-williams-anunoby-lendeborg-caruso.html)). No timetable has been reported for any of the three; *ESPN est.* 28 Nov for each (`injuries.py`, 25 Nov).
+  - Caruso's guard and wing minutes are the pool Clifford was drawing from.
+- **Trades not yet in ESPN's feed:** none. I found no trade, agreed deal or pending physical reported 24–25 Nov, and no release or buyout of a rotation player.
+  - ESPN's feed ends with the Bulls waiving Orlando Robinson, its 24 Nov entry ([ESPN transactions feed, read 25 Nov](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions)).
+  - Hoops Rumors' transactions page still ends with that waiver, at 10:38 pm ET on 23 Nov ([Hoops Rumors, read 25 Nov](https://www.hoopsrumors.com/transactions)). Its trade tracker still lists only Clifford SAC → OKC ([Hoops Rumors, 17 Nov](https://www.hoopsrumors.com/2026/11/2026-27-in-season-nba-trades.html)).
+  - Its 24 Nov posts, the latest at 10:00 pm ET, carry no trade, waiver, release or buyout ([Hoops Rumors archive, read 25 Nov](https://www.hoopsrumors.com/2026/11)).
+- **Rumors only, nothing agreed:** Free agent Kevin Porter Jr. met with Orlando on Mon 23 Nov. The Stein Line reported the meeting, and the Orlando Sentinel's Jason Beede confirmed it; no deal has been reported ([Hoops Rumors, 24 Nov](https://www.hoopsrumors.com/2026/11/eastern-notes-michael-porter-jr-vukcevic-joe-black-kevin-porter-jr.html)). If he signs, our Anthony Black could face more competition at point guard.
+  - Stein reports that the Clippers are starting veterans to build their trade value, and Windhorst says scouts are at their games. Brook Lopez, Derrick Jones Jr. and Max Strus are named as the likeliest to go. Nothing is agreed ([Last Word on Sports, 24 Nov](https://lastwordonsports.com/basketball/2026/11/24/bulls-release-robinson/)).
+- **Verdict:** No trade or release adds a new player, and I added no override row. **Clifford stays off the watch.** He has had no game since his 6-minute night at IND. Caruso returns on Wednesday, so his minutes should shrink further, and no source gives him a stated role. At a Rate of 9.7, he is not worth a stream.
+  - **Caveat:** I searched at about 4:15 am ET on 25 Nov, before any 25 Nov US news. Wednesday's MIN–OKC box score is the first chance to see Caruso's return in the minutes.
 
 ## Sources
 
 - ESPN's NBA transactions feed (`site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions`), ESPN's NBA injury feed, ESPN box scores (cached in `council/.cache/box`), and league 423671879 (`kona_player_info`, `mTeam`, `proTeamSchedules_wl`), read 2026-11-25 09:06 UTC.
+- **Research links:** [ESPN scoreboard, 24 Nov](https://www.espn.com/nba/scoreboard/_/date/20261124) · [ESPN scoreboard, 25 Nov](https://www.espn.com/nba/scoreboard/_/date/20261125) · [NBC Sports, read 25 Nov](https://www.nbcsports.com/nba/nique-clifford/203024/news) · [The Oklahoman via Yahoo Sports, 24 Nov](https://sports.yahoo.com/nba/articles/alex-caruso-injury-okc-thunder-233820218.html) · [Hoops Rumors, 24 Nov](https://www.hoopsrumors.com/2026/11/injury-notes-cunningham-antetokounmpo-embiid-williams-anunoby-lendeborg-caruso.html) · [ESPN transactions feed, read 25 Nov](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/transactions) · [Hoops Rumors, read 25 Nov](https://www.hoopsrumors.com/transactions) · [Hoops Rumors, 17 Nov](https://www.hoopsrumors.com/2026/11/2026-27-in-season-nba-trades.html) · [Hoops Rumors archive, read 25 Nov](https://www.hoopsrumors.com/2026/11) · [Hoops Rumors, 24 Nov](https://www.hoopsrumors.com/2026/11/eastern-notes-michael-porter-jr-vukcevic-joe-black-kevin-porter-jr.html) · [Last Word on Sports, 24 Nov](https://lastwordonsports.com/basketball/2026/11/24/bulls-release-robinson/)
