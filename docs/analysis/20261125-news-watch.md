@@ -397,7 +397,12 @@
 - **Gap:** listed out, and no news in 5 days (ESPN est. 29 Nov)
 - News (24 Oct): Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.
 - News (23 Oct): Banchero didn't check back in during the fourth quarter of Friday's 115-93 loss to the Timberwolves after being deemed doubtful to return. He finished with 14 points (5-11 FG, 0-2 3Pt, 2-4 FT), six rebounds, five assists and one steal across 26 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Injury/gap: the official report listed him Out for Tue 24 Nov vs DET with the right high ankle sprain ([NBA injury report, 24 Nov 5:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_30PM.pdf)). Same-day coverage said there is still "no timetable for his return" ([Yahoo Sports, 24 Nov](https://sports.yahoo.com/nba/articles/final-injury-report-pistons-magic-200000611.html)). The Magic's own preview gave his reason as "illness / right high ankle sprain" ([NBA.com/Magic, 24 Nov](https://www.nba.com/magic/news/orlando-magic-detroit-pistons-game-preview-injury-report-20261124)).
+  - The latest team word is still Sweeney's "No timeline right now" ([Yahoo, 18 Nov](https://sports.yahoo.com/articles/no-timeline-set-magic-paolo-204500820.html)). Banchero's own target is "hopefully within the next couple of weeks" ([Hoops Rumors, 19 Nov](https://www.hoopsrumors.com/2026/11/injury-notes-banchero-kawhi-pacers-edwards-grizzlies.html)). Nothing newer turned up. Trackers that give "29 Nov" are repeating ESPN's estimate. ORL has no game Wed 25. Its next games are Sat 28 at WAS, Sun 29 at DET and Wed 2 Dec.
+  - **Expected return:** no timetable reported. His own target is early December. The 1 Dec floor (7 days after the 24 Nov out listing) makes Wed 2 Dec his first possible game. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN corrected (unchanged since 24 Nov). For 29 Nov to hold, he would have to make his return on the second night of a back-to-back, and the team has given no date. Keep the 1 Dec row, with its source updated to the 24 Nov 5:30 PM report.
+  - Override proposed: return 2026-12-01
 
 ### Pascal Siakam (IND, PF, Matt Wright's Foxies)
 
@@ -435,7 +440,11 @@
 - **Rest:** back-to-back Fri 27–Sat 28 Nov, Tue 01–Wed 02 Dec; sat the second night of the 24–25 Oct back-to-back, playing the games either side; sat the second night of the 30–31 Oct back-to-back, playing the games either side; sat the first night of the 15–16 Nov back-to-back, playing the games either side
 - News (24 Nov): Embiid (illness) is listed as doubtful for Wednesday's game versus Miami.
 - News (23 Nov): Embiid (illness) is out for Monday's game against Portland, Austin Krell of OnPattison.com reports.
-- **Research:** _pending_
+- **Research:**
+  - Illness: the official report lists him Doubtful for Wed 25 Nov vs MIA, a 5:00 PM ET tip ([NBA injury report, 25 Nov 1:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_01_30AM.pdf)). He missed Mon 23 vs POR, and no details of the illness have been given ([NBC Sports, 24 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/joel-embiid-illness-remains-out-wednesday)). His L7 of 59.5 rests on 2 games (small sample).
+  - Rest: Yahoo says he "seems likely to miss at least one" of Fri 27 at IND and Sat 28 at HOU, because of the right foot plantar fascia management ([Yahoo Sports, 24 Nov](https://sports.yahoo.com/nba/article/joel-embiid-listed-as-doubtful-for-76ers-nba-cup-matchup-vs-miami-heat-on-wednesday-due-to-illness-225037585.html)). That is the writer's expectation, not a team statement. He has sat one leg of all three back-to-backs this season (24–25 Oct, 30–31 Oct, 15–16 Nov). Before the first he said "I'm not playing both games" ([Yahoo/NBC Sports Philadelphia, 24 Oct](https://sports.yahoo.com/articles/76ers-joel-embiid-makes-major-152111769.html)). Nothing has been said about Tue 1 / Wed 2 Dec.
+  - **Expected return:** day-to-day (illness), no timetable reported. Doubtful Wed 25. *ESPN est.* 27 Nov.
+  - **Verdict:** ESPN confirmed. A 27 Nov estimate fits a doubtful listing for Wed 25. Expect him to sit one of Fri 27 and Sat 28, but the team has said nothing, so there is no sit row.
 
 ### Amen Thompson (HOU, SG/SF, Matt Wright's Foxies)
 
@@ -462,7 +471,9 @@
 - **Rest:** back-to-back Tue 01–Wed 02 Dec; sat the second night of the 16–17 Nov back-to-back, playing the games either side
 - News (24 Nov): Kuminga contributed 15 points (5-12 FG, 1-5 3Pt, 4-6 FT), five rebounds, four assists and one steal in 26 minutes during Monday's 142-116 win over the Nets.
 - News (19 Nov): Kuminga totaled 23 points (7-13 FG, 2-4 3Pt, 7-7 FT), three rebounds, three assists and three blocks in 35 minutes during Thursday's 102-99 loss to the Knicks.
-- **Research:** _pending_
+- **Research:**
+  - Rest: he is not on MIN's report for Wed 25 at OKC ([NBA injury report, 25 Nov 1:30 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_01_30AM.pdf)). He keeps starting while Anthony Edwards is out after right knee arthroscopy. His only back-to-back miss, on 17 Nov, was a right shoulder contusion, not rest ([Roundtable, 17 Nov](https://roundtable.io/sports/nba/timberwolves/news/key-starter-ruled-out-for-timberwolves-against-blazers)). He played both nights of MIN's 25–26 Oct and 30–31 Oct back-to-backs. Nothing has been said about Tue 1 / Wed 2 Dec. MIN has no back-to-back this week (Wed 25, Fri 27, Sun 29).
+  - **Verdict:** nothing new found (unchanged since 24 Nov). His rest risk for 1–2 Dec is low.
 
 ### Derrick White (BOS, PG/SG, Dr White Slong)
 
@@ -471,7 +482,15 @@
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; news on 21 Nov: "The veteran guard will be in street clothes for the first leg of the Celtics' back-to-back set, but he could make his return Sunday against the Warriors."; sat the first night of the 21–22 Nov back-to-back, playing the games either side
 - News (23 Nov): White amassed 14 points (6-21 FG, 2-12 3Pt), three rebounds, five assists and one steal over 32 minutes during Sunday's 88-87 loss to the Warriors.
 - News (22 Nov): White (shoulder) is not listed on the injury report for Sunday's game against Golden State, Justin Turpin of WEEI.com reports.
-- **Research:** _pending_
+- **Research:**
+  - He played Tue 24 Nov at WAS: 6 pts (2-10 FG), 7 reb and 5 ast in 30 minutes of a 131-116 win ([FanDuel Research, 24 Nov](https://www.fanduel.com/research/nba/player-news/game-recaps/derrick-white-scores-6-points-in-win-over-wizards-nov-24-2026)). He was not on BOS's report ([NBA injury report, 24 Nov 5:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_30PM.pdf)). The shoulder is not limiting his minutes, but his shooting slump goes on.
+  - Rest: his 21 Nov absence was the left AC joint sprain, not rest ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/derrick-white-shoulder-off-injury-report-vs-gsw)). He played both nights of BOS's other four back-to-backs. No sit has been reported for Sun 29 / Mon 30 Nov.
+  - **Verdict:** nothing new found (unchanged since 24 Nov). His rest risk for 29–30 Nov is low.
+
+**Summary**
+- Banchero: out again Tue 24 Nov, still with no timetable. The 1 Dec floor stands (row re-sourced to the 24 Nov 5:30 PM report), so he misses Sat 28 and Sun 29 and his first possible game is Wed 2 Dec (*ESPN est.* 29 Nov).
+- Embiid: Doubtful Wed 25 vs MIA with the illness (*ESPN est.* 27 Nov). Expect him to sit one of Fri 27 at IND and Sat 28 at HOU, but with no team statement there is no sit row.
+- Kuminga and White: nothing new. Both played 24 Nov or are off the Wed 25 report, and their rest risk on 1–2 Dec and 29–30 Nov is low.
 
 ## Sources
 
