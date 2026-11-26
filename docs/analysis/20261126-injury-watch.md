@@ -10,6 +10,192 @@
 - **Games** is games left this week (23 Nov–29 Nov) / next week (30 Nov–06 Dec).
 - **ESPN est.** is ESPN's estimated return. The skill adds the reported timeline beside it.
 
+## Shortlist
+
+These five pickups should hold their roles through Sun 29 Nov. Wednesday 25 Nov games are final, and no NBA team plays Thu 26. We have open lineup slots on Fri (1), Sat (6) and Sun (1). Saturday has only five games: ORL@WSH, BKN@CHA, IND@CHI, OKC@MIL and PHI@HOU ([ESPN scoreboard, 28 Nov](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261128)). The shortlist therefore has two Fri+Sun options (take one, for the single Fri and Sun slots) and three Saturday players.
+
+The add deadlines (each US day's first tip-off, Melbourne time) are: Fri 27 by **Sat 28 Nov 11:00 AM** (MIA@NY), Sat 28 by **Sun 29 Nov 9:00 AM** (ORL@WSH) and Sun 29 by **Mon 30 Nov 7:30 AM** (MIA@CLE) ([ESPN scoreboard, 27 Nov](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261127); [29 Nov](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261129)). Take adds left from `matchup.py`.
+
+The Rates come from `council/form.py` (26 Nov 06:16 UTC). Our five-lowest floor is **31.1**. Wednesday's statuses come from the [NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf). At 1:15 AM ET on 26 Nov, no team had submitted its Friday report yet ([NBA injury report, 26 Nov 1:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15AM.pdf)).
+
+- **Jakob Poeltl** (TOR, C, free agent, 37%): Fri + Sun.
+  - **Opening:**
+    - Kawhi Leonard (us) is out "at least another week" from 24 Nov, with the next update in a week ([CP24, 24 Nov](https://www.cp24.com/news/sports/2026/11/24/kawhi-leonard-out-at-least-another-week-as-he-recovers-from-knee-swelling/); [NBA.com, 25 Nov](https://www.nba.com/news/kawhi-leonard-begins-on-court-workouts-out-at-least-another-week)); *ESPN est.* 3 Dec.
+    - RJ Barrett will be re-evaluated about 3 Dec ([NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/rj-barrett-hamstring-out-at-least-two-weeks)); *ESPN est.* 13 Dec.
+  - **Window:** both absentees are out all week.
+  - **Role:** the starting C since Barrett's injury, with starts on 18, 20 and 23 Nov ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910039)).
+    - **Risk (unchanged):** Rotoworld thinks the days off "may be enough time to get Murray-Boyles back into the starting lineup" ([NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/collin-murray-boyles-concussion-plays-24-minutes)).
+    - TOR has not played since 23 Nov, and no lineup news has come out since.
+  - **Numbers:** FP/g without the absentees 38.7 (3 g, 29.7 min). Season 27.4 (15), L7 38.7 (3), L15 27.9 (7), L30 30.8 (12). **Rate 32.2**, the best here; ESPN proj. 31.7. Minutes 24.2 for the season, 29.7 over L7. ([Injury Watch, 26 Nov](20261126-injury-watch.md); Rate from `form.py`, 26 Nov)
+  - **L7 +11.3:** minutes, from the three starts. The L7 is those 3 games.
+  - **Games:** 2 (Fri vs BKN, Sun vs DEN). For Friday, add by Sat 28 Nov 11:00 AM Melbourne.
+- **Charles Bassey** (GS, C, free agent, 7%): Fri + Sun, the alternative to Poeltl.
+  - **Opening:**
+    - Stephen Curry will be re-evaluated Fri 27 Nov ([CBS/RotoWire, 25 Nov](https://www.cbssports.com/fantasy/basketball/news/warriors-stephen-curry-to-be-re-evaluated-friday/)). A re-evaluation is not a return date; *ESPN est.* 12 Dec.
+    - Kristaps Porzingis is "Not With Team" ([NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)); no timetable reported; *ESPN est.* 2 Jan.
+  - **Window:** both are out past Sunday.
+  - **Role:** Kerr on keeping Bassey with the starters: "can't predict how long, but hopefully for the season" ([Yahoo, 24 Nov](https://sports.yahoo.com/nba/articles/steve-kerr-addresses-warriors-look-221429191.html)).
+    - He started again Wed vs SAC: 10 pts, 7 reb and 2 blk in 22 min. Horford came off the bench for 13 min ([ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909324)).
+    - Yaxel Lendeborg (us) played Wednesday after all, so Bassey's start did not depend on him.
+  - **Numbers:** FP/g without the absentees 27.7 (6 g, 21.8 min). Season 23.3 (16), L7 35.2 (4), L15 26.7 (7), L30 23.0 (15). Rate 27.8; **role rate 33.5 ‡** (news override, 24 min until 8 Dec, in force). ESPN proj. 14.5. Minutes 16.0 for the season, 23.8 over L7. ([Injury Watch, 26 Nov](20261126-injury-watch.md); Rate from `form.py`, 26 Nov)
+  - **L7 +11.9:** minutes, from his starts on 18, 19, 22 and 25 Nov.
+  - **Games:** 2 (Fri @POR, Sun vs LAC). For Friday, add by Sat 28 Nov 11:00 AM Melbourne.
+- **Buddy Hield** (CHI, SG/SF, free agent, 7%): Sat.
+  - **Opening:**
+    - Caleb Wilson (right metacarpal fracture): next update about 3 Dec ([Bulls On SI, 20 Nov](https://www.si.com/nba/bulls/onsi/bulls-injury-report-not-the-game-to-be-without-a-big-man-a-peek-at-caleb-wilson-20)); *ESPN est.* 13 Dec.
+    - Norman Powell was out Wed, his third straight absence ([NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)). The Bulls said only that he "will be re-evaluated later this week" ([Bulls.com, 22 Nov](https://www.nba.com/bulls/news/norman-powell-medical-update)). No result has been reported; *ESPN est.* 28 Nov, which is Saturday.
+  - **Window:** Wilson's absence keeps Hield's bench minutes going past Sunday. The start lasts until Powell is back.
+  - **Role:** he started Wed at CHA in Powell's place, beside Giddey, Okoro, Buzelis and Claxton ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/bulls-start-giddey-hield-okoro-buzelis-claxton)). He had 9 pts, 4 reb, 4 ast and 3-6 3PT in 27 min ([ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909318)).
+  - **Numbers:** FP/g without Wilson 29.8 (8 g, 25.0 min). Season 21.2 (16), L7 33.0 (5), L15 29.8 (8), L30 23.0 (13). Rate 27.4; ESPN proj. 16.9. Minutes 19.0 for the season, 27.2 over L7. ([Injury Watch, 26 Nov](20261126-injury-watch.md); Rate from `form.py`, 26 Nov)
+  - **L7 +11.8:** minutes, from starts on 22, 23 and 25 Nov ([ESPN box, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910032); [23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910041); [25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909318)).
+  - **Games:** 1 (Sat vs IND). Add by Sun 29 Nov 9:00 AM Melbourne. Powell's Saturday status should be on CHI's official report before then.
+- **Kenrich Williams** (OKC, SF, free agent, 4%): Sat.
+  - **Opening:**
+    - Jalen Williams and Cason Wallace have no timeline, and it is "unlikely either of them plays again this season" ([NBC Sports, 2 Nov](https://www.nbcsports.com/nba/news/2026-27-nba-news-injury-updates-nov-2-injuries-hit-jalen-williams-cason-wallace-chet-holmgren-in-okc)); *ESPN est.* 2 Mar for both.
+    - Chet Holmgren: 8–10 weeks from 30 Oct (same article); *ESPN est.* 2 Jan.
+    - Aday Mara (shin contusion) and Jaylin Williams (back spasms) were out Wed. RotoWire says it is "unclear when he will be available" (Jaylin Williams), and Kenrich "should... see more action" with both out ([RotoWire, 24 Nov](https://www.rotowire.com/basketball/headlines/jaylin-williams-injury-still-out-wednesday-540874)). No timetable reported for Mara; *ESPN est.* 28 Nov for both.
+  - **Window:** the long absences last all season. The extra small-ball minutes shrink when Mara or Jaylin Williams returns, possibly at Saturday's game.
+  - **Role:** a bench forward since Shai Gilgeous-Alexander returned ([CBS/RotoWire, 23 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-kenrich-williams-headed-to-bench-540713/); [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/kenrich-williams-scores-20-points-off-bench)).
+    - 20 pts and 9 reb in 26 min on 23 Nov ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910038)).
+    - 13 pts, 5 reb and 3 stl in 25 min Wed vs MIN ([ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909320)).
+  - **Numbers:** FP/g without the absentees 27.4 (10 g, 25.0 min). Season 21.3 (19), L7 33.8 (5), L15 28.3 (9), L30 23.9 (16). Rate 27.4; ESPN proj. 14.2. Minutes 21.6 for the season, 25.6 over L7. ([Injury Watch, 26 Nov](20261126-injury-watch.md); Rate from `form.py`, 26 Nov)
+  - **L7 +12.5:** minutes, and a 20-point game on 23 Nov (box above).
+  - **Games:** 1 (Sat @MIL). Add by Sun 29 Nov 9:00 AM Melbourne.
+- **Coby White** (CHA, PG/SG, free agent, 60%): Sat.
+  - **Opening:**
+    - Dennis Schroder is out indefinitely, possibly until mid-December ([CBS/RotoWire, 24 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-dennis-schroder-remains-out-indefinitely/)); *ESPN est.* 12 Dec.
+    - Kon Knueppel is out at least four weeks from 8 Nov ([CBS/RotoWire, 8 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-kon-knueppel-out-at-least-four-weeks/)); *ESPN est.* 12 Dec.
+    - Grayson Allen missed Wednesday, his fourth straight game in the concussion protocol ([NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf); [FantasyPros, 25 Nov](https://www.fantasypros.com/nba/news/622560/grayson-allen-concussion-ruled-out-wednesday.php)). No timetable reported; *ESPN est.* 28 Nov.
+  - **Window:** Schroder and Knueppel are out past Sunday.
+  - **Role:** he started Wed vs CHI: 11 pts (3-13 FG), 5 reb and 6 ast in 25 min ([ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909318)). He played 28 min with 21 pts on 23 Nov ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910036)).
+    - He has been on a minutes limit since his 2 Nov debut ([Hoops Rumors, 20 Nov](https://www.hoopsrumors.com/2026/11/hornets-notes-white-james-allen-steinbach.html)). No report says it has been lifted.
+  - **Numbers:** FP/g without the absentees 24.0 (8 g, 22.6 min). Season 20.3 (10), L7 30.3 (3), L15 28.7 (6), L30 20.3 (10). L30 equals the season, as he debuted on 2 Nov. Rate 26.3; ESPN proj. 32.9. Minutes 21.5 for the season, 26.3 over L7. ([Injury Watch, 26 Nov](20261126-injury-watch.md); Rate from `form.py`, 26 Nov)
+  - **L7 +10.0:** minutes rising under the limit (28 and 25 min in his last two) and the 21-point game on 23 Nov.
+  - **Games:** 1 (Sat vs BKN). Add by Sun 29 Nov 9:00 AM Melbourne.
+
+Not shortlisted:
+- **Norman Powell** (CHI, Rate 32.2): the best Saturday add if CHI clears him, but nothing points that way yet.
+  - **Status:** no re-evaluation result has been reported ([Bulls.com, 22 Nov](https://www.nba.com/bulls/news/norman-powell-medical-update)). *ESPN est.* 28 Nov.
+  - **Form:** L7 28.0 (2), **small sample**.
+  - **Cost:** his return ends Hield's start.
+- **Grayson Allen** (CHA, Rate 27.4, role rate 29.7, not applied): add for Saturday only if he is cleared. He is still in the protocol after four missed games (see Coby White).
+  - **Form:** L15 27.5 (2), **small sample**.
+- **De'Andre Hunter** (SAC, Rate 32.2): plays only Sun vs MIN, where Poeltl or Bassey takes our single open slot.
+  - **Raynaud risk:** Maxime Raynaud practiced fully with Stockton on Wednesday, "including 5v5" ([Kings On SI via Yahoo, 25 Nov](https://sports.yahoo.com/nba/articles/kings-maxime-raynaud-gets-promising-230723065.html)). He has no timetable and is week-to-week ([RotoWire, 25 Nov](https://www.rotowire.com/basketball/headlines/maxime-raynaud-injury-recalled-to-nba-540983)); *ESPN est.* 2 Dec.
+  - **Opening:** Ben Simmons is out for the season ([AP via NY1, 18 Oct](https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/18/kings-guard-ben-simmons-tears-his-achilles-tendon-in-practice)); *ESPN est.* 1 Oct, a stale date.
+  - **Wednesday:** 15 pts and 7 reb in 39 min ([ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909324)).
+- **Christian Anderson** (CHA, Rate 24.1): the next Saturday option.
+  - **Form:** L7 30.7 (3) against a season of 14.1 (+16.6), from minutes: 25 pts in 25 min on 23 Nov and 15 pts in 28 min Wed ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910036); [25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909318)).
+  - **Opening:** the same as White's.
+- **Nic Claxton** (CHI, Rate 25.4): he started Wed only because Jalen Smith (us) was out ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/bulls-start-giddey-hield-okoro-buzelis-claxton)). See Smith under Absentees.
+- **Kelly Oubre Jr.** (IND, Rate 28.6; Fri + Sat): outside the injury angle, as he started on 22 Nov with Nesmith playing ([ESPN box, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910034)). He is the strongest Fri+Sat player found here, and the matchup's stream list should weigh him.
+- **Daniss Jenkins** (DET, Rate 30.4; role rate 36.7 ‡, override until 27 Nov): the hedge if Cade Cunningham (us) sits. He plays only Fri and Sun, where Poeltl or Bassey fills our single slot.
+- **Noah Clowney** (BKN, Rate 20.2) and **Jalen Slawson** (IND, Rate 24.9): Fri+Sat, but low rates. Clowney had 17 pts in 27 min Wed after Moritz Wagner left with knee soreness (see Absentees).
+- **Tristan da Silva** (ORL, Rate 22.2): Sat+Sun, about 30 min while Paolo Banchero is out (see Back soon). Low rate.
+- **Ja'Kobe Walter** (Rate 26.6) and **Allen Graves** (Rate 22.5): Fri+Sun, below Poeltl and Bassey.
+
+## Research
+
+New since 25 Nov. Notes in [20261125-injury-watch.md](20261125-injury-watch.md) still hold where this says "unchanged". Wednesday 25 Nov games are final. The official reports cited are [NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf) (Wednesday's final statuses) and [NBA injury report, 26 Nov 1:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15AM.pdf) (Friday's games, all "not yet submitted"). No Thursday team news had come out at the time of writing (about 1:30 AM ET, 26 Nov).
+
+**Absentees**
+
+- **Cade Cunningham (us, DET):** Day-to-day with right knee soreness, after the late scratch Tue at ORL. Bickerstaff says he is "far less than 100 percent". It is the second time this season the knee has cost him a game ([Hoops Rumors, 25 Nov](https://www.hoopsrumors.com/2026/11/pistons-notes-cunningham-duren-nba-cup-vinson-thompson.html)). DET did not play Wednesday.
+  - **Timeline:** no timetable reported. *ESPN est.* 27 Nov, so Fri vs MIL would be his next game. DET then plays Sun vs ORL.
+  - Daniss Jenkins started in his place Tuesday: 15 pts and 10 ast in 35 min ([ESPN box, 24 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909314)).
+- **Jalen Duren (us, DET):** **Changed.** He practiced with the G League Motor City Cruise on Wednesday and "seems close to returning". Bickerstaff: "We're looking forward to getting him back" ([Hoops Rumors, 25 Nov](https://www.hoopsrumors.com/2026/11/pistons-notes-cunningham-duren-nba-cup-vinson-thompson.html)).
+  - **Timeline:** the Pistons "haven't provided a return timeline" ([CBS/RotoWire, 24 Nov](https://www.cbssports.com/fantasy/basketball/news/pistons-jalen-duren-practicing-in-g-league/)), so no timetable reported. *ESPN est.* 30 Nov, which would mean missing Fri and Sun. Watch DET's Friday report.
+- **Kawhi Leonard (us, IR, TOR):** Unchanged since 24 Nov. He has begun on-court workouts but is out "at least another week", with the next update in a week ([CP24, 24 Nov](https://www.cp24.com/news/sports/2026/11/24/kawhi-leonard-out-at-least-another-week-as-he-recovers-from-knee-swelling/); [NBA.com, 25 Nov](https://www.nba.com/news/kawhi-leonard-begins-on-court-workouts-out-at-least-another-week)).
+  - **Timeline:** not before about 1 Dec. *ESPN est.* 3 Dec. He misses all of this week.
+- **Jalen Smith (us, CHI):** **Changed.** He was downgraded from questionable to **out** Wed at CHA with a gastrointestinal illness ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/jalen-smith-illness-downgraded-to-out-wednesday); [NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)). Nic Claxton started in his place.
+  - **Timeline:** no timetable reported. *ESPN est.* 28 Nov, which is CHI's only remaining game this week (Sat vs IND).
+- **Yaxel Lendeborg (us, GS):** **Back.** Listed available ([NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)), he started Wed vs SAC: 15 pts, 8 reb, 3 stl and 1 blk in 31 min ([ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909324)). He is out of ESPN's injury feed. GS plays Fri @POR and Sun vs LAC.
+- **Norman Powell (CHI, free agent):** Out Wed at CHA, his third straight absence ([NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)). On 22 Nov SI noted that a re-evaluation "does not guarantee Powell will get the green light to return later this week or next week" ([Bulls On SI, 22 Nov](https://www.si.com/nba/bulls/onsi/bulls-injury-update-bad-news-on-norman-powell-jalen-smith-still-questionable-22)). No result has been reported.
+  - **Timeline:** no timetable reported. *ESPN est.* 28 Nov, so at most 1 game (Sat vs IND).
+  - **Form:** season 30.1 (13) → 32.2 (12), L7 28.0 (2) (**small sample**), L15 36.2 (5), L30 30.7 (10) → 33.7 (9). Rate 32.2.
+- **Grayson Allen (CHA, free agent):** **Changed.** He was ruled out Wed vs CHI, his fourth straight game in the concussion protocol ([FantasyPros, 25 Nov](https://www.fantasypros.com/nba/news/622560/grayson-allen-concussion-ruled-out-wednesday.php); [NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)).
+  - **Timeline:** no timetable reported. *ESPN est.* 28 Nov (was 25 Nov). CHA plays only Sat vs BKN.
+  - **Form:** season 26.8 (13), no L7 (injured), L15 27.5 (2) (**small sample**), L30 26.3 (10). Rate 27.4.
+- **Stephen Curry (GS):** Unchanged. He is to be re-evaluated Fri 27 Nov, with updates "following the holiday" ([CBS/RotoWire, 25 Nov](https://www.cbssports.com/fantasy/basketball/news/warriors-stephen-curry-to-be-re-evaluated-friday/); [Yardbarker/Ball Exclusives, 25 Nov](https://www.yardbarker.com/nba/articles/warriors_stephen_curry_to_be_re_evaluated_friday_for_oblique_tear/s1_17668_44615539)). A re-evaluation is not a return date. *ESPN est.* 12 Dec.
+- **Maxime Raynaud (SAC):** **Changed.** He practiced with Stockton on Wednesday: "He was a full participant, including 5v5", and "continues to make progress towards his return" ([Kings On SI via Yahoo, 25 Nov](https://sports.yahoo.com/nba/articles/kings-maxime-raynaud-gets-promising-230723065.html)). He was then recalled.
+  - **Timeline:** no timetable, week-to-week ([RotoWire, 25 Nov](https://www.rotowire.com/basketball/headlines/maxime-raynaud-injury-recalled-to-nba-540983)). *ESPN est.* 2 Dec. His return is the risk to Hunter's minutes, and Sunday vs MIN is SAC's only game left this week.
+- **Zach Edey (MEM, free agent):** **New.** He left Wed vs LAC in the second quarter with left ankle soreness (7 pts, 4 reb, 2 blk in 9 min). CBS/RotoWire calls him "at least questionable" for Fri at MIN, and notes he has had two procedures on that ankle since June 2025 ([CBS/RotoWire, 25 Nov](https://www.cbssports.com/fantasy/basketball/news/grizzlies-zach-edey-does-not-return-wednesday/); [ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909321)).
+  - **Timeline:** no timetable reported. *ESPN est.* 27 Nov.
+  - **Pickup angle:** if he sits, Isaiah Stewart (Rate 21.6) and Taylor Hendricks (Rate 19.0) gain minutes (same CBS note). Both rates are too low to matter. Edey's own Rate is 25.7.
+- **Moritz Wagner (BKN):** **New.** He left Wed at MIL after 4 min with left knee soreness ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/moritz-wagner-knee-will-not-return-wednesday)).
+  - **Timeline:** no timetable reported. *ESPN est.* 27 Nov.
+  - Noah Clowney played 27 min off the bench with 17 pts, and Day'Ron Sharpe (rostered) had 11 pts and 14 reb ([ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909322)).
+- **Jaylen Brown (PHI):** **New.** He left Wed vs MIA with soreness in the same left hamstring that cost him two games last week. He "will receive imaging, with an update to come on Thursday", and Dean Wade would likely start if he misses time ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/jaylen-brown-hamstring-to-receive-imaging)).
+  - **Timeline:** no timetable reported until the imaging. *ESPN est.* 27 Nov.
+  - **Pickup angle:** PHI's Fri–Sat back-to-back is a risk for Brown even if he is cleared. Wade is no pickup: Rate 15.7, L7 7.0 (2) (**small sample**).
+- **Aday Mara and Jaylin Williams (OKC):** Both were out Wed vs MIN ([NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)). It is "unclear when [Jaylin Williams] will be available to return" ([RotoWire, 24 Nov](https://www.rotowire.com/basketball/headlines/jaylin-williams-injury-still-out-wednesday-540874)).
+  - **Timeline:** no timetable reported for either. *ESPN est.* 28 Nov for both (OKC plays Sat @MIL).
+  - Their return would trim Kenrich Williams's small-ball minutes.
+- **Duncan Robinson (DET, free agent):** Unchanged since 24 Nov. Day-to-day, "progressing in his rehabilitation" ([NBC Sports, 24 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/duncan-robinson-quad-considered-day-to-day)). DET has not played since, and no practice report was found.
+  - **Timeline:** no timetable reported. *ESPN est.* 27 Nov.
+  - **Form:** season 29.8 (12), no L7 (injured), L15 16.0 (2) (**small sample**), L30 29.7 (9). Rate 23.6.
+
+**Pickups for us**
+
+- **Jakob Poeltl (TOR, 2 games: Fri, Sun):** See the shortlist. TOR has not played since 23 Nov, so nothing has changed.
+  - **Form:** L7 38.7 (3) against a season of 27.4, +11.3.
+  - **Why:** minutes, 24.2 for the season and 29.7 over L7, from starts on 18, 20 and 23 Nov ([ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910012); [20 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909308); [23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910039)).
+  - **Ends:** not with Leonard's return (*ESPN est.* 3 Dec) or Barrett's (*ESPN est.* 13 Dec), both after this week. Murray-Boyles rejoining the lineup is the risk ([NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/collin-murray-boyles-concussion-plays-24-minutes)).
+- **Charles Bassey (GS, 2 games: Fri, Sun):** **Changed.** He started again Wed (22 min, 10 pts, 7 reb, 2 blk; [ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909324)). Kerr hopes the lineup lasts "for the season" ([Yahoo, 24 Nov](https://sports.yahoo.com/nba/articles/steve-kerr-addresses-warriors-look-221429191.html)).
+  - **Form:** L7 35.2 (4) against a season of 23.3, +11.9.
+  - **Why:** minutes, 16.0 for the season and 23.8 over L7.
+  - **Ends:** Porzingis's return (*ESPN est.* 2 Jan), or a change of heart by Kerr. Curry's Friday re-evaluation is no return date (*ESPN est.* 12 Dec).
+  - **Rate:** 27.8, role rate 33.5 ‡.
+- **Buddy Hield (CHI, 1 game: Sat):** **Changed.** He started Wed at CHA (27 min, 9 pts, 3-6 3PT; [ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909318)).
+  - **Form:** L7 33.0 (5) against a season of 21.2, +11.8.
+  - **Why:** minutes, 19.0 for the season and 27.2 over L7, from three starts in Powell's place.
+  - **Ends:** the start ends with Powell's return (*ESPN est.* 28 Nov). The bench role lasts until Wilson's (*ESPN est.* 13 Dec).
+- **Kenrich Williams (OKC, 1 game: Sat):** **New to the shortlist.** He played 25–26 min off the bench in each of his last two games ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910038); [25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909320)).
+  - **Form:** L7 33.8 (5) against a season of 21.3, +12.5.
+  - **Why:** minutes, 21.6 for the season and 25.6 over L7, plus a 20-pt, 9-reb game on 23 Nov.
+  - **Ends:** the long OKC absences outlast the season ([NBC Sports, 2 Nov](https://www.nbcsports.com/nba/news/2026-27-nba-news-injury-updates-nov-2-injuries-hit-jalen-williams-cason-wallace-chet-holmgren-in-okc)). The small-ball bump ends when Mara or Jaylin Williams returns (*ESPN est.* 28 Nov for both).
+- **Coby White (CHA, 1 game: Sat):** **New to the shortlist.** He started his last two games, at 28 and 25 min ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910036); [25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909318)).
+  - **Form:** L7 30.3 (3) against a season of 20.3, +10.0.
+  - **Why:** minutes, rising under the limit in place since 2 Nov ([Hoops Rumors, 20 Nov](https://www.hoopsrumors.com/2026/11/hornets-notes-white-james-allen-steinbach.html)).
+  - **Ends:** with Schroder's or Knueppel's return (*ESPN est.* 12 Dec for both). If Allen is cleared, he takes a guard start but not White's role.
+- **Christian Anderson (CHA, 1 game: Sat):** 25 pts (6-8 3PT) in 25 min on 23 Nov, then 15 pts in 28 min Wed, both off the bench (same box scores).
+  - **Form:** season 14.1 (16), L7 30.7 (3), L15 26.3 (6), L30 16.8 (13), +16.6.
+  - **Why:** minutes (15.5 for the season, 24.7 over L7) and the hot shooting. Rate 24.1.
+- **De'Andre Hunter (SAC, 1 game: Sun):** 15 pts and 7 reb in 39 min Wed ([ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909324)).
+  - **Form:** L7 36.0 (5) against a season of 26.1, +9.9.
+  - **Why:** minutes, 34.2 for the season and 38.0 over L7.
+  - **Ends:** Raynaud's return (above) is closer after Wednesday's full practice. Rate 32.2.
+- **Noah Clowney (BKN, 2 games: Fri @TOR, Sat @CHA):** 17 pts in 27 min Wed (box above). His 29.3 FP/g without Nolan Traoré rests on 3 games.
+  - **Traoré:** re-evaluation in 8–10 weeks ([NY Post via Yahoo, 23 Nov](https://sports.yahoo.com/articles/nets-gets-crushing-injury-nolan-180410690.html)); *ESPN est.* 27 Jan.
+  - **Form:** season 17.2 (17), L7 18.8 (4), L15 24.4 (7), L30 18.0 (14). L7 is within 5 of the season. Rate 20.2.
+- **Tristan da Silva (ORL, 2 games: Sat @WSH, Sun @DET):** 33 min and 16 pts Tue vs DET ([ESPN box, 24 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909314)).
+  - **Opening:** Paolo Banchero hoped to be back "within the next couple of weeks", so about 3 Dec ([Heavy via Yahoo, 19 Nov](https://sports.yahoo.com/articles/magic-star-paolo-bachero-reveals-190941314.html)); *ESPN est.* 29 Nov.
+  - **Form:** season 24.6 (15), L7 19.8 (4), L15 22.7 (6), L30 24.2 (12). L7 is within 5 of the season. Rate 22.2.
+
+**Back soon**
+
+- **Ja Morant (POR):** **Changed.** Nori said Wednesday: "He's starting to participate a little bit in the 5-on-5 stuff... I'll go out on a limb and say we'll see him on this home stand". POR's home stand runs through 3 Dec, and the four-week checkpoint falls Fri 27 Nov ([Blazers Edge, 25 Nov](https://www.blazersedge.com/trail-blazers-news/118895/portland-trail-blazers-ja-morant-nba-injury-news-return-micah-nori-spurs-grizzlies)). He was out Wed vs SA ([NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)).
+  - **Timeline:** reported, by 3 Dec. *ESPN est.* 1 Dec.
+  - **Value:** POR plays Fri vs GS and Sun vs NO, so a weekend debut is possible but not signalled. Form: season 33.8 (4), L30 28.0 (2) (**small sample**). Rate 31.2. 80% owned. Our IR slot is taken by Leonard.
+- **Jusuf Nurkic (UTAH):** Unchanged. Re-evaluation about 27 Nov ([Utah Jazz, 20 Nov](https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-3)). *ESPN est.* 29 Nov.
+  - **Rate 36.7:** last season only, with no game this season.
+- **Grayson Allen (CHA), Norman Powell (CHI), Duncan Robinson (DET), Zach Edey (MEM):** see Absentees.
+- **Others, all unchanged since 25 Nov** (no new report found):
+
+  | Player | Last note | *ESPN est.* |
+  |---|---|---|
+  | Tobias Harris (SA) | out Wed at POR ([NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf)); debut "expected to be next month" ([Heavy via Yahoo, 21 Nov](https://sports.yahoo.com/articles/san-antonio-spurs-release-injury-190006533.html)) | 3 Dec |
+  | Bradley Beal (LAC) | out Wed at MEM, "Right Knee Injury Management" (same report) | 29 Nov |
+  | Dejounte Murray (NO) | sitting until traded, no deal reported ([HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html)) | 27 Nov |
+  | Dereck Lively II (DAL) | out Tue at DEN ([NBA injury report, 24 Nov 6:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_06_30PM.pdf)); DAL plays only Fri @PHX | 27 Nov |
+  | Mitchell Robinson (BOS) | out Tue at WSH, illness (same report) | 27 Nov |
+  | Jaxson Hayes (UTAH) | out Mon at LAL ([NBA injury report, 23 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_15PM.pdf)) | 27 Nov |
+  | Bennedict Mathurin (NO) | out Mon vs PHX (same report) | 27 Nov |
+  | T.J. McConnell (IND) | out Mon vs OKC (same report) | 27 Nov |
+  | Jock Landale (ATL) | out Sun 22 Nov ([NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)) | 27 Nov |
+
+  - Each is "no timetable reported", except Harris's "next month".
+
 ## Pickups for us
 
 Free agents and waiver players getting 18+ minutes and 20+ FP/g since an absence opened their role, best first. Waiver players clear in 24 hours. *Also out* names short-term absences in the same games, which inflate the gain until those players return.
@@ -498,3 +684,4 @@ All 93 players in ESPN's injury feed, longest expected absence first.
 ## Sources
 
 - ESPN NBA injury feed and box scores (`site.api.espn.com`); ESPN fantasy API, league 423671879 (`kona_player_info`, `mTeam`, `mRoster`, `proTeamSchedules_wl`), read 2026-11-26 06:14 UTC.
+- **Research links:** [ESPN scoreboard, 28 Nov](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261128) · [ESPN scoreboard, 27 Nov](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261127) · [29 Nov](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261129) · [NBA injury report, 25 Nov 11:45 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_45PM.pdf) · [NBA injury report, 26 Nov 1:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15AM.pdf) · [CP24, 24 Nov](https://www.cp24.com/news/sports/2026/11/24/kawhi-leonard-out-at-least-another-week-as-he-recovers-from-knee-swelling/) · [NBA.com, 25 Nov](https://www.nba.com/news/kawhi-leonard-begins-on-court-workouts-out-at-least-another-week) · [NBC Sports, 19 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/rj-barrett-hamstring-out-at-least-two-weeks) · [ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910039) · [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/collin-murray-boyles-concussion-plays-24-minutes) · [CBS/RotoWire, 25 Nov](https://www.cbssports.com/fantasy/basketball/news/warriors-stephen-curry-to-be-re-evaluated-friday/) · [Yahoo, 24 Nov](https://sports.yahoo.com/nba/articles/steve-kerr-addresses-warriors-look-221429191.html) · [ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909324) · [Bulls On SI, 20 Nov](https://www.si.com/nba/bulls/onsi/bulls-injury-report-not-the-game-to-be-without-a-big-man-a-peek-at-caleb-wilson-20) · [Bulls.com, 22 Nov](https://www.nba.com/bulls/news/norman-powell-medical-update) · [NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/bulls-start-giddey-hield-okoro-buzelis-claxton) · [ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909318) · [ESPN box, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910032) · [23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910041) · [NBC Sports, 2 Nov](https://www.nbcsports.com/nba/news/2026-27-nba-news-injury-updates-nov-2-injuries-hit-jalen-williams-cason-wallace-chet-holmgren-in-okc) · [RotoWire, 24 Nov](https://www.rotowire.com/basketball/headlines/jaylin-williams-injury-still-out-wednesday-540874) · [CBS/RotoWire, 23 Nov](https://www.cbssports.com/fantasy/basketball/news/thunders-kenrich-williams-headed-to-bench-540713/) · [NBC Sports, 23 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/kenrich-williams-scores-20-points-off-bench) · [ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910038) · [ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909320) · [CBS/RotoWire, 24 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-dennis-schroder-remains-out-indefinitely/) · [CBS/RotoWire, 8 Nov](https://www.cbssports.com/fantasy/basketball/news/hornets-kon-knueppel-out-at-least-four-weeks/) · [FantasyPros, 25 Nov](https://www.fantasypros.com/nba/news/622560/grayson-allen-concussion-ruled-out-wednesday.php) · [ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910036) · [Hoops Rumors, 20 Nov](https://www.hoopsrumors.com/2026/11/hornets-notes-white-james-allen-steinbach.html) · [Kings On SI via Yahoo, 25 Nov](https://sports.yahoo.com/nba/articles/kings-maxime-raynaud-gets-promising-230723065.html) · [RotoWire, 25 Nov](https://www.rotowire.com/basketball/headlines/maxime-raynaud-injury-recalled-to-nba-540983) · [AP via NY1, 18 Oct](https://ny1.com/nyc/all-boroughs/ap-top-news/2026/10/18/kings-guard-ben-simmons-tears-his-achilles-tendon-in-practice) · [ESPN box, 22 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910034) · [Hoops Rumors, 25 Nov](https://www.hoopsrumors.com/2026/11/pistons-notes-cunningham-duren-nba-cup-vinson-thompson.html) · [ESPN box, 24 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909314) · [CBS/RotoWire, 24 Nov](https://www.cbssports.com/fantasy/basketball/news/pistons-jalen-duren-practicing-in-g-league/) · [NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/jalen-smith-illness-downgraded-to-out-wednesday) · [Bulls On SI, 22 Nov](https://www.si.com/nba/bulls/onsi/bulls-injury-update-bad-news-on-norman-powell-jalen-smith-still-questionable-22) · [Yardbarker/Ball Exclusives, 25 Nov](https://www.yardbarker.com/nba/articles/warriors_stephen_curry_to_be_re_evaluated_friday_for_oblique_tear/s1_17668_44615539) · [CBS/RotoWire, 25 Nov](https://www.cbssports.com/fantasy/basketball/news/grizzlies-zach-edey-does-not-return-wednesday/) · [ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909321) · [NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/moritz-wagner-knee-will-not-return-wednesday) · [ESPN box, 25 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909322) · [NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/jaylen-brown-hamstring-to-receive-imaging) · [NBC Sports, 24 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/duncan-robinson-quad-considered-day-to-day) · [ESPN box, 18 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910012) · [20 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909308) · [NY Post via Yahoo, 23 Nov](https://sports.yahoo.com/articles/nets-gets-crushing-injury-nolan-180410690.html) · [Heavy via Yahoo, 19 Nov](https://sports.yahoo.com/articles/magic-star-paolo-bachero-reveals-190941314.html) · [Blazers Edge, 25 Nov](https://www.blazersedge.com/trail-blazers-news/118895/portland-trail-blazers-ja-morant-nba-injury-news-return-micah-nori-spurs-grizzlies) · [Utah Jazz, 20 Nov](https://www.nba.com/jazz/news/jusuf-nurkic-injury-update-3) · [Heavy via Yahoo, 21 Nov](https://sports.yahoo.com/articles/san-antonio-spurs-release-injury-190006533.html) · [HoopsHype via Yahoo, 13 Nov](https://sports.yahoo.com/articles/dejounte-murray-sit-until-trade-203559326.html) · [NBA injury report, 24 Nov 6:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_06_30PM.pdf) · [NBA injury report, 23 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_11_15PM.pdf) · [NBA injury report, 22 Nov 11:15 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_15PM.pdf)
