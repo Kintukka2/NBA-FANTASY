@@ -464,7 +464,10 @@ Summary:
 - **Gap:** listed out, and no news in 5 days (ESPN est. 03 Dec)
 - News (16 Nov): Harris (calf) is likely to be sidelined until early December, per Jeff Garcia of KENS 5 San Antonio.
 - News (10 Nov): Harris (calf) is out for Wednesday's game against Chicago, Jared Weiss of The Athletic reports.
-- **Research:** _pending_
+- **Research:**
+  - Gap: still out. He was listed Out (left calf strain) for Wed 25 at POR ([NBA injury report, 25 Nov 7:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_07_00PM.pdf)). There has been no update since Mitch Johnson was asked on 18 Nov about a return before Christmas: "For his sake, I hope so ... whenever he comes back, it'll be later than he wanted" ([Hoops Rumors citing Express-News, 18 Nov](https://www.hoopsrumors.com/2026/11/southwest-notes-harper-harris-johnson-sengun.html)). Haynes reported an early-December debut target ([ClutchPoints, 14 Nov](https://clutchpoints.com/nba/san-antonio-spurs/spurs-news-tobias-harris-gets-crucial-injury-update-after-warriors-game)). SA plays Fri 27 vs LAL and Sun 29 vs BOS this week.
+  - **Expected return:** early December at the earliest (Haynes), with no date from the team. *ESPN est.* 3 Dec, which looks optimistic given Johnson's comments.
+  - **Verdict:** ESPN confirmed as the earliest reported target, and unchanged since 25 Nov. No row: the 7-day rule (2 Dec) would come earlier than the reporting.
 
 ## Opponents: this week and next
 
@@ -490,7 +493,11 @@ Summary:
 - **Gap:** listed out, and no news in 5 days (ESPN est. 29 Nov)
 - News (16 Nov): Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a left great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.
 - News (15 Nov): Mobley (toe) has been ruled out for Monday's game against the Bulls.
-- **Research:** _pending_
+- **Research:**
+  - Injury/gap: still out. The official report listed him Out (left great toe sprain) for Wed 25 at NYK ([NBA injury report, 25 Nov 7:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_07_00PM.pdf)). That was his seventh straight missed game, and CLE lost 121-102 ([Hoops Wire via Yardbarker, 25 Nov](https://www.yardbarker.com/nba/articles/cavs_looking_an_awful_lot_like_the_team_we_thought_theyd_outgrow/s1_17038_44620752)). The team's 16 Nov plan of 7–10 days of rehab before a re-evaluation ran to 26 Nov. No re-evaluation result or practice report has appeared ([Cavaliers, 16 Nov](https://www.nba.com/cavaliers/news/releases-evan-mobley-261116)).
+  - Atkinson: "we don't expect it to be a long-term thing at all" ([Yahoo, 14 Nov](https://sports.yahoo.com/articles/cavs-kenny-atkinson-gives-injury-011755667.html)). CLE's next and only game this week is Sun 29 vs MIA (3:30 PM ET), and its report for that game is not out yet. His L15 of 26.0 (1) is a small sample.
+  - **Expected return:** re-evaluation due by 26 Nov, with no result reported. Sun 29 vs MIA is his first possible game. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN confirmed. Unchanged since 25 Nov apart from the seventh missed game. No row: the day after the re-evaluation window (27 Nov) falls before CLE's next game.
 
 ### Josh Hart (NY, SG/SF, Dr White Slong)
 
@@ -524,7 +531,10 @@ Summary:
 - **Rest:** back-to-back Mon 30–Tue 01 Dec; sat the second night of the 15–16 Nov back-to-back, playing the games either side
 - News (24 Nov): Thompson ended Monday's 116-104 victory over the Clippers with 20 points (9-12 FG, 1-1 3Pt, 1-2 FT), four rebounds, five assists and one block over 28 minutes.
 - News (21 Nov): Thompson chipped in 22 points (10-12 FG, 0-1 3Pt, 2-6 FT), six rebounds and one steal in 26 minutes during Friday's 133-124 loss to the Nuggets.
-- **Research:** _pending_
+- **Research:**
+  - Rest: healthy. He played 36 min Wed 25 vs PHX (18 pts, 10 reb, 4 ast, 2 blk; 44 FP) without an injury listing ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/amen-thompson-notches-double-double-in-win); [NBA injury report, 25 Nov 7:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_07_00PM.pdf)). HOU's only game this week is Sat 28 vs PHI. The flagged back-to-back, Mon 30 vs LAL and Tue 1 Dec vs TOR, is next week.
+  - His only second-night absence (16 Nov) was for left knee soreness, not rest ([ClutchPoints, 16 Nov](https://clutchpoints.com/nba/houston-rockets/rockets-news-amen-thompson-out-heat-game-concerning-injury-update)). He played both nights of the 23–24 Oct and 30–31 Oct back-to-backs. That is no rest pattern, and no rest has been announced for 30 Nov–1 Dec.
+  - **Verdict:** ESPN confirmed. Healthy, with no rest risk this matchup week.
 
 ### Pascal Siakam (IND, PF, Matt Wright's Foxies)
 
@@ -533,7 +543,10 @@ Summary:
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; news on 23 Nov: "After carrying a questionable tag ahead of both parts of this back-to-back, Siakam is suiting up Monday despite dealing with a left hip injury."; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (23 Nov): Siakam (hip) will play in Monday's game against the Thunder, Justin Martinez of The Oklahoman reports.
 - News (23 Nov): Siakam is questionable for Monday's game against Oklahoma City due to left hip injury management.
-- **Research:** _pending_
+- **Research:**
+  - Rest (Fri 27 vs PHI, Sat 28 at CHI): unchanged since 25 Nov, with no sit announced. IND did not play Wed. Its Friday injury report was still "not yet submitted" at 1:15 AM ET on 26 Nov ([NBA injury report, 26 Nov 1:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15AM.pdf)). He played 35 min Mon 23 vs OKC through a left hip "injury management" tag, with no setback since ([NBA injury report, 23 Nov 5:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-23_05_00PM.pdf); [Heavy, 23 Nov](https://heavy.com/sports/nba/indiana-pacers/pascal-siakam-injury-thunder/)). He played both nights of 22–23 Nov and 25–26 Oct. His only second-night absence was 2 Nov.
+  - Haliburton (left hamstring strain) practiced fully Wed 25, the day after a G League workout. Carlisle said only "stay tuned" about Fri/Sat. Haliburton wants to be back by next week "at the absolute latest" ([IndyStar via Yahoo, 25 Nov](https://sports.yahoo.com/nba/articles/tyrese-haliburton-provided-good-news-201537475.html); [FantasyPros, 25 Nov](https://www.fantasypros.com/nba/news/622472/tyrese-haliburton-hamstring-could-return-before-end-november.php)). His return would take shots from Siakam, not minutes.
+  - **Verdict:** ESPN confirmed. Active. The hip makes Sat 28 a risk, but no source says he will sit.
 
 ### Andrew Nembhard (IND, PG/SG, Matt Wright's Foxies)
 
@@ -542,7 +555,11 @@ Summary:
 - **Rest:** back-to-back Fri 27–Sat 28 Nov; sat the second night of the 25–26 Oct back-to-back, playing the games either side; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (23 Nov): Nembhard produced 16 points (5-13 FG, 2-3 3Pt, 4-7 FT), two rebounds and eight assists in 32 minutes during Sunday's 113-106 loss to the Knicks.
 - News (20 Nov): Nembhard (hip) is available for Friday's game against the Cavaliers, Tony East of Forbes.com reports.
-- **Research:** _pending_
+- **Research:**
+  - Rest: unchanged since 25 Nov. He is not on any injury report and played both nights of 22–23 Nov, 32 and 38 min ([ESPN box, 23 Nov](https://www.espn.com/nba/boxscore/_/gameId/401910038)). Both of his earlier second-night absences (back on 26 Oct, cervical on 2 Nov) were filed as injuries. No sit is announced for Fri 27 or Sat 28, and IND's Friday report is not yet submitted ([NBA injury report, 26 Nov 1:15 AM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-26_01_15AM.pdf)).
+  - Role: his lead-guard role is at risk this weekend. Haliburton (no timetable reported, *ESPN est.* 13 Dec) practiced fully Wed 25 and could return Fri or Sat. He says the team has "a plan ... of how we're gonna approach back-to-backs" when he returns ([IndyStar via Yahoo, 25 Nov](https://sports.yahoo.com/nba/articles/tyrese-haliburton-provided-good-news-201537475.html)). McConnell (left hamstring; no timetable reported, *ESPN est.* 27 Nov) also practiced and is questionable ([Indy Cornrows via BVM Sports, 25 Nov](https://bvmsports.com/2026/11/25/pacers-hold-off-thunder-as-haliburton-nears-return-face-76ers/)). Either return would cut into his assists.
+  - His L7 of 26.7 (3) is 5.1 under his 31.8 season average. He played only 26 min in his 20 Nov return from the hip and committed 6 turnovers on 22 Nov.
+  - **Verdict:** nothing new found on rest. Haliburton's possible return is the risk to his role.
 
 ### Derrick White (BOS, PG/SG, Dr White Slong)
 
