@@ -451,7 +451,11 @@ Summary:
 - **Gap:** listed out, and no news in 5 days (ESPN est. 29 Nov)
 - News (24 Oct): Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.
 - News (23 Oct): Banchero didn't check back in during the fourth quarter of Friday's 115-93 loss to the Timberwolves after being deemed doubtful to return. He finished with 14 points (5-11 FG, 0-2 3Pt, 2-4 FT), six rebounds, five assists and one steal across 26 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Injury/gap: unchanged since 25 Nov. The most recent official listing is still Out on Tue 24 Nov vs DET with the right high ankle sprain ([NBA injury report, 24 Nov 5:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_30PM.pdf)). Sweeney's "No timeline right now" still stands. He has been doing on-court shooting and pool work, and the Magic say he is "still likely a few weeks away" ([Orlando Magic Daily, 19 Nov](https://orlandomagicdaily.com/paolo-banchero-taking-different-approach-orlando-magic-return-01m7ta5knyg4)). His own target is "within the next couple of weeks" ([RealGM, 19 Nov](https://basketball.realgm.com/wiretap/288198/Paolo-Banchero-Hopes-To-Return-Within-Next-Couple-Of-Weeks)). Nothing newer was found. Pages that give "29 Nov at DET" are repeating ESPN's estimate. ORL's Sat 28 at WAS report had not been submitted as of 26 Nov 1:15 AM ET.
+  - **Expected return:** no timetable reported. The 1 Dec floor stands, so Wed 2 Dec is his first possible game. *ESPN est.* 29 Nov.
+  - **Verdict:** ESPN corrected (unchanged since 25 Nov). The team has given no date, and the 29 Nov estimate would mean he returns on the second night of a back-to-back.
+  - Override proposed: return 2026-12-01
 
 ### Evan Mobley (CLE, PF/C, Matt Wright's Foxies)
 
@@ -470,7 +474,10 @@ Summary:
 - **Minutes:** 36.7 min over his last 3 games against 31.1 for the season (+5.6)
 - News (25 Nov): Hart compiled 15 points (6-14 FG, 1-5 3Pt, 2-3 FT), seven rebounds, 11 assists, three steals and one block in 36 minutes during Wednesday's 121-102 win over Cleveland.
 - News (25 Nov): Hart (shoulder) is available for Wednesday's game against the Cavaliers, Steve Popper of Newsday reports.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: the jump lines up with OG Anunoby's absence. Anunoby has a left calf strain and has missed three straight games (21, 22 and 25 Nov), and Hart played 35, 39 and 36 minutes in them, against 28–31 before. On Wed 25 vs CLE he had 15 pts, 7 reb, 11–12 ast, 3 stl in 36 minutes. He played through a right shoulder sprain that had him listed Probable that afternoon ([NBA injury report, 25 Nov 5:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_05_30PM.pdf); [NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/josh-hart-records-15-7-12-3-2-line-vs-cavaliers)).
+  - Anunoby has moved up to individual on-court work and is "considered day-to-day" (Brown via NY Post, [Yahoo Sports, 26 Nov](https://sports.yahoo.com/nba/articles/knicks-announce-major-og-anunoby-024000614.html)). His return should bring Hart back toward about 31 minutes. Hart's L7 of 35.5 (4 games) is 8 FP/g over his season average: more minutes and 21 assists across his last two games.
+  - **Verdict:** nothing new found on ESPN's label (active). The boost is real while Anunoby is out, but Anunoby is day-to-day, so the role is not reported as ongoing and there is no role row. Watch the shoulder on the Fri 27 vs MIA report.
 
 ### Joel Embiid (PHI, C, Dr White Slong)
 
@@ -479,7 +486,11 @@ Summary:
 - **Rest:** back-to-back Fri 27–Sat 28 Nov, Tue 01–Wed 02 Dec; sat the second night of the 24–25 Oct back-to-back, playing the games either side; sat the second night of the 30–31 Oct back-to-back, playing the games either side; sat the first night of the 15–16 Nov back-to-back, playing the games either side
 - News (25 Nov): Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports.
 - News (24 Nov): Embiid (illness) is listed as doubtful for Wednesday's game versus Miami.
-- **Research:** _pending_
+- **Research:**
+  - Illness: he was Out Wed 25 vs MIA, his second straight miss ([NBA injury report, 25 Nov 5:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_05_30PM.pdf)). Nurse: "He's ill. I do not know whether he's going to Indiana yet... we'll find that out late tomorrow afternoon" ([Yahoo Sports, 25 Nov](https://sports.yahoo.com/nba/articles/76ers-nick-nurse-cryptic-joel-223852806.html); [NBC Sports Philadelphia, 25 Nov](https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-heat-nba-cup-live-updates-joel-embiid-lebron-james-tyrese-maxey/769428/)). A FanDuel item lists him "out" for Fri 27, but it is automated (Data Skrive), names no source, and appeared before PHI submitted its Fri 27 report, which was still "not yet submitted" at 26 Nov 1:15 AM ET. Do not rely on it.
+  - Rest: no change. Yahoo's writer expects him to miss one of Fri 27 at IND and Sat 28 at HOU because of plantar fascia management ([Yahoo Sports, 24 Nov](https://sports.yahoo.com/nba/article/joel-embiid-listed-as-doubtful-for-76ers-nba-cup-matchup-vs-miami-heat-on-wednesday-due-to-illness-225037585.html)). He has sat one leg of all three back-to-backs so far. Nothing has been said about Tue 1 / Wed 2 Dec.
+  - **Expected return:** day-to-day (illness), no timetable reported. Travel for Fri 27 is undecided and an update is due Thursday afternoon ET. *ESPN est.* 27 Nov.
+  - **Verdict:** ESPN confirmed, at risk. 27 Nov is still possible, but between the illness and the back-to-back pattern he is a strong risk to miss Fri 27, Sat 28 or both. With no team statement yet, there is no row.
 
 ### Amen Thompson (HOU, SG/SF, Matt Wright's Foxies)
 
@@ -515,7 +526,9 @@ Summary:
 - **Rest:** back-to-back Sun 29–Mon 30 Nov; sat the first night of the 21–22 Nov back-to-back, playing the games either side
 - News (25 Nov): White notched six points (2-10 FG, 2-6 3Pt), seven rebounds, five assists and one steal across 30 minutes during Tuesday's 131-116 victory over Washington.
 - News (23 Nov): White amassed 14 points (6-21 FG, 2-12 3Pt), three rebounds, five assists and one steal over 32 minutes during Sunday's 88-87 loss to the Warriors.
-- **Research:** _pending_
+- **Research:**
+  - Rest: unchanged since 25 Nov. His only miss, on 21 Nov, was the left AC joint sprain, not rest ([NBC Sports, 22 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/derrick-white-shoulder-off-injury-report-vs-gsw)). He played both nights of BOS's other back-to-backs. He played 30 minutes on Tue 24 and has not been on an injury report since ([NBA injury report, 24 Nov 5:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-24_05_30PM.pdf)). No sit has been reported for Sun 29 / Mon 30 Nov.
+  - **Verdict:** nothing new found. His rest risk for 29–30 Nov is low.
 
 ### Jonathan Kuminga (MIN, SF/PF, Dr White Slong)
 
@@ -524,7 +537,14 @@ Summary:
 - **Rest:** back-to-back Tue 01–Wed 02 Dec; sat the second night of the 16–17 Nov back-to-back, playing the games either side
 - News (24 Nov): Kuminga contributed 15 points (5-12 FG, 1-5 3Pt, 4-6 FT), five rebounds, four assists and one steal in 26 minutes during Monday's 142-116 win over the Nets.
 - News (19 Nov): Kuminga totaled 23 points (7-13 FG, 2-4 3Pt, 7-7 FT), three rebounds, three assists and three blocks in 35 minutes during Thursday's 102-99 loss to the Knicks.
-- **Research:** _pending_
+- **Research:**
+  - Rest: he was not on MIN's report for Wed 25 at OKC ([NBA injury report, 25 Nov 5:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_05_30PM.pdf)) and played 32 minutes (14 FP). He is still starting with Anthony Edwards out after knee surgery. His only back-to-back miss, on 17 Nov, was the right shoulder contusion, not rest ([Roundtable, 17 Nov](https://roundtable.io/sports/nba/timberwolves/news/key-starter-ruled-out-for-timberwolves-against-blazers)). Nothing has been said about Tue 1 / Wed 2 Dec.
+  - **Verdict:** nothing new found (unchanged since 25 Nov). His rest risk for 1–2 Dec is low.
+
+**Summary**
+- Embiid: Out Wed 25 with the illness (second straight). Nurse doesn't know if he travels to IND, with an update due Thu afternoon ET (*ESPN est.* 27 Nov). He is a strong risk to miss Fri 27 and/or Sat 28, but there is no sit row without a team statement.
+- Hart: 36.7 minutes over three games with Anunoby (calf strain, day-to-day, no timetable) out. He is a better start while Anunoby sits, but there is no role row because Anunoby could return any day.
+- Banchero: no news since 24 Nov, and the 1 Dec floor row stands (first possible game Wed 2 Dec; *ESPN est.* 29 Nov). White and Kuminga: nothing new, low rest risk.
 
 ## Other rosters: injury flags only
 
