@@ -103,18 +103,23 @@ days that the news watch research confirms go into `council/news_overrides.csv`
 plan lays out moves or compares scenarios, use a table with one column per
 remaining US game day, in date order:
 
-- Each move goes in the column of the US day its added player first counts,
-  written `Drop → Add`. Separate two moves on one day with `;`. Use `—` for a
-  day with no move.
+- Each move goes in the column of the US day its added player first counts.
+  Write it as an instruction that names the game: **"Drop Lopez after his game
+  vs NO → add Powell"**. When the dropped player has no game before the move,
+  write **"Drop Buzelis now (no game until Sat) → add Bassey"**. Never write a
+  bare `Drop → Add`, and never "after Friday's game" without the opponent.
+- Separate two moves on one day with `;`. Use `—` for a day with no move.
 - Each day's header gives the US date and the add deadline in Melbourne time
   (that day's first tip-off).
 - The last columns are the lineup projection and the final score.
-- Below the table, list the steps for the chosen plan: drop after which
-  game, add before which deadline.
+- Below the table, list the steps for the chosen plan, one per move, in the
+  same words: "Drop **X** after his game against **OPP** (tips DAY TIME
+  Melbourne), then add **Y** before DEADLINE". Use the opponent ESPN's schedule
+  shows (`@GS`, `vs NO`).
 
 | Plan | Fri 20 · adds by Sat 11:00 AM | Sat 21 · by Sun 5:00 AM | Sun 22 · by Mon 7:30 AM | Lineup | Final |
 |---|---|---|---|---:|---|
-| Murphy plays | Gobert → Murphy | — | Bey → Queta; Missi → Mara | 909.6 | about 1,810–1,575 |
+| Murphy plays | Drop Gobert now (no game until Sun) → add Murphy | — | Drop Bey after his game @SAC → add Queta; drop Missi after his game vs NY → add Mara | 909.6 | about 1,810–1,575 |
 
 **Add deadlines: the day's first tip-off.** ESPN locks this league's rosters
 at the first NBA tip-off of each US day. A player added after that counts only
