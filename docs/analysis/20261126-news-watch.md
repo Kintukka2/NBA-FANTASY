@@ -555,7 +555,12 @@ Summary:
 - **Injury:** not in ESPN's injury feed, but the news said on 25 Nov: "Brunson (illness) has been downgraded to questionable for Wednesday's game against the Cavaliers."
 - News (25 Nov): Brunson finished with 19 points (6-22 FG, 2-8 3Pt, 5-6 FT), three rebounds and five assists over 36 minutes during Wednesday's 121-102 victory over the Cavaliers.
 - News (25 Nov): Brunson (illness) is available for Wednesday's game against the Cavaliers, Ian Begley of SportsNet New York reports.
-- **Research:** _pending_
+- **Research:**
+  - Injury (illness): a late addition to Wednesday's report, he was downgraded to questionable ([CBS Sports, 25 Nov](https://www.cbssports.com/fantasy/basketball/news/knicks-jalen-brunson-now-questionable-for-wednesday/)), then upgraded to probable ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/jalen-brunson-illness-probable-wednesday-vs-cavs)) and cleared to play, per SNY's Ian Begley ([CBS Sports, 25 Nov](https://www.cbssports.com/fantasy/basketball/news/knicks-jalen-brunson-available-to-play-wednesday/)). The official NBA report listed him "Available – Illness" from 8:00 PM ET to the last slot ([NBA injury report, 25 Nov 11:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_30PM.pdf)).
+  - He played 36 minutes in the 121-102 win over Cleveland: 19 points on 6-22 FG, 5 assists, 20 FP, his worst shooting game of the season ([Yahoo Sports, 25 Nov](https://sports.yahoo.com/nba/articles/knicks-blow-cavaliers-fourth-win-031145067.html)). The illness did not cost him minutes. No postgame update on it was found.
+  - Next game: Fri 27 Nov vs MIA, 7:00 PM ET, at MSG, the Knicks' last NBA Cup group game ([TickPick listing](https://www.tickpick.com/buy-nba-cup-new-york-knicks-vs-miami-heat-tickets-madison-square-garden-11-27-26-7pm/8200050/)). The Thursday 26 Nov ET injury reports for Friday's games are not out yet (403). There is no sign he will miss Friday, and Thanksgiving gives him a day off to recover.
+  - **Expected return:** not out. He played through the illness on 25 Nov and is expected to play Fri 27 Nov. ESPN lists him active and he is not in ESPN's injury feed, so there is no *ESPN est.*
+  - **Verdict:** ESPN confirmed. He played 36 minutes through the illness, and no source has him doubtful for Friday.
 
 ## Sources
 
