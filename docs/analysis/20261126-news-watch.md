@@ -349,7 +349,11 @@ Summary:
 - **Minutes:** 23.0 min over his last 3 games against 30.7 for the season (−7.7)
 - News (12 Nov): Wilson is undergoing surgery for a fractured right hand and will miss at least four to six weeks, Shams Charania of ESPN reports.
 - News (11 Nov): Wilson won't return to Wednesday's game against the Spurs due to a right hand injury. He'll finish with 15 points (5-7 FG, 2-2 3Pt, 3-3 FT), five rebounds and one steal in 15 minutes.
-- **Research:** _pending_
+- **Research:**
+  - Injury: unchanged since 25 Nov. The official report listed him out for Wed 25 at CHA with a right metacarpal fracture ([NBA injury report, 25 Nov 11:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_30PM.pdf)). The Bulls said he would be re-evaluated three weeks after his 12 Nov surgery, so about 3 Dec ([Bulls, 12 Nov](https://www.nba.com/bulls/news/caleb-wilson-medical-update)). Charania reported four to six weeks ([ESPN, 12 Nov](https://www.espn.com/nba/story/_/id/50464091/sources-bulls-wilson-surgery-hand-4-6-weeks)). No newer update was found.
+  - Minutes flag: the low last-3 figure comes from his 15-min injury exit on 11 Nov. It does not matter while he is out.
+  - **Expected return:** four to six weeks from 12 Nov (10 to 24 Dec), with a re-evaluation about 3 Dec. He will not play this week. *ESPN est.* 13 Dec.
+  - **Verdict:** ESPN confirmed. The team timeline has not changed, and 13 Dec falls inside the reported range.
 
 ### Daniss Jenkins (DET, PG, free agent)
 
@@ -358,7 +362,11 @@ Summary:
 - **Minutes:** 37.3 min over his last 3 games against 30.7 for the season (+6.6)
 - News (24 Nov): Jenkins registered 15 points (6-16 FG, 1-6 3Pt, 2-2 FT), four rebounds, 10 assists and two steals in 35 minutes during Tuesday's 104-86 win over the Magic.
 - News (23 Nov): Jenkins logged 11 points (4-12 FG, 1-6 3Pt, 2-2 FT), four rebounds, three assists and one steal over 38 minutes during Sunday's 107-97 loss to the Hawks.
-- **Research:** _pending_
+- **Research:**
+  - Role, Cunningham: DET has not played since Tue 24, so nothing has changed since 25 Nov. Cunningham's return does not end Jenkins's start. Jenkins has started beside Cunningham since 9 Nov and played 35 to 42 min in those games. On 17 Nov, for example, he scored 25 in 38 min while Cunningham scored 27 ([AP via WXYZ, 17 Nov](https://www.wxyz.com/sports/basketball/pistons/cunningham-jenkins-lead-surge-as-pistons-snap-spurs-12-game-winning-streak-with-105-93-victory)). Cunningham (right knee soreness, day-to-day, no timetable reported, *ESPN est.* 27 Nov) is "far less than 100 percent." Friday vs MIL is his next chance to play ([Hoops Rumors, 25 Nov](https://www.hoopsrumors.com/2026/11/pistons-notes-cunningham-duren-nba-cup-vinson-thompson.html)).
+  - Role, Duren: Jenkins took Paul Reed's starting spot on 9 Nov. Bickerstaff picks that fifth starter game by game only until Duren returns ([Hoops Rumors, 10 Nov](https://www.hoopsrumors.com/2026/11/pistons-notes-jenkins-lineup-collins-duren-okorie.html)). Duren (right hamstring, no target date, *ESPN est.* 30 Nov) practised with the team on 24 Nov and with the Cruise on 25 Nov. NBC says that "doesn't guarantee he'll be back on Friday, but it shouldn't be much longer" ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/news/nba-week-6-injury-report-cameron-boozer-to-miss-at-least-four-weeks-dont-panic-on-cade-cunningham)). Duncan Robinson (left quad, day-to-day, *ESPN est.* 27 Nov) is also close to returning. Off the bench before 9 Nov, Jenkins played 21 to 24 min (ESPN box scores). No source says whether he keeps the start if Duren returns while Cunningham sits. DET had not filed its Fri 27 report as of 26 Nov 1:00 AM ET.
+  - **Verdict:** ESPN confirmed: active. He starts at about 37 min while Duren is out, with or without Cunningham. Keep the row through Fri 27 and remove it for Fri if DET lists Duren as available. Do not extend it to Sun 29 unless Duren is ruled out.
+  - Override proposed: role 37
 
 ### Daniel Gafford (DAL, C, free agent)
 
@@ -367,7 +375,10 @@ Summary:
 - **Minutes:** 28.7 min over his last 3 games against 22.5 for the season (+6.2)
 - News (25 Nov): Gafford had 13 points (6-8 FG, 1-4 FT), six rebounds, three assists, two blocks and one steal in 27 minutes during Tuesday's 120-101 win over the Nuggets.
 - News (23 Nov): Gafford notched 10 points (5-8 FG), four rebounds, four assists and two steals over 28 minutes during Sunday's 116-114 win over the Jazz.
-- **Research:** _pending_
+- **Research:**
+  - Minutes: DAL has not played since Tue 24, so nothing has changed since 25 Nov. At DEN he started with Risacher, Martin, Irving and Flagg. P.J. Washington, back from illness, came off the bench for the first time this season and had 14 pts and 6 reb. May kept Risacher in the lineup to keep the group's continuity, and the article does not say whether that will last ([Dallas Morning News via Yahoo, 25 Nov](https://sports.yahoo.com/nba/articles/5-thoughts-mavericks-nuggets-dallas-054348956.html)). Gafford played 27 min for 36 FP ([ESPN box score, 24 Nov](https://www.espn.com/nba/boxscore/_/gameId/401909316)).
+  - No newer update was found on Lively (right foot surgery, no timetable reported, *ESPN est.* 27 Nov). May said on 20 Nov that Lively feels "close" ([CBS/RotoWire, 20 Nov](https://www.cbssports.com/fantasy/basketball/news/mavericks-dereck-lively-progressing-in-recovery/)). DAL had not filed its Fri 27 report as of 26 Nov 1:00 AM ET. Their only game left this week is Fri 27 at PHX.
+  - **Verdict:** ESPN confirmed: active and starting. Expect about 27 min on Fri 27 if the lineup holds. No row: it rests on one game, and no source calls the role ongoing.
 
 ### Kelly Oubre Jr. (IND, SG/SF, free agent)
 
@@ -376,7 +387,11 @@ Summary:
 - **Minutes:** news on 24 Nov: "Oubre scored at least 15 points for the sixth straight game, continuing to ramp up after a slow start to the season."
 - News (24 Nov): Oubre racked up 20 points (8-13 FG, 4-7 3Pt), four rebounds, two assists and two blocks over 28 minutes during Monday's 125-120 win over Oklahoma City.
 - News (23 Nov): Oubre recorded 15 points (4-10 FG, 0-4 3Pt, 7-9 FT) and five rebounds in 27 minutes during Sunday's 113-106 loss to the Knicks.
-- **Research:** _pending_
+- **Research:**
+  - Role: IND has not played since Mon 23, so nothing has changed since 25 Nov. Oubre has started since 11 Nov and played 23 to 28 min in his last four games. His L7 of 30.0 (4 games) is 6.5 over his season 23.5, because of the start and 15+ points in six straight games.
+  - Haliburton (left hamstring strain, no official date, *ESPN est.* 13 Dec) practised with the Boom on 24 Nov and fully with the Pacers on 25 Nov. He wants to be back by next week "at the absolute latest." Asked about Fri 27 vs PHI, Carlisle said "stay tuned" ([IndyStar via Yahoo, 25 Nov](https://sports.yahoo.com/nba/articles/tyrese-haliburton-provided-good-news-201537475.html)). The signs point to Fri 27 or Sat 28 @CHI, once he is checked after two practices ([Indy Cornrows, 25 Nov](https://www.indycornrows.com/p/pacers-quiet-thunder-face-sixers)). NBC says "His eventual return will push Kelly Oubre Jr. to the bench" and calls Friday the likeliest date ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/news/nba-week-6-injury-report-cameron-boozer-to-miss-at-least-four-weeks-dont-panic-on-cade-cunningham)).
+  - In Haliburton's four games (21 to 26 Oct), Oubre played 20 to 28 min and scored 8 to 22 FP (ESPN box scores). Nesmith (right foot soreness, *ESPN est.* 27 Nov) said he will play Fri. IND had not filed its Fri 27 report as of 26 Nov 1:00 AM ET.
+  - **Verdict:** ESPN confirmed: active and starting for now. He likely moves to the bench at about 20 to 23 min once Haliburton returns, which could be Fri 27 or Sat 28. No row until IND confirms.
 
 ### Rui Hachimura (LAC, SF/PF, free agent)
 
@@ -385,7 +400,10 @@ Summary:
 - **Rest:** back-to-back Tue 01–Wed 02 Dec; sat the second night of the 01–02 Nov back-to-back, playing the games either side
 - News (24 Nov): Hachimura logged 19 points (7-10 FG, 2-4 3Pt, 3-3 FT), three rebounds, three assists and one block across 29 minutes during Monday's 116-104 loss to the Rockets.
 - News (20 Nov): Hachimura contributed 17 points (7-13 FG, 2-4 3Pt, 1-1 FT), seven rebounds, two assists and one steal in 32 minutes during Thursday's 124-112 loss to the Spurs.
-- **Research:** _pending_
+- **Research:**
+  - Rest: LAC has no back-to-back this week (Fri 27 vs NOP, Sun 29 @GSW). The flagged back-to-back is Tue 1 and Wed 2 Dec, and no sit has been announced. His one absence on a back-to-back, 2 Nov, was left quad soreness, not rest ([NBA injury report, 2 Nov 8:00 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-02_08_00PM.pdf)).
+  - Role: he started Wed 25 at MEM and played a team-high 37 min: 14 pts (5-13 FG), a season-high 12 reb and 5 ast for 36 FP ([NBC Sports, 25 Nov](https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/rui-hachimura-records-14-12-double-double-in-loss); [Digest Sports box score, 25 Nov](https://digestsports.com/nba/games/clippers-vs-grizzlies-2026-11-25/)). He was not on that night's report ([NBA injury report, 25 Nov 11:30 PM ET](https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-25_11_30PM.pdf)). His L7 of 34.2 (4 games) is 8.4 over his season 25.9. He has kept 29 to 37 min as a starter since Ingram's debut, with efficient shooting up to Wednesday and the rebounds on Wednesday.
+  - **Verdict:** nothing new found on rest. He is a starter at about 29 to 37 min, with no back-to-back this week and no rest pattern.
 
 ### Rudy Gobert (MIN, C, free agent)
 
